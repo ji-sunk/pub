@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>2020 힙합퍼 스타일 가이드</title>
+	<!-- <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css"> -->
+	<link rel="stylesheet" href="./css/common.css">
+	<!-- <link rel="stylesheet" media="(max-width: 425px)" href="./css/mobile1.css" /> -->
+	<!-- <link rel="stylesheet" media="(min-width: 426px)" href="./css/pc.css" /> -->
+	<!-- <link rel="stylesheet" href="./css/plugin.css"> -->
+	<script src="./js/plugin.js"></script>
+</head>
+<body>
+	<style media="screen">
+	.container {padding:20px}
+	</style>
+	<hr>
+	<div class="container">
+		<h2>공통 팝업</h2>
+		<div><button type="button" onclick="openLayer(event,'#tempLayer1',this)">버튼 타입 1개 타이틀 기본형(넓이 600px / 300px) 레이어 팝업 열기</button></div>
+		<div><button type="button" onclick="openLayer(event,'#tempLayer2',this)">버튼 타입 1개 타이틀 기본형 여러줄 (넓이 600px / 300px) 레이어 팝업 열기</button></div>
+		<div><button type="button" onclick="openLayer(event,'#tempLayer3',this)">버튼 타입 2개 (넓이 600px / 300px) 레이어 팝업 열기</button></div>
+		<div><button type="button" onclick="openLayer(event,'#tempLayer4',this)">버튼 타입 2개 여러줄 (넓이 600px / 300px) 레이어 팝업 열기</button></div>
+		<div><button type="button" onclick="openLayer(event,'#tempLayer5',this)">혹시 모를 닫기 버튼 추가</button></div>
+		<!-- <div><a href="#tempLayer2" onclick="openLayer(event,this)">링크 - 딤드(넓이 600px) 레이어 팝업 열기</a></div> -->
+
+		<div class="dim_layer hide">
+			<div class="popuplayer" id="tempLayer1">
+				<div class="popup_area wd260">
+					<p class="title">쿠폰 발급 완료</p>
+					<p class="subtxt">쿠폰 할인이 적용 되었습니다.</p>
+					<div class="btns clear">
+						<button type="button" class="btn_confirm100" onclick="closeLayer('#tempLayer1');">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="dim_layer hide">
+			<div class="popuplayer" id="tempLayer2">
+				<div class="popup_area wd260">
+					<p class="title">서비스 장애 안내</p>
+					<p class="subtxt">
+						현재 통신상의 이유로 일부 주문이<br>
+						지연 처리되고 있습니다.<br>
+						신속한 복구를 위해 노력하겠습니다.<br>
+						서비스 이용에 불편을 드려 죄송합니다.<br>
+					</p>
+					<div class="btns clear">
+						<button type="button" class="btn_confirm100" onclick="closeLayer('#tempLayer2');">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="dim_layer hide">
+			<div class="popuplayer" id="tempLayer3">
+				<div class="popup_area wd260">
+					<p class="txt">
+						선택하신 3개 상품을 <br>
+						삭제하시겠습니까?
+					</p>
+					<div class="btns clear">
+						<button type="button" class="btn_cancel50" onclick="closeLayer('#tempLayer3');">취소</button>
+						<button type="button" class="mgl6 btn_confirm50" onclick="closeLayer('#tempLayer3');">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="dim_layer hide">
+			<div class="popuplayer" id="tempLayer4">
+				<div class="popup_area wd260">
+					<p class="txt">
+						선택한 상품 중 1개 상품이 <br>
+						해외 배송 상품입니다. <br>
+						개인통관 고유부호 미입력 시 <br>
+						주문이 취소될 수 있습니다. <br>
+						주문하시겠습니까?
+					</p>
+					<div class="btns clear">
+						<button type="button" class="btn_cancel50" onclick="closeLayer('#tempLayer4');">취소</button>
+						<button type="button" class="mgl6 btn_confirm50" onclick="closeLayer('#tempLayer4');">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="dim_layer hide">
+			<div class="popuplayer wrap_layer" id="tempLayer5">
+				<button type="button" class="btn_close bg_3_a bg_3_b pos_center_before pos_center_after"><span class="blind">레이어 닫기 버튼</span></button>
+				<div class="popup_area wd260">
+					<p class="title">쿠폰 발급 완료</p>
+					<p class="subtxt">쿠폰 할인이 적용 되었습니다.</p>
+					<div class="btns clear">
+						<button type="button" class="btn_confirm100" onclick="closeLayer('#tempLayer5');">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+
+		<hr>
+	</div>
+
+	<script src="./js/common.js"></script>
+</body>
+</html>

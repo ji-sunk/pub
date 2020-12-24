@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>힙합퍼 결제 배송지 있을 때</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../common/lib/jquery-2.2.4.min.js"></script>
+        <link rel="stylesheet" href="../common/css/common.css">
+        <link rel="stylesheet" href="assets/css/payment.css">
+    </head>
+    <body>
+        <div id="wrap">
+
+            <div id="header">
+                <div class="sz-wrap page-header white">
+                    <h2 class="page-title">배송지 변경</h2>
+                </div>
+            </div>
+
+            <div id="container">
+                <ul class="border_tab-list white clearfix">
+                    <li class="active"><a class="bt-btn big-font" href="#">배송지 선택</a></li>
+                    <li><a class="bt-btn big-font" href="addressNew.html">신규등록</a></li>
+                </ul>
+                <!-- .paymt_wrap 시작 -->
+                <!-- 배송지 변경 (배송지 있을 때) -->
+                <div class="paymt_wrap">
+                    <div class="paymt_addr_modify">
+                        <div class="pos_r">
+                            <ul>
+                                <li>
+                                    <span class="input_radio">
+                                        <input type="radio" name="radio1" id="radio2_1">
+                                        <label for="radio2_1" class="tc_3">
+                                            <div>
+                                                <dl class="addr_user">
+                                                    <dt>
+                                                        홍길동 <span>기본</span>
+                                                    </dt>
+                                                    <dd><span>[06531]</span> 서울 서초구 신반포로 339 (잠원동, 논현빌딩) 1층</dd>
+                                                    <dd>010-1234-5678</dd>
+                                                </dl>
+                                            </div>
+                                        </label>
+                                    </span>
+                                    <div class="b_modify">
+                                        <button>수정</button>
+                                        <button>삭제</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="input_radio">
+                                        <input type="radio" name="radio1" id="radio2_2">
+                                        <label for="radio2_2" class="tc_3">
+                                            <div>
+                                                <dl class="addr_user">
+                                                    <dt>
+                                                        홍길동 <span class="recent">최근배송지</span>
+                                                    </dt>
+                                                    <dd><span>[06531]</span> 서울 서초구 신반포로 339 (잠원동, 논현빌딩) 1층</dd>
+                                                    <dd>010-1234-5678</dd>
+                                                </dl>
+                                            </div>
+                                        </label>
+                                    </span>
+                                    <div class="b_modify">
+                                        <button>수정</button>
+                                        <button>삭제</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="input_radio">
+                                        <input type="radio" name="radio1" id="radio2_3">
+                                        <label for="radio2_3" class="tc_3">
+                                            <div>
+                                                <dl class="addr_user">
+                                                    <dt>
+                                                        김수한무 <span class="recent">최근배송지</span>
+                                                    </dt>
+                                                    <dd><span>[06531]</span> 서울 서초구 신반포로 47길 17 (정문빌딩)</dd>
+                                                    <dd>010-1234-5678</dd>
+                                                </dl>
+                                            </div>
+                                        </label>
+                                    </span>
+                                    <div class="b_modify">
+                                        <button>수정</button>
+                                        <button>삭제</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="input_radio">
+                                        <input type="radio" name="radio1" id="radio2_4">
+                                        <label for="radio2_4" class="tc_3">
+                                            <div>
+                                                <dl class="addr_user">
+                                                    <dt>
+                                                        거북이와두루미 <span class="recent">최근배송지</span>
+                                                    </dt>
+                                                    <dd><span>[06531]</span> 서울 강남구 강남대로 512</dd>
+                                                    <dd>010-1234-5678</dd>
+                                                </dl>
+                                            </div>
+                                        </label>
+                                    </span>
+                                    <div class="b_modify">
+                                        <button>수정</button>
+                                        <button>삭제</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="input_radio">
+                                        <input type="radio" name="radio1" id="radio2_5">
+                                        <label for="radio2_5" class="tc_3">
+                                            <div>
+                                                <dl class="addr_user">
+                                                    <dt>
+                                                        신천갑자 <span class="recent">최근배송지</span>
+                                                    </dt>
+                                                    <dd><span>[06531]</span> 서울 강남구 테헤란로 152 강남파이낸스센터 31층</dd>
+                                                    <dd>010-1234-5678</dd>
+                                                </dl>
+                                            </div>
+                                        </label>
+                                    </span>
+                                    <div class="b_modify">
+                                        <button>수정</button>
+                                        <button>삭제</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="last_btnn_wrap">
+                            <div class="mb10">
+                                <input type="checkbox" id="chk_method" class="sz-custom_check">
+                                <label for="chk_method" class="sz-custom_label"></label>
+                                <label for="chk_method" class="sz-custom_text">기본 배송지로 등록</label>
+                            </div>
+                            <button class="last_btn_white">취소</button>
+                            <button class="last_btn_black">저장</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- .paymt_wrap 끝 -->
+                <script src="../common/scripts/main.js"></script>
+            </div>
+
+        </div>
+
+    </body>
+</html>

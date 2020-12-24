@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>힙합퍼 결제 메인</title>
+        <meta name="description">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../common/lib/jquery-2.2.4.min.js"></script>
+        <link rel="stylesheet" href="../common/css/common.css">
+        <link rel="stylesheet" href="assets/css/payment.css">
+    </head>
+    <body>
+
+        <div id="wrap">
+
+            <div id="header">
+                <div class="page-header white">
+                    <div class="sz-wrap justify_box">
+                        <div class="just_left">
+                            <a href="#" class="back-btn"></a>
+                            <h2 class="page-title">주문결제</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="container">
+                <form>
+                    <!-- .paymt_wrap 시작 -->
+                    <!-- 회원 메인 -->
+                    <div class="paymt_wrap">
+                        <div class="paymt_info _member">
+                            <div class="article_title">주문자<span class="orange_txt2">홍길동이 <em>(010-1234-5678)</em></span></div>
+                        </div><!-- member -->
+                        <div class="paymt_info _addr">
+                            <div class="article_title">배송지</div>
+                            <div class="article_content">
+                                <div class="pos_r">
+                                    <dl class="addr_user">
+                                        <dt>
+                                            홍길동 <span class="recent">최근배송지</span><span class="balloon">배송 정보를 확인해 주세요!</span>
+                                            <!--
+                                            .recent 최근배송지 일때만 .balloon 말풍선 붙음, 기본배송지 일땐 .recent 제거
+                                            (ex)홍길동 <span>기본</span>
+                                            -->
+                                        </dt>
+                                        <dd><span>[06531]</span> 서울 서초구 신반포로 339 (잠원동, 논현빌딩) 1층</dd>
+                                        <dd>010-1234-5678</dd>
+                                    </dl>
+                                    <div class="addr_modify"><buttton class="pop_open" data-popup="popup_addr_modify">변경</button></div>
+                                    <div class="mt10">
+                                        <select class="sz-select_sl">
+                                            <option value="배송 요청사항을 선택해 주세요!">배송 요청사항을 선택해 주세요!</option>
+                                            <option value="직접받음">직접받음</option>
+                                            <option value="무인택배함">무인택배함</option>
+                                            <option value="문 앞">문 앞</option>
+                                        </select>
+                                        <ul class="sz-select_list">
+                                            <li class="selected">배송 요청사항을 선택해 주세요!</li>
+                                            <li>
+                                                <ul class="sz-select_sub">
+                                                    <li>배송 요청사항을 선택해 주세요!</li>
+                                                    <li>직접받음</li>
+                                                    <li>무인택배함</li>
+                                                    <li>문 앞</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <!-- 직접 입력 선택 했을 때 S-->
+                                        <div class="input_text_new input_wrap mt10">
+                                            <label for="id" id="label_id_area" class="blind">배송지 요청 사항을 직접 입력해주세요
+                                                <input type="text" placeholder="내용을 입력해주세요" class="text-input" data-type="countlength" maxlength="50">
+                                                <p class="text_count"><span class="" data-type="showlength">0</span> / 30</p>
+                                            </label>
+                                            <!-- <button type="button" data-type="inputreset" class="spr_before"><span class="s_out">입력 삭제</span></button> -->
+                                        </div>
+                                        <!-- 직접 입력 선택 했을 때 E-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- addr -->
+
+
+
+                        <div class="paymt_info _product">
+                            <div class="article_title">주문 상품 <span class="orange_txt"><em>3</em>개</span></div>
+                            <div class="article_content" style="padding:0">
+                                <div class="paymt_product">
+                                    <div class="list">
+                                        <div class="just_left"><a href="" class="prd_img"><img src="../common/images/dummy/dummy12.jpg" alt=""></a></div>
+                                        <div class="just_right">
+                                            <dl class="prd_info">
+                                                <dt>엑스씨엑스메인 <span>주문쿠폰 적용대상</span></dt>
+                                                <dd>에드반스에드반스 프리라인프리라인 2020220</dd>
+                                                <dd><span>74,000</span>원</dd>
+                                                <dd>옵션 : GREEN BENDING TOOTHAPASTE 후드 [그레이] L/1개</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="just_left"><a href="" class="prd_img"><img src="../common/images/dummy/dummy12.jpg" alt=""></a></div>
+                                        <div class="just_right">
+                                            <dl class="prd_info">
+                                                <dt>엑스씨엑스메인 <span>주문쿠폰 적용대상</span></dt>
+                                                <dd>에드반스에드반스 프리라인프리라인 2020220</dd>
+                                                <dd><span>74,000</span>원</dd>
+                                                <dd>옵션 : GREEN BENDING TOOTHAPASTE 후드 [그레이] L/1개</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="just_left"><a href="" class="prd_img"><img src="../common/images/dummy/dummy12.jpg" alt=""></a></div>
+                                        <div class="just_right">
+                                            <dl class="prd_info">
+                                                <dt>엑스씨엑스메인 <span>주문쿠폰 적용대상</span></dt>
+                                                <dd>에드반스에드반스 프리라인프리라인 2020220</dd>
+                                                <dd><span>74,000</span>원</dd>
+                                                <dd>옵션 : GREEN BENDING TOOTHAPASTE 후드 [그레이] L/1개</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="cart-total">
+                                        <p class="cart_total-title">
+                                            상품 <span>52,000</span>원 + 배송비 <span>2,500</span>원 - 쿠폰<span>2,000</span>원
+                                            <span class="total">= <span class="total_num">49,500</span>원</span>
+                                        </p>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div><!-- product -->
+                        <div class="paymt_info">
+                            <div class="article_title active">할인 차감</div>
+                            <div class="article_content" style="display:block">
+                                <div class="table_wrap2 pd_0">
+                                    <table>
+                                      <caption class="blind">할인 차감 내역 표</caption>
+                                        <colgroup>
+                                            <col width="20%"/>
+                                            <col width="53%"/>
+                                            <col width=""/>
+                                        </colgroup>
+                                        <tbody>
+                                            <!-- <tr>
+                                                <th>상품쿠폰</th>
+                                                <td>- <span>2,000</span> 원</td>
+                                                <td><button class="btn_find btn_white mb10 pop_open" data-popup="popup_prd_coupon">쿠폰선택</button></td>
+                                            </tr> -->
+                                            <tr>
+                                                <th>주문쿠폰</th>
+                                                <td>- <span>14,500</span> 원</td>
+                                                <td><button class="btn_find btn_white mb10 pop_open" data-popup="popup_ord_coupon">쿠폰선택</button></td>
+                                                </tr><tr>
+                                                <th class="v_top">마일리지</th>
+                                                <td>
+                                                    <div class="input_text_new input_wrap mb10"><input type="text" placeholder="0" class="text-input mr5" style="width:87%">M</div>
+                                                     <p class="add_notice">사용가능 <span>2,000M</span> / 보유 2,410M</p>
+                                                </td>
+                                                <td class="v_top"><button class="btn_find btn_black">최대사용</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div><!-- discount -->
+                        <div class="paymt_info _price">
+                            <div class="article_title active">결제 금액</div>
+                            <div class="article_content" style="display:block">
+                                <div class="table_wrap1">
+                                    <table>
+                                      <caption class="blind">최종 결제 내역 표</caption>
+                                        <tbody>
+                                            <tr>
+                                                <td>총 상품 금액 (<span>3</span>)</td>
+                                                <td><span>370,500</span>원</td>
+                                            </tr>
+                                            <tr>
+                                                <td>총 배송비</td>
+                                                <td>+ <span>2,500</span>원</td>
+                                            </tr>
+                                            <tr>
+                                                <td>총 쿠폰 할인</td>
+                                                <td>- <span>35,000</span>원</td>
+                                            </tr>
+                                            <tr>
+                                                <td>마일리지 사용</td>
+                                                <td>- <span>2,000</span>원</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td>최종 결제 금액</td>
+                                                <td>
+                                                    <span class="ctt-pay"><b class="ctt-pay-num">162,900</b>원</span>
+                                                    <!-- <span class="ctt-bonus">예상 적립금 <span class="ctt-bonus-num">380M</span></span>
+                                                    <span class="ctt-info">※ 쇼핑백에 담긴 상품은 30일 동안 보관됩니다.</span> -->
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+
+                                    <button type="submit" class="black-btn pc-only">결제하기</button>
+                                </div>
+                            </div>
+                        </div><!-- price -->
+                        <div class="paymt_info _mileage">
+                            <div class="article_title active">마일리지 적립 <span class="orange_txt">최대 <em>3,629M</em></span></div>
+                            <div class="article_content" style="display:block">
+                                <div class="table_wrap1" style="padding:0">
+                                    <table>
+                                        <caption class="blind">마일리지 적립 내역 표</caption>
+                                        <colgroup>
+                                            <col width="40%"/>
+                                            <col width=""/>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td>기본 구매 적립</td>
+                                                <td><span>1,629</span>M</td>
+                                            </tr>
+                                            <tr>
+                                                <td>텍스트 상품평 작성 시</td>
+                                                <td class="t_blue">+ <span>500</span>M</td>
+                                            </tr>
+                                            <tr>
+                                                <td>포토 상품평 작성 시</td>
+                                                <td class="t_blue">+ <span>1,500</span>M</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <ul class="mlg_info">
+                                                        <li>상품평 작성은 구매확정 후 가능합니다.</li>
+                                                        <li>마일리지는 작성한 상품평 유형에 따라 한번만 지급됩니다.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+
+                                    <button type="submit" class="black-btn pc-only">결제하기</button>
+                                </div>
+                            </div>
+                        </div><!-- mileage -->
+                        <div class="paymt_info _method">
+                            <div class="article_title active">결제 수단</div>
+                            <div class="article_content" style="display:block">
+                                <div class="wrap_radio">
+                                    <span class="input_radio">
+                                        <input type="radio" name="radio1" id="radio1_1"><label for="radio1_1" class="">신용카드</label>
+                                        <a href="#" class="pop_open a_info" data-popup="pop_card_benefit">결제혜택 확인</a>
+                                    </span>
+                                    <span class="input_radio">
+                                        <input type="radio" name="radio1" id="radio1_2"><label for="radio1_2" class="">무통장입금</label>
+                                    </span>
+                                    <span class="input_radio">
+                                        <input type="radio" name="radio1" id="radio1_3"><label for="radio1_3" class="">실시간 계좌이체</label>
+                                    </span>
+                                    <span class="input_radio">
+                                        <input type="radio" name="radio1" id="radio1_4"><label for="radio1_4" class="">
+                                            <img src="https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/payment/img_npay.jpg" alt="네이버페이">
+                                        </label>
+                                    </span>
+                                    <span class="input_radio">
+                                        <input type="radio" name="radio1" id="radio1_5"><label for="radio1_5" class="">
+                                            <img src="https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/payment/img_payco.jpg" alt="페이코">
+                                        </label>
+                                        <a href="#" class="pop_open a_info" data-popup="pop_card_benefit">결제혜택 확인</a>
+                                    </span>
+                                    <span class="input_radio">
+                                        <input type="radio" name="radio1" id="radio1_6"><label for="radio1_6" class="">
+                                            <img src="https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/payment/img_spay.jpg" alt="삼성페이">
+                                        </label>
+                                    </span>
+
+                                </div>
+                                <p class="default_check2">
+                                    <input type="checkbox" id="chk_method1" class="sz-custom_check">
+                                    <label for="chk_method1" class="sz-custom_label"></label>
+                                    <label for="chk_method1" class="sz-custom_text">선택한 결제 수단 다음에도 사용</label>
+                                </p>
+                            </div>
+                        </div><!-- method -->
+                        <div class="paymt_info _agree">
+                            <div class="article_title">
+                                <p class="pos_r">
+                                    <input type="checkbox" id="chk_agree" class="sz-custom_check">
+                                    <label for="chk_agree" class="sz-custom_label"></label>
+                                    <label for="chk_agree" class="sz-custom_text">주문 상품 및 주문 정보,결제 동의 (필수)</label>
+                                    <a href="" data-popup="pop_paymt_guide" class="a_info pop_open">내용확인</a>
+                                </p>
+                            </div>
+                        </div><!-- agree -->
+                    </div>
+                    <!-- .paymt_wrap 끝 -->
+
+                    <!-- 총 가격 / 결제하기 -->
+                    <div class="cart_nav-wrap">
+                        <div class="justify_box">
+                            <div class="just_left">
+                                <span class="prod_num"><span>3</span>개 상품</span>
+                                <span class="prod_total">총 <span class="ptolal_num">403,000</span>원</span>
+                            </div>
+                            <div class="just_right">
+                                <button type="submit" class="orange-btn">결제하기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// 총 가격 / 결제하기 -->
+                </form>
+            </div>
+
+            <!-- .팝업 배송지 변경 (배송지 있을 때) -->
+            <div id="popup_addr_modify" class="popup-wrap bg_wht">
+                <h2>배송지 변경</h2>
+                <ul class="border_tab-list white clearfix">
+                    <li class="active"><button type="button" class="bt-btn big-font">배송지선택</button></li>
+                    <li><button type="button" class="bt-btn big-font">배송지등록</button></li>
+                </ul>
+                <div class="border_tab-cont">
+                    <!-- 1번째 배송지선택 탭-->
+                    <div class="paymt_wrap active">
+                        <div class="paymt_addr_modify">
+                            <div class="pos_r">
+                                <ul>
+                                    <li>
+                                        <span class="input_radio">
+                                            <input type="radio" name="radio1" id="radio2_1">
+                                            <label for="radio2_1" class="">
+                                                <div>
+                                                    <dl class="addr_user">
+                                                        <dt>
+                                                            홍길동 <span>기본</span>
+                                                        </dt>
+                                                        <dd><span>[06531]</span> 서울 서초구 신반포로 339 (잠원동, 논현빌딩) 1층</dd>
+                                                        <dd>010-1234-5678</dd>
+                                                    </dl>
+                                                </div>
+                                            </label>
+                                        </span>
+                                        <div class="b_modify">
+                                            <button>수정</button>
+                                            <button>삭제</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="input_radio">
+                                            <input type="radio" name="radio1" id="radio2_2">
+                                            <label for="radio2_2">
+                                                <div>
+                                                    <dl class="addr_user">
+                                                        <dt>
+                                                            홍길동 <span class="recent">최근배송지</span>
+                                                        </dt>
+                                                        <dd><span>[06531]</span> 서울 서초구 신반포로 339 (잠원동, 논현빌딩) 1층</dd>
+                                                        <dd>010-1234-5678</dd>
+                                                    </dl>
+                                                </div>
+                                            </label>
+                                        </span>
+                                        <div class="b_modify">
+                                            <button>수정</button>
+                                            <button>삭제</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="input_radio">
+                                            <input type="radio" name="radio1" id="radio2_3">
+                                            <label for="radio2_3" class="">
+                                                <div>
+                                                    <dl class="addr_user">
+                                                        <dt>
+                                                            김수한무 <span class="recent">최근배송지</span>
+                                                        </dt>
+                                                        <dd><span>[06531]</span> 서울 서초구 신반포로 47길 17 (정문빌딩)</dd>
+                                                        <dd>010-1234-5678</dd>
+                                                    </dl>
+                                                </div>
+                                            </label>
+                                        </span>
+                                        <div class="b_modify">
+                                            <button>수정</button>
+                                            <button>삭제</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="input_radio">
+                                            <input type="radio" name="radio1" id="radio2_4">
+                                            <label for="radio2_4" class="">
+                                                <div>
+                                                    <dl class="addr_user">
+                                                        <dt>
+                                                            거북이와두루미 <span class="recent">최근배송지</span>
+                                                        </dt>
+                                                        <dd><span>[06531]</span> 서울 강남구 강남대로 512</dd>
+                                                        <dd>010-1234-5678</dd>
+                                                    </dl>
+                                                </div>
+                                            </label>
+                                        </span>
+                                        <div class="b_modify">
+                                            <button>수정</button>
+                                            <button>삭제</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="input_radio">
+                                            <input type="radio" name="radio1" id="radio2_5">
+                                            <label for="radio2_5" class="">
+                                                <div>
+                                                    <dl class="addr_user">
+                                                        <dt>
+                                                            신천갑자 <span class="recent">최근배송지</span>
+                                                        </dt>
+                                                        <dd><span>[06531]</span> 서울 강남구 테헤란로 152 강남파이낸스센터 31층</dd>
+                                                        <dd>010-1234-5678</dd>
+                                                    </dl>
+                                                </div>
+                                            </label>
+                                        </span>
+                                        <div class="b_modify">
+                                            <button>수정</button>
+                                            <button>삭제</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="input_radio">
+                                            <input type="radio" name="radio1" id="radio2_6">
+                                            <label for="radio2_6" class="">
+                                                <div>
+                                                    <dl class="addr_user">
+                                                        <dt>
+                                                            갑자갑자갑자 <span class="recent">최근배송지</span>
+                                                        </dt>
+                                                        <dd><span>[06531]</span> 서울 강남구 테헤란로 152 강남파이낸스센터 31층</dd>
+                                                        <dd>010-1234-5678</dd>
+                                                    </dl>
+                                                </div>
+                                            </label>
+                                        </span>
+                                        <div class="b_modify">
+                                            <button>수정</button>
+                                            <button>삭제</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="last_btnn_wrap">
+                            <p class="default_check3">
+                                <input type="checkbox" id="chk_method222" class="sz-custom_check">
+                                <label for="chk_method222" class="sz-custom_label"></label>
+                                <label for="chk_method222" class="sz-custom_text">기본 배송지로 등록</label>
+                            </p>
+                            <button class="last_btn_white pop_close">취소</button>
+                            <button class="last_btn_black">저장</button>
+                        </div>
+                    </div>
+                    <!-- 2번째 신규등록 탭 -->
+                    <div class="paymt_wrap">
+                        <div class="paymt_addr_modify">
+                            <div class="pos_r">
+                                <div class="addr_new_wrap">
+                                    <table cellpadding="0" cellspacing="0" width="100%" summary="">
+                                        <caption class="blind">신규 등록 표</caption>
+                                        <colgroup>
+                                            <col style="width:20%"/>
+                                            <col style="width:80%"/>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>받는분</th>
+                                                <td>
+                                                    <div class="input_text_new input_wrap mb10">
+                                                        <input type="text" placeholder="받는분" class="text-input">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>연락처</th>
+                                                <td>
+                                                    <div class="justify_box">
+                                                        <div class="input_text_new input_wrap mb10 just_left phone-first">
+                                                            <input type="text" maxlength="3" pattern="[0-9]*" value="010" class="text-input">
+                                                        </div>
+                                                        <div class="input_text_new input_wrap mb10 just_right phone-last">
+                                                            <input type="number" value="" placeholder="숫자만 입력해 주세요." class="text-input">
+                                                        </div>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>배송지</th>
+                                                <td>
+                                                    <div>
+                                                        <div class="input_text_new2 input_wrap">
+                                                            <input type="text" placeholder="배송지" class="text-input">
+                                                        </div>
+                                                        <button>주소찾기</button>
+                                                    </div>
+                                                    <div class="input_text_new input_wrap mb10">
+                                                        <input type="text" placeholder="배송지" class="text-input">
+                                                    </div>
+                                                    <div class="input_text_new input_wrap">
+                                                        <input type="text" placeholder="배송지" class="text-input">
+                                                    </div>
+                                                    <!-- <div class="address">
+                                                        <span class="input_text clear">
+                                                            <input id="postcode" type="text" readonly="readonly" class="lc_d0 tc_3">
+                                                        </span>
+                                                        <button type="button" onclick="daumPostcode('daumPostCodeWrap','addrScrollTop','')" class="btn_find fix tc_3">주소찾기</button>
+                                                        <div>
+                                                            <span class="input_text clear">
+                                                                <input id="roadAddress" type="text" value="" readonly="readonly" class="lc_d0 tc_3">
+                                                            </span>
+                                                            <span class="input_text clear">
+                                                                <input id="extraAddress" type="text" value="" placeholder="상세 주소를 입력해주세요." class="lc_d0 tc_3">
+                                                                <button type="button" data-type="inputreset" class="spr_before"><span class="s_out">입력 삭제</span></button>
+                                                            </span>
+                                                            <div id="daumPostCodeWrap" class="daumPostCodeWrap" style="display: none;">
+                                                                <img src="/static/img_new/m/btn_close_main_slide_dimm.jpg" id="btnFoldWrap" onclick="foldDaumPostcode('daumPostCodeWrap')" alt="접기 버튼" style="width: 24px; cursor: pointer; position: absolute; right: -1px; top: -24px; z-index: 1;">
+                                                                <div id="__daum__layer_2" style="position: relative; width: 100%; height: 500px; background-color: rgb(255, 255, 255); z-index: 0; overflow: hidden; min-width: 300px; margin: 0px; padding: 0px;">
+                                                                    <iframe frameborder="0" src="about:blank" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; border: 0px none; margin: 0px; padding: 0px; overflow: hidden; min-width: 300px;"></iframe>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!--  배송지 없을때 팝업
+                            <div class="pos_r">
+                                <div class="addr_none_wrap">
+                                    <strong class="addr_none_info">배송지 주소 정보가 없습니다. <br> 신규 배송지를 등록해주세요.</strong>
+                                </div>
+                                <p class="default_check3">
+                                    <input type="checkbox" id="chk_method22" class="sz-custom_check">
+                                    <label for="chk_method22" class="sz-custom_label"></label>
+                                    <label for="chk_method22" class="sz-custom_text">기본 배송지로 등록</label>
+                                </p>
+                            </div>
+                            // 배송지 없을때 팝업-->
+                            <div class="last_btnn_wrap">
+                                <p class="default_check3">
+                                    <input type="checkbox" id="chk_method2" class="sz-custom_check">
+                                    <label for="chk_method2" class="sz-custom_label"></label>
+                                    <label for="chk_method2" class="sz-custom_text">기본 배송지로 등록</label>
+                                </p>
+                                <button class="last_btn_white pop_close">취소</button>
+                                <button class="last_btn_black">저장</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// .팝업 배송지 변경 (배송지 있을 때) -->
+
+            <!-- .팝업 상품쿠폰 선택 -->
+            <div id="popup_prd_coupon" class="popup-wrap bg_wht">
+                <h2>상품쿠폰 선택</h2>
+                <!-- 상품쿠폰 선택 -->
+                <div class="paymt_wrap">
+                    <div class="paymt_coupon_applied">
+                        <div class="paymt_info">
+                            <div class="pos_r">
+                                <div class="paymt_product">
+                                    <div class="list">
+                                        <div class="just_left"><a href="" class="prd_img"><img src="../common/images/dummy/dummy12.jpg" alt=""></a></div>
+                                        <div class="just_right">
+                                            <dl class="prd_info">
+                                                <dt>엑스씨엑스메인</dt>
+                                                <dd>에드반스에드반스 프리라인프리라인 2020220</dd>
+                                                <dd><span>74,000</span>원</dd>
+                                                <dd>옵션 : GREEN BENDING TOOTHAPASTE 후드 [그레이] L/1개</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="applied">
+                                        <ul>
+                                            <li>
+                                                <span class="input_radio">
+                                                    <input type="radio" name="radio1" id="radio3_1">
+                                                    <label for="radio3_1" class="">적용안함</label>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="input_radio">
+                                                    <input type="radio" name="radio1" id="radio3_2">
+                                                    <label for="radio3_2" class="">- 2,000원 쿠폰할인 <em>(20.05.30 23:59 까지)</em></label>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="input_radio">
+                                                    <input type="radio" name="radio1" id="radio3_3">
+                                                    <label for="radio3_3" class="">- 1,500원 쿠폰할인 <em>(20.05.30 23:59 까지)</em></label>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="input_radio">
+                                                    <input type="radio" name="radio1" id="radio3_4">
+                                                    <label for="radio3_4" class="">- 1,000원 쿠폰할인 <em>(20.05.30 23:59 까지)</em></label>
+                                                </span>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="paymt_product">
+                                    <div class="list">
+                                        <div class="just_left"><a href="" class="prd_img"><img src="../common/images/dummy/dummy12.jpg" alt=""></a></div>
+                                        <div class="just_right">
+                                            <dl class="prd_info">
+                                                <dt>엑스씨엑스메인</dt>
+                                                <dd>에드반스에드반스 프리라인프리라인 2020220</dd>
+                                                <dd><span>74,000</span>원</dd>
+                                                <dd>옵션 : GREEN BENDING TOOTHAPASTE 후드 [그레이] L/1개</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="applied">
+                                        <ul>
+                                            <li>
+                                                <span class="input_radio">
+                                                    <input type="radio" name="radio1" id="radio4_1">
+                                                    <label for="radio4_1" class="">적용안함</label>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="input_radio">
+                                                    <input type="radio" name="radio1" id="radio4_2">
+                                                    <label for="radio4_2" class="">- 2,000원 쿠폰할인 <em>(20.05.30 23:59 까지)</em></label>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="input_radio">
+                                                    <input type="radio" name="radio1" id="radio4_3">
+                                                    <label for="radio4_3" class="">- 1,500원 쿠폰할인 <em>(20.05.30 23:59 까지)</em></label>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="input_radio">
+                                                    <input type="radio" name="radio1" id="radio4_4">
+                                                    <label for="radio4_4" class="">- 1,000원 쿠폰할인 <em>(20.05.30 23:59 까지)</em></label>
+                                                </span>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="paymt_product">
+                                    <div class="list">
+                                        <div class="just_left"><a href="" class="prd_img"><img src="../common/images/dummy/dummy12.jpg" alt=""></a></div>
+                                        <div class="just_right">
+                                            <dl class="prd_info">
+                                                <dt>엑스씨엑스메인</dt>
+                                                <dd>에드반스에드반스 프리라인프리라인 2020220</dd>
+                                                <dd><span>74,000</span>원</dd>
+                                                <dd>옵션 : GREEN BENDING TOOTHAPASTE 후드 [그레이] L/1개</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <div class="applied">
+                                        <ul>
+                                            <li>
+                                                <span class="input_radio">
+                                                    <input type="radio" name="radio1" id="radio5_1">
+                                                    <label for="radio5_1" class="">적용안함</label>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="input_radio">
+                                                    <input type="radio" name="radio1" id="radio5_2">
+                                                    <label for="radio5_2" class="">- 2,000원 쿠폰할인 <em>(20.05.30 23:59 까지)</em></label>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="input_radio">
+                                                    <input type="radio" name="radio1" id="radio5_3">
+                                                    <label for="radio5_3" class="">- 1,500원 쿠폰할인 <em>(20.05.30 23:59 까지)</em></label>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="input_radio">
+                                                    <input type="radio" name="radio1" id="radio5_4">
+                                                    <label for="radio5_4" class="">- 1,000원 쿠폰할인 <em>(20.05.30 23:59 까지)</em></label>
+                                                </span>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="last_btnn_wrap">
+                        <button class="last_btn_white pop_close">취소</button>
+                        <button class="last_btn_black">저장</button>
+                    </div>
+                </div>
+                <!--// 상품쿠폰 선택 끝 -->
+            </div>
+            <!--//팝업 상품쿠폰 선택 -->
+
+            <!-- .팝업 주문쿠폰 선택 -->
+            <div id="popup_ord_coupon" class="popup-wrap bg_wht">
+                <h2>주문쿠폰 선택</h2>
+                <!-- 주문쿠폰 선택 -->
+                <div class="paymt_wrap">
+                    <div class="paymt_order_applied">
+                        <div class="paymt_info">
+                            <div class="pos_r">
+                                <div class="applied_info">
+                                    <ul>
+                                        <li>주문쿠폰의 경우, 각 쿠폰별로 적용대상이 다를 수 있습니다</li>
+                                        <li>일부 상품은 사용조건에 따라 주문쿠폰 적용이 불가할 수있습니다.</li>
+                                    </ul>
+                                </div>
+                                <div class="applied">
+                                    <ul>
+                                        <li>
+                                            <span class="input_radio">
+                                                <input type="radio" name="radio1" id="radio04_1">
+                                                <label for="radio04_1" class="">적용안함</label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="input_radio">
+                                                <input type="radio" name="radio1" id="radio04_2">
+                                                <label for="radio04_2" class="">
+                                                    <dl>
+                                                        <dt>FLEX WEEK 05_30% <span>9,120원 할인</span></dt>
+                                                        <dd>최소결제 :50,000원 / 최대할인:10,000원</dd>
+                                                        <dd>20.05.31 23:59까지</dd>
+                                                    </dl>
+                                                </label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="input_radio">
+                                                <input type="radio" name="radio1" id="radio04_3">
+                                                <label for="radio04_3" class="">
+                                                    <dl>
+                                                        <dt>FLEX WEEK 05_30% <span>9,120원 할인</span></dt>
+                                                        <dd>최소결제 :50,000원 / 최대할인:10,000원</dd>
+                                                        <dd>20.05.31 23:59까지</dd>
+                                                    </dl>
+                                                </label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="input_radio">
+                                                <input type="radio" name="radio1" id="radio04_4" disabled="disabled">
+                                                <label for="radio04_4" >
+                                                    <dl>
+                                                        <dt>FLEX WEEK 05_30% <span>적용 가능 상품 없음</span></dt>
+                                                        <dd>최소결제 :50,000원 / 최대할인:10,000원</dd>
+                                                        <dd>20.05.31 23:59까지</dd>
+                                                    </dl>
+                                                </label>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="input_radio">
+                                                <input type="radio" name="radio1" id="radio04_5" disabled="disabled">
+                                                <label for="radio04_5" class="">
+                                                    <dl>
+                                                        <dt>FLEX WEEK 05_50% <span>적용 가능 상품 없음</span></dt>
+                                                        <dd>최소결제 :50,000원 / 최대할인:10,000원</dd>
+                                                        <dd>20.05.31 23:59까지</dd>
+                                                    </dl>
+                                                </label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="last_btnn_wrap">
+                        <button class="last_btn_white pop_close">취소</button>
+                        <button class="last_btn_black">저장</button>
+                    </div>
+                </div>
+                <!--// 주문쿠폰 선택 끝 -->
+            </div>
+            <!--//팝업 주문쿠폰 선택 -->
+
+            <!-- 팝업 카드사 혜택 S-->
+            <div id="pop_card_benefit" class="popup-wrap bg_wht">
+                <h2 class="page-title">이달의 카드사 혜택</h2>
+                <div class="paymt_wrap">
+                <div class="paymt_card_benefit">
+                    <strong>무이자 할부</strong>
+                    <ul class="card">
+                        <li>
+                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                            <dl>
+                                <dt>신한카드</dt>
+                                <dd>2~6개월/12개월</dd>
+                                <dd>5만원 이상 결제 시</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                            <dl>
+                                <dt>하나카드</dt>
+                                <dd>2~5개월</dd>
+                                <dd>5만원 이상 결제 시</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                            <dl>
+                                <dt>국민카드</dt>
+                                <dd>2~5개월</dd>
+                                <dd>5만원 이상 결제 시</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                            <dl>
+                                <dt>농협카드</dt>
+                                <dd>2~6개월</dd>
+                                <dd>5만원 이상 결제 시</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                            <dl>
+                                <dt>비씨카드</dt>
+                                <dd>2~6개월</dd>
+                                <dd>5만원 이상 결제 시</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                            <dl>
+                                <dt>삼성카드</dt>
+                                <dd>2~6개월</dd>
+                                <dd>5만원 이상 결제 시</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                            <dl>
+                                <dt>현대카드</dt>
+                                <dd>2~6개월</dd>
+                                <dd>5만원 이상 결제 시</dd>
+                        </li>
+                    </ul>
+                    <strong>부분 무이자 할부</strong>
+                    <ul class="card">
+                        <li>
+                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                            <dl>
+                                <dt>신한카드</dt>
+                                <dd>2~6개월/12개월</dd>
+                                <dd>5만원 이상 결제 시</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                            <dl>
+                                <dt>하나카드</dt>
+                                <dd>2~5개월</dd>
+                                <dd>5만원 이상 결제 시</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                            <dl>
+                                <dt>국민카드</dt>
+                                <dd>2~5개월</dd>
+                                <dd>5만원 이상 결제 시</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                            <dl>
+                                <dt>농협카드</dt>
+                                <dd>2~6개월</dd>
+                                <dd>5만원 이상 결제 시</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                            <dl>
+                                <dt>비씨카드</dt>
+                                <dd>2~6개월</dd>
+                                <dd>5만원 이상 결제 시</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                            <dl>
+                                <dt>삼성카드</dt>
+                                <dd>2~6개월</dd>
+                                <dd>5만원 이상 결제 시</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                            <dl>
+                                <dt>현대카드</dt>
+                                <dd>2~6개월</dd>
+                                <dd>5만원 이상 결제 시</dd>
+                            </dl>
+                        </li>
+                    </ul>
+
+                    <div class="card_benefit_info br_0">
+                        <p><span>유의사항</span></p>
+                        <ul>
+                            <li>공공기관 및 오프라인 제외</li>
+                            <li>법인/개인 사업자 기업 카드/선불/하이브리드/은행 계열 카드 제외</li>
+                            <li>결제창에 '무'표시가 되어 있어도 제외 카드는 무이자 할부 미적용</li>
+                            <li>직가맹점, 상점 부담 무이자 가맹점, 특별 제휴 가맹점, 전용 가맹점 제외</li>
+                            <li>무이자건은 포인트/마일리지/할인 서비스 등 다른 혜택과 중복 미적용</li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기버튼</span></button>
+              </div>
+            </div>
+            <!--// 팝업 카드사 혜택 E -->
+
+            <!-- 팝업 결제정보 -->
+            <div id="pop_paymt_guide" class="popup-wrap bg_wht">
+                <div>
+                    <h2 class="page-title">결제 정보 안내</h2>
+                </div>
+                <div class="paymt_guide">
+                    <dl>
+                        <dt>힙합퍼의 결제 서비스를 이행하기 위해 개인정보를 제3자에게 제공하는 경우는 다음과 같습니다.</dt>
+                        <dd>
+                            <ul>
+                                <li>제공받는자 : (주)NHN한국사이버결제</li>
+                                <li>목적 : 신용카드 결제, 계좌이체 결제, 가상계좌결제</li>
+                                <li>제공정보 : 거래정보</li>
+                            </ul>
+                            <ul>
+                                <li>제공받는자 : SAMSUNG PAY</li>
+                                <li>목적 : 신용카드 결제</li>
+                                <li>제공정보 : 거래정보</li>
+                            </ul>
+                            <ul>
+                                <li>제공받는자 : (주)엔에이치엔페이코</li>
+                                <li>목적 : PAYCO 결제</li>
+                                <li>제공정보 : 거래정보</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>힙합퍼의 결제 수단 별 사용 안내는 다음과 같습니다.</dt>
+                        <dd>
+                            <ul>
+                                <li>무통장 입금 주문건 3일 이내 미입금 시, 자동 취소처리가 진행됩니다.</li>
+                                <li>신용카드 결제 시 화면 우측 '주문 및 결제' 버튼을 클릭하시면 신용카드 결제 창이 나타납니다. 신용카드 결제 창을 통해 입력되는 고객님의 카드 정보는 128bit로 안전하게 암호화되어 전송되며 승인 처리 후 카드 정보는 승인 성공/ 실패 여부에 상관없이 자동으로 폐기됩니다.</li>
+                                <li>신용카드 결제 신청 시 승인 진행에 다소 시간이 소요될 수 있으므로 '중지', '새로고침'을 누르지 마시고 결과 화면이 나타날때까지 기다려 주십시오.</li>
+                                <li>신용카드/ 실시간 이체는 결제 후, 무통장입금은 입금확인 후 배송이 이루어집니다.</li>
+                                <li>국내 모든 카드 사용이 가능하며 해외에서 발행된 카드는 이용하실 수 없습니다.</li>
+                                <li>PAYCO간편 결제는 온/오프라인 쇼핑은 물론 송금, 멤버십 적립까지 가능한 통합 서비스입니다.</li>
+                                <li>PAYCO간편 결제 시 휴대폰과 카드 명의자가 동일해야 결제 가능하며, 결제 금액 제한은 없습니다.(지원 카드 : 모든 국내 신용/체크카드)</li>
+                                <li>HIPHOPER는 구매 안전 서비스로 전자 보증 서비스에 가입되어 있습니다.</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <p>이용자는 개인정보 수집 및 이용 동의를 거부할 수 있습니다.단, 동의를 거부 하는 경우 서비스 결제가 정상적으로 완료될 수 없음을 알려 드립니다.</p>
+                    <span class="txt">※ 개인정보의 처리와 관련된 사항은 개인정보처리방침에 따릅니다.</span>
+                </div>
+                <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기버튼</span></button>
+            </div>
+            <!--// 팝업 결제정보 -->
+        </div>
+
+        <script src="../common/scripts/main.js?v=1.3.7"></script>
+        <script>
+            (function(){
+
+                function toggleAcco(ele, content) {
+                    $(ele).on('click touch', function () {
+                        $(this).toggleClass('active');
+                        $(this).siblings(content).toggle();
+                    });
+                }
+                toggleAcco('.article_title', '.article_content');
+
+               //무통장입금 선택 시 환불계좌 정보 추가
+                $('.input_radio').change(function() {
+                    $('.article_content .pay_back').remove();
+                    $('.input_radio #radio1_2:checked').parent().parent().append('<div class="pay_back"><div class="title">환불계좌정보</div><div class="content"><div class="mb10"><select class="sz-select_sl"><option value="입금 은행을 선택해주세요.">입금 은행을 선택해주세요.</option><option value="국민">국민</option><option value="농협">농협</option><option value="신한">신한</option></select><ul class="sz-select_list"><li class="selected">입금 은행을 선택해주세요.</li><li><ul class="sz-select_sub"><li>국민</li><li>농협</li><li>신한</li></ul></li></ul></div><div class="input_text_new input_wrap mb10"><input type="number" placeholder="계좌번호" class="text-input"></div><div class="name_check"><div class="input_text_new input_wrap mb10">');
+                });
+
+                $('.border_tab-list li').each(function(i){
+                    $(this).click(function(){
+                        $(this).addClass('active').siblings().removeClass('active');
+                        $('.border_tab-cont > div').eq(i).addClass('active').siblings().removeClass('active');
+                        return false;
+                    });
+                });
+
+            })(jQuery);
+
+            $(window).on({
+
+                keyup:function(e){
+                    var $this = $(e.target);
+                    if( $this.is('input[data-type=countlength]') ){//textarea 글자수 세기
+                        var max = $this.attr('maxlength')*1,
+                            count = $this.val().length;
+                        $this.closest('div').find('[data-type=showlength]').text(count);
+                    }
+                    if( $this.is('[type=number][maxlength]') ){//number maxlength 제한
+                        numberMaxlength($this[0]);
+                    }
+                    if($this.is('textarea[data-type="autoheight"]')){
+                        autolineFn($this)
+                    }
+                }
+            })
+
+        </script>
+    </body>
+</html>
