@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+* {margin:0; padding:0;}
+body {text-align:center;}
+
+h1 {
+	font-size:24px;
+	margin:20px 0;
+}
+svg {
+	width:600px;
+	height:200px;
+	background-image:url(../img/line2.png),url(../img/line1.png);
+	background-color:#f2f2f2;
+	margin-bottom:20px;
+}
+
+.r1 {
+	fill:pink;
+	stroke:#000;
+	stroke-width:10px;
+	stroke-opacity:.5;
+}
+.r2 {
+	fill:skyblue;
+	stroke:#000;
+	stroke-width:2px;
+}
+
+/* 실습1 */
+.svg2 {height:500px;}
+
+.b1 {
+	fill:#000;
+	fill-opacity:.5;
+}
+.b2 {
+	fill:#f48642;
+}
+.b3 {
+	stroke:#fff;
+	stroke-width:2px;
+	stroke-opacity:.7;
+	fill:transparent;
+}
+.b4 {
+	fill:#fff;
+}
+.color2 {fill:#16b786;}
+.color3 {fill:#346ad0;}
+
+circle {
+	stroke:#000;
+	stroke-width:5px;
+}
+.c1 {fill:pink;}
+.c2 {fill:skyblue;}
+.c3 {fill:gold;}
+
+
+
+
+
+

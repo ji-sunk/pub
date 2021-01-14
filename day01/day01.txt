@@ -1,0 +1,83 @@
+조우정 강사 - 010 7142 9518
+
+http://naver.me/Fvn5kLxx
+0112
+
+[브라켓 확장기능관리자]
+- emmet : 자동완성기능
+- open in browser(2015) : 크롬으로 바로 열기
+- indent guides : 들여쓰기 확인
+  보기 > indent guides 체크
+
+비트맵 / 벡터
+
+[svg]
+- 2차원 백터 그래픽을 표현하기 위한 xml 기반의 파일 형식의 이미지
+- xml 기반이기 때문에, 수학계산이 필요할 수 있으며, 이미지가 복잡할수록 로딩 시간이 오래 걸릴 수 있다.
+- 용량이 png나 gif보다 작기때문에, 많은 웹사이트에서 사용할 수 있다.
+- 파워포인트 2019버전 이상에서 svg를 편집할 수 있다.
+- svg는 xml로 그래픽 드로잉, 캔버스와 webGL은 자바스크립트로 그리는 것
+- 백터이미지기 때문에 확대, 축소가 용이
+- w3c에서 제정한 오픈 기술
+- ie9이상에서 지원이 가능
+- 인쇄용도로는 적합하지 않다. 그래프, 지도 등에 많이 사용
+
+html4
+xhtml  = xml + html
+html5
+
+다운 사이트 : https://www.flaticon.com/
+지원 사이트 확인 : https://caniuse.com/?search=svg
+
+예제 : 
+https://sketchbook.kr/
+https://cooksvanilla.com/
+https://aainterior.com.ua/
+https://www.altruus.com/
+https://www.wokine.com/
+https://www.drjart.com/ko/brand/story
+https://www.flattopwines.com/
+
+[캔버스]
+- 캔버스 요소는 html5의 일부로서 2차원 모양의 비트맵 그림으로 스크립트 작성이 가능하고, 동적으로 표현이 가능하다.
+- 빠른 그래픽 표현이 가능하지만, 비트맵 이미지기 때문에 확대축소등의 유연성이 떨어진다.
+- html 코드에 canvas 영역을 지정하고 자유롭게 그림을 그릴 수 있다.
+- 한번 표시된 후 그래픽이 브라우저에 전달된 후에는 정보가 지워지기 때문에 다시한번 작업해야하는 부분이 있을 수 있다.
+- png나 jpg로 이미지를 저장할 수 있다.
+
+https://www.patagonia.com/regenerative-organic/
+http://design.samsung.com/kr/contents/galaxy_watch/
+https://supercrowds.co/
+https://www.marpple.com/kr/product/detail?bp_id=4073
+
+[webGL]
+- html5 canvas요소와 자바스크립트를 통해서 플로그린 없이 3D긴응을 표현할 수 있는 이미지
+- ie11이상에서만 지원이 가능
+
+http://www.defendreputation.sg/
+https://www.dash.com.hk/
+http://pengtai.co.kr/
+http://www.stylenovels.com/en/
+
+[rect - 사각형]
+width : 사각형의 가로 사이즈
+height : 사각형의 세로 사이즈
+x : svg 영역의 좌측 상단부터 x축 거리
+y : svg 영역의 좌측 상단부터 y축 거리
+rx  : 라운드 사각형의 x방향의 반지름
+ry  : 라운드 사각형의 y방향의 반지름
+
+[style]
+fill      : 배경 컬러
+fill-opacity  : 배경 투명도
+stroke  : 테두리 컬러
+stroke-width  : 테두리 두께
+stroke-opacity  : 테두리 투명도
+
+
+
+
+
+
+
+
