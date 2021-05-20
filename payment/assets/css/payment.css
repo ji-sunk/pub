@@ -9,7 +9,7 @@ html {font-size: 14px;line-height: 22px;color: #555;}
 .input_checkbox input, .input_radio input, .input_radio_check input {position: absolute;left: 3px;top: 3px;opacity: 0;}
 .input_checkbox label:before, .input_radio label:before, .input_radio_check label:before {position: absolute; border: 1px solid #ddd; content: "";border-radius: 50%;}
 .input_radio label:after {display: none;position: absolute;left: 6px;top:49%;width: 11px;height: 11px;content: "";-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);-o-transform: translateY(-50%);transform: translateY(-50%);}
-.input_radio label::after, .list_tab:after, .slides .slick-dots .slick-active button {background-color: #333;}
+.input_radio label::after, .list_tab:after, .slides .slick-dots .slick-active button {background-color:#ff4e25}
 
 
 .mr5 {margin-right:5px}
@@ -18,7 +18,7 @@ html {font-size: 14px;line-height: 22px;color: #555;}
 .pdlr20 {padding-left:20px; padding-right:20px}
 .text_count {display:block; text-align:right; color:#ababab}
 .bg_gray {background-color: #e5e5e5}
-.sz-select_sl {display: none}
+.sz-select_sl {display:none}
 .sz-select_list {position: relative}
 .member-wrap .sz-select_list .selected {padding: 13px 10px 14px; border: 1px solid #e5e5e5;background: url(../images/icon/acco_arrow-icon.png) 89% center/13px 7px no-repeat;font-size: 16px;cursor: pointer}
 .member-wrap .sz-select_list .selected::after {content: '';display: block}
@@ -43,7 +43,7 @@ html {font-size: 14px;line-height: 22px;color: #555;}
 .input_radio input:checked+label:after {display:block;}
 .input_textarea textarea{padding:16px;border-style:solid;border-width:1px;}
 
-.sz-select_list .selected {padding: 13px 10px 14px;border: 1px solid #e5e5e5;background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/icon_arrow2_toggle.png) 95% center/12px 6px no-repeat;font-size: 14px;color:#ababab;cursor: pointer}
+/* .sz-select_list .selected {padding: 13px 10px 14px;border: 1px solid #e5e5e5;background: url(https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/icon_arrow2_toggle.png) 95% center/12px 6px no-repeat;font-size: 14px;color:#ababab;cursor: pointer} */
 .sz-select_list .selected::after {content: ''; display: block}
 .sz-select_list .selected.active {border:1px solid #333;}
 .sz-select_sub li {padding: 10px 20px}
@@ -75,28 +75,28 @@ html {font-size: 14px;line-height: 22px;color: #555;}
 .paymt_wrap .balloon:after {content:'';position: absolute;top: 50%;right: 100%;margin-top: -3px;border-width:3px;border-style: solid;border-color: transparent #4673c6 transparent transparent}
 .paymt_wrap .addr_modify {font-size:12px; color:#fff; background:#000; width:50px; text-align:center; height:30px; line-height:30px; position:absolute; top:25px; right:0;}
 /* .paymt_wrap .addr_user {margin:0 0 20px; } */
-.paymt_wrap .addr_user dt {font-size:13px; line-height:1; margin-bottom:7px; }
+/* .paymt_wrap .addr_user dt {font-size:13px; line-height:1; margin-bottom:7px; }
 .paymt_wrap .addr_user dt span:first-of-type {display:inline-block; margin-left:10px; position:relative; top:-2px; padding:3px 8px; border:1px solid #1b61e3; border-radius:20px; font-size:10px; color:#1b61e3; }
 .paymt_wrap .addr_user dt span:first-of-type.recent {color:#ababab; border-color:#ababab}
 .paymt_wrap .addr_user dd {font-size:13px; word-break:keep-all}
 .paymt_wrap .addr_user dd span {font-size:15px;}
 .paymt_wrap .addr_user dd:last-child {font-size:15px;}
 .paymt_wrap .paymt_info._addr .addr_user {width:80%}
-.paymt_wrap .paymt_addr_modify {overflow-y:scroll; height:calc(100vh - 60px)}
+.paymt_wrap .paymt_addr_modify {height:calc(100vh - 60px)}
 .paymt_wrap .paymt_addr_modify ul {margin:0 20px; padding:0 0 175px}
 .paymt_wrap .paymt_addr_modify li {padding:25px 0; position:relative;}
 .paymt_wrap .paymt_addr_modify li + li {border-top:1px solid #f0f0f0;}
-.paymt_wrap .paymt_addr_modify li label {line-height:1.3; padding:0 0 0 40px; height:auto}
-.paymt_wrap .paymt_addr_modify li label dl {width:200px;}
-.paymt_wrap .paymt_addr_modify li label dl > * {margin:0 0 10px;}
+.paymt_wrap .paymt_addr_modify li label {line-height:1.3; padding:0 0 0 40px; height:auto} */
+/* .paymt_wrap .paymt_addr_modify li label dl {width:200px;} */
+/* .paymt_wrap .paymt_addr_modify li label dl > * {margin:0 0 10px;}
 .paymt_wrap .paymt_addr_modify li label dl dd:last-child {margin:0;}
 .paymt_wrap .paymt_addr_modify li label:before {top: 50%;transform: translateY(-50%);}
-.paymt_wrap .paymt_addr_modify li label:after {top:50%;}
+.paymt_wrap .paymt_addr_modify li label:after {top:50%;} */
 
 
 /* 배송지 변경 팝업 */
-.paymt_wrap .paymt_addr_modify .b_modify {position:absolute; top:20px; right:0;} /* 201019 */
-.paymt_wrap .paymt_addr_modify .b_modify button {background:none;position:relative; padding:0 8px; color:#ababaa; font-size:12px}
+.paymt_wrap .paymt_addr_modify .b_modify {position:absolute; top:20px; right:0;}
+.paymt_wrap .paymt_addr_modify .b_modify button {background:none;position:relative; padding:0 8px; color:#ababab; font-size:12px}
 .paymt_wrap .paymt_addr_modify .b_modify button:before {border-left: 1px solid #e5e5e5;display: block;content: '';height:11px;position: absolute;top:5px;left:-2px;}
 .paymt_wrap .paymt_addr_modify .b_modify button:first-child:before {display:none}
 .paymt_wrap .paymt_info .a_info {position:absolute; top:0; right:0; display:block; font-size:11px; color:#888; text-decoration:underline !important}
@@ -160,18 +160,35 @@ html {font-size: 14px;line-height: 22px;color: #555;}
 .paymt_wrap .addr_new_wrap {min-height:calc(100vh - 290px);padding:25px 20px;}
 .paymt_wrap .addr_new_wrap table th {text-align: left;font-size: 13px;color: #333;vertical-align: middle;}
 .paymt_wrap .text-input:focus {border:1px solid #333 !important;}
-.paymt_wrap .input_text_new2 + button {width:27%; float:left; border:1px solid #555; color:#555; font-size:12px; text-align:center; height:45px; background:#fff;}
+.phone-first {
+  width: calc(30% - 5px);
+  margin-right: 5px;
+}
+
+.border_tab-list li {float: left;text-align: center}
+.border_tab-list.search_active { position: fixed; top: 0; left: 0; width: 100%}
+.border_tab-list.white .bt-btn { background-color: #fff; border-bottom: 1px solid #d0d0d0}
+.border_tab-list.white .bt-btn.big-font {padding: 19px 0 21px; font-size: 14px}
+.border_tab-list.white .active .bt-btn {color: #ff4e25; border-bottom: 2px solid #ff4e25}
+.border_tab-list.white .active .bt-btn.big-font {padding: 19px 0 20px;font-size: 14px}
+.border_tab-list .active .bt-btn {padding: 20px 0 19px; color: #fff;border-bottom: 2px solid #ff4e25}
+.border_tab-list .active .bt-btn.big-font {padding: 18px 0 19px; font-size: 16px}
+.border_tab-list .bt-btn { display: block; width: 100%; line-height: 1; padding: 20px 0; background-color: #000; border-bottom: 1px solid #2a2a2a;color: #888;font-size: 14px}
+.border_tab-list .bt-btn.big-font {padding: 19px 0;font-size: 16px}
+.top_box {height: 84px;padding: 10px 15px 9px;background-color: #121212;border-bottom: 1px solid #2a2a2a;overflow: hidden}
+.top_box .float_search-box {width: calc(100% - 48px)}
+
+/* .paymt_wrap .input_text_new2 + button {width:27%; float:left; border:1px solid #555; color:#555; font-size:12px; text-align:center; height:45px; background:#fff;}
 .paymt_wrap .input_text_new2 {width:70%; float:left; margin:0 3% 10px 0;}
 .paymt_wrap .last_btnn_wrap {z-index:8;background:#fff; border-top:1px solid #d0d0d0;padding:12px 20px 25px;position:fixed; bottom:0; overflow:hidden; width:100vw; margin:15px auto 0;font-size:unset;    box-shadow: 0px -5px 15px 0px rgba(0,0,0,0.05);}
 .paymt_wrap .last_btn_white {z-index:10;display:block; float:left; width:49%;border:1px solid #000; background:#fff; font-size:17px; color:#555; line-height:17px; height:45px;}
-.paymt_wrap .last_btn_black {display:block; float:right; width:49%;border:1px solid #000; background:#000; font-size:17px; color:#fff !important; line-height:17px; height:45px;}
+.paymt_wrap .last_btn_black {display:block; float:right; width:49%;border:1px solid #000; background:#000; font-size:17px; color:#fff !important; line-height:17px; height:45px;} */
 
 
 /* 상품쿠폰 선택 */
 .popup-wrap h2{font-size:16px; font-weight:700; text-align:left; padding:17px; border-bottom:1px solid #d0d0d0; color:#000}
 .popup-wrap .border_tab-cont > .paymt_wrap {display:none}
 .popup-wrap .border_tab-cont > .paymt_wrap.active {display:block}
-
 .paymt_wrap .paymt_coupon_applied {overflow-y:scroll; height:calc(100vh - 60px); padding:0 0 65px}
 .paymt_wrap .paymt_coupon_applied > .paymt_info:first-of-type:before {display:none}
 .paymt_wrap .paymt_coupon_applied .paymt_product {border-bottom:7px solid #e5e5e5;}

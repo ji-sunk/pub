@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>힙합퍼 장바구니 추천상품</title>
+        <meta name="description">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <script src="../common/lib/plugin.js"></script>
+        <script src="../common/lib/common.js"></script>
+        <script src="../common/lib/slick.min.js"></script>
+        <link rel="stylesheet" href="../common/css/common.css">
+        <link rel="stylesheet" href="../common/css/cart.css">
+    </head>
+    <body>
+        <div id="wrap" class="wd720">
+            <div id="header">
+                <div class="headerWrap">
+                    <div class="box_left back">
+                        <a href="#" class="btn_back"><span class="blind">뒤로가기</span></a>
+                        <p class="header_title">
+                            쇼핑백<span class="number">(99+)</span>
+                        </p>
+                    </div>
+                    <div class="box_right">
+                        <ul class="btn_area">
+                            <li><a href="#"><i class="ico home"><span class="blind">메인 바로가기</span></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="container">
+                <form>
+                    <div class="cart_pro-wrap">
+                        <div class="pl_fc-box justify_box">
+                            <div class="just_left">
+                                <!-- <div class="pl_mo-fc">
+                                    <span>
+                                        <input type="checkbox" id="couponSale" class="sz-custom_check all-check">
+                                        <label for="couponSale" class="sz-custom_label"></label>
+                                        <label for="couponSale" class="sz-custom_text">전체선택</label>
+                                    </span>
+                                </div> -->
+                                <div class="pl_mo-fc">
+                                    <span>
+                                        <input type="checkbox" id="couponSale" class="sz-custom_check all-check">
+                                        <label for="couponSale" class="sz-custom_label"></label>
+                                        <img src="https://zpl.io/aR6xv0v" alt="">
+                                        <label for="couponSale" class="sz-custom_text">전체선택 (<span>10</span>)</label>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="pl_fc-border just_right">
+                                <!-- <button type="button" class="plf-text-btn pop_open" data-popup="productDeletePop">선택삭제</button>
+                                <button type="button" class="plf-text-btn pop_open" data-popup="productErrorPop">품절삭제</button> -->
+                                <button type="button" class="plf-text-btn">선택삭제</button>
+                                <button type="button" class="plf-text-btn">품절삭제</button>
+                            </div>
+                        </div>
+
+                        <div class="cart-section">
+                            <!-- .cart_wrap 시작 -->
+                            <div class="cart_wrap">
+                                <div class="cart-box">
+                                    <div class="cart-btm">
+                                        <div class="justify_box">
+                                            <div class="just_left">
+                                                <p class="cart-title-check">
+                                                    <input type="checkbox" id="cart01" class="sz-custom_check">
+                                                    <label for="cart01" class="sz-custom_label"></label>
+                                                    <label for="cart01" class="sz-custom_text">엑스씨엑스메인</label>
+                                                </p>
+                                            </div>
+                                            <div class="just_right">
+                                                <button type="button" class="close-btn"></button>
+                                            </div>
+                                        </div>
+
+                                        <div class="cart_info-box justify_box">
+                                            <div class="just_left">
+                                                    <img src="../common/images/dummy/dummy12.jpg" alt="">
+                                                </div>
+                                            <div class="just_right">
+                                                <p class="cart-title">
+                                                    <a href="#">
+                                                        에드반스에드반스에드반스에드반스에드반스에드반스에드반스에드반스에드반스에드반스에드반스에드반스
+                                                    </a>
+                                                </p>
+                                                <span class="cart-price"><b class="flex-text">52,000</b>원</span>
+                                                <p class="cart-option justify_box">
+                                                    <span class="just_right">옵션 : </span>
+                                                    <span class="just_right">GREEN BENDING TOOTHPASTE후드[그레이] L / GREEN BENDINGDESFWEWEFWEDESFWEWEFWE</span>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="cart_fc-box">
+                                            <div class="justify_box">
+                                                <div class="just_left">
+                                                    <button type="button" class="gray_border-btn">옵션/수량 변경</button>
+                                                </div>
+                                            </div>
+                                            <div class="cart_option-cor">
+                                                <div>
+                                                    <div class="pf_fc_item-box">
+                                                        <div class="pf_fc justify_box">
+                                                            <div class="product-select">
+                                                                <select class="sz-select_sl">
+                                                                    <option value="블랙">블랙</option>
+                                                                    <option value="화이트">화이트</option>
+                                                                </select>
+                                                                <ul class="sz-select_list">
+                                                                    <li class="selected">컬러</li>
+                                                                    <li>
+                                                                        <ul class="sz-select_sub">
+                                                                            <li>
+                                                                                <div class="justify_box">
+                                                                                    <label for="cartOption01" class="just_left">
+                                                                                        <span class="product_name">블랙</span>
+                                                                                    </label>
+                                                                                    <p class="just_right">
+                                                                                        <input type="radio" name="size"
+                                                                                            id="cartOption01" class="sz-custom_check">
+                                                                                        <label for="cartOption01"
+                                                                                            class="sz-custom_label"></label>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="justify_box">
+                                                                                    <label for="cartOption02" class="just_left">
+                                                                                        <span class="product_name">화이트</span>
+                                                                                        <span class="product_pay">+2000원</span>
+                                                                                    </label>
+                                                                                    <p class="just_right">
+                                                                                        <input type="radio" name="size"
+                                                                                            id="cartOption02" class="sz-custom_check">
+                                                                                        <label for="cartOption02"
+                                                                                            class="sz-custom_label"></label>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="product-select">
+                                                                <select class="sz-select_sl">
+                                                                    <option value="S">S</option>
+                                                                    <option value="M">M</option>
+                                                                    <option value="L">L</option>
+                                                                </select>
+                                                                <ul class="sz-select_list">
+                                                                    <li class="selected">사이즈</li>
+                                                                    <li>
+                                                                        <ul class="sz-select_sub">
+                                                                            <li>
+                                                                                <div class="justify_box">
+                                                                                    <label for="cartOption05" class="just_left">
+                                                                                        <span class="product_name">S</span>
+                                                                                    </label>
+                                                                                    <p class="just_right">
+                                                                                        <input type="radio" name="size"
+                                                                                            id="cartOption05" class="sz-custom_check">
+                                                                                        <label for="cartOption05"
+                                                                                            class="sz-custom_label"></label>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="justify_box">
+                                                                                    <label for="cartOption06" class="just_left">
+                                                                                        <span class="product_name">M</span>
+                                                                                        <span class="product_pay">+2000원</span>
+                                                                                    </label>
+                                                                                    <p class="just_right">
+                                                                                        <input type="radio" name="size"
+                                                                                            id="cartOption06" class="sz-custom_check">
+                                                                                        <label for="cartOption06"
+                                                                                            class="sz-custom_label"></label>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="justify_box">
+                                                                                    <label for="cartOption07" class="just_left">
+                                                                                        <span class="product_name">L</span>
+                                                                                        <span class="product_pay">+2000원</span>
+                                                                                    </label>
+                                                                                    <p class="just_right">
+                                                                                        <input type="radio" name="size"
+                                                                                            id="cartOption07" class="sz-custom_check">
+                                                                                        <label for="cartOption07"
+                                                                                            class="sz-custom_label"></label>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="pf_fc pf_option justify_box">
+                                                            <span class="pro_pay just_left">42cm (+2000원)</span>
+                                                            <div class="just_right">
+                                                                <div class="count-input-box f-right">
+                                                                    <button type="button" class="count-btn minus"></button>
+                                                                    <input type="text" class="count-input" value="1">
+                                                                    <button type="button" class="count-btn plus"></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="cart_option-btn-box">
+                                                    <button type="button" class="cart_option-btn gray">취소</button>
+                                                    <button type="button" class="cart_option-btn black pop_open" data-popup="productOptionCorrectPop">변경</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .cart_wrap 끝 -->
+
+                            <!-- .cart_wrap 시작 -->
+                            <div class="cart_wrap">
+                                <div class="cart-box">
+                                    <div class="cart-btm">
+                                        <div class="justify_box">
+                                            <div class="just_left">
+                                                <p class="cart-title-check">
+                                                    <input type="checkbox" id="cart03" class="sz-custom_check">
+                                                    <label for="cart03" class="sz-custom_label"></label>
+                                                    <label for="cart03" class="sz-custom_text">엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인</label>
+                                                </p>
+                                            </div>
+
+                                            <div class="just_right">
+                                                <button type="button" class="close-btn"></button>
+                                            </div>
+                                        </div>
+
+                                        <div class="cart_info-box justify_box">
+                                            <div class="just_left">
+                                                <p class="cart-title">
+                                                    <a href="#">
+                                                        에드반스에드반스에드반스에드에드반스에드반스 freeline no.26에드반스에드반스에드반스에드에드반스
+                                                    </a>
+                                                </p>
+                                                <span class="cart-price"><b class="flex-text">52,000</b>원</span>
+                                                <p class="cart-option justify_box">
+                                                    <span class="just_left">옵션 : </span>
+                                                    <span class="just_right">black / m / 1개</span>
+                                                </p>
+                                            </div>
+                                            <div class="just_right">
+                                                <img src="../common/images/dummy/dummy13.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="cart_fc-box">
+                                            <div class="justify_box">
+                                                <div class="just_left">
+                                                    <button type="button" class="gray_border-btn">옵션/수량 변경</button>
+                                                </div>
+                                            </div>
+                                            <div class="cart_option-cor">
+                                                <div>
+                                                    <div class="pf_fc_item-box">
+                                                        <div class="pf_fc justify_box">
+                                                            <div class="product-select">
+                                                                <select class="sz-select_sl">
+                                                                    <option value="블랙">블랙</option>
+                                                                    <option value="화이트">화이트</option>
+                                                                </select>
+                                                                <ul class="sz-select_list">
+                                                                    <li class="selected">컬러</li>
+                                                                    <li>
+                                                                        <ul class="sz-select_sub">
+                                                                            <li>
+                                                                                <div class="justify_box">
+                                                                                    <label for="cartOption01" class="just_left">
+                                                                                        <span class="product_name">블랙</span>
+                                                                                    </label>
+                                                                                    <p class="just_right">
+                                                                                        <input type="radio" name="size"
+                                                                                            id="cartOption01" class="sz-custom_check">
+                                                                                        <label for="cartOption01"
+                                                                                            class="sz-custom_label"></label>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="justify_box">
+                                                                                    <label for="cartOption02" class="just_left">
+                                                                                        <span class="product_name">화이트</span>
+                                                                                        <span class="product_pay">+2000원</span>
+                                                                                    </label>
+                                                                                    <p class="just_right">
+                                                                                        <input type="radio" name="size" id="cartOption02" class="sz-custom_check">
+                                                                                        <label for="cartOption02" class="sz-custom_label"></label>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="product-select">
+                                                                <select class="sz-select_sl">
+                                                                    <option value="S">S</option>
+                                                                    <option value="M">M</option>
+                                                                    <option value="L">L</option>
+                                                                </select>
+                                                                <ul class="sz-select_list">
+                                                                    <li class="selected">사이즈</li>
+                                                                    <li>
+                                                                        <ul class="sz-select_sub">
+                                                                            <li>
+                                                                                <div class="justify_box">
+                                                                                    <label for="cartOption05" class="just_left">
+                                                                                        <span class="product_name">S</span>
+                                                                                    </label>
+                                                                                    <p class="just_right">
+                                                                                        <input type="radio" name="size"
+                                                                                            id="cartOption05" class="sz-custom_check">
+                                                                                        <label for="cartOption05"
+                                                                                            class="sz-custom_label"></label>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="justify_box">
+                                                                                    <label for="cartOption06" class="just_left">
+                                                                                        <span class="product_name">M</span>
+                                                                                        <span class="product_pay">+2000원</span>
+                                                                                    </label>
+                                                                                    <p class="just_right">
+                                                                                        <input type="radio" name="size"
+                                                                                            id="cartOption06" class="sz-custom_check">
+                                                                                        <label for="cartOption06"
+                                                                                            class="sz-custom_label"></label>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="justify_box">
+                                                                                    <label for="cartOption07" class="just_left">
+                                                                                        <span class="product_name">L</span>
+                                                                                        <span class="product_pay">+2000원</span>
+                                                                                    </label>
+                                                                                    <p class="just_right">
+                                                                                        <input type="radio" name="size"
+                                                                                            id="cartOption07" class="sz-custom_check">
+                                                                                        <label for="cartOption07"
+                                                                                            class="sz-custom_label"></label>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="pf_fc pf_option justify_box">
+                                                            <span class="pro_pay just_left">42cm (+2000원)</span>
+                                                            <div class="just_right">
+                                                                <div class="count-input-box f-right">
+                                                                    <button type="button" class="count-btn minus"></button>
+                                                                    <input type="text" class="count-input" value="1">
+                                                                    <button type="button" class="count-btn plus"></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="cart_option-btn-box">
+                                                    <button type="button" class="cart_option-btn gray">취소</button>
+                                                    <button type="button" class="cart_option-btn black pop_open" data-popup="productOptionCorrectPop">변경</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cart-btm">
+                                        <div class="justify_box">
+                                            <div class="just_left">
+                                                <p class="cart-title-check">
+                                                    <input type="checkbox" id="cart04" class="sz-custom_check">
+                                                    <label for="cart04" class="sz-custom_label"></label>
+                                                    <label for="cart04" class="sz-custom_text">엑스씨엑스메인</label>
+                                                </p>
+                                            </div>
+
+                                            <div class="just_right">
+                                                <button type="button" class="close-btn"></button>
+                                            </div>
+                                        </div>
+
+                                        <div class="cart_info-box justify_box">
+                                            <div class="just_left">
+                                                <p class="cart-title">
+                                                    <a href="#">
+                                                        에드반스에드반스에드반스에드에드반스에드반
+                                                    </a>
+                                                </p>
+                                                <span class="cart-price"><b class="flex-text">52,000</b>원</span>
+                                                <p class="cart-option justify_box">
+                                                    <span class="just_left">옵션 : </span>
+                                                    <span class="just_right">GREEN BENDING TOOTHPASTE후드[그레이] L / GREEN
+                                                        BENDINGDESFWEWEFWE</span>
+                                                </p>
+                                            </div>
+                                            <div class="just_right">
+                                                <img src="../common/images/dummy/dummy13.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="cart_fc-box">
+                                            <div class="justify_box">
+                                                <div class="just_left">
+                                                    <button type="button" class="gray_border-btn">옵션/수량 변경</button>
+                                                </div>
+                                            </div>
+                                            <div class="cart_option-cor">
+                                                <div>
+                                                    <div class="pf_fc_item-box">
+                                                        <div class="pf_fc justify_box">
+                                                            <div class="product-select">
+                                                                <select class="sz-select_sl">
+                                                                    <option value="블랙">블랙</option>
+                                                                    <option value="화이트">화이트</option>
+                                                                </select>
+                                                                <ul class="sz-select_list">
+                                                                    <li class="selected">컬러</li>
+                                                                    <li>
+                                                                        <ul class="sz-select_sub">
+                                                                            <li>
+                                                                                <div class="justify_box">
+                                                                                    <label for="cartOption03" class="just_left">
+                                                                                        <span class="product_name">블랙</span>
+                                                                                    </label>
+                                                                                    <p class="just_right">
+                                                                                        <input type="radio" name="size"
+                                                                                            id="cartOption03" class="sz-custom_check">
+                                                                                        <label for="cartOption03"
+                                                                                            class="sz-custom_label"></label>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="justify_box">
+                                                                                    <label for="cartOption04" class="just_left">
+                                                                                        <span class="product_name">화이트</span>
+                                                                                        <span class="product_pay">+2000원</span>
+                                                                                    </label>
+                                                                                    <p class="just_right">
+                                                                                        <input type="radio" name="size"
+                                                                                            id="cartOption04" class="sz-custom_check">
+                                                                                        <label for="cartOption04"
+                                                                                            class="sz-custom_label"></label>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="product-select">
+                                                                <select class="sz-select_sl">
+                                                                    <option value="40cm">40cm</option>
+                                                                    <option
+                                                                        value="SPACE LINE 에드반스 프리라인 FREESIZE SPACE LINE 에드반스 프리라인 FREESIZE">
+                                                                        SPACE LINE 에드반스 프리라인 FREESIZE SPACE LINE 에드반스 프리라인 FREESIZE
+                                                                    </option>
+                                                                </select>
+                                                                <ul class="sz-select_list">
+                                                                    <li class="selected">사이즈</li>
+                                                                    <li>
+                                                                        <ul class="sz-select_sub">
+                                                                            <li>
+                                                                                <div class="justify_box">
+                                                                                    <label for="productItem01" class="just_left">
+                                                                                        <span class="product_name">40cm</span>
+                                                                                    </label>
+                                                                                    <p class="just_right">
+                                                                                        <input type="radio" name="size"
+                                                                                            id="productItem01" class="sz-custom_check">
+                                                                                        <label for="productItem01"
+                                                                                            class="sz-custom_label"></label>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="justify_box">
+                                                                                    <label for="productItem02" class="just_left">
+                                                                                        <span class="product_name">SPACE LINE 에드반스 프리라인
+                                                                                            FREESIZE SPACE LINE 에드반스 프리라인
+                                                                                            FREESIZE</span>
+                                                                                        <span class="product_pay">+2000원</span>
+                                                                                    </label>
+                                                                                    <p class="just_right">
+                                                                                        <input type="radio" name="size"
+                                                                                            id="productItem02" class="sz-custom_check">
+                                                                                        <label for="productItem02"
+                                                                                            class="sz-custom_label"></label>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="pf_fc pf_option justify_box">
+                                                            <span class="pro_pay just_left">42cm (+2000원)</span>
+                                                            <div class="just_right">
+                                                                <div class="count-input-box f-right">
+                                                                    <button type="button" class="count-btn minus"></button>
+                                                                    <input type="text" class="count-input" value="1">
+                                                                    <button type="button" class="count-btn plus"></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="cart_option-btn-box">
+                                                    <button type="button" class="cart_option-btn gray">취소</button>
+                                                    <button type="button" class="cart_option-btn black pop_open" data-popup="productOptionCorrectPop">변경</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!-- .cart_wrap 끝 -->
+
+                            <!-- .cart_wrap 시작 -->
+                            <div class="cart_wrap">
+                                <div class="cart-box">
+                                    <div class="cart-top">
+                                        <div class="justify_box">
+                                            <p class="just_left">
+                                                <input type="checkbox" id="setSend03" class="sz-custom_check all-check">
+                                                <label for="setSend03" class="sz-custom_label"></label>
+                                                <label for="setSend03" class="sz-custom_text">묶음배송</label>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="cart-btm">
+                                        <div class="justify_box">
+                                            <div class="just_left">
+                                                <p class="cart-title-check">
+                                                    <input type="checkbox" id="cart05" class="sz-custom_check">
+                                                    <label for="cart05" class="sz-custom_label"></label>
+                                                    <label for="cart05" class="sz-custom_text">엑스씨엑스메인</label>
+                                                </p>
+                                            </div>
+
+                                            <div class="just_right">
+                                                <button type="button" class="close-btn"></button>
+                                            </div>
+                                        </div>
+
+                                        <div class="cart_info-box justify_box">
+                                            <div class="just_left">
+                                                <p class="cart-title">
+                                                    <a href="#">
+                                                        에드반스에드반스에드반스에드에드반스에드반스 freeline no.26에드반스에드반스에드반스에드에드반스
+                                                    </a>
+                                                </p>
+                                                <span class="cart-price"><b class="flex-text">52,000</b>원</span>
+                                                <p class="cart-option justify_box">
+                                                    <span class="just_left">옵션 : </span>
+                                                    <span class="just_right">black / m / 1개</span>
+                                                </p>
+                                            </div>
+                                            <div class="soldout just_right">
+
+                                                <img src="../common/images/dummy/dummy15.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="cart_fc-box">
+
+                                            <div class="cart_option-cor">
+                                                <div>
+                                                    <div class="pf_fc_item-box">
+                                                        <div class="pf_fc justify_box">
+                                                            <div class="product-select">
+                                                                <select class="sz-select_sl">
+                                                                    <option value="블랙">블랙</option>
+                                                                    <option value="화이트">화이트</option>
+                                                                </select>
+                                                                <ul class="sz-select_list">
+                                                                    <li class="selected">컬러</li>
+                                                                    <li>
+                                                                        <ul class="sz-select_sub">
+                                                                            <li>
+                                                                                <div class="justify_box">
+                                                                                    <label for="cartOption01" class="just_left">
+                                                                                        <span class="product_name">블랙</span>
+                                                                                    </label>
+                                                                                    <p class="just_right">
+                                                                                        <input type="radio" name="size"
+                                                                                            id="cartOption01" class="sz-custom_check">
+                                                                                        <label for="cartOption01"
+                                                                                            class="sz-custom_label"></label>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="justify_box">
+                                                                                    <label for="cartOption02" class="just_left">
+                                                                                        <span class="product_name">화이트</span>
+                                                                                        <span class="product_pay">+2000원</span>
+                                                                                    </label>
+                                                                                    <p class="just_right">
+                                                                                        <input type="radio" name="size"
+                                                                                            id="cartOption02" class="sz-custom_check">
+                                                                                        <label for="cartOption02"
+                                                                                            class="sz-custom_label"></label>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="product-select">
+                                                                <select class="sz-select_sl">
+                                                                    <option value="S">S</option>
+                                                                    <option value="M">M</option>
+                                                                    <option value="L">L</option>
+                                                                </select>
+                                                                <ul class="sz-select_list">
+                                                                    <li class="selected">사이즈</li>
+                                                                    <li>
+                                                                        <ul class="sz-select_sub">
+                                                                            <li>
+                                                                                <div class="justify_box">
+                                                                                    <label for="cartOption05" class="just_left">
+                                                                                        <span class="product_name">S</span>
+                                                                                    </label>
+                                                                                    <p class="just_right">
+                                                                                        <input type="radio" name="size"
+                                                                                            id="cartOption05" class="sz-custom_check">
+                                                                                        <label for="cartOption05"
+                                                                                            class="sz-custom_label"></label>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="justify_box">
+                                                                                    <label for="cartOption06" class="just_left">
+                                                                                        <span class="product_name">M</span>
+                                                                                        <span class="product_pay">+2000원</span>
+                                                                                    </label>
+                                                                                    <p class="just_right">
+                                                                                        <input type="radio" name="size"
+                                                                                            id="cartOption06" class="sz-custom_check">
+                                                                                        <label for="cartOption06"
+                                                                                            class="sz-custom_label"></label>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="justify_box">
+                                                                                    <label for="cartOption07" class="just_left">
+                                                                                        <span class="product_name">L</span>
+                                                                                        <span class="product_pay">+2000원</span>
+                                                                                    </label>
+                                                                                    <p class="just_right">
+                                                                                        <input type="radio" name="size"
+                                                                                            id="cartOption07" class="sz-custom_check">
+                                                                                        <label for="cartOption07"
+                                                                                            class="sz-custom_label"></label>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="pf_fc pf_option justify_box">
+                                                            <span class="pro_pay just_left">42cm (+2000원)</span>
+                                                            <div class="just_right">
+                                                                <div class="count-input-box f-right">
+                                                                    <button type="button" class="count-btn minus"></button>
+                                                                    <input type="text" class="count-input" value="1">
+                                                                    <button type="button" class="count-btn plus"></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="cart_option-btn-box">
+                                                    <button type="button" class="cart_option-btn gray">취소</button>
+                                                    <button type="button" class="cart_option-btn black pop_open" data-popup="productOptionCorrectPop">변경</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-btm">
+                                        <div class="justify_box">
+                                            <div class="just_left">
+                                                <p class="cart-title-check">
+                                                    <input type="checkbox" id="cart06" class="sz-custom_check">
+                                                    <label for="cart06" class="sz-custom_label"></label>
+                                                    <label for="cart06" class="sz-custom_text">엑스씨엑스메인</label>
+                                                </p>
+                                            </div>
+
+                                            <div class="just_right">
+                                                <button type="button" class="close-btn"></button>
+                                            </div>
+                                        </div>
+
+                                        <div class="cart_info-box justify_box">
+                                            <div class="just_left">
+                                                <p class="cart-title">
+                                                    <a href="#">
+                                                        에드반스에드반스에드반스에드에드반스에드반스 freeline no.26에드반스에드반스에드반스에드에드반스
+                                                    </a>
+                                                </p>
+                                                <span class="cart-price"><b class="flex-text">52,000</b>원</span>
+                                                <p class="cart-option justify_box">
+                                                    <span class="just_left">옵션 : </span>
+                                                    <span class="just_right">GREEN BENDING TOOTHPASTE후드[그레이] L / GREEN
+                                                        BENDINGDESFWEWEFWE</span>
+                                                </p>
+                                            </div>
+                                            <div class="soldout just_right">
+                                                <img src="../common/images/dummy/dummy15.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="cart_fc-box">
+                                            <div class="cart_option-cor">
+                                                <div>
+                                                    <div class="pf_fc_item-box">
+                                                        <div class="pf_fc justify_box">
+                                                            <div class="product-select">
+                                                                <select class="sz-select_sl">
+                                                                    <option value="블랙">블랙</option>
+                                                                    <option value="화이트">화이트</option>
+                                                                </select>
+                                                                <ul class="sz-select_list">
+                                                                    <li class="selected">컬러</li>
+                                                                    <li>
+                                                                        <ul class="sz-select_sub">
+                                                                            <li>
+                                                                                <div class="justify_box">
+                                                                                    <label for="cartOption03" class="just_left">
+                                                                                        <span class="product_name">블랙</span>
+                                                                                    </label>
+                                                                                    <p class="just_right">
+                                                                                        <input type="radio" name="size"
+                                                                                            id="cartOption03" class="sz-custom_check">
+                                                                                        <label for="cartOption03"
+                                                                                            class="sz-custom_label"></label>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="justify_box">
+                                                                                    <label for="cartOption04" class="just_left">
+                                                                                        <span class="product_name">화이트</span>
+                                                                                        <span class="product_pay">+2000원</span>
+                                                                                    </label>
+                                                                                    <p class="just_right">
+                                                                                        <input type="radio" name="size"
+                                                                                            id="cartOption04" class="sz-custom_check">
+                                                                                        <label for="cartOption04"
+                                                                                            class="sz-custom_label"></label>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="product-select">
+                                                                <select class="sz-select_sl">
+                                                                    <option value="40cm">40cm</option>
+                                                                    <option
+                                                                        value="SPACE LINE 에드반스 프리라인 FREESIZE SPACE LINE 에드반스 프리라인 FREESIZE">
+                                                                        SPACE LINE 에드반스 프리라인 FREESIZE SPACE LINE 에드반스 프리라인 FREESIZE
+                                                                    </option>
+                                                                </select>
+                                                                <ul class="sz-select_list">
+                                                                    <li class="selected">사이즈</li>
+                                                                    <li>
+                                                                        <ul class="sz-select_sub">
+                                                                            <li>
+                                                                                <div class="justify_box">
+                                                                                    <label for="productItem01" class="just_left">
+                                                                                        <span class="product_name">40cm</span>
+                                                                                    </label>
+                                                                                    <p class="just_right">
+                                                                                        <input type="radio" name="size"
+                                                                                            id="productItem01" class="sz-custom_check">
+                                                                                        <label for="productItem01"
+                                                                                            class="sz-custom_label"></label>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="justify_box">
+                                                                                    <label for="productItem02" class="just_left">
+                                                                                        <span class="product_name">SPACE LINE 에드반스 프리라인
+                                                                                            FREESIZE SPACE LINE 에드반스 프리라인
+                                                                                            FREESIZE</span>
+                                                                                        <span class="product_pay">+2000원</span>
+                                                                                    </label>
+                                                                                    <p class="just_right">
+                                                                                        <input type="radio" name="size"
+                                                                                            id="productItem02" class="sz-custom_check">
+                                                                                        <label for="productItem02"
+                                                                                            class="sz-custom_label"></label>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="pf_fc pf_option justify_box">
+                                                            <span class="pro_pay just_left">42cm (+2000원)</span>
+                                                            <div class="just_right">
+                                                                <div class="count-input-box f-right">
+                                                                    <button type="button" class="count-btn minus"></button>
+                                                                    <input type="text" class="count-input" value="1">
+                                                                    <button type="button" class="count-btn plus"></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="cart_option-btn-box">
+                                                    <button type="button" class="cart_option-btn gray">취소</button>
+                                                    <button type="button" class="cart_option-btn black pop_open" data-popup="productOptionCorrectPop">변경</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cart-right">
+                                <div class="cart-total_table-wrap">
+                                    <table>
+                                        <caption class="blind">장바구니 총 예상 결제 금액</caption>
+                                        <tbody>
+                                            <tr>
+                                                <td>총 상품 금액 (<span>3</span>)</td>
+                                                <td><span>370,500</span>원</td>
+                                            </tr>
+                                            <tr>
+                                                <td>총 할인 금액</td>
+                                                <td>- <span>1,500</span>원</td>
+                                            </tr>
+                                            <tr>
+                                                <td>총 쿠폰 할인</td>
+                                                <td>- <span>35,000</span>원</td>
+                                            </tr>
+                                            <tr>
+                                                <td>총 배송비</td>
+                                                <td>+ <span>2,500</span>원</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td>예상 결제 금액</td>
+                                                <td>
+                                                    <span class="ctt-pay"><b class="ctt-pay-num">403,000</b>원</span>
+                                                    <span class="ctt-bonus">예상 적립금 <span class="ctt-bonus-num">380M</span></span>
+                                                    <span class="ctt-info">※ 쇼핑백에 담긴 상품은 30일 동안 보관됩니다.</span>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                    <button type="submit" class="black-btn pc-only">구매하기</button>
+                                </div>
+                                <span class="ctt-info mo-ctt-info">※ 쇼핑백에 담긴 상품은 30일 동안 보관됩니다.</span>
+                            </div>
+                            <!-- .cart_wrap 끝 -->
+
+                        </div>
+                    </div>
+
+                    <div class="cart_nav-wrap">
+                        <div class="justify_box">
+                            <div class="just_left">
+                                <span class="prod_num"><span>5</span>개 상품</span>
+                                <span class="prod_total">총 <span class="ptolal_num">403,000</span>원</span>
+                            </div>
+                            <div class="just_right">
+                                <button type="submit" class="orange-btn">구매하기</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- .popup-wrap 시작 -->
+                <div id="productErrorPop" class="popup-wrap">
+                    <div class="popup-layer"></div>
+                    <div class="popup-content">
+                        <div class="alert-popup">
+                            <button type="button" class="popup_close-btn"><span class="blind">닫기</span></button>
+                            <p class="alert-text">
+                                알 수 없는 문제가 발생했어요.
+                                <br>
+                                계속 지속된다면 고객센터로 문의주세요.
+                            </p>
+                            <div class="justify_box">
+                                <button type="button" class="long-btn black pop_close">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .popup-wrap 끝 -->
+
+                <!-- .popup-wrap 시작 -->
+                <div id="productDeletePop" class="popup-wrap">
+                    <div class="popup-layer"></div>
+                    <div class="popup-content">
+                        <div class="alert-popup">
+                            <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기</span></button>
+                            <p class="alert-text">
+                                선택하신 <b class="alert-text-num">2</b>개 상품을
+                                <br>
+                                삭제하시겠습니까?
+                            </p>
+                            <div class="justify_box">
+                                <button type="button" class="just_left black-border-btn pop_close">취소</button>
+                                <button type="button" class="just_left black-btn pop_open pop_close" data-popup="productDeleteClosePop">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .popup-wrap 끝 -->
+
+                <!-- .popup-wrap 시작 -->
+                <div id="productDeleteClosePop" class="popup-wrap">
+                    <div class="popup-layer"></div>
+                    <div class="popup-content">
+                        <div class="alert-popup">
+                            <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기</span></button>
+                            <p class="alert-text">
+                                선택 상품이
+                                <br>
+                                삭제되었습니다.
+                            </p>
+                            <button type="button" class="long-btn black pop_close">확인</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- .popup-wrap 끝 -->
+
+                <!-- .popup-wrap 시작 -->
+                <div id="couponApplyCompletePop" class="popup-wrap">
+                    <div class="popup-layer"></div>
+                    <div class="popup-content">
+                        <div class="alert-popup">
+                            <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기</span></button>
+                            <h2 class="ap-title">쿠폰 발급 완료</h2>
+                            <p class="ap-text">쿠폰 할인이 적용 되었습니다.</p>
+                            <button type="button" class="long-btn black pop_close">확인</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- .popup-wrap 끝 -->
+
+                <!-- .popup-wrap 시작 -->
+                <div id="productOptionCorrectPop" class="popup-wrap">
+                    <div class="popup-layer"></div>
+                    <div class="popup-content">
+                        <div class="alert-popup">
+                            <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기</span></button>
+                            <p class="alert-text">
+                                상품 옵션/수량을
+                                <br>
+                                수정하시겠습니까?
+                            </p>
+                            <div class="justify_box">
+                                <button type="button" class="just_left black-border-btn pop_close">취소</button>
+                                <button type="button" class="just_left black-btn pop_open pop_close" data-popup="optionNone">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .popup-wrap 끝 -->
+
+                <!-- .popup-wrap 시작 -->
+                <div id="optionNone" class="popup-wrap">
+                    <div class="popup-layer"></div>
+                    <div class="popup-content">
+                        <div class="alert-popup">
+                            <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기</span></button>
+                            <p class="alert-text">
+                                구매 수량 제한 상품으로
+                                <br>
+                                수량 수정이 불가능합니다.
+                            </p>
+                            <button type="button" class="long-btn black pop_close">확인</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- .popup-wrap 끝 -->
+
+                <!-- .popup-wrap 시작 -->
+                <div id="couponPop" class="popup-wrap">
+                    <div class="popup-layer"></div>
+                    <div class="popup-content">
+                        <div class="terms-popup">
+                            <div class="page-header white">
+                                <div class="sz-wrap">
+                                    <h2 class="page-title">쿠폰조회</h2>
+                                    <button type="button" class="popup_close-btn-pc pop_close"></button>
+                                </div>
+                            </div>
+
+                            <div class="terms-content">
+                                <p class="coupon-text">
+                                    선택 상품에 적용 가능한 주문쿠폰은 <span class="orange"><span>5</span>개</span> 입니다.
+                                </p>
+
+                                <p class="coupon-text">
+                                    고객님의 보유 쿠폰이 없습니다. <br /> 아래 고객님이 받을실 수 있는 쿠폰혜택을 받아보세요.
+                                </p>
+                                <p class="coupnt-text_sub">
+                                    - 쇼핑백 할인쿠폰의 경우, 각 쿠폰별로 적용대상이 다를 수 있습니다.
+                                    <br>
+                                    - 일부 상품은 사용조건에 따라 할인쿠폰 적용이 불가 할 수 있습니다.
+                                </p>
+                                <p>
+                                    <button type="button" class="black-btn coupon-all-down pop_open pop_close" data-popup="coupComplete">쿠폰 전체 받기</button>
+                                </p>
+
+                                <ul class="coupon-list">
+                                    <li class="justify_box">
+                                        <span class="coupon-icon just_left" style="background-image: url(../common/images/dummy/dummy20.png)"></span>
+                                        <div class="coupon_info-box just_right">
+                                            <span class="coupon-cate">장바구니 쿠폰</span>
+                                            <h3 class="coupon-title">12월 데일리 쿠폰 20,000원</h3>
+
+                                            <ul class="coupon_info-list">
+                                                <li>- 최소 결제 금액 : 200,000원</li>
+                                                <li>- 최대 할인 금액 : 20,000원</li>
+                                                <li>- 20.02.01 09:00 - 20.12.30 23.59</li>
+                                            </ul>
+
+                                            <button type="button" class="apply-btn pop_open pop_close" data-popup="couponApplyCompletePop">적용하기</button>
+                                        </div>
+                                    </li>
+                                    <!-- 데이터 load식 -->
+                                    <li class="justify_box">
+                                        <p class="coupon-icon load-data just_left">L</p>
+                                        <div class="coupon_info-box just_right">
+                                            <span class="coupon-cate">장바구니 쿠폰</span>
+                                            <h3 class="coupon-title">플렉스 위크_나이키 캡(ITEMDTQ3GIP) 14,000원</h3>
+
+                                            <ul class="coupon_info-list">
+                                                <li>- 최소 결제 금액 : 200,000원</li>
+                                                <li>- 최대 할인 금액 : 20,000원</li>
+                                                <li>- 20.02.01 09:00 - 20.12.30 23.59</li>
+                                            </ul>
+
+                                            <button type="button" class="apply-btn pop_open pop_close" data-popup="couponApplyCompletePop">적용하기</button>
+                                        </div>
+                                    </li>
+                                    <!-- 데이터 load식 -->
+                                    <li class="justify_box">
+                                        <p class="coupon-icon load-data just_left">L</p>
+                                        <div class="coupon_info-box just_right">
+                                            <span class="coupon-cate">장바구니 쿠폰</span>
+                                            <h3 class="coupon-title">12월 데일리 쿠폰 20,000원</h3>
+
+                                            <ul class="coupon_info-list">
+                                                <li>- 최소 결제 금액 : 200,000원</li>
+                                                <li>- 최대 할인 금액 : 20,000원</li>
+                                                <li>- 20.02.01 09:00 - 20.12.30 23.59</li>
+                                            </ul>
+
+                                            <button type="button" class="apply-btn pop_open pop_close" data-popup="couponApplyCompletePop">적용하기</button>
+                                        </div>
+                                    </li>
+                                    <li class="justify_box">
+                                        <p class="coupon-icon load-data just_left">L</p>
+                                        <div class="coupon_info-box just_right">
+                                            <span class="coupon-cate">장바구니 쿠폰</span>
+                                            <h3 class="coupon-title">12월 데일리 쿠폰 20,000원</h3>
+
+                                            <ul class="coupon_info-list">
+                                                <li>- 최소 결제 금액 : 200,000원</li>
+                                                <li>- 최대 할인 금액 : 20,000원</li>
+                                                <li>- 20.02.01 09:00 - 20.12.30 23.59</li>
+                                            </ul>
+
+                                            <button type="button" class="apply-btn pop_open pop_close" data-popup="couponApplyCompletePop">적용하기</button>
+                                        </div>
+                                    </li>
+                                    <li class="justify_box">
+                                        <p class="coupon-icon load-data just_left">L</p>
+                                        <div class="coupon_info-box just_right">
+                                            <span class="coupon-cate">장바구니 쿠폰</span>
+                                            <h3 class="coupon-title">12월 데일리 쿠폰 20,000원</h3>
+
+                                            <ul class="coupon_info-list">
+                                                <li>- 최소 결제 금액 : 200,000원</li>
+                                                <li>- 최대 할인 금액 : 20,000원</li>
+                                                <li>- 20.02.01 09:00 - 20.12.30 23.59</li>
+                                            </ul>
+
+                                            <button type="button" class="apply-btn pop_open pop_close" data-popup="couponApplyCompletePop">적용하기</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기</span></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- .popup-wrap 끝 -->
+
+                <!-- 쿠폰 발급 완료 popup-wrap 시작 -->
+                <div id="coupComplete" class="popup-wrap">
+                    <div class="popup-layer"></div>
+                    <div class="popup-content">
+                        <div class="alert-popup">
+                            <h2 class="ap-title">쿠폰 발급 완료 :)</h2>
+                            <p class="ap-text">발급된 쿠폰을 회원혜택가에 적용해 보세요.</p>
+                            <button type="button" class="long-btn black pop_close">확인</button>
+                            <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기</span></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 쿠폰 발급 완료  popup-wrap 끝 -->
+            </div>
+        </div>
+
+        <script src="../common/scripts/main.js"></script>
+        <script>
+            (function(){
+                // 옵션 열고 닫기
+                $('.cart_fc-box .gray_border-btn').on('click', function(){
+                    $(this).toggleClass('active');
+                    $(this).parents('.cart_fc-box').find('.cart_option-cor').toggleClass('active');
+                });
+
+                $('.cart_option-btn').on('click', function(){
+                    $(this).parents('.cart_option-cor').removeClass('active');
+                    $(this).parents('.cart_fc-box').find('.gray_border-btn').removeClass('active');
+                });
+            })(jQuery);
+        </script>
+    </body>
+</html>

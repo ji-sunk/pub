@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>힙합퍼 장바구니 추천상품</title>
+        <meta name="description">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <script src="../common/lib/plugin.js"></script>
+        <script src="../common/lib/common.js"></script>
+        <script src="../common/lib/slick.min.js"></script>
+        <link rel="stylesheet" href="../common/css/common.css">
+        <link rel="stylesheet" href="../common/css/productdetail.css">
+    </head>
+    <body>
+        <div id="wrap" class="wd720">
+            <div id="header">
+                <div class="headerWrap">
+                    <div class="box_left back">
+                        <a href="#" class="btn_back"><span class="blind">뒤로가기</span></a>
+                        <p class="header_title">
+                            쇼핑백<span class="number">(50)</span>
+                        </p>
+                    </div>
+                    <div class="box_right">
+                        <ul class="btn_area">
+                            <li><a href="#"><i class="ico home"><span class="blind">메인 바로가기</span></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="container">
+                <form>
+                    <div class="cartWrap">
+                        <div class="cart_top justify_box">
+                            <div class="just_left">
+                                <div class="pro_check">
+                                    <input type="checkbox" name="checkAll" id="checkAll" data-type="checkAll" class="flt_le sz-custom_check">
+                                    <label for="checkAll" class="flt_le sz-custom_label"></label>
+                                    <b class="all flt_le">전체선택 (<span class="num">10</span>)</b>
+                                </div>
+                            </div>
+                            <div class="top_del just_right">
+                                <button type="button" class="plf-text-btn">선택삭제</button>
+                                <button type="button" class="plf-text-btn">품절삭제</button>
+                            </div>
+                        </div>
+                        <div class="cart_inner">
+                            <div class="cart_section clear">
+                                <div class="cart_box">
+                                    <div class="cart_info justify_box">
+                                        <span class="pro_check flt_le">
+                                            <input type="checkbox" id="checkbox01" class="sz-custom_check">
+                                            <label for="checkbox01" class="sz-custom_label"></label>
+                                            <span class="blind">상품 선택</span>
+                                        </span>
+                                        <div class="just_left">
+                                            <a href="#none">
+                                                <img src="../common/images/dummy/dummy12.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="cart_de">
+                                            <a href="#">
+                                                <div class="delBtn">
+                                                    <div class="btn_pos">
+                                                        <span class="ico delete"><span class="blind">삭제버튼</span></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="cart_txt">
+                                                <span class="cart_brd ellipsis">
+                                                    <a href="#">
+                                                        태그호이어
+                                                    </a>
+                                                </span>
+                                                <span class="cart-sub">
+                                                    <a href="#">
+                                                        TAG HEUER 태그호이어 WAR1114.BA0601 까레라 남여공용 메탈시계 샤샤샤
+                                                    </a>
+                                                </span>
+                                                <del class="num">6,798,000원</del>
+                                                <span class="cart-price"><b class="flex-text"><span class="num">6,118,200</span>원</b></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="justify_box">
+                                        <div class="cart_option">
+                                            <div class="just_left">
+                                                <span class="option_txt">옵션 : GREEN BENDING TOOTHPASTE후드[그레이] L / GREEN BENDINGDESFWEWEFWEDESFWEWEFWE GREEN BENDINGDESFWEWEFWEDESFWEWEFWE</span>
+                                                <span class="option_txt">수량 : <span>1</span>개</span>
+                                            </div>
+                                            <div class="just_right">
+                                                <!-- <div class="tooltip"></span>
+                                                    <p class="tooltiptext">다른 상품 재고는 있어요.</p>
+                                                </div> -->
+                                                <div class="count-input-box flt_ri">
+                                                    <button type="button" class="count-btn minus"></button>
+                                                    <input type="text" class="count-input" value="1">
+                                                    <button type="button" class="count-btn plus"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart_section clear">
+                                <div class="cart_box">
+                                    <div class="cart_info justify_box">
+                                        <span class="pro_check flt_le">
+                                            <input type="checkbox" id="checkbox02" class="sz-custom_check">
+                                            <label for="checkbox02" class="sz-custom_label"></label>
+                                            <span class="blind">상품 선택</span>
+                                        </span>
+                                        <div class="just_left">
+                                            <a href="#none" class="soldout">
+                                                <img src="../common/images/dummy/dummy12.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="cart_de">
+                                            <a href="#">
+                                                <div class="delBtn">
+                                                    <div class="btn_pos">
+                                                        <span class="ico delete"><span class="blind">삭제버튼</span></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="cart_txt">
+                                                <span class="cart_brd">
+                                                    <a href="#">
+                                                        태그호이어
+                                                    </a>
+                                                </span>
+                                                <span class="cart-sub">
+                                                    <a href="#">
+                                                        TAG HEUER 태그호이어 WAR1114.BA0601 까레라 남여공용 메탈시계 샤샤샤
+                                                    </a>
+                                                </span>
+                                                <del class="num">6,798,000원</del>
+                                                <span class="cart-price"><b class="flex-text"><span class="num">6,118,200</span>원</b></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="justify_box">
+                                        <div class="cart_option_none">
+                                            <div class="just_left">
+                                                <span class="option_txt">옵션 : GREEN BENDING TOOTHPASTE후드[그레이] GREEN BENDING TOOTHPASTE후드[그레이] GREEN BENDING TOOTHPASTE후드[그레이]</span>
+                                                <span class="option_txt">수량 : <span>1</span>개</span>
+                                            </div>
+                                            <div class="just_right">
+                                                <!-- <div class="tooltip"></span>
+                                                    <p class="tooltiptext">다른 상품 재고는 있어요.</p>
+                                                </div> -->
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart_section_total">
+                                    상품 <span class="num">87,500</span>원 + 배송비<span class="num">2,500</span>원<strong class="num">= 89,500</strong>원
+                                </div>
+                            </div>
+                            <div class="cart_section1 clear">
+                                <div class="cart_box1">
+                                    <div class="cart_info justify_box">
+                                        <span class="pro_check flt_le">
+                                            <input type="checkbox" id="checkbox03" class="sz-custom_check">
+                                            <label for="checkbox03" class="sz-custom_label"></label>
+                                            <span class="blind">상품 선택</span>
+                                        </span>
+                                        <div class="just_left">
+                                            <a href="#none">
+                                                <img src="../common/images/dummy/dummy12.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="cart_de">
+                                            <a href="#">
+                                                <div class="delBtn">
+                                                    <div class="btn_pos">
+                                                        <span class="ico delete"><span class="blind">삭제버튼</span></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="cart_txt">
+                                                <span class="cart_brd">
+                                                    <a href="#">
+                                                        태그호이어
+                                                    </a>
+                                                </span>
+                                                <span class="cart-sub">
+                                                    <a href="#">
+                                                        TAG HEUER 태그호이어 WAR1114.BA0601 까레라 남여공용 메탈시계 샤샤샤
+                                                    </a>
+                                                </span>
+                                                <span class="cart-price"><b class="flex-text"><span class="num">6,118,200</span>원</b></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="justify_box">
+                                        <div class="cart_option">
+                                            <div class="just_left">
+                                                <span class="option_txt">옵션 : GREEN BENDING TOOTHPASTE후드[그레이] L / GREEN BENDINGDESFWEWEFWEDESFWEWEFWE GREEN BENDINGDESFWEWEFWEDESFWEWEFWE</span>
+                                                <span class="option_txt">수량 : <span>1</span>개</span>
+                                            </div>
+                                            <div class="just_right">
+                                                <!-- <div class="tooltip"></span>
+                                                    <p class="tooltiptext">다른 상품 재고는 있어요.</p>
+                                                </div> -->
+                                                <div class="count-input-box flt_ri">
+                                                    <button type="button" class="count-btn minus"></button>
+                                                    <input type="text" class="count-input" value="1">
+                                                    <button type="button" class="count-btn plus"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart_box1">
+                                    <div class="cart_info justify_box">
+                                        <span class="pro_check flt_le">
+                                            <input type="checkbox" id="checkbox04" class="sz-custom_check">
+                                            <label for="checkbox04" class="sz-custom_label"></label>
+                                            <span class="blind">상품 선택</span>
+                                        </span>
+                                        <div class="just_left">
+                                            <a href="#none">
+                                                <img src="../common/images/dummy/dummy12.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="cart_de">
+                                            <a href="#">
+                                                <div class="delBtn">
+                                                    <div class="btn_pos">
+                                                        <span class="ico delete"><span class="blind">삭제버튼</span></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="cart_txt">
+                                                <span class="cart_brd">
+                                                    <a href="#">
+                                                        태그호이어
+                                                    </a>
+                                                </span>
+                                                <span class="cart-sub">
+                                                    <a href="#">
+                                                        TAG HEUER 태그호이어 WAR1114.BA0601 까레라 남여공용 메탈시계 샤샤샤
+                                                    </a>
+                                                </span>
+                                                <del class="num">6,798,000원</del>
+                                                <span class="cart-price"><b class="flex-text"><span class="num">6,118,200</span>원</b></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="justify_box">
+                                        <div class="cart_option">
+                                            <div class="just_left">
+                                                <span class="option_txt">옵션 : GREEN BENDING TOOTHPASTE후드[그레이] L / GREEN BENDINGDESFWEWEFWEDESFWEWEFWE GREEN BENDINGDESFWEWEFWEDESFWEWEFWE</span>
+                                                <span class="option_txt">수량 : <span>1</span>개</span>
+                                            </div>
+                                            <div class="just_right">
+                                                <!-- <div class="tooltip"></span>
+                                                    <p class="tooltiptext">다른 상품 재고는 있어요.</p>
+                                                </div> -->
+                                                <div class="count-input-box flt_ri">
+                                                    <button type="button" class="count-btn minus"></button>
+                                                    <input type="text" class="count-input" value="1">
+                                                    <button type="button" class="count-btn plus"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart_box1">
+                                    <div class="cart_info justify_box">
+                                        <span class="pro_check flt_le">
+                                            <input type="checkbox" id="checkbox06" class="sz-custom_check">
+                                            <label for="checkbox06" class="sz-custom_label"></label>
+                                            <span class="blind">상품 선택</span>
+                                        </span>
+                                        <div class="just_left">
+                                            <a href="#none">
+                                                <img src="../common/images/dummy/dummy12.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="cart_de">
+                                            <a href="#">
+                                                <div class="delBtn">
+                                                    <div class="btn_pos">
+                                                        <span class="ico delete"><span class="blind">삭제버튼</span></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="cart_txt">
+                                                <span class="cart_brd">
+                                                    <a href="#">
+                                                        태그호이어
+                                                    </a>
+                                                </span>
+                                                <span class="cart-sub">
+                                                    <a href="#">
+                                                        TAG HEUER 태그호이어 WAR1114.BA0601 까레라 남여공용 메탈시계 샤샤샤
+                                                    </a>
+                                                </span>
+                                                <del class="num">6,798,000원</del>
+                                                <span class="cart-price"><b class="flex-text"><span class="num">6,118,200</span>원</b></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="justify_box">
+                                        <div class="cart_option">
+                                            <div class="just_left">
+                                                <span class="option_txt">옵션 : GREEN BENDING TOOTHPASTE후드[그레이] L / GREEN BENDINGDESFWEWEFWEDESFWEWEFWE GREEN BENDINGDESFWEWEFWEDESFWEWEFWE</span>
+                                                <span class="option_txt">수량 : <span>1</span>개</span>
+                                            </div>
+                                            <div class="just_right">
+                                                <!-- <div class="tooltip"></span>
+                                                    <p class="tooltiptext">다른 상품 재고는 있어요.</p>
+                                                </div> -->
+                                                <div class="count-input-box flt_ri">
+                                                    <button type="button" class="count-btn minus"></button>
+                                                    <input type="text" class="count-input" value="1">
+                                                    <button type="button" class="count-btn plus"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart_section_total">
+                                상품 <span class="num">87,500</span>원 + 배송비<span class="num">2,500</span>원<strong><span class="num"> = 89,500</span>원</strong>
+                            </div>
+                            <div class="cart_section clear">
+                                <div class="cart_box">
+                                    <div class="cart_info justify_box">
+                                        <span class="pro_check flt_le">
+                                            <input type="checkbox" id="checkbox05" class="sz-custom_check all-check">
+                                            <label for="checkbox05" class="sz-custom_label"></label>
+                                            <span class="blind">상품 선택</span>
+                                        </span>
+                                        <div class="just_left">
+                                            <a href="#none">
+                                                <img src="../common/images/dummy/dummy12.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="cart_de">
+                                            <a href="#">
+                                                <div class="delBtn">
+                                                    <div class="btn_pos">
+                                                        <span class="ico delete"><span class="blind">삭제버튼</span></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="cart_txt">
+                                                <span class="cart_brd">
+                                                    <a href="#">
+                                                        에드반스에드반스 에드반스에드반스에드반스에드반스에드반스에드반스에드반스에드반스
+                                                    </a>
+                                                </span>
+                                                <span class="cart-sub">
+                                                    <a href="#">
+                                                        TAG HEUER 태그호이어 WAR1114.BA0601 까레라 남여공용 메탈시계 샤샤샤 TAG HEUER 태그호이어 WAR1114.BA0601 까레라 남여공용 메탈시계
+                                                    </a>
+                                                </span>
+                                                <span class="cart-price"><b class="flex-text"><span class="num">6,118,200</span>원</b></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart_section_total">
+                                상품 <span class="num">87,500</span>원 + 배송비<span class="num">2,500</span>원<strong class="num">= 89,500</strong>원
+                            </div>
+                        </div>
+                        <div class="cart_total_wrap">
+                            <table>
+                                <caption class="blind">장바구니 총 예상 결제 금액</caption>
+                                <thead>
+
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>총 상품 금액 (<span class="num">4</span>)</td>
+                                        <td><span class="num">10,533,200</span>원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>총 할인 금액</td>
+                                        <td><span class="num">- 208,000</span>원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>총 배송비</td>
+                                        <td> <span class="num">+ 5,000</span>원</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>예상 결제 금액</td>
+                                        <td>
+                                            <span class="ctt-pay"><b class="ctt-pay-num">10,330,200</b>원</span>
+                                            <span class="ctt-bonus">예상 적립금 <span class="ctt-bonus-num">10,330,200M</span></span>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <button type="submit" class="black-btn pc-only">구매하기</button>
+                        </div>
+
+                        <!-- fixed bottom total -->
+                        <div class="nav_fixed_wrap cart wd720">
+                            <div class="just_left">
+                                <span class="prod_num"><span class="num">5</span>개 상품</span>
+                                <span class="prod_total">총 <span class="ptolal_num">10,330,200</span>원</span>
+                            </div>
+                            <div class="just_right">
+                                <div class="pd_btn_box clear">
+                                    <button type="button" class="orange_btn">구매하기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // fixed bottom total -->
+                    </div>
+                </form>
+
+                <!-- .popup-wrap 시작 -->
+                <div id="productErrorPop" class="popup-wrap">
+                    <div class="popup-layer"></div>
+                    <div class="popup-content">
+                        <div class="alert-popup">
+                            <button type="button" class="popup_close-btn"><span class="blind">닫기</span></button>
+                            <p class="alert-text">
+                                알 수 없는 문제가 발생했어요.
+                                <br>
+                                계속 지속된다면 고객센터로 문의주세요.
+                            </p>
+                            <div class="justify_box">
+                                <button type="button" class="long-btn black pop_close">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .popup-wrap 끝 -->
+
+                <!-- .popup-wrap 시작 -->
+                <div id="productDeletePop" class="popup-wrap">
+                    <div class="popup-layer"></div>
+                    <div class="popup-content">
+                        <div class="alert-popup">
+                            <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기</span></button>
+                            <p class="alert-text">
+                                선택하신 <b class="alert-text-num">2</b>개 상품을
+                                <br>
+                                삭제하시겠습니까?
+                            </p>
+                            <div class="justify_box">
+                                <button type="button" class="just_left black-border-btn pop_close">취소</button>
+                                <button type="button" class="just_left black-btn pop_open pop_close" data-popup="productDeleteClosePop">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .popup-wrap 끝 -->
+
+                <!-- .popup-wrap 시작 -->
+                <div id="productDeleteClosePop" class="popup-wrap">
+                    <div class="popup-layer"></div>
+                    <div class="popup-content">
+                        <div class="alert-popup">
+                            <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기</span></button>
+                            <p class="alert-text">
+                                선택 상품이
+                                <br>
+                                삭제되었습니다.
+                            </p>
+                            <button type="button" class="long-btn black pop_close">확인</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- .popup-wrap 끝 -->
+
+                <!-- .popup-wrap 시작 -->
+                <div id="couponApplyCompletePop" class="popup-wrap">
+                    <div class="popup-layer"></div>
+                    <div class="popup-content">
+                        <div class="alert-popup">
+                            <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기</span></button>
+                            <h2 class="ap-title">쿠폰 발급 완료</h2>
+                            <p class="ap-text">쿠폰 할인이 적용 되었습니다.</p>
+                            <button type="button" class="long-btn black pop_close">확인</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- .popup-wrap 끝 -->
+
+                <!-- .popup-wrap 시작 -->
+                <div id="productOptionCorrectPop" class="popup-wrap">
+                    <div class="popup-layer"></div>
+                    <div class="popup-content">
+                        <div class="alert-popup">
+                            <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기</span></button>
+                            <p class="alert-text">
+                                상품 옵션/수량을
+                                <br>
+                                수정하시겠습니까?
+                            </p>
+                            <div class="justify_box">
+                                <button type="button" class="just_left black-border-btn pop_close">취소</button>
+                                <button type="button" class="just_left black-btn pop_open pop_close" data-popup="optionNone">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .popup-wrap 끝 -->
+
+                <!-- .popup-wrap 시작 -->
+                <div id="optionNone" class="popup-wrap">
+                    <div class="popup-layer"></div>
+                    <div class="popup-content">
+                        <div class="alert-popup">
+                            <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기</span></button>
+                            <p class="alert-text">
+                                구매 수량 제한 상품으로
+                                <br>
+                                수량 수정이 불가능합니다.
+                            </p>
+                            <button type="button" class="long-btn black pop_close">확인</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- .popup-wrap 끝 -->
+
+                <!-- .popup-wrap 시작 -->
+                <div id="couponPop" class="popup-wrap">
+                    <div class="popup-layer"></div>
+                    <div class="popup-content">
+                        <div class="terms-popup">
+                            <div class="page-header white">
+                                <div class="sz-wrap">
+                                    <h2 class="page-title">쿠폰조회</h2>
+                                    <button type="button" class="popup_close-btn-pc pop_close"></button>
+                                </div>
+                            </div>
+
+                            <div class="terms-content">
+                                <p class="coupon-text">
+                                    선택 상품에 적용 가능한 주문쿠폰은 <span class="orange"><span>5</span>개</span> 입니다.
+                                </p>
+
+                                <p class="coupon-text">
+                                    고객님의 보유 쿠폰이 없습니다. <br /> 아래 고객님이 받을실 수 있는 쿠폰혜택을 받아보세요.
+                                </p>
+                                <p class="coupnt-text_sub">
+                                    - 쇼핑백 할인쿠폰의 경우, 각 쿠폰별로 적용대상이 다를 수 있습니다.
+                                    <br>
+                                    - 일부 상품은 사용조건에 따라 할인쿠폰 적용이 불가 할 수 있습니다.
+                                </p>
+                                <p>
+                                    <button type="button" class="black-btn coupon-all-down pop_open pop_close" data-popup="coupComplete">쿠폰 전체 받기</button>
+                                </p>
+
+                                <ul class="coupon-list">
+                                    <li class="justify_box">
+                                        <span class="coupon-icon just_left" style="background-image: url(../common/images/dummy/dummy20.png)"></span>
+                                        <div class="coupon_info-box just_right">
+                                            <span class="coupon-cate">장바구니 쿠폰</span>
+                                            <h3 class="coupon-title">12월 데일리 쿠폰 20,000원</h3>
+
+                                            <ul class="coupon_info-list">
+                                                <li>- 최소 결제 금액 : 200,000원</li>
+                                                <li>- 최대 할인 금액 : 20,000원</li>
+                                                <li>- 20.02.01 09:00 - 20.12.30 23.59</li>
+                                            </ul>
+
+                                            <button type="button" class="apply-btn pop_open pop_close" data-popup="couponApplyCompletePop">적용하기</button>
+                                        </div>
+                                    </li>
+                                    <!-- 데이터 load식 -->
+                                    <li class="justify_box">
+                                        <p class="coupon-icon load-data just_left">L</p>
+                                        <div class="coupon_info-box just_right">
+                                            <span class="coupon-cate">장바구니 쿠폰</span>
+                                            <h3 class="coupon-title">플렉스 위크_나이키 캡(ITEMDTQ3GIP) 14,000원</h3>
+                                            <ul class="coupon_info-list">
+                                                <li>- 최소 결제 금액 : 200,000원</li>
+                                                <li>- 최대 할인 금액 : 20,000원</li>
+                                                <li>- 20.02.01 09:00 - 20.12.30 23.59</li>
+                                            </ul>
+                                            <button type="button" class="apply-btn pop_open pop_close" data-popup="couponApplyCompletePop">적용하기</button>
+                                        </div>
+                                    </li>
+                                    <!-- 데이터 load식 -->
+                                    <li class="justify_box">
+                                        <p class="coupon-icon load-data just_left">L</p>
+                                        <div class="coupon_info-box just_right">
+                                            <span class="coupon-cate">장바구니 쿠폰</span>
+                                            <h3 class="coupon-title">12월 데일리 쿠폰 20,000원</h3>
+                                            <ul class="coupon_info-list">
+                                                <li>- 최소 결제 금액 : 200,000원</li>
+                                                <li>- 최대 할인 금액 : 20,000원</li>
+                                                <li>- 20.02.01 09:00 - 20.12.30 23.59</li>
+                                            </ul>
+                                            <button type="button" class="apply-btn pop_open pop_close" data-popup="couponApplyCompletePop">적용하기</button>
+                                        </div>
+                                    </li>
+                                    <li class="justify_box">
+                                        <p class="coupon-icon load-data just_left">L</p>
+                                        <div class="coupon_info-box just_right">
+                                            <span class="coupon-cate">장바구니 쿠폰</span>
+                                            <h3 class="coupon-title">12월 데일리 쿠폰 20,000원</h3>
+
+                                            <ul class="coupon_info-list">
+                                                <li>- 최소 결제 금액 : 200,000원</li>
+                                                <li>- 최대 할인 금액 : 20,000원</li>
+                                                <li>- 20.02.01 09:00 - 20.12.30 23.59</li>
+                                            </ul>
+
+                                            <button type="button" class="apply-btn pop_open pop_close" data-popup="couponApplyCompletePop">적용하기</button>
+                                        </div>
+                                    </li>
+                                    <li class="justify_box">
+                                        <p class="coupon-icon load-data just_left">L</p>
+                                        <div class="coupon_info-box just_right">
+                                            <span class="coupon-cate">장바구니 쿠폰</span>
+                                            <h3 class="coupon-title">12월 데일리 쿠폰 20,000원</h3>
+
+                                            <ul class="coupon_info-list">
+                                                <li>- 최소 결제 금액 : 200,000원</li>
+                                                <li>- 최대 할인 금액 : 20,000원</li>
+                                                <li>- 20.02.01 09:00 - 20.12.30 23.59</li>
+                                            </ul>
+                                            <button type="button" class="apply-btn pop_open pop_close" data-popup="couponApplyCompletePop">적용하기</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기</span></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- .popup-wrap 끝 -->
+
+                <!-- 쿠폰 발급 완료 popup-wrap 시작 -->
+                <div id="coupComplete" class="popup-wrap">
+                    <div class="popup-layer"></div>
+                    <div class="popup-content">
+                        <div class="alert-popup">
+                            <h2 class="ap-title">쿠폰 발급 완료 :)</h2>
+                            <p class="ap-text">발급된 쿠폰을 회원혜택가에 적용해 보세요.</p>
+                            <button type="button" class="long-btn black pop_close">확인</button>
+                            <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기</span></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 쿠폰 발급 완료  popup-wrap 끝 -->
+            </div>
+        </div>
+        <script src="../common/lib/slick.min.js"></script>
+        <script src="../common/lib/main.js"></script>
+        <script type="text/javascript">
+            // $(document).ready(function(){
+            //     $(".tooltiptext").show();
+            //     setTimeout(function () {
+            //         $(".tooltiptext").hide();
+            //     }, 5000);
+            // });
+            var $slider = $('.slider');
+                if ($slider.length) {
+                  var currentSlide;
+                  var slidesCount;
+                  var sliderCounter = document.createElement('div');
+                  sliderCounter.classList.add('slider_counter');
+                  var updateSliderCounter = function(slick, currentIndex) {
+                    currentSlide = slick.slickCurrentSlide() + 1;
+                    slidesCount = slick.slideCount;
+                    $(sliderCounter).text(currentSlide + ' / ' +slidesCount)
+                  };
+                  $slider.on('init', function(event, slick) {
+                    $slider.append(sliderCounter);
+                    updateSliderCounter(slick);
+                  });
+                  $slider.on('afterChange', function(event, slick, currentSlide) {
+                    updateSliderCounter(slick, currentSlide);
+                  });
+                }
+                if ($('.review_txt_moreview')) {
+                    $('.review_txt_moreview').on('click', function (e) {
+                    e.preventDefault();
+                    $(this).toggleClass('on');
+                    $(this).children('p').toggleClass('_ellipsis');
+                });
+                // 상품 상세 tab
+                var tabBtn = $("#tab_btn > ul > li");
+                var tabCont = $("#tab-cont > div");
+                tabCont.hide().eq(0).show();
+                tabBtn.click(function(){
+                var target = $(this);
+                var index = target.index();
+                tabBtn.removeClass("active");
+                target.addClass("active");
+                tabCont.css("display","none");
+                tabCont.eq(index).css("display","block");
+                });
+            }
+            $( document ).ready(function() {
+                $( '.Demore_btn' ).click(function() {
+                    $( "#Demore" ).removeClass( "overh" )
+                });
+            });
+            $( '.Demore_btn' ).click( function() {
+            $( '#re_more' ).removeClass( '_ellipsis'),
+            $('.Demore_btn').hide();
+            });
+            (function () {
+                function oneSlide($ele) {
+                    $ele.slick({
+                        dots: true,
+                        arrows: false,
+                    });
+                }
+                function centerSlide($ele) {
+                    $ele.slick({
+                        infinite: false,
+                        dots: false,
+                        arrows: false,
+                    });
+                }
+                oneSlide($('.product_detail_slider'));
+                oneSlide($('.product_banner_slide'));
+                oneSlide($('.recc_place-slide'));
+                centerSlide($('.product_color_slide'));
+                centerSlide($('.more_prod_slide'));
+                function acAcco(ele, content) {
+                    $(ele).on('click touch', function () {
+                        $(this).toggleClass('active');
+                        $(this).parents('.product_detail-acco').find(content).slideToggle();
+                    });
+                }
+                acAcco('.pda-title', '.pda-content');
+            })(jQuery);
+        </script>
+        <script>
+            (function(){
+                // 옵션 열고 닫기
+                $('.cart_fc-box .gray_border-btn').on('click', function(){
+                    $(this).toggleClass('active');
+                    $(this).parents('.cart_fc-box').find('.cart_option_cor').toggleClass('active');
+                });
+
+                $('.cart_option-btn').on('click', function(){
+                    $(this).parents('.cart_option_cor').removeClass('active');
+                    $(this).parents('.cart_fc-box').find('.gray_border-btn').removeClass('active');
+                });
+            })(jQuery);
+        </script>
+    </body>
+</html>

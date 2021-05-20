@@ -4,103 +4,95 @@
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>힙합퍼 결제 배송지 신규등록</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="../common/lib/jquery-2.2.4.min.js"></script>
+        <meta name="description">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <script src="../common/lib/plugin.js"></script>
+        <script src="../common/lib/common.js"></script>
         <link rel="stylesheet" href="../common/css/common.css">
-        <link rel="stylesheet" href="assets/css/payment.css">
+        <link rel="stylesheet" href="../common/css/productdetail.css">
+        <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&amp;subset=korean">
     </head>
     <body>
-        <div id="wrap">
-
+        <div id="wrap" class="wd720">
             <div id="header">
-                <div class="sz-wrap page-header white">
-                    <h2 class="page-title">배송지 변경</h2>
+                <div class="headerWrap popup">
+                    <div class="box_left back">
+                        <p class="header_title">
+                            배송지 변경
+                        </p>
+                    </div>
                 </div>
             </div>
 
             <div id="container">
-              <ul class="border_tab-list white clearfix">
-                  <li><a class="bt-btn big-font" href="address.html">배송지 선택</a></li>
-                  <li class="active"><a class="bt-btn big-font" href="#">신규등록</a></li>
-              </ul>
-              <!-- .paymt_wrap 시작 -->
-              <!-- 배송지 신규등록 -->
-              <form>
-                  <div class="paymt_wrap">
-                      <div class="paymt_addr_modify">
-                          <div class="pos_r">
-                              <div class="addr_new_wrap bg_wht">
-                                  <table>
-                                      <caption class="blind">배송지 신규 등록</caption>
-                                      <colgroup>
-                                          <col style="width:20%"/>
-                                          <col style="width:80%"/>
-                                      </colgroup>
-                                      <tbody>
-                                          <tr>
-                                              <th>받는분</th>
-                                              <td>
-                                                  <div class="input_text_new input_wrap mb10">
-                                                      <input type="text" placeholder="받는분" class="text-input">
-                                                      <!-- <button type="button" data-type="inputreset" class="spr_before"><span class="s_out">입력 삭제</span></button> -->
-                                                  </div>
-                                              </td>
-                                          </tr>
-                                          <tr>
-                                              <th>연락처</th>
-                                              <td>
-                                                  <div class="justify_box">
-                                                      <div class="input_text_new input_wrap mb10 just_left phone-first">
-                                                          <input type="text" maxlength="3" pattern="[0-9]*" value="010" class="text-input">
-                                                      </div>
-                                                      <div class="input_text_new input_wrap mb10 just_right phone-last">
-                                                          <input type="text" value="" placeholder="숫자만 입력해 주세요." class="text-input">
-                                                          <!-- <button type="button" data-type="inputreset" class="spr_before"><span class="s_out">입력 삭제</span></button> -->
-                                                      </div>
-                                                  </div>
-
-                                              </td>
-                                          </tr>
-                                          <tr>
-                                              <th>배송지</th>
-                                              <td>
-                                                  <div>
-                                                      <div class="input_text_new2 input_wrap">
-                                                          <input type="text" placeholder="배송지" class="text-input">
-                                                      </div>
-                                                      <button>주소찾기</button>
-                                                  </div>
-                                                  <div class="input_text_new input_wrap mb10">
-                                                      <input type="text" placeholder="배송지" class="text-input">
-                                                  </div>
-                                                  <div class="input_text_new input_wrap">
-                                                      <input type="text" placeholder="배송지" class="text-input">
-                                                  </div>
-
-                                              </td>
-                                          </tr>
-                                      </tbody>
-                                  </table>
-                              </div>
-
-                          </div>
-                          <div class="last_btnn_wrap">
-                              <div class="mb10">
-                                  <input type="checkbox" id="chk_method" class="sz-custom_check">
-                                  <label for="chk_method" class="sz-custom_label"></label>
-                                  <label for="chk_method" class="sz-custom_text">기본 배송지로 등록</label>
-                              </div>
-                              <button class="last_btn_white">취소</button>
-                              <button class="last_btn_black">저장</button>
-                          </div>
-                      </div>
-                  </div>
-              </form>
-              <!-- .paymt_wrap 끝 -->
+                <div class="paymtWrap">
+                    <ul class="tab_list clear">
+                        <li><a class="bt-btn" href="address.html">배송지 선택</a></li>
+                        <li class="active"><a class="bt-btn" href="#">신규 주소</a></li>
+                    </ul>
+                    <div class="paymt_modify hitC">
+                        <div class="addr_wrap">
+                        <table>
+                            <caption class="blind">배송지 신규 등록</caption>
+                            <colgroup>
+                                <col style="width:20%">
+                                <col style="width:80%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th><label for="addressee">받는분</label></th>
+                                    <td>
+                                        <div class="mb10">
+                                            <input title="받는분 성함" type="text" id="addressee" name="addressee" placeholder="" >
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label for="number">연락처</label>
+                                    </th>
+                                    <td>
+                                        <div class="input_text_new2 mgb10">
+                                            <input type="text" name="number" id="number" maxlength="12" class="wd100" >
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="last mt10"><label for="address">배송지</label></th>
+                                        <td>
+                                            <div class="mgb10 clear">
+                                                 <div class="input_text_new3">
+                                                     <input type="text" name="address" style="width:100%" title="주소찾기">
+                                                 </div>
+                                                 <div class="addrBtn">
+                                                     <button>주소찾기</button>
+                                                 </div>
+                                            </div>
+                                            <div class="mgb10 clear">
+                                                 <input type="text" placeholder="" name="address" id="address" title="주소 입력">
+                                            </div>
+                                            <div class="">
+                                                 <input type="text" placeholder="상세 주소를 입력해주세요." name="address" title="상세 주소 입력">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="last_btn_wrap">
+                            <div class="pr_chk_agree clear">
+                                <input type="checkbox" id="pr_chk" class="sz-custom_check">
+                                <label for="pr_chk" class="sz-custom_label flt_le"></label>
+                                <label for="pr_chk" class="sz-custom_text">기본 배송지로 등록</label>
+                            </div>
+                            <button class="last_btn_white">취소</button>
+                            <button class="last_btn_black">선택</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        
-        <script src="../common/scripts/main.js?v=1.3.7"></script>
+        <script src="../common/lib/main.js"></script>
     </body>
 </html>

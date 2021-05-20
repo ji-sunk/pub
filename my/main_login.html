@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>힙합퍼 마이 페이지 메인_로그인</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <script src="../common/lib/jquery-2.2.4.min.js"></script>
+        <link rel="stylesheet" href="../common/css/common.css">
+        <link rel="stylesheet" href="../common/css/mypage.css">
+        <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&amp;subset=korean">
+    </head>
+    <body>
+        <div id="wrap" class="wd720">
+            <div id="header">
+                <div class="headerWrap">
+                    <div class="box_left back">
+                        <a href="#" class="btn_back"><span class="blind">뒤로가기</span></a>
+                        <p class="header_title">
+                            마이페이지
+                        </p>
+                    </div>
+                    <div class="box_right">
+                        <ul class="btn_area">
+                            <li><a href="#"><i class="ico search"><span class="blind">서치 바로가기</span></i></a></li>
+                            <li><a href="#"><i class="ico bag"><span class="blind">장바구니 바로가기</span></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="container">
+                <div class="myWrap">
+                    <div class="my_area">
+                        <div class="my_top">
+                            <div class="myInfo">
+                                <div class="myInfoBox">
+                                    <span class="name login">로그인 해주세요.</span>
+                                </div>
+                                <div class="btn">
+                                    <button type="button" name="button">
+                                        <span class="infoBtn">로그인</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <ul class="myInfoArea brGry">
+                                <li class="myBox">
+                                    <div class="pd">
+                                        <p class="num">-</p>
+                                        <span class="txt">할인쿠폰</span>
+                                    </div>
+                                </li>
+                                <li class="myBox">
+                                    <div class="pd">
+                                        <p class="num">-</p>
+                                        <span class="txt">마일리지</span>
+                                    </div>
+                                </li>
+                                <li class="myBox">
+                                    <div class="pd">
+                                        <p class="num">-</p>
+                                        <span class="txt">관심상품</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="my_lst">
+                            <p class="sub_tit">최근 구매 내역</p>
+                            <div class="no_txt">
+                                로그인이 필요한 서비스 입니다.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my_area">
+                        <ul class="my_menu">
+                            <li>
+                                <a href="#none"><span>주문 목록<span class="ico mor_arrow"></span></span></a>
+                            </li>
+                            <li>
+                                <a href="#none"><span>취소/반품/교환 목록<span class="ico mor_arrow"></span></span></a>
+                            </li>
+                            <li>
+                                <a href="#none"><span>할인쿠폰<span class="ico mor_arrow"></span></span></a>
+                            </li>
+                            <li>
+                                <a href="#none"><span>상품평 관리<span class="ico mor_arrow"></span></a>
+                            </li>
+                            <li>
+                                <a href="#none"><span>멤버십<span class="ico mor_arrow"></span></span></a>
+                            </li>
+                            <li>
+                                <a href="#none"><span>고객센터<span class="ico mor_arrow"></span></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fixed_nav">
+                    <ul class="fbn-list">
+                        <li><button type="button"><span class="ico fbn-item cate"></span><span class="txt">카테고리</span></button></li>
+                        <li> <button type="button"><span class="ico fbn-item search"></span><span class="txt">검색</span></button></li>
+                        <li> <button type="button"><span class="ico fbn-item home"></span><span class="blind">홈</span></button></li>
+                        <li> <button type="button"><span class="ico fbn-item mypage"></span><span class="txt">마이 페이지</span></button></li>
+                        <li> <button type="button"><span class="ico fbn-item product"></span><span class="txt">최근 본 상품</span></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function(){
+                $(window).scroll(function(){
+                    var nowScroll = $(document).scrollTop();
+                    // 스크롤 값이 120보다 크다면 gnb 나타나도록 만들기
+                    if(nowScroll > 60){ //     !=0
+                        $('.fixed_nav').css('bottom', '0');
+                        } else {
+                        $('.fixed_nav').css('bottom', '-61px');
+                    }
+                });
+            });
+      </script>
+    </body>
+</html>

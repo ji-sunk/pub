@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>힙합퍼 마이 페이지 메인</title>
+        <meta name="description">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <script src="../common/lib/plugin.js"></script>
+        <script src="../common/lib/common.js"></script>
+        <link rel="stylesheet" href="../common/css/common.css">
+        <link rel="stylesheet" href="../common/css/inactive.css">
+        <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&amp;subset=korean">
+    </head>
+    <body>
+        <div id="wrap" class="wd720">
+            <div id="header">
+                <div class="headerWrap brb">
+                    <div class="box_left back">
+                        <a href="#" class="btn_back"><span class="blind">뒤로가기</span></a>
+                        <p class="header_title">
+                            휴면 해제 안내
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="container">
+                <div class="inaWrap">
+                    <div class="txt">
+                        <p>고객님의 계정이 최근 1년 이상 로그인을 하지 않아 휴면 상태로 전환되었습니다. </p>
+                    </div>
+                    <div class="auth_menu" id="tab_btn">
+                        <ul>
+                            <li class="active">본인 인증으로 해제</li>
+                            <li>간편 인증으로 해제</li>
+                        </ul>
+                    </div>
+                    <div id="tab_cont">
+                        <div class="cont">
+                                <p> <span class="red">[필수]</span> 개인정보 수집 동의</p>
+                                <div class="agr_tle">
+                                    <table>
+                                        <caption class="blind">개인 정보 수집 필수 동의</caption>
+                                        <colgroup>
+                                            <col style="width:20%">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>목적</th>
+                                                <td>개인식별 및 중복 가입 확인(본인인증) <br>
+                                                    부정행위 이용 모니터링
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>항목</th>
+                                                <td>
+                                                    이름, 휴대폰번호, CI/DI
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="int_btnType clear">
+                                        <input title="휴대폰 번호" type="number" id="cellNumber" name="cellNumber" placeholder="휴대폰 번호 입력 ('-'를 제외한 숫자만 입력)">
+                                    </div>
+                                    <div class="btn_gry mgT15">
+                                        <button type="button" name="button">동의하고 인증하기</button>
+                                    </div>
+                                    <ul class="bltType mgT15">
+                                        <li>회원님의 개인정보를 신중히 취급하며, 회원님의 동의 없이는 기재하신 회원정보를 공개 및 변경하지 않습니다.</li>
+                                        <li>인증이 불가할 경우 고객센터(1599-7616)로 문의해 주시기 바랍니다.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <div class="cont" style="display:block;">
+                            <div class="auth_box">
+                                <button type="button" class="auth_btn kakao">카카오톡으로 인증</button>
+                                <button type="button" class="auth_btn apple">Apple로 인증</button>
+                            </div>
+                            <ul class="bltType mgT15">
+                                <li>회원님의 개인정보를 신중히 취급하며, 회원님의 동의 없이는 기재하신 회원정보를 공개 및 변경하지 않습니다.</li>
+                                <li>인증이 불가할 경우 고객센터(1599-7616)로 문의해 주시기 바랍니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var tabBtn = $("#tab_btn > ul > li");
+            var tabCont = $("#tab_cont > div");
+            tabCont.hide().eq(0).show();
+            tabBtn.click(function(){
+            var target = $(this);
+            var index = target.index();
+            tabBtn.removeClass("active");
+            target.addClass("active");
+            tabCont.css("display","none");
+            tabCont.eq(index).css("display","block");
+            });
+      </script>
+    </body>
+</html>

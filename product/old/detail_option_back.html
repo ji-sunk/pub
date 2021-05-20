@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>힙합퍼 상품 상세 _ 세트옵션</title>
+        <meta name="description">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <script src="../common/lib/jquery-2.2.4.min.js"></script>
+        <!-- <link rel="stylesheet" href="../common/css/common.css"> -->
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="assets/css/productdetail.css">
+    </head>
+
+    <body>
+        <div id="wrap" style="background-color:#e5e5e5; width:100%; height:auto; display:inline-block">
+            
+        </div>
+
+        <!-- slick slider -->
+        <script src="../common/lib/slick.min.js"></script>
+        <script src="../common/lib/main.js"></script>
+        <script>
+            (function () {
+                function oneSlide($ele) {
+                    $ele.slick({
+                        dots: true,
+                        arrows: false,
+                    });
+                }
+
+                function centerSlide($ele) {
+                    $ele.slick({
+                        infinite: false,
+                        dots: false,
+                        arrows: false,
+                    });
+                }
+
+                oneSlide($('.product_detail-slider'));
+                oneSlide($('.product_event-slide'));
+                oneSlide($('.recc_place-slide'));
+                centerSlide($('.product_color_slide'));
+                centerSlide($('.more_prod_slide'));
+
+
+                function acAcco(ele, content) {
+                    $(ele).on('click touch', function () {
+                        $(this).toggleClass('active');
+                        $(this).parents('.product_detail-acco').find(content).slideToggle();
+                    });
+                }
+
+                acAcco('.pda-title', '.pda-content');
+            })(jQuery);
+        </script>
+    </body>
+</html>

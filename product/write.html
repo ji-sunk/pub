@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>힙합퍼 상품 상세 _ 상품 문의 작성하기 /> 수정하기</title>
+        <meta name="description">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+        <script src="../common/lib/plugin.js"></script>
+        <script src="../common/lib/common.js"></script>
+        <script src="../common/lib/slick.min.js"></script>
+        <link rel="stylesheet" href="../common/css/common.css">
+        <link rel="stylesheet" href="../common/css/productdetail.css">
+    </head>
+    <body>
+        <div id="wrap" class="wd720">
+            <div id="container" class="writeWrap">
+                <h2 class="page-title">상품 문의 작성하기</h2>
+                <div class="txtwrite_wrap clear">
+                    <div class="typeSelect">
+                        <ul class="ovr_x">
+                            <li class="on"><a href="#none">상품 문의</a></li>
+                            <li><a href="#none">재입고 문의</a></li>
+                            <li><a href="#none">사이즈 문의</a></li>
+                            <li><a href="#none">배송 문의</a></li>
+                            <li><a href="#none">기타</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                       <span class="input_textarea">
+                           <textarea class="lc_d0 tc_3" data-type="countlength" maxlength="1000" placeholder="문의 내용을 입력해 주세요."></textarea>
+                           <p class="count tc_8 proxima"><span class="bk" data-type="showlength">0</span> / 1,000</p>
+                       </span>
+                   </div>
+                   <div class="write_check">
+                       <span class="input_checkbox">
+                           <input type="checkbox" id="checkbox01" name="selmenu" class="gnb_input_check" value="">
+                           <label for="checkbox01">비공개</label>
+                       </span>
+                       <span class="input_checkbox mgl20">
+                           <input type="checkbox" id="checkbox02" name="selmenu" class="gnb_input_check" value="">
+                           <label for="checkbox02">알림톡으로 답변 받기</label>
+                       </span>
+                   </div>
+                   <div class="write_info_wrap">
+                       <div class="tooltip tit">
+                           <p>상품 문의 작성 유의사항<span class="ico tip"></span></p>
+                           <span class="tooltiptext mov">
+                               교환, 반품, 취소는 1:1문의를 이용해 주세요!
+                           </span>
+                           <span class="tooltiptext mov">
+                               교환, 반품, 취소는 1:1문의를 이용해 주세요!
+                           </span>
+                       </div>
+                       <ul class="write_info">
+                            <li>
+                                교환, 반품, 취소는 1:1문의를 통해 접수 부탁 드립니다.
+                            </li>
+                            <li>
+                                상품과 관련없는 비방/ 욕설/ 명예훼손성게시글,
+                                광고글 등 부적절한 글 등록 시 글쓰기 제한 및 해당 글이
+                                삭제될 수 있습니다
+                            </li>
+                            <li>
+                                전화번호, 이메일 등 개인 정보가 포함된 글 작성이 필요
+                                한 경우 판매자만 볼 수 있도록 비밀글로 문의해 주시기
+                                바랍니다.
+                            </li>
+                        </ul>
+                   </div>
+               </div>
+               <div class="write_bottom">
+                   <span class="ico Warning"></span>
+                   <div class="War_txt">
+                       <span>
+                          개인정보(주민번호, 연락처,주소, 계좌번호, 카드번호 등)가
+                          포함되지 않도록 유의해 주세요.
+                       </span>
+                   </div>
+                   <div class="btns clear">
+                       <button type="button" class="btn_cancel50">취소</button>
+                       <button type="button" class="mgl6 btn_confirm50">등록</button>
+                   </div>
+                   <!-- 상품 문의 수정하기 버튼 -->
+                   <!-- <div class="btns clear">
+                       <button type="button" class="btn_cancel50">취소</button>
+                       <button type="button" class="mgl6 btn_confirm50">수정</button>
+                   </div> -->
+                   <!-- // 상품 문의 수정하기 버튼 -->
+               </div>
+           </div>
+           <script type="text/javascript">
+               $(document).ready(function(){
+                   $(".tooltiptext").show();
+                   setTimeout(function () {
+                       $(".tooltiptext").hide();
+                   }, 5000);
+               });
+           </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>힙합퍼 결제 비회원</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../common/lib/jquery-2.2.4.min.js"></script>
+        <link rel="stylesheet" href="../common/css/common.css">
+        <link rel="stylesheet" href="assets/css/payment.css">
+    </head>
+    <body>
+        <div id="wrap">
+
+            <div id="header">
+                <div class="page-header white no_border">
+                    <div class="sz-wrap justify_box">
+                        <div class="just_left">
+                            <a href="#" class="back-btn"></a>
+                            <h2 class="page-title">주문결제</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="container">
+                <form>
+                    <!-- .paymt_wrap 시작 -->
+                    <!-- 비회원 메인 -->
+                    <div class="paymt_wrap">
+                        <div class="paymt_info _nonmember">
+                            <div class="article_title active">주문자</div>
+                            <div class="article_content" style="display:block;">
+                                <div class="_nonmember _table">
+                                    <table>
+                                        <caption class="blind">비회원 주문 이름 연락처</caption>
+                                        <colgroup>
+                                            <col style="width:20%"/>
+                                            <col style="width:80%"/>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>이름</th>
+                                                <td>
+                                                    <div class="input_text_new input_wrap mb10">
+                                                        <input type="text" placeholder="이름" class="text-input" required>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>연락처</th>
+                                                <td>
+                                                    <div class="justify_box">
+                                                        <div class="input_text_new input_wrap mb10 just_left phone-first">
+                                                            <input type="text" maxlength="3" pattern="[0-9]*" value="010" class="text-input">
+                                                        </div>
+                                                        <div class="input_text_new input_wrap mb10 just_right phone-last">
+                                                            <input type="text" value="" placeholder="숫자만 입력해 주세요." class="text-input">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div><!-- nonmember -->
+                        <div class="paymt_info _addr">
+                            <div class="article_title active">배송지</div>
+                            <div class="article_content" style="display:block">
+                                <div class="_addr _table">
+                                    <table>
+                                        <caption class="blind">비회원 주문 연락처와 배송지</caption>
+                                        <colgroup>
+                                            <col style="width:20%"/>
+                                            <col style="width:80%"/>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>받는분</th>
+                                                <td>
+                                                    <div class="input_text_new input_wrap mb10">
+                                                        <input type="text" placeholder="받는분" class="text-input" required>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>연락처</th>
+                                                <td>
+                                                    <div class="justify_box">
+                                                        <div class="input_text_new input_wrap mb10 just_left phone-first">
+                                                            <input type="text" maxlength="3" pattern="[0-9]*" value="010" class="text-input">
+                                                        </div>
+                                                        <div class="input_text_new input_wrap mb10 just_right phone-last">
+                                                            <input type="text" value="" placeholder="숫자만 입력해 주세요." class="text-input">
+                                                        </div>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>배송지</th>
+                                                <td>
+                                                    <div>
+                                                        <div class="input_text_new2 input_wrap">
+                                                            <input type="text" placeholder="배송지" class="text-input">
+                                                        </div>
+                                                        <button>주소찾기</button>
+                                                    </div>
+                                                    <div class="input_text_new input_wrap mb10">
+                                                        <input type="text" placeholder="배송지" class="text-input">
+                                                    </div>
+                                                    <div class="input_text_new input_wrap">
+                                                        <input type="text" placeholder="배송지" class="text-input">
+                                                    </div>
+                                                    <div class="check_default">
+                                                        <p class="default_check">
+                                                            <input type="checkbox" id="cart04" class="sz-custom_check">
+                                                            <label for="cart04" class="sz-custom_label"></label>
+                                                            <label for="cart04" class="sz-custom_text">기본배송지로 등록</label>
+                                                        </p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div>
+                                                        <select class="sz-select_sl">
+                                                            <option value="배송 요청사항을 선택해 주세요!">배송 요청사항을 선택해 주세요!</option>
+                                                            <option value="직접받음">직접받음</option>
+                                                            <option value="무인택배함">무인택배함</option>
+                                                            <option value="문 앞">문 앞</option>
+                                                        </select>
+                                                        <ul class="sz-select_list">
+                                                            <li class="selected">배송 요청사항을 선택해 주세요!</li>
+                                                            <li>
+                                                                <ul class="sz-select_sub">
+                                                                    <li>배송 요청사항을 선택해 주세요!</li>
+                                                                    <li>직접받음</li>
+                                                                    <li>무인택배함</li>
+                                                                    <li>문 앞</li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div><!-- addr -->
+                        <div class="paymt_info _product">
+                            <div class="article_title active">주문 상품 <span class="orange_txt"><em>3</em>개</span></div>
+                            <div class="article_content" style="display:block;padding:0">
+                                <ul class="paymt_product">
+                                    <li class="list">
+                                        <div class="just_left"><a href="" class="prd_img"><img src="../common/images/dummy/dummy12.jpg" alt=""></a></div>
+                                        <div class="just_right">
+                                            <dl class="prd_info">
+                                                <dt>엑스씨엑스메인 <span>주문쿠폰 적용대상</span></dt>
+                                                <dd>에드반스에드반스 프리라인프리라인 2020220</dd>
+                                                <dd><span>74,000</span>원</dd>
+                                                <dd>옵션 : GREEN BENDING TOOTHAPASTE 후드 [그레이] L/1개</dd>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                    <li class="list">
+                                        <div class="just_left"><a href="" class="prd_img"><img src="../common/images/dummy/dummy12.jpg" alt=""></a></div>
+                                        <div class="just_right">
+                                            <dl class="prd_info">
+                                                <dt>엑스씨엑스메인 <span>주문쿠폰 적용대상</span></dt>
+                                                <dd>에드반스에드반스 프리라인프리라인 2020220</dd>
+                                                <dd><span>74,000</span>원</dd>
+                                                <dd>옵션 : GREEN BENDING TOOTHAPASTE 후드 [그레이] L/1개</dd>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                    <li class="list">
+                                        <div class="just_left"><a href="" class="prd_img"><img src="../common/images/dummy/dummy12.jpg" alt=""></a></div>
+                                        <div class="just_right">
+                                            <dl class="prd_info">
+                                                <dt>엑스씨엑스메인 <span>주문쿠폰 적용대상</span></dt>
+                                                <dd>에드반스에드반스 프리라인프리라인 2020220</dd>
+                                                <dd><span>74,000</span>원</dd>
+                                                <dd>옵션 : GREEN BENDING TOOTHAPASTE 후드 [그레이] L/1개</dd>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                    <!-- 배송비 절약하기 제외 -->
+                                    <!-- <div class="cart-total">
+                                        <p class="cart_total-title">
+                                            상품 <span>52,000</span>원 + 배송비 <span>2,500</span>원 - 쿠폰<span>2,000</span>원
+                                            <span class="total">= <span class="total_num">49,500</span>원</span>
+                                        </p>
+                                    </div> -->
+                                </ul>
+                            </div>
+                        </div><!-- product -->
+                        <div class="paymt_info">
+                            <div class="article_title">할인 차감</div>
+                            <div class="article_content">
+                                <div class="table_wrap2" style="padding:0">
+                                    <table>
+                                        <colgroup>
+                                            <col width="20%"/>
+                                            <col width="53%"/>
+                                            <col width=""/>
+                                        </colgroup>
+                                        <tbody>
+                                            <!-- <tr>
+                                                <th>상품쿠폰</th>
+                                                <td>- <span>2,000</span> 원</td>
+                                                <td><button class="btn_find btn_white mb10 pop_open" data-popup="popup_prd_coupon">쿠폰선택</button></td>
+                                            </tr> -->
+                                            <tr>
+                                                <th>주문쿠폰</th>
+                                                <td>- <span>14,500</span> 원</td>
+                                                <td><button class="btn_find btn_white mb10 pop_open" data-popup="popup_ord_coupon">쿠폰선택</button></td>
+                                            <tr>
+                                                <th class="v_top">마일리지</th>
+                                                <td>
+                                                    <div class="input_text_new input_wrap mb10"><input type="text" placeholder="0" class="text-input mr5" style="width:87%">M</div>
+                                                     <p class="add_notice">사용가능 <span>2,000M</span> / 보유 2,410M</p>
+                                                </td>
+                                                <td class="v_top"><button class="btn_find btn_black">최대사용</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div><!-- discount -->
+                        <div class="paymt_info _price">
+                            <div class="article_title active">결제 금액</div>
+                            <div class="article_content" style="display:block;">
+                                <div class="table_wrap1" style="padding:0">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>총 상품 금액 (<span>3</span>)</td>
+                                                <td><span>370,500</span>원</td>
+                                            </tr>
+                                            <tr>
+                                                <td>총 배송비</td>
+                                                <td>+ <span>2,500</span>원</td>
+                                            </tr>
+                                            <tr>
+                                                <td>총 쿠폰 할인</td>
+                                                <td>- <span>35,000</span>원</td>
+                                            </tr>
+                                            <tr>
+                                                <td>마일리지 사용</td>
+                                                <td>- <span>2,000</span>원</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td>최종 결제 금액</td>
+                                                <td>
+                                                    <span class="ctt-pay"><b class="ctt-pay-num">162,900</b>원</span>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+
+                                    <button type="submit" class="black-btn pc-only">결제하기</button>
+                                </div>
+                            </div>
+                        </div><!-- price -->
+                        <div class="paymt_info _mileage">
+                            <div class="article_title active">마일리지 적립<span class="orange_txt">최대 <em>3,629M</em></span></div>
+                            <div class="article_content" style="display:block">
+                                <div class="table_wrap1" style="padding:0">
+                                    <table>
+                                        <colgroup>
+                                            <col width="40%"/>
+                                            <col width=""/>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td>기본 구매 적립</td>
+                                                <td><span>1,629</span>M</td>
+                                            </tr>
+                                            <tr>
+                                                <td>텍스트 상품평 작성 시</td>
+                                                <td class="t_blue">+ <span>500</span>M</td>
+                                            </tr>
+                                            <tr>
+                                                <td>포토 상품평 작성 시</td>
+                                                <td class="t_blue">+ <span>1,500</span>M</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <ul class="mlg_info">
+                                                        <li>상품평 작성은 구매확정 후 가능합니다.</li>
+                                                        <li>마일리지는 작성한 상품평 유형에 따라 한번만 지급됩니다.</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+
+                                    <button type="submit" class="black-btn pc-only">결제하기</button>
+                                </div>
+                            </div>
+                        </div><!-- mileage -->
+                        <div class="paymt_info _method">
+                            <div class="article_title active">결제 수단</div>
+                            <div class="article_content" style="display:block;">
+                                <div class="wrap_radio">
+                                    <span class="input_radio">
+                                        <input type="radio" name="radio1" id="radio1_1"><label for="radio1_1" class="tc_3">신용카드</label>
+                                        <a href="#" class="a_info">결제혜택 확인</a>
+                                    </span>
+                                    <span class="input_radio">
+                                        <input type="radio" name="radio1" id="radio1_2"><label for="radio1_2" class="tc_3">무통장입금</label>
+                                    </span>
+                                    <span class="input_radio">
+                                        <input type="radio" name="radio1" id="radio1_3"><label for="radio1_3" class="tc_3">실시간 계좌이체</label>
+                                    </span>
+                                    <span class="input_radio">
+                                        <input type="radio" name="radio1" id="radio1_4"><label for="radio1_4" class="tc_3">
+                                            <img src="https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/payment/img_npay.jpg" alt="네이버페이">
+                                        </label>
+                                    </span>
+                                    <span class="input_radio">
+                                        <input type="radio" name="radio1" id="radio1_5"><label for="radio1_5" class="tc_3">
+                                            <img src="https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/payment/img_payco.jpg" alt="페이코">
+                                        </label>
+                                        <a href="#"  class="a_info">결제혜택 확인</a>
+                                    </span>
+                                    <span class="input_radio">
+                                        <input type="radio" name="radio1" id="radio1_6"><label for="radio1_6" class="tc_3">
+                                            <img src="https://hhp-site-common-resource.s3.ap-northeast-2.amazonaws.com/common/payment/img_spay.jpg" alt="삼성페이">
+                                        </label>
+                                    </span>
+                                    <div class="pay_back">
+                                        <div class="title">환불계좌정보</div>
+                                        <div class="content">
+                                            <div class="mb10">
+                                                <select class="sz-select_sl">
+                                                    <option value="입금 은행을 선택해주세요.">입금 은행을 선택해주세요.</option>
+                                                    <option value="국민">국민</option>
+                                                    <option value="농협">농협</option>
+                                                    <option value="신한">신한</option>
+                                                </select>
+                                                <ul class="sz-select_list">
+                                                    <li class="selected">입금 은행을 선택해주세요.</li>
+                                                    <li>
+                                                        <ul class="sz-select_sub">
+                                                            <li>국민</li>
+                                                            <li>농협</li>
+                                                            <li>신한</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="input_text_new input_wrap mb10">
+                                                <input type="text" placeholder="계좌번호" class="text-input">
+                                                <!-- <button type="button" data-type="inputreset" class="spr_before"><span class="s_out">입력 삭제</span></button> -->
+                                            </div>
+
+                                            <!-- <div class="name_check">
+                                                <div class="input_text_new input_wrap mb10">
+                                                    <input type="text" placeholder="예금주" class="text-input">
+                                                    <button type="button" data-type="inputreset" class="spr_before"><span class="s_out">입력 삭제</span></button>
+                                                </div>
+                                                <button class="button_black">계좌인증</button>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="default_check2">
+                                    <input type="checkbox" id="chk_method" class="sz-custom_check">
+                                    <label for="chk_method" class="sz-custom_label"></label>
+                                    <label for="chk_method" class="sz-custom_text">선택한 결제 수단 다음에도 사용</label>
+                                </p>
+                            </div>
+                        </div><!-- method -->
+                        <div class="paymt_info _agree">
+                            <div class="article_title">
+                                <p class="pos_r">
+                                    <input type="checkbox" id="chk_agree" class="sz-custom_check">
+                                    <label for="chk_agree" class="sz-custom_label"></label>
+                                    <label for="chk_agree" class="sz-custom_text">주문 상품 및 주문 정보,결제 동의 (필수)</label>
+                                    <a href="" class="a_info">내용확인</a>
+                                </p>
+                            </div>
+                        </div><!-- agree -->
+                    </div>
+                    <!-- .paymt_wrap 끝 -->
+
+                    <!-- 총 가격 / 결제하기 s -->
+                    <div class="cart_nav-wrap">
+                        <div class="justify_box">
+                            <div class="just_left">
+                                <span class="prod_num"><span>3</span>개 상품</span>
+                                <span class="prod_total">총 <span class="ptolal_num">403,000</span>원</span>
+                            </div>
+                            <div class="just_right">
+                                <button type="submit" class="orange-btn">결제하기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// 총 가격 / 결제하기 E -->
+                </form>
+            </div>
+        </div>
+
+        <!-- slick slider -->
+        <!-- <script src="assets/lib/slick/slick.min.js"></script> -->
+        <!-- masonry -->
+        <script src="../common/lib/jquery-2.2.4.min.js"></script>
+        <script src="../common/scripts/main.js?v=1.3.7"></script>
+        <script>
+            (function(){
+
+                function toggleAcco(ele, content) {
+                    $(ele).on('click touch', function () {
+                        $(this).toggleClass('active');
+                        $(this).siblings(content).slideToggle();
+                    });
+                }
+                toggleAcco('.article_title', '.article_content');
+
+               //무통장입금 선택 시 환불계좌 정보 추가
+                $('.input_radio').change(function() {
+                    $('.article_content .pay_back').remove();
+                    $('.input_radio #radio1_2:checked').parent().parent().append('<div class="pay_back"><div class="title">환불계좌정보</div><div class="content"><div class="mb10"><select class="sz-select_sl"><option value="입금 은행을 선택해주세요.">입금 은행을 선택해주세요.</option><option value="국민">국민</option><option value="농협">농협</option><option value="신한">신한</option></select><ul class="sz-select_list"><li class="selected">입금 은행을 선택해주세요.</li><li><ul class="sz-select_sub"><li>국민</li><li>농협</li><li>신한</li></ul></li></ul></div><div class="input_text_new input_wrap mb10"><input type="text" placeholder="계좌번호" class="text-input"></div><div class="name_check"><div class="input_text_new input_wrap mb10"></div></div></div>');
+                });
+                // function selectBox($ele, $sub, $sel) {
+                //     var $select = $($ele).find('.selected');
+                //     var $sub = $($sub);
+
+                //     var sV = '';
+
+                //     $select.on('click focus', function () {
+                //         if ( $(this).hasClass('active') ) {
+                //             $(this).siblings('li').children($sub).stop().hide().removeClass('active');
+                //             $(this).removeClass('active');
+                //         } else {
+                //             $(this).siblings('li').children($sub).stop().show().addClass('active');
+                //             $(this).addClass('active');
+                //         }
+                //     });
+
+                //     $sub.children('li').on('click', function () {
+                //         sV = $(this).text();
+                //         $(this).parents($ele).find($select).html('<span>' + sV + '</span>');
+
+                //         // 셀렉트박스 옵션설정
+                //         var sI = $(this).index();
+                //         $(this).parents($ele).siblings($sel).children('option').attr('selected', false).eq(sI).attr('selected', true);
+                //     });
+
+                //     // 셀렉스박스 외 클릭시 셀렉트박스 닫힘
+                //     $('html').on('click focus', function (e) {
+                //         if ($(e.target).closest('.selected').length === 0) {
+                //             $sub.hide().removeClass('active');
+                //             $select.removeClass('active');
+                //         }
+                //     });
+                // }
+                // selectBox('.sz-select_list', '.sz-select_sub', '.sz-select_sl');
+
+            })(jQuery);
+        </script>
+    </body>
+</html>

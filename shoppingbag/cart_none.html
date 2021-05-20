@@ -3,53 +3,38 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>힙합퍼 장바구니 메인</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="../common/lib/jquery-2.2.4.min.js"></script>
+        <title>힙합퍼 장바구니 상품 없을 때</title>
+        <meta name="description">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <script src="../common/lib/plugin.js"></script>
         <link rel="stylesheet" href="../common/css/common.css">
-        <link rel="stylesheet" href="assets/css/cart.css">
+        <link rel="stylesheet" href="../common/css/productdetail.css">
     </head>
     <body>
-        <div id="wrap">
-
+        <div id="wrap" class="wd720">
             <div id="header">
-                <div class="page-header white no_border">
-                    <div class="sz-wrap justify_box">
-                        <div class="just_left">
-                            <a href="#" class="back-btn"></a>
-                            <h2 class="page-title">쇼핑백</h2>
-                        </div>
+                <div class="headerWrap">
+                    <div class="box_left back">
+                        <a href="#" class="btn_back"><span class="blind">뒤로가기</span></a>
+                        <p class="header_title">
+                            쇼핑백
+                        </p>
                     </div>
-                </div>
-            </div>
-
-            <div id="container">
-                <div class="cart_pc-wrap">
-                    <div class="cart_progress-wrap">
-                        <ul class="cart_progress-list">
-                            <li class="active"><span class="num">01</span>쇼핑백</li>
-                            <li><span class="num">02</span>주문결제</li>
-                            <li><span class="num">03</span>주문완료</li>
+                    <div class="box_right">
+                        <ul class="btn_area">
+                            <li><a href="#"><i class="ico home"><span class="blind">메인 바로가기</span></i></a></li>
                         </ul>
                     </div>
-                    <div class="cart_pro-wrap">
-                        <div class="cart-section cart_none-section">
-                            <!-- .cart-wrap 시작 -->
-                            <div class="cart-wrap cart_none_box">
-                                <div class="cart_none-wrap">
-                                    <div class="cnw-box">
-                                        <p class="cnw-text">쇼핑백에 담긴 상품이 없어요.</p>
-                                        <a href="#" class="cnw-btn">쇼핑하러 가기</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div id="container">
+                <div class="cart_none-wrap">
+                    <div class="cnw-box">
+                        <p class="cnw-text">쇼핑백에 담긴 상품이 없어요.</p>
+                        <a href="#" class="cnw-btn">쇼핑하러 가기</a>
                     </div>
                 </div>
             </div>
-
         </div>
-
     </body>
 </html>

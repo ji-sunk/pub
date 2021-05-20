@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>힙합퍼 마이 페이지 문의_문의 상품 선택하기</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="../common/css/common.css">
+        <link rel="stylesheet" href="../common/css/mypage.css">
+        <script src="../common/lib/plugin.js"></script>
+        <!-- <script src="../common/lib/common.js"></script>
+        <script src="../common/lib/slick.min.js"></script> -->
+        <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&amp;subset=korean">
+    </head>
+    <body>
+        <div id="wrap" class="wd720">
+            <div id="header">
+                <div class="headerWrap brb">
+                    <div class="box_left nbk">
+                        <p class="header_title">
+                            문의 상품 선택하기
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="container">
+                <div class="myWrap pdB0">
+
+                    <div class="cont cont_mypage">
+        				<h3 class="tit tc_1 on_w">주문 배송 조회</h3>
+        				<form action="" class="myorder_search">
+        					<fieldset>
+        						<legend>내 주문 내역 조회</legend>
+        						<h4 class="s_out">내 주문 조회</h4>
+        						<div class="box lc_d0 dis_f jc_c ai_c">
+        							<span class="input_checkbox">
+        								<input type="checkbox" name="checkbox1" id="range1m">
+        								<label for="range1m" class="tc_3 spr_after">최근 1개월</label>
+        							</span>
+        							<span class="input_checkbox">
+        								<input type="checkbox" name="checkbox1" id="range3m">
+        								<label for="range3m" class="tc_3 spr_after">최근 3개월</label>
+        							</span>
+        							<span class="input_date dis_if">
+        								<button type="button" class="btn_date spr_before" onclick="closeLayer('#calTo');openLayer(event,'#calFrom',this)"><span class="s_out">달력보기</span></button>
+        								<input type="text" class="text_date tc_3" readonly value="2017.11.01">
+        							</span>
+        							<span class="line bg_3_b pos_center_before v"></span>
+        							<span class="input_date dis_if">
+        								<button type="button" class="btn_date spr_before" onclick="closeLayer('#calFrom');openLayer(event,'#calTo',this)"><span class="s_out">달력보기</span></button>
+        								<input type="text" class="text_date tc_3" readonly value="2017.11.01">
+        							</span>
+        							<button type="button" class="btn_search large fix">조회</button>
+        						</div>
+        						<p class="desc tc_8">최근 1년간의 내역을 조회 할 수 있습니다. (2017년 이후 부터 조회 가능)</p>
+        						<div class="wrap_layer cal_layer lc_b form hide" id="calFrom">
+        							<button type="button" class="btn_close bg_3_a bg_3_b pos_center_before pos_center_after"><span class="s_out">레이어 닫기</span></button>
+        							<div class="cal_yearmonth dis_f">
+        								<div class="item dis_if">
+        									<button type="button" class="btn_arrow prev pos_center_after lc_b_a"><span class="s_out">지난 해</span></button>
+        									<input type="text" class="text tc_3" readonly value="2018">
+        									<button type="button" class="btn_arrow next pos_center_after lc_b_a"><span class="s_out">다음 해</span></button>
+        								</div>
+        								<div class="item dis_if">
+        									<button type="button" class="btn_arrow prev pos_center_after lc_b_a"><span class="s_out">지난 해</span></button>
+        									<input type="text" class="text tc_3" readonly value="11">
+        									<button type="button" class="btn_arrow next pos_center_after lc_b_a"><span class="s_out">다음 해</span></button>
+        								</div>
+        							</div>
+        							<table class="cal_table tc_3">
+        								<thead>
+        									<tr>
+        										<th class="tc_8">SUN</th>
+        										<th class="tc_8">MON</th>
+        										<th class="tc_8">TUE</th>
+        										<th class="tc_8">WED</th>
+        										<th class="tc_8">THU</th>
+        										<th class="tc_8">FRI</th>
+        										<th class="tc_8">SAT</th>
+        									</tr>
+        								</thead>
+        								<tbody>
+        									<tr>
+        										<td class="tc_b"><button type="button">27</button></td>
+        										<td class="tc_b"><button type="button">28</button></td>
+        										<td class="tc_b"><button type="button">29</button></td>
+        										<td class="tc_b"><button type="button">30</button></td>
+        										<td class="tc_b"><button type="button">31</button></td>
+        										<td><button type="button">1</button></td>
+        										<td><button type="button">2</button></td>
+        									</tr>
+        									<tr>
+        										<td><button type="button">3</button></td>
+        										<td><button type="button">4</button></td>
+        										<td><button type="button">5</button></td>
+        										<td><button type="button">6</button></td>
+        										<td><button type="button">7</button></td>
+        										<td><button type="button">8</button></td>
+        										<td><button type="button">9</button></td>
+        									</tr>
+        									<tr>
+        										<td><button type="button">10</button></td>
+        										<td><button type="button">11</button></td>
+        										<td><button type="button">12</button></td>
+        										<td><button type="button">13</button></td>
+        										<td><button type="button">14</button></td>
+        										<td><button type="button">15</button></td>
+        										<td><button type="button">16</button></td>
+        									</tr>
+        									<tr>
+        										<td><button type="button">17</button></td>
+        										<td><button type="button">18</button></td>
+        										<td><button type="button">19</button></td>
+        										<td><button type="button">20</button></td>
+        										<td><button type="button">21</button></td>
+        										<td><button type="button" class="today" onclick="closeLayer('#calFrom');">22</button></td>
+        										<td><button type="button">23</button></td>
+        									</tr>
+        									<tr>
+        										<td><button type="button">24</button></td>
+        										<td><button type="button">25</button></td>
+        										<td><button type="button">26</button></td>
+        										<td><button type="button">27</button></td>
+        										<td><button type="button">28</button></td>
+        										<td class="tc_b"><button type="button">1</button></td>
+        										<td class="tc_b"><button type="button">2</button></td>
+        									</tr>
+        								</tbody>
+        							</table>
+        						</div>
+        						<div class="wrap_layer cal_layer lc_b to hide" id="calTo">
+        							<button type="button" class="btn_close bg_3_a bg_3_b pos_center_before pos_center_after"><span class="s_out">레이어 닫기</span></button>
+        							<div class="cal_yearmonth dis_f">
+        								<div class="item dis_if">
+        									<button type="button" class="btn_arrow prev pos_center_after lc_b_a"><span class="s_out">지난 해</span></button>
+        									<input type="text" class="text tc_3" readonly value="2018">
+        									<button type="button" class="btn_arrow next pos_center_after lc_b_a"><span class="s_out">다음 해</span></button>
+        								</div>
+        								<div class="item dis_if">
+        									<button type="button" class="btn_arrow prev pos_center_after lc_b_a"><span class="s_out">지난 해</span></button>
+        									<input type="text" class="text tc_3" readonly value="11">
+        									<button type="button" class="btn_arrow next pos_center_after lc_b_a"><span class="s_out">다음 해</span></button>
+        								</div>
+        							</div>
+        							<table class="cal_table tc_3">
+        								<thead>
+        									<tr>
+        										<th class="tc_8">SUN</th>
+        										<th class="tc_8">MON</th>
+        										<th class="tc_8">TUE</th>
+        										<th class="tc_8">WED</th>
+        										<th class="tc_8">THU</th>
+        										<th class="tc_8">FRI</th>
+        										<th class="tc_8">SAT</th>
+        									</tr>
+        								</thead>
+        								<tbody>
+        									<tr>
+        										<td class="tc_b"><button type="button">27</button></td>
+        										<td class="tc_b"><button type="button">28</button></td>
+        										<td class="tc_b"><button type="button">29</button></td>
+        										<td class="tc_b"><button type="button">30</button></td>
+        										<td class="tc_b"><button type="button">31</button></td>
+        										<td><button type="button">1</button></td>
+        										<td><button type="button">2</button></td>
+        									</tr>
+        									<tr>
+        										<td><button type="button">3</button></td>
+        										<td><button type="button">4</button></td>
+        										<td><button type="button">5</button></td>
+        										<td><button type="button">6</button></td>
+        										<td><button type="button">7</button></td>
+        										<td><button type="button">8</button></td>
+        										<td><button type="button">9</button></td>
+        									</tr>
+        									<tr>
+        										<td><button type="button">10</button></td>
+        										<td><button type="button">11</button></td>
+        										<td><button type="button">12</button></td>
+        										<td><button type="button">13</button></td>
+        										<td><button type="button">14</button></td>
+        										<td><button type="button">15</button></td>
+        										<td><button type="button">16</button></td>
+        									</tr>
+        									<tr>
+        										<td><button type="button">17</button></td>
+        										<td><button type="button">18</button></td>
+        										<td><button type="button">19</button></td>
+        										<td><button type="button">20</button></td>
+        										<td><button type="button">21</button></td>
+        										<td><button type="button" class="today" onclick="closeLayer('#calTo');">22</button></td>
+        										<td><button type="button">23</button></td>
+        									</tr>
+        									<tr>
+        										<td><button type="button">24</button></td>
+        										<td><button type="button">25</button></td>
+        										<td><button type="button">26</button></td>
+        										<td><button type="button">27</button></td>
+        										<td><button type="button">28</button></td>
+        										<td class="tc_b"><button type="button">1</button></td>
+        										<td class="tc_b"><button type="button">2</button></td>
+        									</tr>
+        								</tbody>
+        							</table>
+        						</div>
+        					</fieldset>
+        				</form>
+        				<section class="myorder_list">
+        					<h4 class="s_out">내 주문 목록</h4>
+        					<p class="noresult dis_f ai_c jc_c tc_5 lc_d0">주문 배송 내역이 없습니다.</p>
+        				</section>
+        				<section class="info_step">
+        					<h4 class="tit tc_3">주문 및 배송 절차</h4>
+        					<ol class="step_list dis_f lc_d0">
+        						<li class="spr_before pos_center_before">
+        							<strong class="tit tc_3">입금 전</strong>
+        							<div class="desc">
+        								<p class="tc_8">입금 및 결제 확인이<br>미완료된 상태</p>
+        								<div class="wrap_tooltip">
+        									<a href="#stepTip1" class="btn_tooltip spr_before" data-type="tooltip"><span class="s_out">자세히보기</span></a>
+        									<div class="tootip_layer step_tooltip lc_b hide" id="stepTip1">
+        										<p class="desc">주문 후 3일 이내 미입금 시 자동 주문 취소 됩니다.</p>
+        									</div>
+        								</div>
+        							</div>
+        						</li>
+        						<li class="spr_before pos_center_before">
+        							<strong class="tit tc_3">출고 전</strong>
+        							<div class="desc">
+        								<p class="tc_8">입금 및 결제 확인이<br>완료 된 상태</p>
+        								<div class="wrap_tooltip">
+        									<a href="#stepTip2" class="btn_tooltip spr_before" data-type="tooltip"><span class="s_out">자세히보기</span></a>
+        									<div class="tootip_layer step_tooltip lc_b hide" id="stepTip2">
+        										<p class="desc">구매 확정을 해주셔야 마일리지 적립이 됩니다.</p>
+        									</div>
+        								</div>
+        							</div>
+        						</li>
+        						<li class="spr_before pos_center_before">
+        							<strong class="tit tc_3">출고 준비중</strong>
+        							<div class="desc">
+        								<p class="tc_8">주문한 상품을 확인 후<br>배송을 준비중인 상태</p>
+        							</div>
+        						</li>
+        						<li class="spr_before pos_center_before">
+        							<strong class="tit tc_3">출고 완료(배송 중)</strong>
+        							<div class="desc">
+        								<p class="tc_8">주문한 상품이<br>배송되고 있는 상태</p>
+        							</div>
+        						</li>
+        						<li class="spr_before pos_center_before">
+        							<strong class="tit tc_3">배송 완료</strong>
+        							<div class="desc">
+        								<p class="tc_8">주문한 상품이 고객님의<br>배송지에 도착한 상태</p>
+        							</div>
+        						</li>
+        					</ol>
+        				</section>
+        			</div>
+
+
+
+                    <div class="iqySel_wrap">
+                        <div class="write_info_wrap pdB25">
+                            <ul class="write_info">
+                                <li>
+                                  주문 내역은 6개월 이내 내역만 제공합니다.
+                                </li>
+                                <li>
+                                   고객님이 삭제하신 주문 내역은 표시되지 않습니다.
+                                </li>
+                           </ul>
+                        </div>
+
+                        <p class="sub_tit brdT"> <span class="num">2021.03.27</span> </p>
+                        <ul class="pd_lst pd0">
+                            <li>
+                                <div class="odrNum">
+                                    <div class="bg_gry brB">
+                                        <span class="txt">주문번호</span> <span class="num">2020111816077088</span>
+                                    </div>
+
+                                    <ul class="pd_lst clear">
+                                        <li class="ord_box">
+                                            <div class="default_check">
+                                                <input type="checkbox" id="chk_method1_3" class="sz-custom_check">
+                                                <label for="chk_method1_3" class="sz-custom_label flt_le"></label>
+                                            </div>
+                                            <div class="pd_thum">
+                                                <a href="#none">
+                                                    <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy12.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="pd_deWrap">
+                                                <a href="#">
+                                                    <span class="pd_brd">
+                                                        태그호이어
+                                                    </span>
+                                                </a>
+                                                <ul class="list_bar">
+                                                    <li class="ellipsis">CEMENT / XXL</li>
+                                                    <li><span class="num">1개</span></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <p class="sub_tit brdT"> <span class="num">2021.03.29</span> </p>
+                        <ul class="pd_lst pd0">
+                            <li>
+                                <div class="odrNum">
+                                    <div class="bg_gry brB">
+                                        <span class="txt">주문번호</span> <span class="num">2020111816077089</span>
+                                    </div>
+                                    <ul class="pd_lst clear">
+                                        <li class="ord_box">
+                                            <div class="default_check">
+                                                <input type="checkbox" id="chk_method1_1" class="sz-custom_check">
+                                                <label for="chk_method1_1" class="sz-custom_label flt_le"></label>
+                                            </div>
+                                            <div class="pd_thum">
+                                                <a href="#none">
+                                                    <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy12.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="pd_deWrap">
+                                                <a href="#">
+                                                    <span class="pd_brd flt_le">
+                                                        [Attack03_02] Fleece Pants (U19DBPT44)[Attack03_02] Fleece Pants (U19DBPT44)[Attack03_02] Fleece Pants (U19DBPT44)[Attack03_02] Fleece Pants (U19DBPT44)
+                                                    </span>
+                                                </a>
+                                                <ul class="list_bar">
+                                                    <li class="ellipsis">CEMENT CEMENTCEMENTCEMENTCEMENT / XXL</li>
+                                                    <li><span class="num">1개</span></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li class="ord_box">
+                                            <div class="default_check">
+                                                <input type="checkbox" id="chk_method1_2" class="sz-custom_check">
+                                                <label for="chk_method1_2" class="sz-custom_label flt_le"></label>
+                                            </div>
+                                            <div class="pd_thum">
+                                                <a href="#none">
+                                                    <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy12.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="pd_deWrap">
+                                                <a href="#">
+                                                    <span class="pd_brd">
+                                                        [Attack03_02] Fleece Pants (U19DBPT44)
+                                                    </span>
+                                                </a>
+                                                <ul class="list_bar">
+                                                    <li class="ellipsis">CEMENT / XXL</li>
+                                                    <li><span class="num">1개</span></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="ord_box">
+                                            <div class="default_check">
+                                                <input type="checkbox" id="chk_method1_2" class="sz-custom_check">
+                                                <label for="chk_method1_2" class="sz-custom_label flt_le"></label>
+                                            </div>
+                                            <div class="pd_thum">
+                                                <a href="#none">
+                                                    <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy12.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="pd_deWrap">
+                                                <a href="#">
+                                                    <span class="pd_brd">
+                                                        [Attack03_02] Fleece Pants (U19DBPT44)
+                                                    </span>
+                                                </a>
+                                                <ul class="list_bar">
+                                                    <li class="ellipsis">CEMENT / XXL</li>
+                                                    <li><span class="num">1개</span></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="last_btn_wrap">
+                        <button class="last_btn_white">취소</button>
+                        <button class="last_btn_black wd50">선택</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

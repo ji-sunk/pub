@@ -1114,6 +1114,29 @@
         <script src="../common/lib/slick.min.js"></script>
         <script src="../common/lib/main.js"></script>
         <script type="text/javascript">
+                $('.btn_buy1').on('click', function(){
+        	    /* $(this).parent().css('display', 'none'); */
+        	    $(this).parent().addClass('hide');
+        	    $('.btn_buy2, #itemOption').removeClass('hide');
+        	});
+
+        	$('.box_close').on('click', function(){
+        	    $('.btn_buy1').parent().removeClass('hide');
+        	    $('.btn_buy2, #itemOption').addClass('hide');
+        	});
+
+        	$(this).on('click', '#option2_ul_area', function() {
+        		if(!_data.isOption1) {
+        			showAlert('alert', '상위 옵션을 선택해주세요.');
+        			return false;
+        		}
+        	});
+
+        	$(this).on('click', '.review_txt_moreview', function(e) {
+                e.preventDefault();
+                $(this).toggleClass('on');
+                $(this).children('p').toggleClass('_ellipsis');
+            });
             $(document).ready(function(){
                 $(".tooltiptext").show();
                 setTimeout(function () {

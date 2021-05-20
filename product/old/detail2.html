@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>힙합퍼 상품 상세 _ 상품</title>
+        <meta name="description">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <script src="../js/plugin.js"></script>
+        <script src="../js/common.js"></script>
+        <!-- <script src="../common/lib/jquery-2.2.4.min.js"></script> -->
+        <!-- <link rel="stylesheet" href="../common/css/common.css"> -->
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="assets/css/productdetail.css">
+    </head>
+    <body>
+        <div id="wrap" class="wd720">
+            <div id="header">
+                <div class="headerWrap">
+                    <div class="box_left back">
+                        <a href="#" class="btn_back"><span class="blind">뒤로가기</span></a>
+                        <p class="header_title">
+                            상세 정보
+                        </p>
+                    </div>
+                    <div class="box_right">
+                        <ul class="btn_area">
+                            <li><a href="#"><i class="ico search"><span class="blind">서치 바로가기</span></i></a></li>
+                            <li><a href="#"><i class="ico bag"><span id="cartCnt" class="cart_num">99+</span><span class="blind">장바구니 바로가기</span></i></a></li>
+                            <li><a href="#"><i class="ico home"><span class="blind">메인 바로가기</span></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="container" class="pdWrap">
+                <div class="pdTopArea">
+                    <div class="product_slide_wrap">
+                        <div class="slider product_detail_slider">
+                            <div>
+                                <img src="../common/images/dummy/dummy11.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="../common/images/dummy/dummy11.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="../common/images/dummy/dummy11.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="../common/images/dummy/dummy11.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="../common/images/dummy/dummy11.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        var $slider = $('.slider');
+                            if ($slider.length) {
+                              var currentSlide;
+                              var slidesCount;
+                              var sliderCounter = document.createElement('div');
+                              sliderCounter.classList.add('slider__counter');
+                              var updateSliderCounter = function(slick, currentIndex) {
+                                currentSlide = slick.slickCurrentSlide() + 1;
+                                slidesCount = slick.slideCount;
+                                $(sliderCounter).text(currentSlide + '/' +slidesCount)
+                              };
+
+                              $slider.on('init', function(event, slick) {
+                                $slider.append(sliderCounter);
+                                updateSliderCounter(slick);
+                              });
+
+                              $slider.on('afterChange', function(event, slick, currentSlide) {
+                                updateSliderCounter(slick, currentSlide);
+                              });
+                              //
+                              // $slider.slick();
+                            }
+                    </script>
+
+                    <!-- .product_info  -->
+                    <div class="product_info clear">
+                        <div class="pi_txtBox">
+                            <span class="pi_cate">엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인 엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인</span>
+                            <p class="pi_name">SPACE LINE 에드반스 freeline no.26 퍼플 스웨트 셔츠 (챔피온 코튼)</p>
+                            <div class="star_box">
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                                <span class="star"></span>
+                                <span class="star_num">(<span class="num">999+</span>)</span>
+                            </div>
+                            <div class="pi_pay clear">
+                                <p class="sale_before num">3,515,000<span class="notoS">원</span></p>
+                                <p class="sale_per">
+                                    <span class="orange num"><span>15</span>%</span>
+                                    2,987,750 <span class="pay_num num">원</span>
+                                </p>
+                                <!-- <div><button type="button" onclick="openLayer(event,'#tempLayer1',this)"> (레이어 팝업) 버튼 타입 1개 타이틀 기본형(넓이 600px / 300px)</button></div> -->
+                                <button type="button" class="sale-btn pop_open" onclick="openLayer(event,'#tempLayer1',this)"><span class="notoS">쿠폰받기</span><i class="ico down"></i></button>
+                                <!-- <button type="button" class="sale-btn pop_open" data-popup="tempLayer1"><span class="notoS">쿠폰받기</span><i class="ico down"></i></button> -->
+                                <div class="dim_layer hide">
+                        			<div class="popuplayer" id="tempLayer1">
+                        				<div class="popup_area wd260">
+                        					<p class="title">쿠폰 발급 완료</p>
+                        					<p class="subtxt">쿠폰 할인이 적용 되었습니다.</p>
+                        					<div class="btns clear">
+                        						<button type="button" class="btn_confirm100" onclick="closeLayer('#tempLayer1');">확인</button>
+                        					</div>
+                        				</div>
+                        			</div>
+                        		</div>
+                            </div>
+                        </div>
+                        <a href="#none" class="b_share" data-type="copyurl"><i class="ico share"></i><span class="blind">공유하기 버튼</span></a>
+                        <div class="pi_listWrap">
+                            <table class="pi_list clear">
+                                <caption class="blind">상품 할인 상세 영역</caption>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">상품할인</th>
+                                        <td><span class="orange">10%</span> <span class="num">3,163,500</span>원</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">쿠폰할인</th>
+                                        <td><span class="orange">5%</span> <span class="num">175,500</span>원</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">배송비</th>
+                                        <td>
+                                            <span class="num">10,000</span>원
+                                            <div class="tooltip">해외배송 <span class="ico tip"></span>
+                                              <span class="tooltiptext">평균 배송기간은 10~20일 소요되며,<br>수량별 추가 배송비가 부과될 수 있어요.</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="pi_listWrap pd0">
+                            <table class="pi_list clear">
+                                <caption class="blind">상품 할인 상세 영역</caption>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"><span>구매혜택</span></th>
+                                        <td>
+                                            <p>적립예정 마일리지 <span class="num">298,775M</span></p>
+                                            <p><span class="naver_pay"></span>결제 시 N포인트 <span class="num">1%</span>적립</p>
+                                            <!-- <button type="button" class="card-btn"></button> -->
+                                            <!-- <a href="#" class="pop_open" onclick="openLayer(event,'#pop_card_benefit',this)">카드사 혜택</a> -->
+                                            <button type="button" class="pop_open" data-popup="pop_card_benefit">카드사 혜택</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- 팝업 카드사 혜택 S-->
+                        <div id="pop_card_benefit" class="popuplayer popup-wrap">
+                            <h2 class="page-title">이달의 카드사 혜택</h2>
+                            <div class="paymt_wrap">
+                            <div class="paymt_card_benefit">
+                                <strong>무이자 할부</strong>
+                                <ul class="card">
+                                    <li>
+                                        <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                                        <dl>
+                                            <dd>2~6개월/12개월</dd>
+                                            <dd>5만원 이상 결제 시</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                                        <dl>
+                                            <dd>2~5개월</dd>
+                                            <dd>5만원 이상 결제 시</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                                        <dl>
+                                            <dd>2~5개월</dd>
+                                            <dd>5만원 이상 결제 시</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                                        <dl>
+                                            <dd>2~6개월</dd>
+                                            <dd>5만원 이상 결제 시</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                                        <dl>
+                                            <dd>2~6개월</dd>
+                                            <dd>5만원 이상 결제 시</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                                        <dl>
+                                            <dd>2~6개월</dd>
+                                            <dd>5만원 이상 결제 시</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                                        <dl>
+                                            <dd>2~6개월</dd>
+                                            <dd>5만원 이상 결제 시</dd>
+                                    </li>
+                                </ul>
+                                <strong>부분 무이자 할부</strong>
+                                <ul class="card">
+                                    <li>
+                                        <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                                        <dl>
+                                            <dd>2~6개월/12개월</dd>
+                                            <dd>5만원 이상 결제 시</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                                        <dl>
+                                            <dd>2~5개월</dd>
+                                            <dd>5만원 이상 결제 시</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                                        <dl>
+                                            <dd>2~5개월</dd>
+                                            <dd>5만원 이상 결제 시</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                                        <dl>
+                                            <dd>2~6개월</dd>
+                                            <dd>5만원 이상 결제 시</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                                        <dl>
+                                            <dd>2~6개월</dd>
+                                            <dd>5만원 이상 결제 시</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                                        <dl>
+                                            <dd>2~6개월</dd>
+                                            <dd>5만원 이상 결제 시</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
+                                        <dl>
+                                            <dd>2~6개월</dd>
+                                            <dd>5만원 이상 결제 시</dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+
+                                <div class="card_benefit_info br_0">
+                                    <p><span>유의사항</span></p>
+                                    <ul>
+                                        <li>공공기관 및 오프라인 제외</li>
+                                        <li>법인/개인 사업자 기업 카드/선불/하이브리드/은행 계열 카드 제외</li>
+                                        <li>결제창에 '무'표시가 되어 있어도 제외 카드는 무이자 할부 미적용</li>
+                                        <li>직가맹점, 상점 부담 무이자 가맹점, 특별 제휴 가맹점, 전용 가맹점 제외</li>
+                                        <li>무이자건은 포인트/마일리지/할인 서비스 등 다른 혜택과 중복 미적용</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button type="button" class="popup_close-btn pop_close" onclick="closeLayer('#pop_card_benefit');"><span class="blind">닫기버튼</span></button>
+                            <!-- <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기버튼</span></button> -->
+                          </div>
+                        </div>
+                        <!--// 팝업 카드사 혜택 E -->
+                    </div>
+                    <!-- // .product_info -->
+                    <div class="product_banner_slide">
+                        <div>
+                            <img src="../common/images/dummy/dummy19.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="../common/images/dummy/dummy19.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-menu" class="product">
+                    <div id="tab-btn">
+                        <ul class="tab border_tab-list white clearfix">
+                            <li class="active">
+                                <a class="pro" href="#none">상품 상세</a>
+                           </li>
+                            <li>
+                                <a class="pro" href="#none">상품평(<span>999+</span>)</a>
+                            </li>
+                            <li>
+                                <a class="pro" href="#none">상품문의</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="tab-cont">
+                        <div class="">
+                            <div class="pf-box tab_inr">
+                                <!-- <p id="Demore"> -->
+                                <p class="overh" id="Demore">
+                                    <img src="https://d1jmf3qg5eaacj.cloudfront.net/item_desc/web/ITEM055X41U/hufFVRD1600218949266.jpg" alt="">
+                                </p>
+                                <button id="" class="Demore_btn orange_border" >상품 상세 더보기</button>
+                            </div>
+
+                            <!-- 상품정보고시 사이즈 표 배송 정보 S-->
+                            <div class="member_event_acco-box lcear">
+                                <div class="product_detail-acco">
+                                    <div class="pda-title">
+                                        <span>상품정보고시</span>
+                                        <button type="button" class="acco-btn"></button>
+                                    </div>
+                                    <div class="pda-content">
+                                        <div class="viewdetail" style="width:100%; height:300px; background-color:#f3f3f3">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width:100px">
+                                                    <col>
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>상품 코드</th>
+                                                        <td>YH224686</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>제품 소재</th>
+                                                        <td>면100%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>색상</th>
+                                                        <td>multi</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>사이즈</th>
+                                                        <td>M, L</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>제조자</th>
+                                                        <td>와이에이치컴퍼니</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>제조 국가</th>
+                                                        <td>대한민국</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>제조 년월</th>
+                                                        <td>2018.08</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>세탁 방법 및 취급시 주의 사항</th>
+                                                        <td>손세탁 가능</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>품질 보증 기준</th>
+                                                        <td>상품페이지 참고</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>A/S 책임자와 전화번호</th>
+                                                        <td>힙합퍼 고객센터 1599-7616</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_detail-acco">
+                                    <div class="pda-title">
+                                        <span>사이즈 표</span>
+                                        <button type="button" class="acco-btn"></button>
+                                    </div>
+                                    <div class="pda-content"></div>
+                                </div>
+                                <div class="product_detail-acco">
+                                    <div class="pda-title">
+                                        <span>배송 정보</span>
+                                        <button type="button" class="acco-btn"></button>
+                                    </div>
+                                    <div class="pda-content">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 상품정보고시 사이즈 표 배송 정보 E-->
+
+                            <div class="relative_product clear">
+                                <h3>이 상품은 어때요?</h3>
+                                <div class="pd_item_wrap">
+                                    <ul class="list_pd small">
+                                        <li class="lc_e5">
+                                            <div class="poz_rel">
+                                                <div class="link">
+                                                    <a href="#" class="img">
+                                                        <img src="../common/images/dummy/temp1.jpg" alt="" class="pos_center">
+                                                    </a>
+                                                    <a href="#" class="brand ellipsis">나이키</a>
+                                                    <a href="#" class="name ellipsis">비욘드 레터링 특양면 반팔 (티화이트)</a>
+                                                    <div class="price tc_3 clear">
+                                                        <p><del class="origin tc_b">9,552,000</del></p>
+                                                        <p>
+                                                            <span class="sale tc_poi">50%</span>
+                                                            <strong class="now tc_3">6,139,000</strong>
+                                                        </p>
+                                                    </div>
+                                                    <div class="badge_coupon">
+                                                        <span class="txt">쿠폰</span>
+                                                        <span class="num">10,000원</span>
+                                                    </div>
+                                                    <ul class="list_bar rcn">
+                                                        <li><span class="ico like_s"></span>999+</li>
+                                                        <li>상품평 999+</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="lc_e5">
+                                            <div class="poz_rel">
+                                                <div class="link">
+                                                    <a href="#" class="img">
+                                                        <img src="../common/images/dummy/temp1.jpg" alt="" class="pos_center">
+                                                    </a>
+                                                    <a href="#" class="brand ellipsis tc_3">나이키 나이키나이키나이키나이키나이키나이키</a>
+                                                    <a href="#" class="name ellipsis">베이직</a>
+                                                    <div class="price tc_3 clear">
+                                                        <p>
+                                                            <span class="sale tc_poi">50%</span>
+                                                            <strong class="now tc_3">51,800</strong>
+                                                        </p>
+                                                    </div>
+                                                    <ul class="list_bar rcn">
+                                                        <li><span class="ico like_s"></span>1</li>
+                                                        <li>상품평 1</li>
+                                                    </ul>
+                                                    <!-- <div class="func">
+                                                        <button type="button" class="btn_like small spr_before" data-type="like" data-callback="likeCallback" data-count="153"><span class="blind">좋아요수 : </span><span class="count tc_8">153</span></button>
+                                                        <a href="#" class="btn_reply small spr_before"><span class="blind">댓글수 : </span><span class="count tc_8">153</span></a>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="lc_e5">
+                                            <div class="poz_rel">
+                                                <div class="link">
+                                                    <a href="#" class="img">
+                                                        <img src="../common/images/dummy/temp1.jpg" alt="" class="pos_center">
+                                                    </a>
+                                                    <a href="#" class="brand ellipsis tc_3">나이키 나이키나이키나이키나이키나이키나이키</a>
+                                                    <a href="#" class="name ellipsis">베이직 ML183UCAMTa018 베이직 헤비 스웨트 크루넥 (화이트)</a>
+                                                    <div class="price tc_3 clear">
+                                                        <p><del class="origin tc_b">9,552,000</del></p>
+                                                        <p>
+                                                            <span class="sale tc_poi">50%</span>
+                                                            <strong class="now tc_3">51,800</strong>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="lc_e5">
+                                            <div class="poz_rel">
+                                                <div class="link">
+                                                    <a href="#" class="img">
+                                                        <img src="../common/images/dummy/temp1.jpg" alt="" class="pos_center">
+                                                    </a>
+                                                    <a href="#" class="brand ellipsis tc_3">나이키 나이키나이키나이키나이키나이키나이키</a>
+                                                    <a href="#" class="name ellipsis">베이직 ML183UCAMTa018 베이직 헤비 스웨트 크루넥 (화이트)</a>
+                                                    <div class="price tc_3 clear">
+                                                        <p><del class="origin tc_b">9,552,000</del></p>
+                                                        <p>
+                                                            <span class="sale tc_poi">50%</span>
+                                                            <strong class="now tc_3">51,800</strong>
+                                                        </p>
+                                                    </div>
+                                                    <ul class="list_bar rcn">
+                                                        <li><span class="ico like_s"></span>
+                                                            999+</li>
+                                                        <li>상품평 999+</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="lc_e5">
+                                            <div class="poz_rel">
+                                                <div class="link">
+                                                    <a href="#" class="img">
+                                                        <img src="../common/images/dummy/temp1.jpg" alt="" class="pos_center">
+                                                    </a>
+                                                    <a href="#" class="brand ellipsis tc_3">나이키 나이키나이키나이키나이키나이키나이키</a>
+                                                    <a href="#" class="name ellipsis">베이직 ML183UCAMTa018 베이직 헤비 스웨트 크루넥 (화이트)</a>
+                                                    <div class="price tc_3 clear">
+                                                        <p><del class="origin tc_b">9,552,000</del></p>
+                                                        <p>
+                                                            <span class="sale tc_poi">50%</span>
+                                                            <strong class="now tc_3">51,800</strong>
+                                                        </p>
+                                                    </div>
+                                                    <div class="badge_coupon">
+                                                        <span class="txt">쿠폰</span>
+                                                        <span class="num">10,000원</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="lc_e5">
+                                            <div class="poz_rel">
+                                                <div class="link">
+                                                    <a href="#" class="img">
+                                                        <img src="../common/images/dummy/temp1.jpg" alt="" class="pos_center">
+                                                    </a>
+                                                    <a href="#" class="brand ellipsis tc_3">나이키 나이키나이키나이키나이키나이키나이키</a>
+                                                    <a href="#" class="name ellipsis">베이직 ML183UCAMTa018 베이직 헤비 스웨트 크루넥 (화이트)</a>
+                                                    <div class="price tc_3 clear">
+                                                        <p>
+                                                            <span class="sale tc_poi">50%</span>
+                                                            <strong class="now tc_3">51,800</strong>
+                                                        </p>
+                                                    </div>
+                                                    <ul class="list_bar rcn">
+                                                        <li><span class="ico like_s"></span>
+                                                            999+</li>
+                                                        <li>상품평 999+</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="relative_product clear">
+                                <h3>나이키 상품추천</h3>
+                                <div class="pd_item_wrap">
+                                    <ul class="list_pd small">
+                                        <li class="lc_e5">
+                                            <div class="poz_rel">
+                                                <div class="link">
+                                                    <a href="#" class="img">
+                                                        <img src="../common/images/dummy/temp1.jpg" alt="" class="pos_center">
+                                                    </a>
+                                                    <a href="#" class="brand ellipsis">나이키 나이키나이키</a>
+                                                    <a href="#" class="name ellipsis">비욘드 레터링 특양면 반팔 (티화이트)</a>
+                                                    <div class="price tc_3 clear">
+                                                        <p><del class="origin tc_b">9,552,000</del></p>
+                                                        <p>
+                                                            <span class="sale tc_poi">50%</span>
+                                                            <strong class="now tc_3">6,139,000</strong>
+                                                        </p>
+                                                    </div>
+                                                    <div class="badge_coupon">
+                                                        <span class="txt">쿠폰</span>
+                                                        <span class="num">10,000원</span>
+                                                    </div>
+                                                    <ul class="list_bar rcn">
+                                                        <li><span class="ico like_s"></span>999+</li>
+                                                        <li>상품평 999+</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="lc_e5">
+                                            <div class="poz_rel">
+                                                <div class="link">
+                                                    <a href="#" class="img">
+                                                        <img src="../common/images/dummy/temp1.jpg" alt="" class="pos_center">
+                                                    </a>
+                                                    <a href="#" class="brand ellipsis tc_3">나이키 나이키나이키나이키나이키나이키나이키</a>
+                                                    <a href="#" class="name ellipsis">베이직</a>
+                                                    <div class="price tc_3 clear">
+                                                        <p>
+                                                            <span class="sale tc_poi">50%</span>
+                                                            <strong class="now tc_3">51,800</strong>
+                                                        </p>
+                                                    </div>
+                                                    <ul class="list_bar rcn">
+                                                        <li><span class="ico like_s"></span>1</li>
+                                                        <li>상품평 1</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="lc_e5">
+                                            <div class="poz_rel">
+                                                <div class="link">
+                                                    <a href="#" class="img">
+                                                        <img src="../common/images/dummy/temp1.jpg" alt="" class="pos_center">
+                                                    </a>
+                                                    <a href="#" class="brand ellipsis tc_3">나이키 나이키나이키나이키나이키나이키나이키</a>
+                                                    <a href="#" class="name ellipsis">베이직 ML183UCAMTa018 베이직 헤비 스웨트 크루넥 (화이트)</a>
+                                                    <div class="price tc_3 clear">
+                                                        <p><del class="origin tc_b">9,552,000</del></p>
+                                                        <p>
+                                                            <span class="sale tc_poi">50%</span>
+                                                            <strong class="now tc_3">51,800</strong>
+                                                        </p>
+                                                    </div>
+                                                    <div class="badge_coupon">
+                                                        <span class="txt">쿠폰</span>
+                                                        <span class="num">10,000원</span>
+                                                    </div>
+                                                    <ul class="list_bar rcn">
+                                                        <li><span class="ico like_s"></span>
+                                                            999+</li>
+                                                        <li>상품평 999+</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="lc_e5">
+                                            <div class="poz_rel">
+                                                <div class="link">
+                                                    <a href="#" class="img">
+                                                        <img src="../common/images/dummy/temp1.jpg" alt="" class="pos_center">
+                                                    </a>
+                                                    <a href="#" class="brand ellipsis tc_3">나이키 나이키나이키나이키나이키나이키나이키</a>
+                                                    <a href="#" class="name ellipsis">베이직 ML183UCAMTa018 베이직 헤비 스웨트 크루넥 (화이트)</a>
+                                                    <div class="price tc_3 clear">
+                                                        <p><del class="origin tc_b">9,552,000</del></p>
+                                                        <p>
+                                                            <span class="sale tc_poi">50%</span>
+                                                            <strong class="now tc_3">51,800</strong>
+                                                        </p>
+                                                    </div>
+                                                    <div class="badge_coupon">
+                                                        <span class="txt">쿠폰</span>
+                                                        <span class="num">10,000원</span>
+                                                    </div>
+                                                    <ul class="list_bar rcn">
+                                                        <li><span class="ico like_s"></span>
+                                                            999+</li>
+                                                        <li>상품평 999+</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="lc_e5">
+                                            <div class="poz_rel">
+                                                <div class="link">
+                                                    <a href="#" class="img">
+                                                        <img src="../common/images/dummy/temp1.jpg" alt="" class="pos_center">
+                                                    </a>
+                                                    <a href="#" class="brand ellipsis tc_3">나이키 나이키나이키나이키나이키나이키나이키</a>
+                                                    <a href="#" class="name ellipsis">베이직 ML183UCAMTa018 베이직 헤비 스웨트 크루넥 (화이트)</a>
+                                                    <div class="price tc_3 clear">
+                                                        <p><del class="origin tc_b">9,552,000</del></p>
+                                                        <p>
+                                                            <span class="sale tc_poi">50%</span>
+                                                            <strong class="now tc_3">51,800</strong>
+                                                        </p>
+                                                    </div>
+                                                    <div class="badge_coupon">
+                                                        <span class="txt">쿠폰</span>
+                                                        <span class="num">10,000원</span>
+                                                    </div>
+                                                    <ul class="list_bar rcn">
+                                                        <li><span class="ico like_s"></span>
+                                                            999+</li>
+                                                        <li>상품평 999+</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="btnMore clear">
+                                <a href="#">
+                                    <p>
+                                        브랜드 상품 더보기<span class="ico more_arw"></span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tab_inr">
+                            <section class="reviewer view">
+                                <div class="star_rating" style="">
+                                    <strong>상품 만족도 <span>3.5</span></strong>
+                                    <div class="star_wrap"><div class="star on"></div>
+                                        <div class="star on"></div>
+                                        <div class="star on"></div>
+                                        <div class="star half"></div>
+                                        <div class="star off"></div>
+                                    </div>
+                                </div>
+                                <div class="review_none">
+                                     <p class="innerTxt">
+                                        등록된 상품평이 없습니다.
+                                     </p>
+                                     <div class="btn_bk">
+                                          <a href="#" class="dark">상품평 쓰기</a>
+                                     </div>
+                                </div>
+
+                                 <!-- 리뷰 탭 -->
+                                 <ul class="list_selector">
+                                     <li><a href="#" class="on">전체<span>(5)</span></span></a></li>
+                                     <li><a href="#"><span class="le_mg">포토 상품평<span>(15)</span></span></a></li>
+                                 </ul>
+                                 <div class="review_area">
+                                    <ul class="review_box">
+                                        <li class="review_lst">
+                                            <div class="review_wrap">
+                                                <div class="">
+                                                    <div class="star_rating_s">
+                                                        <div class="star_wrap">
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star off"></div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="">
+                                                        <li><span class="review_date">2021-01-09</span></li>
+                                                        <li><span class="review_id">rkdalswrsw***</span></li>
+                                                    </ul>
+                                                    <!-- <div class="product_option"><p class="bk">160cm / 47kg</p></div> -->
+                                                    <div class="product_option">
+                                                        <p>옵션 : 1. 블랙 / US 9/UK 8(270)</p>
+                                                    </div>
+                                                    <div class="cont clear">
+                                                        <!-- <p>가성비 좋네요. 정말 마음에 듭니다.</p> -->
+                                                        <p id="re_more33" class="re_txt _ellipsis">
+                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요
+                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                                                        </p>
+                                                        <a href="#" class="review_txt_moreview"><span>더보기</span></a>
+
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="review_data_content">
+                                                    <div class="product_title">
+                                                        <p>
+                                                        옵션 : OLD SCHOOL 후드(SBH9S-338){화이트} [XL] / OLD SCHOOL 후드(SBH9S-338){화이트} [XL]
+
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="user_data">
+                                                        <span><em>180</em>cm / <em>70</em>kg</span>
+                                                    </div>
+                                                    <div class="review_detail_txt">
+                                                        <p class="_ellipsis">
+                                                            가성비 좋네요. 정말 마음에 듭니다. 이만한 제품 없어요 굿굿굿 정말 마음에 듭니다.
+                                                        </p>
+                                                    </div>
+                                                </div> -->
+
+                                                <div class="reviewPhoto_box">
+                                                    <ul class="re_img">
+                                                        <li class="">
+                                                            <!-- <a href="#" class="modalButton" data-popup="popupOne"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" alt="후기 사진"></a> -->
+                                                            <a href="#" class="pop_open" data-popup="photoView"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" alt="후기 사진"></a>
+                                                        </li>
+                                                        <li><a href="#none"><img src="../common/images/dummy/dummy11.jpg" alt="후기사진"></a></li>
+                                                        <li><a href="#none"><img src="../common/images/dummy/dummy12.jpg" alt="후기사진"></a></li>
+                                                        <li><a href="#none"><img src="../common/images/dummy/dummy13.jpg" alt="후기사진"></a></li>
+                                                        <li><a href="#none"><img src="../common/images/dummy/dummy14.jpg" alt="후기사진"></a></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- 포토 리뷰 -->
+                                                <div id="photoView" class="popup-wrap bg_wht">
+                                                    <!-- <head>
+                                                        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+                                                        <script src="../common/lib/jquery-2.2.4.min.js"></script>
+                                                        <script src="../common/lib/slick.min.js"></script>
+                                                    </head> -->
+                                                    <h2 class="page-title">크게보기</h2>
+                                                    <div class="photo_wrap" style="background-color:#f5f5f5">
+                                                        <div class="main" style="display:block;">
+                                                          <div class="slider_for size">
+                                                            <div><a href="#none"><img src="../common/images/dummy/dummy20.jpg" alt="후기사진"></a></div>
+                                                            <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg" alt="후기사진"></a></div>
+                                                            <div><a href="#none"><img src="../common/images/dummy/dummy20.jpg" alt="후기사진"></a></div>
+                                                            <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg" alt="후기사진"></a></div>
+                                                            <!-- <div><a href="#none"><img src="../common/images/dummy/dummy20.jpg" alt="후기사진"></a></div>
+                                                            <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg" alt="후기사진"></a></div>
+                                                            <div><h3>3</h3></div>
+                                                            <div><h3>4</h3></div>
+                                                            <div><h3>5</h3></div> -->
+                                                          </div>
+                                                          <div class="slider_nav mini">
+                                                            <div><a href="#none"><img src="../common/images/dummy/dummy20.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
+                                                            <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
+                                                            <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
+                                                            <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
+                                                            <div><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" width="60px" height="60px" alt="후기 사진"></a></div>
+
+                                                          </div>
+                                                          <!-- <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="../common/images/dummy/dummy20.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
+                                                          <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" width="100px" height="100px" alt="후기 사진"></a></div>
+                                                          <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" width="100px" height="100px" alt="후기 사진"></a></div>
+                                                          <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" width="100px" height="100px" alt="후기 사진"></a></div>
+                                                          <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" width="100px" height="100px" alt="후기 사진"></a></div> -->
+                                                        </div>
+                                                        <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기버튼</span></button>
+
+                                                        <script type="text/javascript">
+                                                        settings = {
+                                                            //Model Popup
+                                                            objModalPopupBtn: ".modalButton",
+                                                            objModalCloseBtn: ".overlay, .closeBtn",
+                                                            objModalDataAttr: "data-popup"
+                                                        }
+                                                          $(settings.objModalPopupBtn).bind("click", function () {
+                                                                if ($(this).attr(settings.objModalDataAttr)) {
+                                                                    var strDataPopupName = $(this).attr(settings.objModalDataAttr);
+                                                                    //Fade In Modal Pop Up
+                                                                    $(".overlay, #" + strDataPopupName).fadeIn(170);
+                                                                $('slider_for').resize();
+                                                                }
+                                                            });
+
+                                                            //On clicking the modal background
+                                                            $(settings.objModalCloseBtn).bind("click", function () {
+                                                                $(".modal").fadeOut(90);
+                                                            });
+                                                        // settings = {
+                                                        //     //Model Popup
+                                                        //     objModalPopupBtn: ".modalButton",
+                                                        //     objModalCloseBtn: ".overlay, .closeBtn",
+                                                        //     objModalDataAttr: "data-popup"
+                                                        // }
+                                                        //   $(settings.objModalPopupBtn).bind("click", function () {
+                                                        //         if ($(this).attr(settings.objModalDataAttr)) {
+                                                        //             var strDataPopupName = $(this).attr(settings.objModalDataAttr);
+                                                        //             //Fade In Modal Pop Up
+                                                        //             $(".overlay, #" + strDataPopupName).fadeIn(170);
+                                                        // 	    $('slider_for').resize();
+                                                        //         }
+                                                        //     });
+                                                        //
+                                                        //     //On clicking the modal background
+                                                        //     $(settings.objModalCloseBtn).bind("click", function () {
+                                                        //         $(".modal").fadeOut(90);
+                                                        //     });
+                                                        // $('.photoView').click(function(){
+                                                        //     $('#photoView').show();
+                                                            $('.slider_for').slick({
+                                                             slidesToShow: 1,
+                                                             pauseOnHover:true,
+                                                             // slidesToScroll: 1,
+                                                             // arrows: false,
+                                                             // fade: true,
+                                                             autoplay: true,
+                                                             asNavFor: '.slider_nav'
+                                                            });
+                                                        $('.slider_nav').slick({
+                                                         slidesToShow:5,
+                                                         slidesToScroll: 1,
+                                                         asNavFor: '.slider_for',
+                                                         infinite: true,
+                                                         // swipe:false,
+                                                         // dots: true,
+                                                         // centerMode: true,
+                                                         focusOnSelect: true,
+                                                         // pauseOnHover:true,
+                                                        });
+                                                        // $('.slider_for').slick({
+                                                        //   slidesToShow: 1,
+                                                        //   slidesToScroll: 1,
+                                                        //   arrows: false,
+                                                        //   fade: true,
+                                                        //   asNavFor: '.slider_nav'
+                                                        // });
+                                                        // $('.slider_nav').slick({
+                                                        //   slidesToShow: 3,
+                                                        //   slidesToScroll: 1,
+                                                        //   asNavFor: '.slider_for',
+                                                        //   dots: false,
+                                                        //   focusOnSelect: true
+                                                        // });
+                                                        </script>
+                                                     </div>
+                                                </div>
+
+                                                <script type="text/javascript">
+
+                                                // $('.slider').each(function() {
+                                                // var $this = $(this);
+                                                // var $group = $this.find('.slide_group');
+                                                // var $slides = $this.find('.slide');
+                                                // var bulletArray = [];
+                                                // var currentIndex = 0;
+                                                // var timeout;
+                                                //
+                                                // function move(newIndex) {
+                                                // var animateLeft, slideLeft;
+                                                //
+                                                // advance();
+                                                //
+                                                // if ($group.is(':animated') || currentIndex === newIndex) {
+                                                //   return;
+                                                // }
+                                                //
+                                                // bulletArray[currentIndex].removeClass('active');
+                                                // bulletArray[newIndex].addClass('active');
+                                                //
+                                                // if (newIndex > currentIndex) {
+                                                //   slideLeft = '100%';
+                                                //   animateLeft = '-100%';
+                                                // } else {
+                                                //   slideLeft = '-100%';
+                                                //   animateLeft = '100%';
+                                                // }
+                                                //
+                                                // $slides.eq(newIndex).css({
+                                                //   display: 'block',
+                                                //   left: slideLeft
+                                                // });
+                                                // $group.animate({
+                                                //   left: animateLeft
+                                                // }, function() {
+                                                //   $slides.eq(currentIndex).css({
+                                                //     display: 'none'
+                                                //   });
+                                                //   $slides.eq(newIndex).css({
+                                                //     left: 0
+                                                //   });
+                                                //   $group.css({
+                                                //     left: 0
+                                                //   });
+                                                //   currentIndex = newIndex;
+                                                // });
+                                                // }
+                                                //
+                                                // function advance() {
+                                                // clearTimeout(timeout);
+                                                // timeout = setTimeout(function() {
+                                                //   if (currentIndex < ($slides.length - 1)) {
+                                                //     move(currentIndex + 1);
+                                                //   } else {
+                                                //     move(0);
+                                                //   }
+                                                // }, 4000);
+                                                // }
+                                                //
+                                                // $('.next_btn').on('click', function() {
+                                                // if (currentIndex < ($slides.length - 1)) {
+                                                //   move(currentIndex + 1);
+                                                // } else {
+                                                //   move(0);
+                                                // }
+                                                // });
+                                                //
+                                                // $('.previous_btn').on('click', function() {
+                                                // if (currentIndex !== 0) {
+                                                //   move(currentIndex - 1);
+                                                // } else {
+                                                //   move(3);
+                                                // }
+                                                // });
+                                                //
+                                                // $.each($slides, function(index) {
+                                                // var $button = $('<a class="slide_btn">&bull;</a>');
+                                                //
+                                                // if (index === currentIndex) {
+                                                //   $button.addClass('active');
+                                                // }
+                                                // $button.on('click', function() {
+                                                //   move(index);
+                                                // }).appendTo('.slide_buttons');
+                                                // bulletArray.push($button);
+                                                // });
+                                                //
+                                                // advance();
+                                                // });
+                                                </script>
+                                                <!-- 포토 리뷰 -->
+
+                                            </div>
+                                        </li>
+                                        <li class="review_lst">
+                                            <div class="review_wrap">
+                                                <div class="">
+                                                    <div class="star_rating_s">
+                                                        <div class="star_wrap">
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star off"></div>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="">
+                                                        <li><span class="review_date">2021-01-09</span></li>
+                                                        <li><span class="review_id">rkdalswrsw***</span></li>
+                                                    </ul>
+                                                    <!-- <div class="product_option"><p class="bk">160cm / 47kg</p></div> -->
+                                                    <div class="product_option">
+                                                        <p>옵션 : 1. 블랙 / US 9/UK 8(270)</p>
+                                                    </div>
+                                                    <div class="cont clear">
+                                                        <!-- <p>가성비 좋네요. 정말 마음에 듭니다.</p> -->
+                                                        <p id="re_more33" class="re_txt _ellipsis">
+                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요
+                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                                                        </p>
+                                                        <a href="#" class="review_txt_moreview"><span>더보기</span></a>
+
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="review_data_content">
+                                                    <div class="product_title">
+                                                        <p>
+                                                        옵션 : OLD SCHOOL 후드(SBH9S-338){화이트} [XL] / OLD SCHOOL 후드(SBH9S-338){화이트} [XL]
+
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="user_data">
+                                                        <span><em>180</em>cm / <em>70</em>kg</span>
+                                                    </div>
+                                                    <div class="review_detail_txt">
+                                                        <p class="_ellipsis">
+                                                            가성비 좋네요. 정말 마음에 듭니다. 이만한 제품 없어요 굿굿굿 정말 마음에 듭니다.
+                                                        </p>
+                                                    </div>
+                                                </div> -->
+
+                                                <div class="reviewPhoto_box">
+                                                    <ul class="re_img">
+                                                        <li class="">
+                                                            <!-- <a href="#" class="modalButton" data-popup="popupOne"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" alt="후기 사진"></a> -->
+                                                            <a href="#" class="pop_open" data-popup="photoView"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" alt="후기 사진"></a>
+                                                        </li>
+                                                        <li><a href="#none"><img src="../common/images/dummy/dummy11.jpg" alt="후기사진"></a></li>
+                                                        <li><a href="#none"><img src="../common/images/dummy/dummy12.jpg" alt="후기사진"></a></li>
+                                                        <li><a href="#none"><img src="../common/images/dummy/dummy13.jpg" alt="후기사진"></a></li>
+                                                        <li><a href="#none"><img src="../common/images/dummy/dummy14.jpg" alt="후기사진"></a></li>
+                                                    </ul>
+                                                </div>
+                                                <!-- 포토 리뷰 -->
+                                                <div id="photoView" class="popup-wrap bg_wht">
+                                                    <!-- <head>
+                                                        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+                                                        <script src="../common/lib/jquery-2.2.4.min.js"></script>
+                                                        <script src="../common/lib/slick.min.js"></script>
+                                                    </head> -->
+                                                    <h2 class="page-title">크게보기</h2>
+                                                    <div class="photo_wrap" style="background-color:#f5f5f5">
+                                                        <div class="main" style="display:block;">
+                                                          <div class="slider_for size">
+                                                            <div><a href="#none"><img src="../common/images/dummy/dummy20.jpg" alt="후기사진"></a></div>
+                                                            <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg" alt="후기사진"></a></div>
+                                                            <div><a href="#none"><img src="../common/images/dummy/dummy20.jpg" alt="후기사진"></a></div>
+                                                            <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg" alt="후기사진"></a></div>
+                                                            <!-- <div><a href="#none"><img src="../common/images/dummy/dummy20.jpg" alt="후기사진"></a></div>
+                                                            <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg" alt="후기사진"></a></div>
+                                                            <div><h3>3</h3></div>
+                                                            <div><h3>4</h3></div>
+                                                            <div><h3>5</h3></div> -->
+                                                          </div>
+                                                          <div class="slider_nav mini">
+                                                            <div><a href="#none"><img src="../common/images/dummy/dummy20.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
+                                                            <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
+                                                            <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
+                                                            <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
+                                                            <div><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" width="60px" height="60px" alt="후기 사진"></a></div>
+
+                                                          </div>
+                                                          <!-- <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="../common/images/dummy/dummy20.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
+                                                          <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" width="100px" height="100px" alt="후기 사진"></a></div>
+                                                          <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" width="100px" height="100px" alt="후기 사진"></a></div>
+                                                          <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" width="100px" height="100px" alt="후기 사진"></a></div>
+                                                          <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" width="100px" height="100px" alt="후기 사진"></a></div> -->
+                                                        </div>
+                                                        <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기버튼</span></button>
+
+                                                        <script type="text/javascript">
+                                                        settings = {
+                                                            //Model Popup
+                                                            objModalPopupBtn: ".modalButton",
+                                                            objModalCloseBtn: ".overlay, .closeBtn",
+                                                            objModalDataAttr: "data-popup"
+                                                        }
+                                                          $(settings.objModalPopupBtn).bind("click", function () {
+                                                                if ($(this).attr(settings.objModalDataAttr)) {
+                                                                    var strDataPopupName = $(this).attr(settings.objModalDataAttr);
+                                                                    //Fade In Modal Pop Up
+                                                                    $(".overlay, #" + strDataPopupName).fadeIn(170);
+                                                                $('slider_for').resize();
+                                                                }
+                                                            });
+
+                                                            //On clicking the modal background
+                                                            $(settings.objModalCloseBtn).bind("click", function () {
+                                                                $(".modal").fadeOut(90);
+                                                            });
+                                                        // settings = {
+                                                        //     //Model Popup
+                                                        //     objModalPopupBtn: ".modalButton",
+                                                        //     objModalCloseBtn: ".overlay, .closeBtn",
+                                                        //     objModalDataAttr: "data-popup"
+                                                        // }
+                                                        //   $(settings.objModalPopupBtn).bind("click", function () {
+                                                        //         if ($(this).attr(settings.objModalDataAttr)) {
+                                                        //             var strDataPopupName = $(this).attr(settings.objModalDataAttr);
+                                                        //             //Fade In Modal Pop Up
+                                                        //             $(".overlay, #" + strDataPopupName).fadeIn(170);
+                                                        // 	    $('slider_for').resize();
+                                                        //         }
+                                                        //     });
+                                                        //
+                                                        //     //On clicking the modal background
+                                                        //     $(settings.objModalCloseBtn).bind("click", function () {
+                                                        //         $(".modal").fadeOut(90);
+                                                        //     });
+                                                        // $('.photoView').click(function(){
+                                                        //     $('#photoView').show();
+                                                            $('.slider_for').slick({
+                                                             slidesToShow: 1,
+                                                             pauseOnHover:true,
+                                                             // slidesToScroll: 1,
+                                                             // arrows: false,
+                                                             // fade: true,
+                                                             autoplay: true,
+                                                             asNavFor: '.slider_nav'
+                                                            });
+                                                        $('.slider_nav').slick({
+                                                         slidesToShow:5,
+                                                         slidesToScroll: 1,
+                                                         asNavFor: '.slider_for',
+                                                         infinite: true,
+                                                         // swipe:false,
+                                                         // dots: true,
+                                                         // centerMode: true,
+                                                         focusOnSelect: true,
+                                                         // pauseOnHover:true,
+                                                        });
+                                                        // $('.slider_for').slick({
+                                                        //   slidesToShow: 1,
+                                                        //   slidesToScroll: 1,
+                                                        //   arrows: false,
+                                                        //   fade: true,
+                                                        //   asNavFor: '.slider_nav'
+                                                        // });
+                                                        // $('.slider_nav').slick({
+                                                        //   slidesToShow: 3,
+                                                        //   slidesToScroll: 1,
+                                                        //   asNavFor: '.slider_for',
+                                                        //   dots: false,
+                                                        //   focusOnSelect: true
+                                                        // });
+                                                        </script>
+                                                     </div>
+                                                </div>
+
+                                                <script type="text/javascript">
+
+                                                // $('.slider').each(function() {
+                                                // var $this = $(this);
+                                                // var $group = $this.find('.slide_group');
+                                                // var $slides = $this.find('.slide');
+                                                // var bulletArray = [];
+                                                // var currentIndex = 0;
+                                                // var timeout;
+                                                //
+                                                // function move(newIndex) {
+                                                // var animateLeft, slideLeft;
+                                                //
+                                                // advance();
+                                                //
+                                                // if ($group.is(':animated') || currentIndex === newIndex) {
+                                                //   return;
+                                                // }
+                                                //
+                                                // bulletArray[currentIndex].removeClass('active');
+                                                // bulletArray[newIndex].addClass('active');
+                                                //
+                                                // if (newIndex > currentIndex) {
+                                                //   slideLeft = '100%';
+                                                //   animateLeft = '-100%';
+                                                // } else {
+                                                //   slideLeft = '-100%';
+                                                //   animateLeft = '100%';
+                                                // }
+                                                //
+                                                // $slides.eq(newIndex).css({
+                                                //   display: 'block',
+                                                //   left: slideLeft
+                                                // });
+                                                // $group.animate({
+                                                //   left: animateLeft
+                                                // }, function() {
+                                                //   $slides.eq(currentIndex).css({
+                                                //     display: 'none'
+                                                //   });
+                                                //   $slides.eq(newIndex).css({
+                                                //     left: 0
+                                                //   });
+                                                //   $group.css({
+                                                //     left: 0
+                                                //   });
+                                                //   currentIndex = newIndex;
+                                                // });
+                                                // }
+                                                //
+                                                // function advance() {
+                                                // clearTimeout(timeout);
+                                                // timeout = setTimeout(function() {
+                                                //   if (currentIndex < ($slides.length - 1)) {
+                                                //     move(currentIndex + 1);
+                                                //   } else {
+                                                //     move(0);
+                                                //   }
+                                                // }, 4000);
+                                                // }
+                                                //
+                                                // $('.next_btn').on('click', function() {
+                                                // if (currentIndex < ($slides.length - 1)) {
+                                                //   move(currentIndex + 1);
+                                                // } else {
+                                                //   move(0);
+                                                // }
+                                                // });
+                                                //
+                                                // $('.previous_btn').on('click', function() {
+                                                // if (currentIndex !== 0) {
+                                                //   move(currentIndex - 1);
+                                                // } else {
+                                                //   move(3);
+                                                // }
+                                                // });
+                                                //
+                                                // $.each($slides, function(index) {
+                                                // var $button = $('<a class="slide_btn">&bull;</a>');
+                                                //
+                                                // if (index === currentIndex) {
+                                                //   $button.addClass('active');
+                                                // }
+                                                // $button.on('click', function() {
+                                                //   move(index);
+                                                // }).appendTo('.slide_buttons');
+                                                // bulletArray.push($button);
+                                                // });
+                                                //
+                                                // advance();
+                                                // });
+                                                </script>
+                                                <!-- 포토 리뷰 -->
+
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                 </div>
+                                 <div class="btnMore clear">
+                                     <a href="#">
+                                         <p>
+                                             <span class="orange proxima">10</span>개 더보기<span class="ico more_down"></span>
+                                         </p>
+                                     </a>
+                                 </div>
+                                 <!-- <div class="product_select_list_moreview"><a href="#"><span>더보기</span></a></div> -->
+                            </section>
+                        </div>
+
+                        <div class="tab_inr qna">
+                            <p class="innerTxt">
+                                구매하시려는 상품의 궁금한 점에 대해 문의 남겨주세요.<br />
+                                상품 문의 외 배송/반품/교환 문의는 1:1문의를 이용해 주세요.
+                            </p>
+                            <div class="btn_bk">
+                                 <a href="detail0.html" class="dark">상품 문의 작성하기</a>
+                            </div>
+                            <div class="qnaBox">
+                                <ul class="list_bar">
+                                    <li class="on">
+                                        <a href="#">전체</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">답변완료</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">답변대기</a>
+                                    </li>
+                                </ul>
+                                <span class="input_checkbox">
+                                    <label for="checkbox01" class="ico check tc_3 spr_after"><input type="checkbox" name="checkbox1" class="blind" id="checkbox01">내 문의 보기</label>
+                    			</span>
+                                <!-- <span>
+                                    <input type="checkbox" name="checkbox01" value="tt" checked>
+                                    <span>내 문의 보기</span>
+                                </span> -->
+                            </div>
+
+                            <section class="wrap_board">
+                                <span class="blind">문의 게시판</span>
+                                <div class="group lc_1">
+                                    <div class="item lc_e5"><!-- 열릴때는 class에 view 추가 -->
+                                        <div class="que tc_5 clear">
+                                            <span class="blind">문의내용 : </span>
+                                            <a href="#">
+                                                <div class="cont clear">
+                                                    <p>오버 사이즈 제품 맞나요?</p>
+                                                    <!-- <button type="button" class="view" data-type="qnaview"><span class="blind">답변보기</span></button> -->
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="list_bar info">
+                                            <li>답변 대기</li>
+                                            <li>dng6***</li>
+                                            <li>2021. 01. 05 13:48</li>
+                                        </ul>
+                                        <!-- <dl class="info">
+                                            <dt class="blind">상태</dt>
+                                            <dd class="flag kor tc_3">답변 대기</span></dd>
+                                            <dt class="blind">구분</dt>
+                                            <dd class="category tc_b">기타</dd>
+                                            <dt class="blind">작성자</dt>
+                                            <dd class="writer tc_5">yj2323232***</dd>
+                                            <dt class="blind">작성일</dt>
+                                            <dd class="date tc_5">2018.12.11</dd>
+                                        </dl> -->
+                                    </div>
+
+                                    <div class="item lc_e5">
+                                        <a href="#">
+                                            <div class="que tc_5 clear">
+                                                <a href="#">
+                                                    <div class="cont">
+                                                        <div class="product_option"><p class="bk">160cm / 47kg</p></div>
+                                                        <p id="re_more" class="re_txt _ellipsis">
+                                                            안녕하세요. M사이즈 구입하려는데 언제 재입고 되는지 알고 싶습니다. 너무 사고 싶은데 해당 상품 재입고 계획이 있나요?!
+                                                        </p>
+                                                        <a href="#" class="review_txt_moreview"><span>더보기</span></a>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <ul class="list_bar info">
+                                                <li class="blue">답변 완료</li>
+                                                <li>dng6***</li>
+                                                <li>2021. 01. 05 13:48</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+
+                                    <div class="item lc_e5">
+                                        <a href="#">
+                                            <div class="que tc_5 clear">
+                                                <div class="cont clear">
+                                                    <p id="re_more" class="re_txt _ellipsis">안녕하세요. M사이즈 구입하려는데 언제 재입고 되는지 알고
+                                                    싶습니다. 너무 사고 싶은데 해당 상품 재입고 계획이 있나요? 너무 사고 싶은데 해당 상품 재입고 계획이 있나요?</p>
+                                                    <a href="#" class="review_txt_moreview"><span>더보기</span></a>
+                                                </div>
+
+                                            </div>
+                                            <ul class="list_bar info">
+                                                <li class="blue">답변 완료</li>
+                                                <li>dng6***</li>
+                                                <li>2021. 01. 05 13:48</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+
+                                    <div class="item lc_e5">
+                                        <div class="que tc_5 clear view">
+                                            <span class="blind">문의내용 : </span>
+                                            <a href="#">
+                                                <span class="badge ble br50">내 문의</span>
+                                                <ul class="list_bar btn">
+                                                    <li>
+                                                        <a href="#">수정</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">삭제</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="cont clear">
+                                                    <p>정품 확실한가요?</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="list_bar info">
+                                            <li>답변 대기</li>
+                                            <li>dng6***</li>
+                                            <li>2021. 01. 05 13:48</li>
+                                        </ul>
+                                    </div>
+                                    <div  class="item view"><!-- 열릴때는 class에 view 추가 -->
+                                        <div class="que tc_5 clear view">
+                                            <span class="blind">문의내용 : </span>
+                                            <a href="#">
+                                                <span class="badge ble br50">내 문의</span>
+                                                <ul class="list_bar btn">
+                                                    <li>
+                                                        <a href="#">수정</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">삭제</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="cont clear">
+                                                    <p>정품 확실한가요?</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="list_bar info">
+                                            <li>답변 대기</li>
+                                            <li>dng6***</li>
+                                            <li>2021. 01. 05 13:48</li>
+                                        </ul>
+                                    </div>
+
+                                    <div  class="item seller view"><!-- 열릴때는 class에 view 추가 -->
+                                        <div class="que tc_5 clear view">
+                                            <a href="#">
+                                                <i class="line"><span class="blind">판매자 게시글</span></i>
+                                                <span class="badge bk br50">판매자</span>
+                                                <div class="cont clear">
+                                                    <p>안녕하세요 고객님, 엑스엑스메인 입니다. 해당 제품은 더 이상 재입고 계획이 잡혀있지 않은 상품입니다. 감사합니다.</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="list_bar info">
+                                            <li>2021. 01. 05 13:48</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="item lc_e5">
+                                        <div class="que tc_5 clear">
+                                            <a href="#">
+                                                <div class="cont clear">
+                                                    <p>비밀글입니다.<i class="ico search"><span class="blind">비밀 게시글</span></i></p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="list_bar info">
+                                            <li>답변 대기</li>
+                                            <li>dng6***</li>
+                                            <li>2021. 01. 05 13:48</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btnMore clear">
+                                    <a href="#">
+                                        <p>
+                                            <span class="orange proxima">10</span>개 더보기<span class="ico more_down"></span>
+                                        </p>
+                                    </a>
+                                </div>
+                            </section>
+
+                            <div class="qnaform">
+                                <table>
+                                    <caption class="blind">Q&A작성 폼</caption>
+                                    <colgroup>
+                                        <col style="width:100%">
+                                    </colgroup>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 구매 버튼 S -->
+                    <div class="product_fixed-wrap">
+                        <!-- 바로 구매 누르면 나오는 BTN  S -->
+                        <!-- <div class="pf_btn-box">
+                            <button type="button" class="pf-btn gray-btn">쇼핑백 담기</button>
+                            <button type="button" class="pf-btn orange-btn">바로구매</button>
+                        </div> -->
+                        <!-- 바로 구매 누르면 나오는 BTN  E -->
+                         <!-- like btn S  -->
+                         <!-- <div class="pf_btn-box pl0" style="">
+                              <button type="button" class="orange_btn2">구매하기</button>
+                              <div class="button_like_new_wrap"><button type="button" class="button_like_new">좋아요</button></div>
+                         </div>
+                         <div class="pf_btn-box pl0" style="display:block">
+                              <button type="button" class="orange_btn2">구매하기</button>
+                              <div class="button_like_new_wrap"><button type="button" class="button_like_new selected">좋아요</button></div>
+                         </div> -->
+                         <!--  like btn E  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- slick slider -->
+        <script src="../common/lib/slick.min.js"></script>
+        <script src="../common/lib/main.js"></script>
+        <!-- <script src="../common/lib/common.js"></script> -->
+        <script type="text/javascript">
+            if ($('.review_txt_moreview')) {
+                    $('.review_txt_moreview').on('click', function (e) {
+                        e.preventDefault();
+                        $(this).toggleClass('on');
+                        $(this).siblings('p').toggleClass('_ellipsis');
+
+                        if ($(this).hasClass('on')) {
+                            $(this).children('span').text('접기')
+                        } else {
+                            $(this).children('span').text('더보기')
+                    }
+                });
+                // 상품 상세 tab
+                var tabBtn = $("#tab-btn > ul > li");
+                var tabCont = $("#tab-cont > div");
+
+                tabCont.hide().eq(0).show();
+
+                tabBtn.click(function(){
+                var target = $(this);
+                var index = target.index();
+                // alert(index);
+                tabBtn.removeClass("active");
+                target.addClass("active");
+                tabCont.css("display","none");
+                tabCont.eq(index).css("display","block");
+                });
+            }
+            $( document ).ready( function() {
+                $( '.Demore_btn' ).click( function() {
+                    $( "#Demore" ).removeClass( "overh" )
+                } );
+            } );
+
+          $( '.Demore_btn' ).click( function() {
+            $( '#re_more' ).removeClass( '_ellipsis'),
+            $('.Demore_btn').hide();
+          });
+
+            (function () {
+                function oneSlide($ele) {
+                    $ele.slick({
+                        dots: true,
+                        arrows: false,
+                    });
+                }
+
+                function centerSlide($ele) {
+                    $ele.slick({
+                        infinite: false,
+                        dots: false,
+                        arrows: false,
+                    });
+                }
+                oneSlide($('.product_detail_slider'));
+                oneSlide($('.product_banner_slide'));
+                oneSlide($('.recc_place-slide'));
+                centerSlide($('.product_color_slide'));
+                centerSlide($('.more_prod_slide'));
+
+                function acAcco(ele, content) {
+                    $(ele).on('click touch', function () {
+                        $(this).toggleClass('active');
+                        $(this).parents('.product_detail-acco').find(content).slideToggle();
+                    });
+                }
+                acAcco('.pda-title', '.pda-content');
+            })(jQuery);
+        </script>
+    </body>
+</html>

@@ -3,16 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>힙합퍼 상품 상세 _ 상품 옵션</title>
+        <title>힙합퍼 상품 상세 _ 상품</title>
         <meta name="description">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <script src="../common/lib/plugin.js"></script>
         <script src="../common/lib/common.js"></script>
-        <script src="../common/lib/slick.min.js"></script>
-        <link rel="stylesheet" href="../common/css/common.css">
-        <link rel="stylesheet" href="../common/css/productdetail.css">
-        <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&amp;subset=korean">
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="assets/css/productdetail.css">
     </head>
     <body>
         <div id="wrap" class="wd720">
@@ -27,58 +24,56 @@
                     <div class="box_right">
                         <ul class="btn_area">
                             <li><a href="#"><i class="ico search"><span class="blind">서치 바로가기</span></i></a></li>
-                            <li><a href="#"><i class="ico bag"><span id="cartCnt" class="cart_num">50</span><span class="blind">장바구니 바로가기</span></i></a></li>
+                            <li><a href="#"><i class="ico bag"><span id="cartCnt" class="cart_num">99+</span><span class="blind">장바구니 바로가기</span></i></a></li>
                             <li><a href="#"><i class="ico home"><span class="blind">메인 바로가기</span></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
+
             <div id="container" class="pdWrap">
                 <div class="pdTopArea">
                     <div class="product_slide_wrap">
                         <div class="slider product_detail_slider">
                             <div>
-                                <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy11.jpg" alt="">
+                                <img src="../common/images/dummy/dummy11.jpg" alt="">
                             </div>
                             <div>
-                                <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy11.jpg" alt="">
+                                <img src="../common/images/dummy/dummy11.jpg" alt="">
                             </div>
                             <div>
-                                <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy11.jpg" alt="">
+                                <img src="../common/images/dummy/dummy11.jpg" alt="">
                             </div>
                             <div>
-                                <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy11.jpg" alt="">
+                                <img src="../common/images/dummy/dummy11.jpg" alt="">
                             </div>
                             <div>
-                                <img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy11.jpg" alt="">
+                                <img src="../common/images/dummy/dummy11.jpg" alt="">
                             </div>
                         </div>
                     </div>
-
+                    <!-- .product_info  -->
                     <div class="product_info clear">
                         <div class="pi_txtBox">
-                            <span class="pi_cate">엑스씨엑스메인</span>
+                            <span class="pi_cate">엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인 엑스씨엑스메인엑스씨엑스메인엑스씨엑스메인</span>
                             <p class="pi_name">SPACE LINE 에드반스 freeline no.26 퍼플 스웨트 셔츠 (챔피온 코튼)</p>
-                            <div class="star_rating_s top">
-                                <div class="star_wrap">
-                                    <div class="star on"></div>
-                                    <div class="star on"></div>
-                                    <div class="star on"></div>
-                                    <div class="star half"></div>
-                                    <div class="star off"></div>
-                                </div>
+                            <div class="star_box">
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                                <span class="star active"></span>
+                                <span class="star half"></span>
                                 <span class="star_num">(<span class="num">999+</span>)</span>
                             </div>
                             <div class="pi_pay clear">
                                 <p class="sale_before num">3,515,000<span class="notoS">원</span></p>
-                                <p class="sale_per clear">
-                                    <span class="orange num"><span>15</span>%</span>2,987,750<span class="pay_won">원</span>
-                                    <span class="pay_Range">상품쿠폰 적용가</span>
+                                <p class="sale_per">
+                                    <span class="orange num"><span>15</span>%</span>
+                                    2,987,750 <span class="pay_won">원</span>
                                 </p>
-                                <div class="coupDwon clear">
-                                    <button type="button" class="org_br" onclick="openLayer(event,'#tempLayer1',this)"><span class="proxima">175,750</span><span class="notoS">원 할인 쿠폰 받기</span><i class="ico down"></i></button>
-                                </div>
-                                <!-- 쿠폰 발급 팝업-->
+                                <!-- <div><button type="button" onclick="openLayer(event,'#tempLayer1',this)"> (레이어 팝업) 버튼 타입 1개 타이틀 기본형(넓이 600px / 300px)</button></div> -->
+                                <button type="button" class="sale-btn pop_open" onclick="openLayer(event,'#tempLayer1',this)"><span class="notoS">쿠폰받기</span><i class="ico down"></i></button>
+                                <!-- <button type="button" class="sale-btn pop_open" data-popup="tempLayer1"><span class="notoS">쿠폰받기</span><i class="ico down"></i></button> -->
                                 <div class="dim_layer hide">
                         			<div class="popuplayer" id="tempLayer1">
                         				<div class="popup_area wd260">
@@ -90,10 +85,10 @@
                         				</div>
                         			</div>
                         		</div>
-                                <!-- //쿠폰 발급 팝업 -->
                             </div>
                         </div>
                         <a href="#none" class="b_share" data-type="copyurl"><i class="ico share"></i><span class="blind">공유하기 버튼</span></a>
+
                         <div class="pi_listWrap">
                             <table class="pi_list clear">
                                 <caption class="blind">상품 할인 상세 영역</caption>
@@ -110,9 +105,8 @@
                                         <th scope="row">배송비</th>
                                         <td>
                                             <span class="num">10,000</span>원
-                                            <div class="tooltip"><span class="con">해외배송</span><span class="ico tip"></span>
-                                              <span class="tooltiptext">평균 배송기간은 10~20일 소요되며,<br />수량별 추가 배송비가 부과될 수 있어요.</span>
-                                              <span class="tooltiptext1">평균 배송기간은 10~20일 소요되며,<br />수량별 추가 배송비가 부과될 수 있어요.</span>
+                                            <div class="tooltip">해외배송 <span class="ico tip"></span>
+                                              <span class="tooltiptext">평균 배송기간은 10~20일 소요되며,<br>수량별 추가 배송비가 부과될 수 있어요.</span>
                                             </div>
                                         </td>
                                     </tr>
@@ -127,7 +121,9 @@
                                         <th scope="row"><span>구매혜택</span></th>
                                         <td>
                                             <p>적립예정 마일리지 <span class="num">298,775M</span></p>
-                                            <p><span class="ico naver"></span>결제 시 N포인트 <span class="num">1%</span>적립</p>
+                                            <p><span class="naver_pay"></span>결제 시 N포인트 <span class="num">1%</span>적립</p>
+                                            <!-- <button type="button" class="card-btn"></button> -->
+                                            <!-- <a href="#" class="pop_open" onclick="openLayer(event,'#pop_card_benefit',this)">카드사 혜택</a> -->
                                             <button type="button" class="pop_open under" data-popup="pop_card_benefit">카드사 혜택</button>
                                         </td>
                                     </tr>
@@ -142,49 +138,49 @@
                                     <strong>무이자 할부</strong>
                                     <ul class="card">
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
                                             <dl>
                                                 <dd>2~6개월/12개월</dd>
                                                 <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_02.jpg" alt="카드사명"></div>
+                                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
                                             <dl>
                                                 <dd>2~5개월</dd>
                                                 <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_03.jpg" alt="카드사명"></div>
+                                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
                                             <dl>
                                                 <dd>2~5개월</dd>
                                                 <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_04.jpg" alt="카드사명"></div>
+                                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
                                             <dl>
                                                 <dd>2~6개월</dd>
                                                 <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_05.jpg" alt="카드사명"></div>
+                                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
                                             <dl>
                                                 <dd>2~6개월</dd>
                                                 <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_06.jpg" alt="카드사명"></div>
+                                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
                                             <dl>
                                                 <dd>2~6개월</dd>
                                                 <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
                                             <dl>
                                                 <dd>2~6개월</dd>
                                                 <dd>5만원 이상 결제 시</dd>
@@ -194,49 +190,49 @@
                                     <strong>부분 무이자 할부</strong>
                                     <ul class="card">
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
                                             <dl>
                                                 <dd>2~6개월/12개월</dd>
                                                 <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
                                             <dl>
                                                 <dd>2~5개월</dd>
                                                 <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
                                             <dl>
                                                 <dd>2~5개월</dd>
                                                 <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
                                             <dl>
                                                 <dd>2~6개월</dd>
                                                 <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
                                             <dl>
                                                 <dd>2~6개월</dd>
                                                 <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
                                             <dl>
                                                 <dd>2~6개월</dd>
                                                 <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="card"><img src="http://via.placeholder.com/96x32" alt=""></div>
                                             <dl>
                                                 <dd>2~6개월</dd>
                                                 <dd>5만원 이상 결제 시</dd>
@@ -254,12 +250,13 @@
                                         </ul>
                                     </div>
                                 </div>
+                                <button type="button" class="popup_close-btn pop_close" onclick="closeLayer('#pop_card_benefit');"><span class="blind">닫기버튼</span></button>
                                 <!-- <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기버튼</span></button> -->
                             </div>
-                            <button type="button" class="popup_close-btn pop_close ico close" onclick="closeLayer('#pop_card_benefit');"><span class="blind">닫기버튼</span></button>
                         </div>
                         <!--// 팝업 카드사 혜택 E -->
                     </div>
+                    <!-- // .product_info -->
                     <div class="product_banner_slide">
                         <div>
                             <img src="../common/images/dummy/dummy19.jpg" alt="">
@@ -269,9 +266,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="product">
-                    <div id="tab_btn" class="sticky">
-                        <ul class="tab" id="selectInfoTab">
+
+                <div id="tab-menu" class="product">
+                    <div id="tab-btn">
+                        <ul class="tab border_tab-list white clearfix">
                             <li class="active">
                                 <a class="pro" href="#none">상품 상세</a>
                            </li>
@@ -285,18 +283,25 @@
                     </div>
 
                     <div id="tab-cont">
-                        <div class="ovef_h">
+                        <div class="">
                             <div class="pf-box tab_inr">
+                                <!-- <p id="Demore"> -->
                                 <p class="overh" id="Demore">
                                     <img src="https://d1jmf3qg5eaacj.cloudfront.net/item_desc/web/ITEM055X41U/hufFVRD1600218949266.jpg" alt="">
                                 </p>
-                                <button type="button" id="Demore_btn" class="Demore_btn org_br">상품 상세 더보기<span class="ico detailBtn"></span></button>
+                                <button id="Demore_btn" class="Demore_btn orange_border">상품 상세 더보기</button>
+                                <!-- <button id="Demore_btn" class="Demore_btn orange_border" onclick="detailViewMore(this);">상품 상세 더보기</button> -->
+                                <!-- <a href="#none" class="btn_more"><span class="reviewMore3">더보기</span></a> -->
+                                <!-- <a href="#" class="review_txt_moreview"><span>더보기</span></a> -->
+                                <!-- <a href="#none" id="Demore_btn" class="btn_more"><span class="reviewMore3">상품 상세 더보기</span></a> -->
                             </div>
+
+                            <!-- 상품정보고시 사이즈 표 배송 정보 S-->
                             <div class="member_event_acco-box lcear">
-                                <div class="product_detail-acco brT">
+                                <div class="product_detail-acco">
                                     <div class="pda-title">
                                         <span>상품정보고시</span>
-                                        <button type="button" class="acco-btn"><span class="ico acco"></span></button>
+                                        <button type="button" class="acco-btn"></button>
                                     </div>
                                     <div class="pda-content">
                                         <div class="viewdetail">
@@ -354,19 +359,76 @@
                                 <div class="product_detail-acco">
                                     <div class="pda-title">
                                         <span>사이즈 표</span>
-                                        <button type="button" class="acco-btn"><span class="ico acco"></span></button>
+                                        <button type="button" class="acco-btn"></button>
                                     </div>
                                     <div class="pda-content"></div>
                                 </div>
                                 <div class="product_detail-acco">
                                     <div class="pda-title">
                                         <span>배송 정보</span>
-                                        <button type="button" class="acco-btn"><span class="ico acco"></span></button>
+                                        <button type="button" class="acco-btn"></button>
                                     </div>
                                     <div class="pda-content">
+                                        <div class="viewdetail row">
+                                        	<table>
+                                        	    <caption class="blind">배송 정보에 대한 표</caption>
+                                                <colgroup>
+                                                    <col style="">
+                                                </colgroup>
+                                            	<tbody>
+                                            	<tr>
+                                            		<th>사이즈 명</th>
+                                                    <th>
+                                            			허리
+                                            		</th>
+                                            		<th>
+                                            			밑위
+                                            		</th>
+                                            		<th>
+                                            			허벅지
+                                            		</th>
+                                                    <th>
+                                            			기장
+                                            		</th>
+                                                    <th>
+                                            			밑단
+                                            		</th>
+                                            	</tr>
+                                            	<tr>
+                                            		<td>free</td>
+                                            		<td>free1</td>
+                                            	</tr>
+                                                <tr>
+                                            		<td>free</td>
+                                            	</tr>
+                                            	<!-- <tr>
+                                            		<td>57</td>
+                                            		<td>58</td>
+                                            	</tr>
+                                                <tr>
+                                            		<td>57</td>
+                                            		<td>58</td>
+                                            	</tr>
+                                                <tr>
+                                            		<td>57</td>
+                                            		<td>58</td>
+                                            	</tr>
+                                                <tr>
+                                            		<td>57</td>
+                                            		<td>58</td>
+                                            	</tr>
+                                                <tr>
+                                            		<td>57</td>
+                                            		<td>58</td>
+                                            	</tr> -->
+                                            	</tbody>
+                                        	</table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- 상품정보고시 사이즈 표 배송 정보 E-->
+
                             <div class="relative_product clear">
                                 <h3>이 상품은 어때요?</h3>
                                 <div class="pd_item_wrap">
@@ -377,11 +439,11 @@
                                                     <a href="#" class="img">
                                                         <img src="../common/images/dummy/temp1.jpg" alt="" class="pos_center">
                                                     </a>
-                                                    <a href="#" class="brand ellipsis">나이키</a>
+                                                    <a href="#" class="brand ellipsis">나이키 나이키나이키</a>
                                                     <a href="#" class="name ellipsis">비욘드 레터링 특양면 반팔 (티화이트)</a>
                                                     <div class="price tc_3 clear">
                                                         <p><del class="origin tc_b">9,552,000</del></p>
-                                                        <p class="">
+                                                        <p>
                                                             <span class="sale tc_poi">50%</span>
                                                             <strong class="now tc_3">6,139,000</strong>
                                                         </p>
@@ -415,6 +477,10 @@
                                                         <li><span class="ico like_s"></span>1</li>
                                                         <li>상품평 1</li>
                                                     </ul>
+                                                    <!-- <div class="func">
+                                                        <button type="button" class="btn_like small spr_before" data-type="like" data-callback="likeCallback" data-count="153"><span class="blind">좋아요수 : </span><span class="count tc_8">153</span></button>
+                                                        <a href="#" class="btn_reply small spr_before"><span class="blind">댓글수 : </span><span class="count tc_8">153</span></a>
+                                                    </div> -->
                                                 </div>
                                             </div>
                                         </li>
@@ -452,7 +518,8 @@
                                                         </p>
                                                     </div>
                                                     <ul class="list_bar rcn">
-                                                        <li><span class="ico like_s"></span>999+</li>
+                                                        <li><span class="ico like_s"></span>
+                                                            999+</li>
                                                         <li>상품평 999+</li>
                                                     </ul>
                                                 </div>
@@ -495,7 +562,8 @@
                                                         </p>
                                                     </div>
                                                     <ul class="list_bar rcn">
-                                                        <li><span class="ico like_s"></span>999+</li>
+                                                        <li><span class="ico like_s"></span>
+                                                            999+</li>
                                                         <li>상품평 999+</li>
                                                     </ul>
                                                 </div>
@@ -647,10 +715,18 @@
                                     </p>
                                 </a>
                             </div>
+
+                            <div class="btnMore clear">
+                                <a href="#">
+                                    <p>
+                                        브랜드 상품 더보기<span class="ico more_arw"></span>
+                                    </p>
+                                </a>
+                            </div>
                         </div>
                         <div class="tab_inr">
                             <section class="reviewer view">
-                                <div class="star_rating">
+                                <div class="star_rating" style="">
                                     <strong>상품 만족도 <span>3.5</span></strong>
                                     <div class="star_wrap"><div class="star on"></div>
                                         <div class="star on"></div>
@@ -661,17 +737,17 @@
                                  </div>
                                 <div class="review_none">
                                      <p class="innerTxt">
-                                        등록된 상품평이 없어요.
+                                        등록된 상품평이 없습니다.
                                      </p>
                                      <div class="btn_bk">
-                                          <a href="write.html" class="dark">상품평 쓰기</a>
+                                          <a href="#" class="dark">상품평 쓰기</a>
                                      </div>
                                 </div>
 
                                  <!-- 리뷰 탭 -->
                                  <ul class="list_selector">
-                                     <li><a href="#" class="on"><span class="notoS">전체</span><span class="proxima">(5)</span></span></a></li>
-                                     <li><a href="#"><span class="le_mg"><span class="notoS">포토 상품평</span><span class="proxima">(15)</span></span></a></li>
+                                     <li><a href="#" class="on">전체<span class="proxima">(5)</span></span></a></li>
+                                     <li><a href="#"><span class="le_mg">포토 상품평<span class="proxima">(15)</span></span></a></li>
                                  </ul>
                                  <div class="review_area">
                                     <ul class="review_box">
@@ -693,68 +769,385 @@
                                                             <li><span class="review_id">2021.01.01</span></li>
                                                         </ul>
                                                     </div>
+                                                    <!-- <div class="product_option"><p class="bk">160cm / 47kg</p></div> -->
                                                     <div class="product_option">
-                                                        <p class="ellipsis">옵션 : 1. 블랙 / US 9/UK 8(270) 블랙 / US 9/UK 8(270)11</p>
+                                                        <p>옵션 : 1. 블랙 / US 9/UK 8(270)</p>
                                                     </div>
                                                     <div class="cont clear">
+                                                        <!-- <p>가성비 좋네요. 정말 마음에 듭니다.</p> -->
                                                         <p class="re_txt _ellipsis">
-                                                            가성비 좋네요. 정말 마음에 듭니다.
+                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요
+                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                                                        </p>
+                                                        <a href="#" class="review_txt_moreview"><span>더보기</span></a>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="review_data_content">
+                                                    <div class="product_title">
+                                                        <p>
+                                                        옵션 : OLD SCHOOL 후드(SBH9S-338){화이트} [XL] / OLD SCHOOL 후드(SBH9S-338){화이트} [XL]
+
                                                         </p>
                                                     </div>
-                                                </div>
+
+                                                    <div class="user_data">
+                                                        <span><em>180</em>cm / <em>70</em>kg</span>
+                                                    </div>
+                                                    <div class="review_detail_txt">
+                                                        <p class="_ellipsis">
+                                                            가성비 좋네요. 정말 마음에 듭니다. 이만한 제품 없어요 굿굿굿 정말 마음에 듭니다.
+                                                        </p>
+                                                    </div>
+                                                </div> -->
+                                                <!-- <script type="text/javascript">
+                                            		var t = setInterval(function(){
+                                            			var documentHeight 		= $(document).height();
+                                            			var startPositionLeft 	= Math.random() * $(document).width() - 100;
+                                            			var startOpacity		= 0.5 + Math.random();
+                                            			var sizeFlake			= 10 + Math.random() * 20;
+                                            			var endPositionTop		= documentHeight - 40;
+                                            			var endPositionLeft		= startPositionLeft - 100 + Math.random() * 200;
+                                            			var durationFall		= documentHeight * 10 + Math.random() * 5000;
+                                            			$('#snow')
+                                            				.clone()
+                                            				.appendTo('#wrap')
+                                            				.css(
+                                            					{
+                                            						left: startPositionLeft,
+                                            						opacity: startOpacity,
+                                            						'font-size': sizeFlake
+                                            					}
+                                            				)
+                                            				.animate(
+                                            					{
+                                            						top: endPositionTop,
+                                            						left: endPositionLeft,
+                                            						opacity: 0.2
+                                            					},
+                                            					durationFall,
+                                            					'linear',
+                                            					function() {
+                                            						$(this).remove()
+                                            					}
+                                            				);
+                                            		}, 500);
+
+
+
+
+                                            		var snow = {};
+                                            		var snowflex = {};
+
+                                            		snowflex.create  = function(){
+                                            			var flex = document.createElement('div');
+                                            				flex.innerHTML		 	= "&#10052;";
+                                            				flex.style.fontSize 	= 10 + Math.random() * 20 + 'px';
+                                            				flex.style.top 			= - 50 + Math.random() * 20 + 'px';
+                                            				flex.style.left 		= Math.random() * 1500 + 'px';
+                                            				flex.style.position 	= "absolute";
+                                            				flex.style.color 		= "#F3F3F3";
+                                            				flex.style.opacity		= Math.random();
+                                            				document.getElementsByTagName('body')[0].appendChild(flex);
+                                            				return flex;
+                                            		};
+
+
+                                            		snow.snowflex = function(){
+                                            			var flex = snowflex.create();
+                                            			var x = -1 + Math.random() * 2;
+                                            			var t = setInterval(
+                                            						function(){
+                                            							flex.style.top 	= parseInt(flex.style.top) +  5 + 'px';
+                                            							flex.style.left = parseInt(flex.style.left) +  x + 'px';
+                                            							if (parseInt(flex.style.top) > 1500) {
+                                            								clearInterval(t);
+                                            								document.getElementsByTagName('body')[0].removeChild(flex);
+                                            							}
+                                            						}, 45 + Math.random() * 20);
+                                            		};
+
+                                            		snow.storm = function(){
+                                            			var t	= setInterval(
+                                            						function(){
+                                            							snow.snowflex();
+                                            						}, 500);
+                                            		};
+
+                                            		//snow.storm();
+
+                                            		var fog = {};
+
+                                            		fog.draw = function(ctx, x, y){
+
+                                            				ctx.fillStyle = "rgba( 255, 255, 255, " + Math.random() + " )";
+                                            				ctx.arc( x, y, 10,0,Math.PI*2,true);
+                                            				ctx.closePath();
+                                            				ctx.fill();
+
+                                            		};
+
+
+                                            		fog.start = function(){
+                                            			var ctx = document.getElementById('canvas').getContext("2d");
+                                            			var x = 0;
+                                            			var y = 0;
+                                            			var t = setInterval(
+                                            						function(){
+
+                                            							x = 300 + 300*Math.sin(x);
+                                            							y = 300 + 300* -Math.cos(x);
+
+                                            							x += 2;
+                                            							fog.draw(ctx, x, y);
+
+                                            						}, 100);
+
+                                            		};
+
+                                            		//fog.start();
+                                            		</script> -->
+
                                                 <div class="reviewPhoto_box">
+                                                    <div id="snow">❄</div>
                                                     <ul class="re_img">
-                                                        <li><a href="#none"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy11.jpg" alt="후기사진"></a></li>
-                                                        <li><a href="#none"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy11.jpg" alt="후기사진"></a></li>
+                                                        <li class="">
+                                                            <!-- <a href="#" class="modalButton" data-popup="popupOne"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" alt="후기 사진"></a> -->
+                                                            <a href="#" class="pop_open" data-popup="photoView"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" alt="후기 사진"></a>
+                                                        </li>
+                                                        <li><a href="#none"><img src="../common/images/dummy/dummy11.jpg" alt="후기사진"></a></li>
                                                         <li><a href="#none"><img src="../common/images/dummy/dummy12.jpg" alt="후기사진"></a></li>
+                                                        <li><a href="#none"><img src="../common/images/dummy/dummy13.jpg" alt="후기사진"></a></li>
                                                         <li><a href="#none"><img src="../common/images/dummy/dummy14.jpg" alt="후기사진"></a></li>
-                                                        <li><a href="#none"><img src="../common/images/dummy/dummy15.jpg" alt="후기사진"></a></li>
                                                     </ul>
                                                 </div>
-                                            </div>
-                                        </li>
-                                        <li class="review_lst">
-                                            <div class="review_wrap">
-                                                <div class="pos_center_before">
-                                                    <div class="star_rating_s">
-                                                        <div class="star_wrap">
-                                                            <div class="star on"></div>
-                                                            <div class="star on"></div>
-                                                            <div class="star on"></div>
-                                                            <div class="star half"></div>
-                                                            <div class="star off"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="idDate">
-                                                        <ul class="list_bar">
-                                                            <li><span class="review_date">hiph***</span></li>
-                                                            <li><span class="review_id">2021.01.01</span></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="product_option">
-                                                        <p class="ellipsis">옵션 : OLD SCHOOL 후드(SBH9S... / OLD SCHOOL 신상 후드 집업 세트</p>
-                                                    </div>
-                                                    <div class="cont clear">
-                                                        <a href="#" class="review_txt_moreview">
-                                                            <p class="re_txt _ellipsis">
-                                                                가성비 좋네요. 정말 마음에 듭니다.
-                                                                이만한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품
-                                                                없어요.가성비 좋네요. 정말 마음에 듭니다. 이만한 제품 없어
-                                                                요. 가성비 좋네요. 정말 마음에 듭니다. 가성비 좋네요. 이만
-                                                                한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품 없어
-                                                                요 굿굿굿. 가성비 좋네요. 정말 마음에 듭니다. 이만한 제품
-                                                                없어요 굿굿굿
-                                                                가성비 좋네요. 정말 마음에 듭니다.
-                                                                이만한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품
-                                                                없어요.가성비 좋네요. 정말 마음에 듭니다. 이만한 제품 없어
-                                                                요. 가성비 좋네요. 정말 마음에 듭니다. 가성비 좋네요. 이만
-                                                                한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품 없어
-                                                                요 굿굿굿. 가성비 좋네요. 정말 마음에 듭니다. 이만한 제품
-                                                                없어요 굿굿굿
-                                                            </p>
-                                                        </a>
-                                                    </div>
+                                                <!-- 포토 리뷰 -->
+                                                <div id="photoView" class="popup-wrap bg_wht">
+                                                    <!-- <head>
+                                                        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+                                                        <script src="../common/lib/jquery-2.2.4.min.js"></script>
+                                                        <script src="../common/lib/slick.min.js"></script>
+                                                    </head> -->
+                                                    <h2 class="page-title">크게보기</h2>
+                                                    <div class="photo_wrap" style="background-color:#f5f5f5">
+                                                        <div class="main" style="display:block;">
+                                                            <div class="slider_for size">
+                                                                  <div><a href="#none"><img src="../common/images/dummy/dummy11.jpg" width="200px" height="200px" alt="후기 사진"></a></div>
+                                                                  <div><a href="#none"><img src="../common/images/dummy/dummy12.jpg" width="200px" height="200px" alt="후기 사진"></a></div>
+                                                                  <div><a href="#none"><img src="../common/images/dummy/dummy13.jpg" width="200px" height="200px" alt="후기 사진"></a></div>
+                                                                  <div><a href="#none"><img src="../common/images/dummy/dummy14.jpg" width="200px" height="200px" alt="후기 사진"></a></div>
+                                                                  <div><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" width="200px" height="200px" alt="후기 사진"></a></div>
+                                                                  <!-- <div><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" wwidth="200px" height="200px" alt="후기 사진"></a></div>
+                                                                  <div><a href="#none"><img src="../common/images/dummy/dummy20.jpg"  width="200px" height="200px" alt="후기사진"></a></div>
+                                                                  <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg" width="200px" height="200px"  alt="후기사진"></a></div> -->
+                                                            </div>
+                                                            <div class="slider_nav mini">
+                                                                <!-- <div><a href="#none"><img src="../common/images/dummy/dummy11.jpg" width="60" height="60" alt="후기사진"></a></div>
+                                                                <div><a href="#none"><img src="../common/images/dummy/dummy12.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
+                                                                <div><a href="#none"><img src="../common/images/dummy/dummy13.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
+                                                                <div><a href="#none"><img src="../common/images/dummy/dummy14.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
+                                                                <div><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" width="60px" height="60px" alt="후기 사진"></a></div> -->
+                                                                <!-- <div><a href="#none"><img src="../common/images/dummy/dummy21.jpg"  width="60px" height="60px" alt="후기사진"></a></div> -->
+                                                                <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="../common/images/dummy/dummy11.jpg"height="60px" alt="후기 사진"></a></div>
+                                                                <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="../common/images/dummy/dummy12.jpg"  width="60px" height="60px" alt="후기사진"></a></div>
+                                                                <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="../common/images/dummy/dummy13.jpg" height="60px" alt="후기 사진"></a></div>
+                                                                <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="../common/images/dummy/dummy14.jpg" height="60px" alt="후기 사진"></a></div>
+                                                                <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" height="60px" alt="후기 사진"></a></div>
+                                                            </div>
+                                                            <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기버튼</span></button>
+
+                                                        <script type="text/javascript">
+                                                        $('.slider_for').slick({
+                                                             slidesToShow: 1,
+                                                             slidesToScroll: 1,
+                                                             arrows: false,
+                                                             fade: true,
+                                                             autoplay: true,
+                                                             asNavFor: '.slider-nav'
+                                                            });
+                                                            $('.slider_nav').slick({
+                                                             slidesToShow: 3,
+                                                             slidesToScroll: 1,
+                                                             asNavFor: '.slider-for',
+                                                             dots: true,
+                                                             centerMode: true,
+                                                             focusOnSelect: true
+                                                            });
+
+                                                            // $('.slider_for').slick({
+                                                            //  slidesToShow: 1,
+                                                            //  pauseOnHover:true,
+                                                            //  slidesToScroll: 1,
+                                                             // arrows: false,
+                                                             // fade: true,
+                                                             // autoplaySpeed: 3000,
+                                                             // autoplay: true,
+                                                        //      asNavFor: '.slider_nav'
+                                                        //     });
+                                                        // $('.slider_nav').slick({
+                                                        //  slidesToShow:5,
+                                                         // slidesToScroll: 5,
+                                                         // asNavFor: '.slider_for',
+                                                         // infinite: true,
+                                                         // swipe:true,
+                                                         // autoplay: true,
+                                                         // dots: true,
+                                                        //  centerPadding: '40px',
+                                                        //  centerMode: true,
+                                                        //  focusOnSelect: true,
+                                                        //  pauseOnHover:true,
+                                                        // });
+                                                        // $('.slider_for').slick({
+                                                        //   slidesToShow: 1,
+                                                        //   slidesToScroll: 1,
+                                                        //   arrows: false,
+                                                        //   fade: true,
+                                                        //   asNavFor: '.slider_nav'
+                                                        // });
+                                                        // $('.slider_nav').slick({
+                                                        //   slidesToShow: 3,
+                                                        //   slidesToScroll: 1,
+                                                        //   asNavFor: '.slider_for',
+                                                        //   dots: false,
+                                                        //   focusOnSelect: true
+                                                        // });
+
+                                                        // settings = {
+                                                        //     //Model Popup
+                                                        //     objModalPopupBtn: ".modalButton",
+                                                        //     objModalCloseBtn: ".overlay, .closeBtn",
+                                                        //     objModalDataAttr: "data-popup"
+                                                        // }
+                                                        //   $(settings.objModalPopupBtn).bind("click", function () {
+                                                        //         if ($(this).attr(settings.objModalDataAttr)) {
+                                                        //             var strDataPopupName = $(this).attr(settings.objModalDataAttr);
+                                                        //             //Fade In Modal Pop Up
+                                                        //             $(".overlay, #" + strDataPopupName).fadeIn(170);
+                                                        //         $('slider_for').resize();
+                                                        //         }
+                                                        //     });
+                                                        //
+                                                        //     //On clicking the modal background
+                                                        //     $(settings.objModalCloseBtn).bind("click", function () {
+                                                        //         $(".modal").fadeOut(90);
+                                                        //     });
+                                                        // settings = {
+                                                        //     //Model Popup
+                                                        //     objModalPopupBtn: ".modalButton",
+                                                        //     objModalCloseBtn: ".overlay, .closeBtn",
+                                                        //     objModalDataAttr: "data-popup"
+                                                        // }
+                                                        //   $(settings.objModalPopupBtn).bind("click", function () {
+                                                        //         if ($(this).attr(settings.objModalDataAttr)) {
+                                                        //             var strDataPopupName = $(this).attr(settings.objModalDataAttr);
+                                                        //             //Fade In Modal Pop Up
+                                                        //             $(".overlay, #" + strDataPopupName).fadeIn(170);
+                                                        // 	    $('slider_for').resize();
+                                                        //         }
+                                                        //     });
+                                                        //
+                                                        //     //On clicking the modal background
+                                                        //     $(settings.objModalCloseBtn).bind("click", function () {
+                                                        //         $(".modal").fadeOut(90);
+                                                        //     });
+                                                        // $('.photoView').click(function(){
+                                                        //     $('#photoView').show();
+                                                        </script>
+                                                     </div>
                                                 </div>
+
+                                                <script type="text/javascript">
+
+                                                // $('.slider').each(function() {
+                                                // var $this = $(this);
+                                                // var $group = $this.find('.slide_group');
+                                                // var $slides = $this.find('.slide');
+                                                // var bulletArray = [];
+                                                // var currentIndex = 0;
+                                                // var timeout;
+                                                //
+                                                // function move(newIndex) {
+                                                // var animateLeft, slideLeft;
+                                                //
+                                                // advance();
+                                                //
+                                                // if ($group.is(':animated') || currentIndex === newIndex) {
+                                                //   return;
+                                                // }
+                                                //
+                                                // bulletArray[currentIndex].removeClass('active');
+                                                // bulletArray[newIndex].addClass('active');
+                                                //
+                                                // if (newIndex > currentIndex) {
+                                                //   slideLeft = '100%';
+                                                //   animateLeft = '-100%';
+                                                // } else {
+                                                //   slideLeft = '-100%';
+                                                //   animateLeft = '100%';
+                                                // }
+                                                //
+                                                // $slides.eq(newIndex).css({
+                                                //   display: 'block',
+                                                //   left: slideLeft
+                                                // });
+                                                // $group.animate({
+                                                //   left: animateLeft
+                                                // }, function() {
+                                                //   $slides.eq(currentIndex).css({
+                                                //     display: 'none'
+                                                //   });
+                                                //   $slides.eq(newIndex).css({
+                                                //     left: 0
+                                                //   });
+                                                //   $group.css({
+                                                //     left: 0
+                                                //   });
+                                                //   currentIndex = newIndex;
+                                                // });
+                                                // }
+                                                //
+                                                // function advance() {
+                                                // clearTimeout(timeout);
+                                                // timeout = setTimeout(function() {
+                                                //   if (currentIndex < ($slides.length - 1)) {
+                                                //     move(currentIndex + 1);
+                                                //   } else {
+                                                //     move(0);
+                                                //   }
+                                                // }, 4000);
+                                                // }
+                                                //
+                                                // $('.next_btn').on('click', function() {
+                                                // if (currentIndex < ($slides.length - 1)) {
+                                                //   move(currentIndex + 1);
+                                                // } else {
+                                                //   move(0);
+                                                // }
+                                                // });
+                                                //
+                                                // $('.previous_btn').on('click', function() {
+                                                // if (currentIndex !== 0) {
+                                                //   move(currentIndex - 1);
+                                                // } else {
+                                                //   move(3);
+                                                // }
+                                                // });
+                                                //
+                                                // $.each($slides, function(index) {
+                                                // var $button = $('<a class="slide_btn">&bull;</a>');
+                                                //
+                                                // if (index === currentIndex) {
+                                                //   $button.addClass('active');
+                                                // }
+                                                // $button.on('click', function() {
+                                                //   move(index);
+                                                // }).appendTo('.slide_buttons');
+                                                // bulletArray.push($button);
+                                                // });
+                                                //
+                                                // advance();
+                                                // });
+                                                </script>
+                                                <!-- 포토 리뷰 -->
                                             </div>
                                         </li>
                                         <li class="review_lst">
@@ -765,7 +1158,7 @@
                                                             <div class="star on"></div>
                                                             <div class="star on"></div>
                                                             <div class="star on"></div>
-                                                            <div class="star off"></div>
+                                                            <div class="star on"></div>
                                                             <div class="star off"></div>
                                                         </div>
                                                     </div>
@@ -779,21 +1172,46 @@
                                                         <p>옵션 : 1. 블랙 / US 9/UK 8(270)</p>
                                                     </div>
                                                     <div class="cont clear">
-                                                        <a href="#" class="review_txt_moreview">
-                                                            <p class="re_txt _ellipsis">
-                                                                가성비 좋네요. 정말 마음에 듭니다.
-                                                                이만한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품
-                                                                없어요.가성비 좋네요. 정말 마음에 듭니다. 이만한 제품 없어
-                                                                요. 가성비 좋네요. 정말 마음에 듭니다. 가성비 좋네요. 이만
-                                                                한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품 없어
-                                                                요 굿굿굿. 가성비 좋네요. 정말 마음에 듭니다. 이만한 제품
-                                                                없어요 굿굿굿
-                                                            </p>
-                                                        </a>
+                                                        <p class="re_txt _ellipsis">
+                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요
+                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                                                        </p>
+                                                        <a href="#" class="review_txt_moreview"><span>더보기</span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="review_lst">
+                                            <div class="review_wrap">
+                                                <div class="pos_center_before">
+                                                    <div class="star_rating_s">
+                                                        <div class="star_wrap">
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star off"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="idDate">
+                                                        <ul class="list_bar">
+                                                            <li><span class="review_date">hiph***</span></li>
+                                                            <li><span class="review_id">2021.01.01</span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="product_option">
+                                                        <p>옵션 : 1. 블랙 / US 9/UK 8(270)</p>
+                                                    </div>
+                                                    <div class="cont clear">
+                                                        <p class="re_txt _ellipsis">
+                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요
+                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                                                        </p>
                                                     </div>
                                                     <div class="reviewPhoto_box">
                                                         <ul class="re_img">
-                                                            <li><a href="#none"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/dummy/dummy11.jpg" alt="후기사진"></a></li>
+                                                            <li><a href="#none"><img src="../common/images/dummy/dummy11.jpg" alt="후기사진"></a></li>
                                                             <li><a href="#none"><img src="../common/images/dummy/dummy12.jpg" alt="후기사진"></a></li>
                                                         </ul>
                                                     </div>
@@ -819,20 +1237,13 @@
                                                         </ul>
                                                     </div>
                                                     <div class="product_option">
-                                                        <p>옵션 : 1. 그레이 / US 9/UK 8(270)</p>
+                                                        <p>옵션 : 1. 블랙 / US 9/UK 8(270)</p>
                                                     </div>
                                                     <div class="cont clear">
-                                                        <a href="#" class="review_txt_moreview">
-                                                            <p class="re_txt _ellipsis">
-                                                                가성비 좋네요. 정말 마음에 듭니다.
-                                                                이만한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품
-                                                                없어요.가성비 좋네요. 정말 마음에 듭니다. 이만한 제품 없어
-                                                                요. 가성비 좋네요. 정말 마음에 듭니다. 가성비 좋네요. 이만
-                                                                한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품 없어
-                                                                요 굿굿굿. 가성비 좋네요. 정말 마음에 듭니다. 이만한 제품
-                                                                없어요 굿굿굿
-                                                            </p>
-                                                        </a>
+                                                        <p class="re_txt _ellipsis">
+                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요
+                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -850,14 +1261,12 @@
                             </section>
                         </div>
                         <div class="tab_inr qna">
-                            <div class="inquire">
-                                <p class="innerTxt">
-                                    구매하시려는 상품의 궁금한 점에 대해 문의 남겨주세요.<br />
-                                    상품 문의 외 배송/반품/교환 문의는 1:1문의를 이용해 주세요.
-                                </p>
-                                <div class="btn_bk">
-                                     <a href="write.html" class="dark">상품 문의 작성하기</a>
-                                </div>
+                            <p class="innerTxt">
+                                구매하시려는 상품의 궁금한 점에 대해 문의 남겨주세요.<br />
+                                상품 문의 외 배송/반품/교환 문의는 1:1문의를 이용해 주세요.
+                            </p>
+                            <div class="btn_bk">
+                                 <a href="write.html" class="dark">상품 문의 작성하기</a>
                             </div>
                             <div class="qnaBox">
                                 <ul class="list_bar">
@@ -871,10 +1280,14 @@
                                         <a href="#">답변대기</a>
                                     </li>
                                 </ul>
+
                                 <span class="input_checkbox">
-                                    <input type="checkbox" id="checkbox01" name="selmenu" class="gnb_input_check" value="">
-                                    <label for="checkbox01">내 문의 보기</label>
+                                    <label for="checkbox01" class="ico check tc_3 spr_after"><input type="checkbox" name="checkbox1" class="blind" id="checkbox01">내 문의 보기</label>
                     			</span>
+                                <!-- <span>
+                                    <input type="checkbox" name="checkbox01" value="tt" checked>
+                                    <span>내 문의 보기</span>
+                                </span> -->
                             </div>
 
                             <section class="wrap_board">
@@ -914,9 +1327,9 @@
                                                     <div class="cont">
                                                         <div class="product_option"><p class="bk">160cm / 47kg</p></div>
                                                         <p id="re_more" class="re_txt _ellipsis">
-                                                            안녕하세요. M사이즈 구입하려는데 언제 재입고 되는지 알고 싶습니다. 너무 사고 싶은데 해당 상품 재입고 계획이 있나요?! 궁금합니다.
+                                                            안녕하세요. M사이즈 구입하려는데 언제 재입고 되는지 알고 싶습니다. 너무 사고 싶은데 해당 상품 재입고 계획이 있나요?!
                                                         </p>
-                                                        <!-- <a href="#" class="review_txt_moreview"><span>더보기</span></a> -->
+                                                        <a href="#" class="review_txt_moreview"><span>더보기</span></a>
                                                     </div>
                                                 </a>
                                             </div>
@@ -932,15 +1345,9 @@
                                         <a href="#">
                                             <div class="que tc_5 clear">
                                                 <div class="cont clear">
-                                                    <a href="#" class="review_txt_moreview">
-                                                        <p id="re_more" class="re_txt _ellipsis">
-                                                            안녕하세요. M사이즈 구입하려는데 언제 재입고 되는지 알고
-                                                            싶습니다. 너무 사고 싶은데 해당 상품 재입고 계획이 있나요? 너무 사고 싶은데 해당 상품 재입고 계획이 있나요?
-                                                            안녕하세요. M사이즈 구입하려는데 언제 재입고 되는지 알고
-                                                            싶습니다. 너무 사고 싶은데 해당 상품 재입고 계획이 있나요? 너무 사고 싶은데 해당 상품 재입고 계획이 있나요?안녕하세요. M사이즈 구입하려는데 언제 재입고 되는지 알고
-                                                            싶습니다. 너무 사고 싶은데 해당 상품 재입고 계획이 있나요? 너무 사고 싶은데 해당 상품 재입고 계획이 있나요?
-                                                        </p>
-                                                    </a>
+                                                    <p id="re_more" class="re_txt _ellipsis">안녕하세요. M사이즈 구입하려는데 언제 재입고 되는지 알고
+                                                    싶습니다. 너무 사고 싶은데 해당 상품 재입고 계획이 있나요? 너무 사고 싶은데 해당 상품 재입고 계획이 있나요?</p>
+                                                    <a href="#" class="review_txt_moreview"><span>더보기</span></a>
                                                 </div>
                                             </div>
                                             <ul class="list_bar info">
@@ -954,9 +1361,9 @@
                                     <div class="item lc_e5">
                                         <div class="que tc_5 clear view">
                                             <span class="blind">문의내용 : </span>
-                                            <a href="#none">
+                                            <a href="#">
                                                 <span class="badge ble br50">내 문의</span>
-                                                <ul class="list_bar mdf">
+                                                <ul class="list_bar btn">
                                                     <li>
                                                         <a href="#">수정</a>
                                                     </li>
@@ -980,7 +1387,7 @@
                                             <span class="blind">문의내용 : </span>
                                             <a href="#">
                                                 <span class="badge ble br50">내 문의</span>
-                                                <ul class="list_bar mdf">
+                                                <ul class="list_bar btn">
                                                     <li>
                                                         <a href="#">수정</a>
                                                     </li>
@@ -1003,9 +1410,8 @@
                                     <div  class="item seller view"><!-- 열릴때는 class에 view 추가 -->
                                         <div class="que tc_5 clear view">
                                             <a href="#">
-                                                <div class="sellerBadge">
-                                                    <i class="ico line"></i><span class="blind">판매자 게시글</span><span class="badge bk br50">판매자</span>
-                                                </div>
+                                                <i class="line"><span class="blind">판매자 게시글</span></i>
+                                                <span class="badge bk br50">판매자</span>
                                                 <div class="cont clear">
                                                     <p>안녕하세요 고객님, 엑스엑스메인 입니다. 해당 제품은 더 이상 재입고 계획이 잡혀있지 않은 상품입니다. 감사합니다.</p>
                                                 </div>
@@ -1030,34 +1436,6 @@
                                             <li>2021. 01. 05 13:48</li>
                                         </ul>
                                     </div>
-                                    <div class="item lc_e5">
-                                        <div class="que tc_5 clear">
-                                            <a href="#">
-                                                <div class="cont clear">
-                                                    <p>비밀글입니다.<i class="ico secret"><span class="blind">비밀 게시글</span></i></p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <ul class="list_bar info">
-                                            <li>답변 대기</li>
-                                            <li>dng6***</li>
-                                            <li>2021. 01. 05 13:48</li>
-                                        </ul>
-                                    </div>
-                                    <div class="item lc_e5">
-                                        <div class="que tc_5 clear">
-                                            <a href="#">
-                                                <div class="cont clear">
-                                                    <p>비밀글입니다.<i class="ico secret"><span class="blind">비밀 게시글</span></i></p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <ul class="list_bar info">
-                                            <li>답변 대기</li>
-                                            <li>dng6***</li>
-                                            <li>2021. 01. 05 13:48</li>
-                                        </ul>
-                                    </div>
                                 </div>
                                 <div class="btnMore clear">
                                     <a href="#">
@@ -1068,470 +1446,102 @@
                                 </div>
                             </section>
                         </div>
-                    </div>
-                </div>
 
-                <div id="container_select">
-                    <!-- 옵션 S -->
-                    <div class="nav_fixed_wrap wd720">
-                        <form action="">
-                            <div class="pf_fc-box">
-                                <button type="button" class="ico box_close"><span class="blind">옵션선택 화면 전체 닫기</span></button>
-                                <div class="pf_fc_item-box">
-                                    <!-- 옵션 3 S -->
-                                    <div class="mb20">
-                                      <div class="product-select">
-                                          <select class="sz-select_sl">
-                                              <option value="40cm">40cm</option>
-                                              <option value="SPACE LINE 에드반스 프리라인 FREESIZE SPACE LINE 에드반스 프리라인 FREESIZE">SPACE LINE 에드반스 프리라인 FREESIZE SPACE LINE 에드반스 프리라인 FREESIZE</option>
-                                          </select>
-                                          <ul class="sz-select_list">
-                                              <li class="selected brdT">상품명<i class="ico sel_arrow"></i></li>
-                                              <li>
-                                                  <ul class="sz-select_sub">
-                                                      <li>
-                                                          <div class="check_box">
-                                                              <label for="selectcheck01" class="just_left">
-                                                                  <span class="product_name">70cm</span>
-                                                              </label>
-                                                              <p class="just_right">
-                                                                  <input type="checkbox" name="size" id="selectcheck01" class="sz-custom_check">
-                                                                  <label for="selectcheck01" class="sz-custom_label"></label>
-                                                              </p>
-                                                          </div>
-                                                      </li>
-                                                      <li>
-                                                          <div class="check_box">
-                                                              <label for="productItem01" class="just_left">
-                                                                  <span class="product_name">SPACE LINE 에드반스 프리라인 FREESIZE SPACE LINE 에드반스 프리라인 FREESIZE</span>
-                                                                  <span class="product_line">+2000원</span>
-                                                              </label>
-                                                              <p class="just_right">
-                                                                  <input type="checkbox" name="size" id="productItem01" class="sz-custom_check">
-                                                                  <label for="productItem01" class="sz-custom_label"></label>
-                                                              </p>
-                                                          </div>
-                                                      </li>
-                                                  </ul>
-                                              </li>
-                                          </ul>
-                                      </div>
-                                      <div class="product-select">
-                                          <select class="sz-select_sl">
-                                              <option value="40cm">40cm</option>
-                                              <option value="SPACE LINE 에드반스 프리라인 FREESIZE SPACE LINE 에드반스 프리라인 FREESIZE">SPACE LINE 에드반스 프리라인 FREESIZE SPACE LINE 에드반스 프리라인 FREESIZE</option>
-                                          </select>
-                                          <ul class="sz-select_list">
-                                              <li class="selected ellipsis">컬러<i class="ico sel_arrow"></i></li>
-                                              <li>
-                                                  <ul class="sz-select_sub">
-                                                      <li>
-                                                          <div class="check_box">
-                                                              <label for="selectcheck02" class="just_left">
-                                                                  <span class="product_name">BLAK</span>
-                                                              </label>
-                                                              <p class="just_right">
-                                                                  <input type="checkbox" name="size" id="selectcheck02" class="sz-custom_check">
-                                                                  <label for="selectcheck02" class="sz-custom_label"></label>
-                                                              </p>
-                                                          </div>
-                                                      </li>
-                                                      <li>
-                                                          <div class="check_box">
-                                                              <label for="productItem02" class="just_left">
-                                                                  <span class="product_name">SPACE LINE 에드반스 프리라인 FREESIZE SPACE LINE 에드반스 프리라인 FREESIZE</span>
-                                                                  <span class="product_line">재고:4개</span>
-                                                              </label>
-                                                              <p class="just_right">
-                                                                  <input type="checkbox" name="size" id="productItem02" class="sz-custom_check">
-                                                                  <label for="productItem02" class="sz-custom_label"></label>
-                                                              </p>
-                                                          </div>
-                                                      </li>
-                                                  </ul>
-                                              </li>
-                                          </ul>
-                                      </div>
-                                      <div class="product-select">
-                                          <select class="sz-select_sl">
-                                              <option value="40cm">40cm</option>
-                                              <option value="SPACE LINE 에드반스 프리라인 FREESIZE SPACE LINE 에드반스 프리라인 FREESIZE">
-                                                  SPACE LINE 에드반스 프리라인 FREESIZE SPACE LINE 에드반스 프리라인 FREESIZE</option>
-                                          </select>
-                                          <ul class="sz-select_list">
-                                              <li class="selected bdrT_n">사이즈<i class="ico sel_arrow"></i></li>
-                                              <li>
-                                                  <ul class="sz-select_sub">
-                                                      <li class="bdrT_n">
-                                                          <div class="check_box">
-                                                              <label for="selectcheck03" class="just_left">
-                                                                  <span class="product_name">40cm</span>
-                                                              </label>
-                                                              <p class="just_right">
-                                                                  <input type="checkbox" name="size" id="selectcheck03" class="sz-custom_check">
-                                                                  <label for="selectcheck03" class="sz-custom_label"></label>
-                                                              </p>
-                                                          </div>
-                                                      </li>
-                                                      <li>
-                                                          <div class="check_box">
-                                                              <label for="productItem03" class="just_left">
-                                                                  <span class="product_name">SPACE LINE 에드반스 프리라인 FREESIZE
-                                                                      SPACE LINE 에드반스 프리라인 FREESIZE</span>
-                                                                  <span class="product_line">+2000원</span>
-                                                              </label>
-                                                              <p class="just_right">
-                                                                  <input type="checkbox" name="size" id="productItem03" class="sz-custom_check">
-                                                                  <label for="productItem03" class="sz-custom_label"></label>
-                                                              </p>
-                                                          </div>
-                                                      </li>
-                                                  </ul>
-                                              </li>
-                                          </ul>
-                                      </div>
-                                    </div>
-                                    <!-- 옵션 3  E -->
-                                    <div class="pf_fc no_border clearfix">
-                                        <div class="product-select">
-                                            <select class="sz-select_sl">
-                                                <option value="40cm">40cm</option>
-                                                <option value="FREESIZE">FREESIZE</option>
-                                            </select>
-                                            <ul class="sz-select_list">
-                                                <li class="selected">
-                                                    <span class="product_name">SPACE LINE</span>
-                                                    <i class="ico sel_arrow"></i>
-                                                </li>
-                                                <li>
-                                                    <ul class="sz-select_sub">
-                                                        <li>
-                                                            <div class="check_box">
-                                                                <label for="selectcheck04" class="just_left">
-                                                                    <span class="product_name">40cm</span>
-                                                                </label>
-                                                                <p class="just_right">
-                                                                    <input type="checkbox" name="size" id="selectcheck04" class="sz-custom_check">
-                                                                    <label for="selectcheck04" class="sz-custom_label"></label>
-                                                                </p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="check_box">
-                                                                <label for="productItem04" class="just_left">
-                                                                    <span class="product_name">SPACE LINE 에드반스 프리라인 FREESIZE SPACE LINE 에드반스 프리라인 FREESIZE</span>
-                                                                    <span class="product_line">+2000원</span>
-                                                                </label>
-                                                                <p class="just_right">
-                                                                    <input type="checkbox" name="size" id="productItem04" class="sz-custom_check">
-                                                                    <label for="productItem04" class="sz-custom_label"></label>
-                                                                </p>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="product-select">
-                                            <select class="sz-select_sl">
-                                                <option value="40cm">40cm</option>
-                                                <option value="SPACE LINE 에드반스 프리라인 FREESIZE SPACE LINE 에드반스 프리라인 FREESIZE">SPACE LINE 에드반스 프리라인 FREESIZE SPACE LINE 에드반스 프리라인 FREESIZE</option>
-                                            </select>
-                                            <ul class="sz-select_list">
-                                                <li class="selected ellipsis">컬러<i class="ico sel_arrow"></i></li>
-                                                <li>
-                                                    <ul class="sz-select_sub">
-                                                        <li>
-                                                            <div class="check_box">
-                                                                <label for="selectcheck05" class="just_left">
-                                                                    <span class="product_name">BLACK</span>
-                                                                    <span class="product_line">재고:2개</span>
-                                                                </label>
-                                                                <p class="just_right">
-                                                                    <input type="checkbox" name="size" id="selectcheck05" class="sz-custom_check">
-                                                                    <label for="selectcheck05" class="sz-custom_label"></label>
-                                                                </p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="check_box">
-                                                                <label for="productItem05" class="just_left">
-                                                                    <span class="product_name">WHITE</span>
-                                                                </label>
-                                                                <p class="just_right">
-                                                                    <input type="checkbox" name="size" id="productItem05" class="sz-custom_check">
-                                                                    <label for="productItem05" class="sz-custom_label"></label>
-                                                                </p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="check_box">
-                                                                <label for="productItem06" class="just_left">
-                                                                    <span class="product_name">CHARCLAL</span>
-                                                                </label>
-                                                                <p class="just_right">
-                                                                    <input type="checkbox" name="size" id="productItem06" class="sz-custom_check">
-                                                                    <label for="productItem06" class="sz-custom_label"></label>
-                                                                </p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="check_box">
-                                                                <label for="productItem07" class="just_left">
-                                                                    <span class="product_name">GRay</span>
-                                                                </label>
-                                                                <p class="just_right">
-                                                                    <input type="checkbox" name="size" id="productItem07" class="sz-custom_check">
-                                                                    <label for="productItem07" class="sz-custom_label"></label>
-                                                                </p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="check_box">
-                                                                <label for="productItem08" class="just_left">
-                                                                    <span class="product_name">CHARCLAL</span>
-                                                                </label>
-                                                                <p class="just_right">
-                                                                    <input type="checkbox" name="size" id="productItem08" class="sz-custom_check">
-                                                                    <label for="productItem08" class="sz-custom_label"></label>
-                                                                </p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="check_box">
-                                                                <label for="productItem09" class="just_left">
-                                                                    <span class="product_name">CHARCLAL</span>
-                                                                </label>
-                                                                <p class="just_right">
-                                                                    <input type="checkbox" name="size" id="productItem09" class="sz-custom_check">
-                                                                    <label for="productItem09" class="sz-custom_label"></label>
-                                                                </p>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <div class="pf_fc clearfix">
-                                        <div class="product-select">
-                                            <select class="sz-select_sl">
-                                                <option value="40cm">40cm</option>
-                                                <option value="SPACE LINE 에드반스 프리라인 FREESIZE SPACE LINE 에드반스 프리라인 FREESIZE">SPACE LINE 에드반스 프리라인 FREESIZE SPACE LINE 에드반스 프리라인 FREESIZE</option>
-                                            </select>
-                                            <ul class="sz-select_list">
-                                                <li class="selected ellipsis">컬러<i class="ico sel_arrow"></i></li>
-                                                <li>
-                                                    <ul class="sz-select_sub">
-                                                        <li>
-                                                            <div class="check_box">
-                                                                <label for="selectcheck06" class="just_left">
-                                                                    <span class="product_name">BLACK</span>
-                                                                    <span class="product_line">재고:2개</span>
-                                                                </label>
-                                                                <p class="just_right">
-                                                                    <input type="checkbox" name="size" id="selectcheck06" class="sz-custom_check">
-                                                                    <label for="selectcheck06" class="sz-custom_label"></label>
-                                                                </p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="check_box">
-                                                                <label for="productItem10" class="just_left">
-                                                                    <span class="product_name">WHITE</span>
-                                                                </label>
-                                                                <p class="just_right">
-                                                                    <input type="checkbox" name="size" id="productItem10" class="sz-custom_check">
-                                                                    <label for="productItem10" class="sz-custom_label"></label>
-                                                                </p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="check_box">
-                                                                <label for="productItem11" class="just_left">
-                                                                    <span class="product_name">CHARCLAL</span>
-                                                                </label>
-                                                                <p class="just_right">
-                                                                    <input type="checkbox" name="size" id="productItem11" class="sz-custom_check">
-                                                                    <label for="productItem11" class="sz-custom_label"></label>
-                                                                </p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="check_box">
-                                                                <label for="productItem12" class="just_left">
-                                                                    <span class="product_name">GRay</span>
-                                                                </label>
-                                                                <p class="just_right">
-                                                                    <input type="checkbox" name="size" id="productItem12" class="sz-custom_check">
-                                                                    <label for="productItem12" class="sz-custom_label"></label>
-                                                                </p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="check_box">
-                                                                <label for="productItem13" class="just_left">
-                                                                    <span class="product_name">CHARCLAL</span>
-                                                                </label>
-                                                                <p class="just_right">
-                                                                    <input type="checkbox" name="size" id="productItem13" class="sz-custom_check">
-                                                                    <label for="productItem13" class="sz-custom_label"></label>
-                                                                </p>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="check_box">
-                                                                <label for="productItem14" class="just_left">
-                                                                    <span class="product_name">CHARCLAL</span>
-                                                                </label>
-                                                                <p class="just_right">
-                                                                    <input type="checkbox" name="size" id="productItem14" class="sz-custom_check">
-                                                                    <label for="productItem14" class="sz-custom_label"></label>
-                                                                </p>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="pf_fc clearfix">
-                                        <span class="pro_pay just_left ellipsis">옵션선택옵션선택옵션선택옵션선택옵션선택옵션선택옵션선택어디까지쓸수있나볼까나택옵션선택옵션선택옵션선택옵션선택어디까지쓸수있나볼까나</span>
-                                        <div class="just_right">
-                                            <div class="count-input-box">
-                                                <button type="button" class="count-btn minus"><span class="blind">수량 - 버튼</span></button>
-                                                <input type="number" class="count-input" value="1">
-                                                <button type="button" class="count-btn plus"><span class="blind">수량 + 버튼</span></button>
-                                                <a href="#" class="ico del"><span class="blind">삭제 버튼</span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pf_fc clearfix">
-                                        <span class="pro_pay just_left">WHATE</span>
-                                        <div class="just_right">
-                                            <div class="count-input-box">
-                                                <button type="button" class="count-btn minus"><span class="blind">수량 - 버튼</span></button>
-                                                <input type="number" class="count-input" value="1">
-                                                <button type="button" class="count-btn plus"><span class="blind">수량 + 버튼</span></button>
-                                                <a href="#" class="ico del"><span class="blind">삭제 버튼</span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pf_fc clearfix">
-                                        <span class="pro_pay just_left">BLACK</span>
-                                        <div class="just_right">
-                                            <div class="count-input-box">
-                                                <button type="button" class="count-btn minus"><span class="blind">수량 - 버튼</span></button>
-                                                <input type="number" class="count-input" value="1">
-                                                <button type="button" class="count-btn plus"><span class="blind">수량 + 버튼</span></button>
-                                                <a href="#" class="ico del"><span class="blind">삭제 버튼</span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pf_fc clearfix">
-                                        <span class="pro_pay just_left">42cm (+2000원)111111</span>
-                                        <div class="just_right">
-                                            <div class="count-input-box">
-                                                <button type="button" class="count-btn minus"><span class="blind">수량 - 버튼</span></button>
-                                                <input type="number" class="count-input" value="1">
-                                                <button type="button" class="count-btn plus"><span class="blind">수량 + 버튼</span></button>
-                                                <a href="#" class="ico del"><span class="blind">삭제 버튼</span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="check_box total">
-                                    <span class="just_right">총 상품 금액<span class="pfb_pay">54,500</span><span class="won">원</span></span>
-                                </div>
-                            </div>
-                        </form>
-                        <!-- // 옵션 E -->
-                        <!-- 구매 버튼  -->
-                        <div class="nav_fixed_wrap wd720">
-                            <!-- <ul class="pd_btn_box">
-                                <li><button type="button" class="pf-btn gray-btn">쇼핑백 담기</button></li>
-                                <li><button type="button" class="pf-btn orange-btn">바로구매</button></li>
-                            </ul> -->
-                            <!-- like btn S  -->
-                            <!-- <div class="pd_btn_box clear">
-                                <button type="button" class="orange_btn2">구매하기</button>
-                                <div class="button_like_new_wrap"><button type="button" class="button_like_new"><span class="blind">좋아요</span></button></div>
-                            </div> -->
-                            <div class="pd_btn_box pl0">
-                                <button type="button" class="orange_btn2">구매하기</button>
-                                <div class="button_like_new_wrap">
-                                    <!-- 좋아요 누르기 전 -->
-                                    <!-- <button type="button" class="button_like_new"><span class="blind">좋아요</span></button> -->
-                                    <!-- 좋아요 누르기 후 -->
-                                    <button type="button" class="button_like_new selected"><span class="blind">좋아요</span><span class="num">999+</span></button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- //구매 버튼 -->
                     </div>
                 </div>
             </div>
         </div>
-
+        <!-- 구매 버튼  -->
+        <div class="pd_fixed_wrap" style="display:none">
+            <ul class="pd_btn_box">
+                <li><button type="button" class="pf-btn gray-btn">쇼핑백 담기</button></li>
+                <li><button type="button" class="pf-btn orange-btn">바로구매</button></li>
+            </ul>
+            <!-- like btn S  -->
+            <div class="pd_btn_box clear">
+                <button type="button" class="orange_btn2">구매하기</button>
+                <div class="button_like_new_wrap"><button type="button" class="button_like_new"><span class="blind">좋아요</span></button></div>
+            </div>
+            <div class="pd_btn_box pl0">
+                <button type="button" class="orange_btn2">구매하기</button>
+                <div class="button_like_new_wrap">
+                    <!-- 좋아요 누르기 전 -->
+                    <button type="button" class="button_like_new"><span class="blind">좋아요</span></button>
+                    <!-- 좋아요 누르기 후 -->
+                    <button type="button" class="button_like_new selected"><span class="blind">좋아요</span><span class="num">999+</span></button>
+                </div>
+            </div>
+        </div>
+        <!-- //구매 버튼 -->
         <!-- slick slider -->
         <script src="../common/lib/slick.min.js"></script>
         <script src="../common/lib/main.js"></script>
+        <!-- <script src="../common/lib/common.js"></script> -->
         <script type="text/javascript">
-            $(document).ready(function(){
-                $(".tooltiptext").show();
-                setTimeout(function () {
-                    $(".tooltiptext").hide();
-                }, 5000);
-            });
             var $slider = $('.slider');
                 if ($slider.length) {
                   var currentSlide;
                   var slidesCount;
                   var sliderCounter = document.createElement('div');
-                  sliderCounter.classList.add('slider_counter');
+                  sliderCounter.classList.add('slider__counter');
                   var updateSliderCounter = function(slick, currentIndex) {
                     currentSlide = slick.slickCurrentSlide() + 1;
                     slidesCount = slick.slideCount;
-                    $(sliderCounter).text(currentSlide + ' / ' +slidesCount)
+                    $(sliderCounter).text(currentSlide + '/' +slidesCount)
                   };
+
                   $slider.on('init', function(event, slick) {
                     $slider.append(sliderCounter);
                     updateSliderCounter(slick);
                   });
+
                   $slider.on('afterChange', function(event, slick, currentSlide) {
                     updateSliderCounter(slick, currentSlide);
                   });
+                  //
+                  // $slider.slick();
                 }
-                if ($('.review_txt_moreview')) {
+        </script>
+        <script type="text/javascript">
+            if ($('.review_txt_moreview')) {
                     $('.review_txt_moreview').on('click', function (e) {
                         e.preventDefault();
                         $(this).toggleClass('on');
-                        $(this).children('p').toggleClass('_ellipsis');
+                        $(this).siblings('p').toggleClass('_ellipsis');
+
+                        if ($(this).hasClass('on')) {
+                            $(this).children('span').text('접기')
+                        } else {
+                            $(this).children('span').text('더보기')
+                    }
                 });
                 // 상품 상세 tab
-                var tabBtn = $("#tab_btn > ul > li");
+                var tabBtn = $("#tab-btn > ul > li");
                 var tabCont = $("#tab-cont > div");
+
                 tabCont.hide().eq(0).show();
+
                 tabBtn.click(function(){
                 var target = $(this);
                 var index = target.index();
+                // alert(index);
                 tabBtn.removeClass("active");
                 target.addClass("active");
                 tabCont.css("display","none");
                 tabCont.eq(index).css("display","block");
                 });
             }
-            $( document ).ready(function() {
-                $( '.Demore_btn' ).click(function() {
+            $( document ).ready( function() {
+                $( '.Demore_btn' ).click( function() {
                     $( "#Demore" ).removeClass( "overh" )
-                });
-            });
-            $( '.Demore_btn' ).click( function() {
+                } );
+            } );
+
+          $( '.Demore_btn' ).click( function() {
             $( '#re_more' ).removeClass( '_ellipsis'),
             $('.Demore_btn').hide();
-            });
+          });
+
             (function () {
                 function oneSlide($ele) {
                     $ele.slick({
@@ -1539,6 +1549,7 @@
                         arrows: false,
                     });
                 }
+
                 function centerSlide($ele) {
                     $ele.slick({
                         infinite: false,
@@ -1551,6 +1562,7 @@
                 oneSlide($('.recc_place-slide'));
                 centerSlide($('.product_color_slide'));
                 centerSlide($('.more_prod_slide'));
+
                 function acAcco(ele, content) {
                     $(ele).on('click touch', function () {
                         $(this).toggleClass('active');

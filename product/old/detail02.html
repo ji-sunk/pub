@@ -5,14 +5,11 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>힙합퍼 상품 상세 _ 상품</title>
         <meta name="description">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <script src="../common/lib/plugin.js"></script>
         <script src="../common/lib/common.js"></script>
-        <script src="../common/lib/slick.min.js"></script>
-        <link rel="stylesheet" href="../common/css/common.css">
-        <link rel="stylesheet" href="../common/css/productdetail.css">
-        <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&amp;subset=korean">
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="assets/css/productdetail.css">
     </head>
     <body>
         <div id="wrap" class="wd720">
@@ -33,9 +30,10 @@
                     </div>
                 </div>
             </div>
+
             <div id="container" class="pdWrap">
-                <div class="pdTopArea clear">
-                    <div class="product_slide_wrap clear">
+                <div class="pdTopArea">
+                    <div class="product_slide_wrap">
                         <div class="slider product_detail_slider">
                             <div>
                                 <img src="../common/images/dummy/dummy11.jpg" alt="">
@@ -76,8 +74,9 @@
                                     <span class="pay_Range">상품쿠폰 적용가</span>
                                 </p>
                                 <div class="coupDwon clear">
-                                    <button type="button" class="org_br" onclick="openLayer(event,'#tempLayer1',this)"><span class="proxima">175,750</span><span class="notoS"><span class="won">원</span> 할인 쿠폰 받기</span><i class="ico down"></i></button>
+                                    <button type="button" class="orange_border" onclick="openLayer(event,'#tempLayer1',this)"><span class="proxima">175,750</span><span class="notoS">원 할인 쿠폰 받기</span><i class="ico down"></i></button>
                                 </div>
+                                <!-- <button type="button" class="sale-btn"  onclick="openLayer(event,'#tempLayer1',this)"><span class="notoS">쿠폰받기</span><i class="ico down"></i></button> -->
                                 <!-- 쿠폰 발급 팝업-->
                                 <div class="dim_layer hide">
                         			<div class="popuplayer" id="tempLayer1">
@@ -100,18 +99,19 @@
                                 <tbody>
                                     <tr>
                                         <th scope="row">상품할인</th>
-                                        <td><span class="orange">10%</span> <span class="num">3,163,500</span><span class="won">원</span></td>
+                                        <td><span class="orange">10%</span> <span class="num">3,163,500</span>원</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">쿠폰할인</th>
-                                        <td><span class="orange">5%</span> <span class="num">175,500</span><span class="won">원</span></td>
+                                        <td><span class="orange">5%</span> <span class="num">175,500</span>원</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">배송비</th>
                                         <td>
-                                            <span class="num">10,000</span><span class="won">원</span>
+                                            <span class="num">10,000</span>원
                                             <div class="tooltip"><span class="con">해외배송</span><span class="ico tip"></span>
-                                              <span class="tooltiptext" id="toolShow">평균 배송기간은 10~20일 소요되며,<br>수량별 추가 배송비가 부과될 수 있어요.</span>
+                                              <span class="tooltiptext">평균 배송기간은 10~20일 소요되며,<br>수량별 추가 배송비가 부과될 수 있어요.</span>
+                                              <span class="tooltiptext1">평균 배송기간은 10~20일 소요되며,<br>수량별 추가 배송비가 부과될 수 있어요.</span>
                                             </div>
                                         </td>
                                     </tr>
@@ -127,118 +127,120 @@
                                         <td>
                                             <p>적립예정 마일리지 <span class="num">298,775M</span></p>
                                             <p><span class="ico naver"></span>결제 시 N포인트 <span class="num">1%</span>적립</p>
+                                            <!-- <button type="button" class="card-btn"></button> -->
+                                            <!-- z<a href="#" class="pop_open" onclick="openLayer(event,'#pop_card_benefit',this)">카드사 혜택</a> -->
                                             <button type="button" class="pop_open under" data-popup="pop_card_benefit">카드사 혜택</button>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <!-- 팝업 카드사 혜택 -->
-                        <div id="pop_card_benefit" class="wd720 popuplayer popup-wrap">
+                        <!-- 팝업 카드사 혜택 S-->
+                        <div id="pop_card_benefit" class="popuplayer popup-wrap">
                             <h2 class="page-title">이달의 카드사 혜택</h2>
                             <div class="paymt_wrap">
                                 <div class="paymt_card_benefit">
                                     <strong>무이자 할부</strong>
                                     <ul class="card">
                                         <li>
-                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd><span class="num">2~6</span>개월/<span class="num">12</span>개월</dd>
-                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
+                                                <dd>2~6개월/12개월</dd>
+                                                <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_02.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="../common/images/ico/benefit_card_02.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd><span class="num">2~6</span>개월/<span class="num">12</span>개월</dd>
-                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
+                                                <dd>2~5개월</dd>
+                                                <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_03.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="../common/images/ico/benefit_card_03.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd><span class="num">2~5</span>개월</dd>
-                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
+                                                <dd>2~5개월</dd>
+                                                <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_04.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="../common/images/ico/benefit_card_04.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd><span class="num">2~6</span>개월</dd>
-                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
+                                                <dd>2~6개월</dd>
+                                                <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_05.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="../common/images/ico/benefit_card_05.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd><span class="num">2~5</span>개월</dd>
-                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
+                                                <dd>2~6개월</dd>
+                                                <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_06.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="../common/images/ico/benefit_card_06.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd><span class="num">2~5</span>개월</dd>
-                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
+                                                <dd>2~6개월</dd>
+                                                <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd><span class="num">2~5</span>개월</dd>
-                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
+                                                <dd>2~6개월</dd>
+                                                <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                     </ul>
                                     <strong>부분 무이자 할부</strong>
                                     <ul class="card">
                                         <li>
-                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd><span class="num">2~5</span>개월</dd>
-                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
+                                                <dd>2~6개월/12개월</dd>
+                                                <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd><span class="num">2~5</span>개월</dd>
-                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
+                                                <dd>2~5개월</dd>
+                                                <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd><span class="num">2~5</span>개월</dd>
-                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
+                                                <dd>2~5개월</dd>
+                                                <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd><span class="num">2~5</span>개월</dd>
-                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
+                                                <dd>2~6개월</dd>
+                                                <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd><span class="num">2~5</span>개월</dd>
-                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
+                                                <dd>2~6개월</dd>
+                                                <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd><span class="num">2~5</span>개월</dd>
-                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
+                                                <dd>2~6개월</dd>
+                                                <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                         <li>
-                                            <div class="cardName"><img src="https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/benefit_card_01.jpg" alt="카드사명"></div>
+                                            <div class="cardName"><img src="../common/images/ico/benefit_card_01.jpg" alt="카드사명"></div>
                                             <dl>
-                                                <dd><span class="num">2~5</span>개월</dd>
-                                                <dd><span class="num">5</span>만원 이상 결제 시</dd>
+                                                <dd>2~6개월</dd>
+                                                <dd>5만원 이상 결제 시</dd>
                                             </dl>
                                         </li>
                                     </ul>
@@ -253,45 +255,47 @@
                                         </ul>
                                     </div>
                                 </div>
+                                <!-- <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기버튼</span></button> -->
                             </div>
                             <button type="button" class="popup_close-btn pop_close ico close" onclick="closeLayer('#pop_card_benefit');"><span class="blind">닫기버튼</span></button>
                         </div>
-                        <!--// 팝업 카드사 혜택  -->
+                        <!--// 팝업 카드사 혜택 E -->
                     </div>
                     <div class="product_banner_slide">
                         <div>
-                            <img src="../common/images/dummy/banner01.jpg" alt="">
+                            <img src="../common/images/dummy/dummy19.jpg" alt="">
                         </div>
                         <div>
-                            <img src="../common/images/dummy/banner01.jpg" alt="">
+                            <img src="../common/images/dummy/dummy19.jpg" alt="">
                         </div>
                     </div>
                 </div>
 
-                <div class="product">
-                    <div id="tab_btn" class="sticky">
-                        <ul class="tab" id="selectInfoTab">
+                <div id="tab-menu" class="product">
+                    <div id="tab-btn">
+                        <ul class="tab border_tab-list white clearfix">
                             <li class="active">
                                 <a class="pro" href="#none">상품 상세</a>
                            </li>
                             <li>
-                                <a class="pro" href="#none">상품평(<span class="num">999+</span>)</a>
+                                <a class="pro" href="#none">상품평(<span>999+</span>)</a>
                             </li>
                             <li>
                                 <a class="pro" href="#none">상품문의</a>
                             </li>
                         </ul>
                     </div>
+
                     <div id="tab-cont">
-                        <div class="ovef_h">
+                        <div class="">
                             <div class="pf-box tab_inr">
                                 <p class="overh" id="Demore">
-                                    <img src="https://d1jmf3qg5eaacj.cloudfront.net/item_desc/web/ITEM055X41U/hufFVRD1600218949266.jpg" alt="상세 이미지">
+                                    <img src="https://d1jmf3qg5eaacj.cloudfront.net/item_desc/web/ITEM055X41U/hufFVRD1600218949266.jpg" alt="">
                                 </p>
-                                <button type="button" id="Demore_btn" class="Demore_btn org_br">상품 상세 더보기<span class="ico detailBtn"></span></button>
+                                <button type="button" id="Demore_btn" class="Demore_btn orange_border">상품 상세 더보기</button>
                             </div>
                             <div class="member_event_acco-box lcear">
-                                <div class="product_detail-acco brT">
+                                <div class="product_detail-acco">
                                     <div class="pda-title">
                                         <span>상품정보고시</span>
                                         <button type="button" class="acco-btn"><span class="ico acco"></span></button>
@@ -375,13 +379,13 @@
                                                     <a href="#" class="img">
                                                         <img src="../common/images/dummy/temp1.jpg" alt="" class="pos_center">
                                                     </a>
-                                                    <a href="#" class="brand ellipsis">나이키</a>
+                                                    <a href="#" class="brand ellipsis">나이키 나이키나이키</a>
                                                     <a href="#" class="name ellipsis">비욘드 레터링 특양면 반팔 (티화이트)</a>
                                                     <div class="price tc_3 clear">
                                                         <p><del class="origin tc_b">9,552,000</del></p>
                                                         <p class="">
                                                             <span class="sale tc_poi">50%</span>
-                                                            <span class="now tc_3">6,139,000</span>
+                                                            <strong class="now tc_3">6,139,000</strong>
                                                         </p>
                                                     </div>
                                                     <div class="badge_coupon">
@@ -389,8 +393,8 @@
                                                         <span class="num">10,000원</span>
                                                     </div>
                                                     <ul class="list_bar rcn">
-                                                        <li class="on"><span class="ico like_s"></span><span class="num">999+</span></li>
-                                                        <li>상품평 <span class="num">999+</span></li>
+                                                        <li><span class="ico like_s"></span>999+</li>
+                                                        <li>상품평 999+</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -403,17 +407,15 @@
                                                     </a>
                                                     <a href="#" class="brand ellipsis tc_3">나이키 나이키나이키나이키나이키나이키나이키</a>
                                                     <a href="#" class="name ellipsis">베이직</a>
-                                                    <div class="price tc_3 clear none"><!-- 정상가 가격 없을 때 none -->
+                                                    <div class="price tc_3 clear">
                                                         <p>
                                                             <span class="sale tc_poi">50%</span>
-                                                            <span class="now tc_3">51,800</span>
+                                                            <strong class="now tc_3">51,800</strong>
                                                         </p>
                                                     </div>
                                                     <ul class="list_bar rcn">
-                                                        <!-- 하트 on 추가 -->
-                                                        <li class="on"><span class="ico like_s"></span><span class="num">100</span></li>
-                                                        <!-- //하트 on 추가 -->
-                                                        <li>상품평 <span class="num">1</span></li>
+                                                        <li><span class="ico like_s"></span>1</li>
+                                                        <li>상품평 1</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -430,7 +432,7 @@
                                                         <p><del class="origin tc_b">9,552,000</del></p>
                                                         <p>
                                                             <span class="sale tc_poi">50%</span>
-                                                            <span class="now tc_3">51,800</span>
+                                                            <strong class="now tc_3">51,800</strong>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -448,12 +450,12 @@
                                                         <p><del class="origin tc_b">9,552,000</del></p>
                                                         <p>
                                                             <span class="sale tc_poi">50%</span>
-                                                            <span class="now tc_3">51,800</span>
+                                                            <strong class="now tc_3">51,800</strong>
                                                         </p>
                                                     </div>
                                                     <ul class="list_bar rcn">
-                                                        <li><span class="ico like_s"></span><span class="num">999+</span></li>
-                                                        <li>상품평 <span class="num">999+</span></li>
+                                                        <li><span class="ico like_s"></span>999+</li>
+                                                        <li>상품평 999+</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -470,7 +472,7 @@
                                                         <p><del class="origin tc_b">9,552,000</del></p>
                                                         <p>
                                                             <span class="sale tc_poi">50%</span>
-                                                            <span class="now tc_3">51,800</span>
+                                                            <strong class="now tc_3">51,800</strong>
                                                         </p>
                                                     </div>
                                                     <div class="badge_coupon">
@@ -491,12 +493,12 @@
                                                     <div class="price tc_3 clear">
                                                         <p>
                                                             <span class="sale tc_poi">50%</span>
-                                                            <span class="now tc_3">51,800</span>
+                                                            <strong class="now tc_3">51,800</strong>
                                                         </p>
                                                     </div>
                                                     <ul class="list_bar rcn">
-                                                        <li><span class="ico like_s"></span><span class="num">999+</span></li>
-                                                        <li>상품평 <span class="num">999+</span></li>
+                                                        <li><span class="ico like_s"></span>999+</li>
+                                                        <li>상품평 999+</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -521,7 +523,7 @@
                                                         <p><del class="origin tc_b">9,552,000</del></p>
                                                         <p>
                                                             <span class="sale tc_poi">50%</span>
-                                                            <span class="now tc_3">6,139,000</span>
+                                                            <strong class="now tc_3">6,139,000</strong>
                                                         </p>
                                                     </div>
                                                     <div class="badge_coupon">
@@ -529,13 +531,12 @@
                                                         <span class="num">10,000원</span>
                                                     </div>
                                                     <ul class="list_bar rcn">
-                                                        <li><span class="ico like_s"></span><span class="num">999+</span></li>
-                                                        <li>상품평 <span class="num">999+</span></li>
+                                                        <li><span class="ico like_s"></span>999+</li>
+                                                        <li>상품평 999+</li>
                                                     </ul>
                                                 </div>
                                             </div>
                                         </li>
-
                                         <li class="lc_e5">
                                             <div class="poz_rel">
                                                 <div class="link">
@@ -543,21 +544,16 @@
                                                         <img src="../common/images/dummy/temp1.jpg" alt="" class="pos_center">
                                                     </a>
                                                     <a href="#" class="brand ellipsis tc_3">나이키 나이키나이키나이키나이키나이키나이키</a>
-                                                    <a href="#" class="name ellipsis">베이직 ML183UCAMTa018 베이직 헤비 스웨트 크루넥 (화이트)</a>
+                                                    <a href="#" class="name ellipsis">베이직</a>
                                                     <div class="price tc_3 clear">
-                                                        <p><del class="origin tc_b">9,552,000</del></p>
                                                         <p>
                                                             <span class="sale tc_poi">50%</span>
-                                                            <span class="now tc_3">51,800</span>
+                                                            <strong class="now tc_3">51,800</strong>
                                                         </p>
                                                     </div>
-                                                    <div class="badge_coupon">
-                                                        <span class="txt">쿠폰</span>
-                                                        <span class="num">10,000원</span>
-                                                    </div>
                                                     <ul class="list_bar rcn">
-                                                        <li><span class="ico like_s"></span><span class="num">999+</span></li>
-                                                        <li>상품평 <span class="num">999+</span></li>
+                                                        <li><span class="ico like_s"></span>1</li>
+                                                        <li>상품평 1</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -574,7 +570,7 @@
                                                         <p><del class="origin tc_b">9,552,000</del></p>
                                                         <p>
                                                             <span class="sale tc_poi">50%</span>
-                                                            <span class="now tc_3">51,800</span>
+                                                            <strong class="now tc_3">51,800</strong>
                                                         </p>
                                                     </div>
                                                     <div class="badge_coupon">
@@ -601,7 +597,34 @@
                                                         <p><del class="origin tc_b">9,552,000</del></p>
                                                         <p>
                                                             <span class="sale tc_poi">50%</span>
-                                                            <span class="now tc_3">51,800</span>
+                                                            <strong class="now tc_3">51,800</strong>
+                                                        </p>
+                                                    </div>
+                                                    <div class="badge_coupon">
+                                                        <span class="txt">쿠폰</span>
+                                                        <span class="num">10,000원</span>
+                                                    </div>
+                                                    <ul class="list_bar rcn">
+                                                        <li><span class="ico like_s"></span>
+                                                            999+</li>
+                                                        <li>상품평 999+</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="lc_e5">
+                                            <div class="poz_rel">
+                                                <div class="link">
+                                                    <a href="#" class="img">
+                                                        <img src="../common/images/dummy/temp1.jpg" alt="" class="pos_center">
+                                                    </a>
+                                                    <a href="#" class="brand ellipsis tc_3">나이키 나이키나이키나이키나이키나이키나이키</a>
+                                                    <a href="#" class="name ellipsis">베이직 ML183UCAMTa018 베이직 헤비 스웨트 크루넥 (화이트)</a>
+                                                    <div class="price tc_3 clear">
+                                                        <p><del class="origin tc_b">9,552,000</del></p>
+                                                        <p>
+                                                            <span class="sale tc_poi">50%</span>
+                                                            <strong class="now tc_3">51,800</strong>
                                                         </p>
                                                     </div>
                                                     <div class="badge_coupon">
@@ -640,7 +663,7 @@
                                  </div>
                                 <div class="review_none">
                                      <p class="innerTxt">
-                                        등록된 상품평이 없어요.
+                                        등록된 상품평이 없습니다.
                                      </p>
                                      <div class="btn_bk">
                                           <a href="write.html" class="dark">상품평 쓰기</a>
@@ -649,7 +672,7 @@
 
                                  <!-- 리뷰 탭 -->
                                  <ul class="list_selector">
-                                     <li><a href="#" class="on"><span class="notoS">전체</span><span class="proxima">(5)</span></a></li>
+                                     <li><a href="#" class="on"><span class="notoS">전체</span><span class="proxima">(5)</span></span></a></li>
                                      <li><a href="#"><span class="le_mg"><span class="notoS">포토 상품평</span><span class="proxima">(15)</span></span></a></li>
                                  </ul>
                                  <div class="review_area">
@@ -668,132 +691,17 @@
                                                     </div>
                                                     <div class="idDate">
                                                         <ul class="list_bar">
-                                                            <li><span class="review_id">hiph***</span></li>
-                                                            <li><span class="review_date">2021.01.01</span></li>
+                                                            <li><span class="review_date">hiph***</span></li>
+                                                            <li><span class="review_id">2021.01.01</span></li>
                                                         </ul>
                                                     </div>
-                                                    <div class="review_txt clear">
-                                                        <p class="product_option ellipsis">옵션 : 1. 블랙 / US 9/UK 8(270) 블랙 / US 9/UK 8(270)1111111111</p>
-                                                        <div class="cont clear">
-                                                            <a href="#" class="review_txt_moreview">
-                                                                <p class="re_txt _ellipsis">
-                                                                    가성비 좋네요. 정말 마음에 듭니다. 굿굿굿
-                                                                </p>
-                                                            </a>
-                                                        </div>
+                                                    <div class="product_option">
+                                                        <p>옵션 : 1. 블랙 / US 9/UK 8(270)</p>
                                                     </div>
-                                                </div>
-                                                <div class="reviewPhoto_box">
-                                                    <ul class="re_img">
-                                                        <li><a href="#" class="pop_open" data-popup="photoView"><img src="../common/images/dummy/dummy11.jpg" alt="후기사진"></a></li>
-                                                        <li><a href="#none" class="pop_open" data-popup="photoView"><img src="../common/images/dummy/dummy11.jpg" alt="후기사진"></a></li>
-                                                        <li><a href="#none" class="pop_open" data-popup="photoView"><img src="../common/images/dummy/dummy12.jpg" alt="후기사진"></a></li>
-                                                        <li><a href="#none" class="pop_open" data-popup="photoView"><img src="../common/images/dummy/dummy14.jpg" alt="후기사진"></a></li>
-                                                        <li><a href="#none" class="pop_open" data-popup="photoView"><img src="../common/images/dummy/dummy15.jpg" alt="후기사진"></a></li>
-                                                    </ul>
-                                                </div>
-                                                <!-- 포토 리뷰 -->
-                                                <div id="photoView" class="popup-wrap">
-                                                    <h2 class="page-title">크게보기</h2>
-                                                    <div class="photo_wrap">
-                                                        <div class="main clear">
-                                                            <div class="slider_for clear">
-                                                                  <div class="pdT"><a href="#r"><img src="../common/images/dummy/dummy20.jpg" alt="후기 사진"></a></div>
-                                                                  <div><a href="#r"><img src="../common/images/dummy/dummy21.jpg" alt="후기 사진"></a></div>
-                                                                  <div class="pdT"><a href="#"><img src="../common/images/dummy/dummy12.jpg" alt="후기 사진"></a></div>
-                                                                  <div class="pdT"><a href="#none"><img src="../common/images/dummy/dummy13.jpg" alt="후기 사진"></a></div>
-                                                                  <div class="pdT"><a href="#none"><img src="../common/images/dummy/dummy14.jpg" alt="후기 사진"></a></div>
-                                                            </div>
-                                                            <div class="slider_nav_box">
-                                                                <div class="slider_nav">
-                                                                    <div class="slick-slide slick-cloned slick-active"><a href="#"><img src="../common/images/dummy/dummy20.jpg" alt="후기 사진"></a></div>
-                                                                    <div class="slick-slide slick-cloned slick-active"><a href="#"><img src="../common/images/dummy/dummy21.jpg" alt="후기 사진"></a></div>
-                                                                    <div class="slick-slide slick-cloned slick-active"><a href="#"><img src="../common/images/dummy/dummy12.jpg" alt="후기사진"></a></div>
-                                                                    <div class="slick-slide slick-cloned slick-active"><a href="#none"><img src="../common/images/dummy/dummy13.jpg" alt="후기 사진"></a></div>
-                                                                    <div class="slick-slide slick-cloned slick-active"><a href="#none"><img src="../common/images/dummy/dummy14.jpg" alt="후기 사진"></a></div>
-                                                                    <!-- <div class="slick-slide slick-cloned slick-active br"><a href="#none"><img src="https://d1jmf3qg5eaacj.cloudfront.net/item_review/ITEM3BTU8B3/20201109/hufTUEZ1604885245757.jpeg" height="60px" alt="후기 사진"></a></div> -->
-                                                                </div>
-                                                            </div>
-
-                                                            <button type="button" class="popup_close-btn pop_close"><span class="blind">닫기버튼</span></button>
-                                                            <script type="text/javascript">
-                                                               //  $(".overlay, #" + strDataPopupName).fadeIn(170);
-                                                               //     $('slick 플러그인 클래스명').resize();
-                                                               //     }
-                                                               // });
-                                                               $('.pop_open').click(function(){
-                                                                    $('.slider_for').show()
-                                                                });
-                                                                $('.slider_for').slick({
-                                                                     slidesToShow: 1,
-                                                                     slidesToScroll: 1,
-                                                                     arrows: false,
-                                                                     fade: true,
-                                                                     centerMode: true,
-                                                                     autoplay: true,
-                                                                     pauseOnHover:true,
-                                                                     asNavFor: '.slider_nav',
-                                                                     // infinite: false,
-                                                                });
-                                                                $('.slider_nav').slick({
-                                                                 slidesToShow: 5,
-                                                                 // slidesToScroll: 1,
-                                                                 // asNavFor: '.slider_for',
-                                                                 dots:false,
-                                                                 centerMode: true,
-                                                                 pauseOnHover: false,
-                                                                 focusOnSelect: true,
-                                                                });
-                                                                $('.slider_nav > div').click(function() {
-                                                                  var slideNo = $(this).index();
-                                                                  $('.slider_for').slick('slickGoTo', slideNo);
-                                                                });
-                                                            </script>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="review_lst">
-                                            <div class="review_wrap">
-                                                <div class="pos_center_before">
-                                                    <div class="star_rating_s">
-                                                        <div class="star_wrap">
-                                                            <div class="star on"></div>
-                                                            <div class="star on"></div>
-                                                            <div class="star on"></div>
-                                                            <div class="star on"></div>
-                                                            <div class="star off"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="idDate">
-                                                        <ul class="list_bar">
-                                                            <li><span class="review_id">hiph***</span></li>
-                                                            <li><span class="review_date">2021.01.01</span></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="review_txt clear">
-                                                        <p class="product_option ellipsis">옵션 : 1. 블랙</p>
-                                                        <div class="cont clear">
-                                                            <a href="#" class="review_txt_moreview">
-                                                                <p class="re_txt _ellipsis">
-                                                                    가성비 좋네요. 정말 마음에 듭니다. 굿굿굿
-                                                                    이만한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품
-                                                                  없어요.가성비 좋네요. 정말 마음에 듭니다. 이만한 제품 없어
-                                                                  요. 가성비 좋네요. 정말 마음에 듭니다. 가성비 좋네요. 이만
-                                                                  한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품 없어
-                                                                  요 굿굿굿. 가성비 좋네요. 정말 마음에 듭니다. 이만한 제품
-                                                                  없어요 굿굿굿
-                                                                  가성비 좋네요. 정말 마음에 듭니다.
-                                                                  이만한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품
-                                                                  없어요.가성비 좋네요. 정말 마음에 듭니다. 이만한 제품 없어
-                                                                  요. 가성비 좋네요. 정말 마음에 듭니다. 가성비 좋네요. 이만
-                                                                  한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품 없어
-                                                                  요 굿굿굿. 가성비 좋네요. 정말 마음에 듭니다. 이만한 제품
-                                                                  없어요 굿굿굿
-                                                                </p>
-                                                            </a>
-                                                        </div>
+                                                    <div class="cont clear">
+                                                        <p class="re_txt _ellipsis">
+                                                            가성비 좋네요. 정말 마음에 듭니다.
+                                                        </p>
                                                     </div>
                                                 </div>
                                                 <div class="reviewPhoto_box">
@@ -803,43 +711,6 @@
                                                         <li><a href="#none"><img src="../common/images/dummy/dummy12.jpg" alt="후기사진"></a></li>
                                                         <li><a href="#none"><img src="../common/images/dummy/dummy14.jpg" alt="후기사진"></a></li>
                                                         <li><a href="#none"><img src="../common/images/dummy/dummy15.jpg" alt="후기사진"></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="review_lst">
-                                            <div class="review_wrap">
-                                                <div class="pos_center_before">
-                                                    <div class="star_rating_s">
-                                                        <div class="star_wrap">
-                                                            <div class="star on"></div>
-                                                            <div class="star on"></div>
-                                                            <div class="star on"></div>
-                                                            <div class="star on"></div>
-                                                            <div class="star off"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="idDate">
-                                                        <ul class="list_bar">
-                                                            <li><span class="review_id">hiph***</span></li>
-                                                            <li><span class="review_date">2021.01.01</span></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="review_txt clear">
-                                                        <p class="product_option ellipsis">옵션 : 1. 블랙</p>
-                                                        <div class="cont clear">
-                                                            <a href="#" class="review_txt_moreview">
-                                                                <p class="re_txt _ellipsis">
-                                                                    가성비 좋네요. 정말 마음에 듭니다. 굿굿굿
-                                                                </p>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="reviewPhoto_box">
-                                                    <ul class="re_img">
-                                                        <li><a href="#none"><img src="../common/images/dummy/dummy11.jpg" alt="후기사진"></a></li>
-                                                        <li><a href="#none"><img src="../common/images/dummy/dummy11.jpg" alt="후기사진"></a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -858,19 +729,62 @@
                                                     </div>
                                                     <div class="idDate">
                                                         <ul class="list_bar">
-                                                            <li><span class="review_id">hiph***</span></li>
-                                                            <li><span class="review_date">2021.01.01</span></li>
+                                                            <li><span class="review_date">hiph***</span></li>
+                                                            <li><span class="review_id">2021.01.01</span></li>
                                                         </ul>
                                                     </div>
-                                                    <div class="review_txt clear">
-                                                        <p class="product_option ellipsis">옵션 : 1. 블랙</p>
-                                                        <div class="cont clear">
-                                                            <a href="#" class="review_txt_moreview">
-                                                                <p class="re_txt _ellipsis">
-                                                                    가성비 좋네요. 정말 마음에 듭니다. 굿굿굿
-                                                                </p>
-                                                            </a>
+                                                    <div class="product_option">
+                                                        <p>옵션 : OLD SCHOOL 후드(SBH9S... / OLD SCHOOL 후드 </p>
+                                                    </div>
+                                                    <div class="cont clear">
+                                                        <p class="re_txt _ellipsis">
+                                                            가성비 좋네요. 정말 마음에 듭니다.
+                                                            이만한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품
+                                                            없어요.가성비 좋네요. 정말 마음에 듭니다. 이만한 제품 없어
+                                                            요. 가성비 좋네요. 정말 마음에 듭니다. 가성비 좋네요. 이만
+                                                            한 제품 없어요 굿굿굿 정말 마음에 듭니다. 이만한 제품 없어
+                                                            요 굿굿굿. 가성비 좋네요. 정말 마음에 듭니다. 이만한 제품
+                                                            없어요 굿굿굿
+                                                        </p>
+                                                        <a href="#" class="review_txt_moreview"><span>더보기</span></a>
+                                                        <!-- <a href="#" class="review_txt_moreview"><span>...더보기</span></a> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="review_lst">
+                                            <div class="review_wrap">
+                                                <div class="pos_center_before">
+                                                    <div class="star_rating_s">
+                                                        <div class="star_wrap">
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star on"></div>
+                                                            <div class="star off"></div>
+                                                            <div class="star off"></div>
                                                         </div>
+                                                    </div>
+                                                    <div class="idDate">
+                                                        <ul class="list_bar">
+                                                            <li><span class="review_date">hiph***</span></li>
+                                                            <li><span class="review_id">2021.01.01</span></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="product_option">
+                                                        <p>옵션 : 1. 블랙 / US 9/UK 8(270)</p>
+                                                    </div>
+                                                    <div class="cont clear">
+                                                        <p class="re_txt _ellipsis">
+                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요
+                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                                                        </p>
+                                                        <a href="#" class="review_txt_moreview"><span>더보기</span></a>
+                                                    </div>
+                                                    <div class="reviewPhoto_box">
+                                                        <ul class="re_img">
+                                                            <li><a href="#none"><img src="../common/images/dummy/dummy11.jpg" alt="후기사진"></a></li>
+                                                            <li><a href="#none"><img src="../common/images/dummy/dummy12.jpg" alt="후기사진"></a></li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
@@ -889,22 +803,20 @@
                                                     </div>
                                                     <div class="idDate">
                                                         <ul class="list_bar">
-                                                            <li><span class="review_id">hiph***</span></li>
-                                                            <li><span class="review_date">2021.01.01</span></li>
+                                                            <li><span class="review_date">hiph***</span></li>
+                                                            <li><span class="review_id">2021.01.01</span></li>
                                                         </ul>
                                                     </div>
-                                                    <div class="review_txt clear">
-                                                        <p class="product_option ellipsis">옵션 : 1. 블랙 / US 9/UK 8(270) 블랙 / US 9/UK 8(270)1111111111</p>
+                                                    <div class="product_option">
+                                                        <p>옵션 : 1. 블랙 / US 9/UK 8(270)</p>
                                                     </div>
-                                                </div>
-                                                <div class="reviewPhoto_box">
-                                                    <ul class="re_img">
-                                                        <li><a href="#none"><img src="../common/images/dummy/dummy11.jpg" alt="후기사진"></a></li>
-                                                        <li><a href="#none"><img src="../common/images/dummy/dummy11.jpg" alt="후기사진"></a></li>
-                                                        <li><a href="#none"><img src="../common/images/dummy/dummy12.jpg" alt="후기사진"></a></li>
-                                                        <li><a href="#none"><img src="../common/images/dummy/dummy14.jpg" alt="후기사진"></a></li>
-                                                        <li><a href="#none"><img src="../common/images/dummy/dummy15.jpg" alt="후기사진"></a></li>
-                                                    </ul>
+                                                    <div class="cont clear">
+                                                        <p class="re_txt _ellipsis">
+                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요무조건 사세요 50프로 쿠폰 먹여서 샀어요
+                                                            무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!무조건 사세요 50프로 쿠폰 먹여서 샀어요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                                                        </p>
+                                                        <a href="#" class="review_txt_moreview"><span>더보기</span></a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </li>
@@ -917,17 +829,16 @@
                                          </p>
                                      </a>
                                  </div>
+                                 <!-- <div class="product_select_list_moreview"><a href="#"><span>더보기</span></a></div> -->
                             </section>
                         </div>
                         <div class="tab_inr qna">
-                            <div class="inquire">
-                                <p class="innerTxt">
-                                    구매하시려는 상품의 궁금한 점에 대해 문의 남겨주세요.<br />
-                                    상품 문의 외 배송/반품/교환 문의는 1:1문의를 이용해 주세요.
-                                </p>
-                                <div class="btn_bk">
-                                     <a href="write.html" class="dark">상품 문의 작성하기</a>
-                                </div>
+                            <p class="innerTxt">
+                                구매하시려는 상품의 궁금한 점에 대해 문의 남겨주세요.<br />
+                                상품 문의 외 배송/반품/교환 문의는 1:1문의를 이용해 주세요.
+                            </p>
+                            <div class="btn_bk">
+                                 <a href="write.html" class="dark">상품 문의 작성하기</a>
                             </div>
                             <div class="qnaBox">
                                 <ul class="list_bar">
@@ -942,7 +853,7 @@
                                     </li>
                                 </ul>
                                 <span class="input_checkbox">
-                                    <input type="checkbox" id="checkbox01" name="checkbox01" class="" value="">
+                                    <input type="checkbox" id="checkbox01" name="selmenu" class="gnb_input_check" value="">
                                     <label for="checkbox01">내 문의 보기</label>
                     			</span>
                             </div>
@@ -956,6 +867,134 @@
                                             <a href="#">
                                                 <div class="cont clear">
                                                     <p>오버 사이즈 제품 맞나요?</p>
+                                                    <!-- <button type="button" class="view" data-type="qnaview"><span class="blind">답변보기</span></button> -->
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="list_bar info">
+                                            <li>답변 대기</li>
+                                            <li>dng6***</li>
+                                            <li>2021. 01. 05 13:48</li>
+                                        </ul>
+                                        <!-- <dl class="info">
+                                            <dt class="blind">상태</dt>
+                                            <dd class="flag kor tc_3">답변 대기</span></dd>
+                                            <dt class="blind">구분</dt>
+                                            <dd class="category tc_b">기타</dd>
+                                            <dt class="blind">작성자</dt>
+                                            <dd class="writer tc_5">yj2323232***</dd>
+                                            <dt class="blind">작성일</dt>
+                                            <dd class="date tc_5">2018.12.11</dd>
+                                        </dl> -->
+                                    </div>
+
+                                    <div class="item lc_e5">
+                                        <a href="#">
+                                            <div class="que tc_5 clear">
+                                                <a href="#">
+                                                    <div class="cont">
+                                                        <div class="product_option"><p class="bk">160cm / 47kg</p></div>
+                                                        <p id="re_more" class="re_txt _ellipsis">
+                                                            안녕하세요. M사이즈 구입하려는데 언제 재입고 되는지 알고 싶습니다. 너무 사고 싶은데 해당 상품 재입고 계획이 있나요?! 궁금합니다.
+                                                        </p>
+                                                        <!-- <a href="#" class="review_txt_moreview"><span>더보기</span></a> -->
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <ul class="list_bar info">
+                                                <li class="blue">답변 완료</li>
+                                                <li>dng6***</li>
+                                                <li>2021. 01. 05 13:48</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+
+                                    <div class="item lc_e5">
+                                        <a href="#">
+                                            <div class="que tc_5 clear">
+                                                <div class="cont clear">
+                                                    <p id="re_more" class="re_txt _ellipsis">안녕하세요. M사이즈 구입하려는데 언제 재입고 되는지 알고
+                                                    싶습니다. 너무 사고 싶은데 해당 상품 재입고 계획이 있나요? 너무 사고 싶은데 해당 상품 재입고 계획이 있나요?</p>
+                                                </div>
+                                            </div>
+                                            <ul class="list_bar info">
+                                                <li class="blue">답변 완료</li>
+                                                <li>dng6***</li>
+                                                <li>2021. 01. 05 13:48</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+
+                                    <div class="item lc_e5">
+                                        <div class="que tc_5 clear view">
+                                            <span class="blind">문의내용 : </span>
+                                            <a href="#none">
+                                                <span class="badge ble br50">내 문의</span>
+                                                <ul class="list_bar mdf">
+                                                    <li>
+                                                        <a href="#">수정</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">삭제</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="cont clear">
+                                                    <p>정품 확실한가요?</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="list_bar info">
+                                            <li>답변 대기</li>
+                                            <li>dng6***</li>
+                                            <li>2021. 01. 05 13:48</li>
+                                        </ul>
+                                    </div>
+                                    <div  class="item view view"><!-- 열릴때는 class에 view 추가 -->
+                                        <div class="que tc_5 clear view">
+                                            <span class="blind">문의내용 : </span>
+                                            <a href="#">
+                                                <span class="badge ble br50">내 문의</span>
+                                                <ul class="list_bar mdf">
+                                                    <li>
+                                                        <a href="#">수정</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">삭제</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="cont clear">
+                                                    <p>정품 확실한가요?</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="list_bar info">
+                                            <li>답변 대기</li>
+                                            <li>dng6***</li>
+                                            <li>2021. 01. 05 13:48</li>
+                                        </ul>
+                                    </div>
+
+                                    <div  class="item seller view"><!-- 열릴때는 class에 view 추가 -->
+                                        <div class="que tc_5 clear view">
+                                            <a href="#">
+                                                <div class="">
+                                                    <i class="ico line"></i><span class="blind">판매자 게시글</span><span class="badge bk br50">판매자</span>
+                                                </div>
+                                                <div class="cont clear">
+                                                    <p>안녕하세요 고객님, 엑스엑스메인 입니다. 해당 제품은 더 이상 재입고 계획이 잡혀있지 않은 상품입니다. 감사합니다.</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="list_bar info">
+                                            <li>2021. 01. 05 13:48</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="item lc_e5">
+                                        <div class="que tc_5 clear">
+                                            <a href="#">
+                                                <div class="cont clear">
+                                                    <p>비밀글입니다.<i class="ico secret"><span class="blind">비밀 게시글</span></i></p>
                                                 </div>
                                             </a>
                                         </div>
@@ -968,104 +1007,12 @@
                                     <div class="item lc_e5">
                                         <div class="que tc_5 clear">
                                             <a href="#">
-                                                <div class="cont">
-                                                    <div class="product_option"><p class="bk">160cm / 47kg</p></div>
-                                                    <p id="re_more" class="re_txt _ellipsis">
-                                                        안녕하세요. M사이즈 구입하려는데 언제 재입고 되는지 알고 싶습니다. 너무 사고 싶은데 해당 상품 재입고 계획이 있나요?! 궁금합니다.
-                                                    </p>
+                                                <div class="cont clear">
+                                                    <p>비밀글입니다.<i class="ico secret"><span class="blind">비밀 게시글</span></i></p>
                                                 </div>
                                             </a>
                                         </div>
                                         <ul class="list_bar info">
-                                            <li class="blue">답변 완료</li>
-                                            <li>dng6***</li>
-                                            <li>2021. 01. 05 13:48</li>
-                                        </ul>
-                                    </div>
-                                    <div class="item lc_e5">
-                                        <div class="que tc_5 clear">
-                                            <div class="cont clear">
-                                                <a href="#" class="review_txt_moreview">
-                                                    <p id="re_more" class="re_txt _ellipsis">
-                                                        안녕하세요. M사이즈 구입하려는데 언제 재입고 되는지 알고
-                                                        싶습니다. 너무 사고 싶은데 해당 상품 재입고 계획이 있나요? 너무 사고 싶은데 해당 상품 재입고 계획이 있나요?
-                                                        안녕하세요. M사이즈 구입하려는데 언제 재입고 되는지 알고
-                                                        싶습니다. 너무 사고 싶은데 해당 상품 재입고 계획이 있나요? 너무 사고 싶은데 해당 상품 재입고 계획이 있나요?안녕하세요. M사이즈 구입하려는데 언제 재입고 되는지 알고
-                                                        싶습니다. 너무 사고 싶은데 해당 상품 재입고 계획이 있나요? 너무 사고 싶은데 해당 상품 재입고 계획이 있나요?
-                                                    </p>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <ul class="list_bar info">
-                                            <li class="blue">답변 완료</li>
-                                            <li>dng6***</li>
-                                            <li>2021. 01. 05 13:48</li>
-                                        </ul>
-                                    </div>
-                                    <div class="item lc_e5">
-                                        <div class="que tc_5 clear view">
-                                            <span class="blind">문의내용 : </span>
-                                            <span class="badge ble br50">내 문의</span>
-                                            <ul class="list_bar mdf">
-                                                <li>
-                                                    <a href="#">수정</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">삭제</a>
-                                                </li>
-                                            </ul>
-                                            <div class="cont clear">
-                                                <p>정품 확실한거 맞죠?</p>
-                                            </div>
-                                        </div>
-                                        <ul class="list_bar info">
-                                            <li>답변 대기</li>
-                                            <li>dng6***</li>
-                                            <li>2021. 01. 05 13:48</li>
-                                        </ul>
-                                    </div>
-                                    <div  class="item view view"><!-- 열릴때는 class에 view 추가 -->
-                                        <div class="que tc_5 clear view">
-                                            <span class="blind">문의내용 : </span>
-                                            <span class="badge ble br50">내 문의</span>
-                                            <ul class="list_bar mdf">
-                                                <li>
-                                                    <a href="#">수정</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">삭제</a>
-                                                </li>
-                                            </ul>
-                                            <div class="cont clear">
-                                                <p>정품 확실한가요?</p>
-                                            </div>
-                                        </div>
-                                        <ul class="list_bar info">
-                                            <li class="blue">답변 완료</li>
-                                            <li>dng6***</li>
-                                            <li>2021. 01. 05 13:48</li>
-                                        </ul>
-                                    </div>
-                                    <div  class="item seller view"><!-- 판매자 class seller -->
-                                        <div class="que tc_5 clear view">
-                                            <div class="sellerBadge">
-                                                <i class="ico line"></i><span class="blind">판매자 게시글</span><span class="badge bk br50">판매자</span>
-                                            </div>
-                                            <div class="cont clear">
-                                                <p>안녕하세요 고객님, 엑스엑스메인 입니다. 해당 제품은 더 이상 재입고 계획이 잡혀있지 않은 상품입니다. 감사합니다.</p>
-                                            </div>
-                                        </div>
-                                        <ul class="list_bar info">
-                                            <li>2021. 01. 05 13:48</li>
-                                        </ul>
-                                    </div>
-                                    <div class="item lc_e5">
-                                        <div class="que tc_5 clear">
-                                            <div class="cont clear">
-                                                <p>비밀글입니다.<i class="ico secret"><span class="blind">비밀 게시글</span></i></p>
-                                            </div>
-                                        </div>
-                                        <ul class="list_bar info">
                                             <li>답변 대기</li>
                                             <li>dng6***</li>
                                             <li>2021. 01. 05 13:48</li>
@@ -1073,21 +1020,11 @@
                                     </div>
                                     <div class="item lc_e5">
                                         <div class="que tc_5 clear">
-                                            <div class="cont clear">
-                                                <p>비밀글입니다.<i class="ico secret"><span class="blind">비밀 게시글</span></i></p>
-                                            </div>
-                                        </div>
-                                        <ul class="list_bar info">
-                                            <li>답변 대기</li>
-                                            <li>dng6***</li>
-                                            <li>2021. 01. 05 13:48</li>
-                                        </ul>
-                                    </div>
-                                    <div class="item lc_e5">
-                                        <div class="que tc_5 clear">
-                                            <div class="cont clear">
-                                                <p>비밀글입니다.<i class="ico secret"><span class="blind">비밀 게시글</span></i></p>
-                                            </div>
+                                            <a href="#">
+                                                <div class="cont clear">
+                                                    <p>비밀글입니다.<i class="ico secret"><span class="blind">비밀 게시글</span></i></p>
+                                                </div>
+                                            </a>
                                         </div>
                                         <ul class="list_bar info">
                                             <li>답변 대기</li>
@@ -1118,14 +1055,7 @@
                 $(".tooltiptext").show();
                 setTimeout(function () {
                     $(".tooltiptext").hide();
-                }, 5000);
-                $(".ico.tip").click(function(){
-                    if($("#toolShow").css("display") != "block"){
-                        $("#toolShow").show();
-                    }else{
-                        $("#toolShow").hide();
-                    }
-                });
+                }, 3000);
             });
             var $slider = $('.slider');
                 if ($slider.length) {
@@ -1145,24 +1075,32 @@
                   $slider.on('afterChange', function(event, slick, currentSlide) {
                     updateSliderCounter(slick, currentSlide);
                   });
+                  //
+                  // $slider.slick();
                 }
                 if ($('.review_txt_moreview')) {
                     $('.review_txt_moreview').on('click', function (e) {
                         e.preventDefault();
                         $(this).toggleClass('on');
-                        $(this).children('p').toggleClass('_ellipsis');
-                    });
+                        $(this).siblings('p').toggleClass('_ellipsis');
+                        if ($(this).hasClass('on')) {
+                            $(this).children('span').text('접기')
+                        } else {
+                        $(this).children('span').text('더보기')
+                    }
+                });
                 // 상품 상세 tab
-                    var tabBtn = $("#tab_btn > ul > li");
-                    var tabCont = $("#tab-cont > div");
-                    tabCont.hide().eq(0).show();
-                    tabBtn.click(function(){
-                    var target = $(this);
-                    var index = target.index();
-                    tabBtn.removeClass("active");
-                    target.addClass("active");
-                    tabCont.css("display","none");
-                    tabCont.eq(index).css("display","block");
+                var tabBtn = $("#tab-btn > ul > li");
+                var tabCont = $("#tab-cont > div");
+                tabCont.hide().eq(0).show();
+                tabBtn.click(function(){
+                var target = $(this);
+                var index = target.index();
+                // alert(index);
+                tabBtn.removeClass("active");
+                target.addClass("active");
+                tabCont.css("display","none");
+                tabCont.eq(index).css("display","block");
                 });
             }
             $( document ).ready(function() {
