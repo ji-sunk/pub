@@ -6,118 +6,228 @@
         <title>검색 메인_default</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <link rel="stylesheet" href="common/css/common.css"> -->
-        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="common/css/common.css">
         <script src="common/lib/jquery-2.2.4.min.js"></script>
+        <link rel="stylesheet" href="https://use.typekit.net/yzy2fux.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&amp;subset=korean">
     </head>
     <body>
-        <div id="wrap">
-            <div id="header">
-
+        <div id="wrap" class="wd720">
+            <div id="header" class="clear">
                 <hr>
                 메인
                 <hr>
-
-                <div class="box_left">
-                    <a href="#"><h1 class="dis_in ico logo"><span class="blind">HIPHOPER</span></h1></a>
+                <div class="headerWrap">
+                    <div class="box_left">
+                        <a class="logo_area" href="#"><h1 class="dis_in ico logo"><span class="blind">HIPHOPER</span></h1></a>
+                    </div>
+                    <div class="box_right">
+                        <ul class="btn_area">
+                            <li><a href="#"><i class="ico bag"><span id="cartCnt" class="cart_num">31</span><span class="blind">장바구니 바로가기</span></i></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="box_right">
-                    <ul class="btn_area">
-                        <li><a href="#" class="ico search"><span class="blind">서치 바로가기</span></a></li>
-                    </ul>
+                <hr>
+                카테메인
+                <hr>
+                <div class="headerWrap">
+                    <div class="box_left back">
+                        <a href="#" class="btn_back"><span class="blind">뒤로가기</span></a>
+                        <p class="header_title">
+                            의류
+                        </p>
+                    </div>
+                    <div class="box_right">
+                        <ul class="btn_area">
+                            <li><a href="#"><i class="ico search"><span class="blind">서치 바로가기</span></i></a></li>
+                            <li><a href="#"><i class="ico bag"><span id="cartCnt" class="cart_num">50</span><span class="blind">장바구니 바로가기</span></i></a></li>
+                            <li><a href="#"><i class="ico home"><span class="blind">메인 바로가기</span></i></a></li>
+                        </ul>
+                    </div>
                 </div>
-
                 <hr>
                 쇼핑백
                 <hr>
-
-                <div class="box_left back">
-                    <a href="#" class="btn_back"><span class="blind">뒤로가기</span></a>
-                    <p class="header_title">
-                        쇼핑백(<span class="number">99+</span>)
-                    </p>
-                </div>
-                <div class="box_right">
-                    <ul class="btn_area">
-                        <li><a href="#" class="ico search"><span class="blind">서치 바로가기</span></a></li>
-                        <li><a href="#" class="ico search"><span class="blind">서치 바로가기</span></a></li>
-                        <li><a href="#" class="ico search"><span class="blind">서치 바로가기</span></a></li>
-                    </ul>
-                </div>
-            </div>
-
-
-            <div id="container">
-                <div class="searchbar">
-                    <form>
-                      <input type="text" name="searchbar" placeholder="Search..">
-                    </form>
-                </div>
-                <div style="width: 100%; height: 1100px; background-color: gray;">기존 ui area</div>
-                <div class="fixed_b-nav">
-                    <ul class="fbn-list">
-                        <li class="on"><button autofocus="autofocus"  type="button" class="fbn-item cate">카테고리</button></li>
-                        <!-- <li><button type="button" class="fbn-item search">검색</button></li> -->
-                        <li><button type="button" class="tab_cart fbn-item bag">쇼핑백<span id="cartCntMobile" class="cart_num">99+</span></button></li>
-                        <li><button type="button" class="fbn-item home">홈</button></li>
-                        <li><button type="button" class="fbn-item mypage">마이 페이지</button></li>
-                        <li><button type="button" class="fbn-item product">최근 본 상품</button></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="footer">
-                <ul class="footer_top">
-                      <li><a href="/help/faq">HELP</a></li>
-                      <li><a href="https://forms.gle/hfEDKVrC11Hz9xKF6" target="_blank" class="orange">입점문의</a></li>
-                      <li class=""><a href="/policy">이용약관</a></li>
-                      <li class=""><a href="/privacypolicy">개인정보 처리방침</a></li>
-                      <!-- <li class="on_m" v-if="!userToken"><a href="#">로그인</a></li> -->
-                      <li class="on_m" v-if="userToken"><a href="#">로그아웃</a></li>
-                </ul>
-                <div class="inner miw1180 clear">
-                    <div class="left">
-                         <p class="info_txt">힙합퍼에서 입점 판매되는 모든 브랜드 상품은 <strong>정식제조, 정식수입절차를 통해서 유통되는 100% 정품</strong>입니다.</p>
-                         <a href="#" class="tel tc_3">1599-7616</a>
-                         <p class="time tc_3">평일 10:00 ~ 17:00 / 점심시간 12:00 ~ 13:30 / 주말, 공휴일 휴무</p>
-                         <address class="addr tc_8"><span>(주) 힙합퍼 </span> <span>주소 : 06f531 서울시 서초구 신반포로 339, 1층 (잠원동, 논현빌딩)</span> <span>사업자등록번호 : 211-88-70875</span> <span>통신판매업신고번호 : 제 2018-서울서초-1992호</span><br>
-                        <span id="dev_code">개인정보관리책임자 : 문장우</span></address>
+                <div class="headerWrap">
+                    <div class="box_left back">
+                        <a href="#" class="btn_back"><span class="blind">뒤로가기</span></a>
+                        <p class="header_title">
+                            쇼핑백 (<span class="num">50</span>)
+                        </p>
                     </div>
-                    <div class="right">
-                        <ul class="outlink clear dis_f ai_c">
-                            <li><a href="https://www.facebook.com/hiphoperdotcom" target="_blank"><i class="ispr fb"><span class="blind">힙합퍼 페이스북</span></i></a></li>
-                            <li><a href="https://www.instagram.com/hiphoper_com" target="_blank"><i class="ispr ig"><span class="blind">힙합퍼 인스타그램/span></i></a></li>
-                            <li><a href="http://post.naver.com/h_store" target="_blank"><i class="ispr pin"><span class="blind">힙합퍼 포스트</span></i></a></li>
-                            <li><a href="http://blog.naver.com/h_store" target="_blank"><i class="ispr blog"><span class="blind">힙합퍼블로그</span></i></a></li>
-                            <li><a href="https://www.youtube.com/channel/UCOjxWGrdIet-njboUOpFJTQ/featured?view_as=subscriber" target="_blank"><i class="ispr yt"><span class="blind">힙합퍼 유튜브</span></i></a></li>
-                            <li><a href="http://admin.kcp.co.kr/Modules/escrow/kcp_pop.jsp?site_cd=A886N" target="_blank"><img src="common/images/ico/kcp.png" alt="kcp 인증마크"><span class="blind">kcp 인증마크</span></a></li>
+                    <div class="box_right">
+                        <ul class="btn_area">
+                            <li><a href="#"><i class="ico search"><span class="blind">서치 바로가기</span></i></a></li>
+                            <li><a href="#"><i class="ico bag"><span id="cartCnt" class="cart_num">45</span><span class="blind">장바구니 바로가기</span></i></a></li>
+                            <li><a href="#"><i class="ico home"><span class="blind">메인 바로가기</span></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                로그인
+                <hr>
+                <div class="headerWrap">
+                    <div class="box_left back">
+                        <a href="#" class="btn_back"><span class="blind">뒤로가기</span></a>
+                    </div>
+                    <div class="box_right">
+                        <ul class="btn_area">
+                            <li><a href="#"><i class="ico home"><span class="blind">메인 바로가기</span></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                서브 메뉴
+                <hr>
+                <div class="headerWrap">
+                    <div class="box_left">
+                        <ul class="btn_area">
+                            <li class="flt_le"><a class="home_area" href="#"><i class="ico logom"><span class="blind">메인 바로가기</span></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="box_right">
+                        <ul class="btn_area">
+                            <li><a href="#"><i class="ico close"><span class="blind">닫기</span></i></a></li>
+                            <li><a href="#"><i class="ico noti"><span id="cartCnt" class="cart_num">1</span><span class="blind">알림 바로가기</span></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                라인 있는 경우 (border_bottom 1px solid #d0d0d0)
+                <hr>
+                <div class="headerWrap brb">
+                    <div class="box_left back">
+                        <a href="#" class="btn_back"><span class="blind">뒤로가기</span></a>
+                        <p class="header_title">
+                            결제 완료
+                        </p>
+                    </div>
+                </div>
+                팝업 타이틀 (border_bottom 1px solid #d0d0d0)
+                <hr>
+                <div class="headerWrap popup">
+                    <div class="box_left back">
+                        <p class="header_title">
+                            배송지 변경
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="container">
+
+              <div style="width: 100%; height: 800px; background-color:#e5e5e5">기존 ui</div>
+
+              <div class="fixed_nav">
+                  <ul class="fbn-list">
+                      <li><button type="button"><span class="ico fbn-item cate"></span><span class="txt">카테고리</span></button></li>
+                      <li> <button type="button"><span class="ico fbn-item search"></span><span class="txt">검색</span></button></li>
+                      <li> <button type="button"><span class="ico fbn-item home"></span><span class="blind">홈</span></button></li>
+                      <li> <button type="button"><span class="ico fbn-item mypage"></span><span class="txt">마이 페이지</span></button></li>
+                      <li> <button type="button"><span class="ico fbn-item product"></span><span class="txt">최근 본 상품</span></button></li>
+                  </ul>
+              </div>
+          </div>
+            <div id="footer">
+                <div class="footer_top">
+                    <button type="button">로그아웃</button>
+                    <button type="button" onclick="window.open('https://hiphoper.page.link/5vwe')">앱설치</button>
+                    <div>
+                        <ul>
+                            <li><a href="https://forms.gle/hfEDKVrC11Hz9xKF6" target="_blank">입점문의</a></li>
+                            <li class="dot"><a href="/help/faq">자주하는 질문</a></li>
+                            <li class="dot"><a href="help/notice">공지사항</a></li>
+                            <li><a href="/policy">이용약관</a></li>
+                            <li class="dot"><a href="/privacypolicy">개인정보 취급방침</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear">
+                    <div class="footer_middle">
+                        <div class="info">
+                            <p class="tel"><a href="">고객센터 <span>1599-7616</span></a></p>
+                            <p>평일 10:00~17:00(점심시간 12:00~13:30)주말/공휴일 휴무</p>
+                            <p class="info_txt">힙합퍼에서 입점 판매되는 모든 브랜드 상품은 <span>정식 제조, 정식 수입 절차를 통하여 유통되는 100% 정품입니다.</span></p>
+                        </div>
+                        <div class="addr">
+                            <a href="javascript:;" class="button_tip_toggle"><span>(주) 힙합퍼</span></a>
+                            <div class="cont_tip_toggle" style="display:none">
+                                <table>
+                                    <tr>
+                                        <td>대표이사</td>
+                                        <td>문인식</td>
+                                    </tr>
+                                    <tr>
+                                        <td>개인정보보호책임자</td>
+                                        <td>문장우</td>
+                                    </tr>
+                                    <tr>
+                                        <td>주소</td>
+                                        <td>서울특별시 서초구 신반포로 339, 1층 (잠원동, 논현빌딩)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>사업자등록번호</td>
+                                        <td>211-88-70875 <a href="#"><span>사업자정보확인</span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>통신판매업신고번호</td>
+                                        <td>제 2018-서울서초-1992호</td>
+                                    </tr>
+                                    <tr>
+                                        <td>호스팅서비스사업자</td>
+                                        <td>아마존 웹 서비스 (AWS)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>이메일</td>
+                                        <td>hiphoher@hiphoper.com</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_bottom">
+                        <ul class="outlink">
+                            <li><a href="https://www.instagram.com/hiphoper_com" target="_blank"><i class="ico ig"><span class="blind">인스타그램</span></i></a></li>
+                            <li><a href="https://www.instagram.com/hiphoper_street" target="_blank"><i class="ico ig_st"><span class="ig_st blind">인스타그램 스트릿</span></i></a></li>
+                            <li><a href="https://www.facebook.com/hiphoperdotcom" target="_blank"><i class="ico fb"><span class="fb blind"></span></i></a></li>
+                            <li><a href="http://post.naver.com/h_store" target="_blank"><i class="ico pin"><span class="pin blind">포스트</span></i></a></li>
+                            <li><a href="http://blog.naver.com/h_store" target="_blank"><i class="ico blog"><span class="blog blind">블로그</span></i></a></li>
+                        </ul>
+                        <ul class="outlink_kcp">
+                            <li class="kcp"><a href="http://admin.kcp.co.kr/Modules/escrow/kcp_pop.jsp?site_cd=A886N" target="_blank"><i class="ico kcp"><span class="blind">kcp 인증마크</span></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-
-
-        <script>
-            (function () {
+        <script type="text/javascript">
+            $(function(){
                 $(window).scroll(function(){
-                    var nowScroll = $(window).scrollTop();
-
-                    if ( nowScroll > 80) {
-                        $('.ms-list').addClass('active');
-                        $('.fixed_b-nav').addClass('hide');
-                        $('.plc_fc-box.hastab').addClass('search_active');
-                        $('.plc_fc-box').addClass('active');
-                        $('.border_tab-list').addClass('search_active');
-                    } else {
-                        $('.ms-list').removeClass('active');
-                        $('.fixed_b-nav').removeClass('hide');
-                        $('.plc_fc-box.hastab').removeClass('search_active');
-                        $('.plc_fc-box').removeClass('active');
-                        $('.border_tab-list').removeClass('search_active');
+                    var nowScroll = $(document).scrollTop();
+                    // 스크롤 값이 120보다 크다면 gnb 나타나도록 만들기
+                    if(nowScroll > 120){ //     !=0
+                        $('.fixed_nav').css('bottom', '0');
+                        } else {
+                        $('.fixed_nav').css('bottom', '-121px');
                     }
                 });
-            })(jQuery);
-        </script>
+            });
+            $(function(){
+                var tipToggle = function () {
+                  var $btn_tip_toggle = $('.button_tip_toggle'),
+                      $cont_tip_toggle = $('.cont_tip_toggle');
+                  $btn_tip_toggle.off().on('click', function(e) {
+                      e.preventDefault();
+                      $(this).toggleClass('on');
+                      $(this).next().toggle();
+                  });
+              }
+              tipToggle();
+                var windowWidth = $(window).with();
+                var pcOpen = $('.pc720')
+                if(windowWidth<530){
+                    pcOpen.show();
+                }
+            })
+      </script>
     </body>
 </html>
