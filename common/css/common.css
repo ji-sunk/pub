@@ -155,7 +155,6 @@ td .error [class*=input_],td .site_main.join .cert.error,td [class*=input_].erro
 .white .btn_like .count{color:#fff!important}
 .tc_b,
 .tc_b [class^=btn_]{color:#ababab}
-
 select, button:focus {outline:none}
 .order_discontent select[disabled],
 .table_st .disabled :not(.alram){color:#ababab!important}
@@ -260,7 +259,6 @@ input[type=radio] {width:22px; height:22px; border:1px solid #dadada}
 .input_textarea{display:inline-block}
 .input_textarea textarea{display:inline-block;font-size:14px;line-height:22px;vertical-align:top;background-color:transparent;overflow-x:hidden;overflow-y:auto;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;min-height:120px;width:100%}
 .input_textarea .count{text-align:right;font-size:13px;line-height:22px;margin-top:10px}
-
 select {padding:10px; border-radius:0; background-color:#fff; color:#ababab;}
 input[type=text], input[type=tel], input[type=number], input[type=password]
 {padding:5px 10px; width:100%; height:40px; text-align:left; border:1px solid #e5e5e5; font-size:13px; color:#333; font-weight:400; outline:none; font-family:'Noto Sans KR'}
@@ -296,7 +294,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
             transform: translate3d(0, 0, 0);
 }
 .slick-track {position:relative; top:0; left:0; display:block; margin-left:auto; margin-right:auto;}
-.slick-track:before,.slick-track:after{display: table; content: '';}
+.slick-track:before,.slick-track:after{display:table; content: '';}
 .slick-track:after {clear:both;}
 .slick-loading .slick-track {visibility:hidden;}
 .slick-slide {float:left; height:100%; min-height:1px}
@@ -357,8 +355,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .comp_info .btn {padding:0 20px; text-align: center;}
 .btn .btn a {padding: 15px 0; display:inline-block; width:100%; border:1px solid #111; border-radius:3px; color:#000; font-weight:500; text-align:center; font-size:17px}
 .comp_info a.btn_bk {margin-top:12px; color:#fff; background-color:#111}
-.last_btn_wrap {z-index:5;padding: 12px 20px 44px; position:sticky; bottom:0; box-shadow: 0px -5px 15px 0px rgb(0 0 0 / 5%);
-    overflow: hidden; margin:15px auto 0;max-width:720px; background:#fff; border-top:1px solid #d0d0d0; font-size: unset;}
+.last_btn_wrap {z-index:5;padding: 12px 20px 44px; position:sticky; bottom:0; box-shadow: 0px -5px 15px 0px rgba(0 0 0 / 5%); overflow: hidden; margin:15px auto 0;max-width:720px; background:#fff; border-top:1px solid #d0d0d0; font-size: unset;}
 
 /* badge */
 .badge {display:inline-block; margin-bottom:10px; margin:0 auto; text-align:center; min-width:58px; max-height:24px; font-family:'Noto Sans KR'; font-size:13px}
@@ -367,7 +364,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .badge.bk {background-color:#000; color:#fff}
 /* 옵션 수량 버튼  */
 .count-input-box {float:right; min-width:90px; background-color:#fff;}
-.count-input-box::after {content: ''; display: block; clear: both}
+.count-input-box::after {content: ''; display: block; clear:both}
 .count-input-box button,.count-input-box input {float: left; text-align: center; border: 1px solid #e5e5e5}
 .count-input-box .count-btn {width: 30px; height: 30px; background-color: #fff}
 .count-input-box .count-btn.minus {background: url("https://hhp-image.s3.ap-northeast-2.amazonaws.com/item/acco_more_active-icon.png") center center/12px 1px no-repeat}
@@ -375,7 +372,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .count-input-box .count-input {width:30px; height:30px; color:#555; font-size:15px; border-left:none; border-right:none;}
 /* 상품 셀렉트 박스 */
 .ico.box_close {width:18px; height:17px; background-position:-111px -52px}
-.pf_fc-box {max-height:333px; padding:0 15px 163px 15px; font-weight:400; background-color:#fff}
+/* .pf_fc-box {max-height:333px; padding:0 15px 163px 15px; font-weight:400; background-color:#fff} */
 .pf_fc-box .box_close {margin:10px 47.5%; text-align:center;}
 .pf_fc-box .more_link-btn {width:162px; height:35px; line-height:33px; background-color:#fff;  border: 1px solid #ff4e25;  font-size:13px; box-shadow:0px -5px 15px 0px rgba(0,0,0,0.05);}
 .pf_fc-box .pf_fc {display:flow-root; padding:20px 0; border-bottom: 1px solid #e5e5e5;color: #333;font-size:14px}
@@ -458,8 +455,10 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
      height:20px; border-radius:50px; line-height:21px; text-align:center; font-style:normal; vertical-align:middle;background:#ff4e25; font-size:10px; color:#fff;
       -webkit-border-radius:50px; -moz-border-radius:50px; -ms-border-radius:50px; -o-border-radius: 50px; font-family:'proxima-nova'}
 /* navigation */
-#container .fixed_nav {z-index:10; position:fixed; bottom:0; width:100%; max-width:720px; line-height:15px; font-size:9px; font-weight:500; background-color: #fff; font-family:'Noto Sans KR'}
+#container .fixed_nav {z-index:10; position:fixed; bottom:0px; width:100%; max-width:720px; line-height:15px; font-size:9px; font-weight:500; background-color: #fff; font-family:'Noto Sans KR'}
 #container .fixed_nav.hide {bottom:-10%}
+#container .fixed_nav.nav-down {display:block;}
+#container .fixed_nav.nav-up {display:none;}
 #container .fixed_nav .txt {display:inline-block; width:100%; margin:5px 0}
 #container .fixed_nav .cate {width:20px; height:20px; background-position: -36px -23px; background-repeat:no-repeat;}
 #container .fixed_nav .search {width:20px; height:20px; background-position: -59px -27px; background-repeat:no-repeat;}
@@ -477,8 +476,16 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .tooltip {position:relative; display:inline-block; min-height:10px;line-height:0}
 .tooltip .tooltiptext {z-index:1;padding:10px; background-color:#3067cc; color:#fff; text-align:left; border-radius:5px;-webkit-border-radius:6px;position:absolute;bottom:130%; margin-left:-58px;font-size:12px; font-weight:400; line-height:15px; box-shadow: 3px 4px 10px 0px rgba(0,0,0,0.2);}
 .tooltip .tooltiptext:after {content:'';position:absolute;top:100%; left:48%; border-width:5px;border-style:solid;border-color:#3067cc transparent transparent transparent}
-/* .tooltip .tooltiptext1 {visibility:hidden;}
+/* .tooltip .tooltiptext1 {visibility:p;}
 .tooltip:hover .tooltiptext1 {visibility:visible} */
+/* 공통 TopBTN */
+._button_top_wrap {overflow-x:hidden; max-width:720px; position:fixed; bottom:20px; right:20px!important; transition: bottom 0.1s ease-in-out; -webkit-transition: bottom 0.1s ease-in-out; -moz-transition: bottom 0.1s ease-in-out; -ms-transition: bottom 0.1s ease-in-out; -o-transition: bottom 0.1s ease-in-out;padding-bottom:constant(safe-area-inset-bottom);padding-bottom:env(safe-area-inset-bottom);}
+._button_top_wrap.nav-up {bottom:20px}
+._button_top_wrap.nav-down {right:20px; bottom:80px; right:0; overflow-x:hidden;}
+._button_top_wrap a {display:block; width:40px; height:40px;}
+._button_top_wrap a img {display:block; right:20px; bottom:20px; width:40px; height:40px;}
+.list_product .price {font-size:14px; line-height:17px;}
+.list_product .price * {font-weight:500;}
 /* 이달의 카드사 혜택 팝업 */
 .paymt_card_benefit {padding:0 0 30px; margin:0 20px 50px 20px; display:block;/* height:calc(100vh - 60px)*/}
 .paymt_card_benefit .card img {width:95px; height:32px}
@@ -552,7 +559,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 .input_checkbox label:before, .input_radio_check label:before {border-radius:2px;}
 .input_checkbox input:checked+label:after, .input_radio_check input:checked+label:after {background-color: #333; color:#fff; width:300px; height:30px;}
 /*footter start*/
-#footer {padding: 20px; background-color: #f9f9f9;}
+#footer {padding:20px 20px 100px 20px; background-color:#f9f9f9;}
 #footer .footer_top {overflow: hidden}
 #footer .footer_top button {border: 1px solid #d0d0d0; border-radius:5px; background-color: white; position:relative;float:left; margin-right: 8px; width: 77px; height:30px; font-size: 14px; font-weight:500; color: #888; margin-bottom: 14px}
 #footer .footer_top div {display:inline-block;width:100%;border-bottom: 1px solid #e5e5e5; font-family: 'Noto Sans KR'; font-size: 14px; color: #ababab}
@@ -574,7 +581,7 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 #footer table tr:nth-child(3) td {line-height: 16px}
 #footer table tr:nth-child(4) a span {text-decoration: underline!important; color: #888; font-weight:500}
 #footer .footer_bottom {margin-top: 25px}
-#footer .outlink {display:inline-block; margin-bottom:30px; text-align: center}
+#footer .outlink {display:inline-block; text-align:center}
 #footer .outlink a {display:block;width:38.4px;height:38.4px;border-radius:50%;-webkit-border-radius:50%; background-color:#f0f0f0}
 #footer .outlink li {margin-right: 12px; display:block;flex:1; float:left}
 #footer .outlink i {display:inline-block; position:relative; top:9.6px}
@@ -604,4 +611,5 @@ input[type=text], input[type=tel], input[type=number], input[type=password]
 @media screen and (min-width:720px) {
     #wrap.wd720 {width:720px; min-width:320px; margin:0 auto}
     #photoView {width:800px; margin:0 50%; transform: translatex(-50%)}
+    ._button_top_wrap {margin-right:calc(50% - 360px);}
 }
