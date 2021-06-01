@@ -47,6 +47,89 @@
             </div>
             <div id="container" class="pdWrap">
 
+                <!-- <div class="chckChoi">
+                    <label for="orderCheck">
+                            <input type="checkbox" id="orderCheck2" name="orderCheck1" value="ded" />
+                    </label>
+                    <label for="orderCheck">
+                            <input type="checkbox" class="order2" name="orderChec2" value="value" />
+                    </label>
+                    <label for="orderCheck">
+                            <input type="checkbox" class="order2" name="orderCheck3" value="" />
+                    </label>
+                </div> -->
+
+                <div class="btnArea">
+                  <button class="btn" disabled="disabled" onclick="alert('버튼1 활성화');">
+                    버튼1
+                  </button>
+                  <button class="btn" disabled="disabled" onclick="alert('버튼2 활성화');">
+                    버튼2
+                  </button>
+                  <button class="btn" disabled="disabled" onclick="alert('버튼3 활성화');">
+                    버튼3
+                  </button>
+                </div>
+
+                <div class="checkT">
+                  <p>
+                    <input type="checkbox" id="order2_chk"/>
+                  </p>
+                  <p>
+                    <input type="checkbox" class="order2_chks"/>
+                  </p>
+                  <p>
+                    <input type="checkbox" class="order2_chks"/>
+                  </p>
+                </div>
+
+                <script type="text/javascript">
+
+                    $(document).ready(function(){
+
+                    //전체 체크 클릭 시, 나머지 체크
+                    $("#order2_chk").click(function(){
+                    var order2Chk=$("#order2_chk").prop("checked");
+
+                    if(order2Chk){
+                        $(".order2_chks").prop("checked",true);
+                        $(".btnArea button").css({"backgroundColor":"#d2201d","cursor":"pointer","color":"#fff"}).prop("disabled",false);
+                    }
+                    else{
+                        $(".order2_chks").prop("checked",false);
+                        $(".btnArea button").css({"backgroundColor":"#cbcbcb","cursor":"auto","color":"#303033"}).prop("disabled",true);
+                    }
+                    });
+
+                    // 모든 체크박스를 클릭하면 버튼 활성화시키기
+                    $('.order2_chks').click(function(){
+                    var tmpp = $(this).prop('checked');
+                    //자식 체크 전체 체크시, 부모 체크박스 체크 됨
+                    var tt = $(".order2_chks").length;
+                    var ss = $(".order2_chks:checked").length;
+
+                    //선택한 체크박스 값이 true 이거나 체크박Q스 1개 이상 체크시 버튼 활성화시키기
+                    if(tmpp==true || ss>0){
+                    $(".btnArea button").css({"backgroundColor":"#d2201d","cursor":"pointer","color":"#fff"}).prop("disabled",false);
+                    }
+                    else{
+                    $(".btnArea button").css({"backgroundColor":"#cbcbcb","cursor":"auto","color":"#303033"}).prop("disabled",true);
+                    }
+
+
+                    // 체크박스가 모두 선택되었을 때 상위 체크박스 선택되도록 설정
+                    if(tt == ss){
+                        $("#order2_chk").prop("checked",true);
+                    }else{
+                        $("#order2_chk").prop("checked",false);
+                    }
+
+                    });
+
+
+                    });
+                </script>
+
                 <div id="container_select">
                     <!-- 옵션 S -->
                     <div class="nav_fixed_wrap wd720">
@@ -210,6 +293,11 @@
             $(this).toggleClass('on');
             $(this).children('p').toggleClass('_ellipsis');
         })(jQuery);
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+            })
         </script>
     </body>
 </html>
