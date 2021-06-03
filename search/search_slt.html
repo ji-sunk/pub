@@ -188,7 +188,7 @@
                                         </div>
                                         <div class="container">
 
-                                            <a href="tel:전화번호">전화번호:010-9381-9323</a>
+                                            <a href="tel:010">전화번호:010-9381-9323</a>
                                             <input class="variation" id="bluepurple" type="radio" value="1" name="color" checked="checked" />
                                             <label for="bluepurple"></label><input class="variation" id="sunset" type="radio" value="2" name="color" />
                                             <label for="sunset"></label><input class="variation" id="godiva" type="radio" value="3" name="color" />
@@ -321,12 +321,14 @@
         $(this).parent().addClass('hide');
         $('.btn_buy2, #itemOption').removeClass('hide');
         $('.btn_buy2').addClass('hide');
+        $('html').addClass('scrollH');
+        // .css({'top':$('.site_header').height(),'position':'sticky','z-index':'1'});
         });
-
 
         $('.box_close').on('click', function(){
             $('.btn_buy1').parent().removeClass('hide');
             $('.btn_buy2, #itemOption').addClass('hide');
+            $('html').removeClass('scrollH');
         });
 
         $(this).on('click', '.review_txt_moreview', function(e) {
@@ -334,11 +336,6 @@
             $(this).toggleClass('on');
             $(this).children('p').toggleClass('_ellipsis');
         })(jQuery);
-        </script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-
-            })
         </script>
     </body>
 </html>
