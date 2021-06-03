@@ -70,6 +70,9 @@
                     버튼3
                   </button>
                 </div>
+                <button class="btn" disabled="disabled" onclick="alert('버튼3 활성화');">
+                  버튼3
+                </button>
 
                 <div class="checkT">
                   <p>
@@ -84,6 +87,9 @@
                 </div>
 
                 <script type="text/javascript">
+                function enableScroll() {
+                document.body.style.overflow = null;
+                }
 
                     $(document).ready(function(){
 
@@ -131,6 +137,16 @@
                 </script>
 
                 <div id="container_select">
+                    <div class="dd">
+                        <ul class="bb">
+                            <li class="item">
+                                <img src="https://d1jmf3qg5eaacj.cloudfront.net/item_desc/web/ITEM055X41U/hufFVRD1600218949266.jpg" alt="">
+                            </li>
+                            <li class="item">
+                                <img src="https://d1jmf3qg5eaacj.cloudfront.net/item_desc/web/ITEM055X41U/hufFVRD1600218949266.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>
                     <!-- 옵션 S -->
                     <div class="nav_fixed_wrap wd720">
 
@@ -148,6 +164,7 @@
                                             <Input class="range" type="range" name "" value="0" min="0" max="1000" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
                                         </div>
                                         <div class="container">
+                                            <a href="tel:전화번호">전화번호:010-9381-9323</a>
                                             <input class="variation" id="bluepurple" type="radio" value="1" name="color" checked="checked" />
                                             <label for="bluepurple"></label><input class="variation" id="sunset" type="radio" value="2" name="color" />
                                             <label for="sunset"></label><input class="variation" id="godiva" type="radio" value="3" name="color" />
