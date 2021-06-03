@@ -2052,6 +2052,7 @@ ul.bb {
   }
 }
 
+html.scrollH {overflow-y:hidden;}
 
 .sliderX {
   display: flex;
