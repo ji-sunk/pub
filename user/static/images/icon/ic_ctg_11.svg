@@ -1,0 +1,13 @@
+<svg id="_-g-ic_ctg_11" data-name="-g-ic_ctg_11" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <style>
+            .cls-2{fill:#84efff;opacity:.7}.cls-3{fill:#00c3e1;opacity:.6}
+        </style>
+    </defs>
+    <g id="icon" transform="translate(0 -180)">
+        <rect id="shape" class="cls-2" width="42" height="12" rx="5" transform="translate(19 239)"/>
+        <path id="합치기_640" data-name="합치기 640" class="cls-2" d="M2463-2622a5 5 0 0 1-5-5v-10h-10a5 5 0 0 1-5-5v-2a5 5 0 0 1 5-5h10v-10a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v10h10a5 5 0 0 1 5 5v2a5 5 0 0 1-5 5h-10v10a5 5 0 0 1-5 5z" transform="translate(-2424 2853)"/>
+        <rect id="shape-2" data-name="shape" class="cls-3" width="12" height="14" rx="5" transform="rotate(90 -89 150)"/>
+        <rect id="shape-3" data-name="shape" class="cls-3" width="27" height="12" rx="5" transform="translate(19 204)"/>
+    </g>
+</svg>

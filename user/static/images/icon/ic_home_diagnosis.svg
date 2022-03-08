@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <defs>
+        <style>
+            .cls-3{fill:#00d2aa}
+        </style>
+    </defs>
+    <g id="_-g-ic_home_diagnosis" transform="translate(-186 -956)">
+        <rect id="box" width="48" height="48" fill="#eafcfc" rx="23" transform="translate(186 956)"/>
+        <path id="사각형_7381" fill="#00b996" d="M2 0h4a2 2 0 0 1 2 2v18a2 2 0 0 1-2 2H0V2a2 2 0 0 1 2-2z" transform="translate(214 969)"/>
+        <path id="사각형_7382" d="M2 0h6v15H0V2a2 2 0 0 1 2-2z" class="cls-3" transform="translate(206 976)"/>
+        <path id="사각형_7383" d="M2 0h6v8H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" class="cls-3" transform="translate(198 983)"/>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="_-g-ic_close_white_32" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#323c46;stroke-linecap:round;stroke-width:6px}
+        </style>
+    </defs>
+    <g id="icon" transform="translate(-6.652 -6.652)">
+        <path id="line" d="M0 0L12 12" class="cls-2" transform="translate(16.652 16.652)"/>
+        <path id="line-2" d="M12 0L0 12" class="cls-2" transform="translate(16.652 16.652)"/>
+    </g>
+</svg>

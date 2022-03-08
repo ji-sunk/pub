@@ -1,0 +1,17 @@
+<svg id="_-g-ic_ctg_04" data-name="-g-ic_ctg_04" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <style>
+            .cls-3{fill:#84efff}.cls-5{fill:none;stroke:#00c3e1;stroke-linecap:round;stroke-width:16px}
+        </style>
+    </defs>
+    <g id="icon" transform="translate(0 -170.5)" style="opacity:.7">
+        <g id="그룹_6698" data-name="그룹 6698">
+            <path id="선_304" data-name="선 304" class="cls-3" d="M32 40a7.975 7.975 0 0 1-5.657-2.343l-32-32a8 8 0 0 1 0-11.314 8 8 0 0 1 11.314 0l32 32A8 8 0 0 1 32 40z" transform="translate(24.5 194.5)"/>
+            <path id="선_305" data-name="선 305" class="cls-3" d="M0 40a7.975 7.975 0 0 1-5.657-2.343 8 8 0 0 1 0-11.314l32-32a8 8 0 0 1 11.314 0 8 8 0 0 1 0 11.314l-32 32A7.975 7.975 0 0 1 0 40z" transform="translate(24.5 194.5)"/>
+        </g>
+        <g id="그룹_6697" data-name="그룹 6697" style="opacity:.6">
+            <path id="선_594" data-name="선 594" class="cls-5" transform="translate(56.5 194.5)" d="M0 0h0"/>
+            <path id="선_595" data-name="선 595" class="cls-5" transform="translate(24.5 194.5)" d="m0 0 16 16"/>
+        </g>
+    </g>
+</svg>

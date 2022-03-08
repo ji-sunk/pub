@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="_-g-ic_handremove_mo" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#5663d9;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="icon" transform="translate(-1541.307 -1483.17)">
+        <path id="선_932" d="M0 0L18 0" class="cls-2" transform="translate(1548.306 1493.17)"/>
+        <path id="패스_10326" d="M1564.306 1493.17l-1.015 12.7a2.5 2.5 0 0 1-2.492 2.3h-6.986a2.5 2.5 0 0 1-2.492-2.3l-1.015-12.7" class="cls-2"/>
+        <path id="선_933" d="M0 0L0.3 4" class="cls-2" transform="translate(1555.306 1498.378)"/>
+        <path id="선_933-2" d="M0 4L0.3 0" class="cls-2" transform="translate(1559.006 1498.378)"/>
+        <path id="패스_10325" d="M1560.806 1493.17h-7l.458-2.747a1.5 1.5 0 0 1 1.48-1.253h3.127a1.5 1.5 0 0 1 1.48 1.254z" class="cls-2"/>
+    </g>
+</svg>

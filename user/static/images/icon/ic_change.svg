@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="_-g-ic_change" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <style>
+            .cls-2{opacity:.4}.cls-3,.cls-4{fill:none;stroke:#323c46;stroke-linecap:round;stroke-width:1.5px}.cls-4{stroke-linejoin:round}
+        </style>
+    </defs>
+    <g id="arrow" class="cls-2" transform="translate(-224 -127)">
+        <path id="line" d="M0 0L10 0" class="cls-3" transform="translate(227 132.002)"/>
+        <path id="line-2" d="M221 124l-2 2 2 2" class="cls-4" transform="translate(8 6)"/>
+    </g>
+    <g id="arrow-2" class="cls-2" transform="translate(1 9)">
+        <path id="line-3" d="M10 0L0 0" class="cls-3" transform="translate(2 2.002)"/>
+        <path id="line-4" d="M219 124l2 2-2 2" class="cls-4" transform="translate(-209 -124)"/>
+    </g>
+</svg>

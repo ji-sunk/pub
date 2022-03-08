@@ -1,0 +1,15 @@
+<svg id="_-g-ic_ctg_06" data-name="-g-ic_ctg_06" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <style>
+            .cls-2{fill:#84efff;opacity:.7}.cls-3{fill:#00c3e1;opacity:.9}
+        </style>
+    </defs>
+    <g id="icon" transform="translate(-5.5 4.503)">
+        <path id="합치기_246" data-name="합치기 246" class="cls-2" d="M24368.5 16682a3.5 3.5 0 0 1-3.5-3.5v-7.5h-7.5a3.5 3.5 0 0 1-3.5-3.5v-1a3.5 3.5 0 0 1 3.5-3.5h7.5v-7.5a3.5 3.5 0 0 1 3.5-3.5h1a3.5 3.5 0 0 1 3.5 3.5v7.5h7.5a3.5 3.5 0 0 1 3.5 3.5v1a3.5 3.5 0 0 1-3.5 3.5h-7.5v7.5a3.5 3.5 0 0 1-3.5 3.5z" transform="translate(-24343.5 -16611.504)"/>
+        <path id="합치기_639" data-name="합치기 639" class="cls-2" d="m3345.672-2825.674-5.172-5.172-5.172 5.172a3.988 3.988 0 0 1-2.828 1.171 3.99 3.99 0 0 1-2.829-1.171 4 4 0 0 1 0-5.657l5.171-5.171-5.171-5.172a4 4 0 0 1 0-5.656 4 4 0 0 1 5.656 0l5.172 5.172 5.172-5.172a4 4 0 0 1 5.656 0 4 4 0 0 1 0 5.656l-5.172 5.172 5.172 5.171a4 4 0 0 1 0 5.657 3.991 3.991 0 0 1-2.829 1.171 3.989 3.989 0 0 1-2.826-1.171z" transform="translate(-3275 2851.999)"/>
+        <rect id="사각형_3903" data-name="사각형 3903" class="cls-3" width="30" height="9" rx="4" transform="translate(10.5 11.496)"/>
+        <rect id="사각형_3645" data-name="사각형 3645" class="cls-2" width="30" height="7" rx="3" transform="translate(50.5 51.5)"/>
+        <rect id="사각형_3646" data-name="사각형 3646" class="cls-3" width="9" height="9" rx="4" transform="rotate(90 15.5 55)"/>
+        <rect id="사각형_4178" data-name="사각형 4178" class="cls-3" width="9" height="9" rx="4" transform="rotate(90 4.5 66)"/>
+    </g>
+</svg>

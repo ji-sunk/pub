@@ -1,0 +1,13 @@
+<svg id="_-g-ic_ctg_15" data-name="-g-ic_ctg_15" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <style>
+            .cls-2{fill:#00c3e1;opacity:.6}.cls-3{fill:#84efff;opacity:.7}
+        </style>
+    </defs>
+    <g id="icon" transform="translate(-1558 -760)">
+        <path id="합치기_641" data-name="합치기 641" class="cls-2" d="M3310.1-2058a8 8 0 0 1 .283-2.115L3297-2076.468l6.192-5.065 12.913 15.783a8.02 8.02 0 0 1 1.99-.25 8.017 8.017 0 0 1 2.072.271l6.4-6.4a8.981 8.981 0 0 1-.469-2.874 9 9 0 0 1 9-9 9 9 0 0 1 9 9 8.974 8.974 0 0 1-.632 3.319l12.6 14.005-5.946 5.352-12.6-14.005a9.014 9.014 0 0 1-2.422.33 8.988 8.988 0 0 1-2.875-.469l-6.4 6.4a8.019 8.019 0 0 1 .271 2.072 8 8 0 0 1-8 8 8 8 0 0 1-7.994-8.001z" transform="translate(-1729.096 2866)"/>
+        <path id="합치기_642" data-name="합치기 642" class="cls-2" d="M3349-2052a9 9 0 0 1 9-9 9 9 0 0 1 9 9 9 9 0 0 1-9 9 9 9 0 0 1-9-9zm-52-24a8 8 0 0 1 8-8 8 8 0 0 1 8 8 8 8 0 0 1-8 8 8 8 0 0 1-8-8z" transform="translate(-1734 2863)"/>
+        <path id="dot" class="cls-3" d="M8 0a8 8 0 1 1-8 8 8 8 0 0 1 8-8z" transform="translate(1563 779)"/>
+        <circle id="dot-2" data-name="dot" class="cls-3" cx="9" cy="9" r="9" transform="translate(1615 802)"/>
+    </g>
+</svg>

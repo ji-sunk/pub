@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="_-g-ic_account_04" width="200" height="200" viewBox="0 0 200 200">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="box" fill="#26dcfd" d="M0 0H200V200H0z" transform="translate(428.236 203.027)"/>
+        </clipPath>
+        <style>
+            .cls-5{fill:#fec82e;opacity:.65;mix-blend-mode:screen;isolation:isolate}.cls-7{fill:none;stroke:#1e2328;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px}
+        </style>
+    </defs>
+    <g id="_-g-ic_account_04-2" clip-path="url(#clip-path)" transform="translate(-428.236 -203.027)">
+        <path id="box-2" fill="#22d2aa" d="M0 0H200V200H0z" transform="translate(428.236 203.027)"/>
+        <path id="body" fill="#ffc823" d="M2464.49 5909.766l-13.07-.081a22.6 22.6 0 0 0-13.31 4.239l-10.619 7.611a22.6 22.6 0 0 1-26.568-.16l-10.525-7.75a22.615 22.615 0 0 0-13.256-4.4l-13.067-.077a22.611 22.611 0 0 1-21.4-15.753l-3.961-12.449a22.575 22.575 0 0 0-8.141-11.351l-10.523-7.75a22.6 22.6 0 0 1-8.054-25.315l4.114-12.4a22.585 22.585 0 0 0 .087-13.964l-3.963-12.454a22.606 22.606 0 0 1 8.366-25.22l10.618-7.616a22.591 22.591 0 0 0 8.281-11.246l4.115-12.4a22.6 22.6 0 0 1 21.589-15.484l13.067.081a22.618 22.618 0 0 0 13.311-4.235l10.619-7.616a22.6 22.6 0 0 1 26.567.164l10.525 7.746a22.577 22.577 0 0 0 13.256 4.4l13.067.081a22.6 22.6 0 0 1 21.4 15.75l3.961 12.453a22.622 22.622 0 0 0 8.14 11.35l10.527 7.746a22.6 22.6 0 0 1 8.051 25.315l-4.113 12.4a22.577 22.577 0 0 0-.085 13.969l3.959 12.449a22.6 22.6 0 0 1-8.364 25.221l-10.619 7.616a22.579 22.579 0 0 0-8.28 11.25l-4.116 12.4a22.586 22.586 0 0 1-21.586 15.48z" transform="translate(-1886.611 -5453.711)"/>
+        <ellipse id="타원_1807" cx="7" cy="6.999" class="cls-5" rx="7" ry="6.999" transform="translate(573.236 308.028)"/>
+        <ellipse id="타원_1808" cx="7" cy="6.999" class="cls-5" rx="7" ry="6.999" transform="translate(469.236 308.028)"/>
+        <path id="mouth" fill="none" stroke="#1e2328" stroke-linecap="round" stroke-linejoin="round" stroke-width="6px" d="M968 778.844s6.375 18 34 18 34-18 34-18" transform="translate(-473.764 -461.816)"/>
+        <path id="패스_12086" d="M113.617 84.53a6.062 6.062 0 0 0-9 0" class="cls-7" transform="translate(429.619 225.497)"/>
+        <path id="패스_12087" d="M113.617 84.53a6.062 6.062 0 0 0-9 0" class="cls-7" transform="translate(408.619 225.497)"/>
+    </g>
+</svg>

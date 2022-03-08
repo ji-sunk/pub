@@ -1,0 +1,12 @@
+<svg id="_-g-ic_ctg_08" data-name="-g-ic_ctg_08" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <style>
+            .cls-3{fill:#84efff;opacity:.7}
+        </style>
+    </defs>
+    <g id="icon" transform="translate(-38.5 -41.5)">
+        <rect id="사각형_4527" data-name="사각형 4527" width="9" height="9" rx="4" transform="rotate(90 -1.447 82.443)" style="fill:#00c3e1;opacity:.9"/>
+        <rect id="사각형_4534" data-name="사각형 4534" class="cls-3" width="30" height="30" rx="15" transform="rotate(90 1.5 67)"/>
+        <path id="패스_6569" data-name="패스 6569" class="cls-3" d="M15.2 6.648a4.944 4.944 0 0 1 8.481 0l11.048 18.411a4.945 4.945 0 0 1-4.241 7.49H8.394a4.945 4.945 0 0 1-4.241-7.49z" transform="translate(83.058 62.758)"/>
+    </g>
+</svg>
