@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="94" height="94" viewBox="0 0 94 94">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="패스_11717" data-name="패스 11717" class="cls-1" d="M12.333 59.333c0-35.25 11.75-47 47-47s47 11.75 47 47-11.75 47-47 47-47-11.75-47-47" transform="translate(-12.334 -12.333)"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <path id="사각형_7923" data-name="사각형 7923" style="fill:none" d="M0 0h38.415v29.708H0z"/>
+        </clipPath>
+        <filter id="모양_7" x="-7.397" y="-6.483" width="211.475" height="153.895" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur stdDeviation="5.5" result="blur"/>
+            <feFlood flood-opacity=".349"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-1{fill:#8080ff}.cls-6{fill:#225782}
+        </style>
+    </defs>
+    <g id="_-g-img_profilecha_th_01" data-name="-g-img_profilecha_th_01" transform="translate(260.001 -275)">
+        <g id="마스크_그룹_7309" data-name="마스크 그룹 7309" transform="translate(-260 275)" style="clip-path:url(#clip-path)">
+            <path id="사각형_7930" data-name="사각형 7930" class="cls-1" d="M0 0h94v94H0z"/>
+            <g style="filter:url(#모양_7)">
+                <path id="모양_7-2" data-name="모양 7" d="M227.548 594.943c-10.722-11.783-25.537-30.865-54.615-30.413-22.15.345-28.835 0-28.835 0s-10.927-2.893-15.079-6.006c0 0-1.038 13.491 8.3 18.68 0 0-22.462 7.371-23.153 46.769-.293 16.715 15.623 38.806 40.789 53.913 19.623 11.78 166.2-48.215 132.736-47.693-24.859.389-48.157-22.077-60.143-35.25z" transform="translate(-105.06 -551.51)" style="fill:#fff"/>
+            </g>
+        </g>
+        <g id="face_svg_illust_outline_복붙" transform="translate(-229 310.958)">
+            <g id="그룹_14461" data-name="그룹 14461" style="clip-path:url(#clip-path-2)">
+                <path id="패스_12152" data-name="패스 12152" class="cls-6" d="M4.028 0A4.028 4.028 0 1 1 0 4.028 4.028 4.028 0 0 1 4.028 0"/>
+                <path id="패스_12153" data-name="패스 12153" class="cls-6" d="M23.718 0a4.028 4.028 0 1 1-4.028 4.028A4.028 4.028 0 0 1 23.718 0" transform="translate(4.27)"/>
+                <path id="패스_12154" data-name="패스 12154" class="cls-6" d="M11.124 27.494a2.4 2.4 0 0 1-.11-4.79c.228-.011 13.464-.827 21.168-11.5a2.4 2.4 0 1 1 3.885 2.8c-9.115 12.63-24.2 13.456-24.832 13.484h-.112" transform="translate(1.893 2.214)"/>
+                <path id="패스_12155" data-name="패스 12155" class="cls-6" d="M17.441 15.082H9.3V4.056a2.4 2.4 0 0 1 4.791 0v6.234h3.354a2.4 2.4 0 0 1 0 4.792" transform="translate(2.016 .36)"/>
+            </g>
+        </g>
+    </g>
+</svg>

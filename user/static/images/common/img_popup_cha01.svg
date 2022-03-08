@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="145" viewBox="0 0 240 145">
+    <defs>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+            <stop offset="1" stop-color="#fff"/>
+        </linearGradient>
+        <clipPath id="clip-path">
+            <path id="사각형_7973" data-name="사각형 7973" class="cls-1" transform="translate(106 542.561)" d="M0 0h165v88H0z"/>
+        </clipPath>
+        <filter id="모양_7" x="31.665" y="53.464" width="236.301" height="170.712" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur stdDeviation="5.5" result="blur"/>
+            <feFlood flood-opacity=".349"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-1{fill:#fff}.cls-13,.cls-7,.cls-8{fill:none}.cls-7{stroke:#fd5c44;stroke-width:4.5px}.cls-13,.cls-7,.cls-8{stroke-linecap:round}.cls-8{stroke:#fff;stroke-width:2.813px}.cls-13{stroke:#225782;stroke-width:5px}
+        </style>
+    </defs>
+    <g id="_-g-img_popup_cha01" data-name="-g-img_popup_cha01" transform="translate(-66 -495.561)">
+        <g style="clip-path:url(#clip-path)">
+            <g transform="translate(66 495.56)" style="filter:url(#모양_7)" id="마스크_그룹_7328" data-name="마스크 그룹 7328">
+                <path id="모양_7-2" data-name="모양 7" class="cls-1" d="M243.32 600.009c-12.213-13.422-29.089-35.159-62.213-34.643-25.231.393-37.017-3.3-37.017-3.3s-8.277 0-13.006-3.546c0 0-1.182 15.368 9.459 21.278 0 0-25.586 8.4-26.374 53.275-.334 19.04 17.8 44.2 46.462 61.413 22.352 13.418 189.317-54.922 151.2-54.327-28.319.447-54.858-25.144-68.511-40.15z" transform="translate(-66 -491.56)"/>
+            </g>
+        </g>
+        <path id="tran" transform="translate(106 607.561)" style="fill:url(#linear-gradient)" d="M0 0h165v27H0z"/>
+        <circle id="타원_7" data-name="타원 7" cx="11.1" cy="11.1" r="11.1" transform="translate(157 513.33)" style="fill:#35539b"/>
+        <path id="사각형_15" data-name="사각형 15" d="m202.858 524.294-12.407 12.4a5.8 5.8 0 1 0 8.208 8.206l12.407-12.4a5.8 5.8 0 1 0-8.208-8.206z" transform="translate(-.251 4.011)" style="fill:#ffc823"/>
+        <g id="그룹_7541" data-name="그룹 7541" transform="translate(-5.868 11)">
+            <path id="모양_14" data-name="모양 14" class="cls-7" transform="translate(106.31 526.68)" d="M0 0v7.87"/>
+            <path id="모양_14_복사" data-name="모양 14 복사" class="cls-7" transform="translate(106.31 544.67)" d="M0 0v7.88"/>
+            <path id="모양_14_복사_2" data-name="모양 14 복사 2" class="cls-7" transform="translate(93.37 539.61)" d="M0 0h7.88"/>
+            <path id="모양_14_복사_2-2" data-name="모양 14 복사 2" class="cls-7" transform="translate(111.37 539.61)" d="M0 0h7.88"/>
+        </g>
+        <g id="그룹_7541_복사" data-name="그룹 7541 복사">
+            <path id="모양_14-2" data-name="모양 14" class="cls-8" transform="translate(226.69 498.56)" d="M0 0v7.87"/>
+            <path id="모양_14_복사-2" data-name="모양 14 복사" class="cls-8" transform="translate(226.69 516.55)" d="M0 0v7.88"/>
+            <path id="모양_14_복사_2-3" data-name="모양 14 복사 2" class="cls-8" transform="translate(213.75 511.49)" d="M0 0h7.87"/>
+            <path id="모양_14_복사_2-4" data-name="모양 14 복사 2" class="cls-8" transform="translate(231.75 511.49)" d="M0 0h7.87"/>
+        </g>
+        <g id="cha" transform="translate(0 4)">
+            <path id="모양_7_복사_2" data-name="모양 7 복사 2" d="M247.257 614.181c-1.5-30.025-22.926-44.23-42.525-52.752" style="stroke-width:3.375px;stroke:#ffc823;fill:none"/>
+            <path id="모양_7_복사" data-name="모양 7 복사" d="M148.778 560.4s-8.144-1.474-12.167-5.8c0 0-3.9 14.9 5.52 22.606 0 0-26.387 12.568-28.749 49.573" style="stroke:#225782;stroke-width:3.375px;fill:none"/>
+        </g>
+        <path id="삼각형_1" data-name="삼각형 1" d="m240.963 554.766 22.725 8.752-18.933 15.3z" transform="translate(6.295 3.835)" style="fill:#13a6b8"/>
+        <g id="character1_복사" data-name="character1 복사" transform="translate(157 591)">
+            <ellipse id="타원_4" data-name="타원 4" cx="4.315" cy="4.258" rx="4.315" ry="4.258" style="fill:#225782"/>
+            <path id="모양_23" data-name="모양 23" class="cls-13" d="M1044.7 354.588s15.5-.7 24.659-13.208" transform="translate(-1030.749 -325.718)"/>
+            <path id="모양_23_복사" data-name="모양 23 복사" class="cls-13" d="M1063.7 321.418a7.281 7.281 0 0 1 7.8-1.644" transform="translate(-1035.195 -319.269)"/>
+            <path id="모양_2" data-name="모양 2" class="cls-13" d="M1045.706 326.187v9.124h6.165" transform="translate(-1031.017 -321.526)"/>
+        </g>
+    </g>
+</svg>

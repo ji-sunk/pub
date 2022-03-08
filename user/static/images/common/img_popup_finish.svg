@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="_-g-img_popup_finish" width="320" height="56.001" viewBox="0 0 320 56.001">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_7010" fill="none" d="M0 0H208V48H0z" transform="translate(4630.36 3758.081)"/>
+        </clipPath>
+        <style>
+            .cls-9{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:#fff;stroke-width:6px}
+        </style>
+    </defs>
+    <g id="cha" transform="translate(-182.467 -954.795)">
+        <g id="body" clip-path="url(#clip-path)" transform="translate(-4391.894 -2795.285)">
+            <circle id="타원_1614" cx="132" cy="132" r="132" fill="#ff6b5f" transform="translate(4602.36 3758.081)"/>
+        </g>
+        <path id="cheek" fill="#ffa99a" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" d="M-6089.731 26272.383a4.5 4.5 0 0 1 4.5-4.5 4.5 4.5 0 0 1 4.5 4.5 4.5 4.5 0 0 1-4.5 4.5 4.5 4.5 0 0 1-4.5-4.5zm-71 0a4.505 4.505 0 0 1 4.5-4.5 4.5 4.5 0 0 1 4.5 4.5 4.5 4.5 0 0 1-4.5 4.5 4.505 4.505 0 0 1-4.504-4.5z" transform="translate(6463.202 -25291.088)"/>
+        <path id="mouth" fill="none" stroke="#1e2328" stroke-linecap="round" stroke-linejoin="round" stroke-width="3px" d="M4709.8 3776s4.5 12 24 12 24-12 24-12" transform="translate(-4390.835 -2795.199)"/>
+        <path id="eye" fill="#1e2328" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" d="M9.5 3.749V2.25a2.25 2.25 0 1 1 4.5 0v1.5a2.25 2.25 0 1 1-4.5 0zm-9.5 0V2.25a2.25 2.25 0 1 1 4.5 0v1.5a2.25 2.25 0 1 1-4.5 0z" transform="translate(335.468 970.795)"/>
+    </g>
+    <g id="그룹_14001" transform="translate(-490.446 -318.121)">
+        <path id="패스_11526" fill="#00c3e1" d="M3400.094 1262.213a24 24 0 1 0-39.256-8.053 5.951 5.951 0 0 1 .338 3.207l-1.487 8.71a2.25 2.25 0 0 0 2.6 2.6l8.708-1.487a6 6 0 0 1 3.236.349 24 24 0 0 0 25.861-5.326z" transform="translate(-2644.678 -903.141)"/>
+        <path id="선_1022" d="M12 0L0 12" class="cls-9" transform="translate(735.446 335.904)"/>
+        <path id="선_1021" d="M0 0L6 6" class="cls-9" transform="translate(729.446 341.904)"/>
+    </g>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="_-g-img_popup_start" width="320" height="56" viewBox="0 0 320 56">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="mask" fill="#fff" stroke="#707070" d="M0 0H320V56H0z"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <path id="사각형_7015" fill="none" d="M0 0H208V48H0z" transform="translate(0 -0.001)"/>
+        </clipPath>
+        <style>
+            .cls-10{fill:none}.cls-5{fill:#00dcff;opacity:.24}.cls-10{stroke:#1e2328;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.5px}
+        </style>
+    </defs>
+    <g id="_-g-img_popup_start-2" clip-path="url(#clip-path)">
+        <g id="그룹_14003" transform="translate(18 3.174)">
+            <path id="패스_11543" d="M-4036.713-1414.692l-5.241 1.989a2.2 2.2 0 0 0-1.288 1.309l-1.906 5.271a2.2 2.2 0 0 1-4.126.033l-1.989-5.241a2.2 2.2 0 0 0-1.309-1.288l-5.271-1.906a2.2 2.2 0 0 1-.032-4.126l5.24-1.988a2.2 2.2 0 0 0 1.289-1.309l1.906-5.271a2.2 2.2 0 0 1 4.125-.033l1.989 5.241a2.2 2.2 0 0 0 1.309 1.288l5.271 1.906a2.2 2.2 0 0 1 .033 4.125z" class="cls-5" transform="translate(4092.5 1429.671)"/>
+            <path id="패스_11544" d="M-3671.379-1292.267l-5.241 1.989a2.2 2.2 0 0 0-1.288 1.309l-1.906 5.271a2.2 2.2 0 0 1-4.126.033l-1.988-5.241a2.2 2.2 0 0 0-1.308-1.288l-5.272-1.906a2.2 2.2 0 0 1-.032-4.125l5.241-1.989a2.2 2.2 0 0 0 1.288-1.309l1.906-5.271a2.2 2.2 0 0 1 4.125-.033l1.989 5.241a2.2 2.2 0 0 0 1.309 1.288l5.271 1.906a2.2 2.2 0 0 1 .032 4.125z" class="cls-5" transform="translate(3954.5 1326.072)"/>
+            <circle id="타원_1627" cx="7" cy="7" r="7" class="cls-5" transform="translate(222.167 5.999)"/>
+            <circle id="타원_1628" cx="7" cy="7" r="7" class="cls-5" transform="translate(0 31.826)"/>
+        </g>
+        <g id="cha" transform="translate(56 8)">
+            <g id="body" clip-path="url(#clip-path-2)">
+                <circle id="타원_1622" cx="132" cy="132" r="132" fill="#ff6b5f" transform="translate(-28 -0.001)"/>
+            </g>
+            <path id="cheek" fill="#ffa99a" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" d="M71 4.5A4.5 4.5 0 1 1 75.5 9 4.5 4.5 0 0 1 71 4.5zm-71 0A4.5 4.5 0 1 1 4.5 9 4.505 4.505 0 0 1 0 4.5z" transform="translate(64 13.998)"/>
+            <path id="mouth" fill="none" stroke="#1e2328" stroke-linecap="round" stroke-linejoin="round" stroke-width="3px" d="M4709.8 3776s4.5 12 24 12 24-12 24-12" transform="translate(-4629.801 -3757.995)"/>
+            <path id="패스_11538" d="M2822.55-3313.052a3.558 3.558 0 0 1 2.6-2.346 3.481 3.481 0 0 1 3.4.708" class="cls-10" transform="translate(-2714.55 3325.552)"/>
+            <path id="패스_11539" d="M2804.032-3314.69a3.481 3.481 0 0 1 3.4-.708 3.559 3.559 0 0 1 2.6 2.346" class="cls-10" transform="translate(-2710.032 3325.552)"/>
+        </g>
+    </g>
+</svg>

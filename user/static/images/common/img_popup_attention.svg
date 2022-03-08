@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="_-g-img_popup_attention" width="128" height="128" viewBox="0 0 128 128">
+    <defs>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ff897e"/>
+            <stop offset="1" stop-color="#ff6e5f"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-4" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ffc823"/>
+            <stop offset="1" stop-color="#f5b400"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-5" x1=".847" x2="-.057" y1=".717" y2=".069" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#00dcff" stop-opacity=".239"/>
+            <stop offset="1" stop-color="#00dcff" stop-opacity="0"/>
+        </linearGradient>
+        <style>
+            .cls-2{opacity:.04;fill:url(#linear-gradient)}
+        </style>
+    </defs>
+    <g id="그룹_14005" transform="translate(-2507.647 -2233.23)">
+        <rect id="사각형_7022" width="98" height="98" class="cls-2" rx="49" transform="translate(2522.647 2248.231)"/>
+        <rect id="사각형_7023" width="124" height="124" class="cls-2" rx="62" transform="translate(2509.647 2235.231)"/>
+        <path id="사각형_7016" fill="#ff6e5f" d="M0 0H16V10H0z" transform="translate(2563.257 2251.231)"/>
+        <rect id="사각형_7017" width="76" height="76" fill="url(#linear-gradient)" rx="37" transform="translate(2533.647 2259.231)"/>
+        <rect id="사각형_7018" width="56" height="56" fill="#fff" rx="27" transform="translate(2543.647 2269.231)"/>
+        <rect id="사각형_7019" width="26" height="8" fill="url(#linear-gradient-4)" rx="3.5" transform="translate(2558.257 2248.231)"/>
+        <path id="패스_11545" fill="url(#linear-gradient-5)" d="M2589.907 2275.471a26.889 26.889 0 0 0-17.26-6.24h-2a26.894 26.894 0 0 0-17.26 6.239l18.26 21.761z"/>
+        <path id="선_1031" fill="none" stroke="#7ce6f6" stroke-linecap="round" stroke-linejoin="round" stroke-width="5px" d="M18.46 0L0 22" transform="translate(2566.933 2280.849)"/>
+        <rect id="사각형_7020" width="10" height="10" fill="#00c3e1" rx="4.8" transform="translate(2566.647 2292.231)"/>
+        <rect id="사각형_7021" width="56" height="56" fill="none" stroke="#f05a46" stroke-width="4px" rx="27" transform="translate(2543.647 2269.231)"/>
+    </g>
+</svg>
