@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+@import url("basis.css"); /*초기화*/
+@import url("slick.css");
+@import url("common.css"); /*이진경 담당 페이지의 css*/
+@import url("component.css"); /*김경민 담당 페이지의 css*/
+@import url("math_style.css"); /*수학문제와 관련된 스타일만 따로 정의한 css*/
