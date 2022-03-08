@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="_-g-ic_worststage_tv_th_24x24" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-1{fill:#fff;stroke-linejoin:round;stroke:#788296;stroke-linecap:round;stroke-width:2px}.cls-2{fill:#646e78}
+        </style>
+    </defs>
+    <g id="그룹_5125" transform="translate(3 3)">
+        <circle id="타원_675" cx="7.411" cy="7.411" r="7.411" class="cls-1" transform="translate(0 2.396)"/>
+        <circle id="타원_676" cx=".925" cy=".925" r=".925" class="cls-2" transform="translate(4.266 6.57)"/>
+        <circle id="타원_677" cx=".925" cy=".925" r=".925" class="cls-2" transform="translate(8.892 6.57)"/>
+        <path id="패스_5337" d="M6.8 6.2c0 2.211-1.522 4-3.4 4S0 8.409 0 6.2C0 4.564 1.857 1.7 2.826.319a.674.674 0 0 1 1.146 0C4.941 1.7 6.8 4.564 6.8 6.2z" class="cls-1" transform="rotate(2 6.046 345.237)"/>
+        <path id="선_459" fill="none" stroke="#788296" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2px" d="M0 0L4 0" transform="translate(5.401 10.708)"/>
+    </g>
+    <path id="사각형_3285" fill="none" d="M0 0H24V24H0z"/>
+</svg>

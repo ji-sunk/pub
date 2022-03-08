@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="_-g-input_delete" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-3{fill:none;stroke:#fff;stroke-linecap:round;stroke-width:3px}
+        </style>
+    </defs>
+    <path id="area" fill="rgba(255,255,255,0)" d="M0 0H40V40H0z"/>
+    <path id="패스_10826" fill="#e4eaf0" d="M13 0A13 13 0 1 1 0 13 13 13 0 0 1 13 0z" transform="translate(7 7)"/>
+    <path id="선_514" d="M0 0L7 7" class="cls-3" transform="translate(16.5 16.5)"/>
+    <path id="선_515" d="M7 0L0 7" class="cls-3" transform="translate(16.5 16.5)"/>
+</svg>

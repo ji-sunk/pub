@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <style>
+            .cls-1{fill:#fff;stroke-linejoin:round;stroke:#788296;stroke-linecap:round;stroke-width:1.2px}.cls-2{fill:#788296}
+        </style>
+    </defs>
+    <g id="_-g-ic_worststage_mo_pc_16x16" transform="translate(-.157 -.277)">
+        <g id="그룹_5125" transform="translate(2.032 2.069)">
+            <circle id="타원_675" cx="5.112" cy="5.112" r="5.112" class="cls-1" transform="translate(0 1.653)"/>
+            <circle id="타원_676" cx=".638" cy=".638" r=".638" class="cls-2" transform="translate(2.943 4.531)"/>
+            <circle id="타원_677" cx=".638" cy=".638" r=".638" class="cls-2" transform="translate(6.133 4.531)"/>
+            <path id="패스_5337" d="M4.689 4.275a2.578 2.578 0 0 1-2.344 2.76A2.578 2.578 0 0 1 0 4.275C0 3.148 1.281 1.173 1.949.22a.465.465 0 0 1 .791 0c.668.953 1.949 2.928 1.949 4.055z" class="cls-1" transform="rotate(2 4.17 238.127)"/>
+            <path id="선_459" fill="none" stroke="#788296" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.2px" d="M0 0L2.759 0" transform="translate(3.725 7.385)"/>
+        </g>
+        <path id="사각형_3285" fill="none" d="M0 0H16V16H0z" transform="translate(.157 .277)"/>
+    </g>
+</svg>

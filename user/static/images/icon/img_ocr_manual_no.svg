@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#fff;stroke-width:3px}
+        </style>
+    </defs>
+    <g id="_-g-img_ocr_manual_no" transform="translate(-263 -215)">
+        <rect id="box" width="28" height="28" fill="#f05a46" rx="12" transform="translate(263 215)"/>
+        <path id="선_1007" d="M0 0L10 10" class="cls-2" transform="translate(272 224)"/>
+        <path id="선_1006" d="M10 0L0 10" class="cls-2" transform="translate(272 224)"/>
+    </g>
+</svg>
