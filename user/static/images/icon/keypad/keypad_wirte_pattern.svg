@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#e4ebf4;stroke-dasharray:3 7}
+        </style>
+    </defs>
+    <g id="_-g-keypad_wirte_pattern" transform="translate(-842 -136)">
+        <path id="box" fill="#f8fafc" d="M0 0H40V40H0z" transform="translate(842 136)"/>
+        <path id="line" d="M0 0L0 40" class="cls-2" transform="translate(881.5 136)"/>
+        <path id="line-2" d="M0 0L40 0" class="cls-2" transform="translate(842 175.5)"/>
+    </g>
+</svg>
