@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21.999" viewBox="0 0 20 21.999">
+    <g data-name="그룹 15037">
+        <path data-name="선 935" transform="translate(8 9.999)" style="fill:none;stroke:#3c5a7d;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px" d="M0 5V0"/>
+        <path data-name="선 936" transform="translate(12 9.999)" style="fill:none;stroke:#3c5a7d;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0v5"/>
+        <g data-name="그룹 15036">
+            <path data-name="선 932" transform="translate(1 4)" style="fill:none;stroke:#3c5a7d;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px" d="M0 0h18"/>
+            <path data-name="사각형 6455" d="M0 0h14v15a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V0h0z" transform="translate(3 3.999)" style="fill:none;stroke:#3c5a7d;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px"/>
+            <path data-name="사각형 6456" d="M1 0h4a1 1 0 0 1 1 1v2h0-6 0V1a1 1 0 0 1 1-1z" transform="translate(7 1)" style="fill:none;stroke:#3c5a7d;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px"/>
+        </g>
+    </g>
+</svg>
