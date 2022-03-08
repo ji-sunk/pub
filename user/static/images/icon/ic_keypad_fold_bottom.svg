@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#587188;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px}
+        </style>
+    </defs>
+    <g id="ic_keypad_fold_bottom" transform="translate(0 .217)">
+        <g id="그룹_7886" transform="rotate(90 28.608 27.392)">
+            <path id="패스_2811" d="M0 0l8.719 8L18 0" class="cls-2" transform="rotate(-90 28.5 8.5)"/>
+            <path id="패스_2812" d="M0 0l8.719 8L18 0" class="cls-2" transform="rotate(-90 33.5 3.5)"/>
+        </g>
+    </g>
+</svg>

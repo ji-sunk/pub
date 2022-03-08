@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+    <defs>
+        <style>
+            .cls-3{fill:none;stroke:#0ebfde;stroke-miterlimit:10;stroke-width:2px;stroke-linecap:round}
+        </style>
+    </defs>
+    <g id="_-g-ic_question" transform="translate(.5 .5)">
+        <rect id="사각형_3179" width="16" height="18" fill="none" stroke="#0ebfde" stroke-miterlimit="10" stroke-width="2px" rx="3" transform="translate(4 3)"/>
+        <path id="선_293" d="M0 0L6 0" class="cls-3" transform="translate(9 9)"/>
+        <path id="선_294" d="M0 0L4 0" class="cls-3" transform="translate(9 14)"/>
+    </g>
+</svg>

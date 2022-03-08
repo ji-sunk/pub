@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="78" height="42" viewBox="0 0 78 42">
+    <defs>
+        <filter id="selected" width="78" height="42" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-color="#05286e" flood-opacity=".102"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="_-g-ic_status_2_mo" transform="translate(-420 -290)">
+        <g filter="url(#selected)" transform="translate(420 290)">
+            <rect id="selected-2" width="60" height="24" class="cls-1" rx="12" transform="translate(9 6)"/>
+        </g>
+        <text id="학습중" fill="#00d3aa" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-size="10px" font-weight="700" transform="translate(465 312)">
+            <tspan x="-13.8" y="0">학습중</tspan>
+        </text>
+        <g id="fire_32px" transform="translate(433.973 299.655)">
+            <path id="패스_2813" fill="#ff6b5f" d="M2154.579 4400.059c3.452 0 4.7-2.26 4.7-3.839 0-2.534-2.563-3.864-3.368-4.8-.96-1.116-.686-1.542-1.027-1.542a3.837 3.837 0 0 0-2.349 3.017c0 .692.224 1.115-.046 1.192-.54.154-1.348-1.052-1.516-1.052a3.534 3.534 0 0 0-1.142 2.9c.002 2.739 2.739 4.124 4.748 4.124z" transform="translate(-2146.159 -4387.251)"/>
+            <path id="패스_2882" fill="#ff6b5f" stroke="#fb594b" stroke-miterlimit="10" d="M2154.579 4400.059c3.452 0 4.7-2.26 4.7-3.839 0-2.534-2.563-3.864-3.368-4.8-.96-1.116-.686-1.542-1.027-1.542a3.837 3.837 0 0 0-2.349 3.017c0 .692.224 1.115-.046 1.192-.54.154-1.348-1.052-1.516-1.052a3.534 3.534 0 0 0-1.142 2.9c.002 2.739 2.739 4.124 4.748 4.124z" transform="translate(-2146.159 -4387.251)"/>
+            <path id="패스_2814" d="M2181.695 4451.025a2.093 2.093 0 0 0 2.351-1.979c0-1.306-1.281-1.991-1.684-2.474-.48-.576-.343-.8-.513-.8a1.964 1.964 0 0 0-1.175 1.555c0 .356.113.575-.023.615-.27.079-.674-.542-.758-.542a1.845 1.845 0 0 0-.571 1.495 2.285 2.285 0 0 0 2.373 2.13z" class="cls-1" transform="translate(-2173.023 -4439.277)"/>
+        </g>
+    </g>
+</svg>

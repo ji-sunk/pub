@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ic_result_0_mo_40x40" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-3{fill:#fff}
+        </style>
+    </defs>
+    <path id="사각형_3654" fill="none" d="M0 0H40V40H0z"/>
+    <g id="그룹_5935" transform="translate(-28 -760)">
+        <path id="패스_5565" fill="#e4eaf0" d="M14 0h4a14 14 0 0 1 14 14v4a14 14 0 0 1-14 14h-4A14 14 0 0 1 0 18v-4A14 14 0 0 1 14 0z" transform="translate(32 764)"/>
+        <rect id="사각형_3227" width="13.517" height="2.08" class="cls-3" rx="1" transform="translate(41.404 782.06)"/>
+        <rect id="사각형_3268" width="4.604" height="2.08" class="cls-3" rx="1" transform="translate(41.079 776.014)"/>
+        <rect id="사각형_3269" width="4.604" height="2.08" class="cls-3" rx="1" transform="translate(50.931 776.014)"/>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47">
+    <defs>
+        <linearGradient id="linear-gradient" x1=".5" y1="1.065" x2=".5" y2="-.065" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#19c083"/>
+            <stop offset=".53" stop-color="#2fd296"/>
+            <stop offset="1" stop-color="#45e3a8"/>
+        </linearGradient>
+        <style>
+            .cls-2{fill:#b1e3dd}.cls-4{fill:#fff}
+        </style>
+    </defs>
+    <g id="_-g-ic_main_time_th" data-name="-g-ic_main_time_th" transform="translate(.377 1.644)">
+        <path id="사각형_26" data-name="사각형 26" class="cls-2" d="m573.6 240.332 5.138-5.138a4 4 0 0 1 5.652 0l2.261 2.261a4 4 0 0 1 0 5.652l-5.138 5.138a4 4 0 0 1-5.652 0l-2.261-2.261a4 4 0 0 1 0-5.652z" transform="translate(-572.431 -234.023)"/>
+        <path id="사각형_26_복사" data-name="사각형 26 복사" class="cls-2" d="m617.625 240.332-5.138-5.138a4 4 0 0 0-5.652 0l-2.261 2.261a4 4 0 0 0 0 5.652l5.138 5.138a4 4 0 0 0 5.652 0l2.261-2.261a4 4 0 0 0 0-5.652z" transform="translate(-572.431 -234.023)"/>
+        <circle id="타원_13" data-name="타원 13" cx="20.02" cy="20.02" r="20.02" transform="translate(2.809 2.807)" style="fill:url(#linear-gradient)"/>
+        <circle id="타원_14" data-name="타원 14" class="cls-4" cx="3.64" cy="3.64" r="3.64" transform="translate(19.189 18.277)"/>
+        <path id="사각형_27" data-name="사각형 27" class="cls-4" d="M595.625 256.762a1.82 1.82 0 0 1 2.574 0l5.791 5.791a1.82 1.82 0 1 1-2.574 2.574l-5.791-5.791a1.82 1.82 0 0 1 0-2.574z" transform="translate(-572.431 -234.023)"/>
+    </g>
+</svg>

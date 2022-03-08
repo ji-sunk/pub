@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47">
+    <defs>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#877aee"/>
+            <stop offset="1" stop-color="#6f60e9"/>
+        </linearGradient>
+        <style>
+            .cls-2{fill:#b7adf9}
+        </style>
+    </defs>
+    <g id="_-g-ic_main_stage_th" data-name="-g-ic_main_stage_th" transform="translate(3.002 1.96)">
+        <path id="사각형_28" data-name="사각형 28" class="cls-2" d="M796.508 258.215h8.19a1.33 1.33 0 0 1 1.365 1.744l-4.55 17.442a2.469 2.469 0 0 1-2.275 1.744h-8.19a1.33 1.33 0 0 1-1.365-1.744l4.55-17.442a2.469 2.469 0 0 1 2.275-1.744z" transform="translate(-783.552 -234.339)"/>
+        <path id="사각형_28_복사" data-name="사각형 28 복사" class="cls-2" d="M811.977 258.215h-8.19a1.33 1.33 0 0 0-1.365 1.744l4.55 17.442a2.469 2.469 0 0 0 2.275 1.744h8.19a1.33 1.33 0 0 0 1.363-1.745l-4.55-17.442a2.469 2.469 0 0 0-2.273-1.743z" transform="translate(-783.552 -234.339)"/>
+        <path id="다각형_198" data-name="다각형 198" d="M27.436 1.509a4 4 0 0 1 5.209 2.158l1.633 3.907a4 4 0 0 0 2.148 2.148l3.907 1.633a4 4 0 0 1 2.158 5.209l-1.608 3.917a4 4 0 0 0 0 3.037l1.608 3.917a4 4 0 0 1-2.158 5.209l-3.907 1.633a4 4 0 0 0-2.148 2.148l-1.633 3.907a4 4 0 0 1-5.209 2.158l-3.917-1.608a4 4 0 0 0-3.037 0l-3.917 1.608a4 4 0 0 1-5.209-2.158l-1.635-3.906a4 4 0 0 0-2.148-2.148l-3.906-1.633a4 4 0 0 1-2.158-5.209l1.608-3.917a4 4 0 0 0 0-3.037l-1.608-3.918a4 4 0 0 1 2.158-5.209l3.907-1.634a4 4 0 0 0 2.147-2.147l1.633-3.907a4 4 0 0 1 5.209-2.158l3.917 1.608a4 4 0 0 0 3.037 0z" transform="translate(-1.426 -1.423)" style="fill:url(#linear-gradient)"/>
+        <circle id="타원_14_복사" data-name="타원 14 복사" cx="3.64" cy="3.64" r="3.64" transform="translate(25.697 12.501)" style="fill:#fff"/>
+    </g>
+</svg>

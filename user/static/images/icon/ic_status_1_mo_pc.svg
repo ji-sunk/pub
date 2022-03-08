@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="24" viewBox="0 0 60 24">
+    <g transform="translate(-522 -356)">
+        <rect width="60" height="24" fill="#ebf0f5" rx="12" transform="translate(522 356)"/>
+        <text fill="#788296" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-size="10px" font-weight="700" transform="translate(552 372)">
+            <tspan x="-13.8" y="0">학습전</tspan>
+        </text>
+    </g>
+</svg>

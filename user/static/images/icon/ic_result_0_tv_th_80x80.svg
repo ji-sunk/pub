@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ic_result_0_tv_th_80x80" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <style>
+            .cls-3{fill:#fff}
+        </style>
+    </defs>
+    <g id="icon" transform="translate(8 8)">
+        <rect id="body" width="64" height="64" fill="#e4eaf0" rx="28"/>
+        <rect id="사각형_3227" width="26" height="4" class="cls-3" rx="2" transform="translate(19.001 35.999)"/>
+        <rect id="사각형_3268" width="9" height="4" class="cls-3" rx="2" transform="translate(18 23.999)"/>
+        <rect id="사각형_3269" width="9" height="4" class="cls-3" rx="2" transform="translate(37 23.999)"/>
+    </g>
+</svg>

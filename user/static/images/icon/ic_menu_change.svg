@@ -1,0 +1,15 @@
+<svg id="_-g-ic_menu_change" data-name="-g-ic_menu_change" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+    <defs>
+        <style>
+            .cls-2{opacity:.4}.cls-3,.cls-4{fill:none;stroke:#323c46;stroke-linecap:round;stroke-width:2px}.cls-4{stroke-linejoin:round}
+        </style>
+    </defs>
+    <g id="arrow" class="cls-2" transform="translate(4.173 4.135)">
+        <path id="line" class="cls-3" transform="translate(0 2.734)" d="M0 0h13.655"/>
+        <path id="line-2" data-name="line" class="cls-4" d="M221.731 124 219 126.731l2.731 2.731" transform="translate(-219 -124)"/>
+    </g>
+    <g id="arrow-2" data-name="arrow" class="cls-2" transform="translate(4.173 12.404)">
+        <path id="line-3" data-name="line" class="cls-3" transform="translate(0 2.734)" d="M13.655 0H0"/>
+        <path id="line-4" data-name="line" class="cls-4" d="m219 124 2.731 2.731-2.731 2.731" transform="translate(-208.076 -124)"/>
+    </g>
+</svg>

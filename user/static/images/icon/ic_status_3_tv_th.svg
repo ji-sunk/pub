@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="118" height="54" viewBox="0 0 118 54">
+    <defs>
+        <filter id="0tvjgh0v9a" width="118" height="54" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-color="#05286e" flood-opacity=".102"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g>
+        <g filter="url(#0tvjgh0v9a)" transform="translate(6526 6424) translate(-6526 -6424)">
+            <rect width="100" height="36" fill="#fff" rx="18" transform="translate(9 6)"/>
+        </g>
+        <text fill="#00d3aa" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-size="16px" font-weight="700" transform="translate(6526 6424) translate(-6467 -6394)">
+            <tspan x="-14.72" y="0">완료</tspan>
+        </text>
+    </g>
+</svg>

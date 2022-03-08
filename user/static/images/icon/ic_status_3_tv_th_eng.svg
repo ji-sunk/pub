@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="154" height="54" viewBox="0 0 154 54">
+    <defs>
+        <filter id="a" x="0" y="0" width="154" height="54" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feFlood flood-color="#05286e" flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="-g-ic_status_3_tv/th_eng">
+        <g style="filter:url(#a)">
+            <rect data-name="selected" width="136" height="36" rx="18" transform="translate(9 6)" style="fill:#fff"/>
+        </g>
+        <text transform="translate(77 30)" style="fill:#00d3aa;font-size:16px;font-family:NotoSansCJKkr-Bold,Noto Sans CJK KR;font-weight:700;letter-spacing:-.025em"><tspan x="-36.656" y="0">Complete</tspan></text>
+    </g>
+</svg>

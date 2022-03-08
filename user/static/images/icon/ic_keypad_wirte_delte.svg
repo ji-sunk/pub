@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17.596" viewBox="0 0 17 17.596">
+    <defs>
+        <style>
+            .cls-2{stroke:#3f576d;fill:#3f576d}.cls-3{fill:none;stroke:#cad3dc}
+        </style>
+    </defs>
+    <g id="ic_keypad_wirte_delte" transform="translate(0 .5)">
+        <g id="사각형_1648" fill="#fff" stroke="#3f576d">
+            <path stroke="none" d="M0 0H17V2H0z" transform="translate(0 2.695)"/>
+            <path fill="none" d="M0.5 0.5H16.5V1.5H0.5z" transform="translate(0 2.695)"/>
+        </g>
+        <path id="패스_1887" d="M514.026 274v8.6s-.112 2.3 1.734 2.3h8.264s2.255-.25 2.255-2.3V274" class="cls-2" transform="translate(-511.547 -268.305)"/>
+        <path id="패스_1888" d="M517.684 276.318v6.689" class="cls-3" transform="translate(-512 -268.305)"/>
+        <path id="패스_1889" d="M517.684 276.318v6.689" class="cls-3" transform="translate(-509 -268.305)"/>
+        <path id="패스_1890" d="M517.684 276.318v6.689" class="cls-3" transform="translate(-506 -268.305)"/>
+        <path id="패스_1891" d="M13033.341-12156.007v-1.688h4.87v1.688" class="cls-2" transform="translate(-13027 12157.695)"/>
+    </g>
+</svg>

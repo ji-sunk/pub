@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="78" height="42" viewBox="0 0 78 42">
+    <defs>
+        <filter id="jujewhggua" width="78" height="42" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-color="#05286e" flood-opacity=".102"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g>
+        <g filter="url(#jujewhggua)" transform="translate(-420 -290) translate(420 290)">
+            <rect width="60" height="24" fill="#fff" rx="12" transform="translate(9 6)"/>
+        </g>
+        <text fill="#00d3aa" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-size="10px" font-weight="700" transform="translate(-420 -290) translate(459 312)">
+            <tspan x="-9.2" y="0">완료</tspan>
+        </text>
+    </g>
+</svg>
