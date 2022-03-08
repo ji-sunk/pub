@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="216" height="102" viewBox="0 0 216 102">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="mask" d="M0 0H216V48H0z" transform="translate(3332 2008)"/>
+        </clipPath>
+        <style>
+            .cls-2{fill:#d8e1eb}
+        </style>
+    </defs>
+    <g id="_-g-img_ocr_cha_oops" transform="translate(-3325 -1954)">
+        <path id="패스_11334" d="M3410.1 2299.229l3.367 8.351a2.031 2.031 0 0 0 1.125 1.125l8.351 3.367a2.033 2.033 0 0 1 0 3.771l-8.351 3.367a2.03 2.03 0 0 0-1.125 1.126l-3.367 8.349a2.033 2.033 0 0 1-3.771 0l-3.367-8.349a2.032 2.032 0 0 0-1.126-1.126l-8.349-3.367a2.033 2.033 0 0 1 0-3.771l8.349-3.367a2.033 2.033 0 0 0 1.126-1.125l3.367-8.351a2.033 2.033 0 0 1 3.771 0z" class="cls-2" transform="translate(-9.214 -343.957)"/>
+        <path id="패스_11335" d="M3378.109 2317.361l2.523 6.262a1.535 1.535 0 0 0 .84.844l6.266 2.525a1.526 1.526 0 0 1 0 2.83l-6.266 2.521a1.529 1.529 0 0 0-.84.848l-2.523 6.26a1.526 1.526 0 0 1-2.832 0l-2.523-6.26a1.524 1.524 0 0 0-.844-.848l-6.262-2.521a1.526 1.526 0 0 1 0-2.83l6.262-2.525a1.529 1.529 0 0 0 .844-.844l2.523-6.262a1.527 1.527 0 0 1 2.832 0z" class="cls-2" transform="translate(-27.695 -320.407)"/>
+        <path id="패스_11336" d="M3375.873 2317.2l2.1 5.218a1.28 1.28 0 0 0 .7.7l5.221 2.1a1.272 1.272 0 0 1 0 2.358l-5.221 2.1a1.276 1.276 0 0 0-.7.707l-2.1 5.216a1.272 1.272 0 0 1-2.36 0l-2.1-5.216a1.271 1.271 0 0 0-.7-.707l-5.218-2.1a1.271 1.271 0 0 1 0-2.358l5.218-2.1a1.275 1.275 0 0 0 .7-.7l2.1-5.218a1.273 1.273 0 0 1 2.36 0z" class="cls-2" transform="translate(148.455 -331.406)"/>
+        <g id="hat" transform="translate(9.969 5.336)">
+            <g id="그룹_13823" transform="translate(1518.643 -1502.348) rotate(31)">
+                <path id="패스_11332" fill="none" stroke="#f5b400" stroke-linecap="round" stroke-miterlimit="10" stroke-width="7px" d="M3692.985 2296.5s2.062 12 12 12" transform="translate(-214.917 -307.466)"/>
+                <path id="패스_11333" fill="#ffc823" d="M3715.985 2318.5a9 9 0 0 0 9 9c7.04 0 11-6.986 11-9s-3.96-9-11-9a9 9 0 0 0-9 9z" transform="translate(-225.914 -317.466)"/>
+            </g>
+            <path id="hat-2" fill="#323c46" d="M-18105.318 18974.268v-32.006h-10.994v-8h72v8h-11.006v32.006z" transform="matrix(0.914, 0.407, -0.407, 0.914, 27674.641, -7964.082)"/>
+        </g>
+        <g id="body" clip-path="url(#clip-path)" transform="translate(-7)">
+            <circle id="body-2" cx="132" cy="132" r="132" fill="#ff6b5f" transform="translate(3308 2008)"/>
+        </g>
+        <path id="mouth" fill="none" stroke="#1e2328" stroke-linecap="round" stroke-linejoin="round" stroke-width="3px" d="M3415 2026s4.687 12 25 12 25-12 25-12" transform="translate(-14.5)"/>
+        <path id="cheek" fill="#ffa99a" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" d="M-14154 18816.5a4.5 4.5 0 0 1 4.5-4.5 4.5 4.5 0 0 1 4.5 4.5 4.5 4.5 0 0 1-4.5 4.5 4.5 4.5 0 0 1-4.5-4.5zm-71 0a4.5 4.5 0 0 1 4.5-4.5 4.5 4.5 0 0 1 4.5 4.5 4.5 4.5 0 0 1-4.5 4.5 4.5 4.5 0 0 1-4.5-4.5z" transform="translate(17610 -16789.5)"/>
+        <path id="eye" fill="#1e2328" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" d="M-18258.7 18889.629v-1.531a2.3 2.3 0 0 1 2.3-2.3 2.3 2.3 0 0 1 2.3 2.3v1.531a2.3 2.3 0 0 1-2.3 2.3 2.3 2.3 0 0 1-2.3-2.3zm-9.207 0v-1.531a2.3 2.3 0 0 1 2.3-2.3 2.3 2.3 0 0 1 2.3 2.3v1.531a2.3 2.3 0 0 1-2.3 2.3 2.3 2.3 0 0 1-2.293-2.3z" transform="translate(21685.906 -16869.734)"/>
+    </g>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="320">
+    <defs>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#eef0f2"/>
+            <stop offset=".736" stop-color="#fafbfc"/>
+            <stop offset="1" stop-color="#fafbfc"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#eceef0"/>
+            <stop offset="1" stop-color="#f6f8fa"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-3" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#dce1e6"/>
+            <stop offset="1" stop-color="#c4c6ce"/>
+        </linearGradient>
+        <clipPath id="clip-path">
+            <path id="area" class="cls-1" transform="translate(642.011 19.684)" d="M0 0h400v320H0z"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:#fff;opacity:0}.cls-4{fill:none;stroke:#eef0f2;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="_-g-img_lc_starsgop" data-name="-g-img_lc_starsgop" transform="translate(-211 -432)">
+        <g id="img" transform="translate(-431.011 412.316)">
+            <g id="마스크_그룹_95" data-name="마스크 그룹 95" style="clip-path:url(#clip-path)">
+                <path id="패스_5585" data-name="패스 5585" d="M617.011 363.367s14.3-104 225-104 225 104 225 104z" style="fill:url(#linear-gradient)"/>
+            </g>
+            <path id="패스_5588" data-name="패스 5588" class="cls-4" d="M597.186 172.915s.114 26.085-20 42" transform="translate(401.825 -5.231)"/>
+            <path id="패스_5590" data-name="패스 5590" class="cls-4" d="M603.186 202.915s-2.421 19.154-22 32" transform="translate(401.825 -5.231)"/>
+            <path id="패스_5591" data-name="패스 5591" class="cls-4" d="M603.186 202.915s-2.421 19.154-22 32" transform="translate(117.825 24.769)"/>
+            <path id="패스_5589" data-name="패스 5589" d="M567.982 234.056c3.984 2.537 4.626 8.022-.221 12.827s-11.2 5.882-15.149 6.031a1.3 1.3 0 0 1-1.115-2.123 9.157 9.157 0 0 0 2.023-6.042c.036-8.96 8.789-14.306 14.462-10.693z" transform="translate(401.825 1.769)" style="fill:url(#linear-gradient-2)"/>
+            <path id="패스_5586" data-name="패스 5586" d="M931.448 202.684H752.575v-52a18 18 0 0 1 18-18h46.232a12 12 0 0 1 9.371 4.5l8.794 10.993a12 12 0 0 0 9.37 4.5h69.106a18 18 0 0 1 18 18z" style="fill:url(#linear-gradient-3)"/>
+            <path id="패스_5587" data-name="패스 5587" d="M908.589 278.684H775.433a22 22 0 0 1-21-15.438l-18.684-59.789a16 16 0 0 1 15.271-20.773H933a16 16 0 0 1 15.272 20.773l-18.685 59.789a22 22 0 0 1-20.998 15.438z" style="fill:#e4e8ee"/>
+        </g>
+    </g>
+</svg>
