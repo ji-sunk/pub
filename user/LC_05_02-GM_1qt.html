@@ -103,7 +103,7 @@
 									<div class="mathQuest-wrap">
 										<p class="tit">Q14. 다음 식을 계산하시오. <br>텍스트가 길어질 경우</p>
 									</div>
-                                    <!-- 버튼 영역 추가 -->
+                                    <!-- 220308 버튼 영역 추가 -->
                                     <div class="btn_wrap scratch">
                                         <div class="pos_rgt">
                                             <button type="button" class="bg_ple wht pen on"></button>
@@ -112,12 +112,12 @@
                                             <button type="button" class="bg_ple wht next off"></button>
                                         </div>
                                     </div>
-                                    <!-- //버튼 영역 추가 -->
-                                    <button type="button" class="btn-learning-del active">삭제</button>
-                                    <!-- 기존 아이콘에서 배경이 변경 되면서 클래스명 추가 -->
-                                    <button type="button" class="note_btn grn">연습장</button>
-                                    <!-- //기존 아이콘에서 배경이 변경 되면서 클래스명 추가 -->
-
+                                    <!-- //220308 버튼 영역 추가 -->
+                                    <button type="button" class="btn-learning-del active off">삭제</button> <!-- 220308 기존 액티브에서 off 클래스 추가 / off 삭제하면 활성화 -->
+                                    <!-- 220308 기존 아이콘에서 배경이 변경 되면서 grn클래스명 추가 -->
+                                    <!-- <button type="button" class="note_btn grn">연습장</button> -->
+                                    <!-- //220308 기존 아이콘에서 배경이 변경 되면서 grn클래스명 추가 -->
+                                    
 								</div><!-- //learning_head -->
 								<div class="learning_body">
 									<div class="mathExp-wrap">
@@ -143,14 +143,6 @@
                             <!--키패드-->
                             <!--기존에 사용하는 버튼 비활성은 disabled 속성을 쓰면 되지만 튜토리얼에서 쓰는 버튼 비활성화는(색상변화 없이 opacity만 흐려지게 하기) 해당 button태그에 class dis 추가-->
 							<div class="keypadBox">
-								<!-- 퍼블 확인용 영역 시작 - 개발시에 지워주세요. -->
-								<!-- <div class="tmpBtn">
-									<button data-target="#keypad_wrap1">숫자</button>
-									<button data-target="#keypad_wrap2">숫자+기호</button>
-									<button data-target="#keypad_wrap3">중등</button>
-								</div> -->
-								<!-- //퍼블 확인용 영역 끝 - 개발시에 지워주세요. -->
-
 								<!-- 3. 중등 키패드 영역 시작 -->
 								<div class="keypad_wrap" id="keypad_wrap3" style="display: none;">  <!-- id=keypad_wrap3,  style="display: none;"는 퍼블확인용 임시코드입니다. 개발시에는 삭제해주세요. -->
                                     <!--pc, 태블릿가로-->
@@ -423,18 +415,6 @@
                                                             <div class="tooltip arr_tip js_fadeout">정답칸은 이 버튼을<br>선택해서 이동해줘!</div>
                                                         </td>
                                                     </tr>
-                                                    <!-- 하늘색 테마일경우 -->
-<!--
-                                                    <tr>
-                                                        <td class="left"><button class="pen btn-chg-note blue" type="button"><img src="./static/images/icon/keypad/ic_handwrite_blue.svg" alt="" /></button></td>
-                                                        <td class="grading"><button class="btn btn-blue" type="button">채점하기</button></td>
-                                                        <td class="arr_area">
-                                                            <button class="lr_arr blue" type="button"><img src="./static/images/icon/keypad/ic_lc_answermove_back.svg" alt="" /></button>
-                                                            <button class="lr_arr blue" type="button"><img src="./static/images/icon/keypad/ic_lc_answermove_next.svg" alt="" /></button>
-                                                            <div class="tooltip arr_tip js_fadeout">정답칸은 이 버튼을<br>선택해서 이동해줘!</div>
-                                                        </td>
-                                                    </tr>
--->
                                                 </tbody>
                                             </table>
                                         </div>
@@ -727,18 +707,6 @@
                                                             <div class="tooltip arr_tip js_fadeout">정답칸은 이 버튼을<br>선택해서 이동해줘!</div>
                                                         </td>
                                                     </tr>
-                                                    <!-- 하늘색 테마일경우 -->
-<!--
-                                                    <tr>
-                                                        <td class="left"><button class="pen btn-chg-note blue" type="button"><img src="./static/images/icon/keypad/ic_handwrite_blue.svg" alt="" /></button></td>
-                                                        <td class="grading"><button class="btn btn-blue" type="button">채점하기</button></td>
-                                                        <td class="arr_area">
-                                                            <button class="lr_arr blue" type="button"><img src="./static/images/icon/keypad/ic_lc_answermove_back.svg" alt="" /></button>
-                                                            <button class="lr_arr blue" type="button"><img src="./static/images/icon/keypad/ic_lc_answermove_next.svg" alt="" /></button>
-                                                            <div class="tooltip arr_tip js_fadeout">정답칸은 이 버튼을<br>선택해서 이동해줘!</div>
-                                                        </td>
-                                                    </tr>
--->
                                                 </tbody>
                                             </table>
                                         </div>
@@ -746,7 +714,6 @@
                                     <!--//모바일-->
 								</div>
 								<!-- //3. 중등 키패드 영역 끝 -->
-
 
 
 								<!-- 4. 필기패드 영역 시작 -->
@@ -774,7 +741,7 @@
                                             </table>
                                         </div>
  
-                                        <!-- 진단세트 아이콘 추가 on/off 버튼 눌렀을 시 1개만 활성화 -->
+                                        <!-- 220308 진단세트 아이콘 추가 on/off 버튼 눌렀을 시 1개만 활성화 -->
                                         <div class="btn_wrap">
                                             <div class="pos_lft">
                                                 <button class="bg_wht grn del on"></button>
@@ -786,7 +753,7 @@
                                                 <button class="bg_wht grn eraser off"></button>
                                             </div>
                                         </div>
-                                        <!-- //진단세트 아이콘 추가 on/off -->
+                                        <!-- //220308 진단세트 아이콘 추가 on/off -->
 
                                     </div>
 								
@@ -819,7 +786,7 @@
                                                 </tbody>
                                             </table>
                                         </div>
-                                           <!-- 문제풀이 세트 아이콘 추가 on/off 버튼 눌렀을 시 1개만 활성화 -->
+                                           <!-- 220308 문제풀이 세트 아이콘 추가 on/off 버튼 눌렀을 시 1개만 활성화 -->
                                            <div class="btn_wrap">
                                             <div class="pos_lft">
                                                 <button class="bg_wht blue del off"></button>
@@ -831,7 +798,7 @@
                                                 <button class="bg_wht blue eraser off"></button>
                                             </div>
                                         </div>
-                                        <!-- //문제풀이 세트 아이콘 추가 on/off -->
+                                        <!-- //220308 문제풀이 세트 아이콘 추가 on/off -->
 
                                     </div>
 								
