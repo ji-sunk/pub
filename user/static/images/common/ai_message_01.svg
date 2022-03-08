@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="_-g-ai_message_01" width="799.996" height="120.001" viewBox="0 0 799.996 120.001">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="교차_6" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" d="M25440-236.812V-344h800v107.186c-113.605 7.874-246.184 12.815-400 12.815s-286.395-4.938-400-12.813z" transform="translate(-24840 344)"/>
+        </clipPath>
+        <style>
+            .cls-6{fill:none;stroke:#1e2328;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.5px}
+        </style>
+    </defs>
+    <g id="character" transform="translate(-600 -.002)">
+        <g id="마스크_그룹_124" clip-path="url(#clip-path)" transform="translate(-.002)">
+            <circle id="타원_742" cx="132" cy="132" r="132" fill="#ff6b5f" transform="translate(868 81)"/>
+        </g>
+        <path id="cheek" fill="#ffa99a" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" d="M22831 7093.5a4.5 4.5 0 1 1 4.5 4.5 4.5 4.5 0 0 1-4.5-4.5zm-71 0a4.5 4.5 0 1 1 4.5 4.5 4.5 4.5 0 0 1-4.5-4.5z" transform="translate(-21799.998 -6994.002)"/>
+        <path id="mouth" fill="none" stroke="#1e2328" stroke-linecap="round" stroke-linejoin="round" stroke-width="3px" d="M1024 93.5s-1.5 16-24 16-24-16-24-16" transform="translate(-.5 1)"/>
+        <g id="eye" transform="translate(0 .5)">
+            <path id="패스_5367" d="M995 87.5a5 5 0 0 1-8 0" class="cls-6" transform="translate(0 2)"/>
+            <path id="패스_5368" d="M1013 87.5a5 5 0 0 1-8 0" class="cls-6" transform="translate(0 2)"/>
+        </g>
+    </g>
+</svg>
