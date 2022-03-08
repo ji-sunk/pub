@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="_-g-ic_account_01" width="200" height="200" viewBox="0 0 200 200">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="box" d="M0 0H200V200H0z" class="cls-1" transform="translate(428.236 203.027)"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:#b96ef5}.cls-4{fill:#ffc823;opacity:.65;mix-blend-mode:screen;isolation:isolate}.cls-6{fill:#1e2328}
+        </style>
+    </defs>
+    <g id="_-g-ic_account_01-2" clip-path="url(#clip-path)" transform="translate(-428.236 -203.027)">
+        <path id="box-2" d="M0 0H200V200H0z" class="cls-1" transform="translate(428.236 203.027)"/>
+        <path id="body" fill="#ffc823" d="M1714.878 5899.191c0-36.036-44.391-65.645-73-80.986-8.48-4.548-14.363-14.082-14.718-24.873-.02-.611-.026-1.218-.016-1.833v-1c0-42.25-37.28-76.5-83.268-76.5s-83.27 34.252-83.27 76.5c0 .336 0 .664.006 1 .01.615 0 1.222-.016 1.833-.354 10.792-6.237 20.325-14.717 24.873-28.614 15.342-73 44.951-73 80.986 0 23.152 15.414 34.282 33.932 39.3a26.482 26.482 0 0 1 15.675 12.581c22.08 37.788 54.389 85.38 121.394 85.38s99.314-47.592 121.394-85.38a26.47 26.47 0 0 1 15.675-12.581c18.515-5.018 33.929-16.147 33.929-39.3z" transform="translate(-1015.641 -5462.973)"/>
+        <ellipse id="타원_1219" cx="7" cy="6.999" class="cls-4" rx="7" ry="6.999" transform="translate(573.236 308.028)"/>
+        <ellipse id="타원_1802" cx="7" cy="6.999" class="cls-4" rx="7" ry="6.999" transform="translate(469.236 308.028)"/>
+        <path id="mouth" fill="none" stroke="#1e2328" stroke-linecap="round" stroke-linejoin="round" stroke-width="6px" d="M968 778.844s6.375 18 34 18 34-18 34-18" transform="translate(-473.764 -461.816)"/>
+        <rect id="사각형_4539" width="7" height="10" class="cls-6" rx="3.5" transform="translate(532.236 303.027)"/>
+        <rect id="사각형_4540" width="7" height="10" class="cls-6" rx="3.5" transform="translate(517.236 303.027)"/>
+    </g>
+</svg>

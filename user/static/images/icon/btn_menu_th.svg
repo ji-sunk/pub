@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+    <defs>
+        <style>
+            .cls-1{fill:#225782}
+        </style>
+    </defs>
+    <g id="_-g-btn_menu_th" data-name="-g-btn_menu_th" transform="translate(.182 .208)">
+        <g id="ic_menu" transform="translate(7.091 8.779)">
+            <rect id="사각형_1" data-name="사각형 1" class="cls-1" width="16.792" height="2.684" rx=".7" transform="translate(6.169)"/>
+            <rect id="사각형_2" data-name="사각형 2" class="cls-1" width="2.762" height="2.684" rx=".7"/>
+            <rect id="사각형_3" data-name="사각형 3" class="cls-1" width="16.792" height="2.684" rx=".7" transform="translate(6.169 8.7)"/>
+            <rect id="사각형_4" data-name="사각형 4" class="cls-1" width="2.762" height="2.684" rx=".7" transform="translate(0 8.7)"/>
+            <rect id="사각형_5" data-name="사각형 5" class="cls-1" width="16.792" height="2.684" rx=".7" transform="translate(6.169 17.406)"/>
+            <rect id="사각형_6" data-name="사각형 6" class="cls-1" width="2.762" height="2.684" rx=".7" transform="translate(0 17.406)"/>
+        </g>
+    </g>
+</svg>

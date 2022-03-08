@@ -1,0 +1,18 @@
+<svg id="_-g-btn_login_eye_off" data-name="-g-btn_login_eye_off" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="패스_12218" data-name="패스 12218" d="m7.429 7.714 9.36 9.36h-6.075l-4.571-2.36V11z" style="fill:#fff"/>
+        </clipPath>
+        <style>
+            .cls-3{fill:none;stroke:#828ca0;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <path id="area" style="fill:transparent" d="M0 0h32v32H0z"/>
+    <g id="eye-off" transform="translate(4 4)">
+        <path id="패스_12216" data-name="패스 12216" class="cls-3" d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/>
+        <path id="선_1066" data-name="선 1066" class="cls-3" transform="translate(2 2)" d="m0 0 21 21"/>
+        <g id="마스크_그룹_7329" data-name="마스크 그룹 7329" style="clip-path:url(#clip-path)">
+            <circle id="타원_13522" data-name="타원 13522" cx="2.5" cy="2.5" r="2.5" transform="translate(9 10)" style="fill:#828ca0;stroke:#828ca0;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+        </g>
+    </g>
+</svg>

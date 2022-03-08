@@ -1,0 +1,7 @@
+<svg data-name="-g-btn_join_eye_on" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <path style="fill:transparent" d="M0 0h40v40H0z"/>
+    <g transform="translate(7 11.429)">
+        <path data-name="패스 12217" d="M1 13.143S5.636 4 13.75 4s12.75 9.143 12.75 9.143-4.636 9.143-12.75 9.143S1 13.143 1 13.143z" transform="translate(-1 -4)" style="stroke:#828ca0;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.5px;fill:none"/>
+        <circle data-name="타원 13521" cx="3.5" cy="3.5" r="3.5" transform="translate(9.177 5.571)" style="fill:#828ca0;stroke:#828ca0;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.5px"/>
+    </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+    <defs>
+        <style>
+            .cls-2{fill:#00dcff}
+        </style>
+    </defs>
+    <g id="_-g-btn_ocr_th" data-name="-g-btn_ocr_th" transform="translate(.313 .208)">
+        <g id="벡터_고급_개체" data-name="벡터 고급 개체" transform="translate(8.104 8.104)">
+            <g id="벡터_고급_개체-2" data-name="벡터 고급 개체">
+                <circle id="타원_1652" data-name="타원 1652" cx="2.494" cy="2.494" transform="translate(16.623 16.622)" style="fill:#00c3e1" r="2.494"/>
+                <path id="교차_25" data-name="교차 25" class="cls-2" d="M19.118 7.48V5.818a3.329 3.329 0 0 0-3.325-3.325H13.3V0h2.663a5.817 5.817 0 0 1 5.652 5.816V7.48zM0 7.48V5.818A5.821 5.821 0 0 1 5.652 0h2.662v2.493H5.821A3.331 3.331 0 0 0 2.5 5.818V7.48z" transform="translate(-.001 -.002)"/>
+                <path id="교차_26" data-name="교차 26" class="cls-2" d="M5.819 17.943A5.822 5.822 0 0 1 0 12.293v-1.829h2.494v1.662a3.33 3.33 0 0 0 3.325 3.325h2.494v2.494z" transform="translate(-.001 3.667)"/>
+                <path id="사각형_7448" data-name="사각형 7448" transform="translate(0 9.557)" style="fill:#20c3e1" d="M0 0h21.61v2.494H0z"/>
+            </g>
+            <path id="Color_Overlay" data-name="Color Overlay" d="M5.922 22A5.928 5.928 0 0 1 0 16.246v-1.861h2.538v1.692a3.392 3.392 0 0 0 3.384 3.386h2.539V22zm11-2.538A2.538 2.538 0 1 1 19.46 22a2.54 2.54 0 0 1-2.539-2.54zM0 12.266V9.729h22v2.538zm19.46-4.653V5.921a3.391 3.391 0 0 0-3.385-3.386h-2.538V0h2.711A5.923 5.923 0 0 1 22 5.921v1.692zM0 7.613V5.921A5.925 5.925 0 0 1 5.752 0h2.71v2.535H5.924A3.39 3.39 0 0 0 2.54 5.921v1.692z" transform="translate(-.416 -.312)" style="fill:#225782"/>
+        </g>
+    </g>
+</svg>
