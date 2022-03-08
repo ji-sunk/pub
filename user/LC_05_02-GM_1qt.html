@@ -1,0 +1,999 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+    <script src="static/js/lottie.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+		<div class="layout-def layout-learning gm">
+            <div class="header dark">
+                <div class="inner">
+                    <div class="headerBox">
+                        <div class="headerBox_head">
+                            <h1 class="tit left">소주제명</h1>
+                            <button class="btn-close-wrap">닫기</button>
+                        </div>
+                        <div class="headerBox_body">
+                            <div class="header-qa-wrap">
+                                <div class="qa-cnt-wrap"><span class="num">8</span> <span>/</span> <span class="num-tot num-ani">10</span></div><!-- 10문제 끝난뒤 팝업 뜨고 문제수가 늘어날때 : num-tot에 클래스 num-ani 추가, 다음문제 넘어갈때 num-ani 삭제 -->
+                                <div class="qa-time-wrap">07:12</div><!-- 시간정보 필요없으면 삭제가능 -->
+                                <div class="qa-as-wrap">
+                                    <div class="accuracy-cont">
+                                        <div class="accuracy">
+                                            <div class="accuracy-bar" style="width: 30%;"></div> <!-- 색상 %로 넣기  -->
+                                            <div class="accuracy-line">
+                                                <span class="line line1"></span>
+                                                <span class="line line2"></span>
+                                                <span class="line line3"></span>
+                                            </div>
+                                            <p class="tit">정확도</p>
+                                        </div>
+                                        <div class="accuracy-labelbox">
+                                            <div class="a-label label1 on"></div><!-- 66.6% 이하일때 : a-label에 클래스 on 추가 -->
+                                            <div class="a-label label2"><span class="ico"></span></div><!-- 80% 이하일때 : a-label에 클래스 on 추가 -->
+                                            <div class="a-label label3"><span class="ico"></span></div><!-- 95% 이하일때 : a-label에 클래스 on 추가 -->
+                                            <div class="a-label label4"><span class="ico"></span></div><!-- 95% 초과일때 : a-label에 클래스 on 추가 -->
+                                            <!-- (예시) 93%일때 : label1, label2, label3 모두 클래스 on 추가 -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="asv-wrap lr-asv-wrap">
+                                    <div class="speedometer-wrap">
+                                        <div class="speedometerBox">
+                                            <div class="gaugeBox noAni" data-sw-m="8" data-sw-t="8" data-sw-pc="8"><!-- 애니메이션 없게 할때 : .noAni 추가 -->
+                                                <canvas id="mySpeed2"></canvas>
+                                                <div class="gaugeArr"></div>
+                                                <div class="txtBox">
+                                                    <p class="tit">속도</p>
+                                                    <p class="txt">보통</p>
+                                                    <!-- p.txt의 텍스트 정리
+                                                        0 ~ 66.6% 이하일 때 : 미달
+                                                        66.% 초과 ~ 80% 이하일 때 : 보통
+                                                        80% 초과 ~ 95% 이하일 때 : 높음
+                                                        95% 초과 ~ 100% : 완벽
+                                                     -->
+                                                </div>
+                                            </div>
+                                            <script>
+                                                // 퍼블확인용 
+                                                $(document).ready(function(){
+                                                    speedometer("mySpeed2", 0.3, '#4d6f96', '#ff6e5f'); //accuracy-bar 에 들어가는 width %와 확인 필수 
+                                                });
+                                                // 개발용 : 화면 로딩 후 && 데이터 들어간 후에 실행
+                                                    //speedometer("mySpeed", 0.3, '#4d6f96', '#ff6e5f');
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //asv-wrap -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		
+			<div class="container">
+				<div class="inner">
+					<div class="learningBox">
+						<div class="leaningCont">
+							<div class="learning-wrap">
+								<div class="learning_head">
+									<div class="mathQuest-wrap">
+										<p class="tit">Q14. 다음 식을 계산하시오. <br>텍스트가 길어질 경우</p>
+									</div>
+                                    <!-- 버튼 영역 추가 -->
+                                    <div class="btn_wrap scratch">
+                                        <div class="pos_rgt">
+                                            <button type="button" class="bg_ple wht pen on"></button>
+                                            <button type="button" class="bg_ple wht eraser off"></button>
+                                            <button type="button" class="bg_ple wht prev off"></button>
+                                            <button type="button" class="bg_ple wht next off"></button>
+                                        </div>
+                                    </div>
+                                    <!-- //버튼 영역 추가 -->
+                                    <button type="button" class="btn-learning-del active">삭제</button>
+                                    <!-- 기존 아이콘에서 배경이 변경 되면서 클래스명 추가 -->
+                                    <button type="button" class="note_btn grn">연습장</button>
+                                    <!-- //기존 아이콘에서 배경이 변경 되면서 클래스명 추가 -->
+
+								</div><!-- //learning_head -->
+								<div class="learning_body">
+									<div class="mathExp-wrap">
+										<div class="mathExp-inner">
+											<div class="mathExt">
+												<!-- 수식영역 -->
+												<img src="static/images/tmp/ex_learning_mathExp.png" alt=""><!-- 퍼블 확인용 임시 이미지입니다. 개발시 꼭 삭제해주세요. -->
+    									        <div class="blocking_layer"></div><!--유저가 mathjax 문항 영역 클릭 못하게 막는 투명 레이어-->
+    									        <div class="learning_picture"></div><!-- 그림판영역 : 비활성화 될때 클래스 unactive 추가 -->
+											</div>
+										</div>
+									</div>
+								</div><!-- //learning_body -->
+							</div>
+						</div>
+						<div class="learningTail">
+							<div class="onlyButtonBox active">
+								<button class="btn btn-green btn-inputAnswer">정답 입력</button>
+                                <!-- 하늘색 테마일경우 -->
+<!--								<button class="btn btn-blue btn-inputAnswer">정답 입력</button>-->
+							</div>
+                            
+                            <!--키패드-->
+                            <!--기존에 사용하는 버튼 비활성은 disabled 속성을 쓰면 되지만 튜토리얼에서 쓰는 버튼 비활성화는(색상변화 없이 opacity만 흐려지게 하기) 해당 button태그에 class dis 추가-->
+							<div class="keypadBox">
+								<!-- 퍼블 확인용 영역 시작 - 개발시에 지워주세요. -->
+								<!-- <div class="tmpBtn">
+									<button data-target="#keypad_wrap1">숫자</button>
+									<button data-target="#keypad_wrap2">숫자+기호</button>
+									<button data-target="#keypad_wrap3">중등</button>
+								</div> -->
+								<!-- //퍼블 확인용 영역 끝 - 개발시에 지워주세요. -->
+
+								<!-- 3. 중등 키패드 영역 시작 -->
+								<div class="keypad_wrap" id="keypad_wrap3" style="display: none;">  <!-- id=keypad_wrap3,  style="display: none;"는 퍼블확인용 임시코드입니다. 개발시에는 삭제해주세요. -->
+                                    <!--pc, 태블릿가로-->
+								    <div class="keypad_gm middle tab-wrap hide_tv hide_m">
+                                        <div class="upper_area">
+                                            <ul class="tablist">
+                                                <li><a href="#tabCont1" class="active">123</a></li>
+                                                <li><a href="#tabCont2">Aa</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mid_area">
+                                            <div class="tabCont active" id="tabCont1">
+                                                <table class="key_tbl" summary="키패드">
+                                                    <tbody>
+                                                        <tr class="l_gray">
+                                                            <td><button class="js_input_pop" type="button"><img src="./static/images/icon/keypad/ic_frac.svg" alt="" /></button></td>
+                                                            <td><button class="js_input_pop" type="button"><img src="./static/images/icon/keypad/ic_mfrac.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_equal.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_unequal.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_div.svg" alt="" /></button></td>
+                                                        </tr>
+                                                        <tr class="l_gray">
+                                                            <td><button class="js_input_pop" type="button"><img src="./static/images/icon/keypad/ic_combi.svg" alt="" /></button></td>
+                                                            <td><button class="js_input_pop" type="button"><img src="./static/images/icon/keypad/ic_sqrt.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_lessthan.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_lessthanequal.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_time.svg" alt="" /></button></td>
+                                                        </tr>
+                                                        <tr class="l_gray">
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_open_parenthesis.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_close_parenthesis.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_morethan.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_morethanequal.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_subtract.svg" alt="" /></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_1.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_2.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_3.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_x.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_add.svg" alt="" /></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_4.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_5.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_6.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_y.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_pm.svg" alt="" /></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_7.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_8.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_9.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_z.svg" alt="" /></button></td>
+                                                            <td class="d_gray"><button type="button"><img src="./static/images/icon/keypad/ic_backspace.svg" alt="" /></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_point.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_0.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_comma.svg" alt="" /></button></td>
+                                                            <td class="d_gray"><button type="button"><img src="./static/images/icon/keypad/ic_left.svg" alt="" /></button></td>
+                                                            <td class="d_gray"><button type="button"><img src="./static/images/icon/keypad/ic_right.svg" alt="" /></button></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tabCont" id="tabCont2">
+                                                <table class="key_tbl" summary="키패드">
+                                                    <tbody>
+                                                        <tr class="l_gray">
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_cap_a.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_cap_b.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_cap_c.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_cap_d.svg" alt="" /></button></td>
+                                                            <td class="l_gray2"><button type="button"><img src="./static/images/icon/keypad/ic_open_parenthesis.svg" alt="" /></button></td>
+                                                        </tr>
+                                                        <tr class="l_gray">
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_cap_e.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_cap_f.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_cap_g.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_cap_h.svg" alt="" /></button></td>
+                                                            <td class="l_gray2"><button type="button"><img src="./static/images/icon/keypad/ic_close_parenthesis.svg" alt="" /></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_a.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_b.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_c.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_d.svg" alt="" /></button></td>
+                                                            <td class="l_gray2"><button type="button"><img src="./static/images/icon/keypad/ic_subtract.svg" alt="" /></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_e.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_f.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_g.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_h.svg" alt="" /></button></td>
+                                                            <td class="l_gray2"><button type="button"><img src="./static/images/icon/keypad/ic_add.svg" alt="" /></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_i.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_m.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_n.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_p.svg" alt="" /></button></td>
+                                                            <td class="l_gray2"><button type="button"><img src="./static/images/icon/keypad/ic_equal.svg" alt="" /></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_r.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_t.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_x.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_y.svg" alt="" /></button></td>
+                                                            <td class="d_gray"><button type="button"><img src="./static/images/icon/keypad/ic_backspace.svg" alt="" /></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_z.svg" alt="" /></button></td>
+                                                            <td colspan="2"></td>
+                                                            <td class="d_gray"><button type="button"><img src="./static/images/icon/keypad/ic_left.svg" alt="" /></button></td>
+                                                            <td class="d_gray"><button type="button"><img src="./static/images/icon/keypad/ic_right.svg" alt="" /></button></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="lower_area">
+                                            <table summary="키패드">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="left"><button class="pen btn-chg-note" type="button"><img src="./static/images/icon/keypad/ic_handwrite.svg" alt="" /></button></td>
+                                                        <td class="grading"><button class="btn btn-green" type="button">채점하기</button></td>
+<!--                                                        <td class="right"><button class="fold btn-close-pad" type="button"><img src="./static/images/icon/keypad/ic_fold_right.svg" alt="" /></button></td>-->
+                                                        <td class="arr_area">
+                                                            <button class="lr_arr" type="button"><img src="./static/images/icon/keypad/ic_lctest_answermove_back.svg" alt="" /></button>
+                                                            <button class="lr_arr" type="button"><img src="./static/images/icon/keypad/ic_lctest_answermove_next.svg" alt="" /></button>
+                                                            <div class="tooltip arr_tip js_fadeout">정답칸은 이 버튼을<br>선택해서 이동해줘!</div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- 하늘색 테마일경우 -->
+<!--
+                                                    <tr>
+                                                        <td class="left"><button class="pen btn-chg-note blue" type="button"><img src="./static/images/icon/keypad/ic_handwrite_blue.svg" alt="" /></button></td>
+                                                        <td class="grading"><button class="btn btn-blue" type="button">채점하기</button></td>
+                                                        <td class="arr_area">
+                                                            <button class="lr_arr blue" type="button"><img src="./static/images/icon/keypad/ic_lc_answermove_back.svg" alt="" /></button>
+                                                            <button class="lr_arr blue" type="button"><img src="./static/images/icon/keypad/ic_lc_answermove_next.svg" alt="" /></button>
+                                                            <div class="tooltip arr_tip js_fadeout">정답칸은 이 버튼을<br>선택해서 이동해줘!</div>
+                                                        </td>
+                                                    </tr>
+-->
+                                                </tbody>
+                                            </table>
+                                        </div>
+								    </div>
+                                    <!--//pc, 태블릿가로-->
+                                    
+                                    <!--태블릿세로-->
+								    <div class="keypad_gm middle tab-wrap hide_pc hide_th hide_m">
+                                        <div class="upper_area">
+                                            <ul class="tablist">
+                                                <li><a href="#tabCont_tv_1" class="active">123</a></li>
+                                                <li><a href="#tabCont_tv_2">Aa</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mid_area">
+                                            <div class="tabCont active" id="tabCont_tv_1">
+                                                <table class="key_tbl" summary="키패드">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="l_gray"><button class="js_input_pop" type="button"><img src="./static/images/icon/keypad/ic_frac.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_equal.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_unequal.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_div.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_x.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_1.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_2.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_3.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_point.svg" alt="" /></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="l_gray"><button class="js_input_pop" type="button"><img src="./static/images/icon/keypad/ic_mfrac.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_lessthan.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_lessthanequal.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_time.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_y.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_4.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_5.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_6.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_comma.svg" alt="" /></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="l_gray"><button class="js_input_pop" type="button"><img src="./static/images/icon/keypad/ic_combi.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_morethan.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_morethanequal.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_subtract.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_z.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_7.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_8.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_9.svg" alt="" /></button></td>
+                                                            <td class="d_gray"><button type="button"><img src="./static/images/icon/keypad/ic_backspace.svg" alt="" /></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="l_gray"><button class="js_input_pop" type="button"><img src="./static/images/icon/keypad/ic_sqrt.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_open_parenthesis.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_close_parenthesis.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_add.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_pm.svg" alt="" /></button></td>
+                                                            <td colspan="2"><button type="button"><img src="./static/images/icon/keypad/ic_0.svg" alt="" /></button></td>
+                                                            <td class="d_gray"><button type="button"><img src="./static/images/icon/keypad/ic_left.svg" alt="" /></button></td>
+                                                            <td class="d_gray"><button type="button"><img src="./static/images/icon/keypad/ic_right.svg" alt="" /></button></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tabCont" id="tabCont_tv_2">
+                                                <table class="key_tbl" summary="키패드">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_cap_a.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_cap_b.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_cap_c.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_cap_d.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_cap_e.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_cap_f.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_cap_g.svg" alt="" /></button></td>
+                                                            <td class="l_gray2"><button type="button"><img src="./static/images/icon/keypad/ic_subtract.svg" alt="" /></button></td>
+                                                            <td class="l_gray2"><button type="button"><img src="./static/images/icon/keypad/ic_open_parenthesis.svg" alt="" /></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_cap_h.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_a.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_b.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_c.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_d.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_e.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_f.svg" alt="" /></button></td>
+                                                            <td class="l_gray2"><button type="button"><img src="./static/images/icon/keypad/ic_add.svg" alt="" /></button></td>
+                                                            <td class="l_gray2"><button type="button"><img src="./static/images/icon/keypad/ic_close_parenthesis.svg" alt="" /></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_g.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_h.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_i.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_m.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_n.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_p.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_r.svg" alt="" /></button></td>
+                                                            <td class="l_gray2"><button type="button"><img src="./static/images/icon/keypad/ic_equal.svg" alt="" /></button></td>
+                                                            <td class="d_gray"><button type="button"><img src="./static/images/icon/keypad/ic_backspace.svg" alt="" /></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_t.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_x.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_y.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_z.svg" alt="" /></button></td>
+                                                            <td colspan="3"></td>
+                                                            <td class="d_gray"><button type="button"><img src="./static/images/icon/keypad/ic_left.svg" alt="" /></button></td>
+                                                            <td class="d_gray"><button type="button"><img src="./static/images/icon/keypad/ic_right.svg" alt="" /></button></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="lower_area">
+                                            <table summary="키패드">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="left"><button class="pen btn-chg-note" type="button"><img src="./static/images/icon/keypad/ic_handwrite.svg" alt="" /></button></td>
+                                                        <td class="grading"><button class="btn btn-green" type="button">채점하기</button></td>
+<!--                                                        <td class="right"><button class="fold btn-close-pad" type="button"><img src="./static/images/icon/keypad/ic_fold_right.svg" alt="" /></button></td>-->
+                                                        <td class="arr_area">
+                                                            <button class="lr_arr" type="button"><img src="./static/images/icon/keypad/ic_lctest_answermove_back.svg" alt="" /></button>
+                                                            <button class="lr_arr" type="button"><img src="./static/images/icon/keypad/ic_lctest_answermove_next.svg" alt="" /></button>
+                                                            <div class="tooltip arr_tip js_fadeout">정답칸은 이 버튼을<br>선택해서 이동해줘!</div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- 하늘색 테마일경우 -->
+<!--
+                                                    <tr>
+                                                        <td class="left"><button class="pen btn-chg-note blue" type="button"><img src="./static/images/icon/keypad/ic_handwrite_blue.svg" alt="" /></button></td>
+                                                        <td class="grading"><button class="btn btn-blue" type="button">채점하기</button></td>
+                                                        <td class="arr_area">
+                                                            <button class="lr_arr blue" type="button"><img src="./static/images/icon/keypad/ic_lc_answermove_back.svg" alt="" /></button>
+                                                            <button class="lr_arr blue" type="button"><img src="./static/images/icon/keypad/ic_lc_answermove_next.svg" alt="" /></button>
+                                                            <div class="tooltip arr_tip js_fadeout">정답칸은 이 버튼을<br>선택해서 이동해줘!</div>
+                                                        </td>
+                                                    </tr>
+-->
+                                                </tbody>
+                                            </table>
+                                        </div>
+								    </div>
+                                    <!--//태블릿세로-->
+                                    
+                                    <!--모바일-->
+								    <div class="keypad_gm middle mob tab-wrap hide_pc hide_th hide_tv">
+                                        <div class="upper_area cls">
+                                            <ul class="tablist">
+                                                <li><a href="#tabCont_m_1" class="active">123</a></li>
+                                                <li><a href="#tabCont_m_2">Aa</a></li>
+                                            </ul>
+                                            <div class="right">
+                                                <table class="key_tbl" summary="키패드">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_left.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_right.svg" alt="" /></button></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="mid_area">
+                                            <div class="tabCont active" id="tabCont_m_1">
+                                                <table class="key_tbl" summary="키패드">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="l_gray"><button class="js_input_pop" type="button"><img src="./static/images/icon/keypad/ic_frac.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button class="js_input_pop" type="button"><img src="./static/images/icon/keypad/ic_mfrac.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_div.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_1.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_2.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_3.svg" alt="" /></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="l_gray"><button class="js_input_pop" type="button"><img src="./static/images/icon/keypad/ic_combi.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button class="js_input_pop" type="button"><img src="./static/images/icon/keypad/ic_sqrt.svg" alt="" /></button></td>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_time.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_4.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_5.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_6.svg" alt="" /></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="l_gray more">
+                                                                <button class="more_btn js_more" type="button"><img src="./static/images/icon/keypad/ic_lessthan.svg" alt="" /></button>
+                                                                <div class="more_key">
+                                                                    <table class="key_tbl" summary="키패드">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <button class="fill" type="button"><!--class fill 넣으면 키 색 바뀜-->
+                                                                                        <img src="./static/images/icon/keypad/ic_lessthan.svg" alt="" />
+                                                                                    </button>
+                                                                                </td>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_lessthanequal.svg" alt="" /></button></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_morethan.svg" alt="" /></button></td>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_morethanequal.svg" alt="" /></button></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                            <td class="l_gray more">
+                                                                <button class="more_btn js_more" type="button"><img src="./static/images/icon/keypad/ic_open_parenthesis.svg" alt="" /></button>
+                                                                <div class="more_key">
+                                                                    <table class="key_tbl" summary="키패드">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_open_parenthesis.svg" alt="" /></button></td>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_close_parenthesis.svg" alt="" /></button></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                            <td class="l_gray"><button type="button"><img src="./static/images/icon/keypad/ic_subtract.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_7.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_8.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_9.svg" alt="" /></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="l_gray more">
+                                                                <button class="more_btn js_more" type="button"><img src="./static/images/icon/keypad/ic_equal.svg" alt="" /></button>
+                                                                <div class="more_key">
+                                                                    <table class="key_tbl" summary="키패드">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_equal.svg" alt="" /></button></td>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_unequal.svg" alt="" /></button></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                            <td class="l_gray more">
+                                                                <button class="more_btn js_more" type="button"><img src="./static/images/icon/keypad/ic_x.svg" alt="" /></button>
+                                                                <div class="more_key">
+                                                                    <table class="key_tbl" summary="키패드">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_x.svg" alt="" /></button></td>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_y.svg" alt="" /></button></td>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_z.svg" alt="" /></button></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                            <td class="l_gray more">
+                                                                <button class="more_btn js_more" type="button"><img src="./static/images/icon/keypad/ic_add.svg" alt="" /></button>
+                                                                <div class="more_key">
+                                                                    <table class="key_tbl" summary="키패드">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_add.svg" alt="" /></button></td>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_pm.svg" alt="" /></button></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                            <td class="more">
+                                                                <button class="more_btn js_more" type="button"><img src="./static/images/icon/keypad/ic_comma.svg" alt="" /></button>
+                                                                <div class="more_key">
+                                                                    <table class="key_tbl" summary="키패드">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_comma.svg" alt="" /></button></td>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_point.svg" alt="" /></button></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_0.svg" alt="" /></button></td>
+                                                            <td class="d_gray"><button type="button"><img src="./static/images/icon/keypad/ic_backspace.svg" alt="" /></button></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tabCont" id="tabCont_m_2">
+                                                <table class="key_tbl" summary="키패드">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="more">
+                                                                <button class="more_btn js_more" type="button"><img src="./static/images/icon/keypad/ic_a.svg" alt="" /></button>
+                                                                <div class="more_key">
+                                                                    <table class="key_tbl" summary="키패드">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_a.svg" alt="" /></button></td>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_cap_a.svg" alt="" /></button></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                            <td class="more">
+                                                                <button class="more_btn js_more" type="button"><img src="./static/images/icon/keypad/ic_b.svg" alt="" /></button>
+                                                                <div class="more_key">
+                                                                    <table class="key_tbl" summary="키패드">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_b.svg" alt="" /></button></td>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_cap_b.svg" alt="" /></button></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                            <td class="more">
+                                                                <button class="more_btn js_more" type="button"><img src="./static/images/icon/keypad/ic_c.svg" alt="" /></button>
+                                                                <div class="more_key">
+                                                                    <table class="key_tbl" summary="키패드">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_c.svg" alt="" /></button></td>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_cap_c.svg" alt="" /></button></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                            <td class="more">
+                                                                <button class="more_btn js_more" type="button"><img src="./static/images/icon/keypad/ic_d.svg" alt="" /></button>
+                                                                <div class="more_key">
+                                                                    <table class="key_tbl" summary="키패드">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_d.svg" alt="" /></button></td>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_cap_d.svg" alt="" /></button></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                            <td class="more">
+                                                                <button class="more_btn js_more" type="button"><img src="./static/images/icon/keypad/ic_e.svg" alt="" /></button>
+                                                                <div class="more_key">
+                                                                    <table class="key_tbl" summary="키패드">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_e.svg" alt="" /></button></td>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_cap_e.svg" alt="" /></button></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                            <td class="more">
+                                                                <button class="more_btn js_more" type="button"><img src="./static/images/icon/keypad/ic_f.svg" alt="" /></button>
+                                                                <div class="more_key right">
+                                                                    <table class="key_tbl" summary="키패드">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_f.svg" alt="" /></button></td>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_cap_f.svg" alt="" /></button></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="more">
+                                                                <button class="more_btn js_more" type="button"><img src="./static/images/icon/keypad/ic_g.svg" alt="" /></button>
+                                                                <div class="more_key">
+                                                                    <table class="key_tbl" summary="키패드">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_g.svg" alt="" /></button></td>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_cap_g.svg" alt="" /></button></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                            <td class="more">
+                                                                <button class="more_btn js_more" type="button"><img src="./static/images/icon/keypad/ic_h.svg" alt="" /></button>
+                                                                <div class="more_key">
+                                                                    <table class="key_tbl" summary="키패드">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_h.svg" alt="" /></button></td>
+                                                                                <td><button type="button"><img src="./static/images/icon/keypad/ic_cap_h.svg" alt="" /></button></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_i.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_m.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_n.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_p.svg" alt="" /></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_r.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_t.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_x.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_y.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_z.svg" alt="" /></button></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr class="l_gray">
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_open_parenthesis.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_close_parenthesis.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_subtract.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_add.svg" alt="" /></button></td>
+                                                            <td><button type="button"><img src="./static/images/icon/keypad/ic_equal.svg" alt="" /></button></td>
+                                                            <td class="d_gray"><button type="button"><img src="./static/images/icon/keypad/ic_backspace.svg" alt="" /></button></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="lower_area">
+                                            <table summary="키패드">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="left"><button class="pen btn-chg-note" type="button"><img src="./static/images/icon/keypad/ic_handwrite.svg" alt="" /></button></td>
+                                                        <td class="grading"><button class="btn btn-green" type="button">채점하기</button></td>
+<!--                                                        <td class="right"><button class="fold btn-close-pad" type="button"><img src="./static/images/icon/keypad/ic_fold_right.svg" alt="" /></button></td>-->
+                                                        <td class="arr_area">
+                                                            <button class="lr_arr" type="button"><img src="./static/images/icon/keypad/ic_lctest_answermove_back.svg" alt="" /></button>
+                                                            <button class="lr_arr" type="button"><img src="./static/images/icon/keypad/ic_lctest_answermove_next.svg" alt="" /></button>
+                                                            <div class="tooltip arr_tip js_fadeout">정답칸은 이 버튼을<br>선택해서 이동해줘!</div>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- 하늘색 테마일경우 -->
+<!--
+                                                    <tr>
+                                                        <td class="left"><button class="pen btn-chg-note blue" type="button"><img src="./static/images/icon/keypad/ic_handwrite_blue.svg" alt="" /></button></td>
+                                                        <td class="grading"><button class="btn btn-blue" type="button">채점하기</button></td>
+                                                        <td class="arr_area">
+                                                            <button class="lr_arr blue" type="button"><img src="./static/images/icon/keypad/ic_lc_answermove_back.svg" alt="" /></button>
+                                                            <button class="lr_arr blue" type="button"><img src="./static/images/icon/keypad/ic_lc_answermove_next.svg" alt="" /></button>
+                                                            <div class="tooltip arr_tip js_fadeout">정답칸은 이 버튼을<br>선택해서 이동해줘!</div>
+                                                        </td>
+                                                    </tr>
+-->
+                                                </tbody>
+                                            </table>
+                                        </div>
+								    </div>
+                                    <!--//모바일-->
+								</div>
+								<!-- //3. 중등 키패드 영역 끝 -->
+
+
+
+								<!-- 4. 필기패드 영역 시작 -->
+								<div class="keypad_wrap" id="keypad_wrap4">  <!-- id=keypad_wrap4,  style="display: none;"는 퍼블확인용 임시코드입니다. 개발시에는 삭제해주세요. -->
+								
+								    <div class="keypad_gm notes">
+                                        <div class="mid_area">
+                                            <div class="notes_cont">
+                                            </div>
+                                        </div>
+                                        <div class="lower_area">
+                                            <table summary="키패드">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="left"><button class="pen btn-chg-num" type="button"><img src="./static/images/icon/keypad/ic_num.svg" alt="" /></button></td>
+                                                        <td class="grading"><button class="btn btn-green" type="button">채점하기</button></td>
+                                                       <td class="right"><button class="fold btn-close-pad" type="button"><img src="./static/images/icon/keypad/ic_fold_right.svg" alt="" /></button></td>
+                                                        <td class="arr_area">
+                                                            <button class="lr_arr" type="button"><img src="./static/images/icon/keypad/ic_lctest_answermove_back.svg" alt="" /></button>
+                                                            <button class="lr_arr" type="button"><img src="./static/images/icon/keypad/ic_lctest_answermove_next.svg" alt="" /></button>
+                                                            <div class="tooltip arr_tip js_fadeout">정답칸은 이 버튼을<br>선택해서 이동해줘!</div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+ 
+                                        <!-- 진단세트 아이콘 추가 on/off 버튼 눌렀을 시 1개만 활성화 -->
+                                        <div class="btn_wrap">
+                                            <div class="pos_lft">
+                                                <button class="bg_wht grn del on"></button>
+                                                <button class="bg_wht grn prev off"></button>
+                                                <button class="bg_wht grn next off"></button>
+                                            </div>
+                                            <div class="pos_rgt">
+                                                <button class="bg_wht grn pen off"></button>
+                                                <button class="bg_wht grn eraser off"></button>
+                                            </div>
+                                        </div>
+                                        <!-- //진단세트 아이콘 추가 on/off -->
+
+                                    </div>
+								
+								</div>
+								<!-- //4. 필기패드 영역 끝 -->
+
+
+
+                                <!-- 4. 필기패드 영역 시작 -->
+								<div class="keypad_wrap" id="keypad_wrap4">  <!-- id=keypad_wrap4,  style="display: none;"는 퍼블확인용 임시코드입니다. 개발시에는 삭제해주세요. -->
+								
+								    <div class="keypad_gm notes">
+                                        <div class="mid_area">
+                                            <div class="notes_cont">
+                                            </div>
+                                        </div>
+                                        <div class="lower_area">
+                                            <table summary="키패드">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="left"><button class="pen btn-chg-note blue" type="button"><img src="./static/images/icon/keypad/ic_handwrite_blue.svg" alt="" /></button></td>
+                                                        <td class="grading"><button class="btn btn-blue" type="button">채점하기</button></td>
+                                                        <td class="arr_area">
+                                                            <button class="lr_arr blue" type="button"><img src="./static/images/icon/keypad/ic_lc_answermove_back.svg" alt="" /></button>
+                                                            <button class="lr_arr blue" type="button"><img src="./static/images/icon/keypad/ic_lc_answermove_next.svg" alt="" /></button>
+                                                            <div class="tooltip arr_tip js_fadeout">정답칸은 이 버튼을<br>선택해서 이동해줘!</div>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                           <!-- 문제풀이 세트 아이콘 추가 on/off 버튼 눌렀을 시 1개만 활성화 -->
+                                           <div class="btn_wrap">
+                                            <div class="pos_lft">
+                                                <button class="bg_wht blue del off"></button>
+                                                <button class="bg_wht blue prev off"></button>
+                                                <button class="bg_wht blue next off"></button>
+                                            </div>
+                                            <div class="pos_rgt">
+                                                <button class="bg_wht blue pen on"></button>
+                                                <button class="bg_wht blue eraser off"></button>
+                                            </div>
+                                        </div>
+                                        <!-- //문제풀이 세트 아이콘 추가 on/off -->
+
+                                    </div>
+								
+								</div>
+								<!-- //4. 필기패드 영역 끝 -->
+								
+							</div>
+							<!-- //keypadBox -->
+							
+                            <!--특수 수식 입력 팝업(분수, 제곱근 등)-->
+                            <div class="input_pop"><!--노출시 class on(퍼블에서는 스크립트로 class 제어)-->
+                                <div class="head_wrap">
+                                    <button class="x" type="button"><img src="./static/images/icon/keypad/ic_input_close.svg" alt="" /></button>
+                                </div>
+                                <div class="cont_wrap">
+                                    <div class="write">
+                                        <!--수식영역-->
+                                    </div>
+                                </div>
+                                <div class="foot_wrap">
+                                    <button type="button"><span>다시하기</span></button>
+                                    <button class="check" type="button"><span>확인</span></button>
+                                </div>
+                            </div>
+                            <!--//특수 수식 입력 팝업(분수, 제곱근 등)-->
+							
+                            <!--진단테스트에서 노출되는 버튼-->
+                            <div class="ask_area">
+                                <button class="ask">잘 모르겠어요</button>
+                            </div>
+                            <!--//진단테스트에서 노출되는 버튼-->
+							
+						</div>
+					</div>
+					<!-- //learningBox -->
+				</div>
+				
+				<!--연습장 안내-->
+				<div class="note_guide">
+				    <div class="txt_box">빈 공간은 연습장! 손가락이나 펜으로 쓸 수 있어.</div>
+				<!--//연습장 안내-->
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		
+	</div>
+</div>
+
+<!-- 퍼블단 확인용 스크립트입니다. 개발시 참조해서 "활용"해주세요. -->
+<script>
+	//학습하기에서 보기버튼 눌렀을때
+	$(document).on('click', '.btn-viewopen', function(){
+	  $(this).toggleClass('on');
+	  $(this).next('.viewopen-detail').toggleClass('on');
+	});
+
+	// 정답입력 버튼 눌렀을때 키패드로 전환
+	$(document).on('click', '.btn-inputAnswer', function(){
+		$('.learning_picture').addClass('unactive');
+		$('.onlyButtonBox').removeClass('active');
+		$('.keypadBox').addClass('active');
+		$('.v-mob .learningTail').addClass('on');
+		$('.learning_body').addClass('with_key');
+        if($('.v-mob .middle').is(':visible')){ //모바일에서 중등 키패드 노출시 다른 키패드보다 높이가 높으므로 learning_body에 클래스를 추가로 붙여 css에서 제어함  
+            $('.v-mob .learning_body.with_key').addClass('with_middle_key');
+        };
+        
+        //키패드의 화살표 버튼의 툴팁 페이드아웃
+        setTimeout( "$('.js_fadeout').addClass('disappear')" , 2000 );
+	});
+	$(document).on('click', '.btn-close-pad', function(){
+		$('.learning_picture').removeClass('unactive');
+		$('.onlyButtonBox').addClass('active');
+		$('.keypadBox').removeClass('active');
+		$('.v-tab .learningTail').removeClass('on');
+		$('.learning_body').removeClass('with_key');
+	});
+
+	// 필기패드로 전환
+	$(document).on('click', '.btn-chg-note', function(){
+	  var _target = $('.keypad_gm.notes').closest('.keypad_wrap');
+	  var _thisPad = $(this).closest('.keypad_wrap');
+	  $('.keypad_wrap').not(_target).css('display', 'none');
+	  _target.css('display', 'block');
+	  //필기패드에서 원래패드로 전환
+	  $('.btn-chg-num').on('click', function(){
+	  	$('.keypad_wrap').not(_thisPad).css('display', 'none');
+	  	_thisPad.css('display', 'block');
+	  });
+	});
+
+	//퍼블단의 화면 확인용 - 키패드 안의 분수 input의 size값이 value를 변화시킬때마다 조절되도록 설정
+	$(document).on('keydown', '.form-control', function(e){
+		var _inputLen = $(this).val().length;
+		var _key = event.which || event.keyCode || event.charCode;
+		if( _key == 8 || _key == 46){
+			_inputLen = (_inputLen < 2) ? 1 : _inputLen-1;
+		}else{
+			_inputLen = (_inputLen > 3) ? 4 : _inputLen+1;
+		}
+		$(this).attr('size', _inputLen);
+	});
+    
+    $(function(){
+        var _mathWrapHeight = $('.mathExp-wrap').height();
+        $('.note_guide').css('height', _mathWrapHeight+'px'); //연습장 안내 레이어가 보이기직전에 한번만
+
+        //연습장 안내 레이어 페이드아웃
+        setTimeout( "$('.note_guide').addClass('disappear')" , 2000 );
+        
+        //연습장 안내 레이어의 높이값 조정
+        var $tit = $('.mathQuest-wrap .tit'),
+            tit_h = $tit.innerHeight();
+        if(tit_h > 32){
+            $('.note_guide').addClass('short');
+        };
+        
+        //연습장 안내 레이어 클릭하거나 '정답입력' 버튼 클릭시 안내 레이어 사라짐
+        $('.note_guide, .btn-inputAnswer').on('click', function(){
+            $('.note_guide').hide();
+        });
+    });
+</script>
+
+<!-- 퍼블단에서 화면확인용 스크립트입니다. 개발시 "삭제"해주세요. -->
+<script>
+	$('.btn-learning-del').on('click', function(){
+	  $(this).remove();
+	});
+	$('.tmpBtn button').on('click', function(){
+	  _target = $(this).attr('data-target');
+	  $('.keypad_wrap').not($(_target)).css('display', 'none');
+	  $(_target).css('display', 'block');
+	});
+
+
+	var ajaxOtp = {
+	  url : 'ex_calc.html',
+	  async : true,
+	  dataType : "html",
+	  chache : false
+	}
+	$.ajax(ajaxOtp).done(function(data) {
+	  $('.mathExt').children().remove();
+	  $('.mathExt').html(data);
+      $('.mathExt').append('<div class="learning_picture"></div>');
+	}).fail(function() {
+	  //console.log("error");
+	}).always(function() { });
+
+	// 클릭한 네모에만 클래스 focusedInput가 추가되도록 설정
+	// 입력이 모두 끝나면 클래스 focusedInput 삭제되도록 설정해주세요.
+	$(document).on('click', '.mjx-box', function(){
+		if($(this).closest('.mjx-box').length < 1 ){
+			$('.mjx-box').not($(this)).removeClass('focusedInput');
+			$(this).addClass('focusedInput');
+		}
+	});
+
+
+</script>
+
+</body>
+</html>
