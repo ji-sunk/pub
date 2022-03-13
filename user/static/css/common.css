@@ -570,10 +570,10 @@ button[disabled] { background-color: #f2f4f8; color: rgba(50,60,70,0.4); font: n
    .v-tab .gm .mathExt{padding-bottom: 96px;}
 }
    .v-mob .gm .mathExt {padding-top: 48px;}
-.btn-learning-del { display: none; position: absolute; top: 16px; left: 21px; width: 33px; height: 41px; font-size: 0; background: url('../images/icon/ic_canvas_delete.png') 0 0 no-repeat; background-size: cover; z-index: 25; }
-.gm .btn-learning-del{width: 58px; height: 56px; background: url(../images/icon/ic_handremove.svg) no-repeat 50% 50% / 48px 46px #5663d9; border-radius: 22px; box-shadow: 0 2px 3px 0 rgba(0, 45, 100, 0.16); left: 34px; top: auto; bottom: -48px;}
+.btn-learning-del { position: absolute; top: 16px; left: 21px; width: 33px; height: 41px; font-size: 0; background: url('../images/icon/ic_canvas_delete.png') 0 0 no-repeat; background-size: cover; z-index: 25; }
+.gm .btn-learning-del{width: 58px; height: 56px; background: url(../images/icon/ic_handremove.svg) no-repeat 50% 50% / 48px 46px #d4d8f6; border-radius: 22px; box-shadow: 0 2px 3px 0 rgba(0, 45, 100, 0.16); left: 34px; top: auto; bottom: -48px;}
     .v-mob .gm .btn-learning-del{width: 42px; height: 40px; left: 16px; bottom: -40px; box-shadow: none; border-radius: 16px; background-size: 32px;}
-.btn-learning-del.active { display: block; }
+	.btn-learning-del.on {background-color: #5663d9 !important }
 .btn-learning-del[disabled] { font-size: 0; cursor: initial; background-color: transparent; }
 .note_btn{position: absolute; font-size: 0; z-index: 25; width: 58px; height: 56px; background: url(../images/icon/ic_lc_scratchpad.svg) no-repeat 50% 50% #00c3e1; border-radius: 22px; box-shadow: 0 2px 3px 0 rgba(0, 45, 100, 0.16); left: 34px; bottom: -48px;}
     .v-mob .note_btn{width: 42px; height: 40px; left: 16px; bottom: -40px; box-shadow: none; border-radius: 16px; background-size: 32px;}
@@ -1035,7 +1035,9 @@ button[disabled] { background-color: #f2f4f8; color: rgba(50,60,70,0.4); font: n
 .gb .wa-head ul li.slick-active button, .gb .wa-head ul li button.on{background-color: #fff; color: #00c3e1;}
 	.v-mob .wa-head button { width: 40px; height: 32px; line-height: 32px; font-size: 16px; }
 	.v-mob .gb .wa-head button{min-width: 39px; width: 39px; height: 32px; line-height: 20px; font-size: 14px;}
+
 .wa-body { height: calc(100% - 80px);  transition: height 200ms; padding-left: 100px; padding-right: 100px; }
+
 .gb .wa-body{height: calc(100%);}
 	.v-tab .wa-body { padding-left: 0; padding-right: 0; }
 	.v-mob .wa-body { height: calc(100% - 64px); padding-left: 0; padding-right: 0; }
@@ -1091,6 +1093,36 @@ button[disabled] { background-color: #f2f4f8; color: rgba(50,60,70,0.4); font: n
 	.v-tab .wa-wrapper .slick-next { right: -64px; }
 }
 
+
+/* 학습하기 - 오답확인 1분기 추가 수정 BTN */
+.wa-cont_head {display:block; margin-bottom:30px}
+.epnPopup-wrap { display: -ms-flexbox; display: flex; flex-direction: row; font-family: 'NotoSansCJKkr-Bold'; color: #323c46; }
+.epnPopup-wrap .btn-viewopen-wrap { position: relative; -ms-flex-positive: 0; flex-grow: 0; }
+.epnPopup-wrap .btn-viewopen { position: relative; padding-right: 15px; text-align: center; background-color: #5a768f; border-radius: 12px; font: normal 14px 'NotoSansCJKkr-Regular'; color: #fff; }
+.epnPopup-wrap .viewopen-detail {display: none; z-index:30;  overflow: auto; position: absolute; top: 36px; right: 0; width: calc(100vw - 100px); 
+	max-width: 542px; height: auto; min-height:300px; background-color: #fff; border: 1px solid #e4ebf4;  box-shadow:0 2px 20px 0 #e4ebf4; }
+/* .epnPopup-wrap .viewopen-detail-inner { width: 100%; height: 100%; position: relative;} */
+.epnPopup-wrap .viewopen-detail-inner { margin:20px 24px; white-space:initial;}
+.epnPopup-wrap .viewopen-detail.on {display: block; margin-top:10px}
+.epnPopup-wrap .pvBox {text-align: left;}
+
+.wa-btnbox {display:flex; position:relative}
+.wa-btnbox .flt_rgt {position:absolute; right:0; white-space:nowrap;}
+.wa-btnbox button {float:left; padding:0px 12px 0 35px; margin-right:8px; height: 34px; font: normal 14px 'NotoSansCJKkr-Regular'; text-align: center;  border-radius: 12px;}
+	.v-mob .wa-btnbox button {margin-right:4px;}
+.wa-btnbox button:last-child {margin-right:-4px;}
+.wa-btnbox .off {color: #00c3e1; background-color: #eafafc !important}
+.wa-btnbox button.on {color: #fff;}
+.btn_epn.off {background: url(../images/icon/ic_epn.svg) 6px 50% no-repeat;	background-size: 25px;}
+.btn_epn.on {background: url(../images/icon/ic_epn_on.svg) 6px 50% no-repeat;background-size: 25px; background-color: #3c5a7d!important}
+.btn_redo.off {background: url(../images/icon/ic_redo.svg) 6px 50% no-repeat; background-size: 25px;}
+.btn_chansr.off {background: url(../images/icon/ic_chansr.svg) 6px 50% no-repeat; background-size: 25px;}
+.btn_chansr.on {background: url(../images/icon/ic_chansr_on.svg) 6px 50% no-repeat; background-size: 25px;  background-color: #00c3e1 !important}
+
+@media screen and (max-width:350px) {
+	.v-mob .epnPopup-wrap .viewopen-detail {width: calc(100vw - 35px);}
+	.v-mob .wa-btnbox button {padding:0px 12px 0 28px; font-size:12px; background-size:20px;}
+}
 
 
 /* 진단테스트 */
