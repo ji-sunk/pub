@@ -1099,15 +1099,13 @@ button[disabled] { background-color: #f2f4f8; color: rgba(50,60,70,0.4); font: n
 .epnPopup-wrap { display: -ms-flexbox; display: flex; flex-direction: row; font-family: 'NotoSansCJKkr-Bold'; color: #323c46; }
 .epnPopup-wrap .btn-viewopen-wrap { position: relative; -ms-flex-positive: 0; flex-grow: 0; }
 .epnPopup-wrap .btn-viewopen { position: relative; padding-right: 15px; text-align: center; background-color: #5a768f; border-radius: 12px; font: normal 14px 'NotoSansCJKkr-Regular'; color: #fff; }
-.epnPopup-wrap .viewopen-detail {display: none; z-index:30;  overflow: auto; position: absolute; top: 36px; right: 0; width: calc(100vw - 200px); 
-	max-width: 542px; height: auto; min-height:300px; background-color: #fff; border: 1px solid #e4ebf4;  box-shadow:0 2px 20px 0 #e4ebf4; }
+.epnPopup-wrap .viewopen-detail {display: none; z-index:30; padding:24px 20px; overflow: auto; position: absolute; top: 36px; right: 0; width: calc(100vw - 200px); max-width: 300px; height: auto; min-height:300px; background-color: #fff; border: 1px solid #e4ebf4;  box-shadow:0 2px 20px 0 #e4ebf4; }
 	.v-mob .epnPopup-wrap .viewopen-detail {width: calc(100vw - 100px);}
 /* .epnPopup-wrap .viewopen-detail-inner { width: 100%; height: 100%; position: relative;} */
-.epnPopup-wrap .viewopen-detail-inner {margin:20px 24px; white-space:initial;}
+.epnPopup-wrap .viewopen-detail-inner {white-space:initial;}
 .epnPopup-wrap .viewopen-detail.on {display: block; margin-top:10px}
 .epnPopup-wrap .pvBox {text-align: left;}
 .epnPopup-wrap .pvBox .pv-cont {text-align: center; min-width:300px}
-/* .epnPopup-wrap .con {text-align: center;} */
 
 .wa-btnbox {display:flex; position:relative}
 .wa-btnbox .flt_rgt {position:absolute; right:0; white-space:nowrap;}
