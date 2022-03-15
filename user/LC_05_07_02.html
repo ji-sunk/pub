@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+    <script src="static/js/lottie.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+		<!-- 
+			* new-lr에 추가될 클래스 정리 
+			1. 노력 : new-lr-effort
+			2. 기본 : new-lr-def 
+			3. 충분 : new-lr-enough
+			4. 훌륭 : new-lr-nice
+		-->
+		<div class="layout-def layout-lc new-lr new-lr-def">
+			<div class="header">
+				<div class="inner">
+					<div class="headerBox">
+						<div class="headerBox_head">
+							<h1 class="tit">받아올림이 없는 덧셈(2)</h1>
+							<button class="btn-close-wrap">닫기</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="lr-topVisual-wrap">
+					<div class="inner">
+						<div class="lr-topVisual">
+							<div class="lr-topVisual-head">
+								<h2 class="visual-tit"><span class="ico def"></span>기본</h2>
+								<!-- .ico의 클래스 정리
+									1. 노력 : effort
+									2. 기본 : def
+									3. 충분 : enough
+									4. 훌륭 : nice
+								 -->
+							</div>
+							<div class="lr-topVisual-body">
+								<div class="asv-wrap">
+									<div class="accuracy-wrap">
+										<div class="accuracy-header">
+											<p class="tit">정확도</p>
+											<div class="accuracy-tooltip">
+												<button class="btn-help btn-tooltip"></button>
+												<!-- 말풍선 영역 시작 -->
+												<div class="tooltip-def tooltipBox">
+													<p>이 스테이지의 문제를 틀리지<br>않고 잘 맞힐 수 있는 확률이야.<br>높을수록 좋은 거야.</p>
+													<button class="btn-closeTooltip btn-close-tooltip"></button>
+												</div>
+												<!-- //말풍선 영역 끝 -->
+											</div>
+										</div>
+										<div class="accuracy-cont">
+											<div class="accuracy">
+												<div class="accuracy-bar" style="width: 70%;"></div> <!-- 색상 %로 넣기  -->
+												<div class="accuracy-line">
+													<span class="line line1"></span>
+													<span class="line line2"></span>
+													<span class="line line3"></span>
+												</div>
+
+											</div>
+											<div class="accuracy-labelbox onlyTxt">
+												<div class="a-label label1"><span class="txt">미달</span></div><!-- 0 ~ 66.6% 이하일때 : a-label에 클래스 on 추가 -->
+												<div class="a-label label2 on"><span class="txt">보통</span></div><!-- 66.6% 초과 ~ 80% 이하일때 : a-label에 클래스 on 추가 -->
+												<div class="a-label label3"><span class="txt">높음</span></div><!-- 80% 초과 ~ 95% 이하일때 : a-label에 클래스 on 추가 -->
+												<div class="a-label label4"><span class="txt">완벽</span></div><!-- 95% 초과일때 : a-label에 클래스 on 추가 -->
+												<!-- (예시) 93%일때 : label4에만 클래스 on 추가 -->
+											</div>
+										</div>
+									</div>
+									<div class="speedometer-wrap">
+										<div class="speedometerBox">
+											<div class="gaugeBox" data-sw-m="13" data-sw-t="13" data-sw-pc="13">
+												<canvas id="mySpeed"></canvas>
+												<div class="txtBox">
+													<p class="tit">속도</p>
+													<p class="txt">보통</p>
+													<!-- p.txt의 텍스트 정리
+														0 ~ 66.6% 이하일 때 : 미달
+														66.% 초과 ~ 80% 이하일 때 : 보통
+														80% 초과 ~ 95% 이하일 때 : 높음
+														95% 초과 ~ 100% : 빠름
+													 -->
+												</div>
+											</div>
+											<script>
+												// 퍼블확인용 
+												$(document).ready(function(){
+													speedometer("mySpeed", 0.7, '#f0f4f8', '#ff6e5f'); //accuracy-bar 에 들어가는 width %와 확인 필수 
+												});
+												// 개발용 : 화면 로딩 후 && 데이터 들어간 후에 실행
+													//speedometer("mySpeed", 0.7, '#f0f4f8', '#ff6e5f');
+											</script>
+										</div>
+									</div>
+								</div>
+								<!-- //asv-wrap -->
+							</div>
+							<div class="lr-topVisual-foot">
+								<p class="txt">
+									<!-- 1. 노력 -->
+									<!-- 개념을 잘 이해하고 있어. <br>
+									자신감을 갖고 문제를 좀 더 빨리 풀어보자. -->
+									<!-- 2. 기본 -->
+									정확하게 푸는 연습을 더 해 보자.
+									<!-- 3. 충분 -->
+									<!-- 개념을 잘 이해하고 있어. 만점에 도전해봐! -->
+									<!-- 4. 훌륭 -->
+									<!-- 우와! 굉장해! 혹시 천재? -->
+								</p>
+								<div class="lr-topVisual-ani">
+									<div class="anim-wrap" id="anim_05_10"></div>
+									<script>
+										func_animation('anim_05_10', 'ai_lc_05_10', true);
+									</script>
+									<!-- 애니메이션 id및 파일명 정리
+										1. 노력 : anim_05_07 , ai_lc_05_07
+										2. 기본 : anim_05_10 , ai_lc_05_10
+										3. 충분 : anim_05_11 , ai_lc_05_11
+										4. 훌륭 : anim_05_12 , ai_lc_05_12
+									 -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="inner">
+					<div class="centermiddleBox">
+						<div class="centermiddleBox-item">
+
+							<div class="lr-mySB lr-mySB-btm">
+								<!--  맞힌 문제 수, 정답률, 학습 시간 등등의 항목이 필요없다면? 해당된 곳의 lr-mySB-item를 삭제/숨김처리 -->
+								<div class="lr-mySB-item item-solve">
+									<p class="lr-mySB-tit">맞힌 문제 수</p>
+									<span class="lr-mySB-txt">14 <span class="small">/ 20</span></span> 
+								</div>
+								<div class="lr-mySB-item item-rate">
+									<p class="lr-mySB-tit">정답률</p>
+									<span class="lr-mySB-txt">70%</span>
+								</div>
+								<div class="lr-mySB-item item-time">
+									<p class="lr-mySB-tit">학습 시간</p>
+									<span class="lr-mySB-txt">30분 08초</span>
+								</div>
+							</div><!-- //lr-mySB -->
+							
+							<div class="lr-mySB lr-mySB-btm">
+								<!-- 스테이지 다운이 없어없길래.. 우선 display:none 처리 -->
+								<div class="lr-mySB-item item-stage" style="display: none;">
+									<div class="lr-mySB-tit">
+										<p>스테이지다운</p>
+										<div class="lr-mySB-tit-tooltip">
+											<button class="btn-help btn-tooltip"></button>
+											<!-- 말풍선 영역 시작 -->
+											<div class="tooltipBox topCenter">
+												<div class="tooltip-def">
+													<p>
+														예전 스테이지에서 풀어봤던<br>
+														<span class="t-underline">문제 5개</span> 잘 알고 있는지<br>
+														확인해 봤어.
+														<button class="btn-closeTooltip btn-close-tooltip"></button>
+													</p>
+												</div>
+											</div>
+											<!-- //말풍선 영역 끝 -->
+										</div>
+									</div>
+									<button class="lr-mySB-txt">5개</button>
+								</div>
+								<div class="lr-mySB-item item-wrong">
+									<p class="lr-mySB-tit">오답 확인하기</p>
+									<button class="lr-mySB-txt">10개</button>
+								</div>
+								<div class="lr-mySB-item item-concept">
+									<p class="lr-mySB-tit">개념 확인하기</p>
+									<span class="lr-mySB-txt">
+										<button class="visited">1</button><!-- 해당 영상을 보고나면 클래스 visited 추가 -->
+										<button>2</button>
+									</span>
+								</div>
+					 		</div><!-- //lr-mySB -->
+
+
+							<!-- 20220315 1분기 개선사항 추천 학습 영역 추가 -->
+							<div class="AI_RcmdLning_wrap">
+
+								<div class="Rcmd_tit">
+									<span class="tit_blue">AI추천학습</span> <br>도움이 되는 학습이야. 한번 풀어볼까?
+								</div>
+								<div class="Rcmd_item_area">
+									<div class="Rcmd_item">
+										<img src="https://s3.ap-northeast-2.amazonaws.com/wjtb-dev-pub/brs/img/stage/F23_0_1.svg" alt="">
+										<p class="sub_txt">한 자리 수 덧셈(5)</p>
+									</div>
+
+									<div class="Rcmd_item">
+										<img src="https://s3.ap-northeast-2.amazonaws.com/wjtb-dev-pub/brs/img/stage/F23_0_1.svg" alt="">
+										<p class="sub_txt">한 자리 수 덧셈(6)</p>
+									</div>
+									<div class="Rcmd_item">
+										<img src="https://s3.ap-northeast-2.amazonaws.com/wjtb-dev-pub/brs/img/stage/F23_0_1.svg" alt="">
+										<p class="sub_txt">한 자리 수 덧셈(7)</p>
+									</div>
+								</div>
+
+							</div>
+							
+
+
+
+							<div class="chartBox" style="display: none;"><!-- 스테이지 다운이 없어없길래.. 우선 display:none 처리 -->
+								<div class="lr-chart-tit">나의 학습결과 변화</div>
+								<div class="lr-chart">
+									<!-- 차트영역 -->
+									<img src="static/images/tmp/graph.png" alt="" class="tmpImg m-none"><!-- 퍼블 확인용 임시 이미지입니다. 개발시 "꼭" 삭제해주세요. -->
+									<img src="static/images/tmp/graph_m.png" alt="" class="tmpImg pc-none"><!-- 퍼블 확인용 임시 이미지입니다. 개발시 "꼭" 삭제해주세요. -->
+
+									<!-- 차트 색상 정리
+										정답률 : 4px #f5b400 [dotted]
+										정확도 : 4px #32a0ff
+										속도 : 4px #ff6e5f
+										x축 회색 실선 : 2px #f6f8fa
+										x축 label 텍스트 : 12px #96a0aa , font-family: 'NotoSansCJKkr-Bold'
+									 -->
+
+									<!-- 차트 안에 들어가는 툴팁 -->
+									<div class="chartTooltipBox" style="position: absolute; bottom: 20px; left: 50%">
+										<p class="tit">2회</p>
+										<p class="txt">정답률 : 10%</p>
+										<p class="txt">정확도 : 24%</p>
+										<p class="txt">속도 : 느림</p>
+									</div>
+								</div>
+								<div class="lr-chart-label">
+									<span class="rate">정답률</span>
+									<span class="accuracyl">정확도</span>
+									<span class="speed">속도</span>
+								</div>
+							</div><!-- //chartBox -->
+
+						</div>
+					</div>
+					<!-- //centermiddleBox -->
+				</div>
+			</div>
+			<!-- //container -->
+			<div class="footer grad footer-grad">
+				<div class="footer-inner">
+					<!-- 1. 노력 -->
+					<!-- <button class="btn btn-red">계속 학습하기</button> -->
+
+					<!-- 2. 노력 이외 : 기본/충분/훌륭 -->
+					<div class="d-flex">
+						<div class="d-item">
+							<button class="btn btn-sky">충분 도전<span class="m-none">하기</span></button>
+						</div>
+						<div class="d-item btnItem-auto"><!-- 다음스테이지 학습 버튼이 필요없다면, d-item btnItem-auto 이 영역 자체를 가려주세요 -->
+							<button class="btn btn-blue">다음 스테이지 학습<span class="m-none">하기</span></button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- //footer -->
+		</div>
+		
+	</div>
+</div>
+
+
+</body>
+</html>
