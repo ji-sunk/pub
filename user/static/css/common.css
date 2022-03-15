@@ -856,6 +856,7 @@ button[disabled] { background-color: #f2f4f8; color: rgba(50,60,70,0.4); font: n
 	.v-mob .layout-lr-effort .lr-icoBox ul li.ico1 { font-size: 14px; }
 .lr-mySB { display: -ms-flexbox; display: flex; width: 692px; margin: 0 auto; justify-content: space-between; margin-bottom: 24px; }
 .layout-lr-dark .lr-mySB { margin-bottom: 32px; }
+
 .lr-mySB-item { position: relative; width: 100%; height: 136px; padding: 24px; margin: 0 10px; background-color: #fff; border-radius: 24px; font-family: 'NotoSansCJKkr-Bold'; text-align: left; }
 .layout-lr-dark .lr-mySB-item { height: 120px; }
 .lr-mySB-btm .lr-mySB-item { text-align: center;}
@@ -896,6 +897,24 @@ button[disabled] { background-color: #f2f4f8; color: rgba(50,60,70,0.4); font: n
 .new-lr-enough .lr-mySB-item .lr-mySB-txt button.visited { background-color: #d6f8f1; color: #fff; }
 .new-lr-nice .lr-mySB-item .lr-mySB-txt button { background-color: #f6ecff; color: #b96ef5; }
 .new-lr-nice .lr-mySB-item .lr-mySB-txt button.visited { background-color: #f6ecff; color: #fff; }
+
+
+/* 학습 결과 _ AI 추천 학습 */
+.AI_RcmdLning_wrap {flex-wrap: wrap;}
+.Rcmd_tit {display:block;  margin-bottom:24px; font-weight: bold; color:#000}
+.Rcmd_tit .tit_blue {font-weight: bold; color: #1fc3e1;}
+
+.Rcmd_item_area {display: flex; justify-content: space-between; margin-bottom: 24px;
+	width: 692px; margin: 0 auto;}
+	.v-mob .Rcmd_item_area {flex-wrap: wrap; justify-content: flex-start; max-width:100%}
+.Rcmd_item_area .Rcmd_item {position: relative; margin: 0 10px; width: 100%; max-height:136px; border-radius: 24px; font-family: 'NotoSansCJKkr-Bold';}
+	.v-mob .Rcmd_item_area .Rcmd_item {margin:0 2.5%; width:45%; max-height:100%}
+	.v-mob .Rcmd_item_area .Rcmd_item:nth-child(n+3) {margin-top:17px}
+.Rcmd_item_area .Rcmd_item img {width: auto;  max-width: 100%;  height: auto; max-height: 100%; border-radius: 16px; background-color: #fff;}
+	
+.Rcmd_item_area .Rcmd_item .sub_txt { text-align: center; margin-top:5px; font-size: 16px; line-height: 1.5; color: #0abedc; font-family: 'NotoSansCJKkr-Regular'}
+	.v-mob .Rcmd_item_area .Rcmd_item .sub_txt {font-size: 12px;}
+
 .lr-mySB-tit-tooltip { position: relative; display: inline-block; z-index: 2; }
 .lr-mySB-tit-tooltip .btn-help { width: 18px; height: 18px; margin-left: 3px; background: url('../images/icon/ic_help_blue.png') center center no-repeat transparent; background-size: cover; }
 /* chart */
