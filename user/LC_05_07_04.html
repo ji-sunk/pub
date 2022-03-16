@@ -34,7 +34,7 @@
 			3. 충분 : new-lr-enough
 			4. 훌륭 : new-lr-nice
 		-->
-		<div class="layout-def layout-lc new-lr new-lr-def">
+		<div class="layout-def layout-lc new-lr new-lr-nice">
 			<div class="header">
 				<div class="inner">
 					<div class="headerBox">
@@ -51,7 +51,7 @@
 					<div class="inner">
 						<div class="lr-topVisual">
 							<div class="lr-topVisual-head">
-								<h2 class="visual-tit"><span class="ico def"></span>기본</h2>
+								<h2 class="visual-tit"><span class="ico nice"></span>훌륭</h2>
 								<!-- .ico의 클래스 정리
 									1. 노력 : effort
 									2. 기본 : def
@@ -76,7 +76,7 @@
 										</div>
 										<div class="accuracy-cont">
 											<div class="accuracy">
-												<div class="accuracy-bar" style="width: 70%;"></div> <!-- 색상 %로 넣기  -->
+												<div class="accuracy-bar" style="width: 95%;"></div> <!-- 색상 %로 넣기  -->
 												<div class="accuracy-line">
 													<span class="line line1"></span>
 													<span class="line line2"></span>
@@ -86,9 +86,9 @@
 											</div>
 											<div class="accuracy-labelbox onlyTxt">
 												<div class="a-label label1"><span class="txt">미달</span></div><!-- 0 ~ 66.6% 이하일때 : a-label에 클래스 on 추가 -->
-												<div class="a-label label2 on"><span class="txt">보통</span></div><!-- 66.6% 초과 ~ 80% 이하일때 : a-label에 클래스 on 추가 -->
+												<div class="a-label label2"><span class="txt">보통</span></div><!-- 66.6% 초과 ~ 80% 이하일때 : a-label에 클래스 on 추가 -->
 												<div class="a-label label3"><span class="txt">높음</span></div><!-- 80% 초과 ~ 95% 이하일때 : a-label에 클래스 on 추가 -->
-												<div class="a-label label4"><span class="txt">완벽</span></div><!-- 95% 초과일때 : a-label에 클래스 on 추가 -->
+												<div class="a-label label4 on"><span class="txt">완벽</span></div><!-- 95% 초과일때 : a-label에 클래스 on 추가 -->
 												<!-- (예시) 93%일때 : label4에만 클래스 on 추가 -->
 											</div>
 										</div>
@@ -99,7 +99,7 @@
 												<canvas id="mySpeed"></canvas>
 												<div class="txtBox">
 													<p class="tit">속도</p>
-													<p class="txt">보통</p>
+													<p class="txt">빠름</p>
 													<!-- p.txt의 텍스트 정리
 														0 ~ 66.6% 이하일 때 : 미달
 														66.% 초과 ~ 80% 이하일 때 : 보통
@@ -111,10 +111,10 @@
 											<script>
 												// 퍼블확인용 
 												$(document).ready(function(){
-													speedometer("mySpeed", 0.7, '#f0f4f8', '#ff6e5f'); //accuracy-bar 에 들어가는 width %와 확인 필수 
+													speedometer("mySpeed", 0.95, '#f0f4f8', '#ff6e5f'); //accuracy-bar 에 들어가는 width %와 확인 필수 
 												});
 												// 개발용 : 화면 로딩 후 && 데이터 들어간 후에 실행
-													//speedometer("mySpeed", 0.7, '#f0f4f8', '#ff6e5f');
+													//speedometer("mySpeed", 0.95, '#f0f4f8', '#ff6e5f');
 											</script>
 										</div>
 									</div>
@@ -127,16 +127,16 @@
 									<!-- 개념을 잘 이해하고 있어. <br>
 									자신감을 갖고 문제를 좀 더 빨리 풀어보자. -->
 									<!-- 2. 기본 -->
-									정확하게 푸는 연습을 더 해 보자.
+									<!-- 정확하게 푸는 연습을 더 해 보자. -->
 									<!-- 3. 충분 -->
 									<!-- 개념을 잘 이해하고 있어. 만점에 도전해봐! -->
 									<!-- 4. 훌륭 -->
-									<!-- 우와! 굉장해! 혹시 천재? -->
+									우와! 굉장해! 혹시 천재?
 								</p>
 								<div class="lr-topVisual-ani">
-									<div class="anim-wrap" id="anim_05_10"></div>
+									<div class="anim-wrap" id="anim_05_12"></div>
 									<script>
-										func_animation('anim_05_10', 'ai_lc_05_10', true);
+										func_animation('anim_05_12', 'ai_lc_05_12', true);
 									</script>
 									<!-- 애니메이션 id및 파일명 정리
 										1. 노력 : anim_05_07 , ai_lc_05_07
@@ -157,11 +157,11 @@
 								<!--  맞힌 문제 수, 정답률, 학습 시간 등등의 항목이 필요없다면? 해당된 곳의 lr-mySB-item를 삭제/숨김처리 -->
 								<div class="lr-mySB-item item-solve">
 									<p class="lr-mySB-tit">맞힌 문제 수</p>
-									<span class="lr-mySB-txt">14 <span class="small">/ 20</span></span> 
+									<span class="lr-mySB-txt">19 <span class="small">/ 20</span></span> 
 								</div>
 								<div class="lr-mySB-item item-rate">
 									<p class="lr-mySB-tit">정답률</p>
-									<span class="lr-mySB-txt">70%</span>
+									<span class="lr-mySB-txt">95%</span>
 								</div>
 								<div class="lr-mySB-item item-time">
 									<p class="lr-mySB-tit">학습 시간</p>
@@ -194,7 +194,7 @@
 								</div>
 								<div class="lr-mySB-item item-wrong">
 									<p class="lr-mySB-tit">오답 확인하기</p>
-									<button class="lr-mySB-txt">10개</button>
+									<button class="lr-mySB-txt">4개</button>
 								</div>
 								<div class="lr-mySB-item item-concept">
 									<p class="lr-mySB-tit">개념 확인하기</p>
@@ -203,8 +203,7 @@
 										<button>2</button>
 									</span>
 								</div>
-					 		</div><!-- //lr-mySB -->
-
+							</div><!-- //lr-mySB -->
 
 							<!-- 20220316 1분기 개선사항 추천 학습 영역 추가 -->
 							<div class="AI_RcmdLning_wrap">
@@ -227,7 +226,6 @@
 								</div>
 							</div>
 							<!-- //20220316 1분기 개선사항 추천 학습 영역 추가 -->
-
 
 							<div class="chartBox" style="display: none;"><!-- 스테이지 다운이 없어없길래.. 우선 display:none 처리 -->
 								<div class="lr-chart-tit">나의 학습결과 변화</div>
@@ -273,7 +271,7 @@
 					<!-- 2. 노력 이외 : 기본/충분/훌륭 -->
 					<div class="d-flex">
 						<div class="d-item">
-							<button class="btn btn-sky">충분 도전<span class="m-none">하기</span></button>
+							<button class="btn btn-sky">복습하기</button>
 						</div>
 						<div class="d-item btnItem-auto"><!-- 다음스테이지 학습 버튼이 필요없다면, d-item btnItem-auto 이 영역 자체를 가려주세요 -->
 							<button class="btn btn-blue">다음 스테이지 학습<span class="m-none">하기</span></button>
