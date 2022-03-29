@@ -71,7 +71,6 @@
 											</p>
 										</div>
 
-
 										<!-- 220314 1분기 개선사항 BTN 추가 -->
 										<!-- 기존 스위치 영역 제거 해 주시면 됩니다. -->
 										<!-- <div class="wa-switchBox">
@@ -87,34 +86,45 @@
 										<div class="wa-btnbox epnPopup-wrap">
 											<div class="flt_rgt">
 												<button class="btn_epn off btn-viewopen" type="button">풀이</button>
-												<!-- 풀이 버튼 누르고 레이어 팝업 뜨는 영역 -->
-												<div class="viewopen-detail">
-													<div class="viewopen-detail-inner">
-													   
-														//수식 미리보기 내용
-														<div class="pvBox" data-per="100">
-															<div class="pv-inner">
-																<div class="pv-cont">
-																	//수식 작을때<br> (비율이 100%:data-per="100" )
-																</div>
-															</div>
-														</div>
-														<div class="pvBox" data-per="170">
-															<div class="pv-inner">
-																<div class="pv-cont">
-																	//수식 클때<br> (비율이 170%:data-per="170" )
-																</div>
-															</div>
-														</div>
-													</div>
-													
-													<div class="blocking_layer"></div><!--유저가 mathjax 문항 영역 클릭 못하게 막는 투명 레이어-->
-													
-												</div>
-												<!-- //풀이 버튼 누르고 레이어 팝업 뜨는 영역 -->
 												<button class="btn_redo off" type="button">다시풀기</button>
 												<button class="btn_chansr off on" type="button">정답확인</button>
 											</div>
+
+											<!-- 풀이 버튼 누르고 레이어 팝업 뜨는 영역 -->
+											<div class="viewopen-detail">
+
+												<!-- 220328 닫기 버튼 영역 추가  -->
+												<div class="popup_btnWrap">
+													<button class="btn_close" type="button"><span class="blind">닫기</span></button><!-- 220328 레이어 팝업 닫기 버튼 추가  -->
+												</div>
+												<!-- //220328 닫기 버튼 영역 추가  -->
+
+												<div class="viewopen-detail-inner">
+													<div class="pvBox" data-per="100">
+														<div class="pv-inner">
+															<div class="pv-cont">
+																//수식 작을때<br> (비율이 100%:data-per="100" )<br>
+																//수식 작을때<br> (비율이 100%:data-per="100" )<br>
+																//수식 작을때<br> (비율이 100%:data-per="100" )<br>
+																//수식 작을때<br> (비율이 100%:data-per="100" )<br>
+															</div>
+														</div>
+													</div>
+													<div class="pvBox" data-per="170">
+														<div class="pv-inner">
+															<div class="pv-cont">
+																//수식 클때<br> (비율이 170%:data-per="170" )<br>
+																//수식 클때<br> (비율이 100%:data-per="170" )<br>
+																//수식 클때<br> (비율이 100%:data-per="170" )<br>
+																//수식 클때<br> (비율이 100%:data-per="170" )<br>
+																//수식 클때<br> (비율이 100%:data-per="170" )<br>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="blocking_layer"></div><!--유저가 mathjax 문항 영역 클릭 못하게 막는 투명 레이어-->
+											</div>
+											<!-- //풀이 버튼 누르고 레이어 팝업 뜨는 영역 -->
 										</div>
 										<!-- //220314 1분기 개선사항 BTN 추가 -->
 										
@@ -158,9 +168,15 @@
 	//20220314 오답확인에서 풀이버튼 눌렀을 때 S
 	$(document).on('click', '.btn-viewopen', function(){
 	  $(this).toggleClass('on');
-	  $(this).next('.viewopen-detail').toggleClass('on');
+	  $('.viewopen-detail').toggleClass('on');
 	});
 	//20220314 오답확인에서 풀이버튼 눌렀을 때 E
+	
+	//20220328 레이어 팝업 닫기 S
+	$('.btn_close').on('click', function(){
+		$('.epnPopup-wrap .viewopen-detail').toggleClass('on');
+	});
+	//20220328 레이어 팝업 닫기 E
 
 	$('.wa-switch').on('click', function(){
 		if($(this).hasClass('on')){
