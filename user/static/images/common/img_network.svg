@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180.714" height="135.146" viewBox="0 0 180.714 135.146">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_9221" data-name="사각형 9221" width="180.714" height="135.146" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_15071" data-name="그룹 15071" transform="translate(-532 -298.421)">
+    <g id="그룹_15059" data-name="그룹 15059" transform="translate(532 298.421)">
+      <g id="그룹_15058" data-name="그룹 15058" transform="translate(0 0.001)" clip-path="url(#clip-path)">
+        <path id="패스_17411" data-name="패스 17411" d="M256.721,282.29a67.5,67.5,0,0,1,53.614,26.489,12.035,12.035,0,1,1-19.1,14.644,43.447,43.447,0,0,0-69.024,0,12.06,12.06,0,0,1-18.112,1.258h0a12.07,12.07,0,0,1-.99-15.9,67.5,67.5,0,0,1,53.614-26.489" transform="translate(-166.364 -234.131)" fill="#d6d8da"/>
+        <path id="패스_17412" data-name="패스 17412" d="M90.357,0A115.5,115.5,0,0,1,177.8,40a12.036,12.036,0,0,1-18.164,15.8,91.526,91.526,0,0,0-138.559,0,12,12,0,0,1-17.542.558h0A12.015,12.015,0,0,1,2.914,40,115.5,115.5,0,0,1,90.357,0" transform="translate(0 0.001)" fill="rgba(50,60,70,0.2)"/>
+        <path id="패스_17413" data-name="패스 17413" d="M435.259,564.581a19.414,19.414,0,1,1-19.414,19.414,19.436,19.436,0,0,1,19.414-19.414" transform="translate(-344.902 -468.263)" fill="#d6d8da"/>
+        <g id="_-g-ic_ar_list_down" data-name="-g-ic_ar_list_down" transform="translate(-1713.935 -363.244)">
+          <path id="arrow" d="M268.336,248.953l-8.385,8.385a4.675,4.675,0,0,1-6.612,0l-8.385-8.385" transform="translate(-244.953 -248.953)" fill="none" stroke="#b4bec8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+    </g>
+    <path id="패스_17414" data-name="패스 17414" d="M.015,22.232H14.27L17.388-32.56l.742-20.64H-3.846L-3.1-32.56Zm7.127,39.5c7.721,0,13.661-6.237,13.661-14.255S14.864,33.22,7.142,33.22-6.37,39.457-6.37,47.475-.579,61.73,7.142,61.73Z" transform="translate(614.37 361.73)" fill="#747373"/>
+  </g>
+</svg>
