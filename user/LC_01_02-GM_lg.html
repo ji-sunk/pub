@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!--
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+        <div class="header_top gm">
+           <div class="inner">
+	            <div class="btns_wrap header-trans cls">
+                    <div class="center_wrap cls pc_w1400">
+                        <div class="tit_area">
+                            <button class="btn_exit hide_pc hide_m" type="button"><img src="./static/images/icon/ic_back@2x.png" alt="" /></button>
+                        </div>
+                        <div class="right_area">
+                            <div class="menu_btn">
+                                <button class="star" type="button">99,999</button>
+                                <button class="head_btn purple" type="button"><img src="./static/images/icon/ic_gm_note_2@2x.png" alt="" /></button>
+                                <button class="head_btn" type="button"><img src="./static/images/icon/ic_mn_w@2x.png" alt="" /></button>
+                            </div>
+                        </div>
+                    </div>
+	            </div>
+            </div>
+        </div>
+	
+    
+        
+		<div class="layout-def with_bottom_area choice gm new bg_lgtgrn"><!-- 220325 백그라운드 컬러 바뀌어서 클레스 class="bg_lgtgrn" 추가 됨-->
+			<div class="container">
+				<div class="inner">
+                    <div class="center_wrap">
+                        <h1>학습을 선택해주세요</h1>
+                        <!--홈 공지(공지가 있을 경우 '학습을 선택해주세요' 텍스트 대신 공지가 들어감.-->
+                        <div class="home_noti2">
+                            <div class="inner_box">시스템 정기점검 안내 2021.02.20 13:00 ~ 15:00 (2시간)</div>
+                        </div>
+                        <!--//홈 공지-->
+
+                         <!-- 220325 바로셈 홈 추가 수정 -->
+                        <div class="lg_home_wrap">
+                            <a class="lng_box1 js_play_audio1" href="#null">
+                                <img  class="img" src="./static/images/common/img_lg_01.svg" alt="진도학습 학습하기" />
+                            </a>
+                            <a class="lng_box2 js_play_audio1" href="#null">
+                                <img src="./static/images/common/img_lg_02.svg" alt="주제학습 학습하기" />
+                            </a>
+                            <a class="lng_box3" href="#null">
+                                <img src="./static/images/common/img_lg_03.svg" alt="OCR학습 학습하기" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bottom_wrap com">
+                        <div class="box_btn">
+                            <div class="inner_box">
+                                <img class="bi_aibarossam" src="./static/images/common/bi_aibarossam.svg" alt="AI 바로셈" />
+                                <span class="left">
+                                    <span class="txt1">강력한 AI 기술로 완성된</span>
+                                    <span class="txt2">새로운 연산 학습법!</span>
+                                </span>
+                            </div>
+                            <div class="btm_rgt">
+                                <div class="rgt_box">
+                                    <img class="img_btm_ca" src="./static/images/common/img_lg_btm_ca.svg" alt="" />
+                                    <a href="#null" class="right"> 
+                                        <span><strong>AI 진단</strong>테스트</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //220325 바로셈 홈 추가 수정 -->
+				</div>
+			</div>
+		</div>
+        
+
+	</div>
+</div>
+
+<!--오디오-->
+<script>
+var audio1 = new Audio('static/audio/lc_01_02.ogg');
+</script>
+<!--//오디오-->
+
+</body>
+</html>
