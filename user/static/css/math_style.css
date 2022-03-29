@@ -228,6 +228,10 @@ label .tbl-fountain td.bdline { border-bottom: 1px solid #ced4da !important; }
 .tbl-factorization .dividend_box.pl0{padding-left: 0;}
 .tbl-factorization .last td.border_b{border-bottom: 1px solid #000;}
 
+/* 오답확인 _ 커스텀 수식에서 빨강/파란 테두리 노출 안되는 부분 원래 있던 CSS 적용 */
+.wa-container.wa-wrong .my-ans { border:1px solid #f05a46 !important;color: #f05a46 !important;}
+.wa-container.wa-correct .my-ans { border-color: #00c3e1 !important; color: #00c3e1 !important;}
+
 /* Mathjax3.0 검증계220220 QA user/admin 스타일 통일 수정 -kjs */
 .pv-ib {margin: 1em 0px;}
 /* Mathjax3.0 검증계220220 QA 20. 폰트 기울기 24. 약수, 배수 입력(가지치기) _(중앙정렬) -kjs */
