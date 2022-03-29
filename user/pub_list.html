@@ -1,0 +1,2247 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산 사용자화면 퍼블리싱 리스트</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+<style>
+.publist_wrap { padding: 20px; font-size: 14px; min-width: 1440px; }
+.publist_wrap h2 { font-size: 1.5rem; margin-bottom: 1rem; font-weight: bold; line-height: 1.2; }
+.pub_titBox { position: relative; padding-bottom: 5px; margin-bottom: 2rem; border-bottom: 1px solid #999; }
+.pub_titBox::after { position: absolute; bottom: -3px; left: 0; width: 100%; height: 1px; background-color: #999; content: ''; }
+.pub_titBox h1 { font-size: 2rem; margin-bottom: 1rem; font-weight: bold; line-height: 1.2; }
+.star { vertical-align: text-top; font-size: 20px; }
+.star.gm { color: #e21a92; }
+.star.gb { color: #9900ff; }
+.star.renew { color: #03bb98; }
+.pub_tblBox table { width: auto; color: #212529; border-top: 1px solid #999; border-bottom: 1px solid #999; border-left: 1px solid #999; table-layout: fixed; }
+.pub_tblBox th { padding: 5px 0; background-color: #282c2c; border-top: 1px solid #d5d5d5; border-bottom: 1px solid #d5d5d5; border-right: 1px solid #d5d5d5; word-break: break-all; color: #fff; font-weight: normal; vertical-align: middle; line-height: 1.2; }
+.pub_tblBox td { padding: 5px; vertical-align: top; min-height: 47px; word-break: break-all; text-align: center; border-bottom: 1px solid #999; border-right: 1px solid #999; }
+.pub_tblBox .star { vertical-align: baseline; }
+.star-txt {  }
+.star-txt.gm { color: #e21a92; }
+.star-txt.gb { color: #9900ff; }
+.star-txt.renew { color: #03bb98; }
+.color-link { color: #d62828; text-decoration: underline; }
+.color-new {color: #ff0000}
+</style>
+
+</head>
+<body>
+
+<!-- 이전 퍼블 내역 -->
+<div class="publist_wrap">
+	<div class="pub_titBox">
+		<h1>퍼블리싱 리스트</h1>
+		<p>매쓰피드는 총 4개의 버전.</p>
+		<p>1. 플랫폼 사업부에서 스마트올 패드로 매쓰피드(태블릿으로만).</p>
+		<p>2. 교문 사업부에서 바로셈(스마트올 패드와 탈패드-pc,태블릿,모바일). 파일명 끝에 -GM 붙임. 기존 작업물과 분기 필요시 class gb 사용</p>
+		<p>3. 단독으로 앱스토어에서 판매. 매쓰피드 서비스를 기반으로 하되 몇 가지만 수정.</p>
+		<p>4. 매쓰피드 글로벌. 파일명 끝에 -GB 붙임. 기존 작업물과 분기 필요시 class gb 사용</p>
+		<br />
+		<p>*** 화면검수용 퍼블리싱 리스트 : <a href="pub_list_inspection.html" class="color-link" target="_blank">*** pub_list_inspection.html ***</a></p>
+		<p><span class="star gm">*</span> 표시된 화면은 <span class="star-txt gm">교문바로셈 구축시에 새로 만든 페이지(하지만 매쓰피드에서 쓰는 경우도 있음)</span></p>
+		<p><span class="star renew">**</span> 표시된 화면은 교문버전을 기존 플랫폼 사업부의 서비스에서도 쓰게 된 <span class="star-txt renew">리뉴얼버전</span> 및 <span class="star-txt renew">new</span> 파일</p>
+		<p><span class="star gb">*</span> 표시된 화면은 <span class="star-txt gb">글로벌</span></p>
+	</div>
+
+
+	<h2> 2022년 02월 ~ 퍼블리싱 리스트</h2>	
+	<div class="pub_tblBox">
+		<table>
+			<colgroup>
+				<col style="width: 90px;">
+				<col style="width: 110px;">
+				<col style="width: 110px;">
+				<col style="width: 130px;">
+				<col style="width: 130px;">
+				<col style="width: 170px;">
+				<col style="width: 180px;">
+				<col style="width: 100px;">
+				<col style="width: 90px;">
+				<col style="width: 400px;">
+				<col style="width: 150px;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th>구분</th>
+					<th>Page ID</th>
+					<th>1depth</th>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+					<th>html파일명</th>
+					<th>작업자</th>
+					<th>작업날짜</th>
+					<th>비고</th>
+					<th>mob/pc 검수</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="6" style="vertical-align: middle;">1분기 개선사항</td>
+					<td class="va-m">-</td>
+					<td class="va-m">-</td>
+					<td rowspan="2" style="vertical-align: middle;">학습하기</td>
+					<td>오답확인</td>
+					<td>버튼 추가</td>
+					<td class="ta-l">
+						<a href=" LC_05_13_1qt.html" target="_blank"> LC_05_13_1qt.html</a>
+					</td>
+					<td>권지선</td>
+					<td><b class="color-new">22.03.28</b><br /> 22.03.14</td>
+					<td class="ta-l">
+						<b class="color-new">
+							업무번호 2403 <br />
+							레이어 팝업 닫기 버튼 추가<br /> 팝업 사이즈 디바이스 비율에 맞춰 늘어나게 수정 
+						</b>
+						업무번호 2403<br />
+						[공통] 오답노트 수정 / 버튼 추가 되면서 레이어 팝업<br />
+					</td>
+					<td> - </td>
+				</tr>
+				<tr>
+					<td class="va-m">-</td>
+					<td class="va-m">-</td>
+					<td>문제풀이</td>
+					<td>문제 풀이 뷰어</td>
+					<td class="ta-l"><a href="LC_05_02-GM_1qt.html" target="_blank">LC_05_02-GM_1qt.html</a></td>
+					<td>권지선</td>
+					<td> <b class="color-new">22.03.28</b><br /> / 22.03.08</td>
+					<td class="ta-l">
+						<b class="color-new">
+							업무번호 2499 <br />
+							영문 + 툴팁 기존 스타일에서 닫기 버튼만 추가 <br />
+						</b>
+						업무번호 2392 <br />
+						연습장 새로운 기능 추가되면서 버튼 추가 <br />
+					</td>
+					<td> - </td>
+				</tr>
+				<tr>
+					<td>바로셈 홈
+					</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>
+						중>(구조 변경 없음) <br />
+						초저>(추가) <br />
+						초고>(추가)
+					</td>
+					<td class="ta-l">
+						<a href="LC_01_02-GM.html" target="_blank">LC_01_02-GM.html</a>
+						<a href="LC_01_02-GM_lg.html" target="_blank">LC_01_02-GM_lg.html</a>
+						<a href="LC_01_02-GM_ug.html" target="_blank">LC_01_02-GM_ug.html</a>
+					</td>
+					<td>권지선</td>
+					<td>22.03.25</td>
+					<td class="ta-l">
+						중> LC_01_02-GM (변경 없음_OCR 이미지 교체) <br />
+						초저> LC_01_02-GM_lg (추가) <br />
+						초고> LC_01_02-GM_ug (추가) <br />
+						업무번호 3
+					</td>
+					<td> - </td>
+				</tr>
+				<tr>
+					<td>네트워크<br />
+						(영문/국문)
+					</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l">
+						<a href="network_error.html" target="_blank">network_error.html</a>
+					</td>
+					<td>권지선</td>
+					<td>22.03.21</td>
+					<td class="ta-l">
+						업무번호 2471<br />
+						공통)네트워크 상태 + 레이어 팝업<br />
+					</td>
+					<td> - </td>
+				</tr>
+
+				<tr>
+					<td>-</td>
+					<td>튜토리얼 <br />(영문)</td>
+					<td rowspan="4" style="vertical-align: middle;" >학습하기</td>
+					<td>-</td>
+					<td>문제 풀이</td>
+					<td class="ta-l">
+						<a href="LC_05_17_01_en.html" target="_blank">LC_05_17_01_en.html</a>
+					</td>
+					<td>권지선</td>
+					<td>22.03.18</td>
+					<td class="ta-l">
+						업무번호 2442<br />
+						공통)튜토리얼 영문_최대 글자수<br />
+					</td>
+					<td> - </td>
+				</tr>
+
+				<tr>
+					<td class="va-m">-</td>
+					<td class="va-m">-</td>
+					<td>학습결과</td>
+					<td>AI추천 학습 <br />
+						노력/기본/충분/훌륭</td>
+					<td class="ta-l">
+						<a href="LC_05_07_01.html" target="_blank">LC_05_07_01.html</a>
+						<a href="LC_05_07_02.html" target="_blank">LC_05_07_02.html</a>
+						<a href="LC_05_07_03.html" target="_blank">LC_05_07_03.html</a>
+						<a href="LC_05_07_04.html" target="_blank">LC_05_07_04.html</a>
+					</td>
+					<td>권지선</td>
+					<td>22.03.16</td>
+					<td class="ta-l">
+						업무번호 2404<br />
+						[AI바로셈] 학습결과 추천학습 추가 <br />
+					</td>
+					<td> - </td>
+				</tr>
+			</tbody>
+		</table>
+	</div>	
+	<hr>
+
+	
+	<h2> ~ 2022년 01월 퍼블리싱 리스트</h2>
+	<div class="pub_tblBox">
+		<table>
+			<colgroup>
+				<col style="width: 90px;">
+				<col style="width: 110px;">
+				<col style="width: 110px;">
+				<col style="width: 130px;">
+				<col style="width: 130px;">
+				<col style="width: 170px;">
+				<col style="width: 180px;">
+				<col style="width: 100px;">
+				<col style="width: 90px;">
+				<col style="width: 400px;">
+				<col style="width: 150px;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th>구분</th>
+					<th>Page ID</th>
+					<th>1depth</th>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+					<th>html파일명</th>
+					<th>작업자</th>
+					<th>작업날짜</th>
+					<th>비고</th>
+					<th>mob/pc 검수</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+				<tr>
+					<td>-</td>
+					<td></td>
+					<td>튜토리얼</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l">
+					    <a href="LC_03_02.html" target="_blank">LC_03_02.html</a><br />
+					    <a href="LC_03_03.html" target="_blank">LC_03_03.html</a><br />
+					    <a href="LC_03_05.html" target="_blank">LC_03_05.html</a><br />
+					    <a href="LC_05_02_concept.html" target="_blank">LC_05_02_concept.html</a><br />
+					    <a href="LC_05_07.html" target="_blank">LC_05_07.html</a>
+                    </td>
+					<td>김경민</td>
+					<td>21.01.19</td>
+					<td class="ta-l">
+						각 페이지 내에 로딩 레이어가 삽입되어 있음(wrap-inner 바로 밑에)
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="6" class="va-m">-</td>
+					<td rowspan="6" class="va-m">tutorial</td>
+					<td rowspan="6" class="va-m">튜토리얼</td>
+					<td>튜토리얼 인트로</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="tutorial_intro.html" target="_blank">tutorial_intro.html</a></td>
+					<td>이진경</td>
+					<td>20.12.09</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_05_17_01.html" target="_blank">LC_05_17_01.html</a></td>
+					<td>김경민</td>
+					<td>21.07.15</td>
+					<td class="ta-l">
+					    LC_05_02-GM.html에 튜토리얼 영역을 추가한 것으로, 튜토리얼 영역은 주석으로 표기했음(html 내에서 '튜토리얼'로 검색하면 나오는 영역들).<br />
+					    21.07.21 헤더 타이틀 폰트 크기 수정<br />
+					    21.12.20 현재 모든 서비스에서 이 튜토리얼을 사용 중.
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="4" class="va-m">사용하지 않는 튜토리얼 (백업)</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="tutorial_210208.html" target="_blank">tutorial_210208.html</a></td>
+					<td>김경민</td>
+					<td></td>
+					<td class="ta-l">
+					    인터랙티브 방식의 튜토리얼.<br />
+					    21.03.04 수정 반영<br />
+					    21.06.09 플랫폼 사업부의 현행 서비스에서 튜토리얼은 이 방식을 사용중
+					</td>
+					<td>사용하지 않는 페이지</td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="tutorial_slide.html" target="_blank">tutorial_slide.html</a></td>
+					<td>김경민</td>
+					<td>21.01.14</td>
+					<td class="ta-l">
+					    슬라이드 형식의 튜토리얼
+					</td>
+					<td>사용하지 않는 페이지</td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="tutorial_new.html" target="_blank">tutorial_new.html</a></td>
+					<td>김경민</td>
+					<td>21.01.08</td>
+					<td class="ta-l">
+						영상재생 튜토리얼. 현재 태블릿만 작업함. 내부의 영상은 tutorial_old.html 화면을 녹화<br />
+						*21.01.13 이 튜토리얼은 안 쓰기로 결정 됨
+					</td>
+					<td>사용하지 않는 페이지</td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="tutorial.html" target="_blank">tutorial.html</a></td>
+					<td>김경민</td>
+					<td>20.12.16</td>
+					<td class="ta-l">
+					    코딩으로 만든 예전 버전의 튜토리얼 페이지. 이 화면을 녹화하여 새 튜토리얼에서 재생.<br />
+						[다음]버튼을 누르면 단계별로 애니메이션이 진행됨(현재는 그 버튼이 opacity 0 으로 숨겨져 있음)
+					</td>
+					<td>사용하지 않는 페이지</td>
+				</tr>
+				<tr>
+					<td rowspan="14" class="va-m">home</td>
+					<td rowspan="2">LC_00_00</td>
+					<td rowspan="2">진입 로딩</td>
+					<td rowspan="2">-</td>
+					<td rowspan="2">-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_00_00.html" target="_blank">LC_00_00.html</a></td>
+					<td>이진경</td>
+					<td>20.12.07</td>
+					<td class="ta-l">
+						외부 css/js 와 별도로 움직이는 독립페이지로 수정 (html 파일과 logo_white.png 파일만 있으면 열림)<br />
+						21.01.04(김경민) 새 디자인 적용<br />
+						(백업파일 : <a href="LC_00_00_bk.html" target="_blank">LC_00_00_bk.html</a>)
+						<br />
+						21.12.08 글로벌용 영문로고 추가
+					</td>
+					<td>디자인 예정</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gm">[교문]</span><span class="star gm">*</span></td>
+					<td class="ta-l"><a href="LC_00_00-GM.html" target="_blank">LC_00_00-GM.html</a></td>
+					<td>김경민</td>
+					<td>21.07.09</td>
+					<td class="ta-l">
+					    교문버전.
+					</td>
+					<td>확인 완료</td>
+				</tr>
+				<tr>
+					<td>LC_00_01</td>
+					<td>앱 다운로드 안내</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_00_01.html" target="_blank">LC_00_01.html</a></td>
+					<td>이진경</td>
+					<td>20.11.23</td>
+					<td class="ta-l">
+						로고미정.. 추후에 img파일만 넣으면 되므로, html은 수정계획 없음<br />
+						20.11.26 로고영역 수정.. (추후 이미지는 파일만 교체예정)
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="va-m">LC_01_00</td>
+					<td rowspan="2" class="va-m">제품소개</td>
+					<td rowspan="2" class="va-m">-</td>
+					<td rowspan="2" class="va-m">-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_01_00.html" target="_blank">LC_01_00.html</a></td>
+					<td>김경민</td>
+					<td>21.08.16</td>
+					<td class="ta-l">
+					    매쓰피드와 바로셈을 통합한 새로운 버전. 레이아웃은 같으며 슬라이드 이미지만 서비스별로 다르게 씀. (구버전 백업파일 : <a href="LC_01_00_bk.html" target="_blank">LC_01_00_bk.html</a>)
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="LC_01_00-GB.html" target="_blank">LC_01_00-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.26</td>
+					<td class="ta-l">
+						22.01.04 con3 이미지 수정 svg -> png<br />
+						21.12.03 한글판과 영문판에서 모두 쓸 수 있도록 수정
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>LC_01_01</td>
+					<td rowspan="2" class="va-m">학습자선택</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_01_01.html" target="_blank">LC_01_01.html</a></td>
+					<td>이진경</td>
+					<td>20.11.20</td>
+					<td class="ta-l">
+						20.11.23 로티삽입<br />
+						21.08.23 리뉴얼
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td>팝업</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_01_01_lp.html" target="_blank">LC_01_01_lp.html</a></td>
+					<td>이진경</td>
+					<td>20.10.29</td>
+					<td class="ta-l">
+					    팝업<br />
+						공통팝업형태(LC_02_06_lp.html 과 같은 형태 - 버튼 갯수만 다름)
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="3">LC_01_02</td>
+					<td rowspan="4" class="va-m">학습선택(홈)</td>
+					<td rowspan="3">-</td>
+					<td rowspan="3">-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_01_02.html" target="_blank">LC_01_02.html</a></td>
+					<td>김경민</td>
+					<td>20.11.10</td>
+					<td class="ta-l">
+						20.11.23 애니메이션 작업완료(ui.js 참조) - 추후 json파일만 교체예정<br />
+						20.11.24 애니메이션 한번만 재생되도록 수정 (func_animation함수 호출할때 3번째 인수를 true에서 false로 교체)<br />
+						20.11.26 새 헤더 적용 및 디자인 수정사항 적용<br />
+						21.01.22 오디오 추가<br />
+						21.08.03 헤더 수정<br />
+						21.08.20 리뉴얼 작업(백업파일 : <a href="LC_01_02_bk.html" target="_blank">menu_bk.html</a>)
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gm">[교문]</span><span class="star gm">*</span></td>
+					<td class="ta-l"><a href="LC_01_02-GM.html" target="_blank">LC_01_02-GM.html</a></td>
+					<td>김경민</td>
+					<td>20.03.17</td>
+					<td class="ta-l">
+					    교문버전.<br />
+						21.08.20 리뉴얼 작업(백업파일 : <a href="LC_01_02-GM_bk.html" target="_blank">menu_bk.html</a>)
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="LC_01_02-GB.html" target="_blank">LC_01_02-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.04</td>
+					<td class="ta-l">
+					    21.11.22 레벨 배너영역 추가
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td>팝업</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_01_02_lp.html" target="_blank">LC_01_02_lp.html</a></td>
+					<td>이진경</td>
+					<td>20.10.29</td>
+					<td class="ta-l">
+					    팝업<br />
+						공통팝업형태(LC_02_06_lp.html 과 같은 형태)
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="2">-</td>
+					<td rowspan="2">메뉴</td>
+					<td rowspan="2">-</td>
+					<td rowspan="2">-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="menu.html" target="_blank">menu.html</a></td>
+					<td>김경민</td>
+					<td>21.08.04</td>
+					<td class="ta-l">
+                        스마트올과 교문 통합버전(각각의 경우에 대해서는 주석과 제플린 가이드 참고). 구버전은 백업함.<br />
+                        <a href="https://zpl.io/ag14kNQ" target="_blank">제플린 디자인 가이드 링크</a><br />
+						(백업파일 : <a href="menu_bk.html" target="_blank">menu_bk.html</a>)
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="menu-GB.html" target="_blank">menu-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.05</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>SR_01_01</td>
+					<td>학습완료 별 확인</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="SR_01_01.html" target="_blank">SR_01_01.html</a></td>
+					<td>김경민</td>
+					<td>21.09.06</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				
+				<tr>
+					<td rowspan="34" class="va-m">학습하기</td>
+					<td>LC_02_01</td>
+					<td rowspan="31" class="va-m">코스학습</td>
+					<td rowspan="15" class="va-m">AI진단테스트</td>
+					<td>진단 안내1</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_02_01.html" target="_blank">LC_02_01.html</a></td>
+					<td>이진경</td>
+					<td>20.10.22</td>
+					<td class="ta-l">
+						20.11.11 수정 : 내용 수정 및 기존의 02_02 폐기<br />
+						20.12.04 수정 : 오타수정 - 20~25문제말 -> 20~25문제만
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>LC_02_03</td>
+					<td>진단 유의사항</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_02_03.html" target="_blank">LC_02_03.html</a></td>
+					<td>이진경</td>
+					<td>20.10.22</td>
+					<td class="ta-l">
+						20.11.26 버튼명 수정 (시작하기->다음)
+					</td>
+					<td>사용하지 않는 페이지</td>
+				</tr>
+				<tr>
+					<td rowspan="2">LC_02_04</td>
+					<td rowspan="2">학습자 정보 선택</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_02_04.html" target="_blank">LC_02_04.html</a></td>
+					<td>이진경</td>
+					<td>20.10.22</td>
+					<td class="ta-l">
+						20.11.02 수정 : input[radio]의 마크업을 공통마크업으로 통일<br />
+						20.12.02 수정 : select에 disabled 일때 상황 추가<br />
+						21.01.22 오디오 추가
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gm">[교문]</span><span class="star gm">*</span></td>
+					<td class="ta-l"><a href="LC_02_04-GM.html" target="_blank">LC_02_04-GM.html</a></td>
+					<td>김경민</td>
+					<td>21.03.25</td>
+					<td class="ta-l">
+						교문 버전.
+						21.07.16 비활성 상태 수정, 하단 좌측 작은버튼 주석처리
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="2">LC_02_05</td>
+					<td rowspan="2">진단 예측</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_02_05.html" target="_blank">LC_02_05.html</a></td>
+					<td>이진경</td>
+					<td>20.10.21</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="LC_02_05-GB.html" target="_blank">LC_02_05-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.23</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="2">LC_02_06</td>
+					<td rowspan="3" class="va-m">진단 문제풀이</td>
+					<td>문제풀이 뷰어</td>
+					<td class="ta-l"><a href="LC_02_06.html" target="_blank">LC_02_06.html</a></td>
+					<td>이진경</td>
+					<td>20.10.20</td>
+					<td class="ta-l">
+						20.10.22 수정 <br />
+						20.10.27 수정 (키패드-기본숫자형에서 .버튼 삭제 및 0버튼 크기조정)<br />
+						21.06.02 (이진경) 정답입력/잘모르겠어요 공통화
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gm">[교문]</span><span class="star gm">*</span></td>
+					<td class="ta-l"><a href="LC_02_06-GM.html" target="_blank">LC_02_06-GM.html</a></td>
+					<td>김경민</td>
+					<td>21.05.20</td>
+					<td class="ta-l">
+					    LC_05_02-GM.html와 공통이므로 헤더만 작업함
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td>레이어 팝업</td>
+					<td class="ta-l"><a href="LC_02_06_lp.html" target="_blank">LC_02_06_lp.html</a></td>
+					<td>이진경</td>
+					<td>20.10.20</td>
+					<td class="ta-l">
+					    팝업<br />
+						lp-wrap은 wrap-inner안에, 가장 아래에 넣어주세요.
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>LC_02_07</td>
+					<td>진단 분석</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_02_07.html" target="_blank">LC_02_07.html</a></td>
+					<td>이진경</td>
+					<td>20.10.21</td>
+					<td class="ta-l">
+					</td>
+					<td>확인완료</td>
+				</tr>
+
+				<tr>
+					<td>LC_02_08</td>
+					<td>진단 결과 대기</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_02_08.html" target="_blank">LC_02_08.html</a></td>
+					<td>이진경</td>
+					<td>20.10.22</td>
+					<td class="ta-l">
+						애니메이션 영역은 추후 작업<br />
+						20.10.29 하단 문구 변경<br />
+						20.11.10 애니메이션 작업완료(ui.js 참조)
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="4">LC_02_09</td>
+					<td rowspan="3">진단 결과</td>
+					<td>시작하기</td>
+					<td class="ta-l"><a href="LC_02_09.html" target="_blank">LC_02_09.html</a></td>
+					<td>이진경</td>
+					<td>20.10.21</td>
+					<td class="ta-l">
+						20.12.14 justTit 제목 추가, 하단에 '진단 다시하기'버튼 추가하면서 영역 수정
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>레이어팝업</td>
+					<td class="ta-l"><a href="LC_02_09_lp.html" target="_blank">LC_02_09_lp.html</a></td>
+					<td>이진경</td>
+					<td>20.10.21</td>
+					<td class="ta-l">
+					    팝업<br />
+						진단 다시하기 버튼 눌렀을때 나오는 레이어팝업
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>토스트팝업</td>
+					<td class="ta-l"><a href="LC_02_09_lp_toast.html" target="_blank">LC_02_09_lp_toast.html</a></td>
+					<td>이진경</td>
+					<td>20.10.21</td>
+					<td class="ta-l">
+					    팝업<br />
+						레이어팝업의 '확인'버튼 누르면 뜨는 토스트팝업
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>진단결과</td>
+					<td><span class="star-txt renew">[new]</span><span class="star renew">**</span></td>
+					<td class="ta-l"><a href="LC_02_09_result.html" target="_blank">LC_02_09_result.html</a></td>
+					<td>이진경</td>
+					<td>21.05.21</td>
+					<td class="ta-l">
+						21.05.24 차트의 툴팁 및 불릿 설정<br />
+						21.06.25 차트에 점선영역 추가<br />
+						21.07.06 차트 왼쪽 - moreInfoBox 영역 수정
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="va-m">LC_03_01</td>
+					<td rowspan="2" class="va-m">코스학습 안내</td>
+					<td rowspan="2" class="va-m">-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_03_01.html" target="_blank">LC_03_01.html</a></td>
+					<td>김경민</td>
+					<td>20.10.22</td>
+					<td class="ta-l">
+					    하단 동글이 로티영역 추후 작업 <br />
+					    20.11.16 말풍선 애니메이션 영역 작업 - 주석참조
+					</td>
+					<td>모바일에서 하단 동글이 로티영역 디자인 필요(추후 디자인 예정)</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="LC_03_01-GB.html" target="_blank">LC_03_01-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.10</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="va-m">LC_03_02</td>
+					<td rowspan="6" class="va-m">[tab] 학습중</td>
+					<td rowspan="2" class="va-m">목록</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_03_02.html" target="_blank">LC_03_02.html</a></td>
+					<td>김경민</td>
+					<td>20.10.22</td>
+					<td class="ta-l">
+						20.11.11 애니메이션 작업 추가<br />
+					    20.11.18 애니메이션 영역 및 헤더 높이 변화 관련 수정<br />
+					    20.11.24 상단 레벨박스 수정<br />
+					    20.11.24 문항 썸네일 관련 수정<br />
+						20.11.26 새 헤더 적용 및 디자인 수정사항 적용(애니메이션)<br />
+						20.11.26 유저아이콘 이미지 적용(총 5종)<br />
+						20.11.27 애니메이션 파일명 수정<br />
+						21.01.22 오디오 추가<br />
+						21.05.28 로딩영역 0.5초후 사라지도록 임시 스크립트 삽입(오로지 퍼블확인용)<br />
+						21.07.19 상단 뒤로가기 버튼 수정
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="LC_03_02-GB.html" target="_blank">LC_03_02-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.11</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td>애니메이션</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_03_02_anim.html" target="_blank">LC_03_02_anim.html</a></td>
+					<td>이진경</td>
+					<td>20.11.11</td>
+					<td class="ta-l">
+						anifull-wrap은 LC_03_02의 wrap-inner안에, layout-def 다음으로 삽입해주세요. 애니메이션 재생할때 효과음을 동시에 넣고, 1초후 사라지게 해주세요.<br />
+						21.01.22 오디오 추가
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="va-m">LC_03_03</td>
+					<td rowspan="3" class="va-m">레벨완료</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_03_03.html" target="_blank">LC_03_03.html</a></td>
+					<td>김경민</td>
+					<td>20.10.23</td>
+					<td class="ta-l">
+					    20.11.18 애니메이션 영역 및 헤더 높이 변화 관련 수정<br />
+						20.11.26 새 헤더 적용<br />
+						20.11.27 수정된 디자인 적용(LC_03_02와 같은 페이지가 되도록 수정됨)<br />
+						21.01.22 오디오 추가<br />
+						21.05.28 로딩영역 0.5초후 사라지도록 임시 스크립트 삽입(오로지 퍼블확인용)
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="LC_03_03-GB.html" target="_blank">LC_03_03-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.11</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td>다음레벨 로딩</td>
+					<td class="ta-l"><a href="LC_03_03_loading.html" target="_blank">LC_03_03_loading.html</a></td>
+					<td>김경민</td>
+					<td>20.10.23</td>
+					<td class="ta-l">
+					    20.11.03 애니메이션 작업완료(이진경)<br />
+					    20.11.17 로티 공통화 스크립트에 맞춰 애니메이션 수정 <br />
+						21.01.22 오디오 추가
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>LC_03_04</td>
+					<td>[tab] 완료</td>
+					<td>목록</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_03_02.html" target="_blank">LC_03_02.html</a></td>
+					<td>김경민</td>
+					<td>20.10.23</td>
+					<td class="ta-l">
+						LC_03_02.html 내에 포함 돼 있음(탭 클릭시 확인 가능)
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="1">LC_03_05</td>
+					<td rowspan="4" class="va-m">학습완료</td>
+					<td rowspan="1">진도</td>
+					<td rowspan="1">-</td>
+					<td class="ta-l"><a href="LC_03_05.html" target="_blank">LC_03_05.html</a></td>
+					<td>김경민</td>
+					<td>20.10.23</td>
+					<td class="ta-l">
+						20.11.03 수정 : 좌우스크롤을 pc에서는 좌우버튼으로 움직이도록 설정<br />
+						20.11.24 수정 : 디자인 관련 수정<br />
+						21.05.28 로딩영역 0.5초후 사라지도록 임시 스크립트 삽입(오로지 퍼블확인용)
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>LC_03_06</td>
+					<td>분석</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_03_05.html" target="_blank">LC_03_05.html</a></td>
+					<td>김경민</td>
+					<td>20.10.23</td>
+					<td class="ta-l">
+						LC_03_05.html 내에 포함 돼 있음(탭 클릭시 확인 가능)
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>LC_03_07</td>
+					<td>진단</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_03_05.html" target="_blank">LC_03_05.html</a></td>
+					<td>김경민</td>
+					<td>20.12.18</td>
+					<td class="ta-l">
+						LC_03_05.html 내에 포함 돼 있음(탭 클릭시 확인 가능)<br />
+						21.06.15 수정(이진경) - LC_03_05.html에서 #tabCont3에 .layout-lr-dark 추가, 안에 내용 교체 (백업파일 : <a href="LC_03_05_bk.html" target="_blank">LC_03_05_bk.html</a>)
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td>-</td>
+					<td>팝업</td>
+					<td class="ta-l"><a href="LC_03_06_lp.html" target="_blank">LC_03_06_lp.html</a></td>
+					<td>이진경</td>
+					<td>20.10.29</td>
+					<td class="ta-l">
+					    팝업<br />
+						공통팝업형태(LC_02_06_lp.html 과 같은 형태)
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="va-m">-</td>
+					<td rowspan="2" class="va-m">학습노트[교문]</td>
+					<td>학습</td>
+					<td><span class="star-txt gm">[교문]</span><span class="star gm">*</span></td>
+					<td class="ta-l"><a href="LC_03_05-GM.html" target="_blank">LC_03_05-GM.html</a></td>
+					<td>김경민</td>
+					<td>21.03.30</td>
+					<td class="ta-l">
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>진단</td>
+					<td><span class="star-txt gm">[교문]</span><span class="star gm">*</span></td>
+					<td class="ta-l"><a href="LC_08_02-GM.html" target="_blank">LC_08_02-GM.html</a></td>
+					<td>이진경</td>
+					<td>21.05.21</td>
+					<td class="ta-l">
+						LC_03_05-GM.html 파일형태와 같지만, layout-def 옆에 클래스 다름 주의<br />
+						21.05.24 차트의 툴팁 및 불릿 설정<br />
+						21.06.25 차트에 점선영역 추가<br />
+						21.07.06 차트 왼쪽 - moreInfoBox 영역 수정
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td class="va-m">-</td>
+					<td class="va-m">학습노트[글로벌]</td>
+					<td>학습</td>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="LC_03_05-GB.html" target="_blank">LC_03_05-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.24</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="2">LC_04_01</td>
+					<td rowspan="2">주제학습</td>
+					<td rowspan="2">[대주제tab]</td>
+					<td rowspan="2">소주제 목록</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_04_01.html" target="_blank">LC_04_01.html</a></td>
+					<td>이진경</td>
+					<td>20.10.29</td>
+					<td class="ta-l">
+						11.03 수정 : 좌우스크롤을 pc에서는 좌우버튼으로 움직이도록 설정<br />
+						11.18 하단 스크립트 수정 : 창크기의 높이가 애매할때 스크롤을 위로 하면 상단 아이콘의 크기가 안늘어나는 현상 해결<br />
+						20.11.26 새 헤더 적용, 헤더에 이미지 아이콘 5가지 설명 추가<br />
+						21.01.22 오디오 추가
+					    21.05.28 마크업 수정(개념확인 버튼 추가하면서 구조 수정)<br />
+						21.07.19 헤더 수정
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="LC_04_01-GB.html" target="_blank">LC_04_01-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.08</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>LC_06_01</td>
+					<td>진도학습</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_06_01.html" target="_blank">LC_06_01.html</a></td>
+					<td>김경민</td>
+					<td>21.04.01</td>
+					<td class="ta-l">
+					    21.05.28 마크업 수정(개념확인 버튼 추가하면서 구조 수정)<br />
+					    21.06.14 마크업 수정(상단의 뒤로가기 버튼)<br />
+					    21.07.08 select 옆에 '확인' 버튼 삭제<br />
+						21.07.19 모바일 헤더 뒤로가기버튼 추가
+					</td>
+					<td>확인완료</td>
+				</tr>
+				
+				<tr>
+					<td rowspan="30" class="va-m">문항풀기</td>
+					<td>LC_05_01</td>
+					<td rowspan="30" class="va-m">공통</td>
+					<td rowspan="30" class="va-m">학습하기</td>
+					<td>AI 예측</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_05_01.html" target="_blank">LC_05_01.html</a></td>
+					<td>이진경</td>
+					<td>20.11.27</td>
+					<td class="ta-l">
+						11.30 수정 : container 안에 bg-lc-intro삽입
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="2">LC_05_02</td>
+					<td rowspan="9" class="va-m">문제풀이</td>
+					<td>문제풀이 뷰어</td>
+					<td class="ta-l"><a href="LC_05_02.html" target="_blank">LC_05_02.html</a></td>
+					<td>김경민,이진경</td>
+					<td>20.10.20<br />20.10.26</td>
+					<td class="ta-l">
+						김경민 : 상태진행바, 키패드 (sample_progressbar.html, sample_keypad.html 참조)<br />
+						20.11.20 프로그래스바 동물아이콘 수정<br /><br />
+						이진경 : 그외 나머지<br />
+						20.10.22 수정 <br />
+						20.10.26 수정 (하단에 예시스크립트 작성 : mathExt에 ex_calc.html 삽입했으므로 참조 )<br />
+						20.10.27 수정 (키패드-기본숫자형에서 .버튼 삭제 및 0버튼 크기조정)<br />
+						20.10.30 수정 (키패드의 분수식 : 관리자에서 만들었던 마크업/스타일 적용)<br />
+						20.11.02 수정 (키패드의 분수식 : input에 입력할때마다 사이즈 수정되도록 설정)<br />
+						20.11.11 수정 (디자인 변경에 따른 프로그레스바 수정)<br />
+						20.11.16 (수식의 테두리 색상 설정 - docx 문서 참조)<br />
+						20.11.25 상태진행바 수정 (sample_progressbar.html 참조)<br />
+						21.01.07 상태진행바1 수정 (sample_progressbar.html 참조)<br />
+						21.01.25 오디오 추가<br />
+						21.02.04 키패드 수정(앞으로 sample_keypad.html은 사용하지 않음)<br />
+						21.06.02 (이진경) 정답입력/잘모르겠어요 공통화
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>문제풀이 뷰어<span class="star-txt gm">[교문]</span><span class="star gm">*</span></td>
+					<td class="ta-l"><a href="LC_05_02-GM.html" target="_blank">LC_05_02-GM.html</a></td>
+					<td>김경민</td>
+					<td>21.05.13</td>
+					<td class="ta-l">
+						21.05.21 (이진경) 정답입력/잘모르겠어요 공통화<br />
+						21.06.22 (김경민) 키패드 토글 시 문항 위치 고정되도록 수정(스크립트만 수정)<br />
+						21.07.05 (김경민) 키패드 변경된 디자인 적용(이미지 교체 및 모든 키에 보더 넣기)<br />
+						21.07.13 (이진경) 10문제 끝난뒤 팝업 뜨고 문제수가 늘어날때 : [헤더] num-tot에 클래스 num-ani 추가, 다음문제 넘어갈때 num-ani 삭제 <br />
+						21.07.19 (이진경) 속도계에 애니메이션 없게 하려면 .noAni 추가<br />
+						21.08.17 (김경민) 연습장 안내 레이어 추가<br />
+						21.10.01 (이진경) 문항풀이 영역과 연습장 영역의 싱크 맞추기작업
+					</td>
+					<td>확인완료</td>
+				</tr>
+
+				
+				<tr>
+					<td>LC_05_14</td>
+					<td>개념설명</td>
+					<td class="ta-l"><a href="LC_05_02_concept.html" target="_blank">LC_05_02_concept.html</a>
+					</td>
+					<td>이진경</td>
+					<td>20.10.21</td>
+					<td class="ta-l">
+						lp-wrap은 wrap-inner안에, 가장 아래에 넣어주세요.<br />
+						21.02.18 수정<br />
+						21.05.28 로딩영역 0.5초후 사라지도록 임시 스크립트 삽입(오로지 퍼블확인용)
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>LC_05_03</td>
+					<td>[pop-up]정오확인</td>
+					<td class="ta-l"><a href="LC_05_03.html" target="_blank">LC_05_03.html</a></td>
+					<td>이진경</td>
+					<td>20.10.20</td>
+					<td class="ta-l">
+						LC_05_02.html과 동일, 정오확인 실제 코드와 위치는 313번째줄~317번째줄<br />
+						20.11.10 애니메이션 수정<br />
+						20.11.13 la-wrap에서 불필요해진 클래스 on 제거<br />
+						21.01.25 오디오 추가
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>LC_05_04</td>
+					<td>[pop-up]다음문제 출제중</td>
+					<td class="ta-l"><a href="LC_05_04.html" target="_blank">LC_05_04.html</a></td>
+					<td>이진경</td>
+					<td>20.10.20</td>
+					<td class="ta-l">
+						LC_05_02.html과 동일, 다음문제 출제중 실제 코드와 위치는 313번째줄~320번째줄<br />
+						20.11.10 애니메이션 추가<br />
+						20.11.13 la-wrap에서 불필요해진 클래스 on 제거
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>LC_05_05</td>
+					<td>[pop-up]연속오답 안내</td>
+					<td class="ta-l">
+						<a href="LC_05_05_bk.html" target="_blank">LC_05_05_bk.html</a>
+					</td>
+					<td>이진경</td>
+					<td>20.10.20</td>
+					<td class="ta-l">
+					    팝업<br />
+						20.11.13 수정(완료) - 자리비움은 집중안내(LC_05_15)로 수정<br />
+						21.01.25 오디오 추가<br />
+						21.06.17 팝업이 헤더부분 아래로 붙도록 수정<br />
+						21.07.06 새 LC_05_05 팝업이 만들어졌으므로 이 파일은 파일명에 bk를 붙여 백업함. 새 LC_05_05 팝업은 LC_05_20.html 내에 들어있음
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>LC_05_06</td>
+					<td>[pop-up]학습종료 안내</td>
+					<td class="ta-l">
+						<a href="LC_05_06_view.html" target="_blank">LC_05_06_view.html</a><br />
+						(기획/퍼블 화면 확인용)<br /><br />
+						<a href="LC_05_06.html" target="_blank">LC_05_06.html</a><br />
+						(개발-알맹이 코드만)<br />
+					</td>
+					<td>이진경</td>
+					<td>20.10.20</td>
+					<td class="ta-l">
+					    팝업<br />
+						20.11.12 애니메이션 작업 완료<br />
+						21.01.25 오디오 추가<br />
+						21.06.17 팝업이 헤더부분 아래로 붙도록 수정<br />
+						(백업파일 : <a href="LC_05_06_bk.html" target="_blank">LC_05_06_bk.html</a>)
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="va-m">-</td>
+					<td>학습종료 팝업</td>
+					<td class="ta-l"><a href="LC_05_06_lp.html" target="_blank">LC_05_06_lp.html</a></td>
+					<td>김경민</td>
+					<td>21.07.02</td>
+					<td class="ta-l">
+					    팝업<br />
+					    21.07.15 수정 : from bottom to top 애니메이션 : .lp-wrap 에 .transition-bt 기본 + 효과넣고 빼기: .transition-bt-on 추가/삭제
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>학습종료 팝업 <span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="LC_05_06_lp-GB.html" target="_blank">LC_05_06_lp-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.09</td>
+					<td class="ta-l">
+					    팝업
+					</td>
+					<td>확인완료</td>
+				</tr>
+				
+				<tr>
+					<td>LC_05_07</td>
+					<td rowspan="6" class="va-m">학습결과</td>
+					<td>노력1회</td>
+					<td class="ta-l"><a href="LC_05_07.html" target="_blank">LC_05_07.html</a></td>
+					<td>이진경</td>
+					<td>20.10.23</td>
+					<td rowspan="6" class="ta-l">
+						*** 학습결과 - 공통마크업 ***<br /><br />
+						* layout-lr에 추가될 클래스 정리 <br />
+						1. 노력 : layout-lr-effort<br />
+						2. 기본 : layout-lr-def <br />
+						3. 충분 : layout-lr-enough<br />
+						4. 훌륭 : layout-lr-nice<br /><br />
+						그 외 : 화면마다 주석 참조<br />
+						20.10.28 클래스명 수정<br />
+						20.11.09 lr-mySB영역/그래프영역 수정, 애니메이션 추가<br />
+						20.12.23 페이지 로딩 2초후 최하단으로 스크롤되는 애니메이션 추가<br />
+						21.01.25 오디오 추가<br />
+						21.05.28 로딩영역 0.5초후 사라지도록 임시 스크립트 삽입(오로지 퍼블확인용)
+					</td>
+					<td rowspan="6">
+						사용하지 않는 페이지<br /><br />
+						[ 리뉴얼됨 (바로 아래) ]<br />
+						LC_05_07_01<br /> ~ LC_05_07_04
+					</td>
+				</tr>
+				<tr>
+					<td>LC_05_08</td>
+					<td>노력2회</td>
+					<td class="ta-l"><a href="LC_05_08.html" target="_blank">LC_05_08.html</a></td>
+					<td>이진경</td>
+					<td>20.10.23</td>
+				</tr>
+				<tr>
+					<td>LC_05_09</td>
+					<td>노력3회</td>
+					<td class="ta-l"><a href="LC_05_09.html" target="_blank">LC_05_09.html</a></td>
+					<td>이진경</td>
+					<td>20.10.23</td>
+				</tr>
+				<tr>
+					<td>LC_05_10</td>
+					<td>기본</td>
+					<td class="ta-l"><a href="LC_05_10.html" target="_blank">LC_05_10.html</a></td>
+					<td>이진경</td>
+					<td>20.10.23</td>
+				</tr>
+				<tr>
+					<td>LC_05_11</td>
+					<td>충분</td>
+					<td class="ta-l"><a href="LC_05_11.html" target="_blank">LC_05_11.html</a></td>
+					<td>이진경</td>
+					<td>20.10.23</td>
+				</tr>
+				<tr>
+					<td>LC_05_12</td>
+					<td>훌륭</td>
+					<td class="ta-l"><a href="LC_05_12.html" target="_blank">LC_05_12.html</a></td>
+					<td>이진경</td>
+					<td>20.10.23</td>
+				</tr>
+				<tr>
+					<td>LC_05_07_01<br /><span class="star-txt renew">[renew]</span><span class="star renew">**</span></td>
+					<td rowspan="6" class="va-m">학습결과 <br /><span class="star-txt renew">[renew]</span><span class="star renew">**</span></td>
+					<td>노력 <span class="star-txt renew">[renew]</span><span class="star renew">**</span></td>
+					<td class="ta-l"><a href="LC_05_07_01.html" target="_blank">LC_05_07_01.html</a></td>
+					<td>이진경</td>
+					<td>21.05.27</td>
+					<td rowspan="4" class="ta-l">
+						*** 학습결과 - 공통마크업 <span class="star-txt renew">[renew]</span><span class="star renew">**</span><br /><br />
+						* new-lr에 추가될 클래스 정리 <br />
+						1. 노력 : new-lr-effort<br />
+						2. 기본 : new-lr-def <br />
+						3. 충분 : new-lr-enough<br />
+						4. 훌륭 : new-lr-nice<br /><br />
+						그 외 : 화면마다 주석 참조<br />
+					</td>
+					<td rowspan="4">확인완료</td>
+				</tr>
+				<tr>
+					<td>LC_05_07_02<br /><span class="star-txt renew">[renew]</span><span class="star renew">**</span></td>
+					<td>기본 <span class="star-txt renew">[renew]</span><span class="star renew">**</span></td>
+					<td class="ta-l"><a href="LC_05_07_02.html" target="_blank">LC_05_07_02.html</a></td>
+					<td>이진경</td>
+					<td>21.05.27</td>
+				</tr>
+				<tr>
+					<td>LC_05_07_03<br /><span class="star-txt renew">[renew]</span><span class="star renew">**</span></td>
+					<td>충분 <span class="star-txt renew">[renew]</span><span class="star renew">**</span></td>
+					<td class="ta-l"><a href="LC_05_07_03.html" target="_blank">LC_05_07_03.html</a></td>
+					<td>이진경</td>
+					<td>21.05.27</td>
+				</tr>
+				<tr>
+					<td>LC_05_07_04<br /><span class="star-txt renew">[renew]</span><span class="star renew">**</span></td>
+					<td>훌륭 <span class="star-txt renew">[renew]</span><span class="star renew">**</span></td>
+					<td class="ta-l"><a href="LC_05_07_04.html" target="_blank">LC_05_07_04.html</a></td>
+					<td>이진경</td>
+					<td>21.05.27</td>
+				</tr>
+				<tr>
+					<td>LC_05_07_01~LC_05_07_04 통합</td>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="LC_05_07_01-GB.html" target="_blank">LC_05_07_01-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.11</td>
+					<td class="ta-l">
+                        기존 LC_05_07_01 ~ LC_05_07_04 페이지들 통합. class에 따라 테마 바뀜.
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>LC_05_16</td>
+					<td>스타샵 학습완료 레이어</td>
+					<td class="ta-l"><a href="LC_05_16.html" target="_blank">LC_05_16.html</a></td>
+					<td>김경민</td>
+					<td>21.09.06</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="va-m">LC_05_13</td>
+					<td rowspan="2" class="va-m">오답확인</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_05_13.html" target="_blank">LC_05_13.html</a></td>
+					<td>이진경</td>
+					<td>20.10.26</td>
+					<td class="ta-l">
+						20.11.16 수정 (수식의 테두리 색상 설정 - docx 문서 참조)<br />
+						21.06.01 수정 (디자인 변경)<br />
+						21.08.30 수정 : slick걷어내고 원복 (<a href="LC_05_13_slick.html" target="_blank">slick버전</a>)
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="LC_05_13-GB.html" target="_blank">LC_05_13-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.08</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="3" class="va-m">LC_05_15</td>
+					<td rowspan="3" class="va-m">집중안내</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_05_15.html" target="_blank">LC_05_15.html</a></td>
+					<td>이진경</td>
+					<td>20.11.13</td>
+					<td class="ta-l">
+					    팝업<br />
+						20.11.19 텍스트 수정<br />
+						21.01.25 오디오 추가
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gm">[교문]</span><span class="star gm">*</span></td>
+					<td class="ta-l"><a href="LC_05_15-GM.html" target="_blank">LC_05_15-GM.html</a></td>
+					<td>김경민</td>
+					<td>21.07.02</td>
+					<td class="ta-l">
+					    팝업
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="LC_05_15-GB.html" target="_blank">LC_05_15-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.09</td>
+					<td class="ta-l">
+					    팝업
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="va-m">LC_05_20</td>
+					<td rowspan="2" class="va-m">학습시작</td>
+					<td>-</td>
+					<td class="ta-l">
+						<a href="LC_05_20_view.html" target="_blank">LC_05_20_view.html</a><br />
+						(기획/퍼블 화면 확인용)<br /><br />
+					    <a href="LC_05_20.html" target="_blank">LC_05_20.html</a><br />
+						(개발-알맹이 코드만)<br />
+                    </td>
+					<td>김경민</td>
+					<td>21.07.02</td>
+					<td class="ta-l">
+					    팝업<br />
+					    lc_05_05, lc_05_06_01 팝업도 포함돼 있음
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="LC_05_20-GB.html" target="_blank">LC_05_20-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.09</td>
+					<td class="ta-l">
+					    팝업<br />
+					    글로벌 lc_05_05, 글로벌 lc_05_06_01, 글로벌 lc_05_21 팝업도 포함돼 있음
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>LC_05_21</td>
+					<td>학습시작</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_05_21.html" target="_blank">LC_05_21.html</a></td>
+					<td>김경민</td>
+					<td>21.07.02</td>
+					<td class="ta-l">
+					    팝업
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="7" class="va-m">OCR</td>
+					<td rowspan="2" class="va-m">LC_09_05</td>
+					<td rowspan="7" class="va-m">OCR</td>
+					<td rowspan="2" class="va-m">OCR 학습 사용법</td>
+					<td rowspan="2" class="va-m">-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_09_05.html" target="_blank">LC_09_05.html</a></td>
+					<td>김경민</td>
+					<td>21.06.22</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>해당없음</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="LC_09_05-GB.html" target="_blank">LC_09_05-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.23</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="4" class="va-m">LC_09_04</td>
+					<td rowspan="4" class="va-m">OCR 추천학습</td>
+					<td rowspan="2" class="va-m">-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_09_04.html" target="_blank">LC_09_04.html</a></td>
+					<td>김경민</td>
+					<td>21.06.29</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>해당없음</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="LC_09_04-GB.html" target="_blank">LC_09_04-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.24</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="va-m">소주제가 없는 경우</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_09_04_empty.html" target="_blank">LC_09_04_empty.html</a></td>
+					<td>김경민</td>
+					<td>21.06.29</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>해당없음</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="LC_09_04_empty-GB.html" target="_blank">LC_09_04_empty-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.24</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>LC_09_06</td>
+					<td>OCR 히스토리</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="LC_09_06.html" target="_blank">LC_09_06.html</a></td>
+					<td>김경민</td>
+					<td>21.08.18</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>해당없음</td>
+				</tr>
+            
+				<tr>
+					<td rowspan="51" class="va-m">마이</td>
+					<td rowspan="3">MY_00</td>
+					<td rowspan="3">로그인</td>
+					<td rowspan="3">-</td>
+					<td rowspan="3">-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="MY_00.html" target="_blank">MY_00.html</a></td>
+					<td>김경민</td>
+					<td>20.10.27</td>
+					<td class="ta-l">
+						로고 미정<br />
+						20.11.26 새 헤더 적용, 로고 이미지 교체
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gm">[교문]</span><span class="star gm">*</span></td>
+					<td class="ta-l"><a href="MY_00-GM.html" target="_blank">MY_00-GM.html</a></td>
+					<td>김경민</td>
+					<td>20.10.27</td>
+					<td class="ta-l">
+						로고 미정<br />
+						21.08.16 하단 버튼영역(회원인증과 고객센터)가 디자인 상에는 기기 크기에 상관없이 하단에 고정이지만 태블릿과 모바일에서 키보드를 띄우면 위로 올라가는 문제로 인해, 원래는 position sticky였던 것을 static으로 수정(교문탈패드_수정사항_v3_20210813_추가.pptx)
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="MY_00-GB.html" target="_blank">MY_00-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.15</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="2">MY_01</td>
+					<td rowspan="4" class="va-m">비밀번호 찾기</td>
+					<td rowspan="2">-</td>
+					<td rowspan="2">-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="MY_01.html" target="_blank">MY_01.html</a></td>
+					<td>김경민</td>
+					<td>20.10.28</td>
+					<td class="ta-l">
+						20.11.26 새 헤더 적용<br />
+						21.08.16 하단 버튼영역이 디자인 상에는 기기 크기에 상관없이 하단에 고정이지만 태블릿과 모바일에서 키보드를 띄우면 위로 올라가는 문제로 인해 position static으로 수정(교문탈패드_수정사항_v3_20210813_추가.pptx)
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="MY_01-GB.html" target="_blank">MY_01-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.16</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="va-m">MY_01_01</td>
+					<td rowspan="2" class="va-m">비밀번호 찾기 완료</td>
+					<td rowspan="2" class="va-m">-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="MY_01_01.html" target="_blank">MY_01_01.html</a></td>
+					<td>김경민</td>
+					<td>20.10.28</td>
+					<td class="ta-l">
+						20.11.26 새 헤더 적용
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="MY_01_01-GB.html" target="_blank">MY_01_01-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.16</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="va-m">MY_02_01</td>
+					<td rowspan="21" class="va-m">회원가입</td>
+					<td rowspan="6" class="va-m">약관동의</td>
+					<td rowspan="2" class="va-m">-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="MY_02_01.html" target="_blank">MY_02_01.html</a></td>
+					<td>김경민</td>
+					<td>20.10.28</td>
+					<td class="ta-l">
+						20.11.12 텍스트 및 버튼 위치 수정<br />
+						20.11.26 새 헤더 적용
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="MY_02_01-GB.html" target="_blank">MY_02_01-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.16</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>MY_02_02</td>
+					<td>[pop-up]이용약관</td>
+					<td>-</td>
+					<td rowspan="3" class="ta-l va-m"><a href="MY_02_02.html" target="_blank">MY_02_02.html</a></td>
+					<td rowspan="3" class="va-m">김경민</td>
+					<td rowspan="3" class="va-m">20.10.29</td>
+					<td rowspan="3" class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td rowspan="3">확인완료</td>
+				</tr>
+				<tr>
+					<td class="va-m">MY_02_03</td>
+					<td>[pop-up]개인정보 수집 및 이용</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="va-m">MY_02_04</td>
+					<td>[pop-up]마케팅 수신</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>[pop-up]글로벌 버전</td>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="MY_02_01-GB.html" target="_blank">MY_02_01-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.16</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="3" class="va-m">MY_02_05</td>
+					<td rowspan="3" class="va-m">회원정보 입력</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="MY_02_05.html" target="_blank">MY_02_05.html</a></td>
+					<td>김경민</td>
+					<td>20.10.30</td>
+					<td class="ta-l">
+					    20.11.20 텍스트 및 폰트컬러 수정<br />
+						20.11.26 새 헤더 적용
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>STEP 1</td>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="MY_02_05_01-GB.html" target="_blank">MY_02_05_01-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.29</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>STEP 2</td>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="MY_02_05_02-GB.html" target="_blank">MY_02_05_02-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.29</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="va-m">MY_02_06</td>
+					<td rowspan="2" class="va-m">회원가입 완료</td>
+					<td rowspan="2" class="va-m">-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="MY_02_06.html" target="_blank">MY_02_06.html</a></td>
+					<td>김경민</td>
+					<td>20.11.02</td>
+					<td class="ta-l">
+						20.11.26 새 헤더 적용
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="MY_02_06-GB.html" target="_blank">MY_02_06-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.17</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>MY_02_07</td>
+					<td rowspan="2" class="va-m">이메일 인증</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="MY_02_07.html" target="_blank">MY_02_07.html</a></td>
+					<td>김경민</td>
+					<td>20.11.02</td>
+					<td class="ta-l">
+						20.11.26 로고 이미지 교체
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td>이메일 인증완료</td>
+					<td>-</td>
+					<td class="ta-l"><a href="MY_02_07_done.html" target="_blank">MY_02_07_done.html</a></td>
+					<td>김경민</td>
+					<td>20.11.02</td>
+					<td class="ta-l">
+						20.11.26 로고 이미지 교체
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="va-m">MY_02_08</td>
+					<td rowspan="8" class="va-m">메일 폼</td>
+					<td rowspan="2" class="va-m">회원가입인증</td>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="member_join_global_ko.html" target="_blank">member_join_global_ko.html</a></td>
+					<td>김경민</td>
+					<td>21.07.09</td>
+					<td rowspan="2" class="ta-l">
+					    22.01.05 수정 개발된 파일 받아서 수정<br />
+						(백업파일 : <a href="MY_02_08.html" target="_blank">MY_02_08.html</a>)
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="member_join_global_en.html" target="_blank">member_join_global_en.html</a></td>
+					<td>김경민</td>
+					<td>21.07.09</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="6" class="va-m">MY_02_09</td>
+					<td rowspan="3" class="va-m">임시비밀번호</td>
+					<td>-</td>
+					<td class="ta-l"><a href="forgot_password.html" target="_blank">forgot_password.html</a></td>
+					<td>김경민</td>
+					<td>21.07.09</td>
+					<td rowspan="6" class="ta-l">
+					    22.01.05 수정 개발된 파일 받아서 수정<br />
+						(백업파일 : <a href="MY_02_08-GB.html" target="_blank">MY_02_08-GB.html</a>)
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="forgot_password_global_ko.html" target="_blank">forgot_password_global_ko.html</a></td>
+					<td>김경민</td>
+					<td>21.07.09</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="forgot_password_global_en.html" target="_blank">forgot_password_global_en.html</a></td>
+					<td>김경민</td>
+					<td>21.07.09</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="3" class="va-m">이메일 인증</td>
+					<td>-</td>
+					<td class="ta-l"><a href="email_auth.html" target="_blank">email_auth.html</a></td>
+					<td>김경민</td>
+					<td>21.07.09</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="email_auth_global_ko.html" target="_blank">email_auth_global_ko.html</a></td>
+					<td>김경민</td>
+					<td>21.07.09</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="email_auth_global_en.html" target="_blank">email_auth_global_en.html</a></td>
+					<td>김경민</td>
+					<td>21.07.09</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>MY_03_01</td>
+					<td rowspan="10" class="va-m">마이</td>
+					<td rowspan="6" class="va-m">회원정보</td>
+					<td>-</td>
+					<td>-</td>
+					<td rowspan="4" class="ta-l va-m"><a href="MY_03_01.html" target="_blank">MY_03_01.html</a></td>
+					<td rowspan="4" class="va-m">김경민</td>
+					<td rowspan="4" class="va-m">20.11.05</td>
+					<td rowspan="4" class="ta-l">
+						20.11.26 새 헤더 적용
+					</td>
+					<td rowspan="4">확인완료</td>
+				</tr>
+				<tr>
+					<td>MY_03_02</td>
+					<td>비밀번호 변경</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>MY_03_03</td>
+					<td>학습자 정보 수정</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>MY_03_04</td>
+					<td>학습자 추가</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>MY_03_01 ~ MY_03_03</td>
+					<td>-</td>
+					<td><span class="star-txt gm">[교문]</span><span class="star gm">*</span></td>
+					<td class="ta-l"><a href="MY_03_01-GM.html" target="_blank">MY_03_01-GM.html</a></td>
+					<td>김경민</td>
+					<td>21.06.01</td>
+					<td class="ta-l">
+					    21.07.29 헤더 수정 및 뒤로가기 버튼 추가<br />
+					    스크립트 추가(비밀번호 '변경하기'버튼 클릭시 해당 영역으로 스크롤 이동)
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>글로벌 버전 <br />MY_03_01 ~ MY_03_03</td>
+					<td>-</td>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="MY_03_01-GB.html" target="_blank">MY_03_01-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.19</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="2">MY_03_05</td>
+					<td rowspan="4" class="va-m">회원탈퇴</td>
+					<td rowspan="2">회원탈퇴 안내 및 확인</td>
+					<td>-</td>
+					<td class="ta-l"><a href="MY_03_05.html" target="_blank">MY_03_05.html</a></td>
+					<td>김경민</td>
+					<td>20.11.05</td>
+					<td class="ta-l">
+						20.11.26 새 헤더 적용
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="MY_03_05-GB.html" target="_blank">MY_03_05-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.22</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td rowspan="2">MY_03_06</td>
+					<td rowspan="2">회원탈퇴 완료</td>
+					<td>-</td>
+					<td class="ta-l"><a href="MY_03_06.html" target="_blank">MY_03_06.html</a></td>
+					<td>김경민</td>
+					<td>20.11.06</td>
+					<td class="ta-l">
+						20.11.26 새 헤더 적용
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="MY_03_06-GB.html" target="_blank">MY_03_06-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.22</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>MY_04_00</td>
+					<td rowspan="8" class="va-m">고객지원</td>
+					<td>-</td>
+					<td>-</td>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="MY_04_00-GB.html" target="_blank">MY_04_00-GB.html</a></td>
+					<td>김경민</td>
+					<td>21.11.29</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>MY_04_01</td>
+					<td>FAQ</td>
+					<td>목록/보기</td>
+					<td>-</td>
+					<td class="ta-l"><a href="MY_04_01.html" target="_blank">MY_04_01.html</a></td>
+					<td>이진경</td>
+					<td>20.11.06</td>
+					<td class="ta-l">
+						20.11.26 새 헤더 적용
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>MY_04_02</td>
+					<td rowspan="3" class="va-m">1:1문의</td>
+					<td>목록/보기</td>
+					<td>-</td>
+					<td class="ta-l"><a href="MY_04_02.html" target="_blank">MY_04_02.html</a></td>
+					<td>이진경</td>
+					<td>20.11.06</td>
+					<td class="ta-l">
+						20.11.26 새 헤더 적용
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>MY_04_03</td>
+					<td>등록</td>
+					<td>-</td>
+					<td class="ta-l"><a href="MY_04_03.html" target="_blank">MY_04_03.html</a></td>
+					<td>이진경</td>
+					<td>20.11.18</td>
+					<td class="ta-l">
+						20.11.26 새 헤더 적용
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>MY_04_04</td>
+					<td>수정</td>
+					<td>-</td>
+					<td class="ta-l"><a href="MY_04_04.html" target="_blank">MY_04_04.html</a></td>
+					<td>이진경</td>
+					<td>20.11.18</td>
+					<td class="ta-l">
+						20.11.26 새 헤더 적용
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>MY_04_05</td>
+					<td>공지사항</td>
+					<td>목록/보기</td>
+					<td>-</td>
+					<td class="ta-l"><a href="MY_04_05.html" target="_blank">MY_04_05.html</a></td>
+					<td>이진경</td>
+					<td>20.11.19</td>
+					<td class="ta-l">
+						20.11.26 새 헤더 적용
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>MY_04_06</td>
+					<td rowspan="2" class="va-m">약관</td>
+					<td>[POP-UP] 이용약관</td>
+					<td>-</td>
+					<td rowspan="2" class="ta-l va-m"><a href="MY_04_06.html" target="_blank">MY_04_06.html</a></td>
+					<td rowspan="2" class="va-m">김경민</td>
+					<td rowspan="2" class="va-m">20.11.09</td>
+					<td rowspan="2" class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td rowspan="2">확인완료</td>
+				</tr>
+				<tr>
+					<td>MY_04_07</td>
+					<td>[POP-UP] 개인정보처리방침</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td>MY_05_01</td>
+					<td rowspan="2" class="va-m">회원인증</td>
+					<td>회원인증</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="MY_05_01.html" target="_blank">MY_05_01.html</a></td>
+					<td>김경민</td>
+					<td>21.06.03</td>
+					<td class="ta-l">
+						21.08.16 하단 버튼영역이 디자인 상에는 기기 크기에 상관없이 하단에 고정이지만 태블릿과 모바일에서 키보드를 띄우면 위로 올라가는 문제로 인해 position static으로 수정(교문탈패드_수정사항_v3_20210813_추가.pptx)
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>MY_05_02</td>
+					<td>회원인증완료</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="MY_05_02.html" target="_blank">MY_05_02.html</a></td>
+					<td>김경민</td>
+					<td>21.06.04</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>MY_06_01</td>
+					<td rowspan="3" class="va-m">APP 계정 신청</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="MY_06_01.html" target="_blank">MY_06_01.html</a></td>
+					<td>김경민</td>
+					<td>21.06.07</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>해당없음</td>
+				</tr>
+				<tr>
+					<td>MY_06_02</td>
+					<td>APP 계정 신청 완료</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="MY_06_02.html" target="_blank">MY_06_02.html</a></td>
+					<td>김경민</td>
+					<td>21.06.08</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>해당없음(웅진 태블릿 버전만 사용)</td>
+				</tr>
+				<tr>
+					<td>MY_06_03</td>
+					<td>APP 계정 변경</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="MY_06_03.html" target="_blank">MY_06_03.html</a></td>
+					<td>김경민</td>
+					<td>21.06.08</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>해당없음</td>
+				</tr>
+				
+				<tr>
+					<td rowspan="2" class="va-m">구독</td>
+					<td>SP_01_01</td>
+					<td rowspan="2" class="va-m">정기구독 신청</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="SP_01_01.html" target="_blank">SP_01_01.html</a></td>
+					<td>김경민</td>
+					<td>21.10.22</td>
+					<td>
+						SP_02_01 정기구독 변경 페이지도 포함돼 있음
+					</td>
+					<td>해당 없음</td>
+				</tr>
+				<tr>
+					<td>SP_01_02</td>
+					<td>학습자 추가</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="SP_01_02.html" target="_blank">SP_01_02.html</a></td>
+					<td>김경민</td>
+					<td>21.10.06</td>
+					<td>
+						<!-- 비고 -->
+					</td>
+					<td>해당 없음</td>
+				</tr>
+				
+				<tr>
+					<td rowspan="3" class="va-m">ETC</td>
+					<td>ETC_01</td>
+					<td rowspan="2" class="va-m">Error</td>
+					<td>404</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="ETC_01.html" target="_blank">ETC_01.html</a></td>
+					<td>김경민</td>
+					<td>20.11.16</td>
+					<td>
+					    20.11.20 폰트컬러 수정
+					</td>
+					<td>확인완료</td>
+				</tr>
+				<tr>
+					<td>ETC_02</td>
+					<td>500</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="ETC_02.html" target="_blank">ETC_02.html</a></td>
+					<td>김경민</td>
+					<td>20.11.16</td>
+					<td>
+					    20.11.20 텍스트 및 폰트컬러 수정
+					</td>
+					<td>확인완료</td>
+				</tr>
+
+				<tr>
+					<td>-</td>
+					<td>error_pop</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="error.html" target="_blank">error.html</a></td>
+					<td>이진경</td>
+					<td>-</td>
+					<td class="ta-l">
+					    팝업<br />
+						공통팝업형태(LC_02_06_lp.html 과 같은 형태)<br />
+						각각 케이스별로 텍스트만 다름<br />
+						21.07.22 김경민 : 오류코드가 있는 경우의 팝업 추가
+					</td>
+					<td>확인완료</td>
+				</tr>
+
+				<tr>
+					<td rowspan="3" class="va-m">개인정보 처리방침</td>
+					<td>-</td>
+					<td class="va-m">개인정보처리방침</td>
+					<td>-</td>
+					<td>-</td>
+					<td>
+						_kr - 국문<br />_en - 영문
+					</td>
+					<td class="ta-l">
+						<a href="privacy_policy_kr.html" target="_blank">privacy_policy_kr.html</a>
+						<a href="privacy_policy_en.html" target="_blank">privacy_policy_en.html</a>
+					</td>
+					<td>김유미</td>
+					<td>22.01.07</td>
+					<td>
+						22.01.07 개인정보처리방침 개발 전달 샘플
+					</td>
+					<td>해당없음</td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td>이용약관</td>
+					<td>-</td>
+					<td>-</td>
+					<td>
+						_kr - 국문<br />_en - 영문
+					</td>
+					<td class="ta-l">
+						<a href="terms_of_use_kr.html" target="_blank">terms_of_use_kr.html</a>
+						<a href="terms_of_use_en.html" target="_blank">terms_of_use_en.html</a>
+					</td>
+					<td>김유미</td>
+					<td>22.01.07</td>
+					<td>
+					
+					</td>
+					<td>해당없음</td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td>마케팅 수신동의</td>
+					<td>-</td>
+					<td>-</td>
+					<td>
+						_kr - 국문<br />_en - 영문
+					</td>
+					<td class="ta-l">
+						<a href="marketing_consent_kr.html" target="_blank">marketing_consent_kr.html</a>
+						<a href="marketing_consent_en.html" target="_blank">marketing_consent_en.html</a>
+					</td>
+					<td>김유미</td>
+					<td>22.01.07</td>
+					<td></td>
+					<td>해당없음</td>
+				</tr>
+
+				<tr>
+					<td rowspan="6" class="va-m">퍼블전용</td>
+					<td>-</td>
+					<td rowspan="2" class="va-m">공통마크업</td>
+					<td>레이아웃</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="sample_layout.html" target="_blank">sample_layout.html</a></td>
+					<td>이진경</td>
+					<td>-</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>해당없음</td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td>공통UI</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="sample.html" target="_blank">sample.html</a></td>
+					<td>이진경</td>
+					<td>-</td>
+					<td class="ta-l">
+						탭, 버튼 모음
+					</td>
+					<td>해당없음</td>
+				</tr>
+
+				<tr>
+					<td>-</td>
+					<td>키보드</td>
+					<td>기본 숫자형</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="sample_keypad.html" target="_blank">sample_keypad.html (사용하지 않음)</a></td>
+					<td>김경민</td>
+					<td>-</td>
+					<td class="ta-l">
+						keypad.num_key : 기본 숫자형<br />
+						keypad.basic : 기본 연산형<br />
+						keypad : 복잡 연산형<br />
+						21.01.13 복잡연산형의 특수문자 x를 이미지로 교체<br />
+						21.02.02 키패드 디자인이 수정되어, 더 이상 이 페이지의 키패드는 사용하지 않음. LC_05_02.html의 키패드를 사용.
+					</td>
+					<td>해당없음</td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td>진행상태바</td>
+					<td></td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="sample_progressbar.html" target="_blank">sample_progressbar.html</a></td>
+					<td>김경민</td>
+					<td>-</td>
+					<td class="ta-l">
+						bar1 : 얇은막대형+거북이/토끼+시간<br />
+						bar2 : 굵은막대형+텍스트+시간<br />
+						bar3 : 단순막대형+문제숫자<br /><br />
+						20.12.04 동물아이콘 로티 json 교체
+					</td>
+					<td>해당없음</td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td>정확도/속도계</td>
+					<td></td>
+					<td>-</td>
+					<td>-</td>
+					<td class="ta-l"><a href="accu_speedo.html" target="_blank">accu_speedo.html</a></td>
+					<td>이진경</td>
+					<td>-</td>
+					<td class="ta-l">
+						학습결과 / 문제풀이 헤더에 들어가는 정확도/속도계
+						21.05.26 이후로, 문제풀이 화면의 헤더는 LC_05_02-GM.html 내에 넣었으므로 그 화면을 보면 됨.
+					</td>
+					<td>해당없음</td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td>글로벌 버전의 헤더 모음</td>
+					<td></td>
+					<td>-</td>
+					<td><span class="star-txt gb">[글로벌]</span><span class="star gb">*</span></td>
+					<td class="ta-l"><a href="sample_header-GB.html" target="_blank">sample_header-GB.html</a></td>
+					<td>김경민</td>
+					<td>-</td>
+					<td class="ta-l">
+						<!-- 비고 -->
+					</td>
+					<td>확인완료</td>
+				</tr>
+
+			</tbody>
+		</table>
+
+	</div>
+
+</div>
+</body>
+</html>
