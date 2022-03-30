@@ -260,7 +260,7 @@
 .v-mob .layout-def.with_bottom_area{height: 100%;}
 .v-mob .layout-def.with_bottom_area .container,
 .v-mob .layout-def.with_bottom_area .inner{height: 100%;}
-.v-mob .bottom_wrap{position: absolute;}
+.v-mob .bottom_wrap{position: absolute; bottom:0;}
 .v-mob .bottom_wrap.static{position: static;}
 
 
@@ -3271,69 +3271,72 @@ form.lr{padding-bottom: 70px;}
 
 
 
-/* 1분기 개선 사항 바로셈 홈 초저, 초고  220325 */
+/* 1분기 개선 사항 바로셈 홈 초저, 초고  220325 ~ 220330 */
 .blind {position: absolute; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden;}
 .bg_lgtgrn {background-color:#e9f8f5 !important}
-/* .bg_lgtgrn.choice.gm .center_wrap {width:1280px;} */
-    /* .v-mob .bg_lgtgrn.choice.gm .center_wrap {height:100vh} */
-.bottom_wrap.com {position: absolute; bottom:0; width: 100%;}
-.bg_lgtgrn .center_wrap {width:1028px}
+.choice.gm.new.bg_lgtgrn .center_wrap {width:912px}
+.v-pc .gm .inner {min-width: fit-content;}
+
 .choice.gm .lg_home_wrap {margin: 0 auto; margin-top:15px; text-align: center;}
-.choice.gm .bottom_wrap.com {position: absolute; width: 100%;}
-.com .rgt_box {margin-right:10%}
-.com .box_btn {display: table; width:1280px; max-height:120px; margin: 0 auto; line-height: normal; background:#fff}
+.bottom_wrap.com {width: 100%; margin:0 auto; background-color: #fff;}
+.com .rgt_box {}
+.com .box_btn {display: table; width:66%; max-height:140px; margin: 0 auto; line-height: normal; background:#fff}
 .com .box_btn .img_btm_ca {position: absolute; bottom:0px}
 .com .box_btn span, .choice.gm .com .box_btn a {display: block; text-align: left;}
 .com .box_btn .bi_aibarossam {float:left; vertical-align: bottom;}
-.com .box_btn .inner_box {display:table-cell; margin: 0 auto; width: 50%; height: 120px; vertical-align: middle;}
-.com .box_btn .inner_box .left {float: left; margin-left:46px; color: #323c46;}
+.com .box_btn .inner_box {display:table-cell; margin: 0 auto; width: 50%; vertical-align: middle;}
+.com .box_btn .inner_box .left {float: left; color: #323c46;}
 .com .box_btn .inner_box .left .txt1 {font-size: 16px; line-height: 24px;}
 .com .box_btn .inner_box .left .txt2 {font-size: 20px; line-height: 32px; font-family: 'NotoSansCJKkr-Bold';}
 .com .box_btn .right {float: right; padding-right:50px; line-height: 40px; white-space:nowrap; font-size: 25px; color: #000; background: url(../images/common/img_com_btm.svg) no-repeat right center; background-size: 40px 40px;}
 .com .btm_rgt {position: relative; display: table-cell; width: 50%; height: 120px; vertical-align: middle;}
 /* 초저 */
-.choice.gm .lg_home_wrap .lng_box2 {width:46%}
-.choice.gm .lg_home_wrap .lng_box3 {width:54%}
+.choice.gm .lg_home_wrap .lng_box1 {width:100%}
+.choice.gm .lg_home_wrap .lng_box2 {width:47%}
+.choice.gm .lg_home_wrap .lng_box3 {width:53%}
 /* 초고 */
 .choice.gm .lg_home_wrap.ug .lng_box2 {width:50%}
 .choice.gm .lg_home_wrap.ug .lng_box3 {width:50%}
 /* mo */
 .v-mob .lg_home_wrap {display: flex; flex-wrap: wrap; justify-content: space-between;}
-.v-mob .com .box_btn {width:100%; height:80px}
-.v-mob .com .box_btn .img_btm_ca {width:40%;}
-.v-mob .com .box_btn .inner_box {display:none}
-.v-mob .com .box_btn .right {font-size: 17px;} 
-.v-mob .com .btm_rgt {height:60px}
 .v-mob .lg_home_wrap.ug .lng_box1 {width:100%}
-/* PC / TV */
+.v-mob .com .box_btn {width:312px; height:80px}
+.v-mob .com .box_btn .right {font-size: 17px; text-indent: -9999px;} 
+.v-mob .com .box_btn .img_btm_ca {display: none}
+.v-mob .com .btm_rgt {height:60px}
+.v-mob .com .box_btn .inner_box {width:60%}
+.v-mob .com .box_btn .inner_box .left span {line-height:20px; font-size:14px}
+/* PC */
+.v-pc .com .box_btn {width:912px}
 .v-pc .lg_home_wrap {flex-wrap: inherit; display: inline-flex}
 .v-pc .lg_home_wrap a {width:20%}
 .v-pc .lg_home_wrap .lng_box1 {width:93%}
 .v-pc .lg_home_wrap.ug .lng_box1 {width:73%}
-.v-pc .lg_home_wrap.ug .lng_box2, .v-pc .lg_home_wrap.ug .lng_box3 {width:64%}
-.v-pc .bottom_wrap.com {bottom: 0%; background-color: #fff;}
 .v-pc .lg_home_wrap.ug .lng_box2 {margin-left:10px}
+.v-pc .lg_home_wrap.ug .lng_box2, .v-pc .lg_home_wrap.ug .lng_box3 {width:64%}
+.v-pc .choice.gm .bottom_wrap.com {position: absolute; bottom:0;}
 /* 태블릿 */
-/* .v-tab .choice.gm .bottom_wrap.com {bottom: 0;} */
-.v-tab .lg_home_wrap {display: flex;}
+.v-tab .choice.gm .bottom_wrap.com {position: absolute; bottom:0;}
+.v-tab .lg_home_wrap {display: -webkit-inline-box; flex-wrap: wrap; justify-content: space-between; }
 .v-tab .box_btn .img_btm_ca {display:none}
-.v-tab .com .rgt_box {margin-right: 50px}
-.v-tab .com .box_btn {width:100%; background:rgba(255, 255, 255, 0.8);}
-.v-tab .com .box_btn .inner_box {display:none}
-.v-tab .lg_home_wrap.ug .lng_box1 {width:100%}
+.v-tab .com .box_btn {background:rgba(255, 255, 255, 0.8);}
+/* .v-tab .com .box_btn .inner_box {display:none} */
+.v-tab .lg_home_wrap.ug .lng_box1 {width:80%}
+.v-tab .com .box_btn {width:83%}
 /*태블릿 가로 */
 @media (orientation: landscape){
-    .bottom_wrap.com {bottom: -70%;}
-    .v-mob .box_btn .img_btm_ca {display:none}
-    .bottom_wrap {position: inherit;}
+    .v-tab .com .box_btn {height:140px}
+    .v-tab .lg_home_wrap {display:inline-flex; flex-wrap: nowrap; }
+    .v-tab .box_btn .img_btm_ca {display:block}
+    .bottom_wrap.com {position: inherit}
 }
-
-
 
 
 /*태블릿세로*/
 @media (orientation: portrait){
-    .v-tab .choice.gm.new .center_wrap{display: block; width:100%; padding:40px; height:500px; margin-top: 15%;}
+    .v-tab .com .box_btn {width:80%}
+    .v-tab .choice.gm.new.bg_lgtgrn .center_wrap {width:90%}
+    .v-tab .choice.gm.new .center_wrap {display: block; width:100%; padding:40px; margin-top:10px; padding-top: 12%; text-align: center;}
     .v-tab .choice.gm.new .boxes_wrap{margin-top: 32px; column-count: auto; column-gap: normal; display: flex; flex-wrap: wrap; justify-content: space-between;}
     .v-tab .choice.gm.new .boxes_wrap a.box1{width: 100%; height: 320px;}
     .v-tab .choice.gm.new .boxes_wrap a.box1.course{height: 424px;}
