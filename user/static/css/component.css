@@ -3307,7 +3307,7 @@ form.lr{padding-bottom: 70px;}
 .v-mob .com .box_btn .inner_box {width:60%}
 .v-mob .com .box_btn .inner_box .left span {line-height:20px; font-size:14px}
 /* PC */
-.v-pc .com .box_btn {width:912px}
+.v-pc .com .box_btn {width:912px; height:140px}
 .v-pc .lg_home_wrap {flex-wrap: inherit; display: inline-flex}
 .v-pc .lg_home_wrap a {width:20%}
 .v-pc .lg_home_wrap .lng_box1 {width:93%}
