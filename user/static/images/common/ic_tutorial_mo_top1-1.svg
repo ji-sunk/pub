@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="152.81" height="67.5" viewBox="0 0 152.81 67.5"><g transform="translate(-29.94 -353.25)"><g transform="translate(182 400) rotate(90)"><path d="M14,0H10A10,10,0,0,0,0,10V30" transform="translate(5.999)" fill="none" stroke="#505a64" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path d="M0,0,6,6l6-6" transform="translate(0 23.999)" fill="none" stroke="#505a64" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g><g transform="translate(13 4)"><g transform="translate(18 280)"><path d="M-1490.842,6201.812h-4a10,10,0,0,0-10,10v20" transform="translate(1510.842 -6131.813)" fill="none" stroke="#505a64" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path d="M-2513.021,5594.108l6,6,6-6" transform="translate(2513.021 -5500.109)" fill="none" stroke="#505a64" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="110.81" height="62.811" viewBox="0 0 110.81 62.811">
+  <g id="그룹_15058" data-name="그룹 15058" transform="translate(-42.94 -779.25)">
+    <g id="그룹_15031" data-name="그룹 15031" transform="translate(-741 1591) rotate(-90)">
+      <g id="_-g-ic_tutorial_ar_05" data-name="-g-ic_tutorial_ar_05" transform="translate(750 864)">
+        <path id="line" d="M-1504.842,6211.812v30" transform="translate(1510.842 -6211.812)" fill="none" stroke="#505a64" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="ar" d="M-2513.021,5594.108l6,6,6-6" transform="translate(2513.021 -5570.109)" fill="none" stroke="#505a64" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+    </g>
+    <g id="그룹_15023" data-name="그룹 15023" transform="translate(26 430)">
+      <g id="_-g-ic_tutorial_ar_05-2" data-name="-g-ic_tutorial_ar_05" transform="translate(18 280)">
+        <path id="line-2" data-name="line" d="M-1490.842,6201.812h-4a10,10,0,0,0-10,10v20" transform="translate(1510.842 -6131.813)" fill="none" stroke="#505a64" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="ar-2" data-name="ar" d="M-2513.021,5594.108l6,6,6-6" transform="translate(2513.021 -5500.109)" fill="none" stroke="#505a64" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>
