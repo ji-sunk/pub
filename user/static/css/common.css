@@ -90,6 +90,7 @@ div.header { position: relative; }
 .btn-red { background-color: #ff6e5f; color: #fff; }
 .btn-white { background-color: #fff; color: #0096be; }
 .btn-gray { background-color: #f2f4f8; color: #3c4650; }
+.btn-gray1 { background-color: #e4ebf4; color: #aab4be; }
 .btn-dark { background-color: #3c4650; color: #fff; }
 .btn-sky { background-color: #d6f5fa; color: #00c3e1; height: 100%; padding: 0 32px; white-space: nowrap; }
 	.v-mob .btn-sky { padding-left: 12px; padding-right: 12px; }
@@ -900,11 +901,10 @@ button[disabled] { background-color: #f2f4f8; color: rgba(50,60,70,0.4); font: n
 
 
 /* 학습 결과 _ AI 추천 학습 */
-.AI_RcmdLning_wrap {flex-wrap: wrap; margin-bottom:24px;}
+.AI_RcmdLning_wrap {flex-wrap: wrap;}
 .Rcmd_tit {display:block; margin:0 10px 24px 10px; font-weight: 500; font-size: 20px; color:#000}
- 	.v-mob .Rcmd_tit {font-size: 16px;}
 .Rcmd_tit .tit_blue {font-weight: bold; color: #1fc3e1;}
-.Rcmd_item_area {display: flex; justify-content: space-between; margin-bottom: 24px; width: 692px; margin: 0 auto;}
+.Rcmd_item_area {display: flex; justify-content: space-between; width: 692px; margin: 0 auto; margin-bottom: 24px;}
 	.v-mob .Rcmd_item_area {flex-wrap: wrap; justify-content: flex-start; max-width:100%}
 .Rcmd_item_area .Rcmd_item {position: relative; margin: 0 10px; width: 100%; max-height:136px; border-radius: 24px; font-family: 'NotoSansCJKkr-Bold';}
 	.v-mob .Rcmd_item_area .Rcmd_item {margin:0 2.5%; width:45%; max-height:100%}
@@ -1108,6 +1108,7 @@ button[disabled] { background-color: #f2f4f8; color: rgba(50,60,70,0.4); font: n
 	.v-tab .wa-body { padding-left: 84px; padding-right: 84px; }
 	.v-tab .wa-wrapper .slick-prev { left: -64px; }
 	.v-tab .wa-wrapper .slick-next { right: -64px; }
+	.v-tab .epnPopup-wrap .viewopen-detail {max-width: 44%;}
 }
 
 
@@ -1116,17 +1117,17 @@ button[disabled] { background-color: #f2f4f8; color: rgba(50,60,70,0.4); font: n
 .epnPopup-wrap { display: -ms-flexbox; display: flex; flex-direction: row; font-family: 'NotoSansCJKkr-Bold'; color: #323c46; }
 .epnPopup-wrap .btn-viewopen-wrap { position: relative; -ms-flex-positive: 0; flex-grow: 0; }
 .epnPopup-wrap .btn-viewopen { position: relative; padding-right: 15px; text-align: center; background-color: #5a768f; border-radius: 12px; font: normal 14px 'NotoSansCJKkr-Regular'; color: #fff; }
-.epnPopup-wrap .viewopen-detail {display: none; z-index:30; text-align:left; overflow: auto; position: absolute; top: 36px; right: 0; width: calc(100vw - 250px); max-width:85%; height: auto; max-height:450px; background-color: #fff; border: 1px solid #e4ebf4;  box-shadow:0 2px 20px 0 #e4ebf4; }
+.epnPopup-wrap .viewopen-detail {display: none; z-index:30; text-align:left; overflow: auto; position: absolute; top: 36px; right: 0; width: calc(100vw - 250px); max-width:55%; height: auto; max-height:450px; background-color: #fff; border: 1px solid #e4ebf4;  box-shadow:0 2px 20px 0 #e4ebf4; }
 	.v-mob .epnPopup-wrap .viewopen-detail {width: calc(100vw - 30px); max-width:100%; max-height:380px;}
-	.v-tab .epnPopup-wrap .viewopen-detail {height:450px; max-height:450px;}
+	.v-tab .epnPopup-wrap .viewopen-detail {height:406px;}
 .epnPopup-wrap .viewopen-detail-inner {white-space:initial; margin:0px 30px 40px 30px;}
-.epnPopup-wrap .viewopen-detail.on {display: block; margin-top:10px}
+.epnPopup-wrap .viewopen-detail.on {display: block; margin-top:20px}
 .epnPopup-wrap .pvBox {text-align:left;}
 .epnPopup-wrap .pvBox .pv-cont {text-align: left; min-width:300px}
 .popup_btnWrap {z-index:10; display:inline-block; position: sticky; top: 0px; left: 0px; width:100%; background-color: #fff;}
 .popup_btnWrap .btn_close {margin:5px 10px; padding: 20px; background: url(../images/icon/ic_close_grey.svg) #fff center center no-repeat; background-size: 48px 48px;}
 .wa-btnbox {display:flex; position:relative}
-.wa-btnbox .flt_rgt {position:absolute; right:0; white-space:nowrap;}
+.wa-btnbox .flt_rgt {position:absolute; right:0; margin-top:10px; white-space:nowrap;}
 .wa-btnbox button {float:left; padding:0px 12px 0 35px; margin-right:8px; height: 34px; font: normal 14px 'NotoSansCJKkr-Regular'; text-align: center;  border-radius: 12px;}
 	.v-mob .wa-btnbox button {margin-right:4px;}
 .wa-btnbox button:last-child {margin-right:-4px;}
@@ -1830,6 +1831,7 @@ button[disabled] { background-color: #f2f4f8; color: rgba(50,60,70,0.4); font: n
 .network_area .network_box {overflow-x:hidden;display: -ms-flexbox;  display: flex; position: fixed; top:0; right:0; bottom:0; left:0;  width: 100%;  height: 100%; margin:0 auto; height:auto; justify-content: center; align-items: center; text-align: center; background-color: #f2f4f8;}
 .network_area .network_box .lc-alert_txt {margin-top:30px}
 .network_area .network_box .lp-btnBox {max-width:285px; margin:0 auto; margin-top:30px; text-align: center}
+.blind {position: absolute; clip: rect(0 0 0 0); width: 1px; height: 1px; margin: -1px; overflow: hidden;}
 
 .v-mob .network_area .img_network {width:77px}
 .v-tab .network_area .lc-alert_txt {font-size: 23px;}
