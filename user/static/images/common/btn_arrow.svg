@@ -1,0 +1,7 @@
+<svg data-name="Play Overlay" xmlns="http://www.w3.org/2000/svg" width="24.254" height="24.84" viewBox="0 0 24.254 24.84">
+    <g data-name="타원 12" style="stroke:#fff;stroke-width:2px;fill:none">
+        <ellipse cx="12.127" cy="12.42" rx="12.127" ry="12.42" style="stroke:none"/>
+        <ellipse cx="12.127" cy="12.42" rx="11.127" ry="11.42" style="fill:none"/>
+    </g>
+    <path data-name="다각형 1" d="M5 .689a.5.5 0 0 1 .851 0l4.526 7.33a.5.5 0 0 1-.425.763H.9a.5.5 0 0 1-.425-.763z" transform="rotate(90 5.522 12.467)" style="fill:#fff"/>
+</svg>

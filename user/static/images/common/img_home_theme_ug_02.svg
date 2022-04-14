@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 320 200">
+    <defs>
+        <clipPath id="clip-path">
+            <rect id="사각형_9598" data-name="사각형 9598" width="320" height="200" rx="32" transform="translate(64 688)" style="fill:#fff"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <rect id="사각형_9590" data-name="사각형 9590" width="236.274" height="234.302" rx="29" style="fill:#57b7f9"/>
+        </clipPath>
+        <clipPath id="clip-path-3">
+            <rect id="사각형_9592" data-name="사각형 9592" width="254.837" height="237.023" rx="29" style="fill:#57b7f9"/>
+        </clipPath>
+        <clipPath id="clip-path-4">
+            <rect id="사각형_9591" data-name="사각형 9591" width="254.837" height="234.835" rx="29" style="fill:#57b7f9"/>
+        </clipPath>
+        <style>
+            
+        </style>
+    </defs>
+    <g id="마스크_그룹_14534" data-name="마스크 그룹 14534" transform="translate(-64 -688)" style="clip-path:url(#clip-path)">
+        <rect id="사각형_9593" data-name="사각형 9593" width="190.031" height="190.031" rx="35" transform="rotate(28 -970.45 1027.426)" style="opacity:.08;fill:#1eb2f3;mix-blend-mode:multiply;isolation:isolate"/>
+        <rect id="사각형_9594" data-name="사각형 9594" width="215.784" height="215.784" rx="30" transform="rotate(28 -1347.186 480.085)" style="opacity:.053;fill:#1eb2f3;mix-blend-mode:multiply;isolation:isolate"/>
+        <g id="icon" transform="rotate(21 -1850.07 714.882)">
+            <path id="패스_127802" data-name="패스 127802" d="M7.1.458 53.319 0a6.791 6.791 0 0 1 6.963 6.809 7.127 7.127 0 0 1-7.1 6.948l-46.216.458A6.791 6.791 0 0 1 0 7.406 7.127 7.127 0 0 1 7.1.458z" transform="translate(0 22.46)" style="fill:#fff"/>
+            <rect id="사각형_9595" data-name="사각형 9595" width="17.277" height="17.277" rx="8.638" transform="rotate(90 19.741 19.741)" style="fill:#a8e8f2"/>
+            <path id="패스_127803" data-name="패스 127803" d="M8.754 0a9.164 9.164 0 0 1 8.933 9.132 8.731 8.731 0 0 1-8.754 8.953A9.164 9.164 0 0 1 0 8.953 8.731 8.731 0 0 1 8.754 0z" transform="rotate(90 -1.192 40.167)" style="fill:#a8e8f2"/>
+        </g>
+        <g id="그룹_15213" data-name="그룹 15213" transform="rotate(-5.13 9098.302 -478.078)">
+            <path id="shape" d="M10.924 0h69.915a10.924 10.924 0 0 1 10.924 10.924v4.37a10.924 10.924 0 0 1-10.924 10.924H10.924A10.924 10.924 0 0 1 0 15.294v-4.37A10.924 10.924 0 0 1 10.924 0z" transform="rotate(-25.97 119.914 27.651)" style="fill:#fff"/>
+            <path id="shape-2" data-name="shape" d="M10.924 0h69.915a10.924 10.924 0 0 1 10.924 10.924v4.37a10.924 10.924 0 0 1-10.924 10.924H10.924A10.924 10.924 0 0 1 0 15.294v-4.37A10.924 10.924 0 0 1 10.924 0z" transform="rotate(64.02 19.326 30.915)" style="fill:#fff"/>
+            <path id="shape-3" data-name="shape" d="M10.924 0h37.142a10.924 10.924 0 0 1 10.925 10.924v4.37a10.924 10.924 0 0 1-10.925 10.924H10.924A10.924 10.924 0 0 1 0 15.294v-4.37A10.924 10.924 0 0 1 10.924 0z" transform="rotate(-25.97 119.914 27.651)" style="fill:#a8e8f2"/>
+        </g>
+    </g>
+</svg>

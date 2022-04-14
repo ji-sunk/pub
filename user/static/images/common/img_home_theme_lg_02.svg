@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 320 200">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="패스_127807" data-name="패스 127807" d="M32 0h256a32 32 0 0 1 32 32v136a32 32 0 0 1-32 32H32a32 32 0 0 1-32-32V32A32 32 0 0 1 32 0z" transform="translate(740 190)" style="fill:#fff"/>
+        </clipPath>
+        <clipPath id="clip-path-2"/>
+        <clipPath id="clip-path-3">
+            <rect id="사각형_9609" data-name="사각형 9609" width="320" height="200" rx="32" transform="translate(64 688)" style="fill:#fff"/>
+        </clipPath>
+        <clipPath id="clip-path-4">
+            <rect id="사각형_9606" data-name="사각형 9606" width="236.274" height="234.302" rx="29" style="fill:#57b7f9"/>
+        </clipPath>
+        <clipPath id="clip-path-5">
+            <rect id="사각형_9608" data-name="사각형 9608" width="254.837" height="237.023" rx="29" style="fill:#57b7f9"/>
+        </clipPath>
+        <clipPath id="clip-path-6">
+            <rect id="사각형_9607" data-name="사각형 9607" width="254.837" height="234.835" rx="29" style="fill:#57b7f9"/>
+        </clipPath>
+        <filter id="mask" x="-15" y="-10" width="350" height="230" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="5" result="blur"/>
+            <feFlood flood-color="#002d64" flood-opacity=".161"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            
+        </style>
+    </defs>
+    <g id="마스크_그룹_14559" data-name="마스크 그룹 14559" transform="translate(-740 -190)" style="clip-path:url(#clip-path)">
+        <g id="마스크_그룹_14552" data-name="마스크 그룹 14552" transform="translate(5.055 6)" style="clip-path:url(#clip-path-2)">
+            <rect id="사각형_9582" data-name="사각형 9582" width="235.482" height="235.482" rx="74" transform="rotate(16 -384.645 3151.026)" style="mix-blend-mode:multiply;isolation:isolate;opacity:.104;fill:none"/>
+            <g id="그룹_15213" data-name="그룹 15213" transform="rotate(165.02 486.412 243.53)">
+                <path id="shape" d="M9.592 0h61.386a9.592 9.592 0 0 1 9.592 9.592v3.837a9.592 9.592 0 0 1-9.592 9.592H9.592A9.592 9.592 0 0 1 0 13.428V9.592A9.592 9.592 0 0 1 9.592 0z" transform="rotate(-25.97 105.287 24.279)" style="fill:none"/>
+                <path id="shape-2" data-name="shape" d="M9.592 0h61.386a9.592 9.592 0 0 1 9.592 9.592v3.837a9.592 9.592 0 0 1-9.592 9.592H9.592A9.592 9.592 0 0 1 0 13.428V9.592A9.592 9.592 0 0 1 9.592 0z" transform="rotate(64.02 16.969 27.144)" style="fill:none"/>
+                <path id="shape-3" data-name="shape" d="M9.592 0H42.2a9.592 9.592 0 0 1 9.592 9.592v3.837A9.592 9.592 0 0 1 42.2 23.02H9.592A9.592 9.592 0 0 1 0 13.428V9.592A9.592 9.592 0 0 1 9.592 0z" transform="rotate(-25.97 105.287 24.279)" style="fill:none"/>
+            </g>
+            <g id="그룹_15233" data-name="그룹 15233" transform="translate(981.36 214.061)">
+                <g id="그룹_14645" data-name="그룹 14645">
+                    <ellipse id="타원_1852" data-name="타원 1852" cx="5.617" cy="5.722" rx="5.617" ry="5.722" style="fill:none"/>
+                    <ellipse id="타원_1853" data-name="타원 1853" cx="5.617" cy="5.722" rx="5.617" ry="5.722" transform="translate(26.765)" style="fill:none"/>
+                </g>
+                <g id="그룹_14656" data-name="그룹 14656" transform="rotate(-6 181.75 -98.053)">
+                    <g id="그룹_14655" data-name="그룹 14655">
+                        <path id="패스_100911" data-name="패스 100911" d="M7.337 8.586A7.393 7.393 0 0 1 0 1.114 1.084 1.084 0 0 1 1.071.024 1.074 1.074 0 0 1 2.137 1.11a5.244 5.244 0 0 0 5.2 5.3 5.293 5.293 0 0 0 5.229-5.32 1.069 1.069 0 1 1 2.137 0 7.462 7.462 0 0 1-7.366 7.496z" style="fill:none"/>
+                        <path id="패스_100912" data-name="패스 100912" d="M7.337 8.586A7.393 7.393 0 0 1 0 1.114 1.084 1.084 0 0 1 1.071.024 1.074 1.074 0 0 1 2.137 1.11a5.244 5.244 0 0 0 5.2 5.3 5.293 5.293 0 0 0 5.229-5.32 1.069 1.069 0 1 1 2.137 0 7.462 7.462 0 0 1-7.366 7.496z" style="fill:none"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <rect id="사각형_9610" data-name="사각형 9610" width="259.281" height="259.281" rx="73" transform="rotate(23 -103.905 2281.912)" style="fill:#1eb2f3;opacity:.103;mix-blend-mode:multiply;isolation:isolate"/>
+        <g id="그룹_15248" data-name="그룹 15248" transform="rotate(165.02 476.37 244.96)">
+            <path id="shape-4" data-name="shape" d="M9.1 0h58.267a9.1 9.1 0 0 1 9.1 9.1v3.641a9.1 9.1 0 0 1-9.1 9.1H9.1a9.1 9.1 0 0 1-9.1-9.1V9.1A9.1 9.1 0 0 1 9.1 0z" transform="rotate(-25.97 99.93 23.043)" style="fill:rgba(99,235,255,.44)"/>
+            <path id="shape-5" data-name="shape" d="M9.1 0h58.267a9.1 9.1 0 0 1 9.1 9.1v3.641a9.1 9.1 0 0 1-9.1 9.1H9.1a9.1 9.1 0 0 1-9.1-9.1V9.1A9.1 9.1 0 0 1 9.1 0z" transform="rotate(64.02 16.105 25.763)" style="fill:rgba(99,235,255,.44)"/>
+            <path id="shape-6" data-name="shape" d="M9.1 0h30.956a9.1 9.1 0 0 1 9.1 9.1v3.641a9.1 9.1 0 0 1-9.1 9.1H9.1a9.1 9.1 0 0 1-9.1-9.1V9.1A9.1 9.1 0 0 1 9.1 0z" transform="rotate(-25.97 99.93 23.043)" style="fill:#fff"/>
+        </g>
+    </g>
+</svg>
