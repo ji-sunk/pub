@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+		<div class="layout-def with_bottom_area log_in gm">
+			<div class="container">
+				<div class="inner">
+                    <div class="center_wrap">
+                        <div class="logo_wrap">
+                            <div class="logo">
+                                <img src="./static/images/common/logo_ai_barosem.svg" alt="" /><!--로고 미정-->
+                            </div>
+                            <div class="txt1">AI바로셈 입회 회원만 <br class="hide_pc hide_t">이용할 수 있는 서비스입니다.</div>
+                        </div>
+                        <div class="input_wrap">
+                            <form>
+                                <article>
+                                    <div class="input_cont">
+                                        <div class="input_box white_box h56">
+                                            <input type="email" placeholder="이메일" />
+                                            <div class="r_area">
+                                                <!--1.정상-->
+                                                <img src="./static/images/icon/ic_check.svg" alt="" />
+                                                <button type="button">
+                                                    <!--2.에러-->
+                                                    <img src="./static/images/icon/ic_error.svg" alt="" />
+                                                    <!--3.삭제(텍스트 입력 시에 나타나야 함)-->
+                                                    <img src="./static/images/icon/input_delete_40.svg" alt="" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="info_txt red">올바른 이메일 형식이 아닙니다.</div><!--오류 메시지가 없을 때는 이 태그 전체를 지우면 됨-->
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="input_cont">
+                                        <div class="input_box white_box h56">
+                                            <input type="password" placeholder="비밀번호" />
+                                            <div class="r_area">
+                                                <!--1.정상-->
+                                                <img src="./static/images/icon/ic_check.svg" alt="" />
+                                                <button type="button">
+                                                    <!--2.에러-->
+                                                    <img src="./static/images/icon/ic_error.svg" alt="" />
+                                                    <!--3.삭제(텍스트 입력 시에 나타나야 함)-->
+                                                    <img src="./static/images/icon/input_delete_40.svg" alt="" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="info_txt red">이메일 주소와 비밀번호가 일치하지 않습니다.</div><!--오류 메시지가 없을 때는 이 태그 전체를 지우면 됨-->
+                                    </div>
+                                </article>
+                            </form>
+                        </div>
+                        <div class="lower_wrap cls">
+                            <div class="left">
+                                <div class="custom-radio-wrap gray">
+                                    <input type="checkbox" id="login_chk">
+                                    <label for="login_chk">로그인 상태 유지</label>
+                                </div>
+                            </div>
+                            <div class="right cls">
+                                <a href="#null">비밀번호 찾기</a>
+                            </div>
+                        </div>
+
+                        <!-- 220331 클래스명 변경 = 컬러 변경 + 구조 변경 --> 
+                        <div class="lower_wrap2">
+            				<button class="btn btn-blue">LOGIN</button><!--로그인 정보 미입력시 disable--> 
+                        </div>
+                        <div class="btn_wrap1 two">
+                            <a href="#null" class="btn btn-gray1">회원신청</a>
+                            <a href="#null" class="btn btn-dark">회원인증</a>
+                        </div>
+                        <div class="cs_call">고객센터 1577-1500&nbsp;&nbsp;&nbsp;｜&nbsp;&nbsp;&nbsp;<a href="https://wjtb-prd-pub.s3.ap-northeast-2.amazonaws.com/brs/barosem/html/privacy_policy.htm" target="_blank">개인정보처리방침</a></div>
+                        <!-- // 220331 클래스명 변경 = 컬러 변경 + 구조 변경 --> 
+                        
+                    </div>
+                  
+                </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+	<style>
+    @font-face {
+       font-family: 'NotoSansCJKkr-Regular';
+       font-style: normal;
+       font-weight: 400;
+       src: url("./static/fonts/NotoSans-Regular.eot");
+       src: url("./static/fonts/NotoSans-Regular.eot#iefix") format('embedded-opentype'),
+            url("./static/fonts/NotoSans-Regular.woff2") format('woff2'),
+            url("./static/fonts/NotoSans-Regular.woff") format('woff'),
+            url("./static/fonts/NotoSans-Regular.ttf") format('truetype');
+     }
+    @font-face {
+       font-family: 'NotoSansCJKkr-Medium';
+       font-style: normal;
+       font-weight: 700;
+       src: url("./static/fonts/NotoSans-Medium.eot");
+       src: url("./static/fonts/NotoSans-Medium.eot#iefix") format('embedded-opentype'),
+            url("./static/fonts/NotoSans-Medium.woff2") format('woff2'),
+            url("./static/fonts/NotoSans-Medium.woff") format('woff'),
+            url("./static/fonts/NotoSans-Medium.ttf") format('opentype');
+     }        
+        
+	* { padding: 0; margin: 0; box-sizing: border-box; border: 0; }
+	html, body { height: 100%; font-family: 'NotoSansCJKkr-Regular';}
+        
+    .app_down{text-align: center; color: #323c46;}
+    .app_down img{width: 100%;}
+    .guide{max-width: 940px; padding: 0 20px; margin: 0 auto;}
+    .app_down .head_wrap{text-align: left;}
+    .app_down .cont{max-width: 1200px; margin: 0 auto; padding-top: 24px; padding-left: 32px;}
+    .app_down .head_wrap .logo{display: inline-block; width: 160px;}
+    .app_down .head_wrap .logo a{display: block;}
+    .app_down .wrap1{margin-top: 80px; padding-bottom: 72px;}
+    .app_down .wrap1 .guide{max-width: 960px;}
+    .app_down .wrap1 .btn_cont{max-width: 610px; width: 50.8%; margin: 60px auto 0;}
+    .app_down .wrap1 .btn_cont a{display: block;}
+    .app_down .wrap1 .noti{margin-top: 24px; font-size: 16px; line-height: 24px; opacity: 0.4; font-family: 'NotoSansCJKkr-Medium';}
+    .app_down .wrap2{background: #f9fafb; padding-top: 80px; padding-bottom: 152px;}
+    .app_down .wrap3{background: #f4f6f8; padding-top: 88px; padding-bottom: 120px;}
+    .app_down .wrap4{background: #f9fafb; padding-top: 40px; padding-bottom: 40px;}
+    .app_down .footer_wrap{padding-top: 34px; padding-bottom: 40px; text-align: left;}
+    .app_down .footer_wrap .cont{max-width: 820px; margin: 0 auto;}
+    .app_down .footer_wrap .cont p{word-break: keep-all; font-size: 12px; line-height: 18px; color: #aab4be;}
+    .app_down .footer_wrap .cont p.txt2{margin-top: 14px;}
+	</style>
+</head>
+<body>
+
+<div class="app_down">
+    <div class="head_wrap">
+        <div class="cont">
+            <h1 class="logo"><a href="#null"><img src="./static/images/common/barosem_install_wj_logo@2x.png" alt=""></a></h1>
+        </div>
+    </div>
+    <section class="wrap1">
+        <div class="guide">
+            <img src="./static/images/common/barosem_install_img_01@2x.png" alt="">
+        </div>
+        <div class="btn_cont">
+            <a href="#null" class="down"><img src="./static/images/common/barosem_install_btn_down_android@2x.png" alt=""></a>
+        </div>
+        <div class="noti">ios 어플리케이션은 지원하지 않습니다.</div>
+    </section>
+    <section class="wrap2">
+        <div class="guide">
+            <img src="./static/images/common/barosem_install_img_02@2x.png" alt="">
+        </div>
+    </section>
+    <section class="wrap3">
+        <div class="guide">
+            <img src="./static/images/common/barosem_install_img_03@2x.png" alt="">
+        </div>
+    </section>
+    <section class="wrap4">
+        <div class="guide">
+            <img src="./static/images/common/barosem_install_img_04@2x.png" alt="">
+        </div>
+    </section>
+    <div class="footer_wrap">
+        <div class="cont">
+            <p>경기도 파주시 회동길 20 (우 413-120)    대표이사 : 이재진    사업자등록번호 : 141-81-09131</p>
+            <p class="txt2">COPYRIGHT © WOONGJIN THINKBIG. ALL RIGHTS RESERVED </p>
+        </div>
+    </div>
+</div>
+
+<script>
+window.onload = function() {
+    var _mobile = (/android|iphone|ipod/i.test(navigator.userAgent.toLowerCase()));
+    var logo = document.getElementsByClassName("logo");
+    
+    if(_mobile){
+        //mobile
+        logo.item(0).style.width = "120px";
+    }
+};
+</script>
+
+</body>
+</html>
