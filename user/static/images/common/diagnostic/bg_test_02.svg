@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="185" viewBox="0 0 320 185">
+    <defs>
+        <clipPath id="7f2c9e6bta">
+            <rect width="320" height="185" rx="24" transform="translate(660 208)" style="fill:#e5f9fc"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 15301">
+        <g data-name="마스크 그룹 14562" style="clip-path:url(#7f2c9e6bta)" transform="translate(-660 -208)">
+            <g data-name="그룹 15093" transform="translate(597.789 241.504)" style="opacity:.605">
+                <circle data-name="타원 288" cx="97.565" cy="97.565" r="97.565" style="stroke-miterlimit:10;fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:16px"/>
+                <path data-name="패스 2694" d="M11.757 8.624V49.7h41.08" transform="translate(85.804 47.86)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:16px"/>
+            </g>
+        </g>
+    </g>
+</svg>
