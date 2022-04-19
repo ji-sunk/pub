@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+		<div class="layout-def layout-lc">
+			<!-- 220418 header 이전 구조 그대로 영문만 추가  -->
+			<div class="header">
+				<div class="inner">
+					<div class="headerBox">
+						<div class="headerBox_head">
+							<!-- <h1 class="tit">AI 진단테스트</h1> -->
+							<h1 class="tit">AI Diagnostic test.</h1>
+							<!-- <button class="btn-close-wrap">닫기</button> -->
+							<button class="btn-close-wrap">close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- // 220418 header 이전 구조 그대로 영문만 추가  -->
+			<!-- //header -->
+
+			<div class="container">
+				<div class="inner">
+					<div class="centermiddleBox">
+						<div class="centermiddleBox-row">
+
+                            <!-- 220418 수정 영역 S -->                           
+                            <!-- ko S -->
+                            <!-- <div class="dsc_cont3 ko">
+                                <div class="aic-intro-item">
+                                    <h2 class="tit">유의사항</h2>
+                                </div>
+                                <ul class="level_lst">
+                                    <li class="level_a on">
+                                        <a href="#none">
+                                            <strong class="level">A</strong>
+                                            <p class="sub_txt">
+                                                1부터 10까지의 <br>
+                                                숫자를 알아요.
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="level_b">
+                                        <a href="#none">
+                                            <strong class="level">B</strong>
+                                            <p class="sub_txt">
+                                                덧셈과 뺄셈을 <br>
+                                                할 수 있어요.
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="level_c">
+                                        <a href="#none">
+                                            <strong class="level">C</strong>
+                                            <p class="sub_txt">
+                                                곱셈과 나눗셈을 <br>
+                                                할 수 있어요.
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="level_d">
+                                        <a href="#none">
+                                            <strong class="level">D</strong>
+                                            <p class="sub_txt">
+                                                분수와 소수를 <br>
+                                                할 수 있어요.                                                
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                            <!-- //ko E -->
+                            
+                            <!-- en S -->
+                            <div class="dsc_cont3 en">
+                                <div class="aic-intro-item">
+                                    <h2 class="tit">Notice</h2>
+                                </div>
+                                <ul class="level_lst">
+                                    <li class="level_a on">
+                                        <a href="#none">
+                                            <strong class="level">A</strong>
+                                            <p class="sub_txt">
+                                                I know the <br class="hide_th">
+                                                numbers <br>
+                                                from 1 to 10.
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="level_b">
+                                        <a href="#none">
+                                            <strong class="level">B</strong>
+                                            <p class="sub_txt">
+                                                I can do addition <br>
+                                                and subtraction.
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="level_c">
+                                        <a href="#none">
+                                            <strong class="level">C</strong>
+                                            <p class="sub_txt">
+                                                I can do multiplication <br>
+                                                and division
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="level_d">
+                                        <a href="#none">
+                                            <strong class="level">D</strong>
+                                            <p class="sub_txt">
+                                                I can do <br class="hide_th"> fractions and <br>
+                                                decimals.                                           
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //en E -->
+                            <!-- //220418 수정 영역 S -->
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- //container -->
+			<div class="footer">
+				<div class="footer-inner">
+                    <!-- 220418 기존 버튼에 영문 추가 S -->
+					<div class="d-flex">
+						<div class="d-item">
+							<!-- <button class="btn-small btn-gray btn-left ko"><span class="m-txt">이전</span></button> -->
+							<button class="btn-small btn-gray btn-left en"><span class="m-txt">Befor</span></button>
+						</div>
+						<div class="d-item btnItem-auto">
+							<!-- <button class="btn btn-blue ko">다음</button> -->
+							<button class="btn btn-blue en">Next</button>
+						</div>
+					</div>
+                     <!--220418 //기존 버튼에 영문 추가 E -->
+				</div>
+			</div>
+			<!-- //footer -->
+		</div>
+		<!-- //layout-def -->
+		
+	</div>
+</div>
+
+<script>
+    $('.level_lst li').on('click touch', function(){
+        $(this).toggleClass('on');
+    })  
+</script>
+
+</body>
+</html>
