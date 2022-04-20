@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+    <script src="static/js/lottie.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!--
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+        <div class="header_top gm l_gray">
+           <div class="inner">
+	            <div class="btns_wrap header-trans cls">
+                    <div class="app_btn hide_pc hide_m">
+                        <button class="btn_exit" type="button"><img src="./static/images/icon/ic_back@2x.png" alt="" /></button>
+                    </div>
+                    <div class="right_area">
+                        <div class="menu_btn">
+                            <button class="head_btn" type="button"><img src="./static/images/icon/ic_mn_w@2x.png" alt="" /></button>
+                        </div>
+                    </div>
+	            </div>
+           </div>
+        </div>
+	
+		<div class="layout-def with_bottom_area choice gm">
+			<div class="container">
+				<div class="inner">
+                    <div class="center_wrap">
+                        <div class="box_wrap">
+                           
+                            <h1>학습을 선택해주세요</h1>
+                            <!--홈 공지-->
+                            <div class="home_noti2">
+                                <div class="inner_box">시스템 정기점검 안내 2021.02.20 13:00 ~ 15:00 (2시간)</div>
+                            </div>
+                            <!--//홈 공지-->
+                            <div class="boxes_wrap cls">
+                                <a href="#null" class="js_play_audio1">
+                                    <span class="upper">
+                                        <span class="ani_wrap">
+                                            <span class="ani_cont">
+                                                <div class="anim-wrap" id="gm_lc_01_02_01"></div>
+                                                <script>
+                                                    func_animation('gm_lc_01_02_01','gm_lc_01_02_01', false);
+                                                </script>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="lower">진도학습</span>
+                                </a>
+                                <a href="#null" class="box2 js_play_audio1">
+                                    <span class="upper">
+                                        <span class="ani_wrap">
+                                            <span class="ani_cont">
+                                                <div class="anim-wrap" id="gm_lc_01_02_02"></div>
+                                                <script>
+                                                    func_animation('gm_lc_01_02_02','gm_lc_01_02_02', false);
+                                                </script>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="lower">주제학습</span>
+                                </a>
+                            </div>
+                            <div class="home_box_wrap2 cls">
+                                <article>
+                                    <a href="#null"><span>진단테스트</span></a>
+                                </article>
+                                <article class="right">
+                                    <a href="#null"><span>학습노트</span></a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom_wrap btn_wrap">
+                        <div class="box_btn">
+                            <span class="inner_box cls">
+                                <span class="left">
+                                    <span class="txt1">강력한 AI 기술로 완성된</span>
+                                    <span class="txt2">새로운 연산 학습법! AI 바로셈!</span>
+                                </span>
+                                <a href="#null" class="right">제품소개 바로가기</a>
+                            </span>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--오디오-->
+<script>
+var audio1 = new Audio('static/audio/lc_01_02.ogg');
+</script>
+<!--//오디오-->
+
+</body>
+</html>
