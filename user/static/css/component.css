@@ -4892,7 +4892,7 @@ form.lr{padding-bottom: 70px;}
     justify-content: space-around;  align-items: center; margin:0 auto; text-align: center;}
 .intro_global_wrap .slide_wrap .cont_box .cont img {margin-top:20%}
 .intro_global_wrap .slide_wrap .cont_box img {margin:0 auto; text-align: center; width:100%;}
-.intro_global_wrap .slick_slider .slick-dots {padding:10px 0; display: inline-block;}
+.intro_global_wrap .slick_slider .slick-dots {padding:10px 0; display: inline-block; position:fixed; bottom:12%}
 .intro_global_wrap .slick_slider .slick-dots li{width: 15px; height: 15px; margin: 10px 2.5%;}
 .intro_global_wrap .slick_slider .slick-dots li button:before{content: ""; width: 100%; height: 100%; background: #e6ebf0; opacity: 1; border-radius: 50%;}
 .intro_global_wrap .slick_slider .slick-dots li.slick-active button:before {opacity: 1; background: #00c3e1;}
