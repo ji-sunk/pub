@@ -4859,7 +4859,7 @@ form.lr{padding-bottom: 70px;}
 
 
 /* 220408~ 소개 페이지 슬라이드로 변경 (영문/국문) */
-.wrap-inner .skyblue {height:100%; background:url(../images/common/introduction/main_bg.svg) repeat left 0 top 0 / contain #f7fbfd; }
+.wrap-inner .skyblue {height:100vh; background:url(../images/common/introduction/main_bg.svg) repeat left 0 top 0 / contain #f7fbfd; }
 .skyblue .header_top {position:inherit}
 .skyblue .intro_global_wrap {position: relative; height:100vh;}
 
