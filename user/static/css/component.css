@@ -4871,6 +4871,7 @@ form.lr{padding-bottom: 70px;}
 .intro_global_wrap .cont1 .sld_box {background: url(../images/common/introduction/intro_num_01.png) no-repeat left 50% top 0; background-size: 12%;}
 .intro_global_wrap .cont2 .sld_box {background: url(../images/common/introduction/intro_num_02.png) no-repeat left 50% top 0; background-size: 12%;}
 .intro_global_wrap .cont3 .sld_box {background: url(../images/common/introduction/intro_num_03.png) no-repeat left 50% top 0; background-size: 12%;}
+.intro_global_wrap .optionA {width:80%; margin:0 auto; transform: translateY(14%); text-align: center;}
 
 
 .intro_global_wrap .cont6 .th {display:none}
@@ -4884,7 +4885,6 @@ form.lr{padding-bottom: 70px;}
 .intro_global_wrap .cont_box.cont {position:relative;}
 .intro_global_wrap .intro_bottom_txt {margin-top:20px}
 /* .intro_global_wrap .slide_wrap .cont_box.cont {padding-top:7%} */
-.optionA {width:80%; margin:0 auto; transform: translateY(14%); text-align: center;}
 
 .intro_global_wrap .slide_cont {margin: 0 auto; height: fit-content; width: 100%;}
 .intro_global_wrap .slide_cont .slick-list {height:70vh}
@@ -4922,6 +4922,11 @@ form.lr{padding-bottom: 70px;}
     .v-mob .intro_global_wrap .slick-track {height:100vh;}
     /* .v-mob .intro_global_wrap .slick_slider .slick-dots {bottom:35%} */
 }
+/* 모바일 폴드2 펼쳤을 때 */
+@media screen and (min-width:800px) and (max-width:2210px) {
+	.v-mob .intro_global_wrap .optionA {width:60%}
+}
+
 
 /* 태블릿 */
 /* 태블릿 세로 */
