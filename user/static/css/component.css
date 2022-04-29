@@ -4876,19 +4876,19 @@ form.lr{padding-bottom: 70px;}
 
 .intro_global_wrap .cont6 .th {display:none}
 /* .intro_global_wrap .cont_box.ko .ko {display:block} */
+/* .intro_global_wrap .cont_box.en .ko {display:none} */
+/* .intro_global_wrap .cont6.en .ko img {display:none} */
 .intro_global_wrap .cont_box.ko .en {display:none}
 .intro_global_wrap .cont_box.en .en {display:block}
-/* .intro_global_wrap .cont_box.en .ko {display:none} */
 .intro_global_wrap .cont6.ko .en img {display:none}
-/* .intro_global_wrap .cont6.en .ko img {display:none} */
 /*  220413~ 소개 페이지 옵션 타입A~C 추가 (영문) */
 .intro_global_wrap .cont_box.cont {position:relative;}
 .intro_global_wrap .intro_bottom_txt {margin-top:20px}
 /* .intro_global_wrap .slide_wrap .cont_box.cont {padding-top:7%} */
 
 .intro_global_wrap .slide_cont {margin: 0 auto; height: fit-content; width: 100%;}
-.intro_global_wrap .slide_cont .slick-list {height:65vh}
-.intro_global_wrap .slide_wrap .cont_box {display: flex; max-width:620px; height: 100%;  flex-direction: column;
+.intro_global_wrap .slide_cont .slick-list {height:80vh}
+.intro_global_wrap .slide_wrap .cont_box {display: flex; max-width:520px; height: 100%;  flex-direction: column;
     justify-content: space-around;  align-items: center; margin:0 auto; text-align: center;}
 .intro_global_wrap .slide_wrap .cont_box .cont img {margin-top:20%}
 .intro_global_wrap .slide_wrap .cont_box img {margin:0 auto; text-align: center; width:100%;}
