@@ -4887,8 +4887,9 @@ form.lr{padding-bottom: 70px;}
 /* .intro_global_wrap .slide_wrap .cont_box.cont {padding-top:7%} */
 
 .intro_global_wrap .slide_cont {margin: 0 auto; height: fit-content; width: 100%;}
-.intro_global_wrap .slide_cont .slick-list {height:70vh}
-.intro_global_wrap .slide_wrap .cont_box {margin:0 auto; text-align: center;}
+.intro_global_wrap .slide_cont .slick-list {height:65vh}
+.intro_global_wrap .slide_wrap .cont_box {display: flex; max-width:620px; height: 100%;  flex-direction: column;
+    justify-content: space-around;  align-items: center; margin:0 auto; text-align: center;}
 .intro_global_wrap .slide_wrap .cont_box .cont img {margin-top:20%}
 .intro_global_wrap .slide_wrap .cont_box img {margin:0 auto; text-align: center; width:100%;}
 .intro_global_wrap .slick_slider .slick-dots {padding:10px 0; display: inline-block;}
