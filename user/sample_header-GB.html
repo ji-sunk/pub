@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<h1>글로벌 버전의 헤더들 샘플</h1>
+
+<div class="wrap">
+	<div class="wrap-inner">
+        <!-- 
+        header_top에 대한 설명)
+        -헤더의 bg가 한 경우 bg_sky를 넣는다. 넣을 수 있는 bg는 bg_sky, bg_gray 등. component.css의 BG들 참고.
+        -이 헤더가 페이지를 덮지 않고 높이값을 갖게 하려면 layout-def에 with_header를 넣어서 padding-top을 확보한다. 그 방법 말고 이 헤더에 position static을 적용하면 flex 때문에 하단에 여백이 생기는 문제 발생함.
+        -->
+	
+        <!--------영역을 차지하지 않고 position absolute로 덮는 헤더 1-------->
+        <div class="header_top gb bg_sky">
+           <div class="inner">
+	            <div class="btns_wrap">
+                    <div class="center_wrap cls">
+                        <div class="tit_area">
+                            <button class="btn_exit" type="button"><img src="./static/images/icon/btn_back.svg" alt="" /></button>
+                            <button class="tit_btn" type="button">코스학습</button>
+                        </div>
+                        <div class="right_area">
+                            <div class="lev_area">
+                                <div class="lev_box">
+                                    <div class="left">Lv 14</div><!--최대 14까지-->
+                                    <div class="right_area">
+                                        <div class="right" style="width: 50%"><!--width 값에 따라 길이 결정됨-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu_btn">
+                                <button type="button"><img src="./static/images/icon/btn_ocr_th.svg" alt=""></button>
+                                <button type="button"><img src="./static/images/icon/btn_menu_th.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+	            </div>
+            </div>
+        </div>
+        <!--------//영역을 차지하지 않고 position absolute로 덮는 헤더 1-------->
+        
+        
+        
+        <div style="margin-top: 80px; height: 80px; position: relative;"><!--육안으로 확인 위해 임시로 넣음-->
+          
+           
+            
+        <!--------영역을 차지하지 않고 position absolute로 덮는 헤더 2-------->
+        <div class="header_top gb bg_sky">
+           <div class="inner">
+	            <div class="btns_wrap cls">
+                    <div class="app_btn">
+                        <button class="btn_exit" type="button">
+                            <img src="./static/images/icon/btn_back.svg" alt="" />
+                        </button>
+                    </div>
+                    <div class="tit_gm center_tit24">비밀번호 찾기</div>
+	            </div>
+           </div>
+        </div>
+        <!--------영역을 차지하지 않고 position absolute로 덮는 헤더 2-------->
+          
+           
+        </div>
+        <div style="margin-top: 30px; height: 80px; position: relative;"><!--육안으로 확인 위해 임시로 넣음-->
+          
+            
+        <!--------영역을 차지하지 않고 position absolute로 덮는 헤더 3-------->
+        <div class="header_top gb intro_header bg_gray">
+           <div class="inner">
+	            <div class="btns_wrap">
+                    <div class="center_wrap cls">
+                        <div class="tit_area">
+                            <button class="btn_logo" type="button">매쓰피드 로고</button>
+                        </div>
+                        <div class="right_area">
+                            <div class="select_area">
+                                <div class="new-select">
+                                    <div class="selected_txt">한국어</div>
+                                    <div class="select_option">
+                                        <ul>
+                                            <li><button type="button" class="selected">한국어</button></li>
+                                            <li><button type="button">English</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu_btn">
+                                <button class="btn btn-blue btn1" type="button">로그인</button>
+                            </div>
+                        </div>
+                    </div>
+	            </div>
+            </div>
+        </div>
+        <!--------//영역을 차지하지 않고 position absolute로 덮는 헤더 3-------->
+          
+           
+        </div>
+	
+	
+		<div class="layout-def with_header gb">
+		
+		
+            <!--일반 헤더-->
+			<div class="header bg_sky"><!--헤더의 bg가 필한 경우 bg_sky, bg_gray 등. component.css의 BG들 참고--><!--헤더의 타이틀과 닫기 버튼을 흰색으로 할 경우 header_white_font 추가--><!--이 헤더를 absolute로 쓸 경우 layout-def에 header_absolute 추가-->
+				<div class="inner">
+					<div class="headerBox center">
+                        <div class="headerBox_head">
+                            <h1 class="tit">학습노트</h1>
+                            <button class="btn-close-wrap">닫기</button>
+                        </div>
+					</div>
+				</div>
+			</div>
+            <!--//일반 헤더-->
+        
+        
+			<div class="container">
+				<div class="inner">
+					content 내용
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

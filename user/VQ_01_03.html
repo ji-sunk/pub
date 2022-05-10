@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+    <script src="static/js/lottie.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="wrap">
+	<div class="wrap-inner">
+		
+        <!--로딩 레이어5-->
+        <div class="loading_layer loading5">
+            <div class="spinner">
+                <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            </div>
+        </div>
+		<!--//로딩 레이어5-->
+
+		<!-- 퍼블 화면 확인용 임시 스크립트 : 개발쪽에서는 꼭! 반드시!! 삭제해주세요 -->
+		<script>
+			setTimeout(function() {
+				$('.loading_layer').css('display', 'none');
+			}, 500);
+		</script>
+		
+		<!-- lp-wrap은 wrap-inner안에, 가장 아래에 넣어주세요. -->
+		<div class="lp-wrap lp-leargin_concept"><!-- 화면 꽉. 딤처리, lp-middle(수직중앙) -->
+            <div class="x_btn_cont">
+                <button class="btn1">
+                    <img class="hide_m" width="40" src="./static/images/icon/ic_popup_close@2x.png" alt="" />
+                    <img class="hide_pc hide_t" width="48" src="./static/images/icon/ic_close@2x.png" alt="" />
+                </button>
+            </div>
+			<div class="lp-container lc-wrap"><!-- 내용박스  -->
+				<div class="lc-cont">
+					<div class="lcCont-inner">
+						<div class="lc-header">
+						    <div class="tit1">개념 확인</div>
+							<h1 class="tit">두 자리수의 더하기 세로식 두 자리수의 더하기 세로식</h1>
+                            <div class="bar_cont">
+                                <div class="bar3">
+                                    <div class="num"><span>4</span> / 7</div>
+                                    <div class="bar_bg">
+                                        <div class="bar" style="width: 0%"><!--width 값에 따라 길이 달라짐-->
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+						<div class="lc-body">
+							<div class="aniBox">
+								<div class="ani-wrap" id="aniBox1">
+									<!-- <img src="static/images/tmp/ex_lc.png" alt="" class="tmpImg"> --><!-- 애니메이션 영역 : 개발시 "꼭" img태그 자체를 삭제해주세요. -->
+								</div>
+								<!-- 
+									ani-btnBox 에 붙는 클래스 정리
+									1. play중일때 : playing (디폴트)
+									2. stop상태일때 : stopped
+									3. 끝났을때 : ended
+								 -->
+								<div class="ani-btnBox playing">
+									<button class="btn-lc-ani btn-play">재생</button>
+									<button class="btn-lc-ani btn-stop">정지</button>
+									<button class="btn-lc-ani btn-replay">다시 재생</button>
+								</div>
+							</div>
+							<button class="btn-lc prev js_play_audio2">이전 설명</button>
+							<button class="btn-lc next js_play_audio2">다음 설명</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+
+//초단위 설정
+var _aniCnt = 0;
+var _aniTime = 0;			//초기값
+var _aniCntMax = 7; 		//총 컷수 : 7컷
+var _aniTimeUnit = 4000;	//단위 초 : 4초
+
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('aniBox1'),
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: 'static/json/D07_0_1_3.json'
+});
+
+// 화면 불러오자마자 실행
+animation.addEventListener('DOMLoaded',function(){
+	animation.play();
+	if($('.wrap-inner').hasClass('v-pc')){
+		$(document).on({
+			mouseenter : function(){$(this).addClass('pc-hover')},
+			mouseleave : function(){$(this).removeClass('pc-hover')}
+		}, '.ani-btnBox');
+	}else{
+		$('.ani-btnBox').on('click', function(){
+			var _this = $(this);
+			$('.btn-lc-ani').removeClass('on');
+			if(_this.hasClass('playing')){
+				_this.find('.btn-stop').addClass('on');
+			}else if(_this.hasClass('stopped')){
+				_this.find('.btn-play').addClass('on');
+			}else{
+				_this.find('.btn-replay').addClass('on');
+			}
+			setTimeout(chkBtn,1000);
+
+		});
+
+	}
+});
+
+function chkBtn(){
+	if($('.btn-stop').hasClass('on')){
+		setTimeout("$('.btn-stop').removeClass('on');",1000);
+	}
+}
+
+//재생 끝나면 replay 영역이 나타나도록 설정
+animation.addEventListener('enterFrame',function(e){
+	var _timeUnit = e.totalTime / _aniCntMax;
+	_aniCnt = parseInt(e.currentTime / _timeUnit) ;
+
+	$('.bar3 .bar').css('width', (e.currentTime / e.totalTime) * 100 + '%');
+	$('.bar3 .num').html('<span>'+ (_aniCnt+1) +'</span> / ' + _aniCntMax);
+
+	if(e.currentTime == e.totalTime-1){
+		$('.ani-btnBox').removeClass('playing').removeClass('stopped').addClass('ended');
+		if($('.wrap-inner').hasClass('v-pc')){
+			$('.ani-btnBox').addClass('pc-hover');
+		}else{
+			$('.btn-replay').addClass('on');
+		}
+		$('.bar3 .bar').css('width', '100%');
+	}
+});
+
+
+//이전,다음 버튼 클릭할 경우 제어
+$(document).on('click', '.btn-lc', function(){
+	if($(this).hasClass('prev')){
+		_aniCnt--;
+		_aniCnt = (_aniCnt<0) ? 0 : _aniCnt;
+	}else{
+		_aniCnt++;
+		_aniCnt = (_aniCnt>_aniCntMax-1) ? _aniCntMax-1 : _aniCnt;
+	}
+	_aniTime = ( _aniTime > ( _aniCntMax * _aniTimeUnit)) ? _aniTime : _aniTimeUnit * _aniCnt;
+	$('.ani-btnBox').removeClass('stopped').removeClass('ended').addClass('playing');
+	$('.bar3 .num').html('<span>'+ (_aniCnt+1) +'</span> / ' + _aniCntMax);
+	aniGoPlay(_aniTime);
+});
+
+
+function aniGoPlay(_aniTime){
+	animation.goToAndPlay(_aniTime, false);
+}
+
+//버튼제어 - 재생, 일시정지, 반복 재생
+$(document).on('click', '.ani-btnBox .btn-lc-ani', function(){
+	if($(this).hasClass('btn-stop')){
+		animation.pause();
+		$('.ani-btnBox').removeClass('playing').removeClass('ended').addClass('stopped');
+		$('.ani-btnBox .btn-play').addClass('on');
+	}else if($(this).hasClass('btn-play')){
+		animation.play();
+		$('.ani-btnBox').removeClass('stopped').removeClass('ended').addClass('playing');
+	}else {
+		_aniCnt = 0;
+		animation.goToAndPlay(0, false);
+		$('.ani-btnBox').removeClass('stopped').removeClass('ended').addClass('playing');
+	}
+});
+
+</script>
+
+<!--오디오-->
+<script>
+var audio1 = new Audio('static/audio/lc_05_02_open.ogg');
+var audio2 = new Audio('static/audio/common_button.ogg');
+</script>
+
+    <button class="js_play_audio1" style="position: absolute; left: 0; top: 0; z-index: 1000;">[퍼블확인용-클릭시 오디오 재생 테스트]</button><!--이 줄은 퍼블 테스트 용이니 개발 시에는 지워주세요. 현재는 클릭시 재생되게 해놓았지만 이 오디오는 팝업이 뜨면 배경음악으로 재생돼야 합니다.-->
+<!--//오디오-->
+
+</body>
+</html>

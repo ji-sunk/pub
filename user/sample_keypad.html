@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+<style>
+    /* 이 화면에서만 쓰이는 임시 스타일입니다. 실제 화면에는 옮겨가지 마세요 */
+    .tmpBox { margin-bottom: 50px; height: 360px; }
+    .v-tab .tmpBox { height: 360px; }
+    .v-pc .v-tab .tmpBox { height: 550px; }
+    @media (min-width: 801px) {
+        .v-tab .tmpBox { height: 550px; }
+    }
+    .sample-tit { font-size: 30px; }
+</style>
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+
+<!----- 21.02.02 키패드 디자인이 수정되어, 더 이상 이 페이지의 키패드는 사용하지 않음. LC_05_02.html의 키패드를 사용------>
+
+
+
+<div class="wrap">
+    <div class="wrap-inner">
+        <h1 class="sample-tit">* 기본 숫자형</h1>
+        <div class="tmpBox">
+
+            <!-- 기본 숫자형 키패드 영역 시작 -->
+            <div class="keypad_wrap">
+                <div class="keypad num_key cls">
+                    <table class="key_set2" summary="키패드">
+                        <tbody>
+                            <tr class="no_bd_top">
+                                <td><button type="button">1</button></td>
+                                <td><button type="button">2</button></td>
+                                <td><button type="button">3</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button">4</button></td>
+                                <td><button type="button">5</button></td>
+                                <td><button type="button">6</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button">7</button></td>
+                                <td><button type="button">8</button></td>
+                                <td><button type="button">9</button></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><button type="button">0</button></td>
+                                <td class="calc_del"><button type="button"><img width="33" src="./static/images/icon/ic_keypad_delete.svg" alt="" /></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="key_set3" summary="키패드">
+                        <tbody>
+                            <tr>
+                                <td class="y_btn hide_pc"><button type="button" class="btn-chg-note"><img width="34" src="./static/images/icon/ic_keypad_write.svg" alt="" /></button></td>
+                                <td class="grade"><button type="button">채점하기</button></td>
+                                <td class="fold hide_pc"><button type="button" class="btn-close-pad"><img class="hide_tv hide_m" width="17" src="./static/images/icon/ic_keypad_fold_right.svg" alt="" /><img class="hide_pc hide_th" width="19" src="./static/images/icon/ic_keypad_fold_bottom.svg" alt="" /></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- //기본 숫자형 키패드 영역 끝 -->
+
+        </div>
+
+
+        <h1 class="sample-tit">* 기본 연산형</h1>
+        <div class="tmpBox">
+
+            <!-- 기본 연산형 키패드 영역 시작 -->
+            <div class="keypad_wrap">
+                <div class="keypad basic cls">
+                    <div class="key_set1_flex">
+                        <article><button type="button">＋</button></article>
+                        <article><button type="button">－</button></article>
+                        <article><button type="button">×</button></article>
+                        <article><button type="button">÷</button></article>
+                        <article><button type="button">＜</button></article>
+                        <article><button type="button">＞</button></article>
+                        <article><button type="button">＝</button></article>
+                        <article><button type="button">:</button></article>
+                        <article class="hide_tv hide_m"><button type="button">.</button></article>
+                    </div>
+
+                    <table class="key_set2" summary="키패드">
+                        <tbody>
+                            <tr class="no_bd_top">
+                                <td><button type="button">1</button></td>
+                                <td><button type="button">2</button></td>
+                                <td><button type="button">3</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button">4</button></td>
+                                <td><button type="button">5</button></td>
+                                <td><button type="button">6</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button">7</button></td>
+                                <td><button type="button">8</button></td>
+                                <td><button type="button">9</button></td>
+                            </tr>
+                            <tr class="hide_tv hide_m">
+                                <td colspan="2"><button type="button">0</button></td>
+                                <td class="calc_del"><button type="button"><img width="33" src="./static/images/icon/ic_keypad_delete.svg" alt="" /></button></td>
+                            </tr>
+                            <tr class="hide_th hide_pc">
+                                <td><button type="button">.</button></td>
+                                <td><button type="button">0</button></td>
+                                <td class="calc_del"><button type="button"><img width="33" src="./static/images/icon/ic_keypad_delete.svg" alt="" /></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="key_set3" summary="키패드">
+                        <tbody>
+                            <tr>
+                                <td class="y_btn hide_pc"><button type="button" class="btn-chg-note"><img width="34" src="./static/images/icon/ic_keypad_write.svg" alt="" /></button></td>
+                                <td class="grade"><button type="button">채점하기</button></td>
+                                <td class="fold hide_pc"><button type="button" class="btn-close-pad"><img class="hide_tv hide_m" width="17" src="./static/images/icon/ic_keypad_fold_right.svg" alt="" /><img class="hide_pc hide_th" width="19" src="./static/images/icon/ic_keypad_fold_bottom.svg" alt="" /></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- //기본 연산형 키패드 영역 끝 -->
+
+        </div>
+
+
+        <h1 class="sample-tit">* 복잡 연산형</h1>
+        <div class="tmpBox">
+
+            <!-- 복잡 연산형 키패드 영역 시작 -->
+            <div class="keypad_wrap">
+                <div class="keypad cls">
+                    <div class="key_set1_flex">
+                        <article>
+                            <button class="fraction" type="button"><img src="./static/images/icon/ic_keypad_fraction.svg" alt="" /></button>
+                            <div class="fraction_box" style="display: none;">
+                                <div class="write">
+                                    <table class="tbl-fountain">
+                                        <tbody>
+                                            <tr>
+                                                <td class="bdline">
+                                                    <input type="text" class="form-control form-control-sm" size="1" maxlength="4">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="text" class="form-control form-control-sm" size="1" maxlength="4">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <button class="x" type="button"><img src="./static/images/icon/btn_fraction_close.svg" alt="" /></button>
+                                <button class="re" type="button"><img src="./static/images/icon/ic_fraction_reset.svg" alt="" /></button>
+                                <button class="check" type="button"><img src="./static/images/icon/ic_fraction_check.svg" alt="" /></button>
+                            </div>
+                        </article>
+                        <article>
+                            <button class="mixed_num" type="button"><img src="./static/images/icon/ic_keypad_mixed_fraction.svg" alt="" /></button>
+                            <div class="fraction_box" style="display: none;">
+                                <div class="write">
+                                    <table class="tbl-fountain">
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">
+                                                    <span>
+                                                        <input type="text" class="form-control" size="1" maxlength="4">
+                                                    </span>
+                                                </td>
+                                                <td class="bdline">
+                                                    <input type="text" class="form-control form-control-sm" size="1" maxlength="4">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="text" class="form-control form-control-sm" size="1" maxlength="4">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <button class="x" type="button"><img src="./static/images/icon/btn_fraction_close.svg" alt="" /></button>
+                                <button class="re" type="button"><img src="./static/images/icon/ic_fraction_reset.svg" alt="" /></button>
+                                <button class="check" type="button"><img src="./static/images/icon/ic_fraction_check.svg" alt="" /></button>
+                            </div>
+                        </article>
+                        <article><button type="button"><img src="./static/images/icon/ic_keypad_equation_x.png" alt="" /></button></article>
+                        <article><button type="button">＋</button></article>
+                        <article><button type="button">－</button></article>
+                        <article><button type="button">×</button></article>
+                        <article><button type="button">÷</button></article>
+                        <article><button type="button">＜</button></article>
+                        <article><button type="button">＞</button></article>
+                        <article><button type="button">＝</button></article>
+                        <article><button type="button">:</button></article>
+                        <article><button type="button">.</button></article>
+                    </div>
+                    <table class="key_set2" summary="키패드">
+                        <tbody>
+                            <tr class="no_bd_top">
+                                <td><button type="button">1</button></td>
+                                <td><button type="button">2</button></td>
+                                <td><button type="button">3</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button">4</button></td>
+                                <td><button type="button">5</button></td>
+                                <td><button type="button">6</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button">7</button></td>
+                                <td><button type="button">8</button></td>
+                                <td><button type="button">9</button></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><button type="button">0</button></td>
+                                <td class="calc_del"><button type="button"><img width="33" src="./static/images/icon/ic_keypad_delete.svg" alt="" /></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="key_set3" summary="키패드">
+                        <tbody>
+                            <tr>
+                                <td class="y_btn hide_pc"><button type="button" class="btn-chg-note"><img width="34" src="./static/images/icon/ic_keypad_write.svg" alt="" /></button></td>
+                                <td class="grade"><button type="button">채점<span class="hide_pc hide_th">하기</span></button></td>
+                                <td class="fold hide_pc"><button type="button" class="btn-close-pad"><img class="hide_tv hide_m" width="17" src="./static/images/icon/ic_keypad_fold_right.svg" alt="" /><img class="hide_pc hide_th" width="19" src="./static/images/icon/ic_keypad_fold_bottom.svg" alt="" /></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- //복잡 연산형 키패드 영역 끝 -->
+
+        </div>
+
+
+        <h1 class="sample-tit">* 필기형</h1>
+        <div class="tmpBox">
+
+            <!-- 필기형 키패드 영역 시작 -->
+            <div class="keypad_wrap">
+                <div class="keypad notes">
+                    <div class="note_area">
+                    </div>
+                    <div class="btn_area">
+                        <table class="key_set3" summary="키패드">
+                            <tbody>
+                                <tr>
+                                    <td class="y_btn hide_pc"><button type="button" class="btn-chg-num"><img width="36" src="./static/images/icon/ic_keypad_number.svg" alt="" /></button></td>
+                                    <td class="grade"><button type="button">채점하기</button></td>
+                                    <td class="fold hide_pc"><button type="button" class="btn-close-pad"><img class="hide_tv hide_m" width="17" src="./static/images/icon/ic_keypad_fold_right.svg" alt="" /><img class="hide_pc hide_th" width="19" src="./static/images/icon/ic_keypad_fold_bottom.svg" alt="" /></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="del_btn"><button type="button"><img src="./static/images/icon/ic_keypad_wirte_delte.svg" alt="" /></button></div>
+                </div>
+            </div>
+            <!-- //필기형 키패드 영역 끝 -->
+
+        </div>
+    </div>
+
+
+</div>
+
+
+
+</body>
+</html>

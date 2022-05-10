@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+		<div class="layout-def bg_gray">
+			<div class="header">
+				<div class="inner">
+					<div class="headerBox">
+						<div class="headerBox_head">
+							<h1 class="tit">매쓰피드 구독</h1>
+							<button class="btn-close-wrap">닫기</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div class="container">
+				<div class="inner">
+                    <div class="subscribe">
+                        <div class="w672">
+                            <div class="title_txt">
+                                <p>구독권을 선택해 주세요.</p>
+                            </div>
+                            
+                            <!--구독변경에서 노출되는 영역-->
+                            <div class="upper_box">
+                                <div class="txt1">학습자 1명 학습권을 이용중입니다.</div>
+                                <div class="txt2">변경된 학습권은 다음 결제일<br class="hide_pc hide_t">(2021년 7월 15일)부터 적용됩니다.</div>
+                            </div>
+                            <!--//구독변경에서 노출되는 영역-->
+                            
+                            <div class="mem_num">
+                                <div class="mem_num_tit">학습할 아이의 수를 선택해 주세요. </div>
+                                <div class="mem_num_txt">학습자 추가 시 추가한 학습자는 다음 결제일까지 무료 학습이 가능합니다.</div><!--구독변경-변경전에만 노출되는 영역-->
+                                <article>
+                                    <input type="radio" id="radio1_1" name="radio1">
+                                    <label for="radio1_1">
+                                        <span class="num">학습자 1명</span>
+                                        <span class="price">
+                                            <span class="discounted">월 15,000원</span>
+                                        </span>
+                                    </label>
+                                </article>
+                                <article>
+                                    <input type="radio" id="radio1_2" name="radio1">
+                                    <label for="radio1_2">
+                                        <span class="num">학습자 2명</span>
+                                        <span class="price">
+                                            <span class="origin">30000원</span>
+                                            <span class="discounted">월 25,000원</span>
+                                        </span>
+                                    </label>
+                                </article>
+                                <article>
+                                    <input type="radio" id="radio1_3" name="radio1">
+                                    <label for="radio1_3">
+                                        <span class="num">학습자 3명</span>
+                                        <span class="price">
+                                            <span class="origin">45000원</span>
+                                            <span class="discounted">월 35,000원</span>
+                                        </span>
+                                    </label>
+                                </article>
+                            </div>
+                            <div class="who">
+                                <div class="mem_num_tit">학습할 아이를 선택해 주세요.</div>
+                                <div class="mem_num_txt">학습자 정보 수정은 MY에서 가능합니다.</div>
+                                <div class="box">
+                                    <article>
+                                        <input type="checkbox" id="chk1">
+                                        <label for="chk1">
+                                            <span class="pic">
+                                                <img src="./static/images/icon/ic_account_01.svg" alt="">
+                                                <!--유저 이미지 파일은 ic_account_01 ~ 05 총 5개-->
+                                            </span>
+                                            <span class="name">한글최대여덟글자</span>
+                                        </label>
+                                    </article>
+                                    <article>
+                                        <input type="checkbox" id="chk2">
+                                        <label for="chk2">
+                                            <span class="pic">
+                                                <img src="./static/images/icon/ic_account_02.svg" alt="">
+                                                <!--유저 이미지 파일은 ic_account_01 ~ 05 총 5개-->
+                                            </span>
+                                            <span class="name">김웅진</span>
+                                        </label>
+                                    </article>
+                                    <!--학습자 추가 버튼-->
+                                    <article class="add">
+                                        <input type="checkbox" id="chk3" disabled>
+                                        <label for="chk3">
+                                            <span class="pic"></span>
+                                            <span class="name">학습자 추가</span>
+                                        </label>
+                                    </article>
+                                    <!--//학습자 추가 버튼-->
+                                </div>
+                            </div>
+                            <div class="noti">
+                                <div class="tit">유의사항</div>
+                                <ul>
+                                    <li>· 정기구독을 신청하면 결제, 취소, 환불은 회원님의 Google Play Store 계정을 통해 이루어집니다.</li>
+                                    <li>· 정기구독 요금은 구독기간 마지막 날에 청구되며, 구독권한이 자동으로 갱신됩니다.</li>
+                                    <li>· 자동갱신을 원치 않으시면 구독기간 마지막 날 24시간 전에 정기구독을 취소하시면 됩니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bottom_sticky2">
+                        <div class="btn_cont">
+                            <button class="btn btn-blue">한 달 무료 이용 시작!</button>
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //layout-def -->
+	</div>
+</div>
+
+</body>
+</html>

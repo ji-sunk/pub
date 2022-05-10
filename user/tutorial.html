@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+    <script src="static/js/lottie.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+		<div class="layout-def layout-learning tutorial">
+			<div class="header">
+				<div class="inner">
+					<div class="headerBox">
+						<div class="headerBox_head">
+							<h1 class="tit left">연습장 기능</h1>
+<!--							<div class="tutorial-timeBox">59초 남음</div>-->
+							<div class="tmp-tutorial-btn">
+								<button data-num="1">다음<span>1</span></button><!--클릭시 다음 애니메이션으로 넘어감. 현재 opacity 0으로 숨긴 상태-->
+							</div>
+						</div>
+						<div class="headerBox_body">
+							<div class="barBox">
+                                <div class="bar1">
+                                    <div class="bar_area">
+                                        <div class="bar" style="width: 40%"><!--width 값에 따라 길이 달라짐-->
+                                            <div class="num">14</div>
+                                        </div>
+                                        <div class="total_num">30</div>
+                                    </div>
+                                    <div class="time">08:31</div>
+                                </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="inner">
+					<div class="learningBox">
+						<div class="leaningCont">
+							<div class="learning-wrap">
+								<div class="learning_head">
+									<div class="mathQuest-wrap">
+										<p class="tit">Q1. 다음 식을 계산하시오.</p>
+										<!-- 보기가 있는 경우 영역 시작 -->
+										<div class="btn-viewopen-wrap">
+											<button class="btn-viewopen">보기</button>
+											<div class="viewopen-detail">
+												<div class="viewopen-detail-inner">
+													<!-- 보기의 상세내용 영역 -->
+													<img src="static/images/tmp/ex_learning_viewdetail.png" alt=""><!-- 퍼블 확인용 임시 이미지입니다. 개발시 "꼭" 삭제해주세요. -->
+												</div>
+											</div>
+										</div>
+										<!-- //보기가 있는 경우 영역 끝 -->
+									</div>
+								</div><!-- //learning_head -->
+								<div class="learning_body hide_scroll">
+									<div class="learning_picture"></div><!-- 그림판영역 : 비활성화 될때 클래스 unactive 추가 -->
+									<div class="mathExp-wrap">
+										<div class="mathExp-inner">
+											<div class="mathExt">
+												<!-- 수식영역 -->
+												<div class="tuto1">
+                                                    <img class="tuto1_img" src="static/images/common/img_tutorial_note@2x.png" alt="" />
+                                                    <div id="tutorial_note"></div>
+												</div>
+                                                <div class="tuto2">
+                                                    <div class="pvBox" data-per="120">
+                                                        <div class="pv-inner">
+                                                            <div class="pv-cont">
+                                                                <div class="calcEdit-viewer_inner">
+                                                                    <ul class="numberline-list">
+                                                                        <li>
+                                                                            <span class="numberline-num">1</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="numberline-num mjx-box active-bd focusedInput no2"><span class="write_2 hide">2</span></span> <!-- 빈칸-포커스 : 클래스 focusedInput 추가/삭제 -->
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="numberline-num">3</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="numberline-num mjx-box active-bd no4"><span class="write_3 hide">3</span><span class="write_4 hide">4</span></span><!-- 빈칸-기본 : 클래스 mjx-box active-bd -->
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="numberline-num">5</span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tipbox tip5">답을 다 쓰고나면 노란 칸에 들어가요.</div>
+								                    <div class="yellow_circle circle2"></div>
+                                                    <div class="tipbox tip6">입력칸이 여러 개인 경우<br />눌러서 선택할 수 있어요.</div>
+                                                    <div class="hand hand0"><img src="./static/images/common/img_hand@2x.png" alt="" /></div>
+                                                </div>
+                                                <div class="tuto3">
+                                                    <div>
+                                                        <img class="tuto3_img" src="static/images/common/328x654_300per_C@2x.png" alt="" />
+                                                    </div>
+                                                    <div>
+                                                        <img class="tuto3_img" src="static/images/common/328x654_300per_C@2x.png" alt="" />
+                                                    </div>
+                                                    <div>
+                                                        <img class="tuto3_img" src="static/images/common/328x654_300per_C@2x.png" alt="" />
+                                                    </div>
+                                                </div>
+											</div>
+										</div>
+										<div class="tipbox tip1">빈 공간은 연습장이에요.<br />손가락이나 펜으로 쓸 수 있어요.</div>
+									</div>
+									<div class="tutorial-picBg"></div>
+									<button class="btn-learning-del">삭제</button><!-- 그림판에 낙서하는 순간 클래스 active 추가!   -->
+								</div><!-- //learning_body -->
+								<div class="yellow_circle circle1"></div>
+								<div class="tipbox left tip2">휴지통 버튼을 누르면 다 지워져요.</div>
+								<div class="tipbox right tip3">답을 쓸 때는<br />정답입력 버튼을 눌러요.</div>
+								<div class="hand hand1"><img src="./static/images/common/img_hand@2x.png" alt="" /></div>
+								<div class="tipbox right tip12">스크롤 할땐 여기를 움직여요.</div>
+							</div>
+						</div>
+						<div class="learningTail">
+							<div class="onlyButtonBox active">
+								<button class="btn btn-blue btn-inputAnswer">정답<span class="col-br-tabpc"></span>입력</button>
+							</div>
+
+							<div class="keypadBox">
+
+								<!-- 1. 기본숫자형 키패드 영역 시작 -->
+								<div class="keypad_wrap" id="keypad_wrap1">  <!-- id=keypad_wrap1는 퍼블확인용 임시코드입니다. 개발시에는 삭제해주세요. -->
+									<div class="keypad num_key cls">
+									    <table class="key_set2" summary="키패드">
+									        <tbody>
+									            <tr class="no_bd_top">
+									                <td><button type="button">1</button></td>
+									                <td><button type="button">2</button></td>
+									                <td><button type="button">3</button></td>
+									            </tr>
+									            <tr>
+									                <td><button type="button">4</button></td>
+									                <td><button type="button">5</button></td>
+									                <td><button type="button">6</button></td>
+									            </tr>
+									            <tr>
+									                <td><button type="button">7</button></td>
+									                <td><button type="button">8</button></td>
+									                <td><button type="button">9</button></td>
+									            </tr>
+									            <tr>
+									                <td colspan="2"><button type="button">0</button></td>
+									                <td class="calc_del"><button type="button"><img width="33" src="./static/images/icon/ic_keypad_delete.svg" alt="" /></button></td>
+									            </tr>
+									        </tbody>
+									    </table>
+									    <table class="key_set3" summary="키패드">
+									        <tbody>
+									            <tr>
+									                <td class="y_btn hide_pc"><button type="button" class="btn-chg-note"><img width="34" src="./static/images/icon/ic_keypad_write.svg" alt="" /></button></td>
+									                <td class="grade"><button type="button">채점하기</button></td>
+									                <td class="fold hide_pc"><button type="button" class="btn-close-pad"><img class="hide_tv hide_m" width="17" src="./static/images/icon/ic_keypad_fold_right.svg" alt="" /><img class="hide_pc hide_th" width="19" src="./static/images/icon/ic_keypad_fold_bottom.svg" alt="" /></button></td>
+									            </tr>
+									        </tbody>
+									    </table>
+									</div>
+								</div>
+								<!-- //1. 기본숫자형 키패드 영역 끝 -->
+
+
+								<!-- 2. 기본연산형 키패드 영역 시작 -->
+								<div class="keypad_wrap" id="keypad_wrap2" style="display: none;">  <!-- id=keypad_wrap2, style="display: none;"는 퍼블확인용 임시코드입니다. 개발시에는 삭제해주세요. -->
+									<div class="keypad basic cls">
+									    <div class="key_set1_flex">
+									        <article><button type="button">＋</button></article>
+									        <article><button type="button">－</button></article>
+									        <article><button type="button">×</button></article>
+									        <article><button type="button">÷</button></article>
+									        <article><button type="button">＜</button></article>
+									        <article><button type="button">＞</button></article>
+									        <article><button type="button">＝</button></article>
+									        <article><button type="button">:</button></article>
+									        <article class="hide_tv hide_m"><button type="button">.</button></article>
+									    </div>
+
+									    <table class="key_set2" summary="키패드">
+									        <tbody>
+									            <tr class="no_bd_top">
+									                <td><button type="button">1</button></td>
+									                <td><button type="button">2</button></td>
+									                <td><button type="button">3</button></td>
+									            </tr>
+									            <tr>
+									                <td><button type="button">4</button></td>
+									                <td><button type="button">5</button></td>
+									                <td><button type="button">6</button></td>
+									            </tr>
+									            <tr>
+									                <td><button type="button">7</button></td>
+									                <td><button type="button">8</button></td>
+									                <td><button type="button">9</button></td>
+									            </tr>
+									            <tr class="hide_tv hide_m">
+									                <td colspan="2"><button type="button">0</button></td>
+									                <td class="calc_del"><button type="button"><img width="33" src="./static/images/icon/ic_keypad_delete.svg" alt="" /></button></td>
+									            </tr>
+									            <tr class="hide_th hide_pc">
+									                <td><button type="button">.</button></td>
+									                <td><button type="button">0</button></td>
+									                <td class="calc_del"><button type="button"><img width="33" src="./static/images/icon/ic_keypad_delete.svg" alt="" /></button></td>
+									            </tr>
+									        </tbody>
+									    </table>
+									    <table class="key_set3" summary="키패드">
+									        <tbody>
+									            <tr>
+									                <td class="y_btn hide_pc"><button type="button" class="btn-chg-note"><img width="34" src="./static/images/icon/ic_keypad_write.svg" alt="" /></button></td>
+									                <td class="grade"><button type="button">채점하기</button></td>
+									                <td class="fold hide_pc"><button type="button" class="btn-close-pad"><img class="hide_tv hide_m" width="17" src="./static/images/icon/ic_keypad_fold_right.svg" alt="" /><img class="hide_pc hide_th" width="19" src="./static/images/icon/ic_keypad_fold_bottom.svg" alt="" /></button></td>
+									            </tr>
+									        </tbody>
+									    </table>
+									</div>
+								</div>
+								<!-- //2. 기본연산형 키패드 영역 끝 -->
+
+
+								<!-- 3. 복잡연산형 키패드 영역 시작 -->
+								<div class="keypad_wrap" id="keypad_wrap3" style="display: none;">  <!-- id=keypad_wrap3,  style="display: none;"는 퍼블확인용 임시코드입니다. 개발시에는 삭제해주세요. -->
+									<div class="keypad cls">
+									    <div class="key_set1_flex">
+									        <article>
+									            <button class="fraction" type="button"><img src="./static/images/icon/ic_keypad_fraction.svg" alt="" /></button>
+									            <div class="fraction_box" style="display: none;">
+									                <div class="write">
+									                	<table class="tbl-fountain">
+									                		<tbody>
+									                			<tr>
+									                				<td class="bdline">
+									                					<input type="text" class="form-control form-control-sm" size="1" maxlength="4">
+									                				</td>
+									                			</tr>
+									                			<tr>
+									                				<td>
+									                					<input type="text" class="form-control form-control-sm" size="1" maxlength="4">
+									                				</td>
+									                			</tr>
+									                		</tbody>
+									                	</table>
+									                </div>
+									                <button class="x" type="button"><img src="./static/images/icon/btn_fraction_close.svg" alt="" /></button>
+									                <button class="re" type="button"><img src="./static/images/icon/ic_fraction_reset.svg" alt="" /></button>
+									                <button class="check" type="button"><img src="./static/images/icon/ic_fraction_check.svg" alt="" /></button>
+									            </div>
+									        </article>
+									        <article>
+									            <button class="mixed_num" type="button"><img src="./static/images/icon/ic_keypad_mixed_fraction.svg" alt="" /></button>
+									            <div class="fraction_box ex" style="display: none;">
+									                <div class="write">
+									                	<table class="tbl-fountain">
+									                		<tbody>
+									                			<tr>
+									                				<td rowspan="2">
+									                					<span>
+										                					<input type="text" class="form-control" size="1" maxlength="4">
+									                					</span>
+									                				</td>
+									                				<td class="bdline">
+									                					<input type="text" class="form-control form-control-sm" size="1" maxlength="4">
+									                				</td>
+									                			</tr>
+									                			<tr>
+									                				<td>
+									                					<input type="text" class="form-control form-control-sm" size="1" maxlength="4">
+									                				</td>
+									                			</tr>
+									                		</tbody>
+									                	</table>
+									                </div>
+									                <button class="x" type="button"><img src="./static/images/icon/btn_fraction_close.svg" alt="" /></button>
+									                <button class="re" type="button"><img src="./static/images/icon/ic_fraction_reset.svg" alt="" /></button>
+									                <button class="check" type="button"><img src="./static/images/icon/ic_fraction_check.svg" alt="" /></button>
+									            </div>
+									        </article>
+									        <article><button type="button">𝑥</button></article>
+									        <article><button type="button">＋</button></article>
+									        <article><button type="button">－</button></article>
+									        <article><button type="button">×</button></article>
+									        <article><button type="button">÷</button></article>
+									        <article><button type="button">＜</button></article>
+									        <article><button type="button">＞</button></article>
+									        <article><button type="button">＝</button></article>
+									        <article><button type="button">:</button></article>
+									        <article><button type="button">.</button></article>
+									    </div>
+									    <table class="key_set2" summary="키패드">
+									        <tbody>
+									            <tr class="no_bd_top">
+									                <td><button type="button">1</button></td>
+									                <td><button type="button">2</button></td>
+									                <td><button type="button">3</button></td>
+									            </tr>
+									            <tr>
+									                <td><button type="button">4</button></td>
+									                <td><button type="button">5</button></td>
+									                <td><button type="button">6</button></td>
+									            </tr>
+									            <tr>
+									                <td><button type="button">7</button></td>
+									                <td><button type="button">8</button></td>
+									                <td><button type="button">9</button></td>
+									            </tr>
+									            <tr>
+									                <td colspan="2"><button type="button">0</button></td>
+									                <td class="calc_del"><button type="button"><img width="33" src="./static/images/icon/ic_keypad_delete.svg" alt="" /></button></td>
+									            </tr>
+									        </tbody>
+									    </table>
+									    <table class="key_set3" summary="키패드">
+									        <tbody>
+									            <tr>
+									                <td class="y_btn hide_pc"><button type="button" class="btn-chg-note"><img width="34" src="./static/images/icon/ic_keypad_write.svg" alt="" /></button></td>
+									                <td class="grade"><button type="button">채점<span class="hide_pc hide_th">하기</span></button></td>
+									                <td class="fold hide_pc"><button type="button" class="btn-close-pad"><img class="hide_tv hide_m" width="17" src="./static/images/icon/ic_keypad_fold_right.svg" alt="" /><img class="hide_pc hide_th" width="19" src="./static/images/icon/ic_keypad_fold_bottom.svg" alt="" /></button></td>
+									            </tr>
+									        </tbody>
+									    </table>
+									</div>
+								</div>
+								<!-- //3. 복잡연산형 키패드 영역 끝 -->
+
+								<!-- 4. 필기패드 영역 시작 -->
+								<div class="keypad_wrap" id="keypad_wrap4" style="display: none;">  <!-- id=keypad_wrap4,  style="display: none;"는 퍼블확인용 임시코드입니다. 개발시에는 삭제해주세요. -->
+									<div class="keypad notes">
+									    <div class="note_area">
+									    </div>
+									    <div class="btn_area">
+									        <table class="key_set3" summary="키패드">
+									            <tbody>
+									                <tr>
+									                    <td class="y_btn hide_pc"><button type="button" class="btn-chg-num"><img width="36" src="./static/images/icon/ic_keypad_number.svg" alt="" /></button></td>
+									                    <td class="grade"><button type="button">채점하기</button></td>
+									                    <td class="fold hide_pc"><button type="button" class="btn-close-pad"><img class="hide_tv hide_m" width="17" src="./static/images/icon/ic_keypad_fold_right.svg" alt="" /><img class="hide_pc hide_th" width="19" src="./static/images/icon/ic_keypad_fold_bottom.svg" alt="" /></button></td>
+									                </tr>
+									            </tbody>
+									        </table>
+									    </div>
+									    <div class="del_btn hide"><button type="button"><img src="./static/images/icon/ic_keypad_wirte_delte.svg" alt="" /></button></div>
+									</div>
+								</div>
+								<!-- //4. 필기패드 영역 끝 -->
+								
+								<div class="yellow_circle2"></div>
+								<div class="tipbox2 right tip4">그리고 답은 여기에 써요.</div>
+								<div class="hand hand2"><img src="./static/images/common/img_hand@2x.png" alt="" /></div>
+								<div class="lottie_2_cont">
+                                    <div id="tutorial_number_2"></div>
+								</div>
+								<div class="tipbox tip7">휴지통 버튼을 누르면 <br class="hide_pc hide_t" />쓴 답이 지워져요.</div>
+                                <div class="tipbox tip8">답을 다 썼으면<br />채점하기 버튼을 눌러요.</div>
+                                <div class="tipbox tip10">숫자 키패드는 여기에 있고</div>
+                                <div class="tipbox tip11">키패드 닫기는 여기에 있어요.</div>
+							</div>
+							<!-- //keypadBox -->
+						</div>
+					</div>
+					<!-- //learningBox -->
+				</div>
+            
+                <div class="la-wrap">
+                    <div class="la-ani">
+                        <div class="anim-wrap" id="ani_answer"></div>
+                    </div>
+                    <div class="tipbox tip9 on">바로 결과가 나와요.</div>
+                </div>
+			</div>
+			<!-- //container -->
+		</div>
+		<div class="tutorial-wrap"></div><!--튜토리얼에서 유저가 조작 못하도록 씌운 레이어-->
+	</div>
+</div>
+
+
+<!-- 퍼블단 확인용 스크립트입니다. 개발시 참조해서 "활용"해주세요. -->
+<script>
+	//학습하기에서 보기버튼 눌렀을때
+	$(document).on('click', '.btn-viewopen', function(){
+	  $(this).toggleClass('on');
+	  $(this).next('.viewopen-detail').toggleClass('on');
+	});
+
+	// 정답입력 버튼 눌렀을때 키패드로 전환
+	$(document).on('click', '.btn-inputAnswer', function(){
+		$('.learning_picture').addClass('unactive');
+		$('.onlyButtonBox').removeClass('active');
+		$('.keypadBox').addClass('active');
+		$('.v-tab .learningTail').addClass('on');
+	});
+	$(document).on('click', '.btn-close-pad', function(){
+		$('.learning_picture').removeClass('unactive');
+		$('.onlyButtonBox').addClass('active');
+		$('.keypadBox').removeClass('active');
+		$('.v-tab .learningTail').removeClass('on');
+	});
+
+	// 필기패드로 전환
+	$(document).on('click', '.btn-chg-note', function(){
+	  var _target = $('.keypad.notes').closest('.keypad_wrap');
+	  var _thisPad = $(this).closest('.keypad_wrap');
+	  $('.keypad_wrap').not(_target).css('display', 'none');
+	  _target.css('display', 'block');
+	  //필기패드에서 원래패드로 전환
+	  $('.btn-chg-num').on('click', function(){
+	  	$('.keypad_wrap').not(_thisPad).css('display', 'none');
+	  	_thisPad.css('display', 'block');
+	  });
+	});
+
+	//퍼블단의 화면 확인용 - 키패드 안의 분수 input의 size값이 value를 변화시킬때마다 조절되도록 설정
+	$(document).on('keydown', '.form-control', function(e){
+		var _inputLen = $(this).val().length;
+		var _key = event.which || event.keyCode || event.charCode;
+		if( _key == 8 || _key == 46){
+			_inputLen = (_inputLen < 2) ? 1 : _inputLen-1;
+		}else{
+			_inputLen = (_inputLen > 3) ? 4 : _inputLen+1;
+		}
+		$(this).attr('size', _inputLen);
+	});
+
+</script>
+
+<!-- 퍼블단에서 화면확인용 스크립트입니다. 개발시 "삭제"해주세요. -->
+<script>
+    //수식 크기 확대
+	$('.pvBox').each(function(){calcPV_height($(this));});
+
+	function calcPV_height(elm){
+		var _ratio		= ( 2.0 * elm.attr('data-per') ) / 100;
+		var _pvInner 	= elm.find('.pv-inner');
+		var _pvCont 	= elm.find('.pv-cont');
+
+		_pvInner.width(_pvCont.outerWidth() * _ratio);
+		_pvInner.height(_pvCont.outerHeight() * _ratio);
+		_pvCont.css('transform', 'scale('+ _ratio +')');
+	}    
+    
+    //'다음'버튼 클릭시 튜토리얼 애니메이션 단계별 실행
+	$('.tmp-tutorial-btn button').on('click', function(){
+		var _cnt = $(this).attr('data-num') * 1;
+
+		switch( _cnt ){
+			case 1://노란 배경
+				$('.tutorial-picBg').addClass('first');
+				break;
+			case 2://배경에 툴팁
+				$('.tip1').addClass('on');
+				break;
+			case 3://로티
+				$('.btn-learning-del').addClass('active');
+				$('.tutorial-picBg').removeClass('first');
+				$('.tip1').removeClass('on');
+				$('.tuto1_img').addClass('hide');
+                
+                func_animation_fast('tutorial_note','tutorial_note', false);
+                function func_animation_fast(elmID, jsonName, loop){
+                  var loop = (loop == undefined ) ? true : loop;
+                  var _animWrap = document.getElementById(elmID);
+                  if( !(_animWrap == null) ) {
+                    _animWrap.innerHTML = '';
+                    var animation = bodymovin.loadAnimation({
+                        container: _animWrap,
+                        renderer: 'svg',
+                        loop: loop,
+                        autoplay: true,
+                        path: 'static/json/'+jsonName+'.json'
+                    });
+                    animation.setSpeed(1.3);
+                  }
+                }                
+                
+				break;
+			case 4://휴지통 노란 원
+				$('.yellow_circle').addClass('on');
+				break;
+			case 5://휴지통에 손가락과 툴팁
+				$('.yellow_circle').removeClass('on');
+				$('.tip2').addClass('on');
+				$('.hand1').addClass('on');
+				break;
+			case 6://지우기
+				$('.btn-learning-del').removeClass('active');
+				$('.tip2').removeClass('on');
+				$('.hand').removeClass('on');
+                $('#tutorial_note').addClass('hide');
+				$('.tuto1_img').removeClass('hide');
+				break;
+			case 7://정답입력 튜토리얼로 화면변경
+				$('.tip2').removeClass('on');
+				$('.hand').removeClass('on');
+				$('.headerBox_head .tit').text('정답 입력');
+				$('.mathQuest-wrap .tit').text('Q2. 빈칸에 알맞은 숫자를 넣으세요.');
+                $('.tuto1').addClass('hide');
+                $('.tuto2').addClass('on');
+				break;
+			case 8://정답입력버튼에 노란 원
+				$('.circle1').addClass('on position2');
+				break;
+			case 9://정답입력버튼에 손가락과 툴팁
+				$('.yellow_circle').removeClass('on position2');
+				$('.tip3').addClass('on');
+				$('.hand1').addClass('on position2');
+				break;
+			case 10://필기영역 열기
+				$('.tip3').removeClass('on');
+				$('.hand').removeClass('on position2');
+				$('.btn-inputAnswer').trigger('click');
+				$('.btn-chg-note').trigger('click');
+				$('.mathExt').addClass('on');
+				break;
+			case 11://필기영역에 노란 원
+				$('.yellow_circle2').addClass('on');
+				break;
+			case 12://필기영역에 손가락과 툴팁
+				$('.yellow_circle2').removeClass('on');
+				$('.tip4').addClass('on');
+				$('.hand2').addClass('on position3');
+				break;
+			case 13://로티 2쓰기
+				$('.del_btn').removeClass('hide');
+				$('.tip4').removeClass('on');
+				$('.hand').removeClass('on position3');
+                func_animation_fast('tutorial_number_2','tutorial_number_2', false);
+				break;
+			case 14://빈칸에 답 2입력
+				$('.write_2').removeClass('hide');
+				$('.write_2').addClass('ani_scale');
+				$('.tip5').addClass('on');
+				break;
+			case 15://다른 입력칸에 노란 원
+				$('.tip5').removeClass('on');
+				$('.circle2').addClass('on position4');
+				break;
+			case 16://다른 입력칸 손가락과 툴팁
+				$('.circle2').removeClass('on position4');
+				$('.tip6').addClass('on');
+				$('.hand0').addClass('on position4');
+				break;
+			case 17://다른 입력칸 활성화하고 2 지우기
+				$('.no2').removeClass('focusedInput');
+				$('.no4').addClass('focusedInput');
+				$('#tutorial_number_2').addClass('hide');
+				$('.del_btn').addClass('hide');
+				break;
+			case 18://로티 3쓰기
+				$('.del_btn').removeClass('hide');
+				$('.tip6').removeClass('on');
+				$('.hand0').removeClass('on position4');
+				$('#tutorial_number_2').removeClass('hide');
+                func_animation_fast('tutorial_number_2','tutorial_number_3', false);
+				break;
+			case 19://빈칸에 답 3입력
+				$('.write_3').removeClass('hide');
+				$('.write_3').addClass('ani_scale');
+				break;
+			case 20://휴지통 노란 원
+				$('.yellow_circle2').addClass('on position2');
+				break;
+			case 21://휴지통에 손가락과 툴팁
+				$('.yellow_circle2').removeClass('on position2');
+				$('.tip7').addClass('on');
+				$('.hand2').addClass('on position5');
+				break;
+			case 22://지우기
+				$('.tip7').removeClass('on');
+				$('.hand2').removeClass('on position5');
+				$('#tutorial_number_2').addClass('hide');
+				$('.del_btn').addClass('hide');
+				$('.write_3').addClass('hide');
+				break;
+			case 23://로티 4쓰기
+				$('.del_btn').removeClass('hide');
+				$('#tutorial_number_2').removeClass('hide');
+                func_animation_fast('tutorial_number_2','tutorial_number_4', false);
+				break;
+			case 24://빈칸에 답 4입력
+				$('.write_4').removeClass('hide');
+				$('.write_4').addClass('ani_scale');
+				break;
+			case 25://채점하기버튼에 노란 원
+				$('.yellow_circle2').addClass('on position5');
+				$('.keypadBox').addClass('ovh_th');
+				break;
+			case 26://채점하기버튼에 손가락과 툴팁
+				$('.yellow_circle2').removeClass('on position5');
+				$('.keypadBox').removeClass('ovh_th');
+				$('.tip8').addClass('on');
+				$('.hand2').addClass('on position6');
+				break;
+			case 27://결과 띄우기
+				$('.tip8').removeClass('on');
+				$('.hand2').removeClass('on position6');
+				$('.la-wrap').addClass('on');
+                func_animation('ani_answer', 'answer_correct', false);
+				break;
+			case 28://숫자키패드 버튼에 노란 원
+				$('.del_btn').addClass('hide');
+				$('#tutorial_number_2').addClass('hide');
+				$('.la-wrap').removeClass('on');
+				$('.headerBox_head .tit').text('숫자 키패드/키패드닫기');
+				$('.yellow_circle2').addClass('on position6');
+				$('.keypadBox').removeClass('ovh_th');
+				break;
+			case 29://숫자키패드 버튼에 손가락과 툴팁
+				$('.yellow_circle2').removeClass('on position6');
+				$('.tip10').addClass('on');
+				$('.hand2').addClass('on position7');
+				break;
+			case 30://숫자키패드 열기
+				$('.tip10').removeClass('on');
+				$('.hand2').removeClass('on position7');
+				$('.btn-chg-num').trigger('click');
+				break;
+			case 31://숫자키패드 버튼에 노란 원
+				$('.yellow_circle2').addClass('on position7');
+				$('.keypadBox').addClass('ovh_th');
+				break;
+			case 32://키패드닫기 버튼에 손가락과 툴팁
+				$('.yellow_circle2').removeClass('on position7');
+				$('.keypadBox').removeClass('ovh_th');
+				$('.tip11').addClass('on');
+				$('.hand2').addClass('on position8');
+				break;
+			case 33://세로스크롤 튜토리얼로 화면변경
+				$('.learning_body').removeClass('hide_scroll');
+				$('.headerBox_head .tit').text('스크롤 사용법');
+				$('.mathQuest-wrap .tit').text('Q3. 다음 식을 계산하시오.');
+				$('.tip11').removeClass('on');
+				$('.hand2').removeClass('on position8');
+				$('.btn-close-pad').trigger('click');
+                $('.tuto2').removeClass('on');
+                $('.tuto3').addClass('on');
+				break;
+			case 34://스크롤바에 노란 원
+				$('.circle1').addClass('on position8');
+				break;
+			case 35://스크롤바에 손가락과 툴팁
+				$('.circle1').removeClass('on position9');
+				$('.tip12').addClass('on');
+				$('.hand1').addClass('on position9');
+				break;
+			case 36://스크롤바 움직이기
+                $('.learning_body').animate({scrollTop : 300}, 400);
+				$('.tip12.on').addClass('move');
+				$('.hand1.position9').addClass('move');
+				break;
+		}
+		_cnt++;
+		$(this).attr('data-num', _cnt);
+		$(this).find('span').text(_cnt);
+	});
+</script>
+
+
+</body>
+</html>

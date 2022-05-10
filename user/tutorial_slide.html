@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+    <script src="static/js/slick.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+		<div class="layout-def theme-sky tutorial_slide">
+			<div class="header">
+				<div class="inner">
+					<div class="headerBox">
+						<div class="headerBox_head">
+							<h1 class="tit">문제풀이 사용법</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //header -->
+
+			<div class="container">
+				<div class="inner">
+                    <div class="slide_wrap">
+                        <div class="slide_cont">
+                           
+                            <div class="slick_slider js_slick">
+                                <div>
+                                    <img class="hide_tv" width="900" src="./static/images/common/img_tutorial_th_01.png" alt="" />
+                                    <img class="hide_th" width="550" src="./static/images/common/img_tutorial_tv_01.png" alt="" />
+                                </div>
+                                <div>
+                                    <img class="hide_tv" width="900" src="./static/images/common/img_tutorial_th_02.png" alt="" />
+                                    <img class="hide_th" width="550" src="./static/images/common/img_tutorial_tv_02.png" alt="" />
+                                </div>
+                                <div>
+                                    <img class="hide_tv" width="900" src="./static/images/common/img_tutorial_th_03.png" alt="" />
+                                    <img class="hide_th" width="550" src="./static/images/common/img_tutorial_tv_03.png" alt="" />
+                                </div>
+                                <div>
+                                    <img class="hide_tv" width="900" src="./static/images/common/img_tutorial_th_04.png" alt="" />
+                                    <img class="hide_th" width="550" src="./static/images/common/img_tutorial_tv_04.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tuto_btn_wrap cls first_page">
+                        <div class="left">
+        					<button class="btn-small btn-transp btn-left js_prev">이전</button>
+                        </div>
+                        <div class="right">
+            				<button class="btn btn-white js_next">다음</button>
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //layout-def -->
+		
+	</div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('.js_slick').slick({
+        dots: true,
+        infinite: false,
+        prevArrow: $('.js_prev'),
+        nextArrow: $('.js_next')
+    });
+    
+    //슬라이드가 첫 페이지인 경우 하단 버튼 영역에 클래스 추가하여 변경
+    var last_dot = $('.slick-dots li').eq(0);
+    $('.js_slick').on('afterChange', function(slick, currentSlide){
+    
+        if(last_dot.hasClass('slick-active')){
+            $('.btn_wrap').addClass('first_page');
+        }else{
+            $('.btn_wrap').removeClass('first_page');
+        }
+    });    
+});
+</script>
+
+</body>
+</html>

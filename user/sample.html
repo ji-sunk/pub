@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+<style>
+/* 이 화면에서만 쓰이는 임시 스타일 */
+.tmpBox { width: 550px; margin: 30px auto 0; }
+.tmpBox button.btn { margin-bottom: 10px; }
+.tmpBox-small { padding: 20px; }
+.tmpBox-small.tmpColor { background-color: #00c3e1;	 }
+.tmpBox-small button { margin-right: 15px; }
+</style>
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+		
+		<div class="inner">
+			<!-- tab 형태 -->
+			<div class="tab-wrap">
+				<ul class="tablist">
+					<li><a href="#tabCont1" class="active">tab1</a></li>
+					<li><a href="#tabCont2">tab1</a></li>
+					<li><a href="#tabCont3">tab1</a></li>
+				</ul>
+				<div class="tabCont active" id="tabCont1">
+					tabCont1
+				</div>
+				<div class="tabCont" id="tabCont2">
+					tabCont2
+				</div>
+				<div class="tabCont" id="tabCont3">
+					tabCont3
+				</div>
+			</div>
+
+			<div class="tmpBox">
+				<h2>기본 스타일 - disabled : selected_txt에 클래스 select-disabled 추가</h2>
+				<div style="width: 200px; display: inline-block;"> 
+
+					<!-- new-select 시작 -->
+					<div class="new-select"><!--모바일에서 높이 40으로 작아지게 할 경우 class m_40 / 42는 m_42-->
+						<!-- 1. 미리 선택된 값이 없는 경우 -->
+						<div class="selected_txt first">출생년도</div>
+						<!-- 2. 미리 선택된 값이 있는 경우 -->
+						<!-- <div class="selected_txt">2004년</div> -->
+						<div class="select_option">
+							<ul>
+								<!-- <li><button type="button" class="selected">2002년</button></li> --> <!-- 미리 선택된 경우 -->
+								<li><button type="button">2002년</button></li>
+								<li><button type="button">2003년</button></li>
+								<li><button type="button">2004년</button></li>
+								<li><button type="button">2005년</button></li>
+								<li><button type="button">2006년</button></li>
+								<li><button type="button">2007년</button></li>
+								<li><button type="button">2008년</button></li>
+								<li><button type="button">2009년</button></li>
+								<li><button type="button">2010년</button></li>
+								<li><button type="button">2011년</button></li>
+								<li><button type="button">2012년</button></li>
+								<li><button type="button">2013년</button></li>
+								<li><button type="button">2014년</button></li>
+								<li><button type="button">2015년</button></li>
+								<li><button type="button">2016년</button></li>
+								<li><button type="button">2017년</button></li>
+								<li><button type="button">2018년</button></li>
+								<li><button type="button">2019년</button></li>
+								<li><button type="button">2020년</button></li>
+								<li><button type="button">2021년</button></li>
+							</ul>
+						</div>
+					</div>
+					<!-- //new-select 끝 -->
+
+				</div>
+				<div style="width: 280px; display: inline-block;"> 
+
+					<!-- new-select 시작 -->
+					<div class="new-select">
+						<div class="selected_txt select-disabled">클래스 select-disabled</div>
+						<div class="select_option">
+							<ul>
+								<li><button type="button">1월</button></li>
+								<li><button type="button">2월</button></li>
+								<li><button type="button" class="selected">3월</button></li>
+								<li><button type="button">4월</button></li>
+								<li><button type="button">5월</button></li>
+								<li><button type="button">6월</button></li>
+								<li><button type="button">7월</button></li>
+								<li><button type="button">8월</button></li>
+								<li><button type="button">9월</button></li>
+								<li><button type="button">10월</button></li>
+								<li><button type="button">11월</button></li>
+								<li><button type="button">12월</button></li>
+							</ul>
+						</div>
+					</div>
+					<!-- //new-select 끝 -->
+					
+				</div>
+
+			</div>
+
+			<div class="tmpBox">
+				<h2>좀 더 작은 스타일 : new-select에 클래스 new-select-smaller 추가</h2>
+				<div style="width: 200px; display: inline-block;"> 
+
+					<!-- new-select 시작 -->
+					<div class="new-select new-select-smaller">
+						<!-- 1. 미리 선택된 값이 없는 경우 -->
+						<div class="selected_txt first">출생년도</div>
+						<!-- 2. 미리 선택된 값이 있는 경우 -->
+						<!-- <div class="selected_txt">2004년</div> -->
+						<div class="select_option">
+							<ul>
+								<li><button type="button">2002년</button></li>
+								<li><button type="button">2003년</button></li>
+								<li><button type="button" class="selected">2004년</button></li>
+								<li><button type="button">2005년</button></li>
+								<li><button type="button">2006년</button></li>
+								<li><button type="button">2007년</button></li>
+								<li><button type="button">2008년</button></li>
+								<li><button type="button">2009년</button></li>
+								<li><button type="button">2010년</button></li>
+								<li><button type="button">2011년</button></li>
+								<li><button type="button">2012년</button></li>
+								<li><button type="button">2013년</button></li>
+								<li><button type="button">2014년</button></li>
+								<li><button type="button">2015년</button></li>
+								<li><button type="button">2016년</button></li>
+								<li><button type="button">2017년</button></li>
+								<li><button type="button">2018년</button></li>
+								<li><button type="button">2019년</button></li>
+								<li><button type="button">2020년</button></li>
+								<li><button type="button">2021년</button></li>
+							</ul>
+						</div>
+					</div>
+					<!-- //new-select 끝 -->
+
+				</div>
+				<div style="width: 280px; display: inline-block;"> 
+
+					<!-- new-select 시작 -->
+					<div class="new-select new-select-smaller">
+						<div class="selected_txt select-disabled">클래스 select-disabled</div>
+						<div class="select_option">
+							<ul>
+								<li><button type="button">1월</button></li>
+								<li><button type="button">2월</button></li>
+								<li><button type="button" class="selected">3월</button></li>
+								<li><button type="button">4월</button></li>
+								<li><button type="button">5월</button></li>
+								<li><button type="button">6월</button></li>
+								<li><button type="button">7월</button></li>
+								<li><button type="button">8월</button></li>
+								<li><button type="button">9월</button></li>
+								<li><button type="button">10월</button></li>
+								<li><button type="button">11월</button></li>
+								<li><button type="button">12월</button></li>
+							</ul>
+						</div>
+					</div>
+					<!-- //new-select 끝 -->
+					
+				</div>
+
+			</div>
+
+			<div class="tmpBox" style="background-color: #0080ff; padding: 10px;">
+				<h2>어두운 색 바탕</h2>
+				<div style="width: 200px; display: inline-block;"> 
+
+					<!-- new-select 시작 -->
+					<div class="new-select new-select-white">
+						<div class="selected_txt">2004년</div>
+						<div class="select_option">
+							<ul>
+								<li><button type="button">2002년</button></li>
+								<li><button type="button">2003년</button></li>
+								<li><button type="button" class="selected">2004년</button></li>
+								<li><button type="button">2005년</button></li>
+								<li><button type="button">2006년</button></li>
+								<li><button type="button">2007년</button></li>
+								<li><button type="button">2008년</button></li>
+								<li><button type="button">2009년</button></li>
+								<li><button type="button">2010년</button></li>
+								<li><button type="button">2011년</button></li>
+								<li><button type="button">2012년</button></li>
+								<li><button type="button">2013년</button></li>
+								<li><button type="button">2014년</button></li>
+								<li><button type="button">2015년</button></li>
+								<li><button type="button">2016년</button></li>
+								<li><button type="button">2017년</button></li>
+								<li><button type="button">2018년</button></li>
+								<li><button type="button">2019년</button></li>
+								<li><button type="button">2020년</button></li>
+								<li><button type="button">2021년</button></li>
+							</ul>
+						</div>
+					</div>
+					<!-- //new-select 끝 -->
+
+				</div>
+				<div style="width: 280px; display: inline-block;"> 
+
+					<!-- new-select 시작 -->
+					<div class="new-select new-select-white">
+						<div class="selected_txt select-disabled">클래스 select-disabled</div>
+						<div class="select_option">
+							<ul>
+								<li><button type="button">1월</button></li>
+								<li><button type="button">2월</button></li>
+								<li><button type="button" class="selected">3월</button></li>
+								<li><button type="button">4월</button></li>
+								<li><button type="button">5월</button></li>
+								<li><button type="button">6월</button></li>
+								<li><button type="button">7월</button></li>
+								<li><button type="button">8월</button></li>
+								<li><button type="button">9월</button></li>
+								<li><button type="button">10월</button></li>
+								<li><button type="button">11월</button></li>
+								<li><button type="button">12월</button></li>
+							</ul>
+						</div>
+					</div>
+					<!-- //new-select 끝 -->
+					
+				</div>
+
+			</div>
+			
+			<div class="tmpBox">
+				<h2>높이 56px</h2>
+				<div style="width: 200px; display: inline-block;"> 
+
+					<!-- new-select 시작 -->
+					<div class="new-select h56"><!--모바일에서 높이 40으로 작아지게 할 경우 class m_40-->
+						<div class="selected_txt">2004년</div>
+						<div class="select_option">
+							<ul>
+								<li><button type="button">2002년</button></li>
+								<li><button type="button">2003년</button></li>
+								<li><button type="button">2004년</button></li>
+							</ul>
+						</div>
+					</div>
+					<!-- //new-select 끝 -->
+
+				</div>
+            </div>
+
+			<div class="tmpBox">
+				<div class="pos-r">
+					<button class="lr-mySB-txt btn-tooltip">툴팁 예제 - 버튼명 btn-tooltip</button>
+					<div class="tooltip-def tooltipBox">
+						<p>
+							예전 스테이지에서<br>
+							풀어봤던 5문제를<br>
+							잘 알고 있는지 확인해 봤어.
+						</p>
+						<button class="btn-closeTooltip btn-close-tooltip"></button>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- button -->
+			<div class="tmpBox"><!-- 임시로 클래스 넣음. 퍼블작업에는 아래 버튼만 따서 사용 -->
+				<button class="btn btn-blue" disabled>버튼명 [속성 disabled 넣기만하면 됨]</button>
+				<button class="btn btn-blue">버튼명</button>
+				<button class="btn btn-green">버튼명</button>
+				<button class="btn btn-red">버튼명</button>
+				<button class="btn btn-white">버튼명</button>
+				<button class="btn btn-gray">버튼명</button>
+				<button class="btn btn-dark">버튼명</button>
+                
+                <p>모바일에서 텍스트 모양으로 변하는 버튼 (클래스 m_txt 추가)</p>
+				<button class="btn btn-blue m_txt">버튼명</button>
+				<button class="btn btn-gray m_txt">버튼명</button>
+				<button class="btn btn-gray m_txt" disabled>버튼명</button>
+
+                <p>얇은 버튼(높이 48px, 모바일에서는 높이 40px)</p>
+				<button class="btn btn-blue h48" disabled>버튼명 [속성 disabled 넣기만하면 됨]</button>
+				<button class="btn btn-blue h48">버튼명</button>
+				<button class="btn btn-green h48">버튼명</button>
+				<button class="btn btn-red h48">버튼명</button>
+				<button class="btn btn-white h48">버튼명</button>
+				<button class="btn btn-gray h48">버튼명</button>
+				<button class="btn btn-dark h48">버튼명</button>
+				
+                <p>높이 40px의 버튼</p>
+				<button class="btn btn-blue h40">버튼명</button>
+
+				<div class="tmpBox-small">
+					<button class="btn-small btn-gray btn-left"></button>
+					<button class="btn-small btn-gray btn-left">버튼명</button>
+					<button class="btn-small btn-gray btn-right">SKIP</button>
+					<button class="btn-small btn-gray btn-right btn-mob-mini">SKIP</button>
+				</div>
+				<div class="tmpBox-small tmpColor">
+					<button class="btn-small btn-transp btn-left"></button>
+					<button class="btn-small btn-transp btn-left">버튼명</button>
+					<button class="btn-small btn-transp btn-right">SKIP</button>
+					<button class="btn-small btn-transp btn-right btn-mob-mini">SKIP</button>
+				</div>
+				
+				<br>
+				<p>밑줄 텍스트 형태의 버튼</p>
+				<button type="button" class="mint_txt_btn">파란버튼</button>
+				<button type="button" class="mint_txt_btn" disabled>파란버튼(비활성)</button>
+				<button type="button" class="black_txt_btn">검은버튼</button>
+				
+                <!--하단 버튼영역-->
+                <div class="bottom_btn_wrap cls">
+                    <div class="left">
+                        <button type="button" class="btn-small btn-gray btn-left"><span>이전</span></button><!--모바일에서는 텍스트 없어지고 아이콘만 보임-->
+                    </div>
+                    <div class="right">
+                        <button disabled class="btn btn-blue">회원가입 완료</button>
+                    </div>
+                </div>
+                
+                <p>참고) 글로벌 버전에서는 class gb 아래에서 일반 버튼들의 모양이 글로벌 테마에 맞게 변함. (gb는 layout-def에 넣음)</p>
+                <div class="gb">
+                    <button class="btn btn-blue">버튼명</button>
+                </div>
+
+			</div>
+			
+			
+			<div class="tmpBox">
+                <h2>반투명 흰색 입력폼(육안으로 확인하기 위해 영역 배경에 임시로 하늘색 bg넣음)</h2>
+                <div style="background: #00c3e1;">
+                   
+                    <div class="input_box soft_white_box">
+                        <input type="text" placeholder="이메일 주소 입력" />
+                        <!--입력값이 생기면 나타나고, 빈값이면 없어는 영역-->
+                        <div class="r_area">
+                            <button type="button"><img width="40" src="./static/images/icon/ic_error2@2x.png" alt="" /></button>
+                        </div>
+                        <!--//입력값이 생기면 나타나고, 빈값이면 없어는 영역-->
+                    </div>
+                    <div class="red_txt fs14">올바른 이메일 형식이 아닙니다. 예)abc@abc.com</div>
+
+                    <div class="input_box soft_white_box">
+                        <input type="password" placeholder="비밀번호 입력" />
+                        <!--입력값이 생기면 나타나고, 빈값이면 없어는 영역-->
+                        <div class="r_area">
+                            <button type="button"><img width="40" src="./static/images/icon/ic_error2@2x.png" alt="" /></button>
+                        </div>
+                        <!--//입력값이 생기면 나타나고, 빈값이면 없어는 영역-->
+                    </div>
+                    <div class="red_txt fs14">이메일 주소와 비밀번호가 일치하지 않습니다. 이메일 주소 또는 비밀번호를 다시 확인해 주세요.</div>
+                </div>
+                
+            </div>
+            
+            
+			<div class="tmpBox">
+                <h2>흰색 입력폼(육안으로 확인하기 위해 영역 배경에 임시로 회색 bg넣음)<br />각 항목의 제목이 필요없는 경우는 제목 빼고 input영역만 사용 가능</h2>
+                <div style="background: #f6f8fa; padding: 20px 0;">
+                   
+                    <div class="input_title">항목 명</div>
+                    <div class="input_cont">
+                        <div class="input_box white_box">
+                            <input type="text" placeholder="이메일 주소 입력" />
+                            <!--입력값이 생기면 나타나고, 빈값이면 없어는 영역-->
+                            <div class="r_area">
+                                <button type="button"><img width="40" src="./static/images/icon/ic_error@2x.png" alt="" /></button>
+                            </div>
+                            <!--//입력값이 생기면 나타나고, 빈값이면 없어는 영역-->
+                        </div>
+                        <div class="red_txt fs12_10">올바른 이메일 형식이 아닙니다. 예)abc@abc.com</div>
+                    </div>
+                    
+                    <br />
+                    <br />
+
+                    <div class="input_title">항목 명</div>
+                    <div class="input_cont">
+                        <div class="input_box white_box">
+                            <input type="password" placeholder="비밀번호 입력 (영문,숫자,특문 포함 8글자 이상)" />
+                            <!--입력값이 생기면 나타나고, 빈값이면 없어는 영역-->
+                            <div class="r_area">
+                                <button type="button"><img width="40" src="./static/images/icon/ic_check@2x.png" alt="" /></button>
+                            </div>
+                            <!--//입력값이 생기면 나타나고, 빈값이면 없어는 영역-->
+                        </div>
+                        <div class="red_txt fs12_10">영문, 숫자, 특문 포함 8글자 이상이어야 합니다.</div>
+                    </div>
+                    
+                    <br />
+                    <br />
+                    
+                    <!--높이 56px, 폰트사이즈 18px의 입력영역(MY_03_01의 영역과 비슷하지만 달라서 따로 만듦. 교문리뉴얼부터 사용)-->
+                    <div class="input_cont h56">
+                        <div class="input_box white_box">
+                            <input type="text" placeholder="플레이스 홀더" /><!--disabled 넣으면 폰트색 달라짐-->
+                            <div class="r_area">
+                                <button type="button">
+                                    <img src="./static/images/icon/btn_join_eye_on.svg" alt="" />
+                                    <img src="./static/images/icon/btn_join_eye_off.svg" alt="" />
+                                </button>
+                                <img src="./static/images/icon/ic_check.svg" alt="" />
+                                <button type="button">
+                                    <img src="./static/images/icon/ic_error.svg" alt="" />
+                                    <img src="./static/images/icon/input_delete_40.svg" alt="" />
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!--1.도움말 텍스트-->
+                        <div class="info_txt">도움말 텍스트</div>
+                        <!--2.max length 텍스트-->
+                        <div class="info_txt length">0<span>/</span>20</div>
+                        <!--3.오류원인 텍스트-->
+                        <div class="info_txt red">오류 원인 기제</div><!--오류 메시지가 없을 때는 이 태그 전체를 지우면 됨-->
+                    </div>
+                    
+                    <br>
+                    <br>
+                    <br>
+                    
+                    <p>
+                        참고) 글로벌 버전에서는 class gb 아래에서 인풋박스가 글로벌 테마에 맞게 변함.(gb는 layout-def에 넣음)<br>
+                        글로벌 테마에서의 인풋박스는
+                        -높이 : 56, 모바일높이 42<br>
+                        -폰트 : 플레이스홀더는 레귤러, 입력값은 볼드<br>
+                        -폰트사이즈 : 플레이스홀더와 입력값 모두 20, 모바일 16
+                    <p>
+                </div>
+            </div>
+            
+            
+            <div class="tmpBox">
+            	<h2>* radio타입 + 하얀색 바탕 - [type="radio"], [type="checkbox"]</h2>
+            	<div style="color: #00c3e1; font-size: 16px;"><!-- 폰트크기와 색상은 상위 엘리먼트로부터 상속받도록 -->
+
+            		<div class="custom-radio-wrap">
+            			<input type="radio" id="input-radio1_1" name="input-radio1">
+            			<label for="input-radio1_1">라디오 1_1</label>
+            		</div>
+            		<div class="custom-radio-wrap">
+            			<input type="radio" id="input-radio1_2" name="input-radio1">
+            			<label for="input-radio1_2">라디오 1_2</label>
+            		</div>
+            		<div class="custom-radio-wrap">
+            			<input type="radio" id="input-radio1_3" name="input-radio1" disabled>
+            			<label for="input-radio1_3">라디오 1_3 (비활성화)</label>
+            		</div>
+            		<hr>
+            		<div class="custom-radio-wrap">
+            			<input type="radio" id="input-radio2_1" name="input-radio2">
+            			<label for="input-radio2_1">라디오 2_1</label>
+            			<input type="radio" id="input-radio2_2" name="input-radio2">
+            			<label for="input-radio2_2">라디오 2_2</label>
+            			<input type="radio" id="input-radio2_3" name="input-radio2" disabled>
+            			<label for="input-radio2_3">라디오 2_3 (비활성화)</label>
+            		</div>
+            		<hr>
+            		<div class="custom-radio-wrap">
+            			<input type="checkbox" id="input-chk1">
+            			<label for="input-chk1">체크박스1</label>
+            		</div>
+            		<div class="custom-radio-wrap">
+            			<input type="checkbox" id="input-chk2">
+            			<label for="input-chk2">체크박스2</label>
+            		</div>
+            		<div class="custom-radio-wrap">
+            			<input type="checkbox" id="input-chk3" disabled>
+            			<label for="input-chk3">체크박스3 (비활성화)</label>
+            		</div>
+            		<hr>
+            		<div class="custom-radio-wrap gray">
+            			<input type="checkbox" id="input-chk4">
+            			<label for="input-chk4">회색 체크박스1</label>
+            		</div>
+            		<div class="custom-radio-wrap gray">
+            			<input type="checkbox" id="input-chk5">
+            			<label for="input-chk5">회색 체크박스2</label>
+            		</div>
+
+            	</div>
+            </div>
+
+
+            <div class="tmpBox">
+            	<h2>* radio타입 + 하늘색 바탕 - [type="radio"], [type="checkbox"]</h2>
+
+            	<div style="background: #00c3e1; color: #fff; font-size: 16px;"><!-- 폰트크기와 색상은 상위 엘리먼트로부터 상속받도록 -->
+            		<div class="custom-radio-wrap custom-radio-white">
+            			<input type="radio" id="input-radio3_1" name="input-radio3">
+            			<label for="input-radio3_1">라디오 3_1</label>
+            		</div>
+            		<div class="custom-radio-wrap custom-radio-white">
+            			<input type="radio" id="input-radio3_2" name="input-radio3">
+            			<label for="input-radio3_2">라디오 3_2</label>
+            		</div>
+            		<div class="custom-radio-wrap custom-radio-white">
+            			<input type="radio" id="input-radio3_3" name="input-radio3" disabled>
+            			<label for="input-radio3_3">라디오 3_3 (비활성화)</label>
+            		</div>
+            		<hr>
+            		<div class="custom-radio-wrap custom-radio-white">
+            			<input type="radio" id="input-radio4_1" name="input-radio4">
+            			<label for="input-radio4_1">라디오 4_1</label>
+            			<input type="radio" id="input-radio4_2" name="input-radio4">
+            			<label for="input-radio4_2">라디오 4_2</label>
+            			<input type="radio" id="input-radio4_3" name="input-radio4" disabled>
+            			<label for="input-radio4_3">라디오 4_3 (비활성화)</label>
+            		</div>
+            		<hr>
+            		<div class="custom-radio-wrap custom-radio-white">
+            			<input type="checkbox" id="input-chk4">
+            			<label for="input-chk4">체크박스4</label>
+            		</div>
+            		<div class="custom-radio-wrap custom-radio-white">
+            			<input type="checkbox" id="input-chk5">
+            			<label for="input-chk5">체크박스5</label>
+            		</div>
+            		<div class="custom-radio-wrap custom-radio-white">
+            			<input type="checkbox" id="input-chk6" disabled>
+            			<label for="input-chk6">체크박스6</label>
+            		</div>
+            	</div>
+            </div>
+            
+            <div class="tmpBox">
+            	<h2>radio타입 사각버튼(높이 48px)</h2>
+            	
+            	<div class="cls">
+                    <div class="box_radio">
+                        <input type="radio" name="gender" id="male" />
+                        <label for="male">남</label>
+                    </div>
+                    <div class="box_radio">
+                        <input type="radio" name="gender" id="female" />
+                        <label for="female">여</label>
+                    </div>
+            	</div>
+            	
+            </div>
+            
+            
+            <div class="tmpBox">
+            	<h2>radio타입 사각버튼(높이 56px, 흰색)</h2>
+            	<div style="background: #f6f8fa; padding: 10px 0;">
+            	
+                    <div class="cls h56 white">
+                        <div class="box_radio">
+                            <input type="radio" name="radio_box" id="radio_box1" />
+                            <label for="radio_box1">선택1</label>
+                        </div>
+                        <div class="box_radio">
+                            <input type="radio" name="radio_box" id="radio_box2" />
+                            <label for="radio_box2">선택2</label>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+                        
+            <div class="tmpBox">
+                <h2>유저 이미지는 아래의 파일을 공통으로 씁니다</h2>
+                <img src="./static/images/icon/ic_account_01.svg" alt="">
+                <img src="./static/images/icon/ic_account_02.svg" alt="">
+                <img src="./static/images/icon/ic_account_03.svg" alt="">
+                <img src="./static/images/icon/ic_account_04.svg" alt="">
+                <img src="./static/images/icon/ic_account_05.svg" alt="">
+            </div>
+            
+            <div class="tmpBox">
+                <h2>글로벌 버전의 유저 이미지는 아래의 파일을 공통으로 씁니다</h2>
+                <img src="./static/images/common/img_profilecha_th_01.svg" alt="">
+                <img src="./static/images/common/img_profilecha_th_02.svg" alt="">
+                <img src="./static/images/common/img_profilecha_th_03.svg" alt="">
+                <img src="./static/images/common/img_profilecha_th_04.svg" alt="">
+                <img src="./static/images/common/img_profilecha_th_05.svg" alt="">
+            </div>
+            
+
+		</div>
+	</div>
+
+
+
+</div>
+
+</body>
+</html>
