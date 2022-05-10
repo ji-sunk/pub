@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+    <script src="static/js/lottie.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+		<!-- 
+			* layout-lr에 추가될 클래스 정리 
+			1. 노력 : layout-lr-effort
+			2. 기본 : layout-lr-def 
+			3. 충분 : layout-lr-enough
+			4. 훌륭 : layout-lr-nice
+		-->
+		<div class="layout-def layout-lc layout-lr layout-lr-dark"><!--  layout-lr-effort  -->
+			<div class="header">
+				<div class="inner">
+					<div class="headerBox">
+						<div class="headerBox_head">
+							<h1 class="tit">AI 진단테스트</h1>
+							<button class="btn-close-wrap">닫기</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container"><!-- //ani_scroll -->
+				<div class="inner">
+					<div class="centermiddleBox">
+						<div class="centermiddleBox-item">
+							<div class="lr-topBox lr-topBox-left">
+								<h2 class="lr-tit-top">진단결과</h2>
+								<p class="lr-txt-top"><span class="ico ico-date"></span>진단일시   2021년 2월 24일 14:53</p>
+							</div><!-- //lr-topBox  -->
+
+							<div class="lr-mySB lr-mySB-btm">
+								<div class="lr-mySB-item item-solve">
+									<p class="lr-mySB-tit">맞힌 문제 수</p>
+									<span class="lr-mySB-txt">14 <span class="small">/ 20</span></span> 
+								</div>
+								<div class="lr-mySB-item item-wrong">
+									<p class="lr-mySB-tit">잘 모르겠어요</p>
+									<span class="lr-mySB-txt">3</span>
+								</div>
+								<div class="lr-mySB-item item-time">
+									<p class="lr-mySB-tit">풀이 시간</p>
+									<span class="lr-mySB-txt">1<span class="unit">분</span> 45<span class="unit">초</span></span>
+								</div>
+							</div><!-- //lr-mySB -->
+
+							<div class="charts-box">
+								<div class="charts-item-wrap">
+									<div class="charts-label">
+										<p class="charts-tit sky">연산 정확도</p>
+										<p class="charts-txt">AI 예측</p>
+									</div>
+									<div class="charts-item">
+										<p class="charts-yAxis">정확도</p>
+										<!-- 차트영역 -->
+										<div class="charts-cont">
+											<img src="static/images/tmp/graph_10.png" alt="" class="tmpImg">
+											<!-- 퍼블 확인용 임시 이미지입니다. 개발시 "꼭" 삭제해주세요. -->
+											<!-- 
+												*그래프 색상 정보
+												 - 커브선 : 두께 4px , 색상 #00dcff
+												 - y축 텍스트 : 크기 12px , 색상 #788ca0
+												 - 점선(높음/낮음) : 두께 1px, 색상 #466482
+												 - 실선(평균) : 두께 1px, 색상 #b9cdeb
+											 -->
+											<!-- 툴팁 -->
+											<div class="charts-tooltip">
+												<p class="tit">AI추천학습</p>
+												<p class="txt">나눗셈(3)</p>
+											</div>
+											<!-- 불릿 포인트 -->
+											<div class="charts-hover-bullet"><span class="point"></span></div>
+											<!-- 막대점선 -->
+											<div class="charts-dottedLine" style="left: 0;"></div><!-- 불릿의 값만 계산해서 left에 넣어주세요~  -->
+										</div>
+										<div class="moreInfoBox">
+											<!-- <span class="txt-mini prev">이전 진도</span>
+											<span class="txt-mini next">이후 진도</span> -->
+											<p class="charts-xAxis right">전체 진도</p>
+										</div>
+									</div>
+									<div class="charts-btm">
+										<p class="txt">정확도 보통 이상이면 해당 진도의 문제를 정확하게 풀 수 있다는 것을 의미합니다.</p>
+									</div>
+								</div>
+
+								<div class="charts-item-wrap">
+									<div class="charts-label">
+										<p class="charts-tit orange">풀이 속도</p>
+										<p class="charts-txt">AI 측정</p>
+									</div>
+									<div class="charts-item">
+										<p class="charts-yAxis">속도</p>
+										<!-- 차트영역 -->
+										<div class="charts-cont">
+											<img src="static/images/tmp/graph_11.png" alt="" class="tmpImg">
+											<!-- 퍼블 확인용 임시 이미지입니다. 개발시 "꼭" 삭제해주세요. -->
+											<!-- 
+												*그래프 색상 정보
+												 - 커브선 : 두께 4px , 색상 #ff6e5f
+												 - y축 텍스트 : 크기 12px , 색상 #788ca0
+												 - 점선(빠름/느림) : 두께 1px, 색상 #466482
+												 - 실선(평균) : 두께 1px, 색상 #b9cdeb
+											 -->
+											<!-- 툴팁 및 불릿이 안들어가는 차트라고 합니다. -->
+										</div>
+										<div class="moreInfoBox">
+											<p class="charts-xAxis right">푼 문제</p>
+										</div>
+									</div>
+									<div class="charts-btm moreUp">
+										<p class="txt">속도 평균은 동일 문제를 푼 학생들의 평균 문제풀이 속도입니다.</p>
+									</div>
+								</div>
+							</div><!-- //charts-box -->
+
+							<div class="nowStepInfo">
+								<p><strong>나눗셈(3)</strong> 까지는 충분히 잘 풀고 있습니다.</p>
+							</div>
+
+							<div class="bgGra-txtBox">
+								<p class="tit_top">AI 추천학습</p>
+								<p class="tit_subject">나눗셈(3)</p>
+								<p class="txt">곱셈구구 내에서 몫 구하기</p>
+								<button class="btn btn-blue">학습하기</button>
+							</div><!-- //bgGra-txtBox -->
+
+							<div class="btnR-wrap">
+								<div class="btnR-cell">
+									<button class="btn-onlyTxt-gray">진단 다시하기</button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- //centermiddleBox -->
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		
+	</div>
+</div>
+
+
+</body>
+</html>

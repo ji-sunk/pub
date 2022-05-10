@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+	<meta name="google" value="notranslate">
+    <title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+    <script src="static/js/lottie.js"></script>
+    <script src="static/js/ui.js"></script>
+    <link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+    **** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+    1. mob : v-mob
+    2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+    3. pc : v-pc
+ -->
+
+<div class="wrap">
+    <div class="wrap-inner">
+        <div class="layout-def course_guide">
+            <div class="container">
+                <div class="inner">
+                    <!-- 삭제 시작 : 퍼블/디자인 화면확인용 임시 영역입니다. 개발시 꼭 삭제해주세요 -->
+                    <div style="position: absolute; top: 20px; left: 20px; z-index: 11">
+                        <button class="btn-balloontest" style="height: 56px; color: #fff;">* 대사 테스트</button>
+                    </div>
+                    <!-- //여기까지 삭제 끝 -->
+
+                    <div class="btn_area">
+                        <a class="skip" href="#null"><span>SKIP</span></a>
+                    </div>
+                    <!-- 
+                        "talk_wrap"에 들어갈 클래스 정리 - 차례대로 넣어주면 애니메이션이 순차적으로 실행됨
+                        1. ani_1 : 첫번째 말풍선 + 첫번째 음성
+                        2. ani_2 : 두번째 말풍선 + 두번째 음성
+                        3. ani_3 : 세번째 말풍선 + 세번째 음성
+                        4. ani_4 : 네번째 말풍선 + 네번째 음성
+                        5. ani_5 : 다섯번째 말풍선 + 다섯번째 음성
+                        6. ani_6 : 여섯번째 말풍선 + 여섯번째 음성
+                     -->
+                    <div class="talk_wrap ani_6"><!-- 클래스 ani_1 ~ ani_6 들어갈 곳 -->
+                        <section>
+                            <article>
+                                <span>안녕, 김웅진!<br />AI 연산은 처음이지?</span>
+                            </article>
+                        </section>
+                        <section>
+                            <article>
+                                <span>이제부터 나랑 같이<br />연산 공부를 할거야.</span>
+                            </article>
+                        </section>
+                        <section>
+                            <article>
+                                <span>너가 빠르고 정확하게<br />잘 풀면 문제 수가 줄어들어.<br />그러면 학습을 빨리 끝낼 수 있겠지?</span>
+                            </article>
+                        </section>
+                        <section>
+                            <article>
+                                <span>하지만 딴짓을 하거나 장난을 치면<br />문제 수가 더 많이 늘어난다는 점 명심해!</span>
+                            </article>
+                        </section>
+                        <section>
+                            <article>
+                                <span>대신 어려워서 못 풀 때는<br />내가 바로바로 도와 줄께!</span>
+                            </article>
+                        </section>
+                        <section>
+                            <article>
+                                <span>그럼, 이제 시작해 볼까?</span>
+                            </article>
+                        </section>
+                    </div>
+                    <div class="img_wrap1">
+                        <div class="cont">
+                            <div class="anim-wrap" id="ai_lc_03_01"></div>
+                            <script>
+                                func_animation('ai_lc_03_01', 'ai_lc_03_01', true);
+                            </script>
+                        </div>
+                    </div>
+                    <div class="img_wrap2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// 임시 스크립트입니다. 개발시 꼭 지워주세요.
+var _cntBalloon = 0;
+var _prevCntBalloon = 0;
+$('.btn-balloontest').on('click', function(){
+    _cntBalloon++;
+    _cntBalloon = (_cntBalloon > 6 ) ? 1 : _cntBalloon;
+    $('.talk_wrap').removeClass('ani_'+_prevCntBalloon).addClass('ani_'+_cntBalloon);
+    _prevCntBalloon = _cntBalloon;
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+    <script src="static/js/lottie.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+		<div class="layout-def layout-lc theme-white">
+			<div class="header">
+				<div class="inner">
+					<div class="headerBox">
+						<div class="headerBox_head">
+							<h1 class="tit">AI 진단테스트</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //header -->
+
+			<div class="container">
+				<div class="inner">
+					<div class="d-flex full f-middle">
+						<div class="d-item">
+							<div class="aic-predicBox">
+								<div class="aic-predicBox-aniBox">
+									<div class="anim-wrap" id="anim_02_07"></div>
+									<script>
+										func_anim_sp('anim_02_07','img_lc_02_07', 16);
+									</script>
+								</div>
+								<p class="justTxt">문제풀이 분석중</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //layout-def -->
+		
+	</div>
+</div>
+
+<!--오디오-->
+<script>
+var audio1 = new Audio('static/audio/lc_02_07.ogg');
+</script>
+
+<button class="js_play_audio1_loop" style="position: absolute; left: 0; top: 0; z-index: 1000;">퍼블확인용-클릭시 오디오 재생 테스트</button> <!--이 줄은 퍼블 테스트 용이니 개발 시에는 지워주세요. 현재는 클릭시 재생되게 해놓았지만 이 오디오는 이 페이지가 로딩됐을때 자동재생 돼야 합니다.-->
+<!--//오디오-->
+
+</body>
+</html>

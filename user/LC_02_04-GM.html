@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+		<div class="layout-def layout-lc">
+			<div class="header">
+				<div class="inner">
+					<div class="headerBox">
+						<div class="headerBox_head">
+							<h1 class="tit">AI 진단테스트</h1>
+							<button class="btn-close-wrap">닫기</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //header -->
+
+			<div class="container">
+				<div class="inner">
+					<div class="centermiddleBox gm">
+						<div class="centermiddleBox-item">
+							<div class="aic-choice-wrap">
+								<div class="aic-choice-item">
+									<h2 class="tit">학습자 학년을 선택해 주세요.</h2>
+								</div>
+								
+								<div class="aic-choice-item" style="display: none;"><!--현재 display: none으로 숨긴 상태(21.01.13 플로우251번 이슈)-->
+									<div class="aic-choice-top">
+										<div class="aic-choice-top_item">
+											<div class="new-select">
+												<!-- 1. 미리 선택된 값이 있는 경우 : disabled 처리일때 -->
+												<div class="selected_txt first select-disabled">2015년</div>
+												<!-- 2. 미리 선택된 값이 없는 경우 -->
+												<!-- <div class="selected_txt">2015년</div> -->
+												<div class="select_option">
+													<ul>
+														<li><button>2002년</button></li>
+														<li><button>2003년</button></li>
+														<li><button>2004년</button></li>
+														<li><button>2005년</button></li>
+														<li><button>2006년</button></li>
+														<li><button>2007년</button></li>
+														<li><button>2008년</button></li>
+														<li><button>2009년</button></li>
+														<li><button>2010년</button></li>
+														<li><button>2011년</button></li>
+														<li><button>2012년</button></li>
+														<li><button>2013년</button></li>
+														<li><button>2014년</button></li>
+														<li><button type="button" class="selected">2015년</button></li>
+														<li><button>2015년</button></li>
+														<li><button>2016년</button></li>
+														<li><button>2017년</button></li>
+														<li><button>2018년</button></li>
+														<li><button>2019년</button></li>
+														<li><button>2020년</button></li>
+														<li><button>2021년</button></li>
+													</ul>
+												</div>
+											</div>
+											<div class="new-select">
+												<!-- 1. 미리 선택된 값이 있는 경우 : disabled 처리일때 -->
+												<div class="selected_txt first select-disabled">6월</div>
+												<!-- 2. 미리 선택된 값이 없는 경우 -->
+												<!-- <div class="selected_txt">6월</div> -->
+												<div class="select_option">
+													<ul>
+														<li><button>1월</button></li>
+														<li><button>2월</button></li>
+														<li><button>3월</button></li>
+														<li><button>4월</button></li>
+														<li><button>5월</button></li>
+														<li><button class="selected">6월</button></li>
+														<li><button>7월</button></li>
+														<li><button>8월</button></li>
+														<li><button>9월</button></li>
+														<li><button>10월</button></li>
+														<li><button>11월</button></li>
+														<li><button>12월</button></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="aic-choice-top_item last">
+											<ul class="custom-radio-wrap">
+												<li>
+													<input type="radio" id="aic-radio-1_1" name="aic-radio-1" checked>
+													<label for="aic-radio-1_1">남</label>
+												</li>
+												<li>
+													<input type="radio" id="aic-radio-1_2" name="aic-radio-1">
+													<label for="aic-radio-1_2">여</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								
+								<div class="aic-choice-item">
+									<div class="aic-choice-Btm">
+										<ul class="custom-radio-wrap">
+											<li class="js_play_audio1">
+												<input type="radio" id="aic-radio-2_1" name="aic-radio-2" checked>
+												<label for="aic-radio-2_1">7세</label>
+											</li>
+											<li class="js_play_audio1">
+												<input type="radio" id="aic-radio-2_2" name="aic-radio-2">
+												<label for="aic-radio-2_2">초1</label>
+											</li>
+											<li class="js_play_audio1">
+												<input type="radio" id="aic-radio-2_3" name="aic-radio-2">
+												<label for="aic-radio-2_3">초2</label>
+											</li>
+											<br class="hide_tv hide_m" />
+											<li class="js_play_audio1">
+												<input type="radio" id="aic-radio-2_4" name="aic-radio-2">
+												<label for="aic-radio-2_4">초3</label>
+											</li>
+											<li class="js_play_audio1">
+												<input type="radio" id="aic-radio-2_5" name="aic-radio-2">
+												<label for="aic-radio-2_5">초4</label>
+											</li>
+											<li class="js_play_audio1">
+												<input type="radio" id="aic-radio-2_6" name="aic-radio-2">
+												<label for="aic-radio-2_6">초5</label>
+											</li>
+											
+											<!--준비중인 경우(비활성)-->
+											<li class="js_play_audio1 yet">
+												<label>
+												    <span class="state">준비중</span>
+												    <span class="tit">초6</span>
+												</label>
+											</li>
+											<!--//준비중인 경우(비활성)-->
+											<!--준비중이 아닌 보통 상태-->
+<!--
+											<li class="js_play_audio1">
+												<input type="radio" id="aic-radio-2_7" name="aic-radio-2">
+												<label for="aic-radio-2_7">초6</label>
+											</li>
+-->
+											<!--//준비중이 아닌 보통 상태-->
+											
+											<br class="hide_tv hide_m" />
+											<li class="js_play_audio1">
+												<input type="radio" id="aic-radio-2_8" name="aic-radio-2">
+												<label for="aic-radio-2_8">중1</label>
+											</li>
+											<li class="js_play_audio1">
+												<input type="radio" id="aic-radio-2_9" name="aic-radio-2">
+												<label for="aic-radio-2_9">중2</label>
+											</li>
+											<li class="js_play_audio1">
+												<input type="radio" id="aic-radio-2_10" name="aic-radio-2">
+												<label for="aic-radio-2_10">중3</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+								
+                                <div class="footer">
+                                    <div class="footer-inner">
+                                        <div class="d-flex">
+                    <!--
+                                            <div class="d-item">
+                                                <button class="btn-small btn-gray btn-left"><span class="m-txt">이전</span></button>
+                                            </div>
+                    -->
+                                            <div class="d-item btnItem-auto">
+                                                <button class="btn btn-blue">다음</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //layout-def -->
+		
+	</div>
+</div>
+
+<!--오디오-->
+<script>
+var audio1 = new Audio('static/audio/common_button.ogg');
+</script>
+<!--//오디오-->
+
+</body>
+</html>
