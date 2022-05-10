@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+       
+        <!--로딩 레이어4-->
+        <div class="loading_layer loading4">
+            <div class="spinner">
+                <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>            
+            </div>
+        </div>
+        <!--//로딩 레이어4-->
+	
+            <!-- 퍼블 화면 확인용 임시 스크립트 : 개발쪽에서는 꼭! 반드시!! 삭제해주세요 -->
+        <script>
+            setTimeout(function() {
+                $('.loading_layer').css('display', 'none');
+            }, 500);
+        </script>
+
+		<div class="layout-def tab-wrap w100p with_bottom_area">
+			<div class="header">
+				<div class="inner">
+					<div class="headerBox center bg_gray">
+                        <div class="w1280">
+                            <div class="headerBox_head">
+                                <h1 class="tit">학습노트</h1>
+                                <button class="btn-close-wrap">닫기</button>
+                            </div>
+                        </div>
+					</div>
+                    <div class="header_tab tab3">
+                        <div class="tab_wrap">
+                            <ul class="tablist cls">
+                                <li><a href="#tabCont1" class="active">진도</a></li>
+                                <li><a href="#tabCont2">분석</a></li>
+                                <li><a href="#tabCont3">진단</a></li>
+                            </ul>
+                        </div>
+                    </div>
+				</div>
+			</div>
+
+			<div class="container study_note">
+				<div class="inner">
+                    <!--진도-->
+                    <div class="tabCont study_note_tab1 active" id="tabCont1">
+                        <div class="lev_boxes-wrap w800">
+                            <div class="scrollX-wrap first" data-wmw="792">
+                                <div class="lev_boxes scrollX-container">
+                                    <ul class="cls scrollX-cont">
+                                        <li class="on"><button type="button">LV 1</button></li>
+                                        <li><button type="button">LV 2</button></li>
+                                        <li><button type="button">LV 3</button></li>
+                                        <li><button type="button">LV 4</button></li>
+                                        <li><button type="button">LV 5</button></li>
+                                        <li><button type="button">LV 6</button></li>
+                                        <li><button type="button">LV 7</button></li>
+                                        <li><button type="button">LV 8</button></li>
+                                        <li><button type="button">LV 9</button></li>
+                                        <li><button type="button">LV 10</button></li>
+                                        <li><button type="button">LV 11</button></li>
+                                        <li><button type="button">LV 12</button></li>
+                                        <li><button type="button">LV 2</button></li>
+                                        <li><button type="button">LV 3</button></li>
+                                        <li><button type="button">LV 4</button></li>
+                                        <li><button type="button">LV 5</button></li>
+                                        <li><button type="button">LV 6</button></li>
+                                        <li><button type="button">LV 7</button></li>
+                                        <li><button type="button">LV 8</button></li>
+                                        <li><button type="button">LV 9</button></li>
+                                        <li><button type="button">LV 10</button></li>
+                                        <li><button type="button">LV 11</button></li>
+                                        <li><button type="button">LV 12</button></li>
+                                        <li><button type="button">LV 2</button></li>
+                                        <li><button type="button">LV 3</button></li>
+                                        <li><button type="button">LV 4</button></li>
+                                        <li><button type="button">LV 5</button></li>
+                                        <li><button type="button">LV 6</button></li>
+                                        <li><button type="button">LV 7</button></li>
+                                        <li><button type="button">LV 8</button></li>
+                                        <li><button type="button">LV 9</button></li>
+                                        <li><button type="button">LV 10</button></li>
+                                        <li><button type="button">LV 11</button></li>
+                                        <li><button type="button">LV 12</button></li>
+                                    </ul>
+                                </div>
+                                <button class="btn-scrollX prev">이전</button>
+                                <button class="btn-scrollX next">다음</button>
+                            </div>
+                            <div class="tit_n_state cls">
+                                <div class="tit tit_blue_16">받아올림이 없는 덧셈</div>
+                                <div class="state_ico">
+                                    <span class="hide_t">
+                                        <img class="state1" src="./static/images/icon/ic_status_1_mo_pc.svg" alt="" />
+                                        <img src="./static/images/icon/ic_status_2_mo.svg" alt="" />
+                                        <img src="./static/images/icon/ic_status_3_mo.svg" alt="" />
+                                    </span>
+                                    <span class="hide_pc hide_m">
+                                        <img class="state1" src="./static/images/icon/ic_status_1_tv_th.svg" alt="" />
+                                        <img src="./static/images/icon/ic_status_2_tv_th.svg" alt="" />
+                                        <img src="./static/images/icon/ic_status_3_tv_th.svg" alt="" />
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="days"><span>학습기간 : 8/1~8/30</span><span>실제 학습일 :  15일</span></div>
+                            <div class="progress_list">
+                                <div class="empty">
+                                    <span>학습한 스테이지가 없습니다.</span>
+                                </div>
+                                <article>
+                                    <div class="upper cls">
+                                        <div class="num">1</div>
+                                        <div class="tit">(두, 세 자리 수)×100, 1000, 10000 (1)</div>
+                                        <div class="state">
+                                            <div class="line cls">
+                                                <div class="date">2020.07.21</div>
+                                                <div class="ico_area purple"><!--class) 디폴트값 노력, yellow 기본, green 충분, purple 훌륭-->
+                                                    <span>훌륭</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn_area">
+                                            <a href="#null" class="result_btn">결과보기</a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="upper cls">
+                                        <div class="num">2</div>
+                                        <div class="tit">받아올림이 없는 덧셈(2)</div>
+                                        <div class="state">
+                                            <div class="line cls">
+                                                <div class="date">2020.07.21</div>
+                                                <div class="ico_area"><!--class) 디폴트값 노력, yellow 기본, green 충분, purple 훌륭-->
+                                                    <span>노력</span>
+                                                </div>
+                                            </div>
+                                            <div class="line cls">
+                                                <div class="date">2020.07.21</div>
+                                                <div class="ico_area yellow"><!--class) 디폴트값 노력, yellow 기본, green 충분, purple 훌륭-->
+                                                    <span>기본</span>
+                                                </div>
+                                            </div>
+                                            <div class="line cls">
+                                                <div class="date">2020.07.21</div>
+                                                <div class="ico_area green"><!--class) 디폴트값 노력, yellow 기본, green 충분, purple 훌륭-->
+                                                    <span>충분</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn_area">
+                                            <a href="#null" class="result_btn">결과보기</a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="upper cls">
+                                        <div class="num">2</div>
+                                        <div class="tit">받아올림이 없는 덧셈(2)</div>
+                                        <div class="state">
+                                            <div class="line cls">
+                                                <div class="date">2020.07.21</div>
+                                                <div class="ico_area"><!--class) 디폴트값 노력, yellow 기본, green 충분, purple 훌륭-->
+                                                    <span>노력</span>
+                                                </div>
+                                            </div>
+                                            <div class="line cls">
+                                                <div class="date">2020.07.21</div>
+                                                <div class="ico_area"><!--class) 디폴트값 노력, yellow 기본, green 충분, purple 훌륭-->
+                                                    <span>노력</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn_area">
+                                            <a href="#null" class="result_btn">결과보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="lower">
+                                        <div class="red_box">
+                                            <span>
+                                                <img src="./static/images/icon/ic_notice_red.svg" alt="" />
+                                                현재 학습이 지연되고 있습니다. 학부모님의 관심과 지도가 필요합니다. 학습결과를 확인해 주세요.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//진도-->
+                    <!--분석-->
+                    <div class="tabCont" id="tabCont2">
+                        <div class="lev_boxes-wrap w800">
+                            <div class="scrollX-wrap first" data-wmw="792">
+                                <div class="lev_boxes scrollX-container">
+                                    <ul class="cls scrollX-cont">
+                                        <li class="on"><button type="button">LV 1</button></li>
+                                        <li><button type="button">LV 2</button></li>
+                                        <li><button type="button">LV 3</button></li>
+                                        <li><button type="button">LV 4</button></li>
+                                        <li><button type="button">LV 5</button></li>
+                                        <li><button type="button">LV 6</button></li>
+                                        <li><button type="button">LV 7</button></li>
+                                        <li><button type="button">LV 8</button></li>
+                                        <li><button type="button">LV 9</button></li>
+                                        <li><button type="button">LV 10</button></li>
+                                        <li><button type="button">LV 11</button></li>
+                                        <li><button type="button">LV 12</button></li>
+                                        <li><button type="button">LV 2</button></li>
+                                        <li><button type="button">LV 3</button></li>
+                                        <li><button type="button">LV 4</button></li>
+                                        <li><button type="button">LV 5</button></li>
+                                        <li><button type="button">LV 6</button></li>
+                                        <li><button type="button">LV 7</button></li>
+                                        <li><button type="button">LV 8</button></li>
+                                        <li><button type="button">LV 9</button></li>
+                                        <li><button type="button">LV 10</button></li>
+                                        <li><button type="button">LV 11</button></li>
+                                        <li><button type="button">LV 12</button></li>
+                                        <li><button type="button">LV 2</button></li>
+                                        <li><button type="button">LV 3</button></li>
+                                        <li><button type="button">LV 4</button></li>
+                                        <li><button type="button">LV 5</button></li>
+                                        <li><button type="button">LV 6</button></li>
+                                        <li><button type="button">LV 7</button></li>
+                                        <li><button type="button">LV 8</button></li>
+                                        <li><button type="button">LV 9</button></li>
+                                        <li><button type="button">LV 10</button></li>
+                                        <li><button type="button">LV 11</button></li>
+                                        <li><button type="button">LV 12</button></li>
+                                    </ul>
+                                </div>
+                                <button class="btn-scrollX prev">이전</button>
+                                <button class="btn-scrollX next">다음</button>
+                            </div>
+
+                            <div class="tit_n_state cls">
+                                <div class="tit tit_blue_16">받아올림이 없는 덧셈</div>
+                                <div class="state_ico">
+                                    <span class="hide_t">
+                                        <img class="state1" src="./static/images/icon/ic_status_1_mo_pc.svg" alt="" />
+                                        <img src="./static/images/icon/ic_status_2_mo.svg" alt="" />
+                                        <img src="./static/images/icon/ic_status_3_mo.svg" alt="" />
+                                    </span>
+                                    <span class="hide_pc hide_m">
+                                        <img class="state1" src="./static/images/icon/ic_status_1_tv_th.svg" alt="" />
+                                        <img src="./static/images/icon/ic_status_2_tv_th.svg" alt="" />
+                                        <img src="./static/images/icon/ic_status_3_tv_th.svg" alt="" />
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="days"><span>학습기간 :&nbsp;&nbsp;2020.07.05 ~ 2020.07.25</span></div>
+
+                            <div class="state_boxes">
+                                <div class="title"><span>실시간 학습현황</span></div>
+                                <div class="cont">
+                                    <section class="line1">
+                                        <article>
+                                            <div class="tit_area">푼 문제수</div>
+                                            <div class="cont_area">122개</div>
+                                        </article>
+                                        <article>
+                                            <div class="tit_area">맞힌&nbsp;&nbsp;문제수</div>
+                                            <div class="cont_area">122개</div>
+                                        </article>
+                                        <article>
+                                            <div class="tit_area">
+                                                드릴다운
+                                                <button class="tip_ico btn-tooltip"><img src="./static/images/icon/ic_help@2x.png" alt="" /></button>
+                                                <div class="tooltip-def tooltipBox type3">
+                                                    <p>
+                                                        예전 스테이지에서<br>
+                                                        풀어봤던 5문제를<br>
+                                                        잘 알고 있는지 확인해 봤어.
+                                                        <button class="btn-closeTooltip btn-close-tooltip"></button>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="cont_area">35개</div>
+                                        </article>
+                                        <article>
+                                            <div class="tit_area">평균 정답율</div>
+                                            <div class="cont_area">80%</div>
+                                        </article>
+                                    </section>
+                                    <section class="line2">
+                                        <article>
+                                            <div class="tit_area">총 학습일</div>
+                                            <div class="cont_area">122일</div>
+                                        </article>
+                                        <article>
+                                            <div class="tit_area">누적 학습시간</div>
+                                            <div class="cont_area">15시간 15분</div>
+                                        </article>
+                                        <article>
+                                            <div class="tit_area">평균 풀이속도</div>
+                                            <div class="cont_area">5분 17초</div>
+                                        </article>
+                                    </section>
+                                </div>
+                            </div>
+
+                            <div class="step_state cls">
+                                <section>
+                                    <div class="num">1</div>
+                                    <div class="grade_cont red"><!--class) 디폴트값은 빈 영역에, gray 학습전, red 노력, yellow 기본, green 충분, purple 훌륭-->
+                                        <div class="grade"><span>노력</span></div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="num">2</div>
+                                    <div class="grade_cont yellow">
+                                        <div class="grade"><span>기본</span></div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="num">3</div>
+                                    <div class="grade_cont green">
+                                        <div class="grade"><span>충분</span></div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="num">4</div>
+                                    <div class="grade_cont purple">
+                                        <div class="grade"><span>훌륭</span></div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="num">5</div>
+                                    <div class="grade_cont purple">
+                                        <div class="grade"><span>훌륭</span></div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="num">6</div>
+                                    <div class="grade_cont red">
+                                        <div class="grade"><span>노력</span></div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="num">7</div>
+                                    <div class="grade_cont purple">
+                                        <div class="grade"><span>훌륭</span></div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="num">8</div>
+                                    <div class="grade_cont gray">
+                                        <div class="grade"><span>zzz</span></div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="num">9</div>
+                                    <div class="grade_cont gray">
+                                        <div class="grade"><span>zzz</span></div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="num">10</div>
+                                    <div class="grade_cont gray">
+                                        <div class="grade"><span>zzz</span></div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="num">11</div>
+                                    <div class="grade_cont gray">
+                                        <div class="grade"><span>zzz</span></div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="num">12</div>
+                                    <div class="grade_cont gray">
+                                        <div class="grade"><span>zzz</span></div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="num">13</div>
+                                    <div class="grade_cont gray">
+                                        <div class="grade"><span>zzz</span></div>
+                                    </div>
+                                </section>
+                                <section><!--빈칸은 태그를 삭제하지 말고 내부의 내용만 삭제해주세요-->
+                                    <div class="num"></div>
+                                    <div class="grade_cont">
+                                        <div class="grade"><span></span></div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="num"></div>
+                                    <div class="grade_cont">
+                                        <div class="grade"><span></span></div>
+                                    </div>
+                                </section>
+                            </div>
+
+                            <div class="stage_grade">
+                                <!--레벨완료 전-->
+                                <div class="yet">
+                                    <article>
+                                        <div class="title">가장 잘한 스테이지</div>
+                                        <div class="box">
+                                            <span>가장 잘 한 스테이지가 없어요!</span>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <div class="title hard">가장 힘들어한 스테이지</div>
+                                        <div class="box">
+                                            <span>힘들어한 스테이지가 없어요. 아이를 칭찬해 주세요!</span>
+                                        </div>
+                                    </article>
+                                </div>
+                                <!--//레벨완료 전-->
+                                <!--레벨완료 후-->
+                                <div class="done">
+                                    <article>
+                                        <div class="title">가장 잘한 스테이지</div>
+                                        <div class="box">
+                                            <div class="upper">
+                                                <div class="num">7</div>
+                                                <div class="tit">받아올림이 없는 덧셈(7)</div>
+                                                <div class="status cls">
+                                                    <span>정답률 95%</span>
+                                                    <span>풀이속도 보통</span>
+                                                    <span class="ico">
+                                                        <!-- 단계별 이미지 파일
+                                                            노력 ic_result_1_40.svg
+                                                            기본 ic_result_2_40.svg
+                                                            충분 ic_result_3_40.svg
+                                                            훌륭 ic_result_4_40.svg
+                                                        -->
+                                                        <img src="./static/images/icon/ic_result_4_40.svg" alt="" />
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="lower">
+                                                <div class="lower_box">개념이 잡히면서 점점 능숙하게 풀었어요!</div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <div class="title hard">가장 힘들어한 스테이지</div>
+                                        <div class="box">
+                                            <div class="upper">
+                                                <div class="num">3</div>
+                                                <div class="tit">(두, 세 자리 수)×100, 1000, 10000 (3)</div>
+                                                <div class="status cls">
+                                                    <span>정답률 95%</span>
+                                                    <span>풀이속도 보통</span>
+                                                    <span class="ico">
+                                                        <!-- 단계별 이미지 파일
+                                                            노력 ic_result_1_40.svg
+                                                            기본 ic_result_2_40.svg
+                                                            충분 ic_result_3_40.svg
+                                                            훌륭 ic_result_4_40.svg
+                                                        -->
+                                                        <img src="./static/images/icon/ic_result_2_40.svg" alt="" />
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="lower">
+                                                <div class="lower_box">노력 3번 끝에 기본을 달성했네요. 포기하지 않고 끝까지 학습한 아이를 칭찬해 주세요!</div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <!--//레벨완료 후-->
+                            </div>
+                        </div>
+
+                        <div class="total_record">
+                            <div class="w800">
+                                <div class="upper">
+                                    <div class="title">누적 학습 기록</div>
+                                    <div class="date">2020.07.05부터 지금까지</div>
+                                </div>
+                                <div class="cont cls">
+                                    <section>
+                                        <div class="tit">맞힌 문제수</div>
+                                        <div class="num">총 256개</div>
+                                    </section>
+                                    <section class="box2 cls">
+                                        <article>
+                                            <div class="tit">기본</div>
+                                            <div class="num">30</div>
+                                        </article>
+                                        <article>
+                                            <div class="tit">충분</div>
+                                            <div class="num">12</div>
+                                        </article>
+                                        <article>
+                                            <div class="tit">훌륭</div>
+                                            <div class="num">5</div>
+                                        </article>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//분석-->
+                    <!--진단-->
+                    <div class="tabCont" id="tabCont3">
+                        <div class="diagnosis">
+                            <div class="date_wrap">
+                                <div class="tit">진단일</div>
+                                <div class="date">2020.12.14</div>
+                            </div>
+                            <div class="box1">김웅진 학생은 <br /><span>한 자리수 곱셈</span>까지는 <br class="hide_pc hide_t" />충분히 잘 풀고 있습니다.</div>
+                            <div class="box2">
+                                <div class="tit">학습 시작점</div>
+                                <div class="subject1">두자리수 곱셈(1)</div>
+                                <div class="subject2">십의 자리수 X 십의 자리수 곱셈</div>
+                            </div>
+                            <div class="bottom_wrap">
+                                <div class="noti">※ AI진단 테스트를 다시 하는 경우 기존 진단 및 학습이력이 모두 삭제됩니다.<br />한 번 삭제된 이력은 복구할 수 없으니 신중하게 선택해 주시기 바랍니다. </div>
+                                <a href="#null" class="btn btn-gray btn1">진단 다시하기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//진단-->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

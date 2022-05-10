@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+      
+        <div class="header_top gb bg_sky">
+           <div class="inner">
+	            <div class="btns_wrap">
+                    <div class="center_wrap cls">
+                        <div class="tit_area">
+                            <button class="btn_exit" type="button"><img src="./static/images/icon/btn_back.svg" alt="" /></button>
+                            <button class="tit_btn" type="button">학습노트</button>
+                        </div>
+                        <div class="right_area">
+                            <div class="menu_btn">
+                                <button type="button"><img src="./static/images/icon/btn_ocr_th.svg" alt=""></button>
+                                <button type="button"><img src="./static/images/icon/btn_menu_th.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+	            </div>
+            </div>
+        </div>
+      
+		<div class="layout-def tab-wrap gb with_header">
+			<div class="header">
+                <div class="header_tab2 btn_type">
+                    <ul class="tablist cls">
+                        <li><a href="#tabCont1" class="active">코스학습</a></li>
+                        <li><a href="#tabCont2">주제학습</a></li>
+                        <li><a href="#tabCont3">OCR</a></li>
+                    </ul>
+                </div>
+                <div class="header_tab2 blue_line_type">
+                    <ul class="cls">
+                        <li><a href="#null" class="active">진도</a></li>
+                        <li><a href="#null">분석</a></li>
+                        <li><a href="#null">진단</a></li>
+                    </ul>
+                </div>
+			</div>
+
+			<div class="container study_note">
+                <!--각 탭 내에 들어갈 컨텐츠는 LC_03_05.html의 탭 컨텐츠들과 같음-->
+                <!--진도-->
+                <div class="tabCont study_note_tab1 active" id="tabCont1">
+                </div>
+                <!--//진도-->
+                
+                <!--분석-->
+                <div class="tabCont" id="tabCont2">
+                </div>
+                <!--//분석-->
+                
+                <!--진단-->
+                <div class="tabCont layout-lr-dark" id="tabCont3">
+                </div>
+                <!--//진단-->
+                
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

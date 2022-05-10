@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+    <script src="static/js/lottie.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+		<div class="layout-def layout-learning">
+			<div class="header">
+				<div class="inner">
+					<div class="headerBox">
+						<div class="headerBox_head">
+							<h1 class="tit left">소주제명</h1>
+							<button class="btn-close-wrap">닫기</button>
+						</div>
+						<div class="headerBox_body">
+							<div class="barBox">
+								<div class="bar1">
+									<div class="bar_area ani"><!--애니메이션 class ani-->
+										<div class="bar" style="width: 50%"><!--width 값에 따라 길이 달라짐-->
+											<img src="./static/images/icon/ic_start.svg" class="start" />
+											<div class="num"><span class="txt">14</span><span class="dot"></span></div>
+										</div>
+										<div class="total_num red_flag"><!--빨간깃발은 class red_flag 추가-->
+											<span>30</span>
+										</div>
+									</div>
+									<div class="ico">
+										<!--거북이 아이콘-->
+										<img src="./static/images/icon/ic_turtle.svg" width="34.8" alt="" />
+										<!--토끼 아이콘-->
+										<!--<img src="./static/images/icon/ic_rabbit.svg" width="40.1" alt="" />-->
+									</div>
+									<div class="time">08:31</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="inner">
+					<div class="learningBox">
+						<div class="leaningCont">
+							<div class="learning-wrap">
+								<div class="learning_head">
+									<div class="mathQuest-wrap">
+										<p class="tit">Q14. 다음 식을 계산하시오. <br>텍스트가 길어질 경우</p>
+										<!-- 보기가 있는 경우 영역 시작 -->
+										<div class="btn-viewopen-wrap">
+											<div class="viewopen-toast toast-pop active">
+												여기를 누르면<br>보기가 나와
+											</div>
+											<button class="btn-viewopen">보기</button>
+											<div class="viewopen-detail">
+												<div class="viewopen-detail-inner">
+													<!-- 보기의 상세내용 영역 -->
+													<img src="static/images/tmp/ex_learning_viewdetail.png" alt=""><!-- 퍼블 확인용 임시 이미지입니다. 개발시 "꼭" 삭제해주세요. -->
+												</div>
+											</div>
+										</div>
+										<!-- //보기가 있는 경우 영역 끝 -->
+									</div>
+								</div><!-- //learning_head -->
+								<div class="learning_body">
+									<div class="learning_picture"></div><!-- 그림판영역 : 비활성화 될때 클래스 unactive 추가 -->
+									<div class="mathExp-wrap">
+										<div class="mathExp-inner">
+											<div class="mathExt">
+												<!-- 수식영역 -->
+												<img src="static/images/tmp/ex_learning_mathExp.png" alt=""><!-- 퍼블 확인용 임시 이미지입니다. 개발시 "꼭" 삭제해주세요. -->
+											</div>
+										</div>
+									</div>
+									<button class="btn-learning-del active">삭제</button><!-- 그림판에 낙서하는 순간 클래스 active 추가!   -->
+								</div><!-- //learning_body -->
+							</div>
+						</div>
+						<div class="learningTail">
+							<div class="onlyButtonBox active">
+								<button class="btn btn-blue btn-inputAnswer">정답<span class="col-br-tabpc"></span>입력</button>
+							</div>
+
+							<div class="keypadBox">
+								<!-- 퍼블 확인용 영역 시작 - 개발시에 지워주세요. -->
+								<div class="tmpBtn">
+									<button data-target="#keypad_wrap1">기본숫자형</button>
+									<button data-target="#keypad_wrap2">기본연산형</button>
+									<button data-target="#keypad_wrap3">복잡연산형</button>
+								</div>
+								<!-- //퍼블 확인용 영역 끝 - 개발시에 지워주세요. -->
+
+
+								<!-- 1. 기본숫자형 키패드 영역 시작 -->
+								<div class="keypad_wrap" id="keypad_wrap1">  <!-- id=keypad_wrap1는 퍼블확인용 임시코드입니다. 개발시에는 삭제해주세요. -->
+									<div class="keypad num_key cls">
+									    <table class="key_set2" summary="키패드">
+									        <tbody>
+									            <tr class="no_bd_top">
+									                <td><button type="button">1</button></td>
+									                <td><button type="button">2</button></td>
+									                <td><button type="button">3</button></td>
+									            </tr>
+									            <tr>
+									                <td><button type="button">4</button></td>
+									                <td><button type="button">5</button></td>
+									                <td><button type="button">6</button></td>
+									            </tr>
+									            <tr>
+									                <td><button type="button">7</button></td>
+									                <td><button type="button">8</button></td>
+									                <td><button type="button">9</button></td>
+									            </tr>
+									            <tr>
+									                <td><button type="button">.</button></td>
+									                <td><button type="button">0</button></td>
+									                <td class="calc_del"><button type="button"><img width="33" src="./static/images/icon/ic_keypad_delete.svg" alt="" /></button></td>
+									            </tr>
+									        </tbody>
+									    </table>
+									    <table class="key_set3" summary="키패드">
+									        <tbody>
+									            <tr>
+									                <td class="y_btn hide_pc"><button type="button" class="btn-chg-note"><img width="34" src="./static/images/icon/ic_keypad_write.svg" alt="" /></button></td>
+									                <td class="grade"><button type="button">채점하기</button></td>
+									                <td class="fold hide_pc"><button type="button" class="btn-close-pad"><img class="hide_tv hide_m" width="17" src="./static/images/icon/ic_keypad_fold_right.svg" alt="" /><img class="hide_pc hide_th" width="19" src="./static/images/icon/ic_keypad_fold_bottom.svg" alt="" /></button></td>
+									            </tr>
+									        </tbody>
+									    </table>
+									</div>
+								</div>
+								<!-- //1. 기본숫자형 키패드 영역 끝 -->
+
+
+								<!-- 2. 기본연산형 키패드 영역 시작 -->
+								<div class="keypad_wrap" id="keypad_wrap2" style="display: none;">  <!-- id=keypad_wrap2, style="display: none;"는 퍼블확인용 임시코드입니다. 개발시에는 삭제해주세요. -->
+									<div class="keypad basic cls">
+									    <div class="key_set1_flex">
+									        <article><button type="button">＋</button></article>
+									        <article><button type="button">－</button></article>
+									        <article><button type="button">×</button></article>
+									        <article><button type="button">÷</button></article>
+									        <article><button type="button">＜</button></article>
+									        <article><button type="button">＞</button></article>
+									        <article><button type="button">＝</button></article>
+									        <article><button type="button">:</button></article>
+									        <article class="hide_tv hide_m"><button type="button">.</button></article>
+									    </div>
+
+									    <table class="key_set2" summary="키패드">
+									        <tbody>
+									            <tr class="no_bd_top">
+									                <td><button type="button">1</button></td>
+									                <td><button type="button">2</button></td>
+									                <td><button type="button">3</button></td>
+									            </tr>
+									            <tr>
+									                <td><button type="button">4</button></td>
+									                <td><button type="button">5</button></td>
+									                <td><button type="button">6</button></td>
+									            </tr>
+									            <tr>
+									                <td><button type="button">7</button></td>
+									                <td><button type="button">8</button></td>
+									                <td><button type="button">9</button></td>
+									            </tr>
+									            <tr class="hide_tv hide_m">
+									                <td colspan="2"><button type="button">0</button></td>
+									                <td class="calc_del"><button type="button"><img width="33" src="./static/images/icon/ic_keypad_delete.svg" alt="" /></button></td>
+									            </tr>
+									            <tr class="hide_th hide_pc">
+									                <td><button type="button">.</button></td>
+									                <td><button type="button">0</button></td>
+									                <td class="calc_del"><button type="button"><img width="33" src="./static/images/icon/ic_keypad_delete.svg" alt="" /></button></td>
+									            </tr>
+									        </tbody>
+									    </table>
+									    <table class="key_set3" summary="키패드">
+									        <tbody>
+									            <tr>
+									                <td class="y_btn hide_pc"><button type="button" class="btn-chg-note"><img width="34" src="./static/images/icon/ic_keypad_write.svg" alt="" /></button></td>
+									                <td class="grade"><button type="button">채점하기</button></td>
+									                <td class="fold hide_pc"><button type="button" class="btn-close-pad"><img class="hide_tv hide_m" width="17" src="./static/images/icon/ic_keypad_fold_right.svg" alt="" /><img class="hide_pc hide_th" width="19" src="./static/images/icon/ic_keypad_fold_bottom.svg" alt="" /></button></td>
+									            </tr>
+									        </tbody>
+									    </table>
+									</div>
+								</div>
+								<!-- //2. 기본연산형 키패드 영역 끝 -->
+
+
+								<!-- 3. 복잡연산형 키패드 영역 시작 -->
+								<div class="keypad_wrap" id="keypad_wrap3" style="display: none;">  <!-- id=keypad_wrap3,  style="display: none;"는 퍼블확인용 임시코드입니다. 개발시에는 삭제해주세요. -->
+									<div class="keypad cls">
+									    <div class="key_set1_flex">
+									        <article>
+									            <button class="fraction" type="button"><img src="./static/images/icon/ic_keypad_fraction.svg" alt="" /></button>
+									            <div class="fraction_box" style="display: none;">
+									                <div class="write"><!--입력영역--></div>
+									                <button class="x" type="button"><img src="./static/images/icon/btn_fraction_close.svg" alt="" /></button>
+									                <button class="re" type="button"><img src="./static/images/icon/ic_fraction_reset.svg" alt="" /></button>
+									                <button class="check" type="button"><img src="./static/images/icon/ic_fraction_check.svg" alt="" /></button>
+									            </div>
+									        </article>
+									        <article>
+									            <button class="mixed_num" type="button"><img src="./static/images/icon/ic_keypad_mixed_fraction.svg" alt="" /></button>
+									            <div class="fraction_box" style="display: none;">
+									                <div class="write"><!--입력영역--></div>
+									                <button class="x" type="button"><img src="./static/images/icon/btn_fraction_close.svg" alt="" /></button>
+									                <button class="re" type="button"><img src="./static/images/icon/ic_fraction_reset.svg" alt="" /></button>
+									                <button class="check" type="button"><img src="./static/images/icon/ic_fraction_check.svg" alt="" /></button>
+									            </div>
+									        </article>
+									        <article><button type="button">𝑥</button></article>
+									        <article><button type="button">＋</button></article>
+									        <article><button type="button">－</button></article>
+									        <article><button type="button">×</button></article>
+									        <article><button type="button">÷</button></article>
+									        <article><button type="button">＜</button></article>
+									        <article><button type="button">＞</button></article>
+									        <article><button type="button">＝</button></article>
+									        <article><button type="button">:</button></article>
+									        <article><button type="button">.</button></article>
+									    </div>
+									    <table class="key_set2" summary="키패드">
+									        <tbody>
+									            <tr class="no_bd_top">
+									                <td><button type="button">1</button></td>
+									                <td><button type="button">2</button></td>
+									                <td><button type="button">3</button></td>
+									            </tr>
+									            <tr>
+									                <td><button type="button">4</button></td>
+									                <td><button type="button">5</button></td>
+									                <td><button type="button">6</button></td>
+									            </tr>
+									            <tr>
+									                <td><button type="button">7</button></td>
+									                <td><button type="button">8</button></td>
+									                <td><button type="button">9</button></td>
+									            </tr>
+									            <tr class="hide_tv hide_m">
+									                <td colspan="2"><button type="button">0</button></td>
+									                <td class="calc_del"><button type="button"><img width="33" src="./static/images/icon/ic_keypad_delete.svg" alt="" /></button></td>
+									            </tr>
+									            <tr class="hide_th hide_pc">
+									                <td colspan="2"><button type="button">0</button></td>
+									                <td class="calc_del"><button type="button"><img width="33" src="./static/images/icon/ic_keypad_delete.svg" alt="" /></button></td>
+									            </tr>
+									        </tbody>
+									    </table>
+									    <table class="key_set3" summary="키패드">
+									        <tbody>
+									            <tr>
+									                <td class="y_btn hide_pc"><button type="button" class="btn-chg-note"><img width="34" src="./static/images/icon/ic_keypad_write.svg" alt="" /></button></td>
+									                <td class="grade"><button type="button">채점<span class="hide_pc hide_th">하기</span></button></td>
+									                <td class="fold hide_pc"><button type="button" class="btn-close-pad"><img class="hide_tv hide_m" width="17" src="./static/images/icon/ic_keypad_fold_right.svg" alt="" /><img class="hide_pc hide_th" width="19" src="./static/images/icon/ic_keypad_fold_bottom.svg" alt="" /></button></td>
+									            </tr>
+									        </tbody>
+									    </table>
+									</div>
+								</div>
+								<!-- //3. 복잡연산형 키패드 영역 끝 -->
+
+								<!-- 4. 필기패드 영역 시작 -->
+								<div class="keypad_wrap" id="keypad_wrap4" style="display: none;">  <!-- id=keypad_wrap4,  style="display: none;"는 퍼블확인용 임시코드입니다. 개발시에는 삭제해주세요. -->
+									<div class="keypad notes">
+									    <div class="note_area">
+									    </div>
+									    <div class="btn_area">
+									        <table class="key_set3" summary="키패드">
+									            <tbody>
+									                <tr>
+									                    <td class="y_btn hide_pc"><button type="button" class="btn-chg-num"><img width="36" src="./static/images/icon/ic_keypad_number.svg" alt="" /></button></td>
+									                    <td class="grade"><button type="button">채점하기</button></td>
+									                    <td class="fold hide_pc"><button type="button" class="btn-close-pad"><img class="hide_tv hide_m" width="17" src="./static/images/icon/ic_keypad_fold_right.svg" alt="" /><img class="hide_pc hide_th" width="19" src="./static/images/icon/ic_keypad_fold_bottom.svg" alt="" /></button></td>
+									                </tr>
+									            </tbody>
+									        </table>
+									    </div>
+									    <div class="del_btn"><button type="button"><img src="./static/images/icon/ic_keypad_wirte_delte.svg" alt="" /></button></div>
+									</div>
+								</div>
+								<!-- //4. 필기패드 영역 끝 -->
+
+							</div>
+							<!-- //keypadBox -->
+						</div>
+					</div>
+					<!-- //learningBox -->
+
+					<div class="la-wrap">
+						<div class="la-ani">
+							<div class="anim-wrap" id="ani_answer"></div>
+							<script>
+								//정답일 경우
+								func_animation('ani_answer', 'answer_correct', false);
+								//오답일 경우
+								//func_animation('ani_answer', 'answer_wrong', false);
+							</script>
+						</div>
+					</div>
+					<!-- //la-wrap -->
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		
+	</div>
+</div>
+
+
+<!-- 퍼블단 확인용 스크립트입니다. 개발시 참조해서 "활용"해주세요. -->
+<script>
+	//학습하기에서 보기버튼 눌렀을때
+	$(document).on('click', '.btn-viewopen', function(){
+	  $(this).toggleClass('on');
+	  $(this).next('.viewopen-detail').toggleClass('on');
+	});
+
+	// 정답입력 버튼 눌렀을때 키패드로 전환
+	$(document).on('click', '.btn-inputAnswer', function(){
+		$('.onlyButtonBox').removeClass('active');
+		$('.keypadBox').addClass('active');
+	});
+	$(document).on('click', '.btn-close-pad', function(){
+		$('.onlyButtonBox').addClass('active');
+		$('.keypadBox').removeClass('active');
+	});
+
+	// 필기패드로 전환
+	$(document).on('click', '.btn-chg-note', function(){
+	  var _target = $('.keypad.notes').closest('.keypad_wrap');
+	  var _thisPad = $(this).closest('.keypad_wrap');
+	  $('.keypad_wrap').not(_target).css('display', 'none');
+	  _target.css('display', 'block');
+	  //필기패드에서 원래패드로 전환
+	  $('.btn-chg-num').on('click', function(){
+	  	$('.keypad_wrap').not(_thisPad).css('display', 'none');
+	  	_thisPad.css('display', 'block');
+	  });
+	});
+</script>
+
+<!-- 퍼블단에서 화면확인용 스크립트입니다. 개발시 "삭제"해주세요. -->
+<script>
+	$('.btn-learning-del').on('click', function(){
+	  $(this).remove();
+	});
+	$('.tmpBtn button').on('click', function(){
+	  _target = $(this).attr('data-target');
+	  $('.keypad_wrap').not($(_target)).css('display', 'none');
+	  $(_target).css('display', 'block');
+	});
+</script>
+
+<!--오디오-->
+<script>
+var audio1 = new Audio('static/audio/lc_05_03_correct.ogg');
+var audio2 = new Audio('static/audio/lc_05_03_wrong.ogg');
+</script>
+   
+    <button class="js_play_audio1" style="position: absolute; left: 0; top: 0; z-index: 1000;">[퍼블확인용-클릭시 오디오 재생 테스트 (정답)]</button><!--이 줄은 퍼블 테스트 용이니 개발 시에는 지워주세요. 현재는 클릭시 재생되게 해놓았지만 이 오디오는 정답 효과음입니다.-->
+    <button class="js_play_audio2" style="position: absolute; left: 0; top: 50px; z-index: 1000;">[퍼블확인용-클릭시 오디오 재생 테스트 (오답)]</button><!--이 줄은 퍼블 테스트 용이니 개발 시에는 지워주세요. 현재는 클릭시 재생되게 해놓았지만 이 오디오는 오답 효과음입니다-->
+<!--//오디오-->
+
+</body>
+</html>

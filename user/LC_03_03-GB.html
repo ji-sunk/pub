@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+    <script src="static/js/lottie.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!--
+	**** 접속했을때 wrap-inner 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+    <div class="wrap-inner">
+        <div class="header_top gb bg_sky">
+           <div class="inner">
+	            <div class="btns_wrap">
+                    <div class="center_wrap cls">
+                        <div class="tit_area">
+                            <button class="btn_exit" type="button"><img src="./static/images/icon/btn_back.svg" alt="" /></button>
+                            <button class="tit_btn" type="button">코스학습</button>
+                        </div>
+                        <div class="right_area">
+                            <div class="lev_area">
+                                <div class="lev_box">
+                                    <div class="left">Lv 14</div><!--최대 14까지-->
+                                    <div class="right_area">
+                                        <div class="right" style="width: 50%"><!--width 값에 따라 길이 결정됨-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu_btn">
+                                <button type="button"><img src="./static/images/icon/btn_ocr_th.svg" alt=""></button>
+                                <button type="button"><img src="./static/images/icon/btn_menu_th.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+	            </div>
+            </div>
+        </div>
+   
+        <div class="layout-def with_header tab-wrap gb">
+            <div class="header">
+                <div class="character_wrap js_scroll_head">
+                    <p class="txt">좋아! 지금처럼만 학습한다면 <br class="hide_pc hide_t">다음 레벨도 잘 할 수 있겠어!</p>
+                    <div class="img_wrap">
+                        <div class="cont2">
+                            <div class="anim-wrap" id="cha_lc_aimessage_03"></div>
+                            <script>
+                                func_animation('cha_lc_aimessage_03', 'cha_lc_aimessage_03', true);
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab_fix_wrap">
+                    <ul class="course_tab tablist cls">
+                        <!--불 아이콘 있을 때(LC_03_02)
+                        <li class="fire">
+                            <a href="#tabCont1" class="active">
+                                <span>
+                                    <div class="anim-wrap" id="ani_fire"></div>
+                                    <script>
+                                        func_animation('ani_fire','img_lc_03_fire', true);
+                                    </script>
+                                </span>
+                                학습중
+                            </a>
+                        </li>
+                        -->
+                        <!--불 아이콘 없을 때(LC_03_03)-->
+                        <li class="fire no_icon">
+                            <a href="#tabCont1" class="active">학습중</a>
+                        </li>
+                        <li><a href="#tabCont2" class="ani_zoom">완료</a></li><!--font 커지는 애니메이션 class ani_zoom-->
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--오디오-->
+<script>
+var audio1 = new Audio('static/audio/lc_03_03_balloon.ogg');
+</script>
+
+    <button class="js_play_audio1" style="position: absolute; left: 0; top: 0; z-index: 1000;">[퍼블확인용-클릭시 오디오 재생 테스트]</button><!--이 줄은 퍼블 테스트 용이니 개발 시에는 지워주세요. 현재는 클릭시 재생되게 해놓았지만 이 오디오는 풍선이 터지는 애니메이션이 나올 때 재생돼야 합니다.-->
+<!--//오디오-->
+
+</body>
+</html>

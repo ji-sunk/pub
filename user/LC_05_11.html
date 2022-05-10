@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+    <script src="static/js/lottie.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+		<!-- 
+			* layout-lr에 추가될 클래스 정리 
+			1. 노력 : layout-lr-effort
+			2. 기본 : layout-lr-def 
+			3. 충분 : layout-lr-enough
+			4. 훌륭 : layout-lr-nice
+		-->
+		<div class="layout-def layout-lc layout-lr layout-lr-enough">
+			<div class="header">
+				<div class="inner">
+					<div class="headerBox">
+						<div class="headerBox_head">
+							<h1 class="tit">학습결과</h1>
+							<button class="btn-close-wrap">닫기</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container ani_scroll">
+				<div class="inner">
+					<div class="centermiddleBox">
+						<div class="centermiddleBox-item">
+							<div class="lr-topBox">
+								<h2 class="lr-tit">받아올림이 없는 덧셈(2)</h2>
+								<div class="lr-icoBox">
+									<ul>
+										<li class="ico1">노력</li>
+										<li class="ico2">기본</li>
+										<li class="ico3">충분</li>
+										<li class="ico4">훌륭</li>
+									</ul>
+								</div>
+							</div><!-- //lr-topBox  -->
+
+							<div class="lr-mySB">
+								<div class="lr-mySB-item item-solve">
+									<p class="lr-mySB-tit">맞힌 문제 수</p>
+									<span class="lr-mySB-txt">20 <span class="small">/ 25</span></span> 
+								</div>
+								<div class="lr-mySB-item item-rate">
+									<p class="lr-mySB-tit">정답률</p>
+									<span class="lr-mySB-txt">70%</span>
+								</div>
+								<div class="lr-mySB-item item-speed">
+									<div class="lr-mySB-tit">
+    									정확도
+                                        <button class="tip_ico btn-tooltip"><img src="./static/images/icon/ic_help@2x.png" alt="" /></button>
+                                        <div class="tooltip-def type2 tooltipBox">
+                                            <p>
+                                                관련 내용 최대 길이 설정입니다<br>
+                                                관련 내용 최대 길이 설정입니다<br>
+                                                관련 내용 최대 길이 설정입니다
+                                            </p>
+                                            <button class="btn-closeTooltip btn-close-tooltip"></button>
+                                        </div>
+									</div>
+									<span class="lr-mySB-txt">보통</span>
+								</div>
+								<div class="lr-mySB-item item-time">
+									<p class="lr-mySB-tit">학습 시간</p>
+									<span class="lr-mySB-txt">1분 45초</span>
+								</div>
+							</div><!-- //lr-mySB -->
+							
+							<div class="lr-mySB lr-mySB-btm"> <!-- 드릴다운과 오답/개념이 전부 없으면 이영역 전체를 없애기 -->
+								<div class="lr-mySB-item item-drill"> <!-- 드릴다운 없으면 이영역을 없애기 -->
+									<div class="lr-mySB-tit">
+    									드릴다운
+                                        <button class="tip_ico btn-tooltip"><img src="./static/images/icon/ic_help@2x.png" alt="" /></button>
+                                        <div class="tooltip-def type2 tooltipBox">
+                                            <p>
+                                                예전 스테이지에서<br />
+                                                풀어봤던 5문제를<br />
+                                                잘 알고 있는지 확인해 봤어.
+                                            </p>
+                                            <button class="btn-closeTooltip btn-close-tooltip"></button>
+                                        </div>
+									</div>
+									<span class="lr-mySB-txt">1개</span>
+								</div>
+								<div class="lr-mySB-item item-wrong">
+									<p class="lr-mySB-tit">오답 확인하기</p>
+									<button class="lr-mySB-txt">10개</button>
+								</div>
+								<div class="lr-mySB-item item-concept">
+									<p class="lr-mySB-tit">개념 확인하기</p>
+									<span class="lr-mySB-txt">
+										<!-- 버튼의 최대 갯수 : 노력2개, 그외(기본/충분/훌륭) 1개 -->
+										<button class="visited">1</button><!-- 해당 영상을 보고나면 클래스 visited 추가 -->
+										<button>2</button>
+									</span>
+								</div>
+							</div><!-- //lr-mySB -->
+
+							<div class="chartBox">
+								<div class="lr-chart-tit">나의 학습결과 변화</div>
+								<div class="lr-chart">
+									<!-- 차트영역 -->
+									<img src="static/images/tmp/graph_03.png" alt="" class="tmpImg m-none"><!-- 퍼블 확인용 임시 이미지입니다. 개발시 "꼭" 삭제해주세요. -->
+									<img src="static/images/tmp/graph_03_m.png" alt="" class="tmpImg pc-none"><!-- 퍼블 확인용 임시 이미지입니다. 개발시 "꼭" 삭제해주세요. -->
+								</div>
+								<div class="lr-chart-label">
+									<span class="rate">정답률</span>
+									<span class="speed">정확도</span>
+								</div>
+							</div><!-- //chartBox -->
+
+							<div class="lr-btmBox">
+
+								<!-- 1-1. 노력 1회, 노력2회 -->
+								<!-- <p>좀 더 집중해서 문제를 풀어봐!</p> -->
+
+								<!-- 1-2. 노력 3회 -->
+								<!-- <p>좀 더 연습하면 할 수 있을거야!</p>
+								<p class="strong">주제학습에서 소주제명을 더 연습해봐!</p> -->
+
+								<!-- 2. 기본 -->
+								<!-- <p>멋져! 다음 스테이지에서는<br>정답을 더 많이 맞혀보자.</p> -->
+
+								<!-- 3. 충분 -->
+								<p>멋져! 다음 스테이지에서는<br>정답을 더 많이 맞혀보자.</p>
+
+								<!-- 4-1. 훌륭 1회 -->
+								<!-- <p>빠르고 정확하게 잘하는데?<br>앞으로도 기대된다!</p> -->
+
+								<!-- 4-2. 훌륭 2회 -->
+								<!-- <p>언블리버블! 혹시 천재?<br>어쩜 이렇게 잘 해? 100점이야</p> -->
+
+								<div class="lr-btmBox-ani">
+									<div class="anim-wrap" id="anim_05_11"></div>
+									<script>
+										func_animation('anim_05_11', 'ai_lc_05_11', true);
+									</script>
+								</div>
+							</div><!-- //lr-btmBox -->
+						</div>
+					</div>
+					<!-- //centermiddleBox -->
+				</div>
+			</div>
+			<!-- //container -->
+			<div class="footer grad">
+				<div class="footer-inner">
+
+					<!-- 1-1. 노력 1회, 노력2회 -->
+					<!-- <button class="btn btn-red">계속 학습하기</button> -->
+
+					<!-- 1-2. 노력 3회 -->
+					<!-- <button class="btn btn-red">주제학습에서 연습하기</button> -->
+
+					<!-- 2-1. 기본 1회 -->
+					<!-- <button class="btn btn-blue">다음 스테이지 학습하기</button> -->
+
+					<!-- 2-1. 기본 2회 -->
+					<!-- <button class="btn btn-blue">충분 도전하기</button> -->
+
+					<!-- 3-1. 충분 1회 -->
+					<button class="btn btn-blue">다음 스테이지 학습하기</button>
+
+					<!-- 3-2. 충분 2회 -->
+					<!-- <button class="btn btn-blue">훌륭 도전하기</button> -->
+
+					<!-- 4-1. 훌륭 1회 -->
+					<!-- <button class="btn btn-blue">다음 스테이지 학습하기</button> -->
+
+					<!-- 4-2. 훌륭 2회 -->
+					<!-- <button class="btn btn-dark">복습하기</button> -->
+
+				</div>
+			</div>
+			<!-- //footer -->
+		</div>
+		
+	</div>
+</div>
+
+
+</body>
+</html>

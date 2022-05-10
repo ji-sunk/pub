@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+       
+		<div class="layout-def tab-wrap w100p with_bottom_area bg_gray">
+			<div class="header bg_white">
+				<div class="inner">
+					<div class="headerBox center">
+                        <div class="w1280">
+                            <div class="headerBox_head">
+                                <h1 class="tit">학습노트</h1>
+                                <button class="btn-close-wrap">닫기</button>
+                            </div>
+                        </div>
+					</div>
+                    <div class="header_tab2">
+                        <ul class="tablist cls">
+                            <li><a href="#tabCont1" class="active">학습</a></li>
+                            <li><a href="#tabCont3">진단</a></li>
+                        </ul>
+                    </div>
+				</div>
+			</div>
+
+			<div class="container study_note gm">
+				<div class="inner">
+                    <!--학습-->
+                    <div class="tabCont study_note_tab1 active" id="tabCont1">
+                        <div class="lev_boxes-wrap w736">
+                            <div class="progress_list">
+                                <!--없는 경우-->
+                                <div class="yet">
+                                    <span>아직 학습한 스테이지가 없습니다.</span>
+                                </div>
+                                <!--//없는 경우-->
+                                
+                                <!--반복단위-->
+                                <article>
+                                    <div class="upper cls">
+                                        <div class="tit">수 1~5</div>
+                                        <div class="state">
+                                            <div class="line cls">
+                                                <div class="date">2020.09.08</div>
+                                                <div class="ico_area purple"><!--class) 디폴트값 노력, yellow 기본, green 충분, purple 훌륭-->
+                                                    <span>훌륭</span>
+                                                </div>
+                                            </div>
+                                            <div class="line cls">
+                                                <div class="date">2020.09.08</div>
+                                                <div class="ico_area"><!--class) 디폴트값 노력, yellow 기본, green 충분, purple 훌륭-->
+                                                    <span>노력</span>
+                                                </div>
+                                            </div>
+                                            <div class="line cls">
+                                                <div class="date">2020.09.08</div>
+                                                <div class="ico_area purple"><!--class) 디폴트값 노력, yellow 기본, green 충분, purple 훌륭-->
+                                                    <span>훌륭</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn_area">
+                                            <a href="#null" class="result_btn">결과보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="tags cls">
+                                        <button type="button">OCR</button>
+                                        <button type="button">AI바로셈</button>
+                                        <button type="button">일</button>
+                                        <button type="button">일이</button>
+                                        <button type="button">일이삼</button>
+                                        <button type="button">일이삼사</button>
+                                        <button type="button">일이삼사오</button>
+                                    </div>
+                                </article>
+                                <!--//반복단위-->
+                                
+                                <article>
+                                    <div class="upper cls">
+                                        <div class="tit">일차함수와 일차방정식의 관계(2)</div>
+                                        <div class="state">
+                                            <div class="line cls">
+                                                <div class="date">2020.09.08</div>
+                                                <div class="ico_area"><!--class) 디폴트값 노력, yellow 기본, green 충분, purple 훌륭-->
+                                                    <span>노력</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn_area">
+                                            <a href="#null" class="result_btn">결과보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="tags cls">
+                                        <button type="button">OCR</button>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="upper cls">
+                                        <div class="tit">수 1~5</div>
+                                        <div class="state">
+                                            <div class="line cls">
+                                                <div class="date">2020.09.08</div>
+                                                <div class="ico_area"><!--class) 디폴트값 노력, yellow 기본, green 충분, purple 훌륭-->
+                                                    <span>노력</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn_area">
+                                            <a href="#null" class="result_btn">결과보기</a>
+                                        </div>
+                                    </div>
+                                    <div class="tags cls">
+                                        <button type="button">OCR</button>
+                                        <button type="button">AI바로셈</button>
+                                        <button type="button">일</button>
+                                        <button type="button">일이</button>
+                                        <button type="button">일이삼</button>
+                                        <button type="button">일이삼사</button>
+                                        <button type="button">일이삼사오</button>
+                                    </div>
+                                </article>
+                                
+                                <div class="more">
+                                    <button type="button">더보기 +</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//진도-->
+                    
+                    <!--진단-->
+                    <div class="tabCont" id="tabCont3">
+                    </div>
+                    <!--//진단-->
+                    
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

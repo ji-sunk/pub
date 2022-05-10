@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+		<div class="layout-def layout-lc gb">
+			<div class="header bg_sky">
+				<div class="inner">
+					<div class="headerBox">
+						<div class="headerBox_head">
+							<h1 class="tit">오답확인</h1>
+							<button class="btn-close-wrap">닫기</button>
+						</div>
+					</div>
+                   
+                    <div class="wa-header">
+                        <div class="wa-header-inner">
+                            <div class="wa-head">
+                                <ul>
+                                    <li><button>1</button></li>
+                                    <li><button class="on">2</button></li>
+                                    <li><button>3</button></li>
+                                    <li><button>4</button></li>
+                                    <li><button>5</button></li>
+                                    <li><button>6</button></li>
+                                    <li><button>7</button></li>
+                                    <li><button>8</button></li>
+                                    <li><button>9</button></li>
+                                    <li><button>10</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- //wa-header -->
+					
+				</div>
+			</div>
+			<!-- //header -->
+
+			<div class="container ovy-h">
+				<div class="inner">
+					<div class="wa-wrapper">
+						
+						<div class="wa-body">
+							<div class="wa-cont-wrap">
+								<div class="wa-cont-headwrap">
+									<div class="wa-cont_head">
+										<div class="txt-q">
+											<p>
+												Q. 두 분모의 최소공배수를 공통분모로 하여 분수를 통분하려고 합니다. □ 안에 알맞은 수를 써넣으시오.
+											</p>
+										</div>
+										<div class="wa-switchBox">
+											<div class="wa-switchBox-inner">
+												<span class="txt">정답보기</span>
+												<button class="wa-switch"> <!-- 클래스 on 추가/삭제 : 하단의 스크립트 참조 -->
+													<span class="btn-wa-switch"><span>OFF</span></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="wa-cont-body">
+									<div class="wa-cont">
+										<div class="wa-cont-inner">
+											<!-- 
+												wa-container에 추가될 클래스 정리
+												1. 정답보기 off일때 : 클래스 wa-wrong
+												2. 정답보기 on일때 : 클래스 wa-correct
+											-->
+											<div class="wa-container wa-wrong">
+												<!-- 수식영역 -->
+												<!-- 나의 오답 첫번째 조상인 mjx-box에 클래스 my-ans 추가 -->
+    									        <div class="blocking_layer"></div><!--유저가 mathjax 문항 영역 클릭 못하게 막는 투명 레이어-->
+											</div>
+										</div>
+									</div>
+									<div class="wa-cont-foot" style="">
+										<button>맞힐 수 있는데 틀린문제</button>
+										<button>드릴다운 문제</button>
+									</div>
+								</div>
+							</div>
+						</div><!-- //wa-body -->
+					</div><!-- //wa-inner -->
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //layout-def -->
+		
+	</div>
+</div>
+
+<script>
+	$('.wa-switch').on('click', function(){
+		if($(this).hasClass('on')){
+			$(this).removeClass('on');
+			$(this).find('.btn-wa-switch span').text('OFF');
+			$('.wa-container').removeClass('wa-correct').addClass('wa-wrong');
+		}else{
+			$(this).addClass('on');
+			$(this).find('.btn-wa-switch span').text('ON');
+			$('.wa-container').removeClass('wa-wrong').addClass('wa-correct');
+		}
+	});
+
+	$('.wa-cont-body').scroll(function(){
+		if( ($('.wa-cont').height() ) > ($('.wa-cont-body').height() + 64) ){
+			if($(this).scrollTop() > 0 ){
+				$('.wa-header-inner').addClass('unactive');
+				$('.wa-body').addClass('unactive');
+			}else{
+				$('.wa-header-inner').removeClass('unactive');
+				$('.wa-body').removeClass('unactive');
+			}
+		}
+	});
+
+	var ajaxOtp = {
+	  url : 'ex_calc.html',
+	  async : true,
+	  dataType : "html",
+	  chache : false
+	}
+	$.ajax(ajaxOtp).done(function(data) {
+	  $('.wa-container').children().remove();
+	  $('.wa-container').html(data);
+	}).fail(function() {
+	  //console.log("error");
+	}).always(function() { });
+</script>
+
+</body>
+</html>

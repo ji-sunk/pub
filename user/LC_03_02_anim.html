@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+    <script src="static/js/lottie.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+    <div class="wrap-inner">
+
+        <!-- LC_03_02의 wrap-inner 안에, layout-def 다음으로 삽입해주세요.  -->
+
+        <!-- 1. 노력인 경우 -->
+        <div class="anifull-wrap bg-effort">
+            <div class="anifull-ani">
+                <div class="anim-wrap" id="anim_03_02_01"></div>
+                <script>
+                    func_animation('anim_03_02_01', 'img_lc_03_02_01', false);
+                </script>
+            </div>
+        </div>
+
+        <!-- 2. 기본인 경우 -->
+        <!-- <div class="anifull-wrap bg-def">
+            <div class="anifull-ani">
+                <div class="anim-wrap" id="anim_03_02_02"></div>
+                <script>
+                    func_animation('anim_03_02_02', 'img_lc_03_02_02', false);
+                </script>
+            </div>
+        </div> -->
+
+        <!-- 3. 충분인 경우 -->
+        <!-- <div class="anifull-wrap bg-enough">
+            <div class="anifull-ani">
+                <div class="anim-wrap" id="anim_03_02_03"></div>
+                <script>
+                    func_animation('anim_03_02_03', 'img_lc_03_02_03', false);
+                </script>
+            </div>
+        </div> -->
+
+        <!-- 4. 훌륭인 경우 -->
+        <!-- <div class="anifull-wrap bg-nice">
+            <div class="anifull-ani">
+                <div class="anim-wrap" id="anim_03_02_04"></div>
+                <script>
+                    func_animation('anim_03_02_04', 'img_lc_03_02_04', false);
+                </script>
+            </div>
+        </div> -->
+
+
+
+
+    </div>
+</div>
+
+<!--오디오-->
+<script>
+var audio1 = new Audio('static/audio/lc_03_02_fail.ogg'); //노력인 경우
+var audio2 = new Audio('static/audio/lc_03_02_complete.ogg'); //기본, 충분, 훌륭인 경우
+</script>
+
+    <button class="js_play_audio1" style="position: absolute; left: 0; top: 0; z-index: 1000;">[퍼블확인용-클릭시 오디오 재생 테스트 (노력)]</button><!--이 줄은 퍼블 테스트 용이니 개발 시에는 지워주세요. 현재는 클릭시 재생되게 해놓았지만 이 오디오는 팝업이 뜰 때 재생돼야 합니다.-->
+    <button class="js_play_audio2" style="position: absolute; left: 0; top: 50px; z-index: 1000;">[퍼블확인용-클릭시 오디오 재생 테스트 (기본, 충분, 훌륭)]</button><!--이 줄은 퍼블 테스트 용이니 개발 시에는 지워주세요. 현재는 클릭시 재생되게 해놓았지만 이 오디오는 팝업이 뜰 때 재생돼야 합니다.-->
+<!--//오디오-->
+
+
+
+</body>
+</html>

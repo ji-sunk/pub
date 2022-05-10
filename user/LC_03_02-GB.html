@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+    <script src="static/js/lottie.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!--
+	**** 접속했을때 wrap-inner 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+    <div class="wrap-inner">
+        <div class="header_top gb bg_sky">
+           <div class="inner">
+	            <div class="btns_wrap">
+                    <div class="center_wrap cls">
+                        <div class="tit_area">
+                            <button class="btn_exit" type="button"><img src="./static/images/icon/btn_back.svg" alt="" /></button>
+                            <button class="tit_btn" type="button">코스학습</button>
+                        </div>
+                        <div class="right_area">
+                            <div class="lev_area">
+                                <div class="lev_box">
+                                    <div class="left">Lv 14</div><!--최대 14까지-->
+                                    <div class="right_area">
+                                        <div class="right" style="width: 50%"><!--width 값에 따라 길이 결정됨-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu_btn">
+                                <button type="button"><img src="./static/images/icon/btn_ocr_th.svg" alt=""></button>
+                                <button type="button"><img src="./static/images/icon/btn_menu_th.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+	            </div>
+            </div>
+        </div>
+        
+        <div class="layout-def with_header tab-wrap gb">
+            <div class="header">
+                <div class="character_wrap js_scroll_head">
+                    <p class="txt">메시지가 길어 두 줄이 되는 경우<br>메시지가 길어 두 줄이 되는 경우</p>
+                    <div class="img_wrap">
+                        <!--메시지가 있는 경우에 노출되는 로티-->                           
+                        <div class="cont1">
+                            <div class="anim-wrap" id="cha_lc_aimessage_02"></div>
+                            <script>
+                                func_animation('cha_lc_aimessage_02', 'cha_lc_aimessage_02', true);
+                            </script>
+                        </div>
+                        <!--메시지가 없는 경우에 노출되는 로티-->
+                        <div class="cont2">
+                            <div class="anim-wrap" id="cha_lc_aimessage_03"></div>
+                            <script>
+                                func_animation('cha_lc_aimessage_03', 'cha_lc_aimessage_03', true);
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab_fix_wrap">
+                    <ul class="course_tab tablist cls">
+                        <li class="fire">
+                            <a href="#tabCont1" class="active">
+                                <span>
+                                    <div class="anim-wrap" id="ani_fire"></div>
+                                    <script>
+                                        func_animation('ani_fire','img_lc_03_fire', true);
+                                    </script>
+                                </span>
+                                학습중
+                            </a>
+                        </li>
+                        <li><a class="ani_zoom" href="#tabCont2">완료</a></li><!--font 커지는 애니메이션 class ani_zoom-->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="inner">
+                    <div class="course_tab_wrap">
+                        <!--학습중-->
+                        <div class="tabCont course_list active result" id="tabCont1">
+                            <article class="on purple on ani_fold"><!--class 노력 red, 기본 yellow, 충분 green, 훌륭 purple--><!--활성화된 박스 class on--><!--접혀서 사라지는 애니메이션 class ani_fold(접히는 애니메이션과, 아래의 aritcle의 펼쳐지는 애니메이션은 동시에 class를 붙여줘서 애니메이션이 함께 일어나야 함)-->
+                                <div class="head_wrap">
+                                    <div class="num">3</div>
+                                    <div class="tit"><span>받아올림이 없는 덧셈(3)</span></div>
+                                </div>
+                                <div class="cont_wrap">
+                                    <div class="gray_box">
+                                        <img src="./static/images/tmp/img_sample_02@2x.png" alt="" /><!--학습문제 영역-->
+                                    </div>
+<!--(이 부분은 안 쓰기로 했다고 함)
+                                    <dl>
+                                        <dt>AI 예측</dt>
+                                        <dd>
+                                            <span class="left">50 문제</span>
+                                            <span class="right">10분 30초</span>
+                                        </dd>
+                                    </dl>
+-->
+                                    <div class="btn_wrap">
+                                        <a class="btn btn_go" href="#null">학습하기</a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="red on ani_open"><!--class 노력 red, 기본 yellow, 충분 green, 훌륭 purple--><!--활성화된 박스 class on--><!--펼쳐지며 커지는 애니메이션 class ani_open(펼쳐지는 애니메이션 실행시 ani_open과 on을 함께 붙여야 함)-->
+                                <div class="head_wrap">
+                                    <div class="num">4</div>
+                                    <div class="tit"><span>(두, 세 자리 수)×100, 1000, 10000</span></div>
+                                    <div class="state cls"><!--결과영역 (노력인 경우에만 들어감)-->
+                                        <div class="left">2020.09.08</div>
+                                        <div class="right"><span>노력</span></div>
+                                    </div>
+                                </div>
+                                <div class="cont_wrap">
+                                    <div class="gray_box">
+                                        <img src="./static/images/tmp/img_sample_02@2x.png" alt="" /><!--학습문제 영역-->
+                                    </div>
+<!--(이 부분은 안 쓰기로 했다고 함)
+                                    <dl>
+                                        <dt>AI 예측</dt>
+                                        <dd>
+                                            <span class="left">50 문제</span>
+                                            <span class="right">10분 30초</span>
+                                        </dd>
+                                    </dl>
+-->
+                                    <div class="btn_wrap">
+                                        <a class="btn btn_go js_play_audio1" href="#null">학습하기</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="head_wrap">
+                                    <div class="num">5</div>
+                                    <div class="tit"><span>(두, 세 자리 수)×100, 1000, 10000</span></div>
+                                </div>
+                                <div class="cont_wrap">
+                                    <div class="gray_box">
+                                        <img src="./static/images/tmp/img_sample_02@2x.png" alt="" /><!--학습문제 영역-->
+                                    </div>
+<!--(이 부분은 안 쓰기로 했다고 함)
+                                    <dl>
+                                        <dt>AI 예측</dt>
+                                        <dd>
+                                            <span class="left">50 문제</span>
+                                            <span class="right">10분 30초</span>
+                                        </dd>
+                                    </dl>
+-->                                        <div class="btn_wrap">
+                                        <a class="btn btn_go" href="#null">학습하기</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="head_wrap">
+                                    <div class="num">6</div>
+                                    <div class="tit"><span>준비 중</span></div>
+                                </div>
+                                <div class="cont_wrap">
+                                    <div class="gray_box">
+                                        <img src="./static/images/tmp/img_sample_02@2x.png" alt="" /><!--학습문제 영역-->
+                                    </div>
+<!--(이 부분은 안 쓰기로 했다고 함)
+                                    <dl>
+                                        <dt>AI 예측</dt>
+                                        <dd>
+                                            <span class="left">50 문제</span>
+                                            <span class="right">10분 30초</span>
+                                        </dd>
+                                    </dl>
+-->                                        <div class="btn_wrap">
+                                        <a class="btn btn_go" href="#null">학습하기</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!--//학습중-->
+
+                        <!--완료-->
+                        <div class="tabCont course_list list2" id="tabCont2">
+                        </div>
+                        <!--//완료-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+//스크롤시 헤더영역 변화
+var $cont = $('.container'),
+    $header = $('.js_scroll_head');
+
+$cont.scroll(function(){
+    var scrollTop = $cont.scrollTop();
+    scrollTop ? $header.addClass('h_short') : $header.removeClass('h_short');
+});    
+</script>
+
+</body>
+</html>

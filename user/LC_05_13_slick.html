@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<script src="static/js/slick.min.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+		<div class="layout-def layout-lc theme-gray">
+			<div class="header">
+				<div class="inner">
+					<div class="headerBox">
+						<div class="headerBox_head">
+							<h1 class="tit">오답확인</h1>
+							<button class="btn-close-wrap">닫기</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //header -->
+
+			<div class="container ovy-h">
+				<div class="inner">
+					<div class="wa-wrapper">
+						<div class="wa-header">
+							<div class="wa-header-inner">
+								<div class="wa-head">
+									<!-- 페이징 들어가는 영역 : slick에서 자동 삽입됨 -->
+								</div>
+							</div>
+						</div><!-- //wa-header -->
+
+						<div class="wa-body">
+
+							<div class="wa-cont-wrap wa_slick">
+								<div class="wa-cont-headwrap">
+									<div class="wa-cont_head">
+										<div class="txt-q">
+											<p>
+												Q. 두 분모의 최소공배수를 공통분모로 하여 분수를 통분하려고 합니다. □ 안에 알맞은 수를 써넣으시오.
+											</p>
+										</div>
+										<div class="wa-switchBox">
+											<div class="wa-switchBox-inner">
+												<span class="txt">정답보기</span>
+												<button class="wa-switch"> <!-- 클래스 on 추가/삭제 : 하단의 스크립트 참조 -->
+													<span class="wa-switch-txt">OFF</span>
+													<span class="btn-wa-switch"></span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- slick 으로 바뀌는 화면 반복 시작 -->
+								<div class="wa-cont-body">
+									<div class="wa-cont">
+										<div class="wa-cont-inner">
+											<!-- 
+												wa-container에 추가될 클래스 정리
+												1. 정답보기 off일때 : 클래스 wa-wrong
+												2. 정답보기 on일때 : 클래스 wa-correct
+											-->
+											<div class="wa-container wa-wrong">
+												<!-- 수식영역 -->
+												<!-- 나의 오답 첫번째 조상인 mjx-box에 클래스 my-ans 추가 -->
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- //slick 으로 바뀌는 화면 반복 끝 -->
+
+								<div class="wa-cont-body">
+									<div class="wa-cont">
+										<div class="wa-cont-inner">
+											<!-- 
+												wa-container에 추가될 클래스 정리
+												1. 정답보기 off일때 : 클래스 wa-wrong
+												2. 정답보기 on일때 : 클래스 wa-correct
+											-->
+											<div class="wa-container wa-wrong">
+												<!-- 수식영역 -->
+												<!-- 나의 오답 첫번째 조상인 mjx-box에 클래스 my-ans 추가 -->
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="wa-cont-body">
+									<div class="wa-cont">
+										<div class="wa-cont-inner">
+											<!-- 
+												wa-container에 추가될 클래스 정리
+												1. 정답보기 off일때 : 클래스 wa-wrong
+												2. 정답보기 on일때 : 클래스 wa-correct
+											-->
+											<div class="wa-container wa-wrong">
+												<!-- 수식영역 -->
+												<!-- 나의 오답 첫번째 조상인 mjx-box에 클래스 my-ans 추가 -->
+											</div>
+										</div>
+									</div>
+								</div>
+
+								
+								<div class="wa-cont-foot" style="">
+									<button>맞힐 수 있는데 틀린문제</button>
+									<button>드릴다운 문제</button>
+								</div>
+							</div>
+
+						</div><!-- //wa-body -->
+					</div><!-- //wa-inner -->
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //layout-def -->
+		
+	</div>
+</div>
+
+
+
+<script>
+	$('.wa-switch').on('click', function(){
+		if($(this).hasClass('on')){
+			$(this).removeClass('on');
+			$(this).find('.wa-switch-txt').text('OFF');
+			$('.wa-container').removeClass('wa-correct').addClass('wa-wrong');
+		}else{
+			$(this).addClass('on');
+			$(this).find('.wa-switch-txt').text('ON');
+			$('.wa-container').removeClass('wa-wrong').addClass('wa-correct');
+		}
+	});
+
+	//2021.06.01 스크롤 관련 스크립트 삭제
+	// $('.wa-cont-body').scroll(function(){
+	// 	if( ($('.wa-cont').height() ) > ($('.wa-cont-body').height() + 64) ){
+	// 		if($(this).scrollTop() > 0 ){
+	// 			$('.wa-header-inner').addClass('unactive');
+	// 			$('.wa-body').addClass('unactive');
+	// 		}else{
+	// 			$('.wa-header-inner').removeClass('unactive');
+	// 			$('.wa-body').removeClass('unactive');
+	// 		}
+	// 	}
+	// });
+
+	//퍼블확인용 임시 스크립트 (수식 관련 html파일 보이도록 설정) : 개발시 참고만 하고 꼭! 지워주세요~
+	var ajaxOtp = {
+	  url : 'ex_calc.html',
+	  async : true,
+	  dataType : "html",
+	  chache : false
+	}
+	$.ajax(ajaxOtp).done(function(data) {
+	  $('.wa-container').children().remove();
+	  $('.wa-container').html(data);
+	}).fail(function() {
+	  //console.log("error");
+	}).always(function() { });
+
+	//2021.06.01 슬라이드 액션 추가
+	var _isSwipe = (_mobile || _tablet ) ? true : false ;  // mob이거나 tablet일때 swipe 되도록 : true
+	var _isArr = (_mobile) ? false : true ;	//mob일때 화살표 없도록 : false
+	var _slickOpt = {
+		swipe : _isSwipe,
+		infinite: false,
+		slide: '.wa-cont-body',
+		arrows: _isArr,
+		dots: true,
+		customPaging : function(slider, i) {
+			i++;
+			return '<button>'+ i +'</button>';
+		},
+	};
+	$('.wa_slick').slick(_slickOpt);
+	$(".wa-head").append($(".slick-dots"));
+
+
+</script>
+</body>
+</html>

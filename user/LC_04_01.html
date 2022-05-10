@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+        <div class="header_top gm">
+           <div class="inner">
+	            <div class="btns_wrap header-trans cls">
+                    <div class="center_wrap cls pc_w1400">
+                        <div class="tit_area">
+                            <button class="btn_exit hide_pc hide_m" type="button"><img src="./static/images/icon/ic_back@2x.png" alt="" /></button>
+                            <button class="btn_exit3 hide_pc hide_t" type="button"><img src="./static/images/icon/ic_ar_left.svg" alt="" /></button>
+                            <button class="tit_btn" type="button">주제학습</button>
+                        </div>
+                        <div class="right_area">
+                            <div class="menu_btn">
+                                <button class="head_btn purple" type="button"><img src="./static/images/icon/ic_gm_note_2@2x.png" alt="" /></button>
+                                <button class="head_btn" type="button"><img src="./static/images/icon/ic_mn_w@2x.png" alt="" /></button>
+                            </div>
+                        </div>
+                    </div>
+	            </div>
+            </div>
+        </div>
+
+		<div class="layout-def layout-lc layout-sl">
+			<div class="header sl-headerBox">
+				<div class="inner">
+					<span class="scrollX-gra scrollX-left"></span>
+					<div class="sl-header-wrap scrollX-wrap first" data-wmw="1104"><!-- x-auto에 scrollX-wrap -->
+						<div class="scrollX-container"><!-- 감싸는 몸통 scrollX-container -->
+							<div class="sl-header-inner ">
+								<ul class="sl-header-list scrollX-cont"><!-- 스크롤로 늘어난 콘텐츠 scrollX-cont -->
+									<li class="js_play_audio1">
+										<button class="btn-tab-active">
+											<span class="ico">
+												<img src="static/images/icon/ic_ctg_01.png" alt="">
+											</span>
+											수
+										</button>
+									</li>
+									<li class="js_play_audio1">
+										<button>
+											<span class="ico">
+												<img src="static/images/icon/ic_ctg_02.png" alt="">
+											</span>
+											덧셈
+										</button>
+									</li>
+									<li class="js_play_audio1">
+										<button>
+											<span class="ico">
+												<img src="static/images/icon/ic_ctg_03.png" alt="">
+											</span>
+											뺄셈
+										</button>
+									</li>
+									<li class="js_play_audio1">
+										<button>
+											<span class="ico">
+												<img src="static/images/icon/ic_ctg_04.png" alt="">
+											</span>
+											곱셈
+										</button>
+									</li>
+									<li class="js_play_audio1">
+										<button>
+											<span class="ico">
+												<img src="static/images/icon/ic_ctg_05.png" alt="">
+											</span>
+											나눗셈
+										</button>
+									</li>
+									<li class="js_play_audio1">
+										<button>
+											<span class="ico">
+												<img src="static/images/icon/ic_ctg_06.png" alt="">
+											</span>
+											혼합계산
+										</button>
+									</li>
+									<li class="js_play_audio1">
+										<button>
+											<span class="ico">
+												<img src="static/images/icon/ic_ctg_07.png" alt="">
+											</span>
+											분수
+										</button>
+									</li>
+									<li class="js_play_audio1">
+										<button class="btn-tab-active">
+											<span class="ico">
+												<img src="static/images/icon/ic_ctg_08.png" alt="">
+											</span>
+											소수
+										</button>
+									</li>
+									<li class="js_play_audio1">
+										<button>
+											<span class="ico">
+												<img src="static/images/icon/ic_ctg_09.png" alt="">
+											</span>
+											방정식
+										</button>
+									</li>
+									<li class="js_play_audio1">
+										<button>
+											<span class="ico">
+												<img src="static/images/icon/ic_ctg_10.png" alt="">
+											</span>
+											비례식
+										</button>
+									</li>
+									<li class="js_play_audio1">
+										<button class="btn-tab-locked">
+											<span class="ico">
+												<!-- 잠겨있으면(btn-tab-locked) 비어있음 -->
+											</span>
+											방정식
+										</button>
+									</li>
+									<li class="js_play_audio1">
+										<button class="btn-tab-locked">
+											<span class="ico">
+												<!-- 잠겨있으면(btn-tab-locked) 비어있음 -->
+											</span>
+											비례식
+										</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<button class="btn-scrollX prev">이전</button>
+						<button class="btn-scrollX next">다음</button>
+					</div>
+					<span class="scrollX-gra scrollX-right"></span>
+				</div>
+			</div>
+			<!-- //header -->
+
+			<div class="container scrollingBox">
+				<div class="inner">
+					<div class="scrolling-cont">
+
+						<!-- 그룹 반복 시작 -->
+						<div class="sl-section">
+							<div class="sl-section_head">
+								<h2>그룹1</h2>
+							</div>
+							<div class="sl-section_body">
+                                <ul class="sl-section_list gm">
+                                    <li>
+                                        <a href="#">
+                                            <div class="sl-calcBox">
+                                                <!-- 1. 노력 -->
+                                                <span class="ico ico-effort"></span>
+                                                <!-- 2. 기본 -->
+                                                <!-- <span class="ico ico-def"></span> -->
+                                                <!-- 3. 충분 -->
+                                                <!-- <span class="ico ico-enough"></span> -->
+                                                <!-- 4. 훌륭 -->
+                                                <!-- <span class="ico ico-nice"></span> -->
+                                                수식영역
+                                            </div>
+                                        </a>
+                                        <div class="sl-txtBox">
+                                            <p class="sl-txtBox_txt">
+                                                <a href="#null">받아올림이 없는 덧셈(3)</a>
+                                            </p>
+                                            <p class="sl-txtBox_date">
+                                                <span>2020.09.08</span>
+                                            </p>
+                                        </div>
+										<!-- 말풍선 영역 시작 -->
+										<div class="tooltip-def tooltipBox type4 active">
+											<!-- 1. 마지막으로 학습한 소주제로 자동 랜딩되며 출력되는 학습안내 풍선 메시지 -->
+											<p>
+												마지막으로<br>
+												학습한 스테이지야.
+    											<button class="btn-closeTooltip btn-close-tooltip"></button>
+											</p>
+											<!-- 2. 코스학습에서 노력3회로 추천주제학습으로 이동되었을 때 출력되는 풍선 메시지 -->
+											<!-- <p>
+												AI가 추천하는<br>
+												학습 스테이지야.
+											</p> -->
+										</div>
+										<!-- //말풍선 영역 끝 -->
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sl-calcBox">
+                                                <!-- 1. 노력 -->
+                                                <!-- <span class="ico ico-effort"></span> -->
+                                                <!-- 2. 기본 -->
+                                                <span class="ico ico-def"></span>
+                                                <!-- 3. 충분 -->
+                                                <!-- <span class="ico ico-enough"></span> -->
+                                                <!-- 4. 훌륭 -->
+                                                <!-- <span class="ico ico-nice"></span> -->
+                                                수식영역
+                                            </div>
+                                        </a>
+                                        <div class="sl-txtBox">
+                                            <p class="sl-txtBox_txt">
+                                                <a href="#null">(두, 세 자리 수)×100, 1000, 10000</a>
+                                            </p>
+                                            <p class="sl-txtBox_date">
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sl-calcBox">
+                                                <!-- 1. 노력 -->
+                                                <!-- <span class="ico ico-effort"></span> -->
+                                                <!-- 2. 기본 -->
+                                                <!-- <span class="ico ico-def"></span> -->
+                                                <!-- 3. 충분 -->
+                                                <span class="ico ico-enough"></span>
+                                                <!-- 4. 훌륭 -->
+                                                <!-- <span class="ico ico-nice"></span> -->
+                                                수식영역
+                                            </div>
+                                        </a>
+                                        <div class="sl-txtBox">
+                                            <p class="sl-txtBox_txt">
+                                                <a href="#null">(두, 세 자리 수)×100, 1000, 10000</a>
+                                            </p>
+                                            <p class="sl-txtBox_date">
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sl-calcBox">
+                                                <!-- 1. 노력 -->
+                                                <!-- <span class="ico ico-effort"></span> -->
+                                                <!-- 2. 기본 -->
+                                                <!-- <span class="ico ico-def"></span> -->
+                                                <!-- 3. 충분 -->
+                                                <!-- <span class="ico ico-enough"></span> -->
+                                                <!-- 4. 훌륭 -->
+                                                <span class="ico ico-nice"></span>
+                                                수식영역
+                                            </div>
+                                        </a>
+                                        <div class="sl-txtBox">
+                                            <p class="sl-txtBox_txt">
+                                                <a href="#null">(두, 세 자리 수)×100, 1000, 10000</a>
+                                            </p>
+                                            <p class="sl-txtBox_date">
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sl-calcBox">
+                                                <!-- 1. 노력 -->
+                                                <span class="ico ico-effort"></span>
+                                                <!-- 2. 기본 -->
+                                                <!-- <span class="ico ico-def"></span> -->
+                                                <!-- 3. 충분 -->
+                                                <!-- <span class="ico ico-enough"></span> -->
+                                                <!-- 4. 훌륭 -->
+                                                <!-- <span class="ico ico-nice"></span> -->
+                                                수식영역
+                                            </div>
+                                        </a>
+                                        <div class="sl-txtBox">
+                                            <p class="sl-txtBox_txt">
+                                                <a href="#null">(두, 세 자리 수)×100, 1000, 10000</a>
+                                            </p>
+                                            <p class="sl-txtBox_date">
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+							</div>
+						</div><!-- //sl-section -->
+						<!-- //그룹 반복 끝 -->
+
+						<div class="sl-section">
+							<div class="sl-section_head">
+								<h2>받아올림이 있는 덧셈</h2>
+							</div>
+							<div class="sl-section_body">
+                                <ul class="sl-section_list gm">
+                                    <li>
+                                        <a href="#">
+                                            <div class="sl-calcBox">
+                                                <!-- 1. 노력 -->
+                                                <span class="ico ico-effort"></span>
+                                                <!-- 2. 기본 -->
+                                                <!-- <span class="ico ico-def"></span> -->
+                                                <!-- 3. 충분 -->
+                                                <!-- <span class="ico ico-enough"></span> -->
+                                                <!-- 4. 훌륭 -->
+                                                <!-- <span class="ico ico-nice"></span> -->
+                                                수식영역
+                                            </div>
+                                        </a>
+                                        <div class="sl-txtBox">
+                                            <p class="sl-txtBox_txt">
+                                                <a href="#null">받아올림이 없는 덧셈(3)</a>
+                                            </p>
+                                            <p class="sl-txtBox_date">
+                                                <span>2020.09.08</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sl-calcBox">
+                                                <!-- 1. 노력 -->
+                                                <!-- <span class="ico ico-effort"></span> -->
+                                                <!-- 2. 기본 -->
+                                                <span class="ico ico-def"></span>
+                                                <!-- 3. 충분 -->
+                                                <!-- <span class="ico ico-enough"></span> -->
+                                                <!-- 4. 훌륭 -->
+                                                <!-- <span class="ico ico-nice"></span> -->
+                                                수식영역
+                                            </div>
+                                        </a>
+                                        <div class="sl-txtBox">
+                                            <p class="sl-txtBox_txt">
+                                                <a href="#null">(두, 세 자리 수)×100, 1000, 10000</a>
+                                            </p>
+                                            <p class="sl-txtBox_date">
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sl-calcBox">
+                                                <!-- 1. 노력 -->
+                                                <!-- <span class="ico ico-effort"></span> -->
+                                                <!-- 2. 기본 -->
+                                                <!-- <span class="ico ico-def"></span> -->
+                                                <!-- 3. 충분 -->
+                                                <span class="ico ico-enough"></span>
+                                                <!-- 4. 훌륭 -->
+                                                <!-- <span class="ico ico-nice"></span> -->
+                                                수식영역
+                                            </div>
+                                        </a>
+                                        <div class="sl-txtBox">
+                                            <p class="sl-txtBox_txt">
+                                                <a href="#null">(두, 세 자리 수)×100, 1000, 10000</a>
+                                            </p>
+                                            <p class="sl-txtBox_date">
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sl-calcBox">
+                                                <!-- 1. 노력 -->
+                                                <!-- <span class="ico ico-effort"></span> -->
+                                                <!-- 2. 기본 -->
+                                                <!-- <span class="ico ico-def"></span> -->
+                                                <!-- 3. 충분 -->
+                                                <!-- <span class="ico ico-enough"></span> -->
+                                                <!-- 4. 훌륭 -->
+                                                <span class="ico ico-nice"></span>
+                                                수식영역
+                                            </div>
+                                        </a>
+                                        <div class="sl-txtBox">
+                                            <p class="sl-txtBox_txt">
+                                                <a href="#null">(두, 세 자리 수)×100, 1000, 10000</a>
+                                            </p>
+                                            <p class="sl-txtBox_date">
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="sl-calcBox">
+                                                <!-- 1. 노력 -->
+                                                <span class="ico ico-effort"></span>
+                                                <!-- 2. 기본 -->
+                                                <!-- <span class="ico ico-def"></span> -->
+                                                <!-- 3. 충분 -->
+                                                <!-- <span class="ico ico-enough"></span> -->
+                                                <!-- 4. 훌륭 -->
+                                                <!-- <span class="ico ico-nice"></span> -->
+                                                수식영역
+                                            </div>
+                                        </a>
+                                        <div class="sl-txtBox">
+                                            <p class="sl-txtBox_txt">
+                                                <a href="#null">(두, 세 자리 수)×100, 1000, 10000</a>
+                                            </p>
+                                            <p class="sl-txtBox_date">
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+							</div>
+						</div><!-- //sl-section -->
+						
+					</div><!-- //scrolling-cont -->
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //layout-def -->
+		
+	</div>
+</div>
+
+<script>
+	// 버튼에 btn-tab-locked 클래스가 없을 경우에만, 클릭할때 btn-tab-active 추가되도록 설정
+	$('.sl-header-list button').on('click', function(){
+		if( !($(this).hasClass('btn-tab-locked')) ){
+			$('.sl-header-list button').not($(this)).removeClass('btn-tab-active');
+			$(this).addClass('btn-tab-active');
+		}
+	});
+
+
+	//스크롤 할 때, 상단의 수식버튼 영역 변화
+	var _lastScrollTop = 0;
+	$('.scrollingBox').scroll(function(){
+		var st = $(this).scrollTop();
+		var _spaceHeight = $('.wrap-inner').hasClass('v-mob') ? 60 : 120 ;
+		if(st > _lastScrollTop){
+			if( ($('.scrolling-cont').height() ) > ($('.scrollingBox').height() + _spaceHeight) ){
+				$('.sl-headerBox').addClass('sl-header-short');
+			}
+		}else{
+			if( st == 0 ){
+				$('.sl-headerBox').removeClass('sl-header-short');
+			}
+		}
+		_lastScrollTop = st;
+	});
+</script>
+
+<!--오디오-->
+<script>
+var audio1 = new Audio('static/audio/common_button.ogg');
+</script>
+<!--//오디오-->
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+    <script src="static/js/lottie.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!--
+	**** 접속했을때 wrap-inner 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+    <div class="wrap-inner">
+       
+        <!--로딩 레이어2-->
+        <div class="loading_layer loading2">
+            <div class="spinner">
+                <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>            
+            </div>
+        </div>
+        <!--//로딩 레이어2-->
+
+        <!-- 퍼블 화면 확인용 임시 스크립트 : 개발쪽에서는 꼭! 반드시!! 삭제해주세요 -->
+        <script>
+            setTimeout(function() {
+                $('.loading_layer').css('display', 'none');
+            }, 500);
+        </script>
+       
+        <div class="header_gray_bg"></div>
+        <div class="header_top">
+            <div class="btns_wrap">
+                <div class="center_wrap cls">
+                    <div class="tit_area cls">
+	                    <button class="user_btn hide_app" type="button">
+                            <img src="./static/images/icon/ic_account_01@2x.png" alt="" />
+                            <!--
+                                유저 이미지는 총 5개
+                                ic_account_01@2x.png
+                                ic_account_02@2x.png
+                                ic_account_03@2x.png
+                                ic_account_04@2x.png
+                                ic_account_05@2x.png
+                            -->
+                        </button>
+                        <button class="btn_exit show_app" type="button"><img src="./static/images/icon/ic-back@2x.png" alt="" /></button>
+                        <button class="tit_btn" type="button">코스학습</button>
+                    </div>
+                    <div class="right_area">
+                        <div class="lev_area">
+                            <div class="lev_box">
+                                <div class="left">Lv 14</div><!--최대 14까지-->
+                                <div class="right_area">
+                                    <div class="right" style="width: 50%"><!--width 값에 따라 길이 결정됨-->
+                                        <div class="inner_bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu_btn">
+                            <button class="head_btn" type="button"><img src="./static/images/icon/ic_note_32@2x.png" alt="" /></button>
+                            <button class="head_btn" type="button"><img src="./static/images/icon/ic_menu_32@2x.png" alt="" /></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+        <div class="layout-def with_header tab-wrap js_change_header">
+            <div class="header">
+                <div class="inner">
+                    <div class="messege_wrap"><!--메시지가 없는 경우는 div.messege_wrap은 놔두고 div.messege만 삭제-->
+                        <!--메시지가 한줄인 경우-->
+                        <div class="messege"><b>안녕, 김웅진! 학습팁을 알려줄께!</b></div>
+                        <!--//메시지가 한줄인 경우-->
+                        <!--메시지가 두줄인 경우(스크립트 때문에 br태그가 반드시 들어가야 함)-->
+<!--                        <div class="messege"><b>안녕, 김웅진!<br />학습팁을 알려줄께!</b></div>-->
+                        <!--//메시지가 두줄인 경우-->
+                    </div>
+                    
+                    <!--시작 메시지의 로티애니메이션-->
+                    <div class="head_img_wrap">
+                        <div class="anim-wrap no_messege" id="no_messege"></div>
+                        <script>
+                            func_animation('no_messege','ai_lc_03_02_01', true);
+                        </script>
+                        <div class="anim-wrap with_messege" id="with_messege"></div>
+                        <script>
+                            func_animation('with_messege','ai_lc_03_02_02', true);
+                        </script>
+                    </div>
+                    <!--//시작 메시지의 로티애니메이션-->
+                    <!--마지막 메시지의 로티애니메이션-->
+<!--
+                    <div class="head_img_wrap">
+                        <div class="anim-wrap no_messege" id="no_messege"></div>
+                        <script>
+                            func_animation('no_messege','ai_lc_03_02_01', true);
+                        </script>
+                        <div class="anim-wrap with_messege" id="with_messege"></div>
+                        <script>
+                            func_animation('with_messege','ai_lc_03_02_03', true);
+                        </script>
+                    </div>
+-->
+                    <!--//마지막 메시지의 로티애니메이션-->
+                    
+                    <div class="tab_fix_wrap">
+                        <ul class="course_tab tablist cls">
+                            <!--불 아이콘 있을 때(LC_03_02)
+                            <li class="fire">
+                                <a href="#tabCont1" class="active">
+                                    <span>
+                                        <div class="anim-wrap" id="ani_fire"></div>
+                                        <script>
+                                            func_animation('ani_fire','img_lc_03_fire', true);
+                                        </script>
+                                    </span>
+                                    학습중
+                                </a>
+                            </li>
+                            -->
+                            <!--불 아이콘 없을 때(LC_03_03)-->
+                            <li class="fire no_icon">
+                                <a href="#tabCont1" class="active">학습중</a>
+                            </li>
+                            <li><a href="#tabCont2" class="ani_zoom">완료</a></li><!--font 커지는 애니메이션 class ani_zoom-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="inner">
+                    <div class="course_tab_wrap">
+                        <!--학습중-->
+                        <div class="tabCont active lev_done" id="tabCont1">
+                            <div class="lev_box">
+                                <div class="box">LEVEL 2</div>
+                            </div>
+                            <div class="score_wrap">
+                                <div class="bg_img">
+                                    <article>
+                                        <div class="tit">기본</div>
+                                        <div class="num">2</div>
+                                    </article>
+                                    <article class="area_enough">
+                                        <div class="tit">충분</div>
+                                        <div class="num">3</div>
+                                    </article>
+                                    <article class="area_great">
+                                        <div class="tit">훌륭</div>
+                                        <div class="num">5</div>
+                                    </article>
+                                    <!--풍선이 떠있는 로티-->
+                                    <div class="anim-wrap" id="ani2"></div>
+                                    <script>
+                                        func_animation('ani2','img_lc_03_03_01', true);
+                                    </script>
+                                    <!--//풍선이 떠있는 로티-->
+                                    <!--풍선 터지는 로티-->
+        <!--
+                                    <div class="anim-wrap" id="ani3"></div>
+                                    <script>
+                                        func_animation('ani3','img_lc_03_03_02', false);
+                                    </script>
+        -->
+                                    <!--//풍선 터지는 로티-->
+                                </div>
+                            </div>
+                            <div class="box_wrap">
+                                <div class="box">
+                                    <div class="tit">맞힌 문제수</div>
+                                    <div class="num"><!--풍선터지는 애니메이션 직후 class fade 넣으면 페이드인 되어서 나타남-->
+                                        <span>총</span><span class="total">106</span><span>문제</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btns_wrap">
+                                <a class="btn btn-blue" href="#null">다음 레벨로 올라가기</a>
+                            </div>
+                        </div>
+                        <!--//학습중-->
+
+                        <!--완료-->
+                        <div class="tabCont course_list list2" id="tabCont2">
+                            <article class="yellow"><!--class 기본 yellow, 충분 green, 훌륭 purple-->
+                                <div class="head_wrap">
+                                    <div class="num">1</div>
+                                    <div class="tit">(두, 세 자리 수)×100, 1000, 10000</div>
+                                    <div class="state">
+                                        <div class="left">2020.09.08</div>
+                                        <div class="right"><span>기본</span></div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="green">
+                                <div class="head_wrap">
+                                    <div class="num">2</div>
+                                    <div class="tit">받아올림이 없는 덧셈(1)</div>
+                                    <div class="state">
+                                        <div class="left">2020.09.08</div>
+                                        <div class="right"><span>충분</span></div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="purple">
+                                <div class="head_wrap">
+                                    <div class="num">3</div>
+                                    <div class="tit">받아올림이 없는 덧셈(2)</div>
+                                    <div class="state">
+                                        <div class="left">2020.09.08</div>
+                                        <div class="right"><span>충분</span></div>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <!--완료한 학습이 없을 경우-->
+                            <div class="empty">
+                                <div class="txt">아직 완료한 학습이 없어.</div>
+                            </div>
+                            <!--//완료한 학습이 없을 경우-->
+                        </div>
+                        <!--//완료-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--오디오-->
+<script>
+var audio1 = new Audio('static/audio/lc_03_03_balloon.ogg');
+</script>
+
+    <button class="js_play_audio1" style="position: absolute; left: 0; top: 0; z-index: 1000;">[퍼블확인용-클릭시 오디오 재생 테스트]</button><!--이 줄은 퍼블 테스트 용이니 개발 시에는 지워주세요. 현재는 클릭시 재생되게 해놓았지만 이 오디오는 풍선이 터지는 애니메이션이 나올 때 재생돼야 합니다.-->
+<!--//오디오-->
+
+</body>
+</html>
