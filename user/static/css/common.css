@@ -90,6 +90,7 @@ div.header { position: relative; }
 .btn-green { background-color: #00b996; color: #fff; }
 .btn-red { background-color: #ff6e5f; color: #fff; }
 .btn-white { background-color: #fff; color: #0096be; }
+.btn-wht_ble { background-color: #fff; color: #3c5a7d; }
 .btn-gray { background-color: #f2f4f8; color: #3c4650; }
 .btn-gray1 { background-color: #e4ebf4; color: #aab4be; }
 .btn-dark { background-color: #3c4650; color: #fff; }
@@ -215,6 +216,9 @@ button[disabled] { background-color: #f2f4f8; color: rgba(50,60,70,0.4); font: n
 /* lp : layer popup */
 .lp-wrap { position: fixed; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; display: -ms-flexbox; display: flex; background-color: rgba(40, 65, 80, 0.55); z-index: 300; }
 .lp-wrap.opa_08{background-color: rgba(40, 65, 80, 0.8);}
+.lp-wrap.opa_04{overflow-x: hidden; display: -ms-flexbox; display: flex; position: fixed; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; margin: 0 auto; height: auto; justify-content: center; align-items: center; 
+	text-align: center; background-color:rgba(40, 65, 80, 0.4);}
+
 .lp-wrap.lp-middle { justify-content: center; align-items: center; }
 .lp-container {  }
 .lp-btnBox { display: -ms-flexbox; display: flex; justify-content: space-between; margin: 53px -8px 0; }
@@ -1921,3 +1925,7 @@ button[disabled] { background-color: #f2f4f8; color: rgba(50,60,70,0.4); font: n
 .v-mob .network_area .img_network {width:77px}
 .v-tab .network_area .lc-alert_txt {font-size: 23px;}
 .v-tab .network_area .lp-btnBox .btn {font-size: 22px;}
+
+/*  연습장 Close BTN 추가  */
+.lp-btnBox .btn-wht_ble {padding:0 66px; height:50px; font-size:22px; line-height:30px; border-radius: 30px 30px; box-shadow: 0 2px 3px 0 rgb(0 45 100 / 16%);}
+	.v-mob .lp-btnBox .btn-wht_ble {padding:0 33px; height:34px}
