@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+        <div class="header_top gm">
+           <div class="inner">
+	            <div class="btns_wrap header-trans cls">
+                    <div class="app_btn">
+                        <button class="btn_exit" type="button">
+                            <img class="hide_m" src="./static/images/icon/ic_back@2x.png" alt="" />
+                            <img class="hide_pc hide_t" src="./static/images/icon/ic_back_dark.svg" alt="" />
+                        </button>
+                    </div>
+                    <div class="tit_gm center_tit24">입회 회원 인증</div>
+	            </div>
+           </div>
+        </div>
+
+		<div class="layout-def layout-sl bg_gray2">
+			<div class="container">
+				<div class="inner">
+                    <div class="tit_txt">AI바로셈 입회 시 기재하셨던 <br class="hide_pc hide_t" />부모 정보를 입력해 주세요.</div>
+                   
+                    <div class="wirte_form gm_ver w520 pb0">
+                        <form>
+                            <section>
+                                <div class="item">
+                                    <div class="input_title">이름</div>
+                                    <div class="input_cont h56">
+                                        <div class="input_box white_box">
+                                            <input type="text" placeholder="입회한 부모 이름을 입력" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="input_title">생년월일</div>
+                                    <div class="input_cont h56">
+                                        <div class="input_box white_box">
+                                            <input type="text" placeholder="생년월일 입력 (예 19810401)" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="input_title">휴대폰번호</div>
+                                    <div class="input_cont h56">
+                                        <div class="input_box white_box">
+                                            <input type="text" placeholder="-없이 휴대폰 번호 입력" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="terms_chk">
+                                <div class="chk_wrap">
+                                    <div>
+                                        <div class="custom-radio-wrap gray">
+                                            <input type="checkbox" id="input-chk1">
+                                            <label for="input-chk1">(필수) 웅진씽크빅 입회회원 서비스 제공<span class="hide_pc hide_t">에</span> 동의</label>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="toggle js_on">약관 토글버튼</button><!--클릭시 class on으로 제어하여 아이콘 모양 변환-->
+                                    </div>
+                                </div>
+                                <div class="txt_wrap"><!--약관 토글버튼 클릭시 class on으로 제어하여 노출 토글-->
+                                    <div class="box">
+                                        <div class="inner_cont">
+                                            1. 개인정보의 수집,이용 목적 : AI바로셈 입회 인증 및 조회<br />2. 수집하려는 개인정보의 항목 : 입회 계약 및 신청서에 기재한 부모의 성명 / 생년월일 / 휴대폰번호<br />3. 개인정보의 보유 및 이용 기간 : 원칙적으로 개인정보 수집 및 이용목적이 달성 된 후에는 해당 정보를 지체 없이 파기합니다.<br />4. 개인정보의 파기 : 수집 및 이용목적 달성 또는 보관 후 6개월 경과시, 동의철회를 하는 경우, 분쇄/소각 등 재생 불가능한 방법으로 지체 없이 파기합니다.<br />&nbsp;&nbsp;- 고객의 개인정보는 당사의기술적 관리적 보호조치에 따라 안전하게 보관됨을 알려드립니다.<br />5. 만 14세 미만의 미성년자 보호 : 아동의 서비스가입 시 고지한 범위 또는 이용약관에 명시한 범위를 넘어 아동의 개인정보를 이용하는 경우 아동의 법정대리인의 동의를 얻도록 하고 있습니다.<br />6. 위 내용에 대하여 동의를 거부할 권리가 있으며, 미동의시 입회조회가 제한될 수 있습니다.<br />&nbsp;&nbsp;- 고객의 개인정보 취급처리방침에 대한 자세한 내용은 당사 홈페이지 내 개인정보 취급처리방침을 참고 하시기 바랍니다.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="bottom_sticky">
+                        <div class="btn_cont">
+                            <button class="btn btn-blue">확인</button>
+                        </div>
+                        <div class="txt_cont">
+                            <p>인증이 안될 경우 고객센터(1577-1500)로 문의해 주세요.</p>
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //layout-def -->
+	</div>
+</div>
+
+<script>
+    $(document).on("click",".js_on",function(){
+        $(this).toggleClass('on');
+        $('.txt_wrap').toggleClass('on');
+    });
+</script>
+
+</body>
+</html>

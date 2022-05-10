@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+        <div class="header_top">
+            <div class="btns_wrap">
+                <div class="center_wrap cls">
+                    <div class="tit_area">
+	                    <button class="user_btn" type="button"><img src="./static/images/icon/account_sample@2x.png" alt="" /></button>
+                        <button class="tit_btn" type="button">마이</button>
+                    </div>
+                    <div class="right_area">
+                        <div class="menu_btn">
+                            <button class="head_btn" type="button"><img src="./static/images/icon/ic_menu_32@2x.png" alt="" /></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<div class="layout-def layout-lc layout-sl bg_gray">
+			<div class="container">
+				<div class="inner">
+                    <div class="wirte_form lr">
+                        <section class="w672">
+                            <form>
+                                <h2>회원정보</h2>
+                                <div class="item cls">
+                                    <div class="input_title">이메일</div>
+                                    <div class="input_cont">
+                                        <div class="txt">kimwoongjin@woongjin.net</div>
+                                    </div>
+                                </div>
+                                <div class="item cls">
+                                    <div class="input_title">비밀번호</div>
+                                    <div class="input_cont">
+                                        <div class="click_line">
+                                            <button class="mint_txt_btn">비밀번호 변경</button>
+                                        </div>
+                                    </div>
+                                    <div class="input_cont pw">
+                                        <!--비밀번호 변경 영역-->
+                                        <ul>
+                                            <li>
+                                                <div class="input_box white_box">
+                                                    <input type="password" placeholder="현재 비밀번호" />
+                                                    <div class="r_area">
+                                                        <button type="button"><img src="./static/images/icon/ic_check@2x.png" alt="" /></button>
+                                                    </div>
+                                                </div>
+                                                <div class="red_txt">비밀번호를 확인해 주세요.</div><!--경고문구 없는 경우는 이 줄을 지우면 됨-->
+                                            </li>
+                                            <li>
+                                                <div class="input_box white_box">
+                                                    <input type="password" placeholder="새 비밀번호 (8자 이상)" />
+                                                    <div class="r_area">
+                                                    <button type="button"><img src="./static/images/icon/ic_error@2x.png" alt="" /></button>
+                                                    </div>
+                                                </div>
+                                                <div class="red_txt">비밀번호는 8글자 이상이어야 합니다.</div>
+                                            </li>
+                                            <li>
+                                                <div class="input_box white_box">
+                                                    <input type="password" placeholder="새 비밀번호 재입력" />
+                                                    <div class="r_area">
+                                                    <button type="button"><img src="./static/images/icon/ic_error@2x.png" alt="" /></button>
+                                                    </div>
+                                                </div>
+                                                <div class="red_txt">입력한 비밀번호와 재입력한 비밀번호가 일치하지 않습니다.</div>
+                                            </li>
+                                        </ul>
+                                        <div class="btns cls">
+                                            <div class="left">
+                                                <button type="button" class="btn-small btn-gray">취소</button>
+                                            </div>
+                                            <div class="right">
+                                                <button disabled class="btn btn-blue">비밀번호 변경</button><!--disabled 여부에 따라 버튼 색 바뀜-->
+                                            </div>
+                                        </div>
+                                        <!--//비밀번호 변경 영역-->
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
+                        <section class="js_member_accordion no_border">
+                            <form class="w672 border">
+                                <h2>학습자 정보</h2>
+                                <div class="gray_noti">최소 1명은 등록되어 있어야 하며 최대 5명까지 추가할 수 있습니다.</div>
+                                <article class="edit_line cls">
+                                    <div class="part1 cls">
+                                        <div class="left">
+                                            <button type="button"><img width="40" src="./static/images/icon/ic_delete@2x.png" alt="" /></button>
+                                            <!--<img width="44" src="./static/images/tmp/ic_account_01@2x.png" alt="" />--><!--삭제버튼 대신 유저 이미지가 있는 경우-->
+                                        </div>
+                                        <div class="right">
+                                            <input type="text" value="김웅진" />
+                                        </div>
+                                    </div>
+                                    <div class="part2">
+                                        <div class="upper cls">
+                                            <input type="text" value="2010년  08월" />
+                                            <div class="gender white cls">
+                                                <div class="box_radio">
+                                                    <input checked type="radio" name="gender" id="male" />
+                                                    <label for="male">남</label>
+                                                </div>
+                                                <div class="box_radio">
+                                                    <input type="radio" name="gender" id="female" />
+                                                    <label for="female">여</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lower">
+                                            <div class="red_txt">생년월 정보는 수정할 수 없습니다.</div>
+                                        </div>
+                                    </div>
+                                    <div class="part3 cls">
+                                        <button type="button" class="btn btn-gray">취소</button>
+                                        <button type="button" class="btn btn-blue">수정</button>
+                                    </div>
+                                </article>
+                                <article class="mem_line cls">
+                                    <div class="part1 cls">
+                                        <div class="left"><img width="44" src="./static/images/tmp/ic_account_01@2x.png" alt="" /></div>
+                                        <div class="right">김철수</div>
+                                    </div>
+                                    <div class="part2 cls">
+                                        <div class="left">
+                                            <span>2012년</span>
+                                            <span class="month">11월</span>
+                                            <span>남자</span>
+                                        </div>
+                                        <div class="right">
+                                            <button>수정</button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="mem_line cls">
+                                    <div class="part1 cls">
+                                        <div class="left"><img width="44" src="./static/images/tmp/ic_account_01@2x.png" alt="" /></div>
+                                        <div class="right">김수영</div>
+                                    </div>
+                                    <div class="part2 cls">
+                                        <div class="left cls">
+                                            <span>2012년</span>
+                                            <span class="month">11월</span>
+                                            <span>여자</span>
+                                        </div>
+                                        <div class="right">
+                                            <button class="off">수정</button><!--비활성 class off-->
+                                        </div>
+                                    </div>
+                                </article>
+                                <div class="lower_btn_wrap">
+                                    <button type="button" disabled class="btn btn-blue">+ 학습자 추가</button><!--학습자는 최대 5명. 5명이 채워지면 disabled 돼야 함-->
+                                </div>
+                            </form>
+                            <form>
+                                <div class="add_mem">
+                                    <div class="box">
+                                        <div class="title">추가할 학습자 정보를 등록해 주세요.</div>
+                                        <input type="text" placeholder="학습자 이름 입력" />
+                                        <div class="lower_cont cls">
+                                            <div class="new-select new-select-white">
+                                                <div class="selected_txt first"><span class="hide_m">출생</span>년도</div>
+                                                <div class="select_option">
+                                                    <ul>
+                                                        <li><button type="button">2003년</button></li>
+                                                        <li><button type="button" class="selected">2004년</button></li>
+                                                        <li><button type="button">2005년</button></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="new-select new-select-white">
+                                                <div class="selected_txt first">월</div>
+                                                <div class="select_option">
+                                                    <ul>
+                                                        <li><button type="button">1월</button></li>
+                                                        <li><button type="button" class="selected">2월</button></li>
+                                                        <li><button type="button">3월</button></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="gender white cls">
+                                                <div class="box_radio">
+                                                    <input type="radio" name="gender1" id="male1" />
+                                                    <label for="male1">남</label>
+                                                </div>
+                                                <div class="box_radio">
+                                                    <input type="radio" name="gender1" id="female1" />
+                                                    <label for="female1">여</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btns_cont cls">
+                                        <button class="btn btn-gray">취소</button>
+                                        <button disabled class="btn btn-blue">+ 학습자 추가</button><!--추가 불가능할 때는 disabled-->
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
+                        <section class="w672 policy_sec">
+                            <h2>약관 및 정책</h2>
+                            <ul>
+                                <li><a href="#null">이용약관</a></li>
+                                <li><a href="#null">개인정보처리방침</a></li>
+                            </ul>
+                        </section>
+                        <section class="w672 withdraw_sec cls">
+                            <div class="left">탈퇴를 원하시면 우측의 회원탈퇴 버튼을 눌러주세요</div>
+                            <div class="right"><a href="#null">회원탈퇴</a></div>
+                        </section>
+                        <div class="logout w672">
+            				<button class="btn btn-white">로그아웃</button>
+                        </div>
+                    </div>
+                    
+                    <div class="pc-footer">
+                        pc에만 나타나는 푸터영역 (내용 미확정)
+                    </div>
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //layout-def -->
+	</div>
+</div>
+
+</body>
+</html>

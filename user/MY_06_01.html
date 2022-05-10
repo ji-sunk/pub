@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab
+	3. pc : v-pc
+ -->
+
+<!--이 페이지는 웅진태블릿 버전만 있음(현재 pc와 태블릿에서는 잘 나오게 작업 돼 있으나 아이패드 768크기는 고려하지 않음)-->
+
+<div class="wrap">
+	<div class="wrap-inner">
+		<div class="layout-def layout-lc bg_gray2">
+			<div class="header">
+				<div class="inner">
+					<div class="headerBox">
+						<div class="headerBox_head">
+							<h1 class="tit">APP 계정 신청</h1>
+							<button class="btn-close-wrap">닫기</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div class="container">
+				<div class="inner">
+                    <div class="app_txt_wrap">
+                        <div class="txt">
+                            <p>이메일과 비밀번호를 설정하시면<br />북클럽 패드 외에 <b>모든 기기에서 자유롭게</b> 학습하실 수 있습니다.</p>
+                            <div class="ballon">구글 플레이에서 'AI바로셈' 다운로드!</div>
+                        </div>
+                    </div>
+                    <div class="wirte_form gm_ver w520 pb0">
+                        <form>
+                            <section>
+                                <div class="item">
+                                    <div class="input_title">이메일</div>
+                                    <div class="input_cont h56">
+                                        <div class="input_box white_box">
+                                            <input type="text" placeholder="이메일을 입력해 주세요." />
+                                            <div class="r_area">
+                                                <img src="./static/images/icon/ic_check.svg" alt="" />
+                                                <button type="button"><img src="./static/images/icon/input_delete_40.svg" alt="" /><img src="./static/images/icon/ic_error.svg" alt="" /></button>
+                                            </div>
+                                        </div>
+                                        <div class="info_txt red">인증 메일이 도착하지 않는다면 스팸메일함을 확인해 주세요.</div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="input_title">비밀번호</div>
+                                    <div class="input_cont h56">
+                                        <ul>
+                                            <li>
+                                                <div class="input_box white_box">
+                                                    <input type="password" placeholder="영문, 숫자, 특수문자를 조합하여 8자 이상 입력해 주세요." />
+                                                    <div class="r_area">
+                                                        <img src="./static/images/icon/ic_check.svg" alt="" />
+                                                        <button type="button"><img src="./static/images/icon/input_delete_40.svg" alt="" /><img src="./static/images/icon/ic_error.svg" alt="" /></button>
+                                                    </div>
+                                                </div>
+                                                <div class="info_txt red">영문, 숫자, 특문 포함 8글자 이상이어야 합니다.</div><!--경고문구 없는 경우는 이 줄을 지우면 됨-->
+                                            </li>
+                                            <li>
+                                                <div class="input_box white_box">
+                                                    <input type="password" placeholder="비밀번호를 동일하게 한 번 더 입력해 주세요." />
+                                                    <div class="r_area">
+                                                        <img src="./static/images/icon/ic_check.svg" alt="" />
+                                                        <button type="button"><img src="./static/images/icon/input_delete_40.svg" alt="" /><img src="./static/images/icon/ic_error.svg" alt="" /></button>
+                                                    </div>
+                                                </div>
+                                                <div class="info_txt red">입력한 비밀번호와 재입력한 비밀번호가 일치하지 않습니다.</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                        </form>
+                    </div>
+                    <div class="page_lower_wrap mt40">
+                        <div class="w520">
+                            <button class="btn btn-blue">신청하기</button>
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //layout-def -->
+	</div>
+</div>
+
+</body>
+</html>

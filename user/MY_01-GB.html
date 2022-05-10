@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+        <div class="header_top gb">
+           <div class="inner">
+	            <div class="btns_wrap cls">
+                    <div class="app_btn">
+                        <button class="btn_exit" type="button">
+                            <img src="./static/images/icon/btn_back.svg" alt="" />
+                        </button>
+                    </div>
+                    <div class="tit_gm center_tit24">비밀번호 찾기</div>
+	            </div>
+           </div>
+        </div>
+        
+		<div class="layout-def log_in pw gb">
+			<div class="container">
+				<div class="inner">
+                    <div class="center_wrap">
+                        <div class="logo_wrap">
+                            <div class="logo">
+                                <img src="./static/images/common/img_pw@2x.png" alt="" /><!--로고 미정-->
+                            </div>
+                        </div>
+                        <div class="noti_wrap">
+                            <div class="noti1">개인정보 보호를 위하여<br />임시 비밀번호를 발급하여 드립니다.</div>
+                            <div class="noti2">가입 시 이메일 주소를 입력해 주세요.</div>
+                        </div>
+                        <div class="input_wrap">
+                            <form>
+                                <article>
+                                    <div class="input_box soft_white_box">
+                                        <input type="text" placeholder="이메일 주소 입력" />
+                                        <!--입력값이 생기면 나타나고, 빈값이면 없어는 영역-->
+                                        <div class="r_area">
+                                            <button type="button"><img width="40" src="./static/images/icon/ic_error2@2x.png" alt="" /></button>
+                                        </div>
+                                        <!--//입력값이 생기면 나타나고, 빈값이면 없어는 영역-->
+                                    </div>
+                                    <div class="red_txt fs14">올바른 이메일 형식이 아닙니다. 예)abc@abc.com</div>
+                                </article>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="bottom_wrap btn_wrap static">
+                        <a href="#null" class="btn btn-white">이메일로 임시 비밀번호 받기</a>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

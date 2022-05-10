@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+        <div class="header_top bg_white gm">
+           <div class="inner">
+	            <div class="btns_wrap header-trans cls">
+                    <div class="center_wrap cls pc_w1400">
+                        <div class="tit_area">
+                            <button class="sky btn_exit hide_pc hide_m" type="button"><img src="./static/images/icon/ic_back@2x.png" alt="" /></button>
+                            <button class="btn_exit3 hide_pc hide_t" type="button"><img src="./static/images/icon/ic_ar_left.svg" alt="" /></button>
+                            <button class="tit_btn" type="button">진도학습</button>
+                        </div>
+                        <div class="right_area">
+                            <div class="menu_btn">
+                                <button class="head_btn purple" type="button"><img src="./static/images/icon/ic_gm_note_2@2x.png" alt="" /></button>
+                                <button class="head_btn" type="button"><img src="./static/images/icon/ic_mn_w@2x.png" alt="" /></button>
+                            </div>
+                        </div>
+                    </div>
+	            </div>
+            </div>
+        </div>
+
+		<div class="layout-def tab-wrap layout-sl layout-my bg_gray2">
+			<div class="header bg_white">
+                <div class="header_tab2 blue w128">
+                    <ul class="tablist cls">
+                        <li><a href="#tabCont1" class="active">바로셈 진도</a></li>
+                        <li><a href="#tabCont2">교과수학 진도</a></li>
+                    </ul>
+                </div>
+			</div>
+			<div class="container h_auto">
+				<div class="inner">
+                    <!--학습-->
+                    <div class="tabCont active" id="tabCont1">
+                        <div class="select_wrap">
+                            <div class="area">
+                                <div class="new-select m_40">
+                                    <div class="selected_txt first">단계</div>
+                                    <div class="select_option">
+                                        <ul>
+                                            <!-- <li><button type="button" class="selected">2002년</button></li> --> <!-- 미리 선택된 경우 -->
+                                            <li><button type="button">1</button></li>
+                                            <li><button type="button">2</button></li>
+                                            <li><button type="button">3</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="area">
+                                <div class="new-select m_40">
+                                    <div class="selected_txt first">호</div>
+                                    <div class="select_option">
+                                        <ul>
+                                            <!-- <li><button type="button" class="selected">2002년</button></li> --> <!-- 미리 선택된 경우 -->
+                                            <li><button type="button">a</button></li>
+                                            <li><button type="button">b</button></li>
+                                            <li><button type="button">c</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="area area3">
+                				<button class="btn btn-blue h48">확인</button>
+                            </div> -->
+                        </div>
+                        
+                        <div class="progress_study">
+                            <!--미선택 시-->
+                            <div class="empty">
+                                <span>단계 / 호를 선택해 주세요.</span>
+                            </div>
+                            <!--//미선택 시-->
+                            
+						<div class="sl-section">
+                            <ul class="sl-section_list gm">
+                                <li>
+                                    <a href="#">
+                                        <div class="sl-calcBox">
+                                            <!-- 1. 노력 -->
+                                            <span class="ico ico-effort"></span>
+                                            <!-- 2. 기본 -->
+                                            <!-- <span class="ico ico-def"></span> -->
+                                            <!-- 3. 충분 -->
+                                            <!-- <span class="ico ico-enough"></span> -->
+                                            <!-- 4. 훌륭 -->
+                                            <!-- <span class="ico ico-nice"></span> -->
+                                            수식영역
+                                        </div>
+                                    </a>
+                                    <div class="sl-txtBox">
+                                        <p class="sl-txtBox_txt">
+                                            <a href="#null">받아올림이 없는 덧셈(3)</a>
+                                        </p>
+                                        <p class="sl-txtBox_date">
+                                            <span>2020.09.08</span>
+                                            <span class="bar">세로선</span>
+                                            <a href="#null">개념확인</a>
+                                        </p>
+                                    </div>
+                                    
+                                    
+                                    <!-- 말풍선 영역 시작 -->
+                                    <div class="tooltip-def tooltipBox active">
+                                        <!-- 1. 마지막으로 학습한 소주제로 자동 랜딩되며 출력되는 학습안내 풍선 메시지 -->
+                                        <p>
+                                            마지막으로<br>
+                                            학습한 스테이지야.
+                                            <button class="btn-closeTooltip btn-close-tooltip"></button>
+                                        </p>
+                                        <!-- 2. 코스학습에서 노력3회로 추천주제학습으로 이동되었을 때 출력되는 풍선 메시지 -->
+                                        <!-- <p>
+                                            AI가 추천하는<br>
+                                            학습 스테이지야.
+                                        </p> -->
+                                    </div>
+                                    <!-- //말풍선 영역 끝 -->
+                                    
+                                    
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="sl-calcBox">
+                                            <!-- 1. 노력 -->
+                                            <!-- <span class="ico ico-effort"></span> -->
+                                            <!-- 2. 기본 -->
+                                            <span class="ico ico-def"></span>
+                                            <!-- 3. 충분 -->
+                                            <!-- <span class="ico ico-enough"></span> -->
+                                            <!-- 4. 훌륭 -->
+                                            <!-- <span class="ico ico-nice"></span> -->
+                                            수식영역
+                                        </div>
+                                    </a>
+                                    <div class="sl-txtBox">
+                                        <p class="sl-txtBox_txt">
+                                            <a href="#null">(두, 세 자리 수)×100, 1000, 10000</a>
+                                        </p>
+                                        <p class="sl-txtBox_date">
+                                            <span>2020.09.08</span>
+                                            <span class="bar">세로선</span>
+                                            <a href="#null">개념확인</a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="sl-calcBox">
+                                            <!-- 1. 노력 -->
+                                            <!-- <span class="ico ico-effort"></span> -->
+                                            <!-- 2. 기본 -->
+                                            <!-- <span class="ico ico-def"></span> -->
+                                            <!-- 3. 충분 -->
+                                            <span class="ico ico-enough"></span>
+                                            <!-- 4. 훌륭 -->
+                                            <!-- <span class="ico ico-nice"></span> -->
+                                            수식영역
+                                        </div>
+                                    </a>
+                                    <div class="sl-txtBox">
+                                        <p class="sl-txtBox_txt">
+                                            <a href="#null">(두, 세 자리 수)×100, 1000, 10000</a>
+                                        </p>
+                                        <p class="sl-txtBox_date">
+                                            <a href="#null">개념확인</a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="sl-calcBox">
+                                            <!-- 1. 노력 -->
+                                            <!-- <span class="ico ico-effort"></span> -->
+                                            <!-- 2. 기본 -->
+                                            <!-- <span class="ico ico-def"></span> -->
+                                            <!-- 3. 충분 -->
+                                            <!-- <span class="ico ico-enough"></span> -->
+                                            <!-- 4. 훌륭 -->
+                                            <span class="ico ico-nice"></span>
+                                            수식영역
+                                        </div>
+                                    </a>
+                                    <div class="sl-txtBox">
+                                        <p class="sl-txtBox_txt">
+                                            <a href="#null">(두, 세 자리 수)×100, 1000, 10000</a>
+                                        </p>
+                                        <p class="sl-txtBox_date">
+                                            <a href="#null">개념확인</a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="sl-calcBox">
+                                            <!-- 1. 노력 -->
+                                            <span class="ico ico-effort"></span>
+                                            <!-- 2. 기본 -->
+                                            <!-- <span class="ico ico-def"></span> -->
+                                            <!-- 3. 충분 -->
+                                            <!-- <span class="ico ico-enough"></span> -->
+                                            <!-- 4. 훌륭 -->
+                                            <!-- <span class="ico ico-nice"></span> -->
+                                            수식영역
+                                        </div>
+                                    </a>
+                                    <div class="sl-txtBox">
+                                        <p class="sl-txtBox_txt">
+                                            <a href="#null">(두, 세 자리 수)×100, 1000, 10000</a>
+                                        </p>
+                                        <p class="sl-txtBox_date">
+                                            <span>2020.09.08</span>
+                                            <span class="bar">세로선</span>
+                                            <a href="#null">개념확인</a>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--교과수학 진도-->
+                    <div class="tabCont" id="tabCont2">
+                        <div class="select_wrap wrap2">
+                            <div class="area">
+                                <div class="new-select m_40">
+                                    <div class="selected_txt first">학년 학기</div>
+                                    <div class="select_option">
+                                        <ul>
+                                            <!-- <li><button type="button" class="selected">2002년</button></li> --> <!-- 미리 선택된 경우 -->
+                                            <li><button type="button">1</button></li>
+                                            <li><button type="button">2</button></li>
+                                            <li><button type="button">3</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="area area2">
+                                <div class="new-select m_40">
+                                    <div class="selected_txt first">단원</div>
+                                    <div class="select_option">
+                                        <ul>
+                                            <!-- <li><button type="button" class="selected">2002년</button></li> --> <!-- 미리 선택된 경우 -->
+                                            <li><button type="button">6단원 일차함수와 일차방정식의 관계</button></li><!--가장 긴 단원명은 "6단원 일차함수와 일차방정식의 관계"-->
+                                            <li><button type="button">b</button></li>
+                                            <li><button type="button">c</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="area area3">
+                				<button class="btn btn-blue h48">확인</button>
+                            </div> -->
+                        </div>
+                        
+                        <div class="progress_study">
+                            <!--미선택 시-->
+                            <div class="empty">
+                                <span>학년 / 학기를 선택해 주세요.</span>
+                            </div>
+                            <!--//미선택 시-->
+                            
+                            <ul class="sl-section_list gm">
+                                <li>
+                                    <a href="#">
+                                        <div class="sl-calcBox">
+                                            <!-- 1. 노력 -->
+<!--                                            <span class="ico ico-effort"></span>-->
+                                            <!-- 2. 기본 -->
+                                             <span class="ico ico-def"></span> 
+                                            <!-- 3. 충분 -->
+                                            <!-- <span class="ico ico-enough"></span> -->
+                                            <!-- 4. 훌륭 -->
+                                            <!-- <span class="ico ico-nice"></span> -->
+                                            수식영역
+                                        </div>
+                                    </a>
+                                    <div class="sl-txtBox">
+                                        <p class="sl-txtBox_txt">
+                                            <a href="#null">받아올림이 없는 덧셈(3)</a>
+                                        </p>
+                                        <p class="sl-txtBox_date">
+                                            <span>2020.09.08</span>
+                                            <span class="bar">세로선</span>
+                                            <a href="#null">개념확인</a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="sl-calcBox">
+                                            <!-- 1. 노력 -->
+                                            <!-- <span class="ico ico-effort"></span> -->
+                                            <!-- 2. 기본 -->
+<!--                                            <span class="ico ico-def"></span>-->
+                                            <!-- 3. 충분 -->
+                                             <span class="ico ico-enough"></span> 
+                                            <!-- 4. 훌륭 -->
+                                            <!-- <span class="ico ico-nice"></span> -->
+                                            수식영역
+                                        </div>
+                                    </a>
+                                    <div class="sl-txtBox">
+                                        <p class="sl-txtBox_txt">
+                                            <a href="#null">(두, 세 자리 수)×100, 1000, 10000</a>
+                                        </p>
+                                        <p class="sl-txtBox_date">
+                                            <span>2020.09.08</span>
+                                            <span class="bar">세로선</span>
+                                            <a href="#null">개념확인</a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="sl-calcBox">
+                                            <!-- 1. 노력 -->
+                                            <!-- <span class="ico ico-effort"></span> -->
+                                            <!-- 2. 기본 -->
+                                            <!-- <span class="ico ico-def"></span> -->
+                                            <!-- 3. 충분 -->
+                                            <span class="ico ico-enough"></span>
+                                            <!-- 4. 훌륭 -->
+                                            <!-- <span class="ico ico-nice"></span> -->
+                                            수식영역
+                                        </div>
+                                    </a>
+                                    <div class="sl-txtBox">
+                                        <p class="sl-txtBox_txt">
+                                            <a href="#null">(두, 세 자리 수)×100, 1000, 10000</a>
+                                        </p>
+                                        <p class="sl-txtBox_date">
+                                            <a href="#null">개념확인</a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="sl-calcBox">
+                                            <!-- 1. 노력 -->
+                                            <!-- <span class="ico ico-effort"></span> -->
+                                            <!-- 2. 기본 -->
+                                            <!-- <span class="ico ico-def"></span> -->
+                                            <!-- 3. 충분 -->
+                                            <!-- <span class="ico ico-enough"></span> -->
+                                            <!-- 4. 훌륭 -->
+                                            <span class="ico ico-nice"></span>
+                                            수식영역
+                                        </div>
+                                    </a>
+                                    <div class="sl-txtBox">
+                                        <p class="sl-txtBox_txt">
+                                            <a href="#null">(두, 세 자리 수)×100, 1000, 10000</a>
+                                        </p>
+                                        <p class="sl-txtBox_date">
+                                            <a href="#null">개념확인</a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="sl-calcBox">
+                                            <!-- 1. 노력 -->
+                                            <span class="ico ico-effort"></span>
+                                            <!-- 2. 기본 -->
+                                            <!-- <span class="ico ico-def"></span> -->
+                                            <!-- 3. 충분 -->
+                                            <!-- <span class="ico ico-enough"></span> -->
+                                            <!-- 4. 훌륭 -->
+                                            <!-- <span class="ico ico-nice"></span> -->
+                                            수식영역
+                                        </div>
+                                    </a>
+                                    <div class="sl-txtBox">
+                                        <p class="sl-txtBox_txt">
+                                            <a href="#null">(두, 세 자리 수)×100, 1000, 10000</a>
+                                        </p>
+                                        <p class="sl-txtBox_date">
+                                            <span>2020.09.08</span>
+                                            <span class="bar">세로선</span>
+                                            <a href="#null">개념확인</a>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //layout-def -->
+		
+	</div>
+</div>
+
+</body>
+</html>

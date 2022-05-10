@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+        <div class="header_top">
+            <div class="btns_wrap">
+                <div class="center_wrap cls">
+                    <div class="tit_area">
+                        <button class="tit_btn" type="button">회원가입</button>
+                    </div>
+                    <div class="right_area">
+                        <div class="menu_btn">
+                            <button class="head_btn" type="button"><img src="./static/images/icon/ic_menu_32@2x.png" alt="" /></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<div class="layout-def layout-lc layout-sl bg_gray">
+			<div class="container">
+				<div class="inner">
+                    <div class="wirte_form w672">
+                        <form>
+                            <section>
+                                <h2>가입자 정보 입력</h2>
+                                <div class="item">
+                                    <div class="input_title">이메일</div>
+                                    <div class="input_cont">
+                                        <div class="input_box white_box">
+                                            <input type="text" placeholder="이메일 주소 입력" />
+                                            <!--입력값이 생기면 나타나고, 빈값이면 없어는 영역-->
+                                            <div class="r_area">
+                                                <button type="button"><img width="40" src="./static/images/icon/ic_error@2x.png" alt="" /></button>
+                                            </div>
+                                            <!--//입력값이 생기면 나타나고, 빈값이면 없어는 영역-->
+                                        </div>
+                                        <div class="red_txt fs12_10">올바른 이메일 형식이 아닙니다. 예)abc@abc.com</div><!--경고문구 없는 경우는 이 줄을 지우면 됨-->
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="input_title">비밀번호</div>
+                                    <div class="input_cont">
+                                        <div class="input_box white_box">
+                                            <input type="password" placeholder="비밀번호 입력 (영문,숫자,특문 포함 8글자 이상)" />
+                                            <!--입력값이 생기면 나타나고, 빈값이면 없어는 영역-->
+                                            <div class="r_area">
+                                                <button type="button"><img width="40" src="./static/images/icon/ic_check@2x.png" alt="" /></button>
+                                            </div>
+                                            <!--//입력값이 생기면 나타나고, 빈값이면 없어는 영역-->
+                                        </div>
+                                        <div class="input_box white_box">
+                                            <input type="password" placeholder="비밀번호 입력 (영문,숫자,특문 포함 8글자 이상)" />
+                                            <!--입력값이 생기면 나타나고, 빈값이면 없어는 영역-->
+                                            <div class="r_area">
+                                                <button type="button"><img width="40" src="./static/images/icon/ic_check@2x.png" alt="" /></button>
+                                            </div>
+                                            <!--//입력값이 생기면 나타나고, 빈값이면 없어는 영역-->
+                                        </div>
+                                        <div class="red_txt fs12_10">영문, 숫자, 특문 포함 8글자 이상이어야 합니다.</div><!--경고문구 없는 경우는 이 줄을 지우면 됨-->
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section>
+                                <h2>학습자 정보 입력</h2>
+                                <div class="item">
+                                    <div class="input_title">이름</div>
+                                    <div class="input_cont">
+                                        <div class="input_box white_box">
+                                            <input type="text" placeholder="이름 입력" />
+                                        </div>
+                                        <div class="select_area cls">
+                                            <div class="area1 cls">
+                                                <div class="new-select">
+                                                    <div class="selected_txt">출생년도</div>
+                                                    <div class="select_option">
+                                                        <ul>
+                                                            <li><button type="button" class="selected">2001년</button></li>
+                                                            <li><button type="button">2002년</button></li>
+                                                            <li><button type="button">2003년</button></li>
+                                                            <li><button type="button">2004년</button></li>
+                                                            <li><button type="button">2005년</button></li>
+                                                            <li><button type="button">2006년</button></li>
+                                                            <li><button type="button">2007년</button></li>
+                                                            <li><button type="button">2008년</button></li>
+                                                            <li><button type="button">2009년</button></li>
+                                                            <li><button type="button">2010년</button></li>
+                                                            <li><button type="button">2011년</button></li>
+                                                            <li><button type="button">2012년</button></li>
+                                                            <li><button type="button">2013년</button></li>
+                                                            <li><button type="button">2014년</button></li>
+                                                            <li><button type="button">2015년</button></li>
+                                                            <li><button type="button">2016년</button></li>
+                                                            <li><button type="button">2017년</button></li>
+                                                            <li><button type="button">2018년</button></li>
+                                                            <li><button type="button">2019년</button></li>
+                                                            <li><button type="button">2020년</button></li>
+                                                            <li><button type="button">2021년</button></li>
+                                                            <li><button type="button">2022년</button></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="new-select selct2">
+                                                    <div class="selected_txt">월</div>
+                                                    <div class="select_option">
+                                                        <ul>
+                                                            <li><button type="button">1월</button></li>
+                                                            <li><button type="button">2월</button></li>
+                                                            <li><button type="button" class="selected">3월</button></li>
+                                                            <li><button type="button">4월</button></li>
+                                                            <li><button type="button">5월</button></li>
+                                                            <li><button type="button">6월</button></li>
+                                                            <li><button type="button">7월</button></li>
+                                                            <li><button type="button">8월</button></li>
+                                                            <li><button type="button">9월</button></li>
+                                                            <li><button type="button">10월</button></li>
+                                                            <li><button type="button">11월</button></li>
+                                                            <li><button type="button">12월</button></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="area2 cls">
+                                                <div class="box_radio">
+                                                    <input type="radio" name="gender" id="male" />
+                                                    <label for="male">남</label>
+                                                </div>
+                                                <div class="box_radio">
+                                                    <input type="radio" name="gender" id="female" />
+                                                    <label for="female">여</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="notice">※ 회원가입 후 학습자를 추가할 수 있습니다.</div>
+                            </section>
+                        </form>
+                        <div class="bottom_btn_wrap cls">
+                            <div class="left">
+                                <button type="button" class="btn-small btn-gray btn-left"><span>이전</span></button>
+                            </div>
+                            <div class="right">
+                                <button disabled class="btn btn-blue">회원가입 완료</button><!--disabled 상태에 따라 버튼 색 바뀜-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pc-footer">
+                        pc에만 나타나는 푸터영역 (내용 미확정)
+                    </div>
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //layout-def -->
+		
+	</div>
+</div>
+
+</body>
+</html>

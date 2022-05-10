@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+        <div class="header_top gb bg_sky">
+           <div class="inner">
+	            <div class="btns_wrap cls">
+                    <div class="app_btn">
+                        <button class="btn_exit" type="button">
+                            <img src="./static/images/icon/btn_back.svg" alt="" />
+                        </button>
+                    </div>
+                    <div class="tit_gm center_tit24">회원 가입</div>
+	            </div>
+           </div>
+        </div>
+
+		<div class="layout-def layout-sl bg_gray gb">
+			<div class="container">
+				<div class="inner">
+                    <div class="wirte_form w672">
+                        <form>
+                            <section>
+                                <div class="step">STEP 1</div>
+                                <h2>회원 정보를 입력해 주세요.</h2>
+                                <div class="item">
+                                    <div class="input_title">이메일</div>
+                                    <div class="input_cont">
+                                        <div class="lr_wrap">
+                                            <div class="input_box white_box">
+                                                <input type="text" placeholder="이메일 주소 입력" />
+                                                <div class="r_area">
+                                                    <img src="./static/images/icon/ic_check.svg" alt="" />
+                                                    <button type="button"><img src="./static/images/icon/ic_error.svg" alt="" /></button>
+                                                </div>
+                                            </div>
+                                            <div class="right_area">
+                                                <button class="btn btn-blue m_txt" disabled>인증받기</button>
+                                                <button class="btn btn-gray m_txt">재발송</button>
+                                            </div>
+                                        </div>
+                                        <div class="red_txt fs12_10">올바른 이메일 형식이 아닙니다. 예)abc@abc.com</div><!--경고문구 없는 경우는 이 줄을 지우면 됨-->
+                                        <div class="input_box white_box">
+                                            <input type="text" placeholder="인증번호 4자리" />
+                                            <div class="r_area">
+                                                <img src="./static/images/icon/ic_check.svg" alt="" />
+                                                <button type="button"><img src="./static/images/icon/ic_error.svg" alt="" /></button>
+                                            </div>
+                                        </div>
+                                        <div class="red_txt fs12_10">인증 메일이 도착하지 않는다면 스펨메일함을 확인해 주세요.</div><!--경고문구 없는 경우는 이 줄을 지우면 됨-->
+                                        <div class="input_box white_box">
+                                            <input type="text" value="abc@abc.com" />
+                                            <div class="r_area">
+                                                <img src="./static/images/icon/ic_check.svg" alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="input_title">비밀번호</div>
+                                    <div class="input_cont">
+                                        <div class="input_box white_box">
+                                            <input type="password" placeholder="비밀번호 입력 (6자 이상)" />
+                                            <div class="r_area">
+                                                <button type="button">
+                                                    <img src="./static/images/icon/btn_join_eye_on.svg" alt="" />
+                                                    <img src="./static/images/icon/btn_join_eye_off.svg" alt="" />
+                                                </button>
+                                                <img src="./static/images/icon/ic_check.svg" alt="" />
+                                                <button type="button"><img src="./static/images/icon/ic_error.svg" alt="" /></button>
+                                            </div>
+                                        </div>
+                                        <div class="red_txt fs12_10">비밀번호는 6자 이상 입력해 주세요.</div><!--경고문구 없는 경우는 이 줄을 지우면 됨-->
+                                        <div class="input_box white_box">
+                                            <input type="password" placeholder="비밀번호 확인" />
+                                            <div class="r_area">
+                                                <button type="button">
+                                                    <img src="./static/images/icon/btn_join_eye_on.svg" alt="" />
+                                                    <img src="./static/images/icon/btn_join_eye_off.svg" alt="" />
+                                                </button>
+                                                <img src="./static/images/icon/ic_check.svg" alt="" />
+                                                <button type="button"><img src="./static/images/icon/ic_error.svg" alt="" /></button>
+                                            </div>
+                                        </div>
+                                        <div class="red_txt fs12_10">비밀번호가 일치하지 않습니다.</div><!--경고문구 없는 경우는 이 줄을 지우면 됨-->
+                                    </div>
+                                </div>
+                            </section>
+                        </form>
+                        <div class="bottom_btn_wrap cls">
+                            <div class="left">
+                                <button type="button" class="btn-small btn-gray btn-left"><span>이전</span></button>
+                            </div>
+                            <div class="right">
+                                <button disabled class="btn btn-blue">다음</button>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //layout-def -->
+	</div>
+</div>
+
+</body>
+</html>

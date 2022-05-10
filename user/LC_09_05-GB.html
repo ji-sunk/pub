@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+    <script src="static/js/lottie.js"></script>
+	<script src="static/js/ui.js"></script>
+    <script src="static/js/slick.min.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+		<div class="layout-def bg_gray ocr_slide header_absolute gb">
+			<div class="header bg_sky header_white_font">
+				<div class="inner">
+					<div class="headerBox center">
+                        <div class="headerBox_head">
+                            <h1 class="tit">OCR 학습 사용법</h1>
+                            <button class="btn-close-wrap">닫기</button>
+                        </div>
+					</div>
+				</div>
+			</div>
+		
+			<div class="container">
+				<div class="inner">
+                    <div class="slide_cont">
+                        <div class="slick_slider js_slick">
+                            <div class="slide_wrap">
+                                <div class="slide_sheet">
+                                    <div class="tit">
+                                        <div class="num">
+                                            <img src="./static/images/icon/ic_ocr_num_1.svg" alt="">
+                                        </div>
+                                        <div class="txt">이럴 때 활용해보세요!</div>
+                                    </div>
+                                    <div class="cont box_type1">
+                                        <article>
+                                            <p>헷갈리는 개념을 확인하고 싶을 때</p>
+                                        </article>
+                                        <article class="box2">
+                                            <p>계속해서 틀리는 문제<br class="hide_m" />유사 문제를 더 풀고 싶을 때</p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide_wrap">
+                                <div class="slide_sheet">
+                                    <div class="tit">
+                                        <div class="num">
+                                            <img src="./static/images/icon/ic_ocr_num_2.svg" alt="">
+                                        </div>
+                                        <div class="txt">화면의 초점을 맞춰 주세요.</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="img_box">
+                                            <div class="box_inner">
+                                                <div class="anim-wrap" id="img_ocr_manual_2"></div>
+                                                <script>
+                                                    func_animation('img_ocr_manual_2', 'img_ocr_manual_2', true);
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide_wrap">
+                                <div class="slide_sheet">
+                                    <div class="tit">
+                                        <div class="num">
+                                            <img src="./static/images/icon/ic_ocr_num_3.svg" alt="">
+                                        </div>
+                                        <div class="txt">여러 문제 중 한 문제만 선택해 주세요.</div>
+                                    </div>
+                                    <div class="cont">
+                                        <div class="img_box">
+                                            <div class="box_inner">
+                                                <div class="anim-wrap" id="img_ocr_manual_3"></div>
+                                                <script>
+                                                    func_animation_delay('img_ocr_manual_3', 'img_ocr_manual_3', true);
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide_wrap">
+                                <div class="slide_sheet">
+                                    <div class="tit">
+                                        <div class="num">
+                                            <img src="./static/images/icon/ic_ocr_num_4.svg" alt="">
+                                        </div>
+                                        <div class="txt">이런 문제는 인식하기 어려워요.</div>
+                                    </div>
+                                    <div class="cont box_type2">
+                                        <article class="box1">
+                                            <p>표나 이미지가 들어간 문제</p>
+                                        </article>
+                                        <article class="box2">
+                                            <p>서술형 문제</p>
+                                        </article>
+                                        <article class="box3">
+                                            <p>손으로 필기한 문제</p>
+                                        </article>
+                                        <article class="box4">
+                                            <p>점선이 있거나 계산 과정을 쓴 문제</p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+$(function(){
+    $('.v-pc .js_slick, .v-tab .js_slick').slick({ //모바일에서는 슬라이드 기능 없음
+        dots: true,
+        arrows: false
+    });
+});
+</script>
+
+</body>
+</html>

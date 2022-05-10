@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+        <div class="header_top">
+            <div class="btns_wrap">
+                <div class="center_wrap cls">
+                    <div class="tit_area">
+	                    <button class="user_btn" type="button"><img src="./static/images/icon/account_sample@2x.png" alt="" /></button>
+                        <button class="tit_btn" type="button">고객지원</button>
+                    </div>
+                    <div class="right_area">
+                        <div class="menu_btn">
+                            <button class="head_btn" type="button"><img src="./static/images/icon/ic_menu_32@2x.png" alt="" /></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<div class="layout-def layout-sl layout-my">
+			<div class="header tab-wrap">
+				<div class="my-tablist-wrap">
+					<div class="inner">
+						<ul class="tablist">
+							<li><a href="#tabCont1">FAQ</a></li>
+							<li><a href="#tabCont2" class="active">문의</a></li>
+							<li><a href="#tabCont3">공지</a></li>
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="myCont-wrap">
+					<div class="myCont-body">
+						<div class="inner">
+							<div class="my-list-head">
+								<div class="mli-comm">
+									<div class="mli-grayBox">
+										<p>
+											<span class="m-f-bold">무엇을 도와드릴까요?</span>
+											궁금증을 해결하세요!
+										</p>
+										<button class="btn btn-small btn-blue">문의하기</button>
+									</div>
+									<h2 class="tit">나의 1:1 문의 내역</h2>
+								</div>
+							</div>
+							<div class="my-list-body">
+								<ul class="my-list">
+									<!-- 한줄 반복 시작 -->
+									<li>
+										<button class="ml-title"> <!-- 클릭해서 답변이 열릴때 : 클래스 opened 추가 -->
+											<span class="state-tag ing">대기</span>
+											<!-- <span class="state-tag done">답변</span> -->
+											<div class="ml-title-txt">
+												<p class="txt">레벨테스트 다시 하게 해주세요.</p>
+												<p class="date">요청일 2020.09.08</p>
+											</div>
+										</button>
+										<div class="ml-view ing"> <!-- 클릭해서 답변이 열릴때 : 클래스 active 추가 --> <!-- 대기중일때 ing, 답변완료면 done -->
+											<p class="txt">
+												<span class="tit">문의 내용</span>
+												레벨테스트 다시 하고 싶어요.<br>
+												정답을 다시 입력해서 결과가 마음에 들지 않아요.<br>
+												레벨테스트를 다시 받을 수 없을까요?
+											</p>
+											<p class="txt">
+												<span class="tit">답변</span>
+												답변 대기 중입니다.
+											</p>
+											<button class="btn btn-small btn-white">문의글 수정하기</button>
+										</div>
+									</li>
+									<!-- //한줄 반복 끝 -->
+
+									<li>
+										<button class="ml-title">
+											<!-- <span class="state-tag ing">대기</span> -->
+											<span class="state-tag done">답변</span>
+											<div class="ml-title-txt">
+												<p class="txt">복습하고 싶은데 어떻게 해요???</p>
+												<p class="date">요청일 2020.09.08</p>
+											</div>
+										</button>
+										<div class="ml-view done"> <!-- 대기중일때 ing, 답변완료면 done -->
+											<p class="txt">
+												<span class="tit">문의 내용</span>
+												레벨테스트 다시 하고 싶어요.<br>
+												정답을 다시 입력해서 결과가 마음에 들지 않아요.<br>
+												레벨테스트를 다시 받을 수 없을까요?
+											</p>
+											<p class="txt">
+												<span class="tit">답변</span>
+												레벨테스트는 다시 할 수 없습니다. <br>
+												<br>
+												레벨테스트를 다시 하고 싶을 경우에는 새로운 학습자를 추가하여 진행해 주시기 바랍니다. <br>
+												학습자 추가는 마이 &gt; 학습자 추가 메뉴를 이용해 주세요.<br>
+												<br>
+												감사합니다.
+											</p>
+										</div>
+									</li>
+									<li>
+										<button class="ml-title">
+											<!-- <span class="state-tag ing">대기</span> -->
+											<span class="state-tag done">답변</span>
+											<div class="ml-title-txt">
+												<p class="txt">동시 접속이 되나요???</p>
+												<p class="date">요청일 2020.09.08</p>
+											</div>
+										</button>
+										<div class="ml-view done"> <!-- 대기중일때 ing, 답변완료면 done -->
+											<p class="txt">
+												<span class="tit">문의 내용</span>
+												레벨테스트 다시 하고 싶어요.<br>
+												정답을 다시 입력해서 결과가 마음에 들지 않아요.<br>
+												레벨테스트를 다시 받을 수 없을까요?
+											</p>
+											<p class="txt">
+												<span class="tit">답변</span>
+												레벨테스트는 다시 할 수 없습니다. <br>
+												<br>
+												레벨테스트를 다시 하고 싶을 경우에는 새로운 학습자를 추가하여 진행해 주시기 바랍니다. <br>
+												학습자 추가는 마이 &gt; 학습자 추가 메뉴를 이용해 주세요.<br>
+												<br>
+												감사합니다.
+											</p>
+										</div>
+									</li>
+								</ul>
+
+								<div class="ml-btnMore-box">
+									<button class="btn btn-gray">더보기 +</button>
+								</div>
+							</div><!-- //my-list-body -->
+						</div>
+					</div>
+					<div class="myCont-footer">
+						<div class="pc-footer">
+							pc에만 나타나는 푸터영역 (내용 미확정)
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //layout-def -->
+		
+	</div>
+</div>
+
+</body>
+</html>

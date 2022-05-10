@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+        <div class="header_top">
+            <div class="btns_wrap">
+                <div class="center_wrap cls">
+                    <div class="tit_area">
+	                    <button class="user_btn" type="button"><img src="./static/images/icon/account_sample@2x.png" alt="" /></button>
+                        <button class="tit_btn" type="button">고객지원</button>
+                    </div>
+                    <div class="right_area">
+                        <div class="menu_btn">
+                            <button class="head_btn" type="button"><img src="./static/images/icon/ic_menu_32@2x.png" alt="" /></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+		<div class="layout-def layout-sl layout-my">
+			<div class="header tab-wrap">
+				<div class="my-tablist-wrap">
+					<div class="inner">
+						<ul class="tablist">
+							<li><a href="#tabCont1" class="active">FAQ</a></li>
+							<li><a href="#tabCont2">문의</a></li>
+							<li><a href="#tabCont3">공지</a></li>
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="myCont-wrap">
+					<div class="myCont-head">
+						<div class="faq-searchBox">
+							<div class="inner">
+								<div class="input_cont searchBox">
+									<div class="input_box">
+										<input type="text" placeholder="궁금한 점을 검색해 보세요">
+										<button class="btn-del-input"></button>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="myCont-body">
+						<div class="inner">
+							<div class="my-list-head">
+								<!-- 1. 기본 : 검색어 입력하기 전 -->
+								<h2 class="tit">자주하는 질문</h2>
+								<!-- 2. 검색어 입력한 후 -->
+								<!-- <p class="res_tit">
+									<em>'레벨'</em> 검색결과 <em>2건</em>
+								</p> -->
+							</div>
+							<div class="my-list-body">
+								<ul class="my-list">
+									<!-- 한줄 반복 시작 -->
+									<li>
+										<button class="ml-title"> <!-- 클릭해서 답변이 열릴때 : 클래스 opened 추가 -->
+											<span class="ml-q"></span>
+											<div class="ml-title-txt">
+												<p class="txt"><strong>레벨</strong>테스트를 다시 할 수 있나요?</p> <!-- 입력한 검색어는 strong태그로 감싸기 -->
+											</div>
+										</button>
+										<div class="ml-view"> <!-- 클릭해서 답변이 열릴때 : 클래스 active 추가 -->
+											<p class="txt">
+												레벨테스트는 다시 할 수 없습니다. <br>
+												레벨테스트를 다시 하고 싶을 경우에는 새로운 학습자를 추가하여 진행해 주시기 바랍니다. <br>
+												<br>
+												학습자 추가는 마이 &gt; 학습자 추가 메뉴를 이용해 주세요.
+											</p>
+										</div>
+									</li>
+									<!-- //한줄 반복 끝 -->
+
+									<li>
+										<button class="ml-title">
+											<span class="ml-q"></span>
+											<div class="ml-title-txt">
+												<p class="txt">바로셈은 무슨 뜻인가요?</p>
+											</div>
+										</button>
+										<div class="ml-view">
+											<p class="txt">
+												레벨테스트는 다시 할 수 없습니다. <br>
+												레벨테스트를 다시 하고 싶을 경우에는 새로운 학습자를 추가하여 진행해 주시기 바랍니다. <br>
+												<br>
+												학습자 추가는 마이 &gt; 학습자 추가 메뉴를 이용해 주세요.
+											</p>
+										</div>
+									</li>
+									<li>
+										<button class="ml-title">
+											<span class="ml-q"></span>
+											<div class="ml-title-txt">
+												<p class="txt">레벨은 몇 단계가 있나요?</p>
+											</div>
+										</button>
+										<div class="ml-view">
+											<p class="txt">
+												레벨테스트는 다시 할 수 없습니다. <br>
+												레벨테스트를 다시 하고 싶을 경우에는 새로운 학습자를 추가하여 진행해 주시기 바랍니다. <br>
+												<br>
+												학습자 추가는 마이 &gt; 학습자 추가 메뉴를 이용해 주세요.
+											</p>
+										</div>
+									</li>
+								</ul>
+
+								<div class="ml-btnMore-box">
+									<button class="btn btn-gray">더보기 +</button>
+								</div>
+							</div><!-- //my-list-body -->
+						</div>
+					</div>
+					<div class="myCont-footer">
+						<div class="pc-footer">
+							pc에만 나타나는 푸터영역 (내용 미확정)
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //layout-def -->
+		
+	</div>
+</div>
+
+</body>
+</html>

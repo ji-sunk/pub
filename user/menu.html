@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="wrap">
+	<div class="wrap-inner">
+		<!-- lp-wrap은 wrap-inner안에, 가장 아래에 넣어주세요. -->
+
+		<div class="lp-wrap">
+			<div class="lp-container gnb-menu gm">
+				<button class="btn-close-gnbmenu">메뉴 닫기</button>
+
+				<!-- 로그인 영역(바로셈 교문향 탈패드, 매쓰피드 앱스토어에서 노출) -->
+				<div class="gnb-loginedBox">
+                    <div class="cont">
+                        <button class="btn-chg-mypic">
+                            <!--유저이미지는 ic_account_01 ~ ic_account_05-->
+                            <img src="./static/images/icon/ic_account_01.svg" alt="">
+                        </button>
+                        <div class="gnb-myname">
+                            <p class="js_name">최대여덟글자등록</p>
+                        </div>
+                        <button class="change">
+                            <img src="static/images/icon/ic_change.svg" alt="">
+                        </button>
+                    </div>
+				</div>
+				<!--// 로그인 영역(바로셈 교문향 탈패드, 매쓰피드 앱스토어에서 노출) -->
+
+				<div class="gnb-list"><!--매쓰피드 스마트올, 바로셈 교문향에서는 로그인 영역을 삭제하시고 이곳에 class no_upper 추가해주세요-->
+					<ul>
+						<li><a href="#">홈</a></li>
+						<li><a href="#" class="here">진도학습</a></li><!-- 현재 메뉴에 클래스 here 추가 -->
+						<li><a href="#">주제학습</a></li>
+						<li><a href="#">OCR학습</a></li>
+					</ul>
+				</div>
+				<div class="gnb-list small">
+					<ul>
+						<li><a href="#">AI 진단테스트</a></li>
+						<li><a href="#">학습노트</a></li>
+						<li><a href="#">APP 계정 신청</a></li>
+					</ul>
+				</div>
+				
+				<!--고객센터(바로셈 교문향, 바로셈 교문향 탈패드에서 사용. 불필요시 삭제하시면 됩니다.)-->
+				<div class="cs">고객센터&nbsp;&nbsp;1577-1500</div>
+				<!--//고객센터(바로셈 교문향, 바로셈 교문향 탈패드에서 사용. 불필요시 삭제하시면 됩니다.)-->
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<script>
+$(function(){
+    //유저의 이름 영역 길이가 130px 이하일 때 class large_font 추가되어 폰트 크기를 크게 표현함
+    var $js_name = $('.js_name'),
+        name_w = $js_name.width();
+    
+    if (name_w < 130){
+        $js_name.addClass('large_font');
+    };
+    
+    //모바일에서 유저의 이름 영역 길이가 100px 이하일 때 class large_font_m 추가되어 폰트 크기를 크게 표현함
+    var $js_name_m = $('.v-mob .js_name'),
+        name_w_m = $js_name_m.width();
+    
+    if (name_w_m < 100){
+        $js_name_m.addClass('large_font_m');
+    };
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+        <div class="header_top gm">
+           <div class="inner">
+	            <div class="btns_wrap header-trans cls">
+                    <div class="app_btn">
+                        <button class="btn_exit" type="button">
+                            <img class="hide_m" src="./static/images/icon/ic_back@2x.png" alt="" />
+                            <img class="hide_pc hide_t" src="./static/images/icon/ic_back_dark.svg" alt="" />
+                        </button>
+                    </div>
+                    <div class="tit_gm center_tit24">입회 회원 인증</div>
+	            </div>
+           </div>
+        </div>
+
+		<div class="layout-def layout-sl bg_gray2 inner_w100p">
+			<div class="container">
+				<div class="inner">
+                    <div class="mem_chk_done">
+                        <div class="img_wrap">
+                            <img src="./static/images/common/img_my_05_02_certification.svg" alt="" />
+                        </div>
+                        <div class="tit_wrap">웅진씽크빅 입회 회원 인증 완료</div>
+                        <div class="box">
+                            <div class="tit">AI바로셈에 입회한 자녀입니다.</div>
+                            <ul>
+                                <li>김웅진&nbsp;&nbsp;2015.07</li>
+                                <li>김철수&nbsp;&nbsp;2016.08</li>
+                                <li>김영희&nbsp;&nbsp;2017.09</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="tit_txt">AI바로셈에서 사용하실 <br class="hide_pc hide_t" />이메일과 비밀번호를 설정해 주세요.</div>
+                   
+                    <div class="wirte_form gm_ver w520 pb0">
+                        <form>
+                            <section>
+                                <div class="item">
+                                    <div class="input_title">이메일</div>
+                                    
+                                    <div class="input_cont h56">
+                                        <div class="click_line area1">
+                                            <button type="button" class="mint_txt_btn hide_pc hide_t">인증받기</button><!--비활성시 disabled 속성-->
+                                            <button type="button" class="black_txt_btn hide_pc hide_t">재발송</button>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <div class="lr_wrap">
+                                                    <div class="input_box white_box">
+                                                        <input type="text" placeholder="이메일을 입력해 주세요." />
+                                                        <div class="r_area">
+                                                            <img src="./static/images/icon/ic_check.svg" alt="" />
+                                                            <button type="button"><img src="./static/images/icon/input_delete_40.svg" alt="" /><img src="./static/images/icon/ic_error.svg" alt="" /></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="right_area hide_m">
+                                        				<button class="btn btn-blue">인증받기</button><!--비활성시 disabled 속성-->
+                                        				<button class="btn btn-gray">재발송</button>
+                                                    </div>
+                                                </div>
+                                                <div class="info_txt red">올바른 이메일 형식이 아닙니다.</div><!--경고문구 없는 경우는 이 줄을 지우면 됨-->
+                                            </li>
+                                            <li>
+                                                <div class="input_box white_box">
+                                                    <input type="text" placeholder="인증번호 4자리" />
+                                                    <div class="r_area">
+                                                        <img src="./static/images/icon/ic_check.svg" alt="" />
+                                                        <button type="button"><img src="./static/images/icon/input_delete_40.svg" alt="" /><img src="./static/images/icon/ic_error.svg" alt="" /></button>
+                                                    </div>
+                                                </div>
+                                                <div class="info_txt red">인증 메일이 도착하지 않는다면 스팸메일함을 확인해 주세요.</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="input_title">비밀번호</div>
+                                    <div class="input_cont h56">
+                                        <ul>
+                                            <li>
+                                                <div class="input_box white_box">
+                                                    <input type="password" placeholder="영문, 숫자, 특수문자 조합 (8자 이상)" />
+                                                    <div class="r_area">
+                                                        <img src="./static/images/icon/ic_check.svg" alt="" />
+                                                        <button type="button"><img src="./static/images/icon/input_delete_40.svg" alt="" /><img src="./static/images/icon/ic_error.svg" alt="" /></button>
+                                                    </div>
+                                                </div>
+                                                <div class="info_txt red">영문, 숫자, 특문 포함 8글자 이상이어야 합니다.</div><!--경고문구 없는 경우는 이 줄을 지우면 됨-->
+                                            </li>
+                                            <li>
+                                                <div class="input_box white_box">
+                                                    <input type="password" placeholder="비밀번호 재입력" />
+                                                    <div class="r_area">
+                                                        <img src="./static/images/icon/ic_check.svg" alt="" />
+                                                        <button type="button"><img src="./static/images/icon/input_delete_40.svg" alt="" /><img src="./static/images/icon/ic_error.svg" alt="" /></button>
+                                                    </div>
+                                                </div>
+                                                <div class="info_txt red">입력한 비밀번호와 재입력한 비밀번호가 일치하지 않습니다.</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                        </form>
+                    </div>
+                    
+                    <div class="page_lower_wrap mt40">
+                        <div class="w520">
+                            <button class="btn btn-blue">완료</button>
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //layout-def -->
+	</div>
+</div>
+
+</body>
+</html>
