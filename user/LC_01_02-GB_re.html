@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<script src="static/js/slick.min.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+		<div class="layout-def bg_gray3 gb renew">
+			<div class="header global_main js_scroll_head">
+				<div class="inner">
+                    <div class="upper_wrap">
+                        <div>
+                            <a class="logo_btn" href="#null"><img src="./static/images/icon/img_logo.svg" alt="" /></a>
+                        </div>
+                        <div class="right">
+                            <!-- 220422 버튼 변경 S -->
+                            <div class="btn_wrap">
+                                <button type="button"><img src="./static/images/icon/ic_learningnote_th.svg" alt="코스학습 메뉴" /></button>  
+                                <button type="button"><img src="./static/images/icon/btn_menu_th.svg" alt="전체 메뉴" /></button>
+                            </div>
+                            <!-- //220422 버튼 변경 E -->
+                        </div>
+                    </div>
+
+				    <div class="cont w660">
+				        <div class="left">
+				            <img class="user" src="./static/images/common/img_profilecha_th_02.svg" alt="" />
+				            <!-- 유저 이미지 랜덤 총 5개 img_profilecha_th_01 ~ img_profilecha_th_05 -->
+				        </div>
+                        <!-- 220422 수정 S -->
+				        <div class="right">
+                            <div class="nickname">
+                                <span class="ellipsis">myNicknameNicknameNicknameNickname12</span>
+                                <!-- <button type="button" class="btn_white">수정</button> -->
+                                <button type="button" class="btn_white">Edit</button>
+				            </div>
+                            <!-- <button type="button" class="btn_navy">로그인</button> -->
+                            <button type="button" class="btn_login">LOG IN</button> <!-- 220504  btn_login로 클래스명 변경-->
+				        </div>
+                        <!-- //220422 수정 E -->
+				    </div>
+				</div>
+			</div>
+
+			<div class="container">
+                <!-- 220422 수정 S -->
+                <div class="gl_main_theme_wrap">
+                    <div class="theme_box">
+
+                        <a class="box1" href="#null" style="display: none;">
+                            <!-- <span class="tit">코스학습</span>
+                            <span class="btn pos">시작</span> -->
+                            <span class="tit">Daily Cours</span>
+                            <span class="btn pos">Start!</span>
+                        </a>
+
+
+                        <!-- 220502 AI 진단테스트 추가 S -->
+                        <a class="box1 aitest" href="#null">
+                            <div class="test_box">
+                                <!-- <span class="tit">AI 진단 테스트</span>
+                                <span class="txt">실리콘밸리에 기반을 둔 AI 테스트를 통해 <br>
+                                    개인화된 학습 과정을 시작하십시오!</span>
+                                <span class="btn">시작하기</span> -->
+
+                                <span class="tit">AI Diagnostic Test</span>
+                                <span class="txt">Through Silicon Valley based AI test,<br>
+                                     start personalized learning courses!</span>
+                                <span class="btn">Start Diagnosis</span>
+                            </div>
+                        </a>
+                        <!-- //220502 AI 진단테스트 추가 E -->
+
+
+                        <a class="box2" href="#null">
+                            <!-- <span>주제학습</span> -->
+                            <span>Daily Topic</span>
+                        </a>
+                        <a class="box3" href="#null">
+                            <!-- <span><b>수학</b><br>카메라</span> -->
+                            <span><b>Math</b><br>Camera</span>
+                        </a>
+                    </div>
+                    <!-- <div class="theme_box_btm">
+                        <a href="#none">
+                            <img src="./static/images/common/learn/bnr_btm_ko.svg" alt="" />
+                            <img src="./static/images/common/learn/bnr_btm_en.svg" alt="" />
+                        </a>
+                    </div> -->
+                </div>
+                <!-- //220422 수정 E -->
+
+			</div>
+
+
+
+            <!-- 220504 배너 추가 S -->
+            <div class="bottom_wrap">
+                <div class="box_btn">
+                    <span class="inner_box cls">
+                        <span class="left" style="display: none;">
+                            <p class="txt1">AI 분석을 통한</p>
+                            <span class="txt2">나만의 학습 결과 확인!</span>
+                        </span>
+
+                        <span class="left">
+                            <span class="txt2">
+                                Checking my learning Outcomes<br>
+                                through AI analysis!
+                            </span>
+                        </span>
+
+                        <a href="#null" class="right" style="display: none;">
+                            <span class="hide_m btm_txt">학습노트 바로가기</span>
+                            <img src="./static/images/icon/ic_rnd_arrow.svg" alt="바로가기" />
+                        </a>
+                        <a href="#null" class="right">
+                            <span class="hide_m btm_txt">Product introduction</span>
+                            <img src="./static/images/icon/ic_rnd_arrow.svg" alt="바로가기" />
+                        </a>
+                    </span>
+                </div>
+            </div>
+             <!-- //220504 배너 추가 E -->
+
+
+		</div>
+	</div>
+</div>
+
+<script>
+//스크롤시 헤더영역 변화
+var $cont = $('.container'),
+    $header = $('.js_scroll_head');
+
+$cont.scroll(function(){
+    var scrollTop = $cont.scrollTop();
+    scrollTop ? $header.addClass('h_short') : $header.removeClass('h_short');
+});
+
+//문항 박스들 스와이프
+$('.js_slick').slick({
+    variableWidth: true,
+    infinite: false,
+    swipeToSlide: true,
+    arrows: false,
+});
+
+//배너 스와이프 2
+$('.js_slick_bnr').slick({
+    dots: true,
+    arrows: false,
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+        <div class="header_top gb bg_sky">
+           <div class="inner">
+	            <div class="btns_wrap cls">
+                    <div class="app_btn">
+                        <button class="btn_exit" type="button">
+                            <img src="./static/images/icon/btn_back.svg" alt="" />
+                        </button>
+                    </div>
+                    <div class="tit_gm center_tit24">MY</div>
+	            </div>
+           </div>
+        </div>
+
+		<div class="layout-def layout-sl bg_gray gb">
+			<div class="container">
+				<div class="inner">
+                    <div class="wirte_form lr">
+                        <section class="w672 w672_tb">
+                            <form>
+                                <article class="mem">
+                                    <div class="part1">
+                                        <img src="./static/images/common/img_profilecha_th_01.svg" alt="">
+                                        <!--유저이미지 img_profilecha_th_01 ~ 05-->
+                                    </div>
+                                    <div class="part2">
+                                        <div class="name_cont">
+                                            <div class="name">
+                                                <span class="ellipsis">이름이길경우에최대글자수이름이길경우에최대글자이름이길경우에최대글자</span>
+                                            </div>
+                                            <div class="edit_area">
+                                                <div class="input_box white_box">
+                                                    <input type="text" value="김웅진" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btns_cont">
+                                            <div class="toggle1">
+                                                <button type="button" class="mint_txt_btn js_toggle1">변경</button>
+                                            </div>
+                                            <div class="toggle2">
+                                                <button type="button" class="btn btn-blue js_toggle2">취소</button>
+                                                <button type="button" class="btn btn-gray js_toggle2">변경</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </form>
+                        </section>
+                       
+
+                        <!-- 220426 로그인 되어 이메일 있을 때 S -->
+                        <section class="w672 w672_tb">
+                            <form>
+                                <!--220426 기존 이메일 영역에서 변경 S-->
+                                <div class="item cls email">
+                                    <div class="input_title">이메일</div>
+                                    <button type="button" class="mint_txt_btn">변경</button>
+                                    <div class="input_cont pw wd100">
+                                        <div class="txt">kimwoongjin@woongjin.net</div>
+                                    </div>
+                                    <!--//220426 기존 이메일 영역에서 변경 E--> 
+                                </div>
+                            </form>
+                        </section>
+                        
+                        <div class="logout w672 w672_tb">
+            				<button class="btn btn-white">로그아웃</button>
+                        </div>
+                        <!-- 220426 로그인 되어 이메일 있을 때 E -->
+
+                        <!-- 220426 비로그인 S -->
+                        <!-- <section class="w672 w672_tb">
+                            <form>
+                                <div class="item cls email">
+                                    <div class="input_title">이메일</div>
+                                    <button type="button" class="mint_txt_btn">로그인</button>
+                                </div>
+                            </form>
+                        </section> -->
+                        <!-- 220426 비로그인 E -->
+
+                        
+                    </div>
+
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //layout-def -->
+	</div>
+</div>
+
+<script>
+//학습자 정보 변경버튼 클릭시 영역 변화
+$(document).on("click",".js_toggle1",function(){
+    $('.name, .toggle1').hide();
+    $('.edit_area, .toggle2').show();
+    $('.age_cont').addClass('off');
+});
+$(document).on("click",".js_toggle2",function(){
+    $('.name, .toggle1').show();
+    $('.edit_area, .toggle2').hide();
+    $('.age_cont').removeClass('off');
+});    
+</script>
+
+</body>
+</html>

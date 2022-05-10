@@ -1,0 +1,79 @@
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- 메일 시작 -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td style="padding:40px 0 100px 0;" align="center">
+            <table cellpadding="0" cellspacing="0" border="0" style="width:620px;" bgcolor="#ffffff" align="center">
+                <tr>
+                    <td>
+                        <img width="300" src="https://wjtb-prd-pub.s3.ap-northeast-2.amazonaws.com/brs/mathpid/img/logo_ai_mathpid.png" alt="logo" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 30px; border-bottom: 2px solid #00c3e1;"></td>
+                </tr>
+                <tr>
+                    <td style="height: 48px;"></td>
+                </tr>
+                <tr>
+                    <td style="font-family:'Noto Sans KR', sans-serif;font-size: 18px; line-height: 28px;">
+                        안녕하세요.<br />
+                        이메일 무단 도용을 막기 위해서 이메일 인증이 필요합니다.<br />
+                        아래의 인증번호를 입력하여 이메일 인증을 완료해 주세요.<br />
+                        감사합니다.
+                    </td>
+                </tr>
+                <!--인증번호 또는 임시비밀번호 발급 메일에서 사용하는 영역-->
+                <tr>
+                    <td style="height: 76px;"></td>
+                </tr>
+                <tr>
+                    <td style="font-family:'Noto Sans KR', sans-serif;font-size: 16px; line-height: 24px; color: #00c3e1;">
+                        인증 번호
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 4px;"></td>
+                </tr>
+                <tr>
+                    <td style="font-family:'Noto Sans KR', sans-serif;font-size: 32px; line-height: 96px; color: #00c3e1; background: #fafbfc; text-align: center;">
+                        <!-- 퍼블 확인 용 개발시 삭제 -->
+                        1234
+                        <!-- //퍼블 확인 용 개발시 삭제 -->
+                        <span th:text="${emailAuthNo}"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 96px;"></td>
+                </tr>
+                <!--//인증번호 또는 임시비밀번호 발급 메일에서 사용하는 영역-->
+                <tr>
+                    <td style="height: 31px; border-top: 1px solid #f0f0f0;"></td>
+                </tr>
+                <tr>
+                    <td style="font-family:'Noto Sans KR', sans-serif;font-size: 14px; line-height: 20px; color: #78828c; font-weight: 500;">
+                        Mathpid
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 2px;"></td>
+                </tr>
+                <tr>
+                    <td style="font-family:'Noto Sans KR', sans-serif;font-size: 14px; line-height: 20px; color: #8c96a0;">
+                        본 메일은 발신 전용 메일입니다.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 10px;"></td>
+                </tr>
+                <tr>
+                    <td style="font-family:'Noto Sans KR', sans-serif;font-size: 14px; line-height: 20px; color: #b4bec8;">
+                        Copyright © 2021. WOONGJIN Inc. All rights reserved.
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

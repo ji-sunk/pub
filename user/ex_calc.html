@@ -1,0 +1,609 @@
+<div class="pvBox" data-per="100">
+	<div class="pv-inner">
+		<div class="pv-cont">
+			<!-- //수식 작을때<br> (비율이 100%:data-per="100" ) -->
+			<table class="calcTbl">
+				<tbody>
+					<tr>
+						<td><span class="nm-box">1</span></td>
+						<td><span class="nm-box">2</span></td>
+						<td><span class="nm-box">3</span></td>
+					</tr>
+					<tr>
+						<td><span class="nm-box">4</span></td>
+						<td><span class="mjx-box active-bd my-ans"></span></td> <!-- 빈칸-기본 : 클래스 mjx-box active-bd -->
+						<td><span class="nm-box">6</span></td>
+					</tr>
+					<tr>
+						<td><span class="nm-box">7</span></td>
+						<td><span class="nm-box">8</span></td>
+						<td><span class="mjx-box active-bd focusedInput"></span></td> <!-- 빈칸-포커스 : 클래스 focusedInput 추가/삭제 -->
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+	</div>
+</div>
+<div class="pvBox" data-per="170">
+	<div class="pv-inner">
+		<div class="pv-cont">
+			<!-- //수식 클때<br> (비율이 170%:data-per="170" ) -->
+			<table class="calcTbl">
+				<tbody>
+					<tr>
+						<td><span class="nm-box">1</span></td>
+						<td><span class="nm-box">2</span></td>
+						<td><span class="nm-box">3</span></td>
+					</tr>
+					<tr>
+						<td><span class="nm-box">4</span></td>
+						<td><span class="mjx-box active-bd"></span></td> <!-- 빈칸-기본 : 클래스 mjx-box active-bd -->
+						<td><span class="nm-box">6</span></td>
+					</tr>
+					<tr>
+						<td><span class="nm-box">7</span></td>
+						<td><span class="nm-box">8</span></td>
+						<td><span class="mjx-box active-bd focusedInput"></span></td> <!-- 빈칸-포커스 : 클래스 focusedInput 추가/삭제 -->
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+	</div>
+</div>
+
+
+<!-- 1. 표 입력 뷰어 -->
+<div class="calcEdit-viewer_inner">
+	<table class="calcTbl">
+		<tbody>
+			<tr>
+				<td><span class="nm-box">1</span></td>
+				<td><span class="nm-box">2</span></td>
+				<td><span class="nm-box">3</span></td>
+			</tr>
+			<tr>
+				<td><span class="nm-box">4</span></td>
+				<td><span class="mjx-box active-bd"></span></td> <!-- 빈칸-기본 : 클래스 mjx-box active-bd -->
+				<td><span class="nm-box">6</span></td>
+			</tr>
+			<tr>
+				<td><span class="nm-box">7</span></td>
+				<td><span class="nm-box">8</span></td>
+				<td><span class="mjx-box active-bd focusedInput"></span></td> <!-- 빈칸-포커스 : 클래스 focusedInput 추가/삭제 -->
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<!-- 2. 간격표 뷰어 -->
+<!--
+개발에서 적용해주셔야 하는 것)
+.tbl-spaceline-list .mjx-char들 중에서 가장 긴 width값을 나머지 .mjx-char들의 width에도 적용시켜주세요.
+그리고 그 width값을 .tbl-spaceline-list의 모든 .mjx-box들에도 적용시켜주세요.
+-->
+<div class="calcEdit-viewer_inner">
+
+	<table class="tbl-spaceline-list">
+		<tbody>
+			<tr class="spaceline-list-up">
+				<td class="ci-active"><span class="inputTxt">1</span></td>
+				<td><span class="inputTxt"></span></td>
+				<td class="ci-active ci-focus">
+					<span class="inputTxt">3</span>
+				</td>
+			</tr>
+			<tr class="lineTR">
+				<td><span class="line"></span></td>
+				<td><span class="line"></span></td>
+				<td><span class="line"></span></td>
+			</tr>
+			<tr class="spaceline-list-down">
+				<td><span class="inputTxt"></span></td>
+				<td><span class="inputTxt">1</span></td>
+				<td><span class="inputTxt"></span></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+<!-- 3. 대분수 뷰어 -->
+<div class="calcEdit-viewer_inner">
+	<table class="tbl-fountain">
+		<tbody>
+			<tr>
+				<td rowspan="2">
+					3
+				</td>
+				<td class="bdline">
+					1
+				</td>
+			</tr>
+			<tr>
+				<td>
+					2
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+<!-- 4. 숫자표 뷰어 -->
+<div class="calcEdit-viewer_inner">
+	<ul class="numberline-list">
+		<li>
+			<span class="numberline-num">2</span>
+		</li>
+		<li>
+			<span class="numberline-num">4</span>
+		</li>
+		<li>
+			<span class="numberline-num">6</span>
+		</li>
+		<li>
+			<span class="numberline-num mjx-box active-bd"></span> <!-- 빈칸-기본 : 클래스 mjx-box active-bd -->
+		</li>
+		<li>
+			<span class="numberline-num">10</span>
+		</li>
+		<li>
+			<span class="numberline-num mjx-box active-bd focusedInput"></span> <!-- 빈칸-포커스 : 클래스 focusedInput 추가/삭제 -->
+		</li>
+	</ul>
+</div>
+
+
+<!-- 5. 입력박스 뷰어 -->
+<div class="calcEdit-viewer_inner">
+	
+</div>
+
+
+<!-- 6. 이미지 뷰어 -->
+<div class="calcEdit-viewer_inner">
+	a + b = 
+	<img src="static/images/tmp/ic_account_01@2x.png" alt="" style="width: 44px; height: 44px; vertical-align: middle;"><!-- 넓이,높이,정렬 값은 인라인으로 넣어주세요 -->
+	b + c =
+</div>
+
+<!-- 7. 선택사항 뷰어 -->
+<div class="calcEdit-viewer_inner">
+	<table class="tbl-multiple">
+		<colgroup>
+			<col style="min-width: 40px;">
+			<col style="min-width: 40px;">
+		</colgroup>
+		<tbody>
+			<tr>
+				<td>
+					<div class="inputBox-min">
+						<span class="inputTxt">33</span>
+					</div>
+				</td>
+				<td>
+					<div class="inputBox-min">
+						<span class="inputTxt">44</span>
+					</div>
+				</td>
+			</tr>
+			<tr class="multiple-reverse">
+				<td class="d-right"><div class="diagonal"><span class="line"></span></div></td>
+				<td class="d-left"><div class="diagonal"><span class="line"></span></div></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div class="inputBox-min">
+						<span class="inputTxt mjx-box active-bd focusedInput">&nbsp;</span>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+<!-- 8. 크기비교 뷰어 -->
+<div class="calcEdit-viewer_inner">
+	<table class="tbl-inequalityBox">
+		<tbody>
+			<tr>
+				<td>
+					<span class="inputTxt">55555 x 4545</span>
+				</td>
+				<td>
+					<span class="round-inequalityBox mjx-box active-bd"></span> <!-- 빈칸-포커스 : 클래스 focusedInput 추가/삭제 -->
+				</td>
+				<td>
+					<span class="inputTxt">77777 / 11</span>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<!-- 가로형 트리(두개) 뷰어 -->
+<div class="calcEdit-viewer_inner">
+	<table class="tbl-htreeD">
+		<tbody>
+			<tr>
+				<td rowspan="2">
+					<span class="inputTxtN">8*6=48</span>
+				</td>
+				<td class="d-up pl-1"><span class="diagonal"><span class="line"></span></span></td>
+				<td class="pb-1">
+					<span class="inputTxtN">48/8=</span>
+				</td>
+			</tr>
+			<tr>
+				<td class="d-down pl-1"><span class="diagonal"><span class="line"></span></span></td>
+				<td class="pt-1">
+					<span class="inputTxtN">48/8=</span>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<!-- 가로형 트리(멀티) 뷰어 -->
+<div class="calcEdit-viewer_inner">
+	<table class="tbl-htreeM">
+		<tbody>
+			<tr>
+				<td>
+					<span class="divisorBox">
+						<span class="inputTxtN">(6,8)</span>
+					</span>
+				</td>
+				<td>
+					<ul class="multiline-inputList">
+						<li><span class="inputTxtN">6의 약수 : 1,2</span></li>
+						<li><span class="inputTxtN">6의 약수 : 1,2</span></li>
+						<li><span class="inputTxtN">6의 약수 : 1,2</span></li>
+						<li><span class="inputTxtN">6의 약수 : 1,2</span></li>
+					</ul>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<!-- 나누기 뷰어 -->
+<div class="calcEdit-viewer_inner">
+	<table class="tbl-division">
+		<tbody>
+			<tr>
+				<td></td>
+				<td>
+					<span class="division-quotient">
+						<span class="inputTxt">9</span>
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class="division-divisor">
+						<span class="inputTxt">9</span>
+					</span>
+				</td>
+				<td>
+					<span class="division-dividend">
+						<span class="inputTxt">81</span>
+					</span>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<!-- 소인수분해 뷰어 -->
+<div class="calcEdit-viewer_inner">
+	<table class="tbl-factorization">
+		<tbody>
+			<!-- 한줄 반복 시작 -->
+			<tr>
+				<td class="fact-divisor">
+					<span class="dividend_box">
+						2
+					</span>
+					<span class="curvedline"></span>
+				</td>
+				<td>
+					<span class="dividend_box">
+						12
+					</span>
+				</td>
+				<td>
+					<span class="dividend_box">
+						20
+					</span>
+				</td>
+			</tr>
+			<!-- //한줄 반복 끝 -->
+			<tr>
+				<td class="fact-divisor">
+					<span class="dividend_box">
+						2
+					</span>
+					<span class="curvedline"></span>
+				</td>
+				<td>
+					<span class="dividend_box">
+						6
+					</span>
+				</td>
+				<td>
+					<span class="dividend_box">
+						10
+					</span>
+				</td>
+			</tr>
+			<tr class="last"><!-- 마지막 라인은 클래스 last 추가 -->
+				<td class="fact-divisor">
+					<span class="dividend_box">
+						&nbsp;
+					</span>
+					<span class="curvedline"></span>
+				</td>
+				<td>
+					<span class="dividend_box">
+						3
+					</span>
+				</td>
+				<td>
+					<span class="dividend_box">
+						5
+					</span>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<script>
+	$('.pvBox').each(function(){calcPV_height($(this));});
+
+	function calcPV_height(elm){
+		var _ratio		= ( 2.0 * elm.attr('data-per') ) / 100;
+		var _pvInner 	= elm.find('.pv-inner');
+		var _pvCont 	= elm.find('.pv-cont');
+
+		_pvInner.width(_pvCont.outerWidth() * _ratio);
+		_pvInner.height(_pvCont.outerHeight() * _ratio);
+		_pvCont.css('transform', 'scale('+ _ratio +')');
+	}
+</script>
+
+<!--소인수분해2 뷰어 -->
+<div class="calcEdit-viewer_inner mt10 js_tree_chain_viewer">
+    <div class="inlineblock_cont">
+        <table class="tbl-htreeD tree_chain">
+            <tbody>
+                <tr>
+                    <td rowspan="2">
+                        <span class="inputTxt">60</span>
+                    </td>
+                    <td class="d-up pl-1"><span class="diagonal"><span class="line"></span></span></td>
+                    <td class="pb-1">
+                        <span class="inputTxt">30</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="d-down pl-1"><span class="diagonal"><span class="line"></span></span></td>
+                    <td class="pt-1">
+                        <span class="inputTxt">30</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--트리구조 반복 단위-->
+    <div class="inlineblock_cont">
+        <table class="tbl-htreeD tree_chain">
+            <tbody>
+                <tr>
+                    <td class="d-up pl-1"><span class="diagonal"><span class="line"></span></span></td>
+                    <td class="pb-1">
+                        <span class="inputTxt">300</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="d-down pl-1"><span class="diagonal"><span class="line"></span></span></td>
+                    <td class="pt-1">
+                        <span class="inputTxt">1</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--//트리구조 반복 단위-->
+
+    <div class="inlineblock_cont">
+        <table class="tbl-htreeD tree_chain">
+            <tbody>
+                <tr>
+                    <td class="d-up pl-1"><span class="diagonal"><span class="line"></span></span></td>
+                    <td class="pb-1">
+                        <span class="inputTxt">1</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="d-down pl-1"><span class="diagonal"><span class="line"></span></span></td>
+                    <td class="pt-1">
+                        <span class="inputTxt">300</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="inlineblock_cont">
+        <table class="tbl-htreeD tree_chain">
+            <tbody>
+                <tr>
+                    <td class="d-up pl-1"><span class="diagonal"><span class="line"></span></span></td>
+                    <td class="pb-1">
+                        <span class="inputTxt">30</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="d-down pl-1"><span class="diagonal"><span class="line"></span></span></td>
+                    <td class="pt-1">
+                        <span class="inputTxt">30</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="mt10">&#8594; 90 = 2 x 2</div>
+
+    <script>
+    //소인수분해2에서 반복되는 박스세트의 상하위치
+    $(document).ready(function(){
+        $('.js_tree_chain_viewer .inlineblock_cont').each(function(){
+            var index_num = $(this).index(),
+                px_num = 20, //margin-top 기준픽셀 값
+                margin_top = index_num * px_num;
+
+            $(this).css({marginTop : margin_top + 'px'});
+        });
+    });
+    </script>
+</div>
+
+<!-- 소인수분해표 뷰어 -->
+<div class="calcEdit-viewer_inner">
+    <div>0.5</div>
+    <div class="mt10">x = 0.5 = 0.555555555</div>
+    <table class="tbl-factorization mt10">
+        <tbody>
+            <tr class="last">
+                <td class="fact-divisor"></td>
+                <td>
+                    <span class="dividend_box">10x</span>
+                </td>
+                <td>=</td>
+                <td>
+                    <span class="dividend_box pr0">8</span>
+                </td>
+                <td>.</td>
+                <td class="align_l">
+                    <span class="dividend_box pl0">999</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="fact-divisor">
+                    <span class="dividend_box">-</span>
+                    <span class="curvedline"></span>
+                </td>
+                <td>
+                    <span class="dividend_box">x</span>
+                </td>
+                <td>=</td>
+                <td>
+                    <span class="dividend_box pr0">77777</span>
+                </td>
+                <td>.</td>
+                <td class="align_l">
+                    <span class="dividend_box pl0">6</span>
+                </td>
+            </tr>
+            <tr class="last">
+                <td class="fact-divisor"></td>
+                <td>
+                    <span class="dividend_box">9x</span>
+                </td>
+                <td>=</td>
+                <td>
+                    <span class="dividend_box pr0">3</span>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="mt10">x = 9</div>
+</div>
+
+<!-- 소인수분해 뷰어 -->
+<div class="calcEdit-viewer_inner">
+    <div class="ta-l">2x - 7x - 15</div>
+    <table class="tbl-factorization mt10">
+        <tbody>
+            <tr class="last">
+                <td class="align_c">
+                    <span class="dividend_box">111</span>
+                </td>
+                <td class="va-m border_b" rowspan="2"><img class="m05 va-tt" src="static/images/common/ico_arrow1.svg" alt="" /></td>
+                <td class="align_c">
+                    <span class="dividend_box">88</span>
+                </td>
+                <td class="va-m"><img class="m05" src="static/images/common/ico_arrow2.svg" alt="" /></td>
+                <td>
+                    <span class="dividend_box">999</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="align_c">
+                    <span class="dividend_box">5</span>
+                </td>
+                <td class="align_c">
+                    <span class="dividend_box">77777</span>
+                </td>
+                <td class="va-m"><img class="m05" src="static/images/common/ico_arrow2.svg" alt="" /></td>
+                <td>
+                    <span class="dividend_box">6</span>
+                </td>
+            </tr>
+            <tr class="last">
+                <td class="ta-r pt5" colspan="5">
+                    <span class="dividend_box">-888888</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- 번호 입력칸 뷰어 -->
+<div class="calcEdit-viewer_inner">
+    <div class="calcEdit-popInputBox">
+        <div class="img_cont">
+            <img src="https://placeimg.com/700/200/animals" alt="" />
+        </div>
+        <div class="r_cont">
+            <table class="tbl_number_box viewer">
+                <tbody>
+                    <tr>
+                        <td>=</td>
+                        <td class="td_box">
+                            x
+                            <div class="num">1</div>
+                        </td>
+
+                        <!--반복단위-->
+                        <td>+</td>
+                        <td class="td_box active-bd"><!--active-bd 파란 박스. focusedInput 추가되면 노란 박스-->
+                            2x
+                            <div class="num">2</div>
+                        </td>
+                        <!--//반복단위-->
+
+                        <td>+</td>
+                        <td class="td_box active-bd"><!--active-bd 파란 박스. focusedInput 추가되면 노란 박스-->
+                            3xyz
+                            <div class="num">3</div>
+                        </td>
+                        <td>+</td>
+                        <td class="td_box active-bd focusedInput"><!--focusedInput 노란 박스-->
+                            4axyz
+                            <div class="num">4</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

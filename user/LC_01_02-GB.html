@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<script src="static/js/slick.min.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+		<div class="layout-def bg_gray3 gb">
+			<div class="header global_main js_scroll_head">
+				<div class="inner">
+                    <div class="upper_wrap">
+                        <div>
+                            <a class="logo_btn" href="#null"><img src="./static/images/icon/img_logo.svg" alt=""></a>
+                        </div>
+                        <div class="right">
+                            <button type="button"><img src="./static/images/icon/btn_ocr_th.svg" alt=""></button>
+                            <button type="button"><img src="./static/images/icon/btn_menu_th.svg" alt=""></button>
+                        </div>
+                    </div>
+				    <div class="cont w660">
+				        <div class="left">
+				            <img class="user" src="./static/images/common/img_profilecha_th_01.svg" alt="">
+				            <!--유저이미지 총 5개 img_profilecha_th_01 ~ img_profilecha_th_05-->
+				        </div>
+				        <div class="right">
+				            <div class="name">
+                                <span>KIM WOONG JIN</span>
+                                <button type="button"><img src="./static/images/icon/ic_learningnote_th.svg" alt=""></button>
+				            </div>
+				            <div class="lv">
+				                <p>
+				                    <span>LV.</span>
+				                    <b>15</b>
+				                </p>
+                                <!--학습이력이 있을 때만 나타나는 레벨 바 영역-->
+				                <div class="bar_cont">
+				                    <div class="bar" style="width: 50%"><!--퍼센트 값에 따라 막대 길이 나타남-->
+				                    </div>
+				                </div>
+                                <!--//학습이력이 있을 때만 나타나는 레벨 바 영역-->
+				            </div>
+				            <div class="status"><!--디폴트값은 학습전. class on 학습 중-->
+				                Before Learning
+				            </div>
+				        </div>
+				    </div>
+				    <div class="status_box">
+				        <article>
+				            <div class="left">
+				                <img src="./static/images/icon/ic_main_study_th.svg" alt="">
+				            </div>
+				            <div class="right">
+				                <div class="num">72</div>
+				                <div class="txt">STUDY<br>DAYS</div>
+				            </div>
+				        </article>
+				        <article>
+				            <div class="left">
+				                <img src="./static/images/icon/ic_main_time_th.svg" alt="">
+				            </div>
+				            <div class="right">
+				                <div class="num">2<span>h</span>25<span>m</span></div>
+				                <div class="txt">CUMULATIVE<br>TIME</div>
+				            </div>
+				        </article>
+				        <article>
+				            <div class="left">
+				                <img src="./static/images/icon/ic_main_stage_th.svg" alt="">
+				            </div>
+				            <div class="right">
+				                <div class="num">23</div>
+				                <div class="txt">COMPLETE<br>STAGE</div>
+				            </div>
+				        </article>
+				    </div>
+				</div>
+			</div>
+
+			<div class="container h100"><!--퍼블메모) 하단 배너 있을때 컨텐츠가 적어도 배너가 아래에 있도록 하기 위해 class h100 넣어 container 높이가 100%되게 함. 배너는 position absolute로 넣음-->
+				<div class="inner">
+                    <div class="main_gb">
+                        <div class="w660">
+                            <div class="m_pd22">
+                                <!--학습이력 없을 때-->
+                                <div href="#null" class="course_box">
+                                    <div class="tit">Course Learning</div>
+                                    <div class="txt">I got an AI diagnostic test <br class="hide_pc hide_t">Let’s start course study!</div>
+                                    <button class="bttn">Start!</button>
+                                </div>
+                                <!--//학습이력 없을 때-->
+
+                                <!--학습이력 있을 때-->
+                                <div class="daily">
+                                    <div class="tit_box">
+                                        <span>Daily Course</span>
+                                        <a href="#null"><img src="./static/images/icon/ic_home_more_01.svg" alt=""></a>
+                                    </div>
+                                    <div class="cont_box red"><!--노력인 경우 class red-->
+                                        <div class="tit">
+                                            <span>3</span>
+                                            <p>Add two numbers (6)</p>
+                                        </div>
+                                        <div class="question_wrap">
+                                            <img src="https://dummyimage.com/592x174/f9f9f9/000&text=Question" alt="">
+                                        </div>
+                                        <div class="btn_wrap">
+                                            <button class="btn btn-blue">Go</button>
+                                        </div>
+                                        <div class="status">
+                                            <div class="date">2022.02.16</div>
+                                            <div class="grade grade1"><!--class 디폴트값 노력 / grade2 기본 / grade3 충분 / grade4 훌륭-->
+                                            Effort<!--결과값 텍스트 삭제하는 경우 태그는 두고 텍스트만 삭제-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="daily next">
+                                    <div class="tit_box">
+                                        <span>Daily Course</span>
+                                        <a href="#null"><img src="./static/images/icon/ic_home_more_01.svg" alt=""></a>
+                                    </div>
+                                    <div class="cont_box">
+                                        <div class="left">
+                                            <div class="num">23</div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="txt1">LEVEL 23 CLEAR</div>
+                                            <div class="subject">50까지의 수</div>
+                                            <div class="btn_area">
+                                                <button type="button" class="btn btn-blue">다음 레벨 시작</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//학습이력 있을 때-->
+                            </div>
+                            
+                            <!--학습이력 있을 때-->
+                            <div class="scroll_boxes">
+                                <div class="tit_wrap">
+                                    <div class="left">Review</div>
+                                </div>
+                                <div class="boxes_wrap">
+                                    <div class="boxes">
+                                        <div class="js_slick">
+                                            <!--박스 반복단위-->
+                                            <div class="q_box">
+                                                <a href="#null">
+                                                    <span class="grade">
+                                                        <img src="./static/images/icon/ic_result_1.png" alt="">
+                                                        <!--파일명)
+                                                            노력 ic_result_1.png
+                                                            기본 ic_result_2.png
+                                                            충분 ic_result_3.png
+                                                            훌륭 ic_result_4.png
+                                                        -->
+                                                    </span>
+                                                    <span class="q_cont">
+                                                        <img src="https://dummyimage.com/108x74/f9f9f9/000&text=Question" alt="">
+                                                    </span>
+                                                    <span class="lower">
+                                                        <span class="tit">Two-digit Addition(5)</span>
+                                                        <span class="date">2022.03.25</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <!--//박스 반복단위-->
+                                            <div class="q_box">
+                                                <a href="#null">
+                                                    <span class="grade">
+                                                        <img src="./static/images/icon/ic_result_2.png" alt="">
+                                                        <!--파일명)
+                                                            노력 ic_result_1.png
+                                                            기본 ic_result_2.png
+                                                            충분 ic_result_3.png
+                                                            훌륭 ic_result_4.png
+                                                        -->
+                                                    </span>
+                                                    <span class="q_cont">
+                                                        <img src="https://dummyimage.com/108x74/f9f9f9/000&text=Question" alt="">
+                                                    </span>
+                                                    <span class="lower">
+                                                        <span class="tit">Two-digit Addition(5)</span>
+                                                        <span class="date">2022.03.25</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="q_box">
+                                                <a href="#null">
+                                                    <span class="grade">
+                                                        <img src="./static/images/icon/ic_result_3.png" alt="">
+                                                        <!--파일명)
+                                                            노력 ic_result_1.png
+                                                            기본 ic_result_2.png
+                                                            충분 ic_result_3.png
+                                                            훌륭 ic_result_4.png
+                                                        -->
+                                                    </span>
+                                                    <span class="q_cont">
+                                                        <img src="https://dummyimage.com/108x74/f9f9f9/000&text=Question" alt="">
+                                                    </span>
+                                                    <span class="lower">
+                                                        <span class="tit">Two-digit Addition(5)</span>
+                                                        <span class="date">2022.03.25</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="q_box">
+                                                <a href="#null">
+                                                    <span class="grade">
+                                                        <img src="./static/images/icon/ic_result_4.png" alt="">
+                                                        <!--파일명)
+                                                            노력 ic_result_1.png
+                                                            기본 ic_result_2.png
+                                                            충분 ic_result_3.png
+                                                            훌륭 ic_result_4.png
+                                                        -->
+                                                    </span>
+                                                    <span class="q_cont">
+                                                        <img src="https://dummyimage.com/108x74/f9f9f9/000&text=Question" alt="">
+                                                    </span>
+                                                    <span class="lower">
+                                                        <span class="tit">Two-digit Addition(5)</span>
+                                                        <span class="date">2022.03.25</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="q_box">
+                                                <a href="#null">
+                                                    <span class="grade">
+                                                        <img src="./static/images/icon/ic_result_1.png" alt="">
+                                                        <!--파일명)
+                                                            노력 ic_result_1.png
+                                                            기본 ic_result_2.png
+                                                            충분 ic_result_3.png
+                                                            훌륭 ic_result_4.png
+                                                        -->
+                                                    </span>
+                                                    <span class="q_cont">
+                                                        <img src="https://dummyimage.com/108x74/f9f9f9/000&text=Question" alt="">
+                                                    </span>
+                                                    <span class="lower">
+                                                        <span class="tit">Two-digit Addition(5)</span>
+                                                        <span class="date">2022.03.25</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="q_box">
+                                                <a href="#null">
+                                                    <span class="grade">
+                                                        <img src="./static/images/icon/ic_result_1.png" alt="">
+                                                        <!--파일명)
+                                                            노력 ic_result_1.png
+                                                            기본 ic_result_2.png
+                                                            충분 ic_result_3.png
+                                                            훌륭 ic_result_4.png
+                                                        -->
+                                                    </span>
+                                                    <span class="q_cont">
+                                                        <img src="https://dummyimage.com/108x74/f9f9f9/000&text=Question" alt="">
+                                                    </span>
+                                                    <span class="lower">
+                                                        <span class="tit">Two-digit Addition(5)</span>
+                                                        <span class="date">2022.03.25</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="boxes">
+                                        <div class="js_slick">
+                                            <!--박스 반복단위-->
+                                            <div class="q_box">
+                                                <a href="#null">
+                                                    <span class="grade">
+                                                        <img src="./static/images/icon/ic_result_1.png" alt="">
+                                                        <!--파일명)
+                                                            노력 ic_result_1.png
+                                                            기본 ic_result_2.png
+                                                            충분 ic_result_3.png
+                                                            훌륭 ic_result_4.png
+                                                        -->
+                                                    </span>
+                                                    <span class="q_cont">
+                                                        <img src="https://dummyimage.com/108x74/f9f9f9/000&text=Question" alt="">
+                                                    </span>
+                                                    <span class="lower">
+                                                        <span class="tit">Two-digit Addition(5)</span>
+                                                        <span class="date">2022.03.25</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <!--//박스 반복단위-->
+                                            <div class="q_box">
+                                                <a href="#null">
+                                                    <span class="grade">
+                                                        <img src="./static/images/icon/ic_result_2.png" alt="">
+                                                        <!--파일명)
+                                                            노력 ic_result_1.png
+                                                            기본 ic_result_2.png
+                                                            충분 ic_result_3.png
+                                                            훌륭 ic_result_4.png
+                                                        -->
+                                                    </span>
+                                                    <span class="q_cont">
+                                                        <img src="https://dummyimage.com/108x74/f9f9f9/000&text=Question" alt="">
+                                                    </span>
+                                                    <span class="lower">
+                                                        <span class="tit">Two-digit Addition(5)</span>
+                                                        <span class="date">2022.03.25</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="q_box">
+                                                <a href="#null">
+                                                    <span class="grade">
+                                                        <img src="./static/images/icon/ic_result_3.png" alt="">
+                                                        <!--파일명)
+                                                            노력 ic_result_1.png
+                                                            기본 ic_result_2.png
+                                                            충분 ic_result_3.png
+                                                            훌륭 ic_result_4.png
+                                                        -->
+                                                    </span>
+                                                    <span class="q_cont">
+                                                        <img src="https://dummyimage.com/108x74/f9f9f9/000&text=Question" alt="">
+                                                    </span>
+                                                    <span class="lower">
+                                                        <span class="tit">Two-digit Addition(5)</span>
+                                                        <span class="date">2022.03.25</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="q_box">
+                                                <a href="#null">
+                                                    <span class="grade">
+                                                        <img src="./static/images/icon/ic_result_4.png" alt="">
+                                                        <!--파일명)
+                                                            노력 ic_result_1.png
+                                                            기본 ic_result_2.png
+                                                            충분 ic_result_3.png
+                                                            훌륭 ic_result_4.png
+                                                        -->
+                                                    </span>
+                                                    <span class="q_cont">
+                                                        <img src="https://dummyimage.com/108x74/f9f9f9/000&text=Question" alt="">
+                                                    </span>
+                                                    <span class="lower">
+                                                        <span class="tit">Two-digit Addition(5)</span>
+                                                        <span class="date">2022.03.25</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="q_box">
+                                                <a href="#null">
+                                                    <span class="grade">
+                                                        <img src="./static/images/icon/ic_result_1.png" alt="">
+                                                        <!--파일명)
+                                                            노력 ic_result_1.png
+                                                            기본 ic_result_2.png
+                                                            충분 ic_result_3.png
+                                                            훌륭 ic_result_4.png
+                                                        -->
+                                                    </span>
+                                                    <span class="q_cont">
+                                                        <img src="https://dummyimage.com/108x74/f9f9f9/000&text=Question" alt="">
+                                                    </span>
+                                                    <span class="lower">
+                                                        <span class="tit">Two-digit Addition(5)</span>
+                                                        <span class="date">2022.03.25</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="q_box">
+                                                <a href="#null">
+                                                    <span class="grade">
+                                                        <img src="./static/images/icon/ic_result_1.png" alt="">
+                                                        <!--파일명)
+                                                            노력 ic_result_1.png
+                                                            기본 ic_result_2.png
+                                                            충분 ic_result_3.png
+                                                            훌륭 ic_result_4.png
+                                                        -->
+                                                    </span>
+                                                    <span class="q_cont">
+                                                        <img src="https://dummyimage.com/108x74/f9f9f9/000&text=Question" alt="">
+                                                    </span>
+                                                    <span class="lower">
+                                                        <span class="tit">Two-digit Addition(5)</span>
+                                                        <span class="date">2022.03.25</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//학습이력 있을 때-->
+
+                            <div class="scroll_boxes">
+                                <div class="tit_wrap">
+                                    <div class="left">Recommendation Daily Topic</div>
+                                    <div class="right"><a href="#null">more</a></div>
+                                </div>
+                                <div class="boxes_wrap">
+                                    <div class="boxes">
+                                        <div class="js_slick">
+                                            <!--박스 반복단위-->
+                                            <div class="q_box">
+                                                <a href="#null">
+                                                    <span class="grade">
+                                                        <img src="./static/images/icon/ic_result_1.png" alt="">
+                                                        <!--파일명)
+                                                            노력 ic_result_1.png
+                                                            기본 ic_result_2.png
+                                                            충분 ic_result_3.png
+                                                            훌륭 ic_result_4.png
+                                                        -->
+                                                    </span>
+                                                    <span class="q_cont">
+                                                        <img src="https://dummyimage.com/108x74/f9f9f9/000&text=Question" alt="">
+                                                    </span>
+                                                    <span class="lower">
+                                                        <span class="tit">Two-digit Addition(5)</span>
+                                                        <span class="date">2022.03.25</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <!--//박스 반복단위-->
+                                            <div class="q_box">
+                                                <a href="#null">
+                                                    <span class="grade">
+                                                        <img src="./static/images/icon/ic_result_2.png" alt="">
+                                                        <!--파일명)
+                                                            노력 ic_result_1.png
+                                                            기본 ic_result_2.png
+                                                            충분 ic_result_3.png
+                                                            훌륭 ic_result_4.png
+                                                        -->
+                                                    </span>
+                                                    <span class="q_cont">
+                                                        <img src="https://dummyimage.com/108x74/f9f9f9/000&text=Question" alt="">
+                                                    </span>
+                                                    <span class="lower">
+                                                        <span class="tit">Two-digit Addition(5)</span>
+                                                        <span class="date">2022.03.25</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="q_box">
+                                                <a href="#null">
+                                                    <span class="grade">
+                                                        <img src="./static/images/icon/ic_result_3.png" alt="">
+                                                        <!--파일명)
+                                                            노력 ic_result_1.png
+                                                            기본 ic_result_2.png
+                                                            충분 ic_result_3.png
+                                                            훌륭 ic_result_4.png
+                                                        -->
+                                                    </span>
+                                                    <span class="q_cont">
+                                                        <img src="https://dummyimage.com/108x74/f9f9f9/000&text=Question" alt="">
+                                                    </span>
+                                                    <span class="lower">
+                                                        <span class="tit">Two-digit Addition(5)</span>
+                                                        <span class="date">2022.03.25</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="q_box">
+                                                <a href="#null">
+                                                    <span class="grade">
+                                                        <img src="./static/images/icon/ic_result_4.png" alt="">
+                                                        <!--파일명)
+                                                            노력 ic_result_1.png
+                                                            기본 ic_result_2.png
+                                                            충분 ic_result_3.png
+                                                            훌륭 ic_result_4.png
+                                                        -->
+                                                    </span>
+                                                    <span class="q_cont">
+                                                        <img src="https://dummyimage.com/108x74/f9f9f9/000&text=Question" alt="">
+                                                    </span>
+                                                    <span class="lower">
+                                                        <span class="tit">Two-digit Addition(5)</span>
+                                                        <span class="date">2022.03.25</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="q_box">
+                                                <a href="#null">
+                                                    <span class="grade">
+                                                        <img src="./static/images/icon/ic_result_1.png" alt="">
+                                                        <!--파일명)
+                                                            노력 ic_result_1.png
+                                                            기본 ic_result_2.png
+                                                            충분 ic_result_3.png
+                                                            훌륭 ic_result_4.png
+                                                        -->
+                                                    </span>
+                                                    <span class="q_cont">
+                                                        <img src="https://dummyimage.com/108x74/f9f9f9/000&text=Question" alt="">
+                                                    </span>
+                                                    <span class="lower">
+                                                        <span class="tit">Two-digit Addition(5)</span>
+                                                        <span class="date">2022.03.25</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="q_box">
+                                                <a href="#null">
+                                                    <span class="grade">
+                                                        <img src="./static/images/icon/ic_result_1.png" alt="">
+                                                        <!--파일명)
+                                                            노력 ic_result_1.png
+                                                            기본 ic_result_2.png
+                                                            충분 ic_result_3.png
+                                                            훌륭 ic_result_4.png
+                                                        -->
+                                                    </span>
+                                                    <span class="q_cont">
+                                                        <img src="https://dummyimage.com/108x74/f9f9f9/000&text=Question" alt="">
+                                                    </span>
+                                                    <span class="lower">
+                                                        <span class="tit">Two-digit Addition(5)</span>
+                                                        <span class="date">2022.03.25</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="lower_banner_slide">
+                            <div class="bnr_wrap js_slick_bnr">
+                                <!--배너 반복단위-->
+                                <div class="bnr">
+                                    <a href="#null" class="bnr_cont">
+                                        <!--태블릿 한글배너-->
+                                        <img class="hide_m" src="./static/images/common/img_home_banner_kor.png" alt="">
+                                        <!--모바일 한글배너-->
+                                        <img class="hide_pc hide_t" src="./static/images/common/img_home_banner_mo_kor.png" alt="">
+                                    </a>
+                                </div>
+                                <!--//배너 반복단위-->
+                                <div class="bnr">
+                                    <a href="#null" class="bnr_cont">
+                                        <!--태블릿 영문배너-->
+                                        <img class="hide_m" src="./static/images/common/img_home_banner_eng.png" alt="">
+                                        <!--모바일 영문배너-->
+                                        <img class="hide_pc hide_t" src="./static/images/common/img_home_banner_mo_eng.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+//스크롤시 헤더영역 변화
+var $cont = $('.container'),
+    $header = $('.js_scroll_head');
+
+$cont.scroll(function(){
+    var scrollTop = $cont.scrollTop();
+    scrollTop ? $header.addClass('h_short') : $header.removeClass('h_short');
+});
+
+//문항 박스들 스와이프
+$('.js_slick').slick({
+    variableWidth: true,
+    infinite: false,
+    swipeToSlide: true,
+    arrows: false,
+});
+
+//배너 스와이프 2
+$('.js_slick_bnr').slick({
+    dots: true,
+    arrows: false,
+});
+</script>
+
+</body>
+</html>

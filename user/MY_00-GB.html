@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+		<div class="layout-def with_bottom_area log_in gm gb">
+			<div class="container">
+				<div class="inner">
+
+                    <!-- 220422 기존 헤더 추가 S  -->
+                    <div class="btns_wrap cls">
+                        <div class="app_btn">
+                            <button class="btn_exit" type="button">
+                                <img src="./static/images/icon/btn_back.svg" alt="뒤로가기" />
+                            </button>
+                        </div>
+                        <div class="tit_gm center_tit24 navy">로그인</div>
+                    </div>
+                    <!-- //220422 기존 헤더 추가 E  -->
+
+                    <div class="center_wrap">
+                        <div class="logo_wrap">
+                            <div class="logo">
+                                <img src="./static/images/common/img_login_logo.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="input_wrap">
+                            <form>
+                                <article>
+                                    <div class="input_cont h56">
+                                        <div class="input_box white_box">
+                                            <input type="email" placeholder="이메일" />
+                                            <div class="r_area">
+                                                <!--1.정상-->
+                                                <img src="./static/images/icon/input_check.svg" alt="" />
+                                                <button type="button">
+                                                    <!--2.에러-->
+                                                    <img src="./static/images/icon/input_error.svg" alt="" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="info_txt red">올바른 이메일 형식이 아닙니다. 예) abc@mathpid.com</div><!--오류 메시지가 없을 때는 이 태그 전체를 지우면 됨-->
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="input_cont h56">
+                                        <div class="input_box white_box">
+                                            <input type="password" placeholder="비밀번호" />
+                                            <div class="r_area">
+                                                <button type="button">
+                                                    <!--비밀번호 보기-->
+                                                    <img src="./static/images/icon/btn_login_eye_on.svg" alt="" />
+                                                    <img src="./static/images/icon/btn_login_eye_off.svg" alt="" />
+                                                </button>
+                                                <!--1.정상-->
+                                                <img src="./static/images/icon/input_check.svg" alt="" />
+                                                <button type="button">
+                                                    <!--2.에러-->
+                                                    <img src="./static/images/icon/input_error.svg" alt="" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="info_txt red">입력한 이메일과 비밀번호가 일치하지 않습니다. <br class="hide_pc hide_t">이메일 또는 비밀번호를 다시 확인해 주세요.</div><!--오류 메시지가 없을 때는 이 태그 전체를 지우면 됨-->
+                                    </div>
+                                </article>
+                            </form>
+                        </div>
+                        <div class="lower_wrap2">
+            				<button class="btn btn-white" disabled>로그인</button><!--로그인 정보 미입력시 disabled-->
+                        </div>
+                        <div class="lower_wrap3">
+                            <a href="#null">비밀번호를 잊으셨나요?</a>
+                        </div>
+                    </div>
+                    <div class="btn_wrap">
+                        <button class="btn h56 btn_join">회원가입</button>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

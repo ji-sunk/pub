@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+	<style>
+	* { padding: 0; margin: 0; box-sizing: border-box; border: 0; }
+	html, body { height: 100%; }
+	.enter-logo { display: -ms-flexbox; display: flex; width: 100%; height: 100%; justify-content: center; align-items: center; background-color: #fff; }
+	.logo{width: 280px;}
+	</style>
+</head>
+<body>
+
+<div class="enter-logo">
+    <img class="logo" src="static/images/common/logo_ai_barosem.svg" alt="" />
+</div>
+
+<script>
+window.onload = function() {
+    var _tablet = (/tablet|ipad|sm-t/i.test(navigator.userAgent.toLowerCase()));
+    var _mobile = (/android|iphone|ipod/i.test(navigator.userAgent.toLowerCase()));
+    var logo = document.getElementsByClassName("logo");
+    
+    if(_mobile){
+        //mobile
+        logo.item(0).style.width = "160px";
+    }else if(_tablet){
+        //tablet
+        logo.item(0).style.width = "400px";
+    }else{
+        //pc
+        logo.item(0).style.width = "280px";
+    }    
+};
+</script>
+
+</body>
+</html>

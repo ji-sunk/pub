@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+        <!-- 헤더 변경 없음 기존 그대로 사용 S -->
+        <div class="header_top gb bg_sky">
+           <div class="inner">
+	            <div class="btns_wrap cls">
+                    <div class="app_btn">
+                        <button class="btn_exit" type="button">
+                            <img src="./static/images/icon/btn_back.svg" alt="" />
+                        </button>
+                    </div>
+                    <div class="tit_gm center_tit24">회원 가입</div>
+	            </div>
+           </div>
+        </div>
+        <!-- //헤더 변경 없음 기존 그대로 사용 E -->
+
+		<div class="layout-def layout-sl bg_gray gb member_step1">
+			<div class="container">
+				<div class="inner">
+                    <div class="wirte_form w672">
+                        <form>
+                            <section>
+                                <h2>회원 정보 입력</h2>
+                                <div class="input_cont">
+                                    <div class="input_box white_box">
+                                        <input type="text" placeholder="이메일" />
+                                        <div class="r_area">
+                                            <img src="./static/images/icon/ic_check.svg" alt="" />
+                                            <button type="button"><img src="./static/images/icon/ic_error.svg" alt="" /></button>
+                                        </div>
+                                    </div>
+                                    <div class="red_txt fs12_10">비밀번호 찾기 시 이용됩니다. 정확한 이메일주소를 입력해 주세요.</div><!--경고문구 상황에 맞게 노출 -->
+                                </div>
+                     
+                                <div class="input_cont">
+                                    <div class="input_box white_box">
+                                        <input type="password" placeholder="비밀번호 입력 (6자 이상)" />
+                                        <div class="r_area">
+                                            <button type="button">
+                                                <img src="./static/images/icon/btn_join_eye_on.svg" alt="" />
+                                                <img src="./static/images/icon/btn_join_eye_off.svg" alt="" />
+                                            </button>
+                                            <img src="./static/images/icon/ic_check.svg" alt="" />
+                                            <button type="button"><img src="./static/images/icon/ic_error.svg" alt="" /></button>
+                                        </div>
+                                    </div>
+                                    <div class="red_txt fs12_10">비밀번호는 6자 이상 입력해 주세요.</div><!--경고문구 상황에 맞게 노출 -->
+                                </div>
+
+                                <div class="input_cont">
+                                    <div class="input_box white_box">
+                                        <input type="text" placeholder="학습자 이름" />
+                                        <div class="r_area">
+                                            <img src="./static/images/icon/ic_check.svg" alt="" />
+                                            <button type="button"><img src="./static/images/icon/ic_error.svg" alt="" /></button>
+                                        </div>
+                                    </div>
+                                    <div class="red_txt fs12_10">학습자 이름은 언제든지 변경 할 수 있습니다.</div><!--경고문구 상황에 맞게 노출 -->
+                                </div>
+
+                                <div class="lower_area">
+                                    <div class="chk_wrap">
+                                        <div class="chk_box">
+                                            <input id="agree1" value='selectall' type="checkbox" onclick='selectAll(this)' />
+                                            <label for="agree1">약관 전체 동의</label>
+                                        </div>
+                                        <div class="chk_box">
+                                            <input id="agree2" type="checkbox" />
+                                            <label for="agree2">이용약관 동의 (필수)</label>
+                                            <div class="right">
+                                                <a href="#none" class="arr"><img src="./static/images/icon/link_join_48x48@2x.png" alt="더보기" /></a>
+                                            </div>
+                                        </div>
+                                        <div class="chk_box">
+                                            <input id="agree3" type="checkbox" />
+                                            <label for="agree3">개인정보 수집 및 이용 동의 (필수)</label>
+                                            <div class="right">
+                                                <a href="#none" class="arr"><img src="./static/images/icon/link_join_48x48@2x.png" alt="더보기" /></a>
+                                            </div>
+                                        </div>
+                                        <div class="chk_box">
+                                            <input id="agree4" type="checkbox" />
+                                            <label for="agree4">마케팅 수신 동의 (선택)</label>
+                                            <div class="right">
+                                                <a href="#none" class="arr"><img src="./static/images/icon/link_join_48x48@2x.png" alt="더보기" /></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </form>
+                        <div class="bottom_btn_wrap cls">
+                            <button type="button" class="btn btn-blue">회원가입 완료</button>
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //layout-def -->
+	</div>
+</div>
+
+<script>
+    //체크박스 전체 선택
+    function selectAll(selectAll)  {
+    const checkboxes 
+        = document.querySelectorAll('input[type="checkbox"]');
+    
+    checkboxes.forEach((checkbox) => {
+        checkbox.checked = selectAll.checked
+    })
+    }
+</script>
+
+</body>
+</html>

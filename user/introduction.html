@@ -44,25 +44,86 @@
                  <!-- //220408 이전 헤더 그대로 사용 E -->
             
                 <div class="container">
+
+                    <!-- 220504 전체적으로 추가 수정 S -->            
                     <div class="inner">
     
                         <!-- 220408 슬라이드로 구조 변경 S -->
-                        <div class="slide_cont">
+                        <div class="slide_cont otTypeA" ><!-- 220504 otType 클래스명 추가 -->
                             <div class="slick_slider js_slick">
                                 
+                                <!-- 220429 디자인 변경 S -->
                                 <div class="slide_wrap">
                                     <div class="cont_box cont en"> 
-                                        <div class="optionA">
-                                            <img class="intro_tit" src="./static/images/common/introduction/en/option_a.svg" alt="AI arithmetic Mathpid. Students from 175 countries are studying with Mathpid!" />
-                                            <div class="en intro_bottom_txt">
-                                                <img class="intro_bottom_txt" src="./static/images/common/introduction/en/intro_bottom_txt.svg" alt="Mathpid provides 30,000+ arithmatic problems and curriculum aligned learning course." />
+                                        <div class="tit_area">
+                                            <div class="ko">
+                                                <img class="intro_tit" src="./static/images/common/introduction/ko/main_tit.svg" alt="매쓰피드 전 세계 175개국의 학생들이 학습하는 매쓰피드! 매쓰피드를 통해 30,000개 이상의 문제와 개인 맞춤형 연산 학습을 체험해 보세요!" />
+                                            </div>
+                                            <div class="en">
+                                                <img class="intro_tit" src="./static/images/common/introduction/en/option_a.svg" alt="AI arithmetic Mathpid. Students from 175 countries are studying with Mathpid!" />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
     
+
+                                <!-- KO -->
                                 <div class="slide_wrap">    
-                                    <div class="cont_box cont1"> 
+                                    <div class="cont_box cont1">
+                                        <span class="sld_box">
+                                            <span class="blind">1</span>
+                                            <p class="tit">
+                                                선생님과 학부모가 <br>인정하는 매쓰피드!
+                                            </p>
+                                            <p class="txt">
+                                                전 세계의 선생님과 학부모에게 인정 받은 매쓰피드는, <br>
+                                                항상 사용자들의 학습 결과를 돌아보고 <br>
+                                                컨텐츠에 반영 합니다.
+                                            </p>
+                                        </span>
+                                        <img src="./static/images/common/introduction/ko/intro_img_01.png" alt="" />
+                                    </div>
+                                </div>
+
+                                <div class="slide_wrap">
+                                    <div class="cont_box cont2"> 
+                                        <span class="sld_box">
+                                            <span class="blind">2</span>
+                                            <p class="tit">
+                                                실리콘밸리 기반 AI 기술로 <br>
+                                                맞춤형 학습을 체험해 보세요.
+                                            </p>
+                                            <p class="txt">
+                                                선생님과 학부모를 위해 AI 진단 기술이 알아서 <br>
+                                                학생의 약점을 파악하고, 학생에게 꼭 맞는 <br>
+                                                학습 진도를 추천해 줍니다.
+                                            </p>
+                                        </span>
+                                        <img src="./static/images/common/introduction/ko/intro_img_02.png" alt="" />
+                                    </div>
+                                </div>
+
+                                <div class="slide_wrap">    
+                                    <div class="cont_box cont3"> 
+                                        <span class="sld_box">
+                                            <span class="blind">1</span>
+                                            <p class="tit">
+                                                사진 한 컷으로 제한 없는 <br>
+                                                연산 학습을 시작해 보세요.
+                                            </p>
+                                            <p class="txt">
+                                                매쓰피드는 사진 속 수학 문제를 자동으로 인식해, <br>
+                                                학습하면 도움이 될 유사한 문제를 추천해줍니다. <br>
+                                                전문가에게 검증된 연산 문제를 제한 없이 학습해 보세요. 
+                                            </p>
+                                        </span>
+                                        <img src="./static/images/common/introduction/ko/intro_img_03.png" alt="" />
+                                    </div> 
+                                </div>
+                            
+                                <!-- EN -->
+                                <div class="slide_wrap">    
+                                    <div class="cont_box cont1">
                                         <span class="sld_box">
                                             <span class="blind">1</span>
                                             <p class="tit">
@@ -71,7 +132,7 @@
                                             <p class="txt">
                                                 Approved by global parents and teachers! <br>
                                                 Mathpid keeps your math lessons <br> 
-                                                engaged with real-user results. 
+                                                engaged with real-user results.
                                             </p>
                                         </span>
                                         <img src="./static/images/common/introduction/en/intro_img_01.png" alt="" />
@@ -111,18 +172,163 @@
                                         <img src="./static/images/common/introduction/en/intro_img_03.png" alt="" />
                                     </div> 
                                 </div>
+                                <!-- //220429 디자인 변경 E -->
 
                             </div>
+                        </div>
+
+
+                        <div class="slide_cont otTypeB"  style="display: none;"> <!-- 220504 otType 클래스명 추가 -->
+                            <div class="slick_slider js_slick">
     
+                                <div class="slide_wrap">
+                                    <div class="cont_box cont ko"><!-- 220408 영문(.en) /국문(.ko) 클래스명 변경은 여기 -->
+                                        <!-- <div class="ko">
+                                            <img class="intro_tit" src="./static/images/common/introduction/ko/main_tit.svg" alt="AI 연산 매쓰피드 강력한 AI기술로 학습시간은 확 줄여주고 연산 실력은 빠르게 높여줍니다!" />
+                                        </div>
+                                        <div class="en">
+                                            <img class="intro_tit" src="./static/images/common/introduction/en/main_tit.svg" alt="AI arithmetic Mathpid. Powerful AI technology will help you reduce study time and improve math skills in no time." />
+                                        </div> -->
+
+                                        <!-- 220413 온보딩 메인 타입 A~C과 하단 텍스트 추가 S -->
+
+                                        
+                                        <div class="tit_area">
+                                            <div class="ko">
+                                                <img class="intro_tit" src="./static/images/common/introduction/ko/main_tit.svg" alt="매쓰피드 전 세계 175개국의 학생들이 학습하는 매쓰피드! 매쓰피드를 통해 30,000개 이상의 문제와 
+                                                개인 맞춤형 연산 학습을 체험해 보세요!" />
+                                            </div>
+                                            <div class="en">
+                                                <img class="intro_tit" src="./static/images/common/introduction/en/option_a.svg" alt="AI arithmetic Mathpid. Students from 175 countries are studying with Mathpid!" />
+                                            </div>
+                                        </div>
+                                        <!-- <div class="en optionB">
+                                            <img class="intro_tit" src="./static/images/common/introduction/en/option_b.svg" alt="AI arithmetic. mathpid. Powerful AI technology will help you reduce study time and improve math skills in no time." />
+                                            <div class="en intro_bottom_txt">
+                                                <img class="intro_bottom_txt" src="./static/images/common/introduction/en/intro_bottom_txt.svg" alt="Mathpid provides 30,000+ arithmatic problems and curriculum aligned learning course." />
+                                            </div>
+                                        </div> -->
+                                        <!-- <div class="en optionC">
+                                            <img class="intro_tit" src="./static/images/common/introduction/en/option_c.svg" alt="AI arithmetic Mathpid. 100,000+ Ace students has experienced K-Education through Mathpid!" />
+                                            <div class="en intro_bottom_txt">
+                                                <img class="intro_bottom_txt" src="./static/images/common/introduction/en/intro_bottom_txt.svg" alt="Mathpid provides 30,000+ arithmatic problems and curriculum aligned learning course." />
+                                            </div>
+                                        </div>
+                                        //220413 온보딩 메인 타입 A~C과 하단 텍스트 추가 E -->
+                                    </div>
+                                </div>
+    
+                                <div class="slide_wrap">    
+                                    <div class="cont_box cont1 ko"><!-- 220408 영문(.en) /국문(.ko) 클래스명 변경은 여기 -->
+                                        <div class="ko">
+                                            <img src="./static/images/common/introduction/ko/intro_txt_01.svg" alt="학습량 자동판단 충분히 풀었는지 판단한다! 최적의 학습량을 실시간 계산하여 시간 낭비 없이 효율적으로 학습시켜 줍니다." />
+                                            <img src="./static/images/common/introduction/intro_img_01.svg" alt="" />
+                                        </div>
+                                        <div class="en">
+                                            <img src="./static/images/common/introduction/en/intro_txt_01.svg" alt="AI’s smart judgement. Determine if the kid has solved enough problems! AI evaluates the optimal amount of learning to maximize efficiency." />
+                                            <img src="./static/images/common/introduction/intro_img_01.svg" alt="" />
+                                        </div>
+                                    </div> 
+                                </div>
+    
+                                <div class="slide_wrap">    
+                                    <div class="cont_box cont2 ko"><!-- 220408 영문(.en) /국문(.ko) 클래스명 변경은 여기 -->
+                                        <div class="ko">
+                                            <img src="./static/images/common/introduction/ko/intro_txt_02.svg" alt="진단 테스트. 10문제만 풀어도 다 안다! 신속 · 정확한 진단으로 학습 시작점까지 빠르게 안내합니다." />
+                                            <img src="./static/images/common/introduction/ko/intro_img_02.svg" alt="" />
+                                        </div>
+                                        <div class="en">
+                                            <img src="./static/images/common/introduction/en/intro_txt_02.svg" alt="Diagnostic Test. 10 problems are enough! Quick and accurate assessment will guide student’s learning journey." />
+                                            <img src="./static/images/common/introduction/en/intro_img_02.svg" alt="" />
+                                        </div>
+                                    </div> 
+                                </div>
+    
+                                <div class="slide_wrap">    
+                                    <div class="cont_box cont3 ko"><!-- 220408 영문(.en) /국문(.ko) 클래스명 변경은 여기 -->
+                                        <div class="ko">
+                                            <img src="./static/images/common/introduction/ko/intro_txt_03.svg" alt="문제풀이 분석. 3초 안에 다 파악한다. 한 문제, 한 문제 어떻게 푸는지 실시간 분석하여 다음 문제를 맞춤 출제합니다." />
+                                            <img src="./static/images/common/introduction/ko/intro_img_03.svg" alt="" />
+                                        </div>
+                                        <div class="en">
+                                            <img src="./static/images/common/introduction/en/intro_txt_03.svg" alt="AI’s real-time analysis. 3 seconds are enough! AI designs next steps based on real-time analysis of student’s work." />
+                                            <img src="./static/images/common/introduction/en/intro_img_03.svg" alt="" />
+                                        </div>
+                                    </div> 
+                                </div>
+    
+                                <div class="slide_wrap">    
+                                    <div class="cont_box cont4 ko"><!-- 220408 영문(.en) /국문(.ko) 클래스명 변경은 여기 -->
+                                        <div class="ko">
+                                            <img src="./static/images/common/introduction/ko/intro_txt_04.svg" alt="오답 원인 분석. 왜 틀렸는지 구분한다! 오답이 발생한 원인을 분석하여 학습자 스스로 문제점을 해결할 수 있게 도와줍니다." />
+                                            <img src="./static/images/common/introduction/ko/intro_img_04.svg" alt="" />
+                                        </div>
+                                        <div class="en">
+                                            <img src="./static/images/common/introduction/en/intro_txt_04.svg" alt="AI’s analysis of incorrect answers.AI detects why students are getting them wrong. It helps learners solve problems on their own by analyzing the causes of incorrect answers.
+                                            " />
+                                            <img src="./static/images/common/introduction/en/intro_img_04.svg" alt="" />
+                                        </div>
+                                    </div> 
+                                </div>
+    
+                                <div class="slide_wrap">    
+                                    <div class="cont_box cont5 ko"><!-- 220408 영문(.en) /국문(.ko) 클래스명 변경은 여기 -->
+                                        <div class="ko">
+                                            <img src="./static/images/common/introduction/ko/intro_txt_05.svg" alt="수학 카메라. 카메라로 찍고 바로 연습한다! 모르거나 더 연습하고 싶은 문제를 카메라로 촬영하면 AI가 개념과 유사 문제를 찾아줍니다." />
+                                            <img src="./static/images/common/introduction/intro_img_05.svg" alt="" />
+                                        </div>
+                                        <div class="en">
+                                            <img src="./static/images/common/introduction/en/intro_txt_05.svg" alt="Math Camera. Use your camera! Take a picture of a problem you need help with, and AI will provide learning concepts and similar problems for you." />
+                                            <img src="./static/images/common/introduction/intro_img_05.svg" alt="" />
+                                        </div>
+                                    </div> 
+                                </div>
+    
+                                <div class="slide_wrap">    
+                                    <div class="cont_box cont6 ko"><!-- 220408 영문(.en) /국문(.ko) 클래스명 변경은 여기 -->
+                                        <div class="ko">
+                                            <img src="./static/images/common/introduction/ko/intro_txt_06.svg" alt="효과적으로! 효율적으로! 이제 매쓰피드로 연산 학습 하세요." />
+                                            <img src="./static/images/common/introduction/intro_img_06.svg" alt="" />
+                                            <ul class="blind">
+                                                <li><strong>100% 주관식.</strong>손가락이나 펜으로직접 쓰고 풀어요.</li>
+                                                <li><strong>무한출제.</strong>중복없이 새로운 문제가 가득해요.</li>
+                                                <li><strong>주제학습.</strong>필요한 부분만 골라 집중 연습해요.</li>
+                                                <li><strong>간편학습.</strong>문제집, 연습장, 연필 없이 언제 어디서나 풀어요.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="en">
+                                            <img src="./static/images/common/introduction/en/intro_txt_06.svg" alt="Effectively! Efficiently! Mathpid will help you learn arithmetic." />
+                                            <img src="./static/images/common/introduction/en/intro_img_06.svg" alt="" />
+                                            <ul class="blind">
+                                                <li><strong>100% short answer questions.</strong>Write and solve problems directly with your finger or pen.</li>
+                                                <li><strong>Unlimited questions.</strong>Full of new problems without any duplication.</li>
+                                                <li><strong>Daily topic.</strong>Choose the topic you want to practice intensively.</li>
+                                                <li><strong>Accessible and convenient.</strong>Study math anytime and anywhere without workbooks, paper, or pencils.</li>
+                                            </ul>
+                                        </div>
+                                        <!-- 220408 태블릿 S -->
+                                        <div class="th">
+                                            <img class="ko_tit"src="./static/images/common/introduction/ko/intro_txt_06.svg" alt="" />
+                                            <img class="ko_land" src="./static/images/common/introduction/ko/intro_img_06_th.svg" alt="" />
+                                            <img class="en_tit" src="./static/images/common/introduction/en/intro_txt_06.svg" alt="" />
+                                            <img class="en_land" src="./static/images/common/introduction/en/intro_img_06_th.svg" alt="" />
+                                        </div>
+                                        <!-- //220408 태블릿 E -->
+                                    </div> 
+                                </div>
+                            </div>
                         </div>
                         
                         <div class="floating_area en">
-                            <button class="btn btn-blue en">START</button>
+                            <button class="btn btn-blue ko">학습 시작하기</button>
+                            <button class="btn btn-blue en">START</button><!-- 220429 대문자 변경 -->
                         </div>
                         <!-- 220408 슬라이드로 구조 변경 E -->
                     </div>
+                    <!-- //220504 전체적으로 추가 수정 E -->
     
                 </div>
+
             </div>
 
         </div>
