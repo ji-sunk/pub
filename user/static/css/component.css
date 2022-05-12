@@ -5090,7 +5090,7 @@ form.lr{padding-bottom: 70px;}
 .payment .pay_dsc_lst li p {white-space: normal;}
 .payment .pay_dsc_lst .chk_tit_txt {width:100%; font-family: 'NotoSansCJKkr-bold'; font-size: 22px; color:#225782}
 .payment .pay_dsc_lst .chk_sub_txt {margin-top:8px; width:100%; line-height:1.40; font-family: 'NotoSansCJKkr-Medium'; font-size: 19px; color:#fff}
-.payment .layout-lc .footer {padding-bottom:30px; background-color: #fff}
+.payment .layout-lc .footer {position: static; padding-bottom:30px; background-color: #fff}
 .payment .d-flex.btn_area {width:100%; padding-top:20px}
 .payment .d-flex.btn_area .btn_pay {padding:0 20px; width:100%; text-align: center; font-size:20px;}
 .payment .d-flex.btn_area .btn_pay button {border-radius:30px;}
