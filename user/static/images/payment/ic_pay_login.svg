@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+    <defs>
+        <clipPath id="2wpx1sdpqa">
+            <path data-name="사각형 9632" transform="translate(9848 6864)" style="fill:#fff;stroke:#707070" d="M0 0h38v38H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="마스크 그룹 14550" transform="translate(-9848 -6864)" style="clip-path:url(#2wpx1sdpqa)">
+        <g data-name="그룹 15433">
+            <g data-name="학습노트" transform="translate(9852 6868)">
+                <circle data-name="타원 1" cx="15" cy="15" style="fill:#225782" r="15"/>
+            </g>
+            <g data-name="그룹 15432">
+                <path data-name="패스 134570" d="M12.886 4.7a3.576 3.576 0 0 1-3.437 3.7 3.576 3.576 0 0 1-3.437-3.7A3.576 3.576 0 0 1 9.449 1a3.576 3.576 0 0 1 3.437 3.7z" transform="translate(9858.018 6873.825)" style="stroke-width:1.5px;fill:none;stroke:#fff;stroke-miterlimit:10"/>
+                <path data-name="패스 134571" d="M1 24.472v-3.318s-.027-4.907 5.595-4.634" transform="translate(9860.74 6865.944)" style="stroke-linecap:round;stroke-width:1.5px;fill:none;stroke:#fff;stroke-miterlimit:10"/>
+                <path data-name="패스 134572" d="M17.749 17.907a5.278 5.278 0 0 0-4.282-1.388" transform="translate(9853.969 6865.944)" style="stroke-linecap:round;stroke-width:1.5px;fill:none;stroke:#fff;stroke-miterlimit:10"/>
+                <path data-name="선 1111" transform="translate(9871.288 6888.133)" style="stroke-linecap:round;fill:none;stroke:#fff;stroke-miterlimit:10" d="M0 0h4.241"/>
+                <path data-name="선 1112" transform="translate(9873.409 6885.85)" style="stroke-linecap:round;fill:none;stroke:#fff;stroke-miterlimit:10" d="M0 0v4.566"/>
+            </g>
+        </g>
+    </g>
+</svg>
