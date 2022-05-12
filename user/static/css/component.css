@@ -4716,6 +4716,7 @@ form.lr{padding-bottom: 70px;}
 .intro_global_wrap .cont6.ko .en img {display:none}
 .intro_global_wrap .cont6.en .ko img {display:none}
 
+
 /*  220413~ 소개 페이지 옵션 타입A~C 추가 (영문) */
 .intro_global_wrap .cont_box.cont {position:relative}
 .intro_global_wrap .intro_bottom_txt {margin-top:-17%}
@@ -4752,19 +4753,11 @@ form.lr{padding-bottom: 70px;}
 .v-mob .intro_global_wrap .slide_wrap .cont_box.cont img:nth-child(1) {}
 .v-mob .intro_global_wrap .slick_slider .slick-dots li {width: 12px; height: 12px;}
 /* 모바일 폴드 */
-@media screen and (min-width:250px) and (max-width:281px) {
+@media screen and (min-width:200px) and (max-width:326px) {
     .v-mob .intro_global_wrap .slick-track {height:100vh;}
 }
-
 /* 태블릿 */
 .v-tab .intro_global_wrap .slide_cont.otTypeB img {width: 68%;}
-
-/* 태블릿 세로 */
-@media screen and (orientation: portrait){
-    /* .v-tab .intro_global_wrap .slide_cont img {width: 70%;} */
-    /* .v-tab .intro_global_wrap .slick_slider .slick-dots {bottom:-20px} */
-}
-
 /* 태블릿 가로 */
 @media screen and (orientation: landscape){
     .v-tab .intro_global_wrap {position: relative; background:url(../images/common/introduction/main_bg.svg) repeat-x left 0 top 0 / cover #f7fbfd;}
@@ -4774,7 +4767,6 @@ form.lr{padding-bottom: 70px;}
     .v-tab .intro_global_wrap .slide_wrap .cont_box {position:relative}
     .v-tab .intro_global_wrap .slide_wrap .cont_box img {margin:0 auto; text-align: center; display:inline-flex; width:43%;}
     .v-tab .intro_global_wrap .slide_wrap .cont_box img:nth-child(2) {margin-top:0; display:inline-flex}
-    /* .v-tab .intro_global_wrap .slide_wrap .cont_box .intro_tit {margin-top:25%;} */
     .v-tab .intro_global_wrap .cont6 .ko {display:none}
     .v-tab .intro_global_wrap .cont6 .th {display:block}
     .v-tab .intro_global_wrap .cont6.ko .th .ko_tit {display:block}
@@ -4985,17 +4977,13 @@ form.lr{padding-bottom: 70px;}
 .skyblue .intro_global_wrap {position: relative; height:100vh;}
 
 /* 온보딩 테스트 추가 S */
-/* .intro_global_wrap .otTypeA {height:100vh} */
 .intro_global_wrap .otTypeA .sld_box p {margin-top:14px}
 .intro_global_wrap .otTypeA .sld_box img {margin-top:14px}
 .intro_global_wrap .otTypeA .sld_box .tit {display:block; font-size: 23px; font-weight: bold; line-height: 1.31; font-family: 'NotoSansCJKkr-Bold';color: #00c3e1;}
 .intro_global_wrap .otTypeA .sld_box .txt {display:block; font-size: 14px; font-weight: 400; line-height: 20px; font-family: 'NotoSansCJKkr-Regular';color: #2a2a2a;}
-/* .intro_global_wrap .otTypeA .sld_box {display:inline-block; margin-top:20px; padding-top:40px;} */
-    
 .intro_global_wrap .otTypeA .cont1 .sld_box {background: url(../images/common/introduction/intro_num_01.svg) no-repeat left 50% top 0; background-size: 10%;}
 .intro_global_wrap .otTypeA .cont2 .sld_box {background: url(../images/common/introduction/intro_num_02.svg) no-repeat left 50% top 0; background-size: 10%;}
 .intro_global_wrap .otTypeA .cont3 .sld_box {background: url(../images/common/introduction/intro_num_03.svg) no-repeat left 50% top 0; background-size: 10%;}
-/* .intro_global_wrap .otTypeA .tit_area {width:80%; margin:0 auto; transform: translateY(25%); text-align: center;} */
 .intro_global_wrap .otTypeA .tit_area {width:80%; margin:0 auto; padding-top:20px; text-align: center;}
 .intro_global_wrap .otTypeA .cont_box.en .en {display:block}
 
@@ -5022,7 +5010,6 @@ form.lr{padding-bottom: 70px;}
 .v-pc .wrap-inner .skyblue {height:100vh; background:url(../images/common/introduction/main_bg.svg) repeat left 0 top 0 / cover #f7fbfd; }
 .v-pc .intro_global_wrap .slick_slider .slick-dots {position:absolute;}
 .v-pc .intro_global_wrap .otTypeA .slide_wrap .cont_box {display: flex; max-width:100%; flex-direction: column; justify-content: space-around; align-items: center; margin:0 auto; text-align: center;}
-
 /* 모바일 */
 .v-mob .intro_global_wrap .otTypeA .slide_cont {height:100%}
 .v-mob .intro_global_wrap .floating_area {bottom: 6%;}
@@ -5034,21 +5021,15 @@ form.lr{padding-bottom: 70px;}
     .v-mob .intro_global_wrap .slick-track {height:100vh;}
     .v-mob .intro_global_wrap .otTypeA .sld_box .tit {font-size:20px;}
 }
-/* 모바일 폴드2 펼쳤을 때 */
-@media screen and (min-width:800px) and (max-width:2210px) {
-	.v-mob .intro_global_wrap .otTypeA .slide_wrap .cont_box {width:30%}
-}
-
-/* 태블릿 */
+.v-tab .intro_global_wrap .otTypeA .sld_box {padding-top:53px;}
+.v-tab .intro_global_wrap .otTypeA .sld_box .txt {font-size: 22px; line-height:32px;}
+.v-tab .intro_global_wrap .otTypeA .sld_box .tit {margin-top:20px; display:inline-block; font-size: 42px;}
 /* 태블릿 세로 */
 @media screen and (orientation: portrait){
     .v-tab .intro_global_wrap .otTypeA .slide_cont img {width: 70%;}
     .v-tab .intro_global_wrap .otTypeA .slide_wrap .cont_box {display: flex; max-width:520px; flex-direction: column; justify-content: space-around; align-items: center; margin:0 auto; text-align: center;}
 }
 
-.v-tab .intro_global_wrap .otTypeA .sld_box .txt {font-size: 22px; line-height:32px;}
-.v-tab .intro_global_wrap .otTypeA .sld_box .tit {margin-top:20px; display:inline-block; font-size: 42px;}
-.v-tab .intro_global_wrap .otTypeA .sld_box {padding-top:53px;}
 /* 태블릿 가로 */
 @media screen and (orientation: landscape){
     .v-tab .intro_global_wrap .otTypeA .slide_wrap .cont_box {padding-left:30px; max-width:100%; display:revert;}
@@ -5067,8 +5048,6 @@ form.lr{padding-bottom: 70px;}
     .v-tab .intro_global_wrap .otTypeA .cont2 .sld_box {background: url(../images/common/introduction/intro_num_02.svg) no-repeat left 0% top 0; background-size: 10%;}
     .v-tab .intro_global_wrap .otTypeA .cont3 .sld_box {background: url(../images/common/introduction/intro_num_03.svg) no-repeat left 0% top 0; background-size: 10%;}
 }
-/* 온보딩 테스트 추가 E */
-
 
 /****글로벌 고객지원****/
 /*pc 및 모든 기기*/
@@ -5095,10 +5074,41 @@ form.lr{padding-bottom: 70px;}
     -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
-
-
-
-
+/* 인도 /필리핀 결제 */
+.payment {background-color: #00c3e1; text-align: center; margin:0 auto}
+.payment .header_wrap {position:relative; min-height:64px; display:flex;}
+.payment .header_wrap .logo {display:inline-block; margin:0 auto; height:64px; vertical-align: middle; text-align:center;}
+.payment .header_wrap .logo img {margin-top:22px}
+.payment .header_wrap button {z-index: 10; position:absolute; top:0; left:0; display: inline-block;}
+.payment .header_wrap button img {padding:20px; max-width:100%; max-height:100%; display:inline-block; vertical-align:middle;}
+.payment .cont_area {padding:20px 20px 0 20px;}
+.payment .cont_area .sub_tit {line-height:1.25; font-family: 'NotoSansCJKkr-bold'; font-size: 26px; color:#fff}
+.payment .cont_area .pay_sum {margin-top:20px; width:100%; max-width:520px;}
+.payment .cont_area .perYear {margin-top:-8px; line-height:1.35; font-family: 'NotoSansCJKkr-bold'; font-size: 20px; color:#225782}
+.payment .pay_dsc_lst {margin:0 auto; margin-top:30px; display: inline-block; width:100%;}
+.payment .pay_dsc_lst li {width:100%; text-align:left; margin-bottom:24px; padding-left:9%; background: url(../images/payment/ic_pay_chk.svg) no-repeat left 0% top 6px; background-size: 7%;}
+.payment .pay_dsc_lst li p {white-space: normal;}
+.payment .pay_dsc_lst .chk_tit_txt {width:100%; font-family: 'NotoSansCJKkr-bold'; font-size: 22px; color:#225782}
+.payment .pay_dsc_lst .chk_sub_txt {margin-top:8px; width:100%; line-height:1.40; font-family: 'NotoSansCJKkr-Medium'; font-size: 19px; color:#fff}
+.payment .footer {background-color: #fff}
+.payment .d-flex.btn_area {width:100%; padding-top:20px}
+.payment .d-flex.btn_area .btn_pay {padding:0 20px; width:100%; text-align: center; font-size:20px;}
+.payment .d-flex.btn_area .btn_pay button {border-radius:30px;}
+/* 결제 모바일 */
+.v-mob .payment .pay_dsc_lst br {display:none}
+.v-mob .payment .pay_dsc_lst .chk_tit_txt {font-size: 16px;}
+.v-mob .payment .pay_dsc_lst .chk_sub_txt {font-size: 14px;}
+.v-mob .payment .d-flex.btn_area .btn_pay button {font-size: 15px;}
+/* 모바일 폴드 */
+@media screen and (min-width:200px) and (max-width:326px) {
+    .v-mob .payment .cont_area .sub_tit {font-size:20px}
+    .v-mob .payment .pay_dsc_lst .chk_tit_txt {font-size: 13px;}
+    .v-mob .payment .pay_dsc_lst .chk_sub_txt {font-size: 12px; font-family: 'NotoSansCJKkr-Medium';}
+}
+/* 결제 피씨 태블릿 */
+.v-tab .payment .cont_area, .v-pc .payment .cont_area {max-width:620px; margin:0 auto}
+.v-tab .payment .cont_area .sub_tit, .v-pc .payment .cont_area .sub_tit {line-height:1.25; font-size: 40px;}
+.v-tab .payment .d-flex.btn_area .btn_pay button, .v-pc .payment .d-flex.btn_area .btn_pay button {font-size: 28px;}
 
 
 

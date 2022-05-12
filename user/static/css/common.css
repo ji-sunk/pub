@@ -48,7 +48,7 @@ div.header { position: relative; }
 .v-pc .scrollX-wrap.last .btn-scrollX.next { display: none; }
 .v-pc .scrollX-wrap.first .btn-scrollX.prev { display: none; }
 .t-underline { text-decoration: underline !important; }
-.layout-def { display: -ms-flexbox; display: flex; height: 100%; flex-direction: column; }
+.layout-def { display: -ms-flexbox; display: flex; height: 100vh; flex-direction: column; }
 .layout-def header { -ms-flex-positive: 0; flex-grow: 0; }
 .layout-def .container { -ms-flex-positive: 0; flex-grow: 0; height: auto; overflow-x: hidden; overflow-y: auto; }
 .layout-def .container .inner { height: 100%; }
@@ -87,6 +87,7 @@ div.header { position: relative; }
     .v-mob .btn.h48{height: 40px; line-height: 40px; font-size: 14px;}
 
 .btn-blue { background-color: #00c3e1; color: #fff; }
+.btn-org { background-color: #fa9526; color: #fff; }
 .btn-green { background-color: #00b996; color: #fff; }
 .btn-red { background-color: #ff6e5f; color: #fff; }
 .btn-white { background-color: #fff; color: #0096be; }
@@ -1366,7 +1367,8 @@ button[disabled] { background-color: #f2f4f8; color: rgba(50,60,70,0.4); font: n
 .aic-predicBox-aniBox { width: 400px; height: 320px; margin-bottom: 16px; }
 	.v-mob .aic-predicBox-aniBox { width: 240px; height: 192px; }
 	.v-pc .aic-predicBox-aniBox { width: 320px; height: 256px; }
-.layout-lc h2.tit {padding:30px 0; font-size: 24px; line-height: 1.42; color: #00c3e1; font-family: 'NotoSansCJKkr-Bold'; }
+.layout-lc h2.tit {font-size: 24px; line-height: 1.42; color: #00c3e1; font-family: 'NotoSansCJKkr-Bold'; }
+.dsc_cont1 .tit, .dsc_cont2 .tit, .dsc_cont3 .tit, .dsc_cont4 .tit {padding:30px 0}
 	.v-mob .layout-lc h2.tit { font-size: 18px; line-height: 1.38; }
 	.v-pc .layout-lc h2.tit { font-size: 20px; line-height: 1.5; }
 	.v-tab .dsc_cont1 h2.tit, .v-tab .dsc_cont2 h2.tit, .v-tab .dsc_cont3 h2.tit, .v-tab .dsc_cont4 h2.tit {padding:65px 0 50px 0; display:inline-block }	
@@ -1928,4 +1930,43 @@ button[disabled] { background-color: #f2f4f8; color: rgba(50,60,70,0.4); font: n
 
 /*  연습장 Close BTN 추가  */
 .lp-btnBox .btn-wht_ble {padding:0 66px; height:50px; font-size:22px; line-height:30px; border-radius: 30px 30px; box-shadow: 0 2px 3px 0 rgb(0 45 100 / 16%);}
-	.v-mob .lp-btnBox .btn-wht_ble {padding:0 33px; height:34px}
+.v-mob .lp-btnBox .btn-wht_ble {padding:0 33px; height:34px}
+
+.fade_in {
+	animation: fadein 2s;
+	-moz-animation: fadein 2s; /* Firefox */
+	-webkit-animation: fadein 2s; /* Safari and Chrome */
+	-o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-moz-keyframes fadein { /* Firefox */
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-o-keyframes fadein { /* Opera */
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
