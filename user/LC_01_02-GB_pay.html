@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<script src="static/js/slick.min.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+		<div class="layout-def bg_gray3 gb renew">
+			<div class="header global_main js_scroll_head">
+				<div class="inner">
+                    <div class="upper_wrap">
+                        <div>
+                            <a class="logo_btn" href="#null"><img src="./static/images/icon/img_logo.svg" alt="" /></a>
+                        </div>
+
+                        <div class="right">
+                            <div class="btn_wrap">
+                                <button type="button"><img src="./static/images/payment/ic_pay_login.svg" alt="login" /></button> <!-- 220516 인도 필리핀만 비로그인 시 로그인 버튼 노출  --> 
+                                <button type="button"><img src="./static/images/icon/btn_menu_th.svg" alt="all menu" /></button>
+                                <!-- <button type="button"><img src="./static/images/icon/btn_menu_th.svg" alt="전체 메뉴" /></button> -->
+                            </div>
+                        </div>
+                    </div>
+
+				    <div class="cont w660">
+				        <div class="left">
+				            <img class="user" src="./static/images/common/img_profilecha_th_02.svg" alt="" />
+				            <!-- 유저 이미지 랜덤 총 5개 img_profilecha_th_01 ~ img_profilecha_th_05 -->
+				        </div>
+				        <div class="right">
+                            <div class="nickname">
+                                <span class="ellipsis">MY123yyy</span>
+                                <!-- <button type="button" class="btn_white">수정</button> -->
+                                <button type="button" class="btn_white">Edit</button>
+				            </div>
+                            <!-- <button type="button" class="btn_login">LOG IN</button> -->
+                            
+
+                            <!-- 220516 추가된 영역 S-->
+                            <div class="payBtn">
+                                <!-- 프리미엄 구매 후-->
+                                <button type="button" class="btn_pr">Premium</button>
+                                <!-- 기본플랜 구매 전 -->
+                                <button type="button" class="btn_lp">Limited Plan</button>
+                            </div>
+                            <!-- //220516 추가된 영역 E-->
+
+				        </div>
+				    </div>
+				</div>
+			</div>
+
+			<div class="container">
+                <!-- 220422 수정 S -->
+                <div class="gl_main_theme_wrap">
+                    <div class="theme_box">
+                        <!-- 기존 코스학습 S-->
+                        <a class="box1" href="#null">
+                            <span class="tit">코스학습</span>
+                            <span class="btn pos">시작</span>
+                        </a>
+                        <a class="box1" href="#null">
+                            <span class="tit">Daily Course</span>
+                            <span class="btn pos">Start!</span>
+                        </a>
+                        <!-- 기존 코스학습 E-->
+
+
+
+                        <!-- 220516 추가된 영역 국문/영문 S-->
+                        구매 전
+                        <a class="box1 lock" href="#null">
+                            <span class="tit lock">Get your own AI Tutor</span>
+                            <p class="txt">
+                                Go Premium for Personalized Lessons<br>
+                                From a Silicon Valley based AI Tutor
+                            </p>
+                            <span class="btn lock pos">Go Premium</span>
+                        </a>
+                        <a class="box1 lock" href="#null">
+                            <span class="tit lock">나만의 AI 튜터 받기</span>
+                            <p class="txt">
+                                맞춤형 레슨을 위해 프리미엄 서비스를 시작하세요.<br>
+                                실리콘 밸리에 기반을 둔 AI 교사
+                            </p>
+                            <span class="btn lock pos">시작하기</span>
+                        </a>
+                        구매 후
+                        <a class="box1" href="#null">
+                            <span class="tit">Start Daily Course fits you</span>
+                            <p class="txt">Personalized Math Course designed by AI Tutor</p>
+                            <span class="btn pos">Start!</span>
+                        </a>
+                        <a class="box1" href="#null">
+                            <span class="tit">나에게 맞는 코스학습 시작</span>
+                            <p class="txt">AI 튜터가 디자인한 맞춤형 코스학습</p>
+                            <span class="btn pos">시작하기</span>
+                        </a>
+                        <!-- //220516 추가된 영역 국문/영문 E-->
+
+
+                        <a class="box2" href="#null">
+                            <!-- <span>주제학습</span> -->
+                            <span>Daily Topic</span>
+                        </a>
+                        <a class="box3" href="#null">
+                            <!-- <span><b>수학</b><br>카메라</span> -->
+                            <span><b>Math</b><br>Camera</span>
+                        </a>
+                    </div>
+                </div>    
+                <!-- //220422 수정 E -->
+			</div>
+
+
+
+            <!-- 220504 ~ 220516 배너 추가 수정 S -->
+            <div class="bottom_wrap">
+                <div class="box_btn">
+                    <!-- ko -->
+                    <span class="inner_box cls" style="display:none">
+                        <span class="left">
+                            <p class="txt1">AI 분석을 통한</p>
+                            <span class="txt2">나만의 학습 결과 확인!</span>
+                        </span>
+                        <a href="#null" class="right">
+                            <span class="hide_m btm_txt">학습노트 바로가기</span>
+                            <img src="./static/images/icon/ic_rnd_arrow.svg" alt="" />
+                        </a>
+                    </span>
+                    <!-- en -->
+                    <span class="inner_box cls">
+                        <span class="left">
+                            <span class="txt2">
+                                Checking my learning Outcomes<br>
+                                through AI analysis!
+                            </span>
+                        </span>
+                        <a href="#null" class="right">
+                            <span class="hide_m btm_txt">Product introduction</span>
+                            <img src="./static/images/icon/ic_rnd_arrow.svg" alt="" />
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <!-- //220504 ~ 220516 배너 추가 수정  E -->
+
+
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
