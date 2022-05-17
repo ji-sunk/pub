@@ -1,0 +1,28 @@
+<svg data-name="그룹 15246" xmlns="http://www.w3.org/2000/svg" width="176.782" height="68.787" viewBox="0 0 176.782 68.787">
+    <defs>
+        <clipPath id="m1m28s03xa">
+            <path style="opacity:0;fill:#fff" d="M0 0h176.782v68.787H0z"/>
+        </clipPath>
+        <filter id="j4k3w96n6b" x="1.126" y="-.047" width="191.954" height="135.317" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur stdDeviation="5.5" result="blur"/>
+            <feFlood flood-opacity=".349"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g style="clip-path:url(#m1m28s03xa)">
+        <g style="filter:url(#j4k3w96n6b)" data-name="마스크 그룹 7559">
+            <path data-name="모양 7" d="M209.953 589.346c-9.224-9.973-21.969-26.122-46.985-25.739-19.056.292-27.956-2.448-27.956-2.448s-6.251 0-9.823-2.635c0 0-.893 11.418 7.144 15.81 0 0-22.312 9.805-25.333 39.525-.252 14.147 18.855 32.9 40.5 45.686 16.881 9.97 142.979-40.806 114.191-40.364-21.384.328-41.427-18.681-51.738-29.835z" transform="translate(-89.37 -545.07)" style="fill:#fff"/>
+        </g>
+    </g>
+    <path data-name="모양 7 복사 2" d="M236.8 600.574c-1.128-22.28-17.289-32.821-32.069-39.145" transform="translate(-113.296 -545.752)" style="stroke-width:2.5px;stroke:#ffc823;fill:none"/>
+    <path data-name="모양 7 복사" d="M140.075 558.906s-6.142-1.094-9.175-4.306c0 0-2.94 11.056 4.163 16.774 0 0-19.9 9.326-21.68 36.785" transform="translate(-90.834 -543.99)" style="stroke:#225782;stroke-width:2.5px;fill:none"/>
+    <g data-name="character1 복사" transform="translate(55.438 34.629)">
+        <ellipse data-name="타원 4" cx="3.254" cy="3.159" rx="3.254" ry="3.159" style="fill:#225782"/>
+        <ellipse data-name="타원 4 복사 2" cx="3.254" cy="3.159" rx="3.254" ry="3.159" transform="translate(18.616)" style="fill:#225782"/>
+        <path data-name="모양 2" d="M1045.706 327.187v6.028h4.649" transform="translate(-1034.629 -322.986)" style="stroke-linecap:round;stroke-width:3px;stroke:#225782;fill:none"/>
+        <path data-name="모양 23" d="M1061.8 342.051c-6.93 11.179-15.8 10.088-15.8 10.088s-5.472.2-8.59-3.545" transform="translate(-1034.65 -331.415)" style="stroke-linecap:round;stroke-width:3px;stroke:#225782;fill:none"/>
+        <path data-name="패스 12238" d="M-16734.332 4015.476s2.514-1.237 4.525 0" transform="translate(16761.982 -4009.787)" style="stroke:#cff0f5;stroke-linecap:round;stroke-width:3px;fill:none"/>
+    </g>
+</svg>
