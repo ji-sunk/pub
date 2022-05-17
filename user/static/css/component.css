@@ -5123,6 +5123,7 @@ form.lr{padding-bottom: 70px;}
 .renew .bottom_wrap .box_btn .inner_box .right {margin-top:13px}
 /* 모바일 */
 .v-mob .renew .cont .right .nickname {margin-bottom:0px}
+.v-mob .gl_main_theme_wrap .theme_box a {min-width:230px;}
 .v-mob .gl_main_theme_wrap .theme_box a.box1 {min-height:200px; background-size:260px 148px;}
 .v-mob .gl_main_theme_wrap .theme_box a.box1.lock .tit {padding-left:28px; background-size:25px;}
 .v-mob .gl_main_theme_wrap .theme_box a.box1.lock .btn.pos {left:15px; background-size: 10px; background-position: 11px 8px;}
