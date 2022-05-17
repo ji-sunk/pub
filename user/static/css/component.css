@@ -4805,7 +4805,8 @@ form.lr{padding-bottom: 70px;}
 .gl_main_theme_wrap .theme_box .box1 .test_box .tit {clear:both; display:inline-block; padding-left:30px; margin:0 auto; font-size: 32px; background: url(../images/common/learn/bg_diagnosis_chk.png) no-repeat left 0 bottom 48% #96edf8;}
 .gl_main_theme_wrap .theme_box .box1 .test_box .txt {display:block; font-size: 22px; line-height:27px; font-family: 'NotoSansCJKkr-Medium'}
 .gl_main_theme_wrap .theme_box .box1 .test_box span.btn {padding: 0 30px; margin-top:14px;}
-.renew .bottom_wrap {position: absolute; bottom: 0; width:100%; height:105px; background: rgba(255,255,255,0.88);}
+.renew .bottom_wrap {position: absolute; bottom: 0; width:100%; height:102px; background: rgba(255,255,255,0.88);}
+    .v-mob .renew .bottom_wrap {height:122px}
 .renew .bottom_wrap .btm_txt {padding-right:10px}
 .renew .bottom_wrap .box_btn {padding:0 20px; display:inline-block; width:100%; transform: translateY(100%); margin: 0 auto; line-height: normal; background: none; }
 .renew .bottom_wrap .box_btn span,
@@ -4910,8 +4911,8 @@ form.lr{padding-bottom: 70px;}
 .v-mob .gl_main_theme_wrap .theme_box a.box1 .btn.pos {left:15px; bottom:20px}
 .v-mob .gl_main_theme_wrap .theme_box a.box1 .test_box .txt {font-size: 14px; line-height:16px; text-align:center;}
 .v-mob .gl_main_theme_wrap .theme_box a.box1.lock .btn.pos {padding-left:28px; min-width:112px}
-.v-mob .gl_main_theme_wrap .theme_box a.box2 {height:186px;}
-.v-mob .gl_main_theme_wrap .theme_box a.box3 {height:186px; background: url(../images/common/learn/bg_theme_ocr.png) no-repeat left 0 top 0 / 46% 100%, url(../images/common/learn/ic_home_camera.svg) no-repeat bottom 15px right 15px / 20% #5fd0ba;}
+.v-mob .gl_main_theme_wrap .theme_box a.box2 {height:156px;}
+.v-mob .gl_main_theme_wrap .theme_box a.box3 {height:156px; background: url(../images/common/learn/bg_theme_ocr.png) no-repeat left 0 top 0 / 46% 100%, url(../images/common/learn/ic_home_camera.svg) no-repeat bottom 15px right 15px / 20% #5fd0ba;}
 .v-mob .renew .cont .right .nickname span {font-size:20px}
 .v-mob .renew .cont .right .nickname button {font-size:12px;}
 .v-mob .renew .cont .right .btn_white {padding:0 5px; margin-left:8px; height:25px; min-width:40px}
@@ -5123,7 +5124,9 @@ form.lr{padding-bottom: 70px;}
 .renew .bottom_wrap .box_btn .inner_box .right {margin-top:13px}
 /* 모바일 */
 .v-mob .renew .cont .right .nickname {margin-bottom:0px}
-.v-mob .gl_main_theme_wrap .theme_box a {min-width:230px;}
+.v-mob .gl_main_theme_wrap .theme_box a.box1 {min-width:250px}
+.v-mob .gl_main_theme_wrap .theme_box a.box2 {min-width:110px}
+.v-mob .gl_main_theme_wrap .theme_box a.box3 {min-width:110px;}
 .v-mob .gl_main_theme_wrap .theme_box a.box1 {min-height:200px; background-size:260px 148px;}
 .v-mob .gl_main_theme_wrap .theme_box a.box1.lock .tit {padding-left:28px; background-size:25px;}
 .v-mob .gl_main_theme_wrap .theme_box a.box1.lock .btn.pos {left:15px; background-size: 10px; background-position: 11px 8px;}
@@ -5139,11 +5142,11 @@ form.lr{padding-bottom: 70px;}
     .v-mob .gl_main_theme_wrap .theme_box a.box2 {width:48%; height:212px; background: url(../images/common/learn/bg_theme_img_01.png) no-repeat left 0 bottom 0 / 75%, url(../images/common/learn/bg_theme_img_02_1.png) no-repeat right 0 top 30px / 40% #00C3E1;}
     .v-mob .gl_main_theme_wrap .theme_box a span {width:48%; line-height:17px;}
     .v-mob .gl_main_theme_wrap .theme_box a.box1 {background: url(../images/common/learn/bg_theme_01.svg) no-repeat right 0 bottom 0 / 66%, url(../images/common/learn/bg_theme_02.svg) no-repeat right 0 top 25px / 70% #96edf8;}
-    .v-mob .gl_main_theme_wrap .theme_box a.box1 {height:300px; background: url(../images/common/learn/bg_theme_01.svg) no-repeat right 0 bottom 0 / 66%, 
+    .v-mob .gl_main_theme_wrap .theme_box a.box1 {height:270px; background: url(../images/common/learn/bg_theme_01.svg) no-repeat right 0 bottom 0 / 66%, 
         url(../images/common/learn/bg_theme_02.svg) no-repeat right 0 top 85px / 65% #96edf8;}
+        .v-mob .gl_main_theme_wrap .theme_box a.box1 .btn.pos {bottom:70px}
     .v-mob .gl_main_theme_wrap .theme_box a.box1.lock .tit {background-size: 20px; padding-left: 24px; font-size: 14px;}
     .v-mob .gl_main_theme_wrap .theme_box a.box1.lock .txt {background-size: 11px;}
-    .v-mob .gl_main_theme_wrap .theme_box a.box1.lock .btn.pos {bottom:70px}
 }
 /* 태블릿 */
 .v-tab .gl_main_theme_wrap .theme_box a.box1.lock {background-size:56%;}
