@@ -5130,7 +5130,7 @@ form.lr{padding-bottom: 70px;}
 .v-mob .gl_main_theme_wrap .theme_box a.box1 .txt {margin-top:5px; font-size:11px; line-height:15px; font-family: 'NotoSansCJKkr-Medium';}
 .v-mob .renew .bottom_wrap .box_btn .inner_box .right {margin-top:0}
 /* 모바일 폴드 */
-@media screen and (min-width:200px) and (max-width:335px) {
+@media screen and (min-width:200px) and (max-width:340px) {
     .v-mob .payment .cont_area .sub_tit {font-size:20px}
     .v-mob .payment .pay_dsc_lst .chk_tit_txt {font-size: 13px;}
     .v-mob .payment .pay_dsc_lst .chk_sub_txt {font-size: 12px; font-family: 'NotoSansCJKkr-Medium';}
