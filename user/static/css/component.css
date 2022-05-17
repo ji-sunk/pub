@@ -4752,7 +4752,7 @@ form.lr{padding-bottom: 70px;}
 .v-mob .intro_global_wrap .slide_wrap .cont_box.cont img:nth-child(1) {}
 .v-mob .intro_global_wrap .slick_slider .slick-dots li {width: 12px; height: 12px;}
 /* 모바일 폴드 */
-@media screen and (min-width:200px) and (max-width:326px) {
+@media screen and (max-width:326px) {
     .v-mob .intro_global_wrap .slick-track {height:100vh;}
 }
 /* 태블릿 */
@@ -4814,7 +4814,7 @@ form.lr{padding-bottom: 70px;}
 .renew .bottom_wrap .box_btn .inner_box {width:100%; margin: 0 auto;}
 .renew .bottom_wrap .box_btn .inner_box .left {float: left; color: #323c46;}
 .renew .bottom_wrap .box_btn .inner_box .left .txt1{font-size: 16px; line-height: 24px;}
-.renew .bottom_wrap .box_btn .inner_box .left .txt2{font-size: 20px; line-height: 27px; font-family: 'NotoSansCJKkr-Bold';}
+.renew .bottom_wrap .box_btn .inner_box .left .txt2{font-size: 20px; line-height: 25px; font-family: 'NotoSansCJKkr-Bold';}
 .renew .bottom_wrap .box_btn .inner_box .right {float: right; color: #00c3e1; line-height: 24px; font-size: 14px;}
 .renew .bottom_wrap .box_btn .inner_box .right img {float: right}
 /* btn */
@@ -4919,7 +4919,7 @@ form.lr{padding-bottom: 70px;}
 .v-mob .renew .bottom_wrap .box_btn .inner_box .left .txt1{font-size: 12px; line-height: 14px;}
 .v-mob .renew .bottom_wrap .box_btn .inner_box .left .txt2{font-size: 14px; line-height: 18px;}
 /* 모바일 폴드 */
-@media screen and (min-width:250px) and (max-width:281px) {
+@media screen and (max-width:340px) {
     .v-mob .gl_main_theme_wrap .theme_box a {border-radius:13px;}
     .v-mob .gl_main_theme_wrap .theme_box a.box1 .tit {font-size:17px; line-height:20px;}
     .v-mob .gl_main_theme_wrap .theme_box a.box1 .test_box .txt {font-size:13px}
@@ -5022,7 +5022,7 @@ form.lr{padding-bottom: 70px;}
 .v-mob .intro_global_wrap .slick_slider .slick-dots li {width: 12px; height: 12px;}
 .v-mob .intro_global_wrap .otTypeA .slide_wrap .cont_box {display: flex; max-width:520px; flex-direction: column; justify-content: space-around; align-items: center; margin:0 auto; text-align: center;}
 /* 모바일 폴드 */
-@media screen and (min-width:250px) and (max-width:281px) {
+@media screen and (max-width:340px) {
     .v-mob .intro_global_wrap .slick-track {height:100vh;}
     .v-mob .intro_global_wrap .otTypeA .sld_box .tit {font-size:20px;}
 }
@@ -5123,19 +5123,20 @@ form.lr{padding-bottom: 70px;}
 .renew .bottom_wrap .box_btn .inner_box .right {margin-top:13px}
 /* 모바일 */
 .v-mob .renew .cont .right .nickname {margin-bottom:0px}
-.v-mob .gl_main_theme_wrap .theme_box a.box1 {background-size:68%;}
+.v-mob .gl_main_theme_wrap .theme_box a.box1 {min-height:200px; background-size:260px 148px;}
 .v-mob .gl_main_theme_wrap .theme_box a.box1.lock .tit {padding-left:28px; background-size:25px;}
 .v-mob .gl_main_theme_wrap .theme_box a.box1.lock .btn.pos {left:15px; background-size: 10px; background-position: 11px 8px;}
 .v-mob .gl_main_theme_wrap .theme_box a.box1 .btn.pos {left:15px; bottom:20px}
+.v-mob .gl_main_theme_wrap .theme_box a.box1 .tit {font-size:18px; width:100%;}
 .v-mob .gl_main_theme_wrap .theme_box a.box1 .txt {margin-top:5px; font-size:11px; line-height:15px; font-family: 'NotoSansCJKkr-Medium';}
 .v-mob .renew .bottom_wrap .box_btn .inner_box .right {margin-top:0}
 /* 모바일 폴드 */
-@media screen and (min-width:200px) and (max-width:340px) {
+@media screen and (max-width:340px) {
     .v-mob .payment .cont_area .sub_tit {font-size:20px}
     .v-mob .payment .pay_dsc_lst .chk_tit_txt {font-size: 13px;}
     .v-mob .payment .pay_dsc_lst .chk_sub_txt {font-size: 12px; font-family: 'NotoSansCJKkr-Medium';}
-    .v-mob .gl_main_theme_wrap .theme_box a.box2 {width:48.5%; height:212px; background: url(../images/common/learn/bg_theme_img_01.png) no-repeat left 0 bottom 0 / 75%, url(../images/common/learn/bg_theme_img_02_1.png) no-repeat right 0 top 30px / 40% #00C3E1;}
-    .v-mob .gl_main_theme_wrap .theme_box a span {line-height:17px;}
+    .v-mob .gl_main_theme_wrap .theme_box a.box2 {width:48%; height:212px; background: url(../images/common/learn/bg_theme_img_01.png) no-repeat left 0 bottom 0 / 75%, url(../images/common/learn/bg_theme_img_02_1.png) no-repeat right 0 top 30px / 40% #00C3E1;}
+    .v-mob .gl_main_theme_wrap .theme_box a span {width:48%; line-height:17px;}
     .v-mob .gl_main_theme_wrap .theme_box a.box1 {background: url(../images/common/learn/bg_theme_01.svg) no-repeat right 0 bottom 0 / 66%, url(../images/common/learn/bg_theme_02.svg) no-repeat right 0 top 25px / 70% #96edf8;}
     .v-mob .gl_main_theme_wrap .theme_box a.box1 {height:300px; background: url(../images/common/learn/bg_theme_01.svg) no-repeat right 0 bottom 0 / 66%, 
         url(../images/common/learn/bg_theme_02.svg) no-repeat right 0 top 85px / 65% #96edf8;}
