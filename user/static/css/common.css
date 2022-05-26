@@ -86,7 +86,9 @@ div.header { position: relative; }
 .btn.h48{height: 48px; line-height: 48px; font-size: 18px; padding: 0;}
     .v-mob .btn.h48{height: 40px; line-height: 40px; font-size: 14px;}
 
+.btn-under { text-decoration: underline; text-underline-position:under; color:#fff}
 .btn-blue { background-color: #00c3e1; color: #fff; }
+.btn-navy { background-color: #225782; color: #fff; }
 .btn-org { background-color: #fa9526; color: #fff; }
 .btn-green { background-color: #00b996; color: #fff; }
 .btn-red { background-color: #ff6e5f; color: #fff; }
