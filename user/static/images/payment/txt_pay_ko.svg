@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="307.612" height="268.758" viewBox="0 0 307.612 268.758">
+    <defs>
+        <clipPath id="pxmjlpprfb">
+            <path data-name="사각형 8898" style="fill:none" d="M0 0h18.217v13.795H0z"/>
+        </clipPath>
+        <clipPath id="zt4j9bxzlc">
+            <path data-name="사각형 8891" style="fill:none" d="M0 0h11.726v.487H0z"/>
+        </clipPath>
+        <clipPath id="lofb54hiyd">
+            <path data-name="사각형 8892" style="fill:none" d="M0 0h5.601v12.328H0z"/>
+        </clipPath>
+        <clipPath id="ozbtc8r8ae">
+            <path data-name="사각형 8893" style="fill:none" d="M0 0h3.456v8.267H0z"/>
+        </clipPath>
+        <clipPath id="ysz6hfnozf">
+            <path data-name="사각형 8894" style="fill:none" d="M0 0h2.817v1.534H0z"/>
+        </clipPath>
+        <clipPath id="6vihw2e1zg">
+            <path data-name="사각형 8895" style="fill:none" d="M0 0h1.656v1.534H0z"/>
+        </clipPath>
+        <clipPath id="0m1lkpugph">
+            <path data-name="사각형 8896" style="fill:none" d="M0 0h8.983v13.69H0z"/>
+        </clipPath>
+        <filter id="t8zotoetca" x="0" y="34.366" width="307.612" height="234.392" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="그룹 15320">
+        <g style="filter:url(#t8zotoetca)">
+            <rect data-name="사각형 9595" width="289.612" height="216.392" rx="18" transform="translate(9 40.373)" style="fill:#fff"/>
+        </g>
+        <g data-name="그룹 14961" transform="translate(26.337 63.694)">
+            <ellipse data-name="타원 7" cx="9.696" cy="9.689" rx="9.696" ry="9.689" style="fill:#ffc823"/>
+            <path data-name="모양 6" d="m312.353 354.644-5.545-5.543a.84.84 0 1 1 1.192-1.188l4.357 4.355 10.133-10.129a.84.84 0 1 1 1.188 1.188z" transform="translate(-300.803 -340.263)" style="fill:#fff"/>
+        </g>
+        <g data-name="그룹 14967" transform="translate(26.337 139.201)">
+            <ellipse data-name="타원 7" cx="9.696" cy="9.689" rx="9.696" ry="9.689" style="fill:#ffc823"/>
+            <path data-name="모양 6" d="m312.353 354.644-5.545-5.543a.84.84 0 1 1 1.192-1.188l4.357 4.355 10.133-10.129a.84.84 0 1 1 1.188 1.188z" transform="translate(-300.803 -340.263)" style="fill:#fff"/>
+        </g>
+        <text data-name="무제한 문제 제공" transform="translate(55.343 140.957)" style="font-family:AppleSDGothicNeo-ExtraBold,Apple SD Gothic Neo;font-size:14px;font-weight:800;letter-spacing:-.01em;fill:#225782"><tspan x="0" y="15">무제한</tspan><tspan y="15" style="font-family:NotoSans-ExtraBold,Noto Sans"> </tspan><tspan y="15">문제</tspan><tspan y="15" style="font-family:NotoSans-ExtraBold,Noto Sans"> </tspan><tspan y="15">제공</tspan></text>
+        <g data-name="그룹 14977" transform="translate(26.337 176.955)">
+            <ellipse data-name="타원 7" cx="9.696" cy="9.689" rx="9.696" ry="9.689" style="fill:#ffc823"/>
+            <path data-name="모양 6" d="m312.353 354.644-5.545-5.543a.84.84 0 1 1 1.192-1.188l4.357 4.355 10.133-10.129a.84.84 0 1 1 1.188 1.188z" transform="translate(-300.803 -340.263)" style="fill:#fff"/>
+        </g>
+        <text data-name="20개 이상의 수학 게임 곧 출시!" transform="translate(55.343 177.79)" style="font-family:NotoSans-ExtraBold,Noto Sans;font-size:14px;font-weight:800;letter-spacing:-.01em;fill:#225782"><tspan x="0" y="15">20</tspan><tspan y="15" style="font-family:AppleSDGothicNeo-ExtraBold,Apple SD Gothic Neo">개</tspan><tspan y="15"> </tspan><tspan y="15" style="font-family:AppleSDGothicNeo-ExtraBold,Apple SD Gothic Neo">이상의</tspan><tspan y="15"> </tspan><tspan y="15" style="font-family:AppleSDGothicNeo-ExtraBold,Apple SD Gothic Neo">수학</tspan><tspan y="15"> </tspan><tspan y="15" style="font-family:AppleSDGothicNeo-ExtraBold,Apple SD Gothic Neo">게임</tspan><tspan y="15"> </tspan><tspan y="15" style="font-family:AppleSDGothicNeo-ExtraBold,Apple SD Gothic Neo">곧</tspan><tspan y="15"> </tspan><tspan y="15" style="font-family:AppleSDGothicNeo-ExtraBold,Apple SD Gothic Neo">출시</tspan><tspan y="15">!</tspan></text>
+        <g data-name="그룹 15318" transform="translate(26.337 101.448)">
+            <ellipse data-name="타원 7" cx="9.696" cy="9.689" rx="9.696" ry="9.689" style="fill:#ffc823"/>
+            <path data-name="모양 6" d="m312.353 354.644-5.545-5.543a.84.84 0 1 1 1.192-1.188l4.357 4.355 10.133-10.129a.84.84 0 1 1 1.188 1.188z" transform="translate(-300.803 -340.263)" style="fill:#fff"/>
+        </g>
+        <text data-name="개인화 맞춤형 학습 과정" transform="translate(55.343 102.677)" style="font-family:AppleSDGothicNeo-ExtraBold,Apple SD Gothic Neo;font-size:14px;font-weight:800;letter-spacing:-.01em;fill:#225782"><tspan x="0" y="15">개인화</tspan><tspan y="15" style="font-family:NotoSans-ExtraBold,Noto Sans"> </tspan><tspan y="15">맞춤형</tspan><tspan y="15" style="font-family:NotoSans-ExtraBold,Noto Sans"> </tspan><tspan y="15">학습</tspan><tspan y="15" style="font-family:NotoSans-ExtraBold,Noto Sans"> </tspan><tspan y="15">과정</tspan></text>
+        <g data-name="그룹 15319" transform="translate(26.337 215.629)">
+            <ellipse data-name="타원 7" cx="9.696" cy="9.689" rx="9.696" ry="9.689" style="fill:#ffc823"/>
+            <path data-name="모양 6" d="m312.353 354.644-5.545-5.543a.84.84 0 1 1 1.192-1.188l4.357 4.355 10.133-10.129a.84.84 0 1 1 1.188 1.188z" transform="translate(-300.803 -340.263)" style="fill:#fff"/>
+        </g>
+        <text data-name="수시 업데이트를 통한 사용성 확대" transform="translate(55.343 215.543)" style="font-family:AppleSDGothicNeo-ExtraBold,Apple SD Gothic Neo;font-size:14px;font-weight:800;letter-spacing:-.01em;fill:#225782"><tspan x="0" y="15">수시</tspan><tspan y="15" style="font-family:NotoSans-ExtraBold,Noto Sans"> </tspan><tspan y="15">업데이트를</tspan><tspan y="15" style="font-family:NotoSans-ExtraBold,Noto Sans"> </tspan><tspan y="15">통한</tspan><tspan y="15" style="font-family:NotoSans-ExtraBold,Noto Sans"> </tspan><tspan y="15">사용성</tspan><tspan y="15" style="font-family:NotoSans-ExtraBold,Noto Sans"> </tspan><tspan y="15">확대</tspan><tspan y="15" style="font-family:NotoSans-ExtraBold,Noto Sans"> </tspan></text>
+        <g data-name="그룹 15463">
+            <path d="M170.5 576.619c-5.327-5.854-12.688-15.335-27.136-15.111-11.005.171-16.146-1.437-16.146-1.437s-3.61 0-5.673-1.547c0 0-.516 6.7 4.126 9.281 0 0-11.16 3.662-11.5 23.237-.146 8.3 7.762 19.281 20.266 26.787 9.75 5.853 82.576-23.956 65.95-23.7-12.356.197-23.932-10.965-29.887-17.51z" transform="translate(8.03 -547.402)" style="fill:#fff"/>
+            <g data-name="그룹 15404">
+                <g data-name="그룹 14496" transform="rotate(19 77.426 462.683)" style="clip-path:url(#pxmjlpprfb)">
+                    <path data-name="패스 11740" d="m9.163 0-.252.346-3.629 4.992L0 2.669 3.4 11.9l.137.371.022.06h11.425l.016-.046.125-.355 3.093-8.753-5.39 2.161-.087-.127-.789-1.15-1.3-1.9L9.235.1z" style="fill:#fdbe11"/>
+                    <g data-name="그룹 14495">
+                        <g data-name="그룹 14494" style="clip-path:url(#pxmjlpprfb)">
+                            <g data-name="그룹 14478" style="isolation:isolate;mix-blend-mode:multiply;opacity:.67">
+                                <g data-name="그룹 14477">
+                                    <g data-name="그룹 14476" style="clip-path:url(#zt4j9bxzlc)" transform="translate(3.398 11.841)">
+                                        <path data-name="패스 11741" d="M11.726.089 11.6.444l-.015.043H.159L.137.427 0 .056A.442.442 0 0 1 .213 0H11.46a.455.455 0 0 1 .266.089" style="fill:#f99b1c"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g data-name="그룹 14481" style="mix-blend-mode:soft-light;opacity:.53;isolation:isolate">
+                                <g data-name="그룹 14480">
+                                    <g data-name="그룹 14479" style="clip-path:url(#lofb54hiyd)" transform="translate(5.046)">
+                                        <path data-name="패스 11742" d="M5.6 2.162 4.188 6.543l-.035.109-.193.6-.336 1.04-.163.5-.181.561-.232.721-.57 1.766-.135.42-.021.067H0l.021-.067.135-.42L3.865.346 4.116 0l.072.1z" style="fill:#fff"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g data-name="그룹 14484" style="mix-blend-mode:soft-light;opacity:.53;isolation:isolate">
+                                <g data-name="그룹 14483">
+                                    <g data-name="그룹 14482" style="clip-path:url(#ozbtc8r8ae)" transform="translate(9.285 4.062)">
+                                        <path data-name="패스 11743" d="M3.456 1.15 1.318 7.78l-.135.42-.021.067H0L.021 8.2l.135-.42.494-1.528.029-.087.561-1.744.149-.464L2.667 0z" style="fill:#fff"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <path data-name="패스 11744" d="M12.386.767c0 .424-.255.767-.569.767H.569C.255 1.534 0 1.191 0 .767a.726.726 0 0 1 .493-.76A.364.364 0 0 1 .569 0h11.247a.421.421 0 0 1 .141.024.76.76 0 0 1 .429.743" transform="translate(3.042 12.261)" style="fill:#fb3"/>
+                            <g data-name="그룹 14487" style="opacity:.51;mix-blend-mode:soft-light;isolation:isolate">
+                                <g data-name="그룹 14486">
+                                    <g data-name="그룹 14485" style="clip-path:url(#ysz6hfnozf)" transform="translate(7.289 12.261)">
+                                        <path data-name="패스 11745" d="M2.817 0 2.8.067l-.478 1.467H0L.473.067.495 0z" style="fill:#fff"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g data-name="그룹 14490" style="opacity:.51;mix-blend-mode:soft-light;isolation:isolate">
+                                <g data-name="그룹 14489">
+                                    <g data-name="그룹 14488" style="clip-path:url(#6vihw2e1zg)" transform="translate(11.528 12.261)">
+                                        <path data-name="패스 11746" d="m1.656 0-.021.067-.474 1.467H0L.473.067.495 0z" style="fill:#fff"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g data-name="그룹 14493" style="opacity:.55;isolation:isolate;mix-blend-mode:multiply">
+                                <g data-name="그룹 14492">
+                                    <g data-name="그룹 14491" style="clip-path:url(#0m1lkpugph)" transform="translate(9.235 .105)">
+                                        <path data-name="패스 11747" d="M6.193 12.923c0 .424-.255.767-.569.767H0V0l1.413 2.058 1.3 1.9.789 1.15.087.127 5.39-2.161-3.089 8.752-.126.355a.76.76 0 0 1 .429.743" style="fill:#f99b1c"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g data-name="그룹 15462">
+                <path d="M170.37 596.788h-2.807v-3.711a.933.933 0 1 1 1.865 0v1.845h.941a.933.933 0 1 1 0 1.865z" transform="translate(-20.766 -568.634)" style="fill:#225782"/>
+                <path d="M190.432 625.134a.933.933 0 0 1-.029-1.865 12.833 12.833 0 0 0 3.4-.721 12.452 12.452 0 0 0 2.985-1.51 10.688 10.688 0 0 0 2.769-2.795.933.933 0 0 1 1.549 1.039l-.014.021a12.55 12.55 0 0 1-3.273 3.288 15.033 15.033 0 0 1-7.359 2.539z" transform="translate(-43.74 -591.755)" style="fill:#225782"/>
+                <path data-name="합치기 670" d="M.7 2.354a1.008 1.008 0 0 1-.674-1.2.943.943 0 0 1 .9-.765.865.865 0 0 1 .228.03 3.163 3.163 0 0 0 .756.095c.4 0 .606-.085.665-.157A.905.905 0 0 1 3.285 0 .881.881 0 0 1 3.9.256a1.052 1.052 0 0 1 .091 1.4 2.549 2.549 0 0 1-2.091.855 4.745 4.745 0 0 1-1.2-.157z" transform="translate(141.421 23.329)" style="fill:#225782"/>
+                <path data-name="합치기 669" d="M.714 2.562H.691A.9.9 0 0 1 0 1.544a.853.853 0 0 1 .784-.87.465.465 0 0 1 .076 0h.013a4.291 4.291 0 0 0 .574.037c.723 0 1.146-.176 1.218-.3A.753.753 0 0 1 3.313 0a.7.7 0 0 1 .481.2 1.088 1.088 0 0 1 .167 1.278 2.362 2.362 0 0 1-1.972 1.1 5.287 5.287 0 0 1-.535.027 6.382 6.382 0 0 1-.74-.043z" transform="translate(150.96 22.111)" style="fill:#225782"/>
+            </g>
+        </g>
+        <text data-name="실리콘밸리에 기반을 둔 AI 테스트" transform="translate(55.343 64.002)" style="font-family:AppleSDGothicNeo-ExtraBold,Apple SD Gothic Neo;font-size:14px;font-weight:800;letter-spacing:-.01em;fill:#225782"><tspan x="0" y="15">실리콘밸리에</tspan><tspan y="15" style="font-family:NotoSans-ExtraBold,Noto Sans"> </tspan><tspan y="15">기반을</tspan><tspan y="15" style="font-family:NotoSans-ExtraBold,Noto Sans"> </tspan><tspan y="15">둔</tspan><tspan y="15" xml:space="preserve" style="font-family:NotoSans-ExtraBold,Noto Sans"> AI </tspan><tspan y="15">테스트</tspan><tspan y="15" style="font-family:NotoSans-ExtraBold,Noto Sans"> </tspan></text>
+    </g>
+</svg>

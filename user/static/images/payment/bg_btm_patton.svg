@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="847.527" height="547.043" viewBox="0 0 847.527 547.043">
+    <g data-name="그룹 15478">
+        <g transform="rotate(21 -78.815 1994.564)" style="opacity:.73">
+            <rect data-name="사각형 3645" width="173.289" height="40.434" rx="20.217" transform="translate(0 66.428)" style="fill:#e4f7fb"/>
+            <rect data-name="사각형 3646" width="51.987" height="51.987" rx="25.993" transform="rotate(90 56.319 56.319)" style="fill:#e4f7fb"/>
+            <rect data-name="사각형 3894" width="51.987" height="51.987" rx="25.993" transform="rotate(90 -4.332 116.97)" style="fill:#e4f7fb"/>
+        </g>
+        <path d="M13.727 120.1 113.36 14.741c18.3-19.655 45.352-19.655 63.654 0s18.3 52.595 0 72.249L80.149 192.354c-18.3 19.654-48.12 19.654-66.422 0s-18.303-52.595 0-72.254z" transform="rotate(20.97 -662.679 433.595)" style="fill:none;stroke:rgba(3,219,245,.1);stroke-width:30px;opacity:.92"/>
+        <path data-name="합치기 665" d="M67.438 159.44v-42.93H24.53a24.528 24.528 0 1 1 0-49.056h42.908V24.522a24.523 24.523 0 0 1 49.046 0v42.931h42.909a24.528 24.528 0 0 1 0 49.056h-42.91v42.931a24.523 24.523 0 0 1-49.046 0z" transform="rotate(-27 173.892 41.752)" style="fill:#84efff;opacity:.16"/>
+    </g>
+</svg>

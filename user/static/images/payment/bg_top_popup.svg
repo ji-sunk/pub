@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="156.296" height="96.836" viewBox="0 0 156.296 96.836">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #8b8b8b;
+        opacity: 0;
+      }
+
+      .cls-3 {
+        fill: #00c3e1;
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-6, .cls-7, .cls-9 {
+        fill: none;
+      }
+
+      .cls-6 {
+        stroke: #ffc823;
+      }
+
+      .cls-6, .cls-7 {
+        stroke-width: 2px;
+      }
+
+      .cls-7, .cls-9 {
+        stroke: #225782;
+      }
+
+      .cls-8 {
+        fill: #225782;
+      }
+
+      .cls-9 {
+        stroke-linecap: round;
+        stroke-width: 3px;
+      }
+
+      .cls-10 {
+        filter: url(#모양_7);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="사각형_7973" data-name="사각형 7973" class="cls-1" width="107.601" height="56.683" transform="translate(0 0)"/>
+    </clipPath>
+    <filter id="모양_7" x="13.673" y="33.337" width="165.923" height="124.28" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5.5" result="blur"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="그룹_15484" data-name="그룹 15484" transform="translate(-110.616 -123.105)">
+    <g id="Popup" transform="translate(112.259 123.105) rotate(1)">
+      <g id="_-g-img_popup_cha05" data-name="-g-img_popup_cha05" transform="translate(0 0)">
+        <rect id="area" class="cls-2" width="154.677" height="94.151" transform="translate(0 0)"/>
+        <g id="그룹_14058" data-name="그룹 14058" transform="translate(71.179 20.944)">
+          <circle id="타원_7" data-name="타원 7" class="cls-3" cx="17.45" cy="17.45" r="17.45" transform="translate(0 0)"/>
+        </g>
+        <g id="마스크_그룹_7328" data-name="마스크 그룹 7328" class="cls-4" transform="translate(25.94 36.507)">
+          <g class="cls-10" transform="matrix(1, -0.02, 0.02, 1, -27.58, -36.48)">
+            <path id="모양_7-2" data-name="모양 7" class="cls-1" d="M83.47,26.811c-7.893-8.675-18.8-22.722-40.207-22.389-16.307.254-23.923-2.13-23.923-2.13s-5.349,0-8.406-2.292c0,0-.764,9.932,6.113,13.752,0,0-16.536,5.426-17.045,34.43-.216,12.305,11.5,28.568,30.028,39.69,14.446,8.672,122.352-35.495,97.718-35.11C109.446,53.048,92.294,36.509,83.47,26.811Z" transform="translate(31.73 46.84) rotate(1)"/>
+          </g>
+        </g>
+        <rect id="tran" class="cls-5" width="107.601" height="17.293" transform="translate(25.94 75.897)"/>
+        <g id="cha" transform="translate(30.39 43.769)">
+          <path id="모양_7_복사_2" data-name="모양 7 복사 2" class="cls-6" d="M27.483,34.093C26.517,14.688,12.666,5.507,0,0" transform="translate(59.038 4.413)"/>
+          <path id="모양_7_복사" data-name="모양 7 복사" class="cls-7" d="M22.876,3.75S17.612,2.8,15.012,0c0,0-2.52,9.629,3.568,14.61,0,0-17.053,8.122-18.58,32.038" transform="translate(0 0)"/>
+        </g>
+        <g id="character1_복사" data-name="character1 복사" transform="translate(58.579 64.708)">
+          <ellipse id="타원_4" data-name="타원 4" class="cls-8" cx="2.789" cy="2.752" rx="2.789" ry="2.752"/>
+          <ellipse id="타원_4_복사_2" data-name="타원 4 복사 2" class="cls-8" cx="2.789" cy="2.752" rx="2.789" ry="2.752" transform="translate(16.6 0)"/>
+          <path id="모양_23" data-name="모양 23" class="cls-9" d="M0,8.536S10.017,8.087,15.937,0" transform="translate(9.017 10.122)"/>
+          <path id="모양_2" data-name="모양 2" class="cls-9" d="M0,0V5.9H3.984" transform="translate(9.493 3.012)"/>
+        </g>
+      </g>
+    </g>
+    <path id="패스_134576" data-name="패스 134576" class="cls-1" d="M49.674,26.9h3.45l.78-10.14.18-4.74h-5.37l.18,4.74Zm1.71,8.52a3.319,3.319,0,1,0-3.15-3.33A3.18,3.18,0,0,0,51.384,35.42Z" transform="matrix(0.951, 0.309, -0.309, 0.951, 157.589, 112.34)"/>
+  </g>
+</svg>
