@@ -4327,7 +4327,8 @@ form.lr{padding-bottom: 70px;}
 .offer_section{height: 100%;}
 .offer_section .head_wrap{height: 24px; text-align: center; padding-top: 10px; background: #fff;}
 .offer_section .head_wrap::before{content: ''; display: block; width: 40px; height: 4px; background: #e4eaf0; margin: 0 auto; border-radius: 4px;}
-.offer_section .scroll_wrap{overflow-y: hidden; height: calc(100% - 24px); background: #fff;}
+/* .offer_section .scroll_wrap{overflow-y: hidden; height: calc(100% - 24px); background: #fff;} */
+.offer_section .scroll_wrap{ overflow:auto; height: calc(100% - 24px); background: #fff;}
 .offer_section .scroll_wrap.can_scroll{overflow: auto;}/*스크립트 관련*/
 .offer_section .quest_wrap{min-height: 160px; background: #f6f8fa; padding: 16px 40px; display: flex; flex-direction: column; justify-content: center;}
 .offer_section .quest_wrap .inner_cont{text-align: center;}
@@ -4340,7 +4341,7 @@ form.lr{padding-bottom: 70px;}
 .offer_section .offer_list .center_cont{width: 720px; margin: 0 auto;}
 .offer_list article{display: flex; margin-top: 56px;}
 .offer_list article:first-of-type{margin-top: 0;}
-.offer_list article:last-of-type{padding-bottom: 56px;}
+.offer_list article:last-of-type{padding-bottom: 56px; width:100%}
 .offer_list article .left{}
 .offer_list article .right{margin-left: 40px;}
 .offer_list article .right .tit{font-size: 20px; line-height: 32px; font-family: 'NotoSansCJKkr-Medium'; margin-left: 8px; height: 64px; display: flex; align-items: center;}
@@ -5000,17 +5001,17 @@ form.lr{padding-bottom: 70px;}
 .intro_global_wrap .otTypeA .slide_wrap .cont_box {display: flex; max-width:520px; margin:0 auto; text-align: center;}
 .intro_global_wrap .otTypeA .slide_wrap .cont_box .cont img {margin-top:20%}
 .intro_global_wrap .otTypeA .slide_wrap .cont_box img {margin:0 auto; text-align: center;}
-.intro_global_wrap .slick_slider .slick-dots {padding:10px 0; position:fixed; bottom:12%; display: inline-block; margin:0 auto}
+.intro_global_wrap .slick_slider .slick-dots {padding:10px 0; position:fixed; bottom:12%; display: inline-block; margin:0 auto;}
 .intro_global_wrap .slick_slider .slick-dots li{width: 15px; height: 15px; margin:10px}
 .intro_global_wrap .slick_slider .slick-dots li button:before{content: ""; width: 100%; height: 100%; background: #e6ebf0; opacity: 1; border-radius: 50%;}
 .intro_global_wrap .slick_slider .slick-dots li.slick-active button:before {opacity: 1; background: #00c3e1;}
 /* 플로팅 버튼 */
 .intro_global_wrap .floating_area {position: fixed; bottom:50px; left:50%; transform: translate(-50%);}
 .intro_global_wrap .floating_area button {width: 240px; height:62px; border-radius:35px; font-size:20px; line-height:20px; font-family: 'NotoSansCJKkr-Medium'; box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.16);}
-.intro_global_wrap .floating_area.en .en {display:block}
+.intro_global_wrap .floating_area.en .en {display:block;}
 .intro_global_wrap .slide_wrap .cont6 img:nth-child(2) {margin-top:40px}
 /* pc */
-.v-pc .wrap-inner .skyblue {height:100vh; background:url(../images/common/introduction/main_bg.svg) repeat left 0 top 0 / cover #f7fbfd; }
+.v-pc .wrap-inner .skyblue {height:100vh; background:url(../images/common/introduction/main_bg.svg) repeat left 0 top 0 / cover #f7fbfd;}
 .v-pc .intro_global_wrap .slick_slider .slick-dots {position:absolute;}
 .v-pc .intro_global_wrap .otTypeA .slide_cont img {width: 56%;}
 .v-pc .intro_global_wrap .otTypeA .slide_wrap .cont_box {display: flex; max-width:100%; flex-direction: column; justify-content: space-around; align-items: center; margin:0 auto; text-align: center;}
@@ -5079,20 +5080,19 @@ form.lr{padding-bottom: 70px;}
 
 /* 인도 /필리핀 결제 */
 .payment {background-color: #00c3e1; text-align: center; margin:0 auto}
-.payment .layout-lc .footer {padding-bottom:57px}
+.payment .btn_pay {margin:0 auto;}
+.payment .btn_pay .btn {border-radius:30px 30px;}
 .payment .header_wrap {position:relative; min-height:64px; display:flex;}
 .payment .header_wrap .logo {display:inline-block; margin:0 auto; height:64px; vertical-align: middle; text-align:center;}
 .payment .header_wrap .logo img {margin-top:22px; width:252px}
-.payment .btn_pay {margin:0 auto;}
-.payment .btn_pay .btn {border-radius:30px 30px;}
 .payment .header_wrap button {z-index: 10; position:absolute; top:0; left:0; display: inline-block;}
 .payment .header_wrap button img {padding:20px; max-width:100%; max-height:100%; display:inline-block; vertical-align:middle;}
 .payment .cont_area {padding:20px 20px 0 20px;}
 .payment .cont_area .sub_tit {line-height:1.25; font-family: 'NotoSansCJKkr-bold'; font-size: 26px; color:#fff}
 .payment .cont_area .pay_sum {margin-top:20px; width:100%; max-width:520px;}
-.payment.before .cont_area .pay_sum {margin-top:0; width:80%;}
 /* .payment .cont_area .pay_sct {margin-top:12px; max-width:580px} */
-.payment .cont_area .perYear {margin-top:-8px; line-height:1.35; font-family: 'NotoSansCJKkr-bold'; font-size: 20px; color:#225782}
+.payment .cont_area .perYear {margin-top:-8px; line-height:1.35; font-family: 'NotoSansCJKkr-bold'; font-size: 20px; color:#225782;}
+.payment .layout-lc .footer {padding-bottom:57px}
 .payment .pay_dsc_lst {margin:0 auto; margin-top:30px; max-width:500px;}
 .payment .pay_dsc_lst li {width:100%; text-align:left; margin-bottom:24px; padding-left:9%; background: url(../images/payment/ic_pay_chk.svg) no-repeat left 0% top 6px; background-size: 7%;}
 .payment .pay_dsc_lst li p {white-space: normal;}
@@ -5104,7 +5104,8 @@ form.lr{padding-bottom: 70px;}
 /* 인도 /필리핀 결제 전 */
 .payment.before .btn_pay {margin-top:30px;}
 .payment.before .btn_pay .btn {height:56px}
-.payment.before .cont_area .pay_sct {margin-top:12px; width:580px}
+.payment.before .cont_area .pay_sum {margin-top:0; width:80%;}
+.payment.before .cont_area .pay_sct {margin-top:12px; width:580px;}
 .payment.before .btn-under {font-size:18px; font-family: 'NotoSansCJKkr-Regular'; color:#fff; opacity: .6;}
 /* 결제 모바일 */
 .v-mob .renew .cont .right .btn_pr {margin-top:0}
@@ -5177,18 +5178,18 @@ form.lr{padding-bottom: 70px;}
     .v-tab .payment.before .cont_area {max-width:820px; padding:0 20px 0 20px}
     .v-tab .payment.before .cont_area .pay_sct {margin-top:0; width:470px}
     .v-tab .payment.before .cont_area .pay_sum {margin-top:-20px; width:312px;}
-    .v-tab .payment.before .cont_area .perYear {display:inline-block}
+    .v-tab .payment.before .cont_area .perYear {display:inline-block;}
 }
 
 /* 인도,필리핀 결제 팝업 */
 /* 결제 팝업 공통 */
 .pay_popup {text-align: center;}
 .pay_popup .btn_pay .btn-navy {border-radius:30px 30px;}
-.pay_popup img {max-width:100%}
+.pay_popup img {max-width:100%;}
 .pay_popup .pay_sum span {font-size:20px;}
 .pay_popup .pay_sum .sum {font-size:20px; text-decoration: line-through; font-family: 'NotoSansCJKkr-Regular'; color:#b8b8b8;}
 .pay_popup .pay_sum .year {margin-left:5px; font-size:20px; font-weight:600; color:#5b5b5b}
-.pay_popup .lp-btnBox .btn {margin:0; font-size:22px; color:#f6f8fa}
+.pay_popup .lp-btnBox .btn {margin:0 auto; width:400px; font-size:22px; color:#f6f8fa}
 /* 결제 재방문 */
 .pay_popup .pay_sum {margin-top:10px}
 .pay_popup .lc-alert {padding:26px}
@@ -5197,21 +5198,32 @@ form.lr{padding-bottom: 70px;}
 .pay_popup .sub_txt {margin-top:16px; font-size:30px; line-height:36px; font-family: 'NotoSansCJKkr-bold'; color:#00c3e1}
 .pay_popup .pay_dsc_lst {margin:0 auto; margin-top:30px; max-width:500px;}
 .pay_popup .pay_dsc_lst li {width:100%; white-space: normal; text-align:left; margin-bottom:14px; padding-left:35px; background: url(../images/payment/ic_pay_chk.svg) no-repeat left 0% top 5px; background-size: 30px;}
-.pay_popup .pay_dsc_lst .chk_tit_txt {width:100%; font-family: 'NotoSansCJKkr-bold'; font-size: 22px; color:#225782}
+.pay_popup .pay_dsc_lst .chk_tit_txt {width:100%; font-family: 'NotoSansCJKkr-bold'; font-size: 22px; color:#225782;}
 .pay_popup .btn_exit {white-space: nowrap; width:max-content; text-decoration: underline; font-size: 18px; font-family: 'NotoSansCJKkr-Regular'; color: #656565;}
-.pay_popup .lp-btnBox {margin-top:5px}
+.pay_popup .lp-btnBox {margin-top:5px;}
 /* 구매 전 학습노트 */
-.pay_popup.bePus .logo_mathpid {width:50%}
+.pay_popup.bePus .logo_mathpid {width:50%;}
 .pay_popup.bePus .btn.close {position:absolute; right:20px; top:16px; padding: 20px; width: 42px; height: 42px; background: url(../images/icon/btn_fraction_close.svg) no-repeat top 0 right 0;}
-/* 구매 전 주제 학습 */
-.pay_popup.btm .logo_mathpid {width:280px}
-.pay_popup.btm .brn_tit {margin-top:30px; font-size:45px; font-family: 'NotoSansCJKkr-bold'; color:#00c3e1}
-.pay_popup.btm .brn_txt {margin-top:8px; font-size:30px; line-height: 1.4;}
+/* 구매 전 주제학습 */
+.pay_popup.btm .logo_mathpid {width:280px;}
+.pay_popup.btm .bnr_tit {margin-top:30px; font-size:45px; font-family: 'NotoSansCJKkr-bold'; color:#00c3e1;}
+.pay_popup.btm .bnr_txt {margin-top:8px; font-size:30px; line-height: 1.4;}
 .pay_popup.btm .pay_sum {margin-top:36px; font-size:20px;}
 .pay_popup.btm .lp-btnBox {margin-top:19px;}
-.pay_popup.btm .btn_exit {margin-top:16px}
+.pay_popup.btm .btn_exit {margin-top:16px;}
 .pay_popup.btm .lc-alert {position: absolute; bottom:0; margin:0 auto; width:100%; height: 510px; max-height:100%; border-radius:30px 30px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; background: url(../images/payment/bg_btm_patton.svg) no-repeat center/ contain #fff}
-.pay_popup .lp-btnBox .btn {margin:0 auto; width:400px; font-size:22px;}
+/* 구매 유도 문구 추가 */
+.pay_nv_area {display:block; padding:14px 15px 25px 15px; width:100%; text-align:center; margin:0 auto; border-radius:16px 16px; background-color: #225782;}
+.pay_nv_area .b_txt {font-size:22px; line-height:1.36; font-family: 'NotoSansCJKkr-bold'; color:#fff;}
+.pay_nv_area .s_txt {margin-top:5px; font-size:20px; line-height:1.25; font-family: 'NotoSansCJKkr-medium'; color:#00C3E1;}
+.pay_nv_area .bg_wht {width:170px; height:40px; margin:0 auto; margin-top:15px; text-align: center; vertical-align: middle; border-radius:8px 8px; background-color:#fff;}
+.pay_nv_area .lock_premium {padding-left:25px; width:30px; height:30px; line-height:37px; font-size:18px; font-family: 'NotoSansCJKkr-bold'; color:#225782; background: url(../images/payment/ic_bnr_lock.svg) left top 50% no-repeat; background-size:16px;}
+
+.pay_bnr_area {display:block; margin-bottom:30px; padding:30px; width:100%; text-align:left; border-radius:16px 16px; background: url(../images/payment/ic_brn_arrow.svg) right 30px top 30px no-repeat #fff; background-size:16px;}
+.pay_bnr_area .b_txt {margin-top:10px; font-size:32px; line-height:1.36; font-family: 'NotoSansCJKkr-bold'; color:#225782;}
+.pay_bnr_area .s_txt {margin-top:3px; font-size:24px; line-height:1.25; font-family: 'NotoSansCJKkr-Regular'; color:#707070;}
+.pay_bnr_area .mathpid_premium {padding-left:30px; display:block; background: url(../images/payment/ic_bnr_lock.svg) left top 50% no-repeat; background-size:18px;}
+.pay_bnr_area .mathpid_premium img {height:30px;}
 
 .v-pc .pay_popup.btm .lc-alert {max-width:720px;}
 /* 모바일 */
@@ -5224,11 +5236,22 @@ form.lr{padding-bottom: 70px;}
 .v-mob .pay_popup .pay_dsc_lst li {padding-left:25px; font-size:14px; background-size:20px;}
 .v-mob .pay_popup .lp-btnBox .btn {margin:0 auto; width:250px; font-size:13px; height:44px; line-height:30px;}
 
-.v-mob .pay_popup.btm .brn_tit {margin-top:15px; font-size:24px; line-height:32px; font-family: 'NotoSansCJKkr-bold'; color:#00c3e1}
-.v-mob .pay_popup.btm .brn_txt {margin-top:8px; font-size:17px; line-height: 1.4;}
+.v-mob .pay_nv_area .b_txt {font-size:17px;}
+.v-mob .pay_nv_area .s_txt {font-size:16px;}
+.v-mob .pay_nv_area .bg_wht {width:150px; height:30px; margin:0 auto; margin-top:8px; border-radius:12px 12px;}
+.v-mob .pay_nv_area .lock_premium {padding-left:20px; width:30px; height:30px; line-height:27px; font-size:16px; background: url(../images/payment/ic_bnr_lock.svg) left top 50% no-repeat; background-size:13px;}
+.v-mob .pay_bnr_area {padding:20px; border-radius:16px 16px; background: url(../images/payment/ic_brn_arrow.svg) right 20px top 25px no-repeat #fff; background-size:9px;}
+.v-mob .pay_bnr_area .b_txt {margin-top:5px; font-size:16px; line-height:1.36;}
+.v-mob .pay_bnr_area .s_txt {font-size:12px; line-height:1.25;}
+.v-mob .pay_bnr_area .lock_premium {font-size:15px;}
+.v-mob .pay_bnr_area .mathpid_premium {padding-left:18px; display:block; background: url(../images/payment/ic_bnr_lock.svg) left top 50% no-repeat; background-size:14px;}
+.v-mob .pay_bnr_area .mathpid_premium img {height:20px;}
+
+.v-mob .pay_popup.btm .bnr_tit {margin-top:15px; font-size:24px; line-height:32px; font-family: 'NotoSansCJKkr-bold'; color:#00c3e1;}
+.v-mob .pay_popup.btm .bnr_txt {margin-top:8px; font-size:17px; line-height: 1.4;}
 .v-mob .pay_popup.btm .pay_sum {margin-top:36px; font-size:20px;}
 .v-mob .pay_popup.btm .lp-btnBox {margin-top:8px;}
-.v-mob .pay_popup.btm .logo_mathpid {width:150px}
+.v-mob .pay_popup.btm .logo_mathpid {width:150px;}
 .v-mob .pay_popup.btm .lc-alert {border-radius:45px 45px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;}
 /* 모바일 폴드 */
 @media screen and (max-width:340px) {
@@ -5237,9 +5260,8 @@ form.lr{padding-bottom: 70px;}
 /* 태블릿 */
 /* 태블릿 가로 */
 @media screen and (orientation: landscape){
-    .pay_popup.btm .lc-alert {max-width:720px;}
-    .pay_popup .lp-btnBox .btn {font-size: 22px;}
-    .pay_popup.revisit .lp-wrap.lp-middle {padding-top:90px}
+    .v-tab .pay_popup.btm .lc-alert {max-width:720px;}
+    .v-tab .pay_popup .lp-btnBox .btn {font-size:22px;}
+    .v-tab .pay_popup.revisit .lp-wrap.lp-middle {padding-top:90px;}
 }
-
 
