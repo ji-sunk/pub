@@ -132,41 +132,37 @@
                                     <div class="gray_box">
                                         <img src="./static/images/tmp/img_sample_02@2x.png" alt="" /><!--학습문제 영역-->
                                     </div>
-                                    <!-- 버튼 두개일 때 추가 -->
-                                    <div class="btn_wrap two">
+
+                                    <!-- 220531 버튼 두개일 때 (국문, 영문) 추가 -->
+                                    <div class="btn_wrap two"><!-- 220531 .two클래스 추가 -->
                                         <a class="btn btn_ag" href="#null">처음부터 학습</a>
+                                        <!-- <a class="btn btn_ag" href="#null">Redo</a> -->
                                         <a class="btn btn_go re" href="#null">학습 이어가기</a>
+                                        <!-- <a class="btn btn_go re" href="#null">Continue</a> -->
                                     </div>
+                                    <!-- //220531 버튼 두개일 때 (국문, 영문) 추가 -->
+
                                 </div>
                             </article>
-
-                            <article class="red on ani_open"><!--class 노력 red, 기본 yellow, 충분 green, 훌륭 purple--><!--활성화된 박스 class on--><!--펼쳐지며 커지는 애니메이션 class ani_open(펼쳐지는 애니메이션 실행시 ani_open과 on을 함께 붙여야 함)-->
+                            <!-- <article class="red on ani_open">
                                 <div class="head_wrap">
                                     <div class="num">4</div>
                                     <div class="tit"><span>(두, 세 자리 수)×100, 1000, 10000</span></div>
-                                    <div class="state cls"><!--결과영역 (노력인 경우에만 들어감)-->
+                                    <div class="state cls">
                                         <div class="left">2020.09.08</div>
                                         <div class="right"><span>노력</span></div>
                                     </div>
                                 </div>
                                 <div class="cont_wrap">
                                     <div class="gray_box">
-                                        <img src="./static/images/tmp/img_sample_02@2x.png" alt="" /><!--학습문제 영역-->
+                                        <img src="./static/images/tmp/img_sample_02@2x.png" alt="" />
                                     </div>
-<!--(이 부분은 안 쓰기로 했다고 함)
-                                    <dl>
-                                        <dt>AI 예측</dt>
-                                        <dd>
-                                            <span class="left">50 문제</span>
-                                            <span class="right">10분 30초</span>
-                                        </dd>
-                                    </dl>
--->
                                     <div class="btn_wrap">
                                         <a class="btn btn_go js_play_audio1" href="#null">학습하기</a>
                                     </div>
                                 </div>
-                            </article>
+                            </article> -->
+                            
                             <article>
                                 <div class="head_wrap">
                                     <div class="num">5</div>
@@ -174,17 +170,10 @@
                                 </div>
                                 <div class="cont_wrap">
                                     <div class="gray_box">
-                                        <img src="./static/images/tmp/img_sample_02@2x.png" alt="" /><!--학습문제 영역-->
+                                        <img src="./static/images/tmp/img_sample_02@2x.png" alt="" />
                                     </div>
-<!--(이 부분은 안 쓰기로 했다고 함)
-                                    <dl>
-                                        <dt>AI 예측</dt>
-                                        <dd>
-                                            <span class="left">50 문제</span>
-                                            <span class="right">10분 30초</span>
-                                        </dd>
-                                    </dl>
--->                                        <div class="btn_wrap">
+
+                                <div class="btn_wrap">
                                         <a class="btn btn_go" href="#null">학습하기</a>
                                     </div>
                                 </div>
@@ -216,9 +205,37 @@
 
                         <!--완료-->
                         <div class="tabCont course_list list2 active" id="tabCont2">
-                            <article class="yellow"><!--class 기본 yellow, 충분 green, 훌륭 purple-->
+
+
+                            <!--220531 이어하기 영역 국문 영문 추가 S -->
+                            <article class="yellow comp_lst br_on"><!-- 220531 .comp_lst .br_on 클래스 명 추가 -->
                                 <div class="head_wrap">
                                     <div class="num">1</div>
+                                    <div class="tit"><span>받아올림이 없는 덧셈(3)</span></div>
+                                    <div class="state">
+                                        <div class="left">2020.09.08</div>
+                                        <div class="right"><span>기본</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="con_wrap">
+                                    <p class="txt">완료하지 않은 학습이 있어, 이어서 학습할까?</p>
+                                    <!-- <p class="txt">Have an unfinished stage. Will you continue?</p> -->
+                                    <div class="btn_wrap two"><!-- 220531 .two클래스 추가 -->
+                                        <a class="btn btn_ag" href="#null">처음부터 학습</a>
+                                        <!-- <a class="btn btn_ag" href="#null">Redo</a> -->
+                                        <a class="btn btn_go re" href="#null">학습 이어가기</a>
+                                        <!-- <a class="btn btn_go re" href="#null">Continue</a> -->
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- //220531 이어하기 영역 국문 영문 추가 E -->
+
+
+
+                            <article class="yellow"><!--class 기본 yellow, 충분 green, 훌륭 purple-->
+                                <div class="head_wrap">
+                                    <div class="num">2</div>
                                     <div class="tit">(두, 세 자리 수)×100, 1000, 10000</div>
                                     <div class="state">
                                         <div class="left">2020.09.08</div>
@@ -228,7 +245,7 @@
                             </article>
                             <article class="green">
                                 <div class="head_wrap">
-                                    <div class="num">2</div>
+                                    <div class="num">3</div>
                                     <div class="tit">받아올림이 없는 덧셈(1)</div>
                                     <div class="state">
                                         <div class="left">2020.09.08</div>
@@ -238,7 +255,7 @@
                             </article>
                             <article class="purple">
                                 <div class="head_wrap">
-                                    <div class="num">3</div>
+                                    <div class="num">4</div>
                                     <div class="tit">받아올림이 없는 덧셈(2)</div>
                                     <div class="state">
                                         <div class="left">2020.09.08</div>
