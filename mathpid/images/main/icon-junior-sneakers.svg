@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <linearGradient id="yyrswdtggc" x1=".031" y1=".029" x2=".031" y2="51.229" gradientUnits="objectBoundingBox">
+            <stop offset="0"/>
+            <stop offset="0" stop-color="#0098fd"/>
+            <stop offset=".1" stop-color="#0997fb"/>
+            <stop offset=".2" stop-color="#1295fa"/>
+            <stop offset=".3" stop-color="#1b94f8"/>
+            <stop offset=".4" stop-color="#2493f7"/>
+            <stop offset=".5" stop-color="#2d92f6"/>
+            <stop offset=".6" stop-color="#3690f4"/>
+            <stop offset=".7" stop-color="#3f8ff2"/>
+            <stop offset=".8" stop-color="#488ef1"/>
+            <stop offset=".9" stop-color="#518cef"/>
+            <stop offset="1" stop-color="#5a8bee"/>
+            <stop offset="1"/>
+        </linearGradient>
+        <linearGradient id="sduf7v8yvd" x1=".031" y1=".029" x2="1" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#0098fd"/>
+            <stop offset=".1" stop-color="#0997fb"/>
+            <stop offset=".2" stop-color="#1295fa"/>
+            <stop offset=".3" stop-color="#1b94f8"/>
+            <stop offset=".4" stop-color="#2493f7"/>
+            <stop offset=".5" stop-color="#2d92f6"/>
+            <stop offset=".6" stop-color="#3690f4"/>
+            <stop offset=".7" stop-color="#3f8ff2"/>
+            <stop offset=".8" stop-color="#488ef1"/>
+            <stop offset=".9" stop-color="#518cef"/>
+            <stop offset="1" stop-color="#5a8bee"/>
+        </linearGradient>
+        <clipPath id="lcirzn9noa">
+            <path data-name="패스 9132" d="m1.331-13.775 16.53 12v.007h9.127A2 2 0 0 1 25 0h-8L1.682-10.813A2 2 0 0 1 1.2-13.6l.034-.047zm6.186-5.4.686.371a9.655 9.655 0 0 0 3.3 4.037q.779.42 1.342-.58a1 1 0 0 1 1.362-.384q.037.021.073.045l.636.431a6 6 0 0 1 2.212 2.76H13v1h4.517l.59 1.5H15.4v1h7.1A4.5 4.5 0 0 1 27-4.5v1.783h-8.751L1.93-14.574l3.035-4.046a2 2 0 0 1 2.552-.559z" style="clip-rule:evenodd;fill:none"/>
+        </clipPath>
+        <clipPath id="zd9cuqtjqb">
+            <path data-name="패스 9131" d="M-2 6h32v-32H-2z" style="fill:none"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 7774" transform="translate(2.082 25.711)" style="clip-path:url(#lcirzn9noa)">
+        <g data-name="그룹 7773" style="clip-path:url(#zd9cuqtjqb)">
+            <g data-name="그룹 7772">
+                <path data-name="패스 9130" d="M-.835-.58h27v20h-27z" style="fill:url(#sduf7v8yvd)" transform="translate(.835 -19.42)"/>
+            </g>
+        </g>
+    </g>
+</svg>
