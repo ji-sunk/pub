@@ -1954,3 +1954,9 @@ button[disabled] { background-color: #f2f4f8; color: rgba(50,60,70,0.4); font: n
 		opacity: 1;
 	}
 }
+
+/* 안드로이드 스크롤 바 추가 */
+.wa-cont::-webkit-scrollbar {width: 12px; height: 12px;}
+.wa-cont::-webkit-scrollbar-thumb {background:#bfbfbf; border-radius:50px 50px}
+.epnPopup-wrap .viewopen-detail::-webkit-scrollbar {width: 12px; height: 12px;}
+.epnPopup-wrap .viewopen-detail::-webkit-scrollbar-thumb {background:#bfbfbf; border-radius:50px 50px}
