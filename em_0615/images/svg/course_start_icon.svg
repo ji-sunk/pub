@@ -1,0 +1,10 @@
+<?xml-stylesheet type="text/css" href="../../css/svg.css"?>
+
+<svg class="course_start_icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> 
+  <path style="opacity:.003;fill:#fff" d="M0 0h48v48H0z"/>
+  <g transform="translate(-456 -145)">
+    <path class="st1" d="m192.581 135.868-7.927-13.057a15 15 0 1 1 22.694 0l-7.928 13.059a4 4 0 0 1-6.838 0z" transform="translate(284 50.853)"/>
+    <circle  cx="8" cy="8" r="8" transform="translate(472 155)" style="fill:#fff"/>
+    <path class="st1" d="M5.087 2.043a1 1 0 0 1 1.826 0l.659 1.475a1 1 0 0 0 .782.583l1.619.214a1 1 0 0 1 .571 1.7L9.289 7.257a1 1 0 0 0-.282.891l.314 1.723a1 1 0 0 1-1.485 1.045L6.5 10.143a1 1 0 0 0-1 0l-1.335.773a1 1 0 0 1-1.486-1.044l.314-1.723a1 1 0 0 0-.282-.891L1.456 6.019a1 1 0 0 1 .571-1.7L3.646 4.1a1 1 0 0 0 .782-.583z" transform="translate(474 156.748)" />
+  </g>
+</svg>

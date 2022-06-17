@@ -1,0 +1,10 @@
+<?xml-stylesheet type="text/css" href="../../css/svg.css"?> 
+
+<svg class="port_course_line" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 550 260" style="enable-background:new 0 0 550 260;" xml:space="preserve">
+<path class="bg_line" d="M10,0c0,71.7,58.1,129.8,129.8,129.8H410c71.8,0,130,58.2,130,130v0.2"/>
+<path class="move_line" style="stroke-linecap:round;" d="M10,0c0,71.7,58.1,129.8,129.8,129.8H410c71.8,0,130,58.2,130,130v0.2"/>
+</svg>
+
+
+

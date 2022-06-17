@@ -1,0 +1,5 @@
+<?xml-stylesheet type="text/css" href="../../css/svg.css"?>
+<svg class="event_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">                 
+  <path class="st0" d="M42,16c0.1-1.6-1.1-2.9-2.7-3H8.7c-1.6,0.1-2.8,1.4-2.7,3c-0.1,1.3,0.8,2.5,2,2.9V35c-0.1,3.2,2.4,5.9,5.6,6 h20.7c3.2-0.1,5.7-2.8,5.6-6V18.9C41.2,18.5,42.1,17.4,42,16z"/>
+  <path class="st1" d="M27,19v-6h6.1c0.9-0.9,1.1-2.4,0.4-3.5c-0.8-1.4-2.7-1.9-4.1-1.1l-5.5,3.2l-5.5-3.2c-0.5-0.3-1-0.4-1.5-0.4 c-1,0-2,0.5-2.6,1.5c-0.3,0.5-0.4,1-0.4,1.5c0,0.8,0.3,1.5,0.8,2H21v6H8v2h13v20h6V21h13v-2H27z"/>
+</svg>

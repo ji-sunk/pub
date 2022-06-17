@@ -1,0 +1,8 @@
+<?xml-stylesheet type="text/css" href="../../css/svg.css"?>
+<svg class="frac_icon_b" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 22 21" style="enable-background:new 0 0 22 21;" xml:space="preserve">
+<path class="st0" d="M20,8h-8V0h8V8z M13,7h6V1h-6V7z"/>
+<path class="st0" d="M8,15H0V7h8V15z M1,14h6V8H1V14z"/>
+<path class="st0" d="M20,21h-8v-8h8V21z M13,20h6v-6h-6V20z"/>
+<rect x="10.5" y="10" class="st0" width="11" height="1"/>
+</svg>

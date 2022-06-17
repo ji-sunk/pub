@@ -1,0 +1,7 @@
+<?xml-stylesheet type="text/css" href="../../css/svg.css"?>
+
+<svg class="mo_course_line" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 319 220" style="enable-background:new 0 0 319 220;" xml:space="preserve">
+<path class="bg_line" d="M8,0c0,61.2,49.6,110.8,110.8,110.8h83c60.3,0,109.2,48.9,109.2,109.2"/>
+<path class="move_line" style="stroke-linecap:round;" d="M8,0c0,61.2,49.6,110.8,110.8,110.8h83c60.3,0,109.2,48.9,109.2,109.2"/>
+</svg>
