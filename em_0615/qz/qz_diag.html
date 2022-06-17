@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>mathpid</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <!--<meta name="theme-color" content="#C70026"> -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="description" content="">
+  <link rel="canonical" href="">
+  <meta name="robots" content="index,follow">
+  
+  <link rel="stylesheet" type="text/css" href="../css/vendor/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/main.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/sub.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/qz.css"/>
+
+  <!-- test 삭제바람 -->
+  <style>
+    .mode{position:absolute; top:20px; left:20px; z-index: 1000; display:flex;}
+    .mode li{padding:0 8px;}
+    .sf_btn{position: absolute; top:8px; right:3%;   display: flex; justify-content: center; align-items: center; padding:6px; outline: none; z-index: 1000; }
+    .sf_btn i{display: block; padding:4px; width: 24px; height: 24px;}
+    .sf_btn i svg{fill:#dbdbdb;}
+    .sf_btn.on  i svg{fill:#00bcfe;}
+    .mcp{position: absolute; top:20px; right:15%; z-index: 1000;}
+  </style>
+  <!--  -->
+
+</head>
+<body class="sub_page qz qz_diag junior">
+  <!-- test 삭제바람 -->
+  <ul class="mode">
+    <li><a href="index.html">junior</a></li>
+    <li><a href="senior_index.html">senior</a></li>
+    <li class="theme"><a href="javascipt:void(0)" >theme_01</a></li>
+  </ul>
+  <!--  -->
+
+  <!-- header -->
+  <header class="">
+    <div class="header_wrap">		
+      <div class="header_inner">
+        <div class="sub_title">
+          <a href="..">
+            <span class="sr">close</span>
+            <i class="icon_24">
+              <img src="../images/common/close_icon_24.svg" aria-hidden="true" alt="close">        
+            </i>
+          </a> 
+           <!--accuracy progress -->
+           <div class="accuracy_progress_wrap">
+            <p class="accuracy_desc">Accuracy is almost 90 percent!</p>
+            <div class="accuracy_progress">
+              <span class="bar" style="width:20%"></span>
+            </div>
+          </div>              
+        </div>        
+      </div>
+      <!-- time -->
+      <div class="diag_time">
+        <time datetime="01:30">01:30</time>
+      </div>
+    </div>
+  </header>
+
+<!-- //header -->
+  <main class="container">
+    <audio preload="auto" class="audio_wrap"><source class="audio_source" src/></audio>
+    <section class="main_contents">      
+      <div class="wrap newscroll_bar">
+        <article class="quiz_desc">         
+          <p><span>Q.</span>Calculate the following fractions (but if the answer is a fraction, express it as a logarithmic fraction)</p>
+        </article>
+        <article class="quiz_content ">
+          <div class="quiz_content_inner">
+            <div class="exam_wrap btn_wrap">
+              <button class="exam_btn">
+                <span>Example</span>
+                <i class="icon_12">         
+                  <object data="../images/common/down_arrow_12.svg" type=""></object>
+                </i>
+              </button>  
+              <div class="exam_content newscroll_bar">
+                <div class="exam_content_inner ">
+                문제 예시 문제 예시 문제 예시      
+                <img src="https://dummyimage.com/500x400/dbdbdb/333333" alt="">   
+                </div>
+              </div>
+            </div>       
+            <!-- 그리기도구 -->
+            <div class="draw_tools notepade_tool">              
+              <div class="inner_wrap">
+                <div class="tools_wrap pad_tools">
+                  <button>
+                    <span class="sr">previous</span>
+                    <i class="icon_24"><img src="../images/svg/tool_pad_prev_24.svg" alt=""></i></button>
+                  <button>
+                    <span class="sr">next</span>
+                    <i class="icon_24"><img src="../images/svg/tool_pad_next_24.svg" alt=""></i></button>
+                  <button>
+                    <span class="sr">clean</span>
+                    <i class="icon_24"><img src="../images/svg/tool_pad_wastebasket_24.svg" alt=""></i></button>
+                </div>
+                <div class="tools_wrap instrument">
+                  <button class="active">
+                    <span class="sr">pen</span>
+                    <i class="icon_24"><object type="image/svg+xml" data="../images/svg/tool_pad_pen_24.svg" class="add_new_color"></object></i>
+                  </button>
+                  <button>
+                    <span class="sr">eraser</span>
+                    <i class="icon_24"><object type="image/svg+xml" data="../images/svg/tool_pad_eraser_24.svg" class="add_new_color"></object></i>
+                  </button>
+                </div>
+              </div>          
+            </div>   
+            <!-- 문제 영역 -->
+            <div class="quiz_area newscroll_bar">
+              <div class="problem">
+                <figure><img src="https://dummyimage.com/315x138/dbdbdb/333333" alt=""></figure>
+                <span class="notepad_tip_line"></span>
+                <div class="notepad_tip_desc">
+                  <p>If you can't solve the problem, <br>Skip this problem</p>
+                </div>
+              </div> 
+              <!-- 노트패드 영역 -->
+              <!-- <div class="notepad">
+                <span class="notepad_tip_line"></span>
+                <div class="notepad_tip_desc">
+                  <p>If you can't solve the problem, <br>Skip this problem</p>
+                </div>
+              </div> -->
+            </div>
+          </div>                    
+        
+        </article>                 
+      </div>      
+    </section>
+  
+      <!-- 입력도구  그리기,키보드 -->
+    <section class="input_tool">   
+      <div class="note_wrap">   
+        <!-- notepad on btn -->
+        <div class="notepad_btn_wrap btn_wrap">
+          <button class="notepad_btn" href="javascript:void(0)">
+            <i class="icon_24"><img src="../images/svg/notepad_on_icon.svg" alt=""></i>
+            <span class="notepad_btn_text">Notepad on</span>
+          </button>
+        </div>
+        <!-- not_sure btn  -->
+        <div class="not_sure btn_wrap">
+          <button class="">
+            <i class="icon_16">       
+              <object data="../images/svg/question_16.svg" type="" class="add_new_color"></object>
+            </i>
+            <span>Not Sure</span>
+          </button>
+    
+          <div class="bubble_desc">
+            <p>If you can't solve the problem, <br>Skip this problem</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tool_wrap">
+        <!-- 그리기-->
+        <article class="input_tool_wrap drawpad active">   
+          <!-- 그리기 도구 -->
+          <div class="draw_tools">
+            <div class="wrap">
+              <div class="inner_wrap">
+                <div class="tools_wrap pad_tools">
+                  <button>
+                    <span class="sr">previous</span>
+                    <i class="icon_24"><img src="../images/svg/tool_pad_prev_24.svg" alt=""></i></button>
+                  <button>
+                    <span class="sr">next</span>
+                    <i class="icon_24"><img src="../images/svg/tool_pad_next_24.svg" alt=""></i></button>
+                  <button>
+                    <span class="sr">clean</span>
+                    <i class="icon_24"><img src="../images/svg/tool_pad_wastebasket_24.svg" alt=""></i></button>
+                </div>
+                <div class="tools_wrap instrument">
+                  <button>
+                    <span class="sr">pen</span>
+                    <i class="icon_24"><object type="image/svg+xml" data="../images/svg/tool_pad_pen_24.svg" class="add_new_color"></object></i>
+                  </button>
+                  <button>
+                    <span class="sr">eraser</span>
+                    <i class="icon_24"><object type="image/svg+xml" data="../images/svg/tool_pad_eraser_24.svg" class="add_new_color"></object></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 그리기 영역 -->
+          <div class="draw_area"></div>
+        </article>
+        <!-- 키보드-->
+        <article class="input_tool_wrap keyboard ">   
+          <!-- 기본타입  -->
+          <div class="key_type key_type_basic active" >
+            <div class="key_type_inner">
+              <div class="key_oper">
+                <ul class="key_wrap">
+                  <li>
+                    <button class="key frac_key key_input_add" data-clac="">
+                      <i class="fraction_icon_tA">           
+                        <object type="image/svg+xml" data="../images/svg/key_fraction_icon_type_A.svg"></object>                    
+                      </i>
+                      <span class="sr">fraction A</span>
+                    </button>
+                  </li>              
+                  <li><button class="key" data-clac="="><span>=</span></button></li>
+                  <li>
+                    <button class="key key_input_add" data-clac="">
+                      <i class="fraction_icon_tB">
+                        <object type="image/svg+xml" data="../images/svg/key_fraction_icon_type_B.svg"></object> 
+                      </i>
+                      <span class="sr">fraction B</span>
+                    </button>
+                  </li>
+                  <li><button class="key" data-clac=">"><span>></span></button></li>               
+                </ul>            
+                <ul class="key_wrap">
+                  <li><button class="key" data-clac="×"><span>×</span></button></li>
+                  <li><button class="key" data-clac=">"><span>></span></button></li>
+                  <li><button class="key" data-clac="."><span>.</span></button></li>
+                  <li><button class="key" data-clac="𝑥"><span>𝑥</span></button></li>
+                </ul>
+              </div>
+              <div class="key_num">
+                <ul class="key_wrap">
+                  <li><button class="key" data-clac="1"><span>1</span></button></li>
+                  <li><button class="key" data-clac="2"><span>2</span></button></li>
+                  <li><button class="key" data-clac="3"><span>3</span></button></li>
+                  <li><button class="key" data-clac="4"><span>4</span></button></li>
+                  <li><button class="key" data-clac="5"><span>5</span></button></li>
+                  <li><button class="key" data-clac="6"><span>6</span></button></li>
+                  <li><button class="key" data-clac="7"><span>7</span></button></li>
+                  <li><button class="key" data-clac="8"><span>8</span></button></li>
+                  <li><button class="key" data-clac="9"><span>9</span></button></li>
+                  <li><button class="key" data-clac="."><span>.</span></button></li>
+                  <li><button class="key" data-clac="0"><span>0</span></button></li>
+                  <li><button class="key key_num_del" data-clac="del"><i class="icon_32"><img src="../images/svg/key_del.svg" alt=""></i><span class="sr">delete</span></button></li>
+                </ul>  
+              </div>
+            </div>
+          </div> 
+          <!--복합연산 타입  -->
+          <div class="key_type key_type_compound">
+            <div class="key_type_inner">
+              <div class="key_oper">
+                <ul class="key_wrap">
+                  <li>
+                    <button class="key key_input_add" data-clac="">
+                      <i class="fraction_icon_tA">                   
+                        <object type="image/svg+xml" data="../images/svg/key_fraction_icon_type_A.svg"></object> 
+                      </i>
+                      <span class="sr">fraction A</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="key key_input_add" data-clac="">
+                      <i class="fraction_icon_tB">                    
+                        <object type="image/svg+xml" data="../images/svg/key_fraction_icon_type_B.svg"></object> 
+                      </i>
+                      <span class="sr">fraction B</span>
+                    </button>
+                  </li>
+                  <li><button class="key" data-clac="÷"><span>÷</span></button></li>
+                  <li>
+                    <button class="key key_input_add" data-clac="">
+                      <i class="square_icon">              
+                        <object type="image/svg+xml" data="../images/svg/key_square_icon.svg"></object> 
+                      </i>
+                      <span class="sr">square</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="key key_input_add" data-clac="">
+                      <i class="root_icon">                
+                        <object type="image/svg+xml" data="../images/svg/key_root_icon.svg"></object> 
+                      </i>
+                      <span class="sr">root</span>
+                    </button>
+                  </li>
+                  <li><button class="key" data-clac="×"><span>×</span></button></li>
+                  <li>
+                    <button class="key more_key arrow_bracket" data-clac="<"><span><</span></button> 
+                    <div class="more_key_wrap">
+                      <button class="key" data-clac="<"><span><</span></button>
+                      <button class="key" data-clac=">"><span>></span></button>
+                    </div>
+                  </li>
+                  <li>
+                    <button class="key more_key" data-clac="("><span>(</span></button>
+                    <div class="more_key_wrap">
+                      <button class="key" data-clac="("><span>(</span></button>
+                      <button class="key" data-clac=")"><span>)</span></button>
+                    </div>
+                  </li>
+                  <li><button class="key" data-clac="-"><span>-</span></button></li>
+                  <li>
+                    <button class="key more_key " data-clac="="><span>=</span></button>
+                    <div class="more_key_wrap">
+                      <button class="key" data-clac="="><span>=</span></button>
+                      <button class="key" data-clac="="><span>=</span></button>
+                    </div>
+                  </li>  
+                  <li>
+                    <button class="key more_key" data-clac="𝑥"><span>𝑥</span></button>
+                    <div class="more_key_wrap">
+                      <button class="key" data-clac="𝑥"><span>𝑥</span></button>
+                      <button class="key" data-clac="𝑥"><span>𝑥</span></button>
+                    </div>
+                  </li>            
+                  <li>
+                    <button class="key more_key" data-clac="+"><span>+</span></button>
+                    <div class="more_key_wrap">
+                      <button class="key" data-clac="+"><span>+</span></button>
+                      <button class="key" data-clac="+"><span>+</span></button>
+                    </div>
+                  </li>        
+                </ul>            
+              </div>
+              <div class="key_num">
+                <ul class="key_wrap">
+                  <li><button class="key" data-clac="1"><span>1</span></button></li>
+                  <li><button class="key" data-clac="2"><span>2</span></button></li>
+                  <li><button class="key" data-clac="3"><span>3</span></button></li>
+                  <li><button class="key" data-clac="4"><span>4</span></button></li>
+                  <li><button class="key" data-clac="5"><span>5</span></button></li>
+                  <li><button class="key" data-clac="6"><span>6</span></button></li>
+                  <li><button class="key" data-clac="7"><span>7</span></button></li>
+                  <li><button class="key" data-clac="8"><span>8</span></button></li>
+                  <li><button class="key" data-clac="9"><span>9</span></button></li>
+                  <li>
+                    <button class="key more_key key_num_dot" data-clac="."><span>.</span></button>
+                    <div class="more_key_wrap">
+                      <button class="key" data-clac="."><span>.</span></button>
+                      <button class="key" data-clac="."><span>.</span></button>
+                    </div>
+                  </li>
+                  <li><button class="key" data-clac="0"><span>0</span></button></li>
+                  <li><button class="key key_num_del" data-clac="del"><i class="icon_32"><img src="../images/svg/key_del.svg" alt=""></i><span class="sr">delete</span></button></li>
+                </ul>  
+              </div>
+            </div>
+          </div>    
+            <!--문자연산 타입  -->
+          <div class="key_type key_type_string eng ">
+            <div class="key_type_inner">          
+              <div class="key_string">
+                <ul class="key_wrap">
+                  <li><button class="key" data-clac="a"><span>a</span></button></li>
+                  <li><button class="key" data-clac="b"><span>b</span></button></li>
+                  <li><button class="key" data-clac="c"><span>c</span></button></li>
+                  <li><button class="key" data-clac="d"><span>d</span></button></li>
+                  <li><button class="key" data-clac="e"><span>e</span></button></li>
+                  <li><button class="key" data-clac="f"><span>f</span></button></li>
+                  <li><button class="key" data-clac="g"><span>g</span></button></li>
+                  <li><button class="key" data-clac="h"><span>h</span></button></li>
+                  <li><button class="key" data-clac="i"><span>i</span></button></li>
+                  <li><button class="key" data-clac="m"><span>m</span></button></li>
+                  <li><button class="key" data-clac="n"><span>n</span></button></li>
+                  <li><button class="key" data-clac="p"><span>n</span></button></li>
+                  <li><button class="key" data-clac="r"><span>p</span></button></li>
+                  <li><button class="key" data-clac="t"><span>r</span></button></li>
+                  <li><button class="key" data-clac="x"><span>t</span></button></li>
+                  <li><button class="key" data-clac="y"><span>x</span></button></li>
+                  <li><button class="key" data-clac="z"><span>y</span></button></li>    
+                  <li><button class="key" ><span></span></button></li>            
+                </ul>  
+              </div>
+              <div class="key_oper">
+                <ul class="key_wrap">              
+                  <li><button class="key" data-clac="("><span>(</span></button></li>
+                  <li><button class="key" data-clac=")"><span>)</span></button></li>
+                  <li><button class="key" data-clac="+"><span>+</span></button></li>
+                  <li><button class="key" data-clac="-"><span>-</span></button></li>
+                  <li><button class="key" data-clac="="><span>=</span></button></li>  
+                  <li><button class="key key_num_del" data-clac="del" ><i class="icon_32"><img src="../images/svg/key_del.svg" alt=""></i><span class="sr">delete</span></button></li>      
+                </ul>            
+              </div>
+            </div>
+          </div>  
+          
+          <div class="input_add_wrap ">
+            <div class="wrap">
+              <button class="input_add_btn input_add_close">           
+                <i class="icon_24"><img src="../images/common/close_gray_24.svg" alt=""></i>
+              </button>
+              <ul class="input_add_btn input_add_order">
+                <li>
+                  <!-- button active시 object내 svg도 active 추가 -->
+                  <button class="">
+                    <i class="icon_24">        
+                      <object data="../images/common/prev_arrow_24.svg" type=""></object>
+                    </i>
+                  </button>
+                </li>
+                <li>
+                  <button class="active">
+                    <i class="icon_24">             
+                      <object data="../images/common/next_arrow_24.svg" type=""></object>
+                    </i>
+                  </button>
+                </li>              
+              </ul>
+              <button class="input_add_btn input_add_back">
+                <i class="icon_24"><img src="../images/svg/tool_pad_prev_24.svg" alt=""></i>
+              </button>
+              <button class="input_add_btn input_add_check">
+                <i class="icon_24"><img src="../images/common/check_gray_icon_24.svg" alt=""></i>            
+              </button>          
+            </div>     
+            <div class="input_add_area newscroll_bar">       
+              <div>문제 문제 문제</div>    
+            </div>   
+          </div>
+        </article>
+        <!-- 객관식 --> 
+        <article class="input_tool_wrap multi_choice_board ">
+          <div class="wrap">
+            <p class="note">Please choose the answer from the <span>4 choices.</span></p>
+            <!-- test 답여러줄 -->
+            <button class="mline" style="position:absolute; top:10px; right:10px; padding:4px; background-color:var(--subText); color:#ffffff;" >정답<br>list</button>
+            <form class="multi_answer_list_wrap">
+              <!-- 답이 한줄일때 -->
+              <ul class="multi_answer_list newscroll_bar active" >
+                <li>
+                  <input type="radio" name="multi_answer" id="answer1" value="">
+                  <label for="answer1">
+                    <span>27</span>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="multi_answer" id="answer2" value="">
+                  <label for="answer2">
+                    <span>28</span>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="multi_answer" id="answer3" value="">
+                  <label for="answer3">
+                    <span>29</span>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="multi_answer" id="answer4" value="">
+                  <label for="answer4">
+                    <span>30</span>
+                  </label>
+                </li>            
+              </ul>
+              <!-- 답이 한줄이상일때 이미지 -->
+              <ul class="multi_answer_list newscroll_bar answer_mline">
+                <li>
+                  <input type="radio" name="multi_answer" id="answer5" value="">
+                  <label for="answer5">
+                    <span><figure><img src="https://dummyimage.com/100x36/dbdbdb/333333" alt=""></figure></span>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="multi_answer" id="answer6" value="">
+                  <label for="answer6">
+                    <span><figure><img src="https://dummyimage.com/100x36/dbdbdb/333333" alt=""></figure></span>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="multi_answer" id="answer7" value="">
+                  <label for="answer7">
+                    <span><figure><img src="https://dummyimage.com/100x36/dbdbdb/333333" alt=""></figure></span>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="multi_answer" id="answer8" value="">
+                  <label for="answer8">
+                    <span><figure><img src="https://dummyimage.com/100x36/dbdbdb/333333" alt=""></figure></span>
+                  </label>
+                </li>            
+              </ul>
+            </form>
+          </div>
+        </article>
+        <!-- 입력도구 컨트롤 -->
+        <article class="tools_controll">
+          <div class="inner_wrap">
+            
+            <div class="tool_select_btn_wrap ">
+              <!-- 키보드, 그리기 버튼 -->
+              <button class="tool_select_btn mode_key">
+                <span class="sr">keyboard</span>
+                <i class="icon_24 tool_keyboard active"><img src="../images/svg/tool_keyboard_icon_24.svg" alt=""></i>
+                <i class="icon_24 tool_pen"><img src="../images/svg/tool_pen_icon_24.svg" alt=""></i>           
+              </button>
+              <!-- 문자연산 보기 -->
+              <button class="keyborad_string" data-key-type="string">
+                <span>Aa</span>           
+              </button>
+              <!-- test 삭제바람 -->
+                <div class="keyboard_type_test">
+                  <ul>
+                    <li><button data-key-type="basic">기본</button></li>
+                    <li><button data-key-type="compound">복합</button></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="tool_check_btn_wrap">
+              <button class="brading_btn ">
+                <span>Grading</span>
+                <i class="icon_16"><object type="image/svg+xml" data="../images/svg/tool_check_arrow_16.svg"></object></i>
+              </button>        
+            </div>
+          </div>
+        </article>  
+      </div>
+    </section>
+  </main>
+  <div class="notepad_overlay"></div> 
+   
+
+  <!-- test 삭제바람 fullscren -->
+  <button class="sf_btn">
+    <i>
+      <svg x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+        <path class="st0" d="M4,22H0v10h10v-4H4V22z M0,0v10h4V4h6V0H0z M28,28h-6v4h10V22h-4V28z M22,0v4h6v6h4V0H22z"/>
+      </svg>
+    </i>
+  </button>
+<!-- test 객관식 문제 보기 -->
+  <button class="mcp">
+    객관식 문제
+  </button>
+
+<!--  -->
+  <script type="text/javascript" src="../js/vendor/gsap.min.js"></script>
+  <script type="text/javascript" src="../js/vendor/ScrollToPlugin.min.js"></script>
+  <script type="text/javascript" src="../js/vendor/swiper.min.js"></script>	
+  <script type="text/javascript" src="../js/vendor/screenfull.js"></script>	
+  <script type="text/javascript" src="../js/main.js"></script>
+  <script type="text/javascript" src="../js/qz.js"></script>
+  </body>
+</html>
