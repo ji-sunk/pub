@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <clipPath id="cucrq22rza">
+            <path data-name="패스 20" d="M320.453-18h15.687a1.363 1.363 0 0 1 1.452 1.25 1.363 1.363 0 0 1-1.452 1.25h-15.687A1.363 1.363 0 0 1 319-16.75a1.363 1.363 0 0 1 1.453-1.25z" transform="translate(-319 18)" style="clip-rule:evenodd;fill:none"/>
+        </clipPath>
+        <clipPath id="1jspyzfweb">
+            <path data-name="패스 19" d="M-20 1307h435.756V-88H-20z" transform="translate(20 88)" style="fill:none"/>
+        </clipPath>
+        <clipPath id="63au1yoxxc">
+            <path data-name="패스 23" d="M314-19a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2z" style="clip-rule:evenodd;fill:none"/>
+        </clipPath>
+        <clipPath id="brbf2ci4cd">
+            <path data-name="패스 22" d="M-20 1307h375V-88H-20z" style="fill:none"/>
+        </clipPath>
+        <clipPath id="6ka5uj1f8e">
+            <path data-name="패스 26" d="M320.452-11h11.884a1.362 1.362 0 0 1 1.452 1.25 1.362 1.362 0 0 1-1.452 1.25h-11.884A1.362 1.362 0 0 1 319-9.75a1.362 1.362 0 0 1 1.452-1.25z" transform="translate(-319 11)" style="clip-rule:evenodd;fill:none"/>
+        </clipPath>
+        <clipPath id="l2u36z30bf">
+            <path data-name="패스 25" d="M-20 1307h426.565V-88H-20z" transform="translate(20 88)" style="fill:none"/>
+        </clipPath>
+        <clipPath id="2rsfzxihtg">
+            <path data-name="패스 29" d="M314-12a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2z" style="clip-rule:evenodd;fill:none"/>
+        </clipPath>
+        <clipPath id="ffeftvi4sh">
+            <path data-name="패스 32" d="M320.453-4h15.687a1.363 1.363 0 0 1 1.452 1.25 1.363 1.363 0 0 1-1.452 1.25h-15.687A1.363 1.363 0 0 1 319-2.75 1.363 1.363 0 0 1 320.453-4z" transform="translate(-319 4)" style="clip-rule:evenodd;fill:none"/>
+        </clipPath>
+        <clipPath id="qcnsfsix5i">
+            <path data-name="패스 35" d="M314-5a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2z" style="clip-rule:evenodd;fill:none"/>
+        </clipPath>
+    </defs>
+    <path style="fill:none" d="M0 0h32v32H0z"/>
+    <g data-name="그룹 7559">
+        <g data-name="그룹 22" transform="translate(10.085 7.8)" style="clip-path:url(#cucrq22rza)">
+            <g data-name="그룹 21" transform="translate(-393.923 -70)" style="clip-path:url(#1jspyzfweb)">
+                <path data-name="패스 18" d="M318-19h20.916v4.5H318z" transform="translate(74.761 88)" style="fill:#00cdff"/>
+            </g>
+        </g>
+        <g data-name="그룹 24" transform="translate(-309 26)" style="clip-path:url(#63au1yoxxc)">
+            <g data-name="그룹 23" style="clip-path:url(#brbf2ci4cd)">
+                <path data-name="패스 21" d="M311-20h6v6h-6z" style="fill:#00cdff"/>
+            </g>
+        </g>
+        <g data-name="그룹 26" transform="translate(10.085 14.8)" style="clip-path:url(#6ka5uj1f8e)">
+            <g data-name="그룹 25" transform="translate(-385.615 -77)" style="clip-path:url(#l2u36z30bf)">
+                <path data-name="패스 24" d="M318-12h16.759v4.5H318z" transform="translate(66.478 88)" style="fill:#00cdff"/>
+            </g>
+        </g>
+        <g data-name="그룹 28" transform="translate(-309 26)" style="clip-path:url(#2rsfzxihtg)">
+            <g data-name="그룹 27" style="clip-path:url(#brbf2ci4cd)">
+                <path data-name="패스 27" d="M311-13h6v6h-6z" style="fill:#00cdff"/>
+            </g>
+        </g>
+        <g data-name="그룹 30" transform="translate(10.085 21.8)" style="clip-path:url(#ffeftvi4sh)">
+            <g data-name="그룹 29" transform="translate(-393.923 -84)" style="clip-path:url(#1jspyzfweb)">
+                <path data-name="패스 30" d="M318-5h20.916v4.5H318z" transform="translate(74.761 88)" style="fill:#00cdff"/>
+            </g>
+        </g>
+        <g data-name="그룹 32" transform="translate(-309 26)" style="clip-path:url(#qcnsfsix5i)">
+            <g data-name="그룹 31" style="clip-path:url(#brbf2ci4cd)">
+                <path data-name="패스 33" d="M311-6h6v6h-6z" style="fill:#00cdff"/>
+            </g>
+        </g>
+    </g>
+</svg>
