@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>웅진 매쓰피드 퍼블목록</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Category</th>
+            <th>url</th>
+            <th>File</th>
+            <th>Updated</th>
+          </tr>
+        </thead>
+        <tbody id="table"></tbody>
+      </table>
+    </div>
+    <script>
+      var list = [
+        {category: '홈', name: '홈   ', fileName: 'index.html', date: ''},
+        {category: '코스학습', name: '코스학습 메인', fileName: 'daily_course/course_main.html', date: '2022.06.07'},
+        {category: '주제학습', name: '주제학습 주제, 학년별 ', fileName: 'daily_topic/topic_main.html', date: '2022.06.07'},
+        {category: '주제학습', name: '주제학습 리스트  ', fileName: 'daily_topic/topic_main.html', date: '2022.06.07'},
+        {category: '문제풀이', name: '문제풀이 공통 메인  ', fileName: 'qz/qz.html', date: '2022.06.15'},
+        {category: '문제풀이', name: '문제풀이 개별 메인  ', fileName: 'qz/qz_diag.html', date: '2022.06.15'},
+        {category: '문제풀이', name: '문제풀이 팝업 ', fileName: 'qz/qz_message_popup.html', date: '2022.06.15'},
+        {category: '문제풀이', name: '문제풀이 종료 팝업  ', fileName: 'qz/qz_learn_end_popup.html', date: '2022.06.15'},
+        {category: '문제풀이', name: '문제풀이 개별 종료 팝업 ', fileName: 'qz/qz_diag_learn_end_popup.html', date: '2022.06.15'},      
+      ]
+      var html = []
+      var i, item
+      for (i = 0; i < list.length; i++) {
+        item = list[i]
+        html += '<tr>'
+        html += '<td>' + (i+1) + '</td>'
+        html += '<td>' + item.category + '</td>'
+        html += '<td><a href="' + item.fileName + '">' + item.name + '</a></td>'
+        html += '<td>' + item.fileName + '</td>'
+        html += '<td>' + item.date + '</td>'
+        html += '</tr>'
+      }
+      $('#table').append(html)
+    </script>
+    <style>
+      table{width: 100%;max-width: 900px;margin: 20px;}
+      table th{padding: 5px 10px;background: #ffb6b6;font-size: 14px;text-align: left;}
+      table td{padding: 5px 10px;font-size: 14px;border: 1px solid #dddd;}
+    </style>
+  </body>
+</html>
