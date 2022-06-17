@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+.main_contents{width:100%; box-sizing: border-box;}
+.container{overflow-x: hidden; overflow-y: auto; height:calc(100vh - 102px); scrollbar-width: none;}
+.container::-webkit-scrollbar {display: none;}
+.text_btn_wrap{display: flex;}
+
+
+.main_page header {position: fixed; top:0; left:0; background-color:rgba(243, 243, 243, 0.9);}
+.main_page .container{overflow-x: hidden; overflow-y: auto; margin-top:102px; height:100%;}
+
+/*상단 profile*/
+.profile{padding:20px 15px 0 30px;}
+.profile .profile_inner{display: flex; justify-content: space-between;}
+.profile .profile_inner .profile_info{flex-shrink: 0;}
+.profile .profile_inner .profile_info a{display: flex; align-items: baseline;}
+.profile .profile_inner .profile_info a h2{margin-right:5px; font-size:22px; letter-spacing: -0.01px; color:var(--textColor)}
+.profile .profile_inner .profile_info a i{display: block; width:12px; height:12px;}
+.profile .profile_inner .profile_info .profile_grade{margin:5px 0 0; display: flex; align-items: center;}
+.profile .profile_inner .profile_info .profile_grade .grade_icon_wrap{position:relative; margin-right:10px; width:32px; height:32px;}
+.profile .profile_inner .profile_info .profile_grade .grade_icon_wrap i{display: block;}
+.profile .profile_inner .profile_info .profile_grade .grade_icon_wrap .grade_icon{ width:32px; height:32px;}
+.profile .profile_inner .profile_info .profile_grade .grade_icon_wrap .grade_level_icon{position:absolute; top:-2px; right:-2px; width:16px; height:16px;}
+/*profile prgress*/
+.profile .profile_inner .profile_info .profile_grade .grade_track{position:relative; width:85px; height:5px; border-radius: 2.5px; background-color: #d4e5ff; overflow: hidden;}
+.profile .profile_inner .profile_info .profile_grade .grade_track .gard_bar{position: absolute; top:50%; left:0; z-index: 1; transform: translateY(-50%); display: block; width:0; height:5px; border-radius: 2.5px; background-image: -moz-linear-gradient(to bottom, var(--gradationStart), var(--gradationEnd));
+ background-image: linear-gradient(to bottom, var(--gradationStart), var(--gradationEnd)); transition: width, .5s;}
+ /*profile 우측 배지*/
+.profile .profile_inner .badges{position: relative;}
+.profile .profile_inner .badges ul{display: flex;}
+.profile .profile_inner .badges ul li{position: relative; }
+.profile .profile_inner .badges ul li:nth-child(1){z-index: 3;}
+.profile .profile_inner .badges ul li:nth-child(2){z-index: 2; margin-left:-50px;}
+.profile .profile_inner .badges ul li:nth-child(3){z-index: 1; margin-left:-50px;}
+.profile .profile_inner .badges i{display: block; width:64px; height:64px;}
+/*배지가 3개 이상이면 숫자 추가*/
+.profile .profile_inner .badges .badges_more_num{position: absolute; top:50%; right:0; transform: translateY(-50%); z-index: 4; display: none; padding:2px 8px 2px 7px; font-weight: bold; color: #ffffff; border-radius:11.5px; background-color: var(--moreBadgeBg);}
+.profile .profile_inner .badges .badges_more_num.active{display: block;}
+.profile .profile_inner .badges .badges_more_num.active + ul{margin-right:8px;}
+
+/*weekly_mission*/
+.weekly_mission_wrap{margin-top:25px; }
+.weekly_mission{padding:20px 20px 21px; border-radius: var(--borderRadius);  background-color: #ffffff;  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.02);}
+.weekly_mission .weekly_header{display: flex; justify-content: space-between; align-items: baseline;}
+.weekly_mission .weekly_header h3{height:27px; font-size:20px; letter-spacing: -0.01px;}
+.weekly_mission .weekly_header .weekly_day{font-weight: bold; color:var(--mainColor)}
+.weekly_mission .weekly_icons{margin-top:10px; margin-left:-5px; display: flex;}
+.weekly_mission .weekly_icons li i{ display: block; width:48px; height:48px;}
+.weekly_mission .text_btn_wrap{margin-top:15px; justify-content: flex-end;} 
+.weekly_mission .text_btn_wrap a{display: flex; align-items: center; color: #666666; font-weight: 500;}
+.weekly_mission .text_btn_wrap a span{height:19px; margin-right:5px;}
+
+/*main conntents*/
+.main_page .main_contents{padding-bottom:170px;}
+.main_page .main_contents>.wrap{margin:0 -7.5px; display: flex; flex-wrap: wrap; width:auto;}
+/*card ui*/
+.card_wrap{display: flex; flex-wrap:wrap; width:100%;}
+.card_ui{margin-top:20px; padding:0 7.5px; width:100%; }
+.card_icon{width:48px; height:48px;}
+.card_ui .card_ui_inner{ padding:20px 15px 25px; height:100%; border-radius: var(--borderRadius); background-color: #ffffff;  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.02); }
+.card_ui .card_ui_inner a{ width:100%; height:100%; }
+.card_ui .card_title_wrap{margin:0 -7.5px; display: flex; }
+.card_ui .card_title_wrap>div{padding:0 7.5px;}
+.card_ui .card_title_wrap .icon_wrap{flex-shrink: 0;}
+.card_ui .card_title_wrap .card_title h3{font-size:20px; font-weight:bold; line-height: 1.3; letter-spacing: -0.01px;}
+.card_ui .card_title_wrap .card_title p{margin-top:5px; font-weight:500; line-height: 1.43; color:#666666;}
+
+/*big card - junior용 daily course, daily topic 사이즈*/
+.big_card .card_question_img{margin-top:15px; display: flex; justify-content: center;}
+.big_card .card_btn_wrap{margin-top: 15px; display: flex; justify-content: center;}
+.big_card .card_btn_wrap .card_btn{padding:8px 15px 8px 20px; display:flex; justify-content: center; align-items: center; width:auto; font-size:16px; line-height: 1.5; font-weight:bold; color:#ffffff; background-image: -moz-linear-gradient(103deg, var(--gradationStart), var(--gradationEnd)); background-image: linear-gradient(103deg, var(--gradationStart), var(--gradationEnd)); border-radius: var(--borderRadius)}
+.big_card .card_btn_wrap .card_btn span{margin-right:5px;}
+
+/*link card - ocr, market 형태 사이즈*/
+.link_card .card_ui_inner{padding:0;}
+.link_card a{display: block; padding:20px 20px 19px 15px;}
+.link_card .card_title{display: flex; align-items: center; justify-content: space-between; width: 100%;}
+
+/*ai card 이미지 슬라이더 card ui*/
+.ai_card .card_ui_inner{overflow: hidden; padding:5px 0 15px;}
+.ai_card .card_ui_inner .ai_slider{overflow: hidden;}
+.ai_card .slider_item{padding:0 0 0 20px; }
+.ai_card .slider_item a{display: flex; align-items: center; justify-content: space-between;}
+.ai_card .slider_item .slider_text{margin-right:25px;}
+.ai_card .slider_item .slider_text h3{height:22px; font-size:16px; line-height: 1.5;}
+.ai_card .slider_item .slider_text p{margin-top:10px; font-weight: 500; color:#666666;}
+.ai_card .slider_item .img_wrap figure{width:120px; height:100px;}
+.ai_card .ai_bullets_wrap{margin-top:6px; display: flex; justify-content: center;}
+.ai_card .ai_bullets_wrap span{ margin:0 2.5px; display: block; width:5px; height:5px; border-radius: 2.5px; background-color: #dddddd; opacity: 1; transition: width .3s;}
+.ai_card .ai_bullets_wrap span.swiper-pagination-bullet-active{width:15px; background-color: var(--mainColor);}
+
+/*반으로 나누어진 card ui*/
+.divide_card_wrap .card_ui_inner{position: relative; padding:20px; height:220px;}
+/*나누어진것 중 large divide card  */
+.divide_card_l{width:54.575%;}
+/*나누어진것 중 medium divide card  */
+.divide_card_m{width:45.425%;}
+.divide_card_wrap .icon_wrap{position:absolute; bottom:15px; left:0; padding:0 20px 0 15px; display: flex; justify-content: space-between; align-items: flex-end; width:100%;}
+.divide_card_wrap .icon_wrap i{display: block;}
+.divide_card_wrap .icon_wrap .gray_arrow{margin-bottom:5px;}
+
+/*math game slider */
+.math_game_list .card_ui_inner{padding:28px 20px 30px 20px;}
+.math_game_list .card_title_wrap{margin:0; display: block;}
+.math_game_list .card_title_wrap a{display: flex; justify-content: space-between; align-items: center;}
+.math_game_list .game_slider{margin-top:30px; overflow: hidden;}
+.math_game_list .game_slider .game_item{margin-right:10px; width:90px; height:90px;}
+
+
+@media (max-width:359px) {
+  .profile .profile_inner .profile_info a h2 { font-size: 20px;}
+  .profile .profile_inner .badges {display: none;} 
+  .weekly_mission .weekly_icons {flex-wrap: wrap;}  
+  .card_ui .card_title_wrap .card_title h3 {font-size: 16px;}
+  .ai_card .slider_item .slider_text {margin-right: 10px;}
+  .ai_card .slider_item .img_wrap figure {width: 80px; height: 68px;}
+
+  .divide_card_wrap .card_ui_inner {height: 180px;}
+  .divide_card_l {width: 100%;}
+  .divide_card_m {width: 100%;}
+}
+
+
+@media (min-width:600px) {
+  /*위클리 미션*/
+  .weekly_mission_wrap {margin-top: 40px;}
+  .weekly_mission {padding: 20px 20px 15px;}  
+  .weekly_mission .weekly_header h3 {height:22px; font-size: 16px; }
+  .weekly_mission .weekly_icon_wrap {display: flex; justify-content: space-between; align-items: flex-end;}
+  .weekly_mission .weekly_icons li i {width: 40px; height: 40px;}
+  .weekly_mission .text_btn_wrap {margin-bottom: 5px;} 
+
+  /**/
+  .wrap {padding: 0; max-width: 550px;}
+
+ /*ai 슬라이더*/
+  .ai_card .slider_item{padding:0 10px 0 25px; }
+  .ai_card .slider_item .slider_text {width: 249px;}  
+  .ai_card .ai_bullets_wrap { margin-top: 3px;}
+
+ /*link card ui*/
+  .link_card {width:50%;}
+  .link_card .card_ui_inner {padding:0; height: 128px;}
+  .link_card a {position: relative;  padding: 25px 15px 25px 25px; height: 100%;}
+  .link_card.card_ui .card_title_wrap .icon_wrap {position: absolute; bottom:15px; left:15px;}
+  .link_card.card_ui .card_title_wrap .card_title i{position: absolute; bottom:20px; right:20px;}
+ 
+  /*math game slider*/
+  .math_game_list .card_ui_inner {padding: 25px 20px 30px 25px;}
+  .math_game_list .game_slider{position:relative;}
+  .math_game_list .game_slider::before{content: ""; position:absolute; top:0; right:-20px; bottom:0; z-index: 9; display: block; width:58px; height:100%;  background-image: linear-gradient(to left, #fff, #fff 51%, rgba(255, 255, 255, 0));}  
+
+  /*divied card ui */
+  .divide_card_wrap .card_ui {padding: 0 10px;}
+  .divide_card_l {width: 50%;}
+  .divide_card_m {width: 50%;}
+  .divide_card_wrap .card_ui_inner {padding: 25px; height: 276px;} 
+  .divide_card_wrap .icon_wrap {bottom: 20px; padding: 0 20px 0 20px;}    
+}
+
+
+/*tablet 세로*/
+@media (min-width:600px) and (orientation: portrait) {
+  /*profile*/
+	.profile .profile_inner .profile_info a h2 {margin-right: 5px; font-size: 26px;}
+  .profile .profile_inner .profile_info a i {width: 16px; height: 16px;}
+  .profile .profile_inner .profile_info a i svg{width: 16px; height: 16px;}
+  /*profile progress*/
+  .profile .profile_inner .profile_info .profile_grade .grade_track {width: 100px; height: 6px; border-radius: 3px;}
+  .profile .profile_inner .profile_info .profile_grade .grade_track .gard_bar {height: 6px; border-radius: 3px;}
+  .profile .profile_inner .profile_info .profile_grade .grade_track .gard_bar {background-image: -moz-linear-gradient(to right, var(--gradationStart), var(--gradationEnd)); background-image: linear-gradient(to right, var(--gradationStart), var(--gradationEnd));}
+  
+  /*contents wrap*/
+  .main_page .main_contents {max-width: 550px;  margin: 0 auto;}
+  .main_page .main_contents>.wrap {margin: 0 -10px; max-width: initial;}
+
+  /*card ui*/
+  .card_ui {padding: 0 10px;}
+  .card_ui .card_title_wrap .card_title p {font-size: 16px;}
+
+  /*big card*/
+  .big_card .card_question_img {margin-top: 10px;}
+  .big_card .card_btn_wrap {margin-top: 10px;}  
+
+  /*divid_3 - ai, ocr, market group 순서 변경 */
+  .order_change.divide_3_card_wrap .ocr{order:1;}
+  .order_change.divide_3_card_wrap .market{order:2;}      
+}
+
+
+
+@media (min-width:1024px) and (orientation: landscape) {
+  .wrap {padding: 0 50px; max-width: inherit;}
+  /*가로 스크롤*/
+  .ho_scroll{display: flex; overflow: auto; scrollbar-width: none;}
+  .ho_scroll::-webkit-scrollbar {display: none;}  
+
+  .main_top{margin-top:27px; display: flex; justify-content: space-between;} 
+  .profile{padding: 0 15px 0 50px; width:379px;}  
+
+  .weekly_mission_wrap {margin-top: 0px;}
+  .weekly_mission {width:490px;}  
+
+  .main_page .main_contents {margin-top:80px;}
+  .main_page .main_contents .wrap{margin:0; padding-right:30px; display: flex; flex-wrap: nowrap;}
+
+  .card_ui{margin-top:0; padding:0;  padding-right:20px;}
+  .card_ui .card_title_wrap .card_title p {line-height: 1.5;}
+ 
+  .big_card .card_ui_inner{padding: 22px 25px 25px; width:452px; height:100%;}
+  .big_card .card_question_img {margin-top: 10px;}
+  .big_card .card_btn_wrap {margin-top: 10px;}  
+
+  .ai_card .card_ui_inner {width:500px;}
+
+  /*divid_3 - ai, ocr, market group 순서 변경 */
+  .divide_3_card_wrap .ocr{order:1; margin-top:20px; width:50%;}
+  .divide_3_card_wrap .market{order:2; margin-top:20px; width:50%;}
+  
+  .divide_card_wrap .card_ui_inner {width:280px;}
+  .divide_card_wrap .card_ui {padding:0 20px 0 0;}
+}  
+
+
+@media (min-width:1440px){
+  .big_card{width:475px;}
+
+  .divide_3_card_wrap{width:520px;}
+}

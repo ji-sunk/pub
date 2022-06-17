@@ -1,0 +1,70 @@
+@charset "utf-8";
+@font-face {font-family:"NotoSans"; src:url("../font/NotoSans-Black.woff") format("woff"); font-weight: 900;}
+@font-face {font-family:"NotoSans"; src:url("../font/NotoSans-ExtraBold.woff") format("woff"); font-weight: 800;}
+@font-face {font-family:"NotoSans"; src:url("../font/NotoSans-Bold.woff") format("woff"); font-weight: 700;}
+@font-face {font-family:"NotoSans"; src:url("../font/NotoSans-SemiBold.woff") format("woff"); font-weight: 600;}
+@font-face {font-family:"NotoSans"; src:url("../font/NotoSans-Medium.woff") format("woff"); font-weight: 500;}
+@font-face {font-family:"NotoSans"; src:url("../font/NotoSans-Regular.woff") format("woff"); font-weight: 400;}
+@font-face {font-family:"NotoSans"; src:url("../font/NotoSans-Light.woff") format("woff"); font-weight: 300;}
+@font-face {font-family:"NotoSans"; src:url("../font/NotoSans-ExtraLight.woff") format("woff"); font-weight: 200;}
+@font-face {font-family:"NotoSans"; src:url("../font/NotoSans-Thin.woff") format("woff"); font-weight: 100;}
+
+@font-face {font-family:"cambria"; src:url("../font/cambria.woff") format("woff"); font-weight: normal;}
+@font-face {font-family:"cambria"; src:url("../font/cambriab.woff") format("woff"); font-weight: bold;}
+
+/* ===============================
+ * reset_css 
+ * =============================== 
+ * File       : reset.css
+ * Author     : sg
+ * version    : 1.0.0
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,time,figure,article,nav,header,footer,hgroup,
+video,audio,aside,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { margin:0; padding: 0; border: 0; outline: 0; vertical-align: baseline; -moz-box-sizing: border-box; box-sizing: border-box; font-family: 'NotoSans', sans-serif; font-size:14px; font-weight: 400; line-height: 1.43; /*-webkit-tap-highlight-color : transparent !important;*/}
+
+h1,h2,h3,h4,h5,h6{font-weight: bold;}
+
+ol,ul{ list-style: none;}
+table{ border-collapse: collapse; border-spacing: 0;}
+caption,th,td{/*  text-align: left; */ font-weight: normal;}
+figure,article,header,footer,nav,hgroup,video,audio,aside,main {display: block;}
+a{display:block; text-decoration: none;}
+figure, img, i{font-size:0px; line-height: 1;}
+figure img{width:100%; display:block;}
+
+address{ font-style: unset;}
+
+/* INPUT */
+input[type=text],
+input[type=tel],
+input[type=email],
+input[type=password],
+input[type=url],
+input[type=submit],
+input[type=button],
+textarea {
+    -webkit-appearance: none;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'NotoSans', sans-serif;
+}
+textarea {resize: vertical;}
+
+i{display: block; pointer-events: none; }
+
+input[type=submit], input[type=button], button {padding:0; -webkit-appearance:none;font-family: 'Noto Sans', sans-serif;border-radius:0px;}
+input[type=radio] {border-radius: 100%;}
+button{display: block;}
+
+
+@media (max-width:359px) {
+    html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,time,figure,article,nav,header,footer,hgroup,
+    video,audio,aside,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,
+    small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { font-size:12px;}
+
+}
+    
+

@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+:root{
+	--mainColor:#00bcfe;
+	--gradationStart:#0098fd;
+	--gradationEnd:#5a8bee;
+	--moreBadgeBg:#00bcfe;
+	--targetRing:#26CDFE;
+	--icon_main:#0ACEFF;
+	--icon_yellow:#FDDA61;
+	--icon_sub_01:#9974FD;
+	--icon_sub_02:#D1F1F9;
+	--whiteColor:#ffffff;
+	--topicGradationStart:#7061e5;
+	--topicGradationEnd:#6460f0;
+	--arithmetic_icon:#00bcfe;
+	--subText:#458ef1;
+	--subActive:#3d90f3;
+	--countrySelectBg:#f2f7ff;
+	--checkColor:#3d90f3;
+	--scrollBar:#3d83ea;	
+	--currentSubjectBgStart:#0098fd;
+	--currentSubjectBgEnd:#5a8bee;
+	--courseLine:#b8d4f8;
+	--borderRadius:20px;
+}
+.senior{
+	--mainColor:#0597ef;
+	--gradationStart:#1c52b7;
+	--gradationEnd:#1a4698;
+	--moreBadgeBg:#264bad;
+	--targetRing:#1B97EF;
+	--icon_main:#1B97EF;
+	--icon_yellow:#FDCE36;
+	--icon_sub_01:#3264C6;
+	--countrySelectBg:#f2f7ff;
+	--arithmetic_icon:#1b98f0;
+	--subText:#264bad;	
+	--subActive:#264bad;
+	--checkColor:#22429f;
+	--scrollBar:#264bad;	
+	--topicGradationStart:#264bad;
+	--topicGradationEnd:#3a62cc;
+	--currentSubjectBgStart:#264bad;
+	--currentSubjectBgEnd:#3a62cc;
+	--courseLine:#bcd1f4;
+	--borderRadius: 5px;
+}
+
+/*arrow icon color*/
+.gray_arrow .arrow_line{stroke:#999999;}
+.white_arrow .arrow_line{stroke:#ffffff;}
+.s_gray_arrow .arrow_line{stroke:#909090;}
+
+
+/*weekly mission icon 화살,과녁 */
+.wm_circle_blue{fill:#eaeaea;}
+.wm_circle_white{fill:#f5f5f5;}
+.weekly_arrow{display:none;}
+.arrow_stick{fill:none;stroke:#424256;stroke-width:3;stroke-linecap:round;}
+.arrow_feather{fill:#FC8677;}
+/*완료된 화살 과녁*/
+.active .wm_circle_blue{fill:var(--targetRing);}
+.active .wm_circle_white{fill:#f5f5f5;}
+.active .weekly_arrow{display:block;}
+
+/*main icon color*/
+.daily_icon .flag{fill:var(--icon_main);}
+.daily_icon .flag_stick{fill:var(--icon_yellow);}
+.daily_icon .flag_star{fill:var(--whiteColor);}
+.topic_icon .st0{fill:var(--icon_yellow);}
+.topic_icon .st1{fill:var(--whiteColor)}
+.topic_icon .st2{fill:var(--icon_main);}
+
+
+.topic_back .st0{fill:var(--icon_yellow);}
+.topic_back .st1{fill:var(--whiteColor)}
+.topic_back .st2{fill:var(--icon_main);}
+
+
+
+.ocr_icon .st0{fill:var(--icon_main);}
+.ocr_icon .st1{fill:var(--whiteColor);}
+.ocr_icon .st2{fill:var(--icon_sub_01);}
+.ocr_icon .st3{fill:var(--icon_yellow);}
+.market_icon .st0{fill:var(--icon_main);}
+.market_icon .st1{fill:var(--icon_yellow);}
+.market_icon .st2{fill:var(--icon_sub_01);}
+.market_icon .st3{fill:var(--icon_sub_02);}
+.event_icon .st0{fill:var(--icon_main);}
+.event_icon .st1{fill:var(--icon_yellow);}
+.game_icon .st0{fill:var(--icon_main);}
+.game_icon .st1{fill:var(--icon_yellow);}
+
+/*서브 연산 아이콘*/
+.arithmetic_icon .st0{fill:var(--mainColor);}
+.arithmetic_icon .st0.opacity_50{opacity:.5;}
+
+/*체크 아이콘*/
+.check_icon .st0{stroke: var(--checkColor);}
+.check_icon.ative .st0{stroke: var(--checkColor);}
+
+/*셀렉트박스 아래보기 아이콘*/
+.selec_down_arrow .arrow_line{stroke:#909090;}
+.selec_down_arrow.on .arrow_line{stroke:var(--subActive)!important;}
+
+/*문제 concept check icon*/
+.concept_check_icon{fill:var(--subText);}
+
+.gray_arrow .arrow_line{stroke:#999999!important;}
+.active.arithmetic_icon .st0 {fill: #ffffff!important;}
+.active.gray_arrow .arrow_line{stroke:#ffffff!important;}
+
+.active.arrow_12 .arrow_line{stroke:#303030!important;}
+
+.course_start_icon .st1{fill:var(--icon_yellow);}
+
+/*cl course_line*/
+.mo_course_line path{fill:none;stroke:#FFFFFF;stroke-width:15;}
+.mo_course_line .move_line{stroke:var(--courseLine); stroke-dashoffset: 428.6225280761719; stroke-dasharray: 428.6225280761719; transition: all .06s; }
+.mo_course_line.first_course_line .move_line{stroke-dashoffset: 428.6225280761719; stroke-dasharray: 428.6225280761719;}
+
+.port_course_line path{fill:none;stroke:#FFFFFF;stroke-width:20;}
+.port_course_line .move_line{stroke:var(--courseLine); stroke-dashoffset: 678.5575561523438; stroke-dasharray: 678.5575561523438; transition: all .15s; }
+.port_course_line.first_course_line .move_line{stroke-dashoffset: 559.233642578125; stroke-dasharray: 559.233642578125;  }
+
+.land_course_line path{fill:none;stroke:#FFFFFF;stroke-width:20;}
+.land_course_line .move_line{stroke:var(--courseLine); stroke-dashoffset: 678.5575561523438; stroke-dasharray: 678.5575561523438; transition: all .12s;}
+
+/* qz */
+
+.change_icon .st1{fill:var(--subText);}
+
+.down_arrow_12 .arrow_line{stroke:#909090;}
+.down_arrow_12.active .arrow_line{stroke:#ffffff;}
+
+.tool_check_arrow .arrow_line{stroke: #ecf1f8;}
+.tool_check_arrow.active .arrow_line{stroke: #ffffff;}
+
+.pad_pen .pen,
+.pad_eraser .eraser{fill:#dddddd;} 
+.pad_pen.active .pen,
+.pad_eraser.active .eraser{fill:var(--subText);}
+
+/* 분수 a,b,제곱, 루트 */
+.frac_icon_a .st0,
+.frac_icon_b .st0,
+.square_icon .st0,
+.root_icon .st0{fill:#303030;}
+
+.frac_icon_a.active .st0,
+.frac_icon_b.active .st0,
+.square_icon.active .st0,
+.root_icon.active .st0{fill:#ffffff;}
+
+
+.frac_icon_a.acitve .st0,
+.frac_icon_b.acitve .st0,
+.square_icon.acitve .st0,
+.root_icon.acitve .st0{fill:#ffffff;}
+
+.prev_arrow_icon .st1,
+.next_arrow_icon .st1{fill:#dddddd;}
+.prev_arrow_icon.active .st1,
+.next_arrow_icon.active .st1{fill:#999999;}
+
+.question_icon .st1{fill:var(--subText);}
+
+.precent10_icon .st1{fill:var(--subText);}
+.incorrect_icon .st1{fill:var(--subText);}
+.frequently_icon .st1{fill:var(--subText);}
+
+.white_arrow_12 .line{stroke:#fff;}
+.check_icon_12 .line{stroke:#999;}
+.check_icon_12.inc_check_on .line{stroke:#ffffff;}
+.down_arrow_12.inc_check_on .arrow_line{stroke:#ffffff;}
