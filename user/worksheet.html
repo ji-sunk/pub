@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<script src="static/js/slick.min.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+	<!-- <link href="static/css/math_style.css" rel="stylesheet"> -->
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+        <div class="worksheet">
+            <div class="header">
+                <!-- 220701 디자인 수정에 맞춰 구조 변경 -->
+                <div class="header_wrap">
+                    <div class="btn_area">
+                        <button type="button" class="btn_email"><span class="blind">메일 보내기</span></button>
+                        <button type="button" class="btn_print"><span class="blind">프린트 출력</span></button>
+                    </div>
+                    <div class="qr_area">
+                        <img class="work_qr" src="./static/images/common/work_qr.svg" width="100" height="100" alt="QR 코드" />
+                        <p class="qr_txt">check the answer</p>
+                    </div>
+                    <div class="cha_area">
+                        <div class="tit_box">
+                            <h1><img src="./static/images/common/logo_mathpid_wht.svg" alt="Mathpid" /></h1>
+                            <h2>Worksheet</h2>
+                        </div>
+                        <div class="sn_box">
+                            <span class="blue">Student</span>
+                            <span class="black">이웅진 Evelyn Hwang yy</span>
+                            <span class="blue">Date</span>
+                            <span class="black">22/10/22</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- //220701 디자인 수정에 맞춰 구조 변경 -->
+            </div>
+    
+            <div class="container">
+                <section>
+                    <div class="worksheet_wrap">
+                        <p class="sub_txt">Multiplication [2-digit numbers by 1-digit numbers]</p>
+                        <p class="sub_tit">Solve the questions!</p>
+                        <div class="flx_area">
+                            <ul class="qst_lst">
+                                <li class="lstMath">
+                                    <span class="num">1</span>
+                                    <div class="mathExp_box"><!-- 이 class="mathExp_box" div 안에 문항 수식 (메쓰젝스)를 넣어 주세요 -->
+                                        <div class="calcEdit-viewer_inner">
+                                            <table class="tbl-multiple">
+                                                <colgroup>
+                                                    <col style="min-width: 40px;">
+                                                    <col style="min-width: 40px;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="inputBox-min">
+                                                                <span class="inputTxt">33</span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="inputBox-min">
+                                                                <span class="inputTxt">44</span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="multiple-reverse">
+                                                        <td class="d-right"><div class="diagonal"><span class="line"></span></div></td>
+                                                        <td class="d-left"><div class="diagonal"><span class="line"></span></div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="inputBox-min">
+                                                                <span class="inputTxt mjx-box active-bd focusedInput">&nbsp;</span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="lstMath">
+                                    <span class="num">2</span>
+                                    <div class="mathExp_box">
+                                        <div class="sl-calcBox"><img src="https://s3.ap-northeast-2.amazonaws.com/wjtb-dev-pub/brs/img/stage/1626135689817120058.svg" alt="1626135689817120058.svg"></div>
+                                    </div>
+                                </li>
+                                <li class="lstMath">
+                                    <span class="num">3</span>
+                                    <div class="mathExp_box">
+                                        <div class="sl-calcBox"><img src="https://s3.ap-northeast-2.amazonaws.com/wjtb-dev-pub/brs/img/stage/1626135689817120058.svg" alt="1626135689817120058.svg"></div>
+                                    </div>
+                                </li>
+                                <li class="lstMath">
+                                    <span class="num">4</span>
+                                    <div class="mathExp_box">
+                                        <div class="sl-calcBox"><img src="https://s3.ap-northeast-2.amazonaws.com/wjtb-dev-pub/brs/img/stage/1626135689817120058.svg" alt="1626135689817120058.svg"></div>
+                                    </div>
+                                </li>
+                                <li class="lstMath">
+                                    <span class="num">5</span>
+                                    <div class="mathExp_box">
+                                        <div class="sl-calcBox"><img src="https://s3.ap-northeast-2.amazonaws.com/wjtb-dev-pub/brs/img/stage/1626135689817120058.svg" alt="1626135689817120058.svg"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="qst_lst">
+                                <li class="lstMath">
+                                    <span class="num">6</span>
+                                    <div class="mathExp_box">
+                                        <div class="sl-calcBox"><img src="https://s3.ap-northeast-2.amazonaws.com/wjtb-dev-pub/brs/img/stage/1626135689817120058.svg" alt="1626135689817120058.svg"></div>
+                                    </div>
+                                </li>
+                                <li class="lstMath">
+                                    <span class="num">7</span>
+                                    <div class="mathExp_box">
+                                        <div class="sl-calcBox"><img src="https://s3.ap-northeast-2.amazonaws.com/wjtb-dev-pub/brs/img/stage/1626135689817120058.svg" alt="1626135689817120058.svg"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>      
+	</div>
+</div>
+
+
+</body>
+</html>

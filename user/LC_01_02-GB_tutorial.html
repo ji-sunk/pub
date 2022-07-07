@@ -16,7 +16,7 @@
 	<link href="static/css/style.css" rel="stylesheet">
 
 </head>
-<body>
+<body style="overflow: hidden">
 
 <!-- 
 	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
@@ -71,61 +71,54 @@
 
 			<div class="container">
                 <!-- 220422 수정 S -->
-                <div class="gl_main_theme_wrap">
+                <div class="gl_main_theme_wrap tutorial"><!-- 2022.06.28 튜토리얼 모드일때 addClass tutorial -->
                     <div class="theme_box">
                         
-                        <!-- 기존 코스학습 S-->
-                        <a class="box1" href="#null">
-                            <span class="tit">코스학습</span>
-                            <span class="btn pos">시작</span>
-                        </a>
-                        <a class="box1" href="#null">
-                            <span class="tit">My Course</span><!-- 2022.06.28 메뉴명 수정 -->
-                            <p class="txt">Personalized AI Tutor</p><!-- 2022.06.29 텍스트 추가 -->
-                            <span class="btn pos">Start!</span>
-                        </a>
-                        <!-- 기존 코스학습 E-->
-                        
-                        <!-- 220516 추가된 영역 국문/영문 S-->
-                        구매 전
-                        <a class="box1 lock" href="#null">
-                            <span class="tit lock">Get your own AI Tutor</span>
-                            <p class="txt">
-                                Go Premium for Personalized Lessons<br>
-                                From a Silicon Valley based AI Tutor
-                            </p>
-                            <span class="btn lock pos">Go Premium</span>
-                        </a>
-                        <a class="box1 lock" href="#null">
-                            <span class="tit lock">나만의 AI 튜터 받기</span>
-                            <p class="txt">
-                                맞춤형 레슨을 위해 프리미엄 서비스를 시작하세요.<br>
-                                실리콘 밸리에 기반을 둔 AI 교사
-                            </p>
-                            <span class="btn lock pos">시작하기</span>
-                        </a>
-                        구매 후
-                        <a class="box1" href="#null">
-                            <span class="tit">Start Daily Course fits you</span>
-                            <p class="txt">Personalized Math Course designed by AI Tutor</p>
-                            <span class="btn pos">Start!</span>
-                        </a>
-                        <a class="box1" href="#null">
+                        <a class="box1 lock on" href="#null"><!-- 2022.06.28 튜토리얼 step1 : 활성화시 addClass on -->
                             <span class="tit">나에게 맞는 코스학습 시작</span>
                             <p class="txt">AI 튜터가 디자인한 맞춤형 코스학습</p>
                             <span class="btn pos">시작하기</span>
                         </a>
-                        <!-- //220516 추가된 영역 국문/영문 E-->
+                        <!-- 2022.06.28 튜토리얼 툴팁 step1. 추가 -->
+                        <div class="tutorial-tip step1 active" data-tip="box1"><!-- 2022.06.28 튜토리얼 step1 : 활성화시 addClass active -->
+                            <div class="tip-inner">
+                                <p class="tip-txt">
+                                    <span>AI Turtor가 너의 학습 수준을<br />진단해서 가장 부족한 부분을<br />학습할수 있게 해줘.</span>
+                                </p>
+                                <button class="btn-step" data-next="box2">다음</button>
+                            </div>
+                        </div>
+                        <!--// 2022.06.28 튜토리얼 툴팁 step1. 추가 -->
 
-                        <a class="box2" href="#null">
-                            <!-- <span>주제학습</span> -->
-                            <span>Free Topic</span><!-- 2022.06.28 메뉴명 수정 -->
-                            <p class="txt">Question Bank</p><!-- 2022.06.29 텍스트 추가 -->
+                        <a class="box2" href="#null"><!-- 2022.06.28 튜토리얼 step2 : 활성화시 addClass on -->
+                            <span>주제학습</span>
+                            <!--<span>Free Topic</span> 2022.06.28 메뉴명 수정 -->
                         </a>
-                        <a class="box3" href="#null">
-                            <!-- <span><b>수학</b><br>카메라</span> -->
-                            <span><b>Math</b><br>Camera</span>
+                        <!-- 2022.06.28 튜토리얼 툴팁 step2. 추가 -->
+                        <div class="tutorial-tip step2" data-tip="box2"><!-- 2022.06.28 튜토리얼 step1 : 활성화시 addClass active -->
+                            <div class="tip-inner">
+                                <p class="tip-txt">
+                                    <span>연산 주제별로 스스로 선택해서<br />학습할 수 있는 토픽 학습이야.</span>
+                                </p>
+                                <button class="btn-step" data-next="box3">다음</button>
+                            </div>
+                        </div>
+                        <!--// 2022.06.28 튜토리얼 툴팁 step2. 추가 -->
+
+                        <a class="box3" href="#null"><!-- 2022.06.28 튜토리얼 step3 : 활성화시 addClass on -->
+                            <span><b>수학</b><br>카메라</span>
+                            <!-- <span><b>Math</b><br>Camera</span> -->
                         </a>
+                         <!-- 2022.06.28 튜토리얼 툴팁 step3. 추가 -->
+                         <div class="tutorial-tip step3" data-tip="box3"><!-- 2022.06.28 튜토리얼 step1 : 활성화시 addClass active -->
+                            <div class="tip-inner">
+                                <p class="tip-txt">
+                                    <span>모르는 문제는 카메라로<br />Scan해서 확인해볼 수 있어.</span>
+                                </p>
+                                <button class="btn-step fin">확인</button>
+                            </div>
+                        </div>
+                        <!--// 2022.06.28 튜토리얼 툴팁 추가 -->
                     </div>
 
                     <!-- 2022.06.28 워크시트, 게임 배너 추가 -->
@@ -170,6 +163,7 @@
                 <!-- //220422 수정 E -->
 
                 <!-- 220504 ~ 220516 배너 추가 수정 S -->
+                <!-- 2022.06.28 튜토리얼 모드일때는 없어짐 -->
                 <div class="bottom_wrap">
                     <a href="#none" class="box_btn">
                         <!-- ko -->
@@ -204,6 +198,29 @@
 	</div>
 </div>
 
+<script>
+    var btnNext = document.querySelectorAll('.btn-step');
+
+    btnNext.forEach((item) => {
+        item.addEventListener('click', function(e){ 
+            e.preventDefault();
+            var tip = this.closest('.tutorial-tip');
+            var step = tip.previousElementSibling;
+            var nextSelect = this.dataset.next;
+
+            tip.classList.remove('active'); 
+            step.classList.remove('on');
+
+            if ( this.hasAttribute('data-next') ) {
+                document.querySelector('.' + nextSelect).classList.add('on');
+                document.querySelector('div[data-tip="' + nextSelect +'"').classList.add('active');
+            }
+            if ( this.classList.contains('fin') ) { 
+                document.querySelector('.gl_main_theme_wrap').classList.remove('tutorial')
+            } 
+        });
+    });
+</script>
 
 </body>
 </html>

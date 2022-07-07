@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+        <div class="pay_wrap">
+            <div class="layout-def layout-lc">
+                <div class="header">
+                    <div class="inner">
+                        <div class="header_wrap">
+                            <button type="button" class="btn_back"><img src="static/images/payment/btn_pay_back.png" alt="back"></button><!-- 온보딩 직후일 경우에는 back 버튼 없음 -->
+                            <h1 class="logo">
+                                <img src="static/images/payment/logo_mathpid.svg" alt="Mathpid premium" />
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- //header -->
+                <div class="container">
+                    <div class="inner">
+                        <div class="centermiddleBox">
+                            <div class="centermiddleBox-row">
+                                <!-- 컨텐츠 시작 -->
+                                <div class="pay_contents">
+                                    <h2 class="pay_title"><img src="./static/images/payment/tit_pay01.png" alt="Advanced personalized learning by AI Tutor"></h2>
+                                    <div class="advan_area">
+                                        <div class="adv_list">
+                                            <ul>
+                                                <li>Silicon Valley Based AI Diagnosis</li>
+                                                <li>Customized Learning Course</li>
+                                                <li>UNLIMITED Problems!</li>
+                                                <li>20+ Math games coming soon!</li>
+                                                <li>and much more to be updated!</li>
+                                            </ul>
+                                        </div><!-- // adv_list -->
+                                        <article class="key_article">
+                                            <table class="key_table">
+                                                <caption>Key Features</caption>
+                                                <colgroup>
+                                                    <col style="width:52%">
+                                                    <col span="2" style="width:24%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"><div class="th_inner tit_key">Key Features</div></th>
+                                                        <th scope="col"><div class="th_inner tit_limit">Limited</div></th>
+                                                        <th scope="col"><div class="th_inner tit_prem">Premium</div></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="highlight">
+                                                        <td>Free Topic<br /><span class="sub_txt">(Question Bank)</span></td>
+                                                        <td><span class="ic_check">Checked</span></td>
+                                                        <td><span class="ic_check">Checked</span></td>
+                                                    </tr>
+                                                    <tr class="highlight">
+                                                        <td>Math Camera<br /><span class="sub_txt">(Picture &amp; Learn)</span></td>
+                                                        <td><span class="ic_check">Checked</span></td>
+                                                        <td><span class="ic_check">Checked</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Silicon Valley<br />Based Diagnosis<br /><span class="sub_txt">(Unlimited Times)</span></td>
+                                                        <td></td>
+                                                        <td><span class="ic_check">Checked</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>My Course<br /><span class="sub_txt">(Personalized AI Tutor)</span></td>
+                                                        <td></td>
+                                                        <td><span class="ic_check">Checked</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>UNLIMITED<br />Problems</td>
+                                                        <td></td>
+                                                        <td><span class="ic_check">Checked</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>20+ Math games<br />coming soon!</td>
+                                                        <td></td>
+                                                        <td><span class="ic_check">Checked</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </article><!-- // key_table -->
+                                    </div>
+
+                                    <h3 class="pay_title"><img src="./static/images/payment/tit_pay02.png" alt="Special Discount Offer in Every Plan"></h3>
+                                    <article class="plan_list">
+                                        <ul>
+                                            <li class="plan_item">
+                                                <dl class="plan_box">
+                                                    <dt class="title_line">
+                                                        <strong class="tit">Dailly Plan</strong>
+                                                        <div class="badge">
+                                                            <span class="per">80%</span><span class="txt">OFF</span>
+                                                        </div>
+                                                    </dt><!-- // title_line -->
+                                                    <dd class="price_div">
+                                                        <span class="before">₹ 399.99</span>
+                                                        <strong class="after">₹ 77.99</strong>
+                                                    </dd><!-- // price_div -->
+                                                    <dd class="btn_area">
+                                                        <a href="#" class="btn btn-navy">Buy Now!</a>
+                                                    </dd><!-- // btn_area -->
+                                                </dl><!-- // plan_box -->
+                                            </li><!--// Dailly Plan -->
+                                            <li class="plan_item">
+                                                <dl class="plan_box">
+                                                    <dt class="title_line">
+                                                        <strong class="tit">Lifetime Plan</strong>
+                                                        <div class="badge">
+                                                            <span class="per">80%</span><span class="txt">OFF</span>
+                                                        </div>
+                                                    </dt><!-- // title_line -->
+                                                    <dd class="price_div">
+                                                        <span class="before">₹ 1,969.99</span>
+                                                        <strong class="after">₹ 389.99</strong>
+                                                    </dd><!-- // price_div -->
+                                                    <dd class="btn_area">
+                                                        <a href="#" class="btn btn-navy">Buy Now!</a>
+                                                    </dd><!-- // btn_area -->
+                                                </ddliv><!-- // plan_box -->
+                                            </li><!--// Lifetime Plan -->
+                                        </ul>
+                                    </article>
+                                    <!-- 결제 페이지일 경우 삭제 -->
+                                    <div class="btn_bottom_area">
+                                        <a href="#" class="btn_refuse">No, Thanks. Try it Free</a>
+                                    </div>
+                                    <!--// 결제 페이지일 경우 삭제 -->
+                                </div><!-- // pay_contents -->
+                                <!--// 컨텐츠 끝 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //container -->
+            </div>
+            <!-- //layout-def -->
+        </div>
+	</div>
+</div>
+
+</body>
+</html>

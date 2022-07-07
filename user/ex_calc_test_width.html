@@ -1,0 +1,53 @@
+<div class="pvBox" data-per="620">
+	<div class="pv-inner">
+		<div class="pv-cont">
+			<!-- //수식 클때<br> (비율이 170%:data-per="170" ) -->
+			<table class="calcTbl">
+				<tbody>
+					<tr>
+						<td><span class="nm-box">1</span></td>
+						<td><span class="nm-box">2</span></td>
+						<td><span class="nm-box">3</span></td>
+					</tr>
+					<tr>
+						<td><span class="nm-box">4</span></td>
+						<td><span class="mjx-box active-bd"></span></td> <!-- 빈칸-기본 : 클래스 mjx-box active-bd -->
+						<td><span class="nm-box">6</span></td>
+					</tr>
+					<tr>
+						<td><span class="nm-box">7</span></td>
+						<td><span class="nm-box">8</span></td> 
+						<td><span class="mjx-box active-bd focusedInput"></span></td> <!-- 빈칸-포커스 : 클래스 focusedInput 추가/삭제 -->
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+	</div>
+</div> 
+
+<script>
+
+	$('.pvBox').each(function(){
+        calcPV_height(this);
+	});
+
+	function calcPV_height (elem) {
+		var pvBox =  $(elem);
+		var _ratio		= ( 2.0 * pvBox.attr('data-per') ) / 100;
+		var _pvInner 	= pvBox.find('.pv-inner');
+		var _pvCont 	= pvBox.find('.pv-cont');
+
+		_pvCont.css('transform', 'scale('+ _ratio +')');  
+		// _pvInner.width(_pvCont.width() * _ratio);
+		// _pvInner.height(_pvCont.height() * _ratio);
+
+		if ( $(".wa-cont").width() <= _pvCont.width() * _ratio ) {
+			console.log( $(".wa-cont").width(),  _pvCont.width() * _ratio)
+			pvBox.parents('.wa-cont').addClass('text-left')
+		} else { 
+			pvBox.parents('.wa-cont').removeClass('text-left')
+		}
+	}    
+</script>
+
