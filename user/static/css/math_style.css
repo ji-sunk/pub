@@ -2,7 +2,7 @@
 
 /* 수식 뷰어 */
 .pvBox { text-align: center; }
-.pvBox .pv-inner { display: inline-block; text-align: left; }
+.pvBox .pv-inner { display: inline-block; text-align:left; }
 .pvBox .pv-cont { display: inline-block; transform-origin: top left; }
 .pvBox table { width: auto; }
 
