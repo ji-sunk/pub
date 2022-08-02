@@ -833,6 +833,8 @@ table.key_set3 td.y_btn{background: #ffc823; border: 1px solid #c18319; width: 8
 .keypad_gm .lower_area table td .lr_arr.blue{background: #eafafc;}
 .ask_area{position: absolute; left: -169px; top: 544px; z-index: 24;}
 .ask_area .ask{width: 160px; height: 56px; background: url(../images/icon/ic_dontknow.svg) no-repeat 14px 50% #f8fafc; border-radius: 20px; padding-left: 20px; font-size: 18px; color: #3c5a7d; padding-bottom: 1px; z-index: 25;}
+.ask_area.right{left: -125px; top: 560px;}
+.ask_area.right .notion{white-space: nowrap; font-weight:bold; font-size: 17px; line-height: 25px; text-decoration: underline; color: #00c3e1; padding-left: 37px; background: url(../images/icon/ic_list_concept.svg) no-repeat 0 0/30px;}
 .input_pop{position: absolute; width: 320px; height: 240px; background: #fff; box-shadow: 0 2px 4px 0 rgba(0, 50, 115, 0.08); z-index: 25; left: 24px; top: 281px; transform: translate(-100%); border: 1px solid #e4ebf4; display: none;}
 .input_pop.on{display: block;}
 .input_pop .head_wrap{height: 32px; padding: 8px 0 0 8px;}
@@ -907,6 +909,7 @@ table.key_set3 td.y_btn{background: #ffc823; border: 1px solid #c18319; width: 8
     .v-mob .ask_area.pos {left:20px; top:-42px}
     .v-tab .ask_area.pos {left:20px; top:-52px}
     .v-tab .ask_area {left: auto; right: 296px; top: auto; bottom: 72px;}
+    .v-tab .ask_area.right {bottom:88px;}
     .v-tab .keypadBox.active ~ .ask_area{right: calc(100% + 32px);}
     .v-tab .input_pop{top: auto; bottom: 151px; left: 1px;}
 
@@ -937,6 +940,7 @@ table.key_set3 td.y_btn{background: #ffc823; border: 1px solid #c18319; width: 8
     .v-tab .keypad_gm.notes .mid_area .notes_cont{border-left: 0;}
     .v-tab .keypad_gm .fold img{transform: rotate(90deg);}
     .v-tab .ask_area{right: 40px; bottom: 152px;}
+    .v-tab .ask_area.right{bottom: 168px; right:50px;}
     .v-tab .keypadBox.active ~ .ask_area{right: 40px; bottom: 504px;}
     .v-tab .input_pop{width: 100%; bottom: auto; transform: none; top: -239px;}
     .v-tab .keypad_gm .lower_area table td.arr_area{width: 178px;}
@@ -987,6 +991,10 @@ table.key_set3 td.y_btn{background: #ffc823; border: 1px solid #c18319; width: 8
 .more_key .key_tbl button.fill{width: 52px; height: 40px; background: #ebfafd; position: absolute; margin: 4px;}
 .v-mob .ask_area{left: auto; top: -32px; right: 16px;}
 .v-mob .ask_area .ask{width: 96px; height: 32px; font-size: 11px; background-size: 16px; background-position: 8px 50%; padding-left: 16px;}
+.v-mob .ask_area.right{right:26px;}
+.v-mob .ask_area.right .notion{font-size: 12px; line-height:16px; padding-left:24px; background: url(../images/icon/ic_list_concept.svg) no-repeat 0 0/20px;}
+
+
 .v-mob .keypadBox.active ~ .ask_area{top: -48px;}
 .v-mob .input_pop{width: 100%; height: 144px; bottom: auto; transform: none; top: -143px; left: 0;}
 .v-mob .input_pop .head_wrap{position: absolute; left: 0; top: 0; height: auto; padding: 0; z-index: 1;}
@@ -1347,9 +1355,10 @@ course_list article .head_wrap .tit{font-family: 'NotoSansCJKkr-Bold'; line-heig
 .v-mob .course_list article.on .head_wrap .tit span{display: table-cell; height: 46px; vertical-align: middle; font-size: 16px; line-height: 1.38;}
 .v-mob .course_list article .head_wrap .state{position: absolute; left: 0; top: 202px; display: none;}
 .v-mob .gb .course_list article .head_wrap .state{width: calc(100% + 48px); left: -24px; top: auto; bottom: -269px; background: #f4f6f8; height: 55px;}
+.v-mob .gb .course_list article .head_wrap .state.wksh {bottom: -319px;}
 .v-mob .course_list article.on .head_wrap .state{display: block;}
 .v-mob .course_list article.on .head_wrap .state .left{width: 50%; font-size: 16px; line-height: 24px; margin-top: 4px; border-right: 2px solid rgba(98, 247, 218, 0.5); text-align: center;}
-.v-mob .gb .course_list article.on .head_wrap .state .left{text-align: left; font-size: 14px; line-height: 20px; border: 0; padding-left: 26px; margin-top: 16px;}
+.v-mob .gb .course_list article.on .head_wrap .state .left{text-align: left; font-size: 14px; line-height: 20px; border: 0; padding-left: 24px; margin-top: 16px;}
 .v-mob .course_list article.on.red .head_wrap .state .left{border-color: rgba(255, 200, 35, 0.5);}
 .v-mob .course_list article.on .head_wrap .state .right{margin-left: 0; width: 50%; height: 32px; background: none; padding-top: 0; padding-left: 0; line-height: 32px; text-align: center;}
 .v-mob .course_list article.on .head_wrap .state .right{margin-top: 11px; text-align: right; padding-right: 23px;}
@@ -1374,6 +1383,10 @@ course_list article .head_wrap .tit{font-family: 'NotoSansCJKkr-Bold'; line-heig
 .v-mob .course_list article.with_result .btn_wrap{margin-top: 77px;}
 .v-mob .gb .course_list article.with_result .btn_wrap{margin-top: 20px;}
 .v-mob .course_list .result article .btn_wrap{margin-top: 80px;}
+/* 폴드 추가 */
+@media screen and (max-width:330px) {
+    .v-mob .gb .course_list article.on .head_wrap .state .right span{white-space: nowrap; padding-left:35px; font-size:13px}
+}
 
 .v-mob .ani_fold{animation-name: ani_fold; animation-duration: 2s; animation-fill-mode: forwards;}
 @-webkit-keyframes ani_fold {
@@ -5771,4 +5784,4977 @@ form.lr{padding-bottom: 70px;}
 }
 /* e : 2022.07.01 인도/필리핀 결제 할인율 표기, 인앱 결제상품 추가  */
 
+@charset "UTF-8";
+/* 웹폰트 */
+@font-face {
+	font-family: 'NanumSquare';
+	src: url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumSquare/NanumSquareR.eot");
+	src: url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumSquare/NanumSquareR.eot?#iefix") format("embedded-opentype"), url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumSquare/NanumSquareR.woff") format("woff"), url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumSquare/NanumSquareR.woff2") format("woff2"), url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumSquare/NanumSquareR.ttf") format("truetype");
+	font-weight: normal;
+}
 
+@font-face {
+	font-family: 'NanumSquare';
+	src: url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumSquare/NanumSquareB.eot");
+	src: url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumSquare/NanumSquareB.eot?#iefix") format("embedded-opentype"), url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumSquare/NanumSquareB.woff") format("woff"), url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumSquare/NanumSquareB.woff2") format("woff2"), url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumSquare/NanumSquareB.ttf") format("truetype");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'NanumSquare';
+	src: url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumSquare/NanumSquareLight.eot");
+	src: url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumSquare/NanumSquareLight.eot?#iefix") format("embedded-opentype"), url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumSquare/NanumSquareLight.woff") format("woff"), url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumSquare/NanumSquareLight.woff2") format("woff2"), url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumSquare/NanumSquareLight.ttf") format("truetype");
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'NanumSquare';
+	src: url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumSquare/NanumSquareEB.eot");
+	src: url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumSquare/NanumSquareEB.eot?#iefix") format("embedded-opentype"), url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumSquare/NanumSquareEB.woff") format("woff"), url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumSquare/NanumSquareEB.woff2") format("woff2"), url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumSquare/NanumSquareEB.ttf") format("truetype");
+	font-weight: 900;
+}
+
+/* 웹폰트 */
+@font-face {
+	font-family: 'NanumMyeongjo';
+	src: url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumMyeongjo/NanumMyeongjo.eot");
+	src: url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumMyeongjo/NanumMyeongjo.eot?#iefix") format("embedded-opentype"), url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumMyeongjo/NanumMyeongjo.woff") format("woff"), url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumMyeongjo/NanumMyeongjo.woff2") format("woff2"), url("https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/font/NanumMyeongjo/NanumMyeongjo.ttf") format("truetype");
+}
+
+body,
+html {
+	background-color: #fff;
+	font-family: -apple-system, 'BlinkMacSystemFont', "Apple SD Gothic Neo", 'NanumSquare', '나눔고딕',  "NanumGothic", "맑은 고딕", "Malgun Gothic", helvetica, sans-serif;
+	line-height: 1.67;
+	color: #000;
+}
+
+.wrap {
+	overflow-x: hidden;
+	width: 100%;
+}
+
+.inner {
+	position: relative;
+	max-width: 1160px;
+	margin: 0 auto;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.spot {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	height: 100%;
+	color: #fff;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(to bottom, #0058dd, #0058dd), linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+}
+
+.spot.layer_down {
+	opacity: 0;
+}
+
+.spot .inner {
+	text-align: center;
+	max-width: 100%;
+}
+
+.spot .content_box {
+	padding-top: 30px;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 100%;
+	z-index: 15;
+}
+
+.spot .spot_title {
+	margin: 13px auto 0;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: 0px -949px;
+	width: 863px;
+	height: 125px;
+	animation: .7s fadeVertical 1.8s forwards;
+	opacity: 0;
+}
+
+.spot .sub_title {
+	display: block;
+	margin: 0 auto;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -828px -1079px;
+	width: 619px;
+	height: 62px;
+	opacity: 0;
+	animation: .7s fadeVertical 1.6s forwards;
+}
+
+.spot .sub_text {
+	margin-top: 23px;
+	font-size: 22px;
+	line-height: 36px;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+	opacity: 0;
+	animation: .7s fadeVertical 2s forwards;
+}
+
+.spot .time_line_area {
+	animation: .7s fadeVertical 2.2s forwards;
+	opacity: 0;
+}
+
+.spot .time_line_box {
+	position: relative;
+	margin-top: 113px;
+}
+
+.spot .time_line_box .timeline {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	max-width: 1012px;
+}
+
+.spot .time_line_box .timeline:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	left: -100%;
+	right: 100%;
+	height: 7px;
+	background-color: white;
+}
+
+.spot .time_line_box .timeline:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	right: -100%;
+	left: 100%;
+	height: 1px;
+	background-color: white;
+}
+
+.spot .time_line_box .entry {
+	display: none;
+	position: relative;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	background-color: #fff;
+	line-height: 1;
+}
+
+.spot .time_line_box .entry.start_month {
+	width: 7px;
+	height: 7px;
+}
+
+.spot .time_line_box .entry.active {
+	display: block;
+	width: 11px;
+	height: 11px;
+	border: 5px solid #fff;
+	background-color: transparent;
+	margin-left: -1px;
+}
+
+.spot .time_line_box .entry.active .comment {
+	display: block;
+}
+
+.spot .time_line_box .entry.active .date {
+	display: block;
+}
+
+.spot .time_line_box .entry.active ~ .line {
+	height: 1px;
+	background-color: white;
+}
+
+.spot .time_line_box .entry.active ~ .entry {
+	display: block;
+}
+
+.spot .time_line_box .entry .comment {
+	display: none;
+	position: absolute;
+	font-size: 18px;
+	color: #0061c9;
+	font-weight: bold;
+	background-color: #fff;
+	border-radius: 16px;
+	padding: 7px 20px;
+	word-break: keep-all;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	top: -50px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.spot .time_line_box .entry .date {
+	display: none;
+	position: absolute;
+	font-size: 16px;
+	color: #fff;
+	font-weight: 600;
+	word-break: keep-all;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	top: 25px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.spot .time_line_box .line {
+	height: 7px;
+	flex-grow: 1;
+	background-color: #fff;
+}
+
+.spot .mo_time_line_box {
+	display: none;
+}
+
+.spot .btn_box {
+	margin-top: 95px;
+	text-align: center;
+	font-size: 0;
+	animation: .7s fadeVertical 2.4s forwards;
+	opacity: 0;
+}
+
+.spot .btn {
+	padding: 0 52px;
+	height: 64px;
+	border-radius: 20px;
+	font-size: 22px;
+	font-weight: 800;
+	color: #000;
+	background-color: #ffe818;
+	border: 3px solid #000;
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.spot .btn + .btn {
+	margin-left: 20px;
+}
+
+.spot .btn.stamp {
+	background-color: #fff;
+}
+
+.spot .spot_bottom_btn {
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	position: absolute;
+	left: 50%;
+	bottom: 50px;
+	width: 60px;
+	height: 60px;
+	z-index: 14;
+}
+
+.spot .spot_bottom_btn:after {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1898px -1633px;
+	width: 34px;
+	height: 18px;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.spot .user_name {
+	position: absolute;
+	bottom: 30px;
+	left: 40px;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 32px;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+	z-index: 10;
+}
+
+.spot .spot_img_box {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 5;
+}
+
+.spot .spot_img_box [class*="spot_img_0"] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+	background-size: cover;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	animation: scale 60s infinite;
+}
+
+.spot .spot_img_box [class*="spot_img_item_"] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+	animation: round 60s infinite;
+}
+
+.spot .spot_img_box .spot_img_item_01 {
+	animation-delay: 0s;
+}
+
+.spot .spot_img_box .spot_img_item_02 {
+	animation-delay: 10s;
+}
+
+.spot .spot_img_box .spot_img_item_03 {
+	animation-delay: 20s;
+}
+
+.spot .spot_img_box .spot_img_item_04 {
+	animation-delay: 30s;
+}
+
+.spot .spot_img_box .spot_img_item_05 {
+	animation-delay: 40s;
+}
+
+.spot .spot_img_box .spot_img_item_06 {
+	animation-delay: 50s;
+}
+
+.spot .spot_img_box .spot_img_01 {
+	animation-delay: 0s;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/pc_spot_bg_01.png);
+}
+
+.spot .spot_img_box .spot_img_02 {
+	animation-delay: 10s;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/pc_spot_bg_02.png);
+}
+
+.spot .spot_img_box .spot_img_03 {
+	animation-delay: 20s;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/pc_spot_bg_03.png);
+}
+
+.spot .spot_img_box .spot_img_04 {
+	animation-delay: 30s;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/pc_spot_bg_04.png);
+}
+
+.spot .spot_img_box .spot_img_05 {
+	animation-delay: 40s;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/pc_spot_bg_05.png);
+}
+
+.spot .spot_img_box .spot_img_06 {
+	animation-delay: 50s;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/pc_spot_bg_06.png);
+}
+
+.spot [class*="figure_"] {
+	position: absolute;
+	opacity: 0;
+	z-index: 10;
+}
+
+.spot .figure_01 {
+	animation: 1.5s opacity forwards;
+	animation-delay: 1.5s;
+	top: 105px;
+	left: 161px;
+	/* background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png); */
+	-webkit-background-size: 1944px 1940px;
+	/* background-size: 1944px 1940px; */
+	/* background-position: -1323px -618px; */
+	width: 140px;
+	height: 115px;
+}
+
+.spot .figure_02 {
+	animation: 1.5s opacity forwards;
+	animation-delay: 2.0s;
+	top: 190px;
+	right: 186px;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -715px -1546px;
+	width: 125px;
+	height: 113px;
+}
+
+.spot .figure_03 {
+	animation: 1.5s opacity forwards;
+	animation-delay: 1.6s;
+	top: 144px;
+	right: 95px;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -971px -1546px;
+	width: 94px;
+	height: 89px;
+}
+
+.spot .figure_04 {
+	animation: 1.5s opacity forwards;
+	animation-delay: 1.7s;
+	top: 299px;
+	left: 259px;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -851px -530px;
+	width: 64px;
+	height: 65px;
+}
+
+.spot .figure_05 {
+	animation: 1.5s opacity forwards;
+	animation-delay: 2.3s;
+	top: 326px;
+	left: 50px;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1753px -589px;
+	width: 169px;
+	height: 178px;
+}
+
+.spot .figure_06 {
+	animation: 1.5s opacity forwards;
+	animation-delay: 2.4s;
+	top: 524px;
+	right: 57px;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1687px -650px;
+	width: 61px;
+	height: 109px;
+}
+
+.spot .figure_07 {
+	animation: 1.5s opacity forwards;
+	animation-delay: 1.9s;
+	bottom: 173px;
+	left: 112px;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1430px -738px;
+	width: 77px;
+	height: 85px;
+}
+
+.spot .figure_08 {
+	animation: 1.5s opacity forwards;
+	animation-delay: 2.1s;
+	bottom: 92px;
+	left: 217px;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: 0px -1847px;
+	width: 83px;
+	height: 93px;
+}
+
+.spot .figure_09 {
+	animation: 1.5s opacity forwards;
+	animation-delay: 1.8s;
+	bottom: 190px;
+	right: 267px;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1687px -764px;
+	width: 54px;
+	height: 77px;
+}
+
+.spot .figure_10 {
+	animation: 1.5s opacity forwards;
+	animation-delay: 2.2s;
+	bottom: 0;
+	left: 401px;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1892px -188px;
+	width: 46px;
+	height: 59px;
+}
+
+.content {
+	position: relative;
+	margin-top: 100vh;
+	background-color: #fff;
+	z-index: 20;
+}
+
+.content .text_link {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.content [class*="icon_"].active {
+	animation: 1s opacity 0.5s forwards;
+}
+
+.section_info {
+	position: relative;
+}
+
+.section_info.vertical .inner_title {
+	animation: .7s fadeVertical forwards;
+}
+
+.section_info.vertical .info_text,
+.section_info.vertical .link_text {
+	animation: .7s fadeVertical .5s forwards;
+}
+
+.section_info.vertical .icon_01 {
+	animation: 1s opacity 0.5s forwards;
+}
+
+.section_info .icon_01,
+.section_info .icon_02 {
+	position: absolute;
+	z-index: 10;
+	opacity: 0;
+}
+
+.section_info .icon_01 {
+	right: 57px;
+	top: -200px;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -927px -355px;
+	width: 391px;
+	height: 481px;
+}
+
+.section_info .icon_02 {
+	left: 131px;
+	bottom: -38px;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1753px -1410px;
+	width: 135px;
+	height: 140px;
+}
+
+.section_info .inner {
+	padding: 150px 30px;
+	text-align: center;
+}
+
+.section_info .inner_title {
+	opacity: 0;
+	margin: 0 auto;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -696px -1213px;
+	width: 360px;
+	height: 80px;
+}
+
+.section_info .info_text {
+	opacity: 0;
+	margin-top: 28px;
+	font-size: 22px;
+	line-height: 34px;
+}
+
+.section_info .link_text {
+	opacity: 0;
+	display: inline-block;
+	margin-top: 32px;
+	text-decoration: none;
+	color: #217bff;
+	font-size: 22px;
+	line-height: 34px;
+	font-weight: bold;
+	padding-right: 17px;
+}
+
+.section_info .link_text:after, .section_info .link_text:before {
+	content: '';
+	position: absolute;
+	width: 3px;
+	height: 12px;
+	border-radius: 3px;
+	background-color: #217bff;
+}
+
+.section_info .link_text:before {
+	transform: rotate(-45deg);
+	top: 8px;
+	right: 0;
+}
+
+.section_info .link_text:after {
+	transform: rotate(45deg);
+	top: 15px;
+	right: 0;
+}
+
+.section_schedule {
+	position: relative;
+	background-color: #ffe818;
+}
+
+.section_schedule.vertical .inner_title {
+	animation: .7s fadeVertical forwards;
+}
+
+.section_schedule.vertical .info_text {
+	animation: .7s fadeVertical .5s forwards;
+}
+
+.section_schedule.vertical .schedule_box {
+	animation: .7s fadeVertical 1s forwards;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_1st .step:first-child {
+	transition: border-color .5s;
+	transition-delay: 1.7s;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_1st .step:first-child .info {
+	display: block;
+	animation: .5s dateVertical1 1.7s forwards;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_1st .step:first-child .date {
+	transition: color 1s;
+	transition-delay: 1.7s;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_2nd .step:first-child {
+	transition: border-color .5s;
+	transition-delay: 1.7s;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_2nd .step:first-child .date {
+	transition: color 1s;
+	transition-delay: 1.7s;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_2nd .step:nth-child(2) {
+	transition: border-color .5s;
+	transition-delay: 4s;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_2nd .step:nth-child(2) .info {
+	display: block;
+	animation: .5s dateVertical 4.5s forwards;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_2nd .step:nth-child(2) .date {
+	transition: color 1s;
+	transition-delay: 4s;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_3rd .step:first-child {
+	transition: border-color .5s;
+	transition-delay: 1.7s;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_3rd .step:first-child .date {
+	transition: color 1s;
+	transition-delay: 1.7s;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_3rd .step:nth-child(2) {
+	transition: border-color .5s;
+	transition-delay: 2.6s;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_3rd .step:nth-child(2) .date {
+	transition: color 1s;
+	transition-delay: 2.6s;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_3rd .step:nth-child(3) {
+	transition: border-color .5s;
+	transition-delay: 4s;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_3rd .step:nth-child(3) .info {
+	display: block;
+	animation: .5s dateVertical 4.5s forwards;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_3rd .step:nth-child(3) .date {
+	transition: color 1s;
+	transition-delay: 4s;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_4th .step:first-child {
+	transition: border-color .5s;
+	transition-delay: 1.7s;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_4th .step:first-child .date {
+	transition: color 1s;
+	transition-delay: 1.7s;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_4th .step:nth-child(2) {
+	transition: border-color .5s;
+	transition-delay: 2.4s;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_4th .step:nth-child(2) .date {
+	transition: color 1s;
+	transition-delay: 2.4s;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_4th .step:nth-child(3) {
+	transition: border-color .5s;
+	transition-delay: 2.9s;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_4th .step:nth-child(3) .date {
+	transition: color 1s;
+	transition-delay: 2.9s;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_4th .step:last-child {
+	transition: border-color .5s;
+	transition-delay: 4s;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_4th .step:last-child .info {
+	display: block;
+	animation: .5s dateVertical1 4.5s forwards;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_4th .step:last-child .date {
+	transition: color 1s;
+	transition-delay: 4s;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item .show_end .info {
+	display: none !important;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_1st .step:first-child {
+	border-color: #3e8ef1;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_1st .step:first-child .date {
+	color: #3e8ef1;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_2nd .step:first-child {
+	border-color: #3e8ef1;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_2nd .step:first-child .date {
+	color: #3e8ef1;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_2nd .step:nth-child(2) {
+	border-color: #3e8ef1;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_2nd .step:nth-child(2) .date {
+	color: #3e8ef1;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_3rd .step:first-child {
+	border-color: #3e8ef1;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_3rd .step:first-child .date {
+	color: #3e8ef1;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_3rd .step:nth-child(2) {
+	border-color: #3e8ef1;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_3rd .step:nth-child(2) .date {
+	color: #3e8ef1;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_3rd .step:nth-child(3) {
+	border-color: #3e8ef1;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_3rd .step:nth-child(3) .date {
+	color: #3e8ef1;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_4th .step:first-child,
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_end .step:first-child {
+	border-color: #3e8ef1;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_4th .step:first-child .date,
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_end .step:first-child .date {
+	color: #3e8ef1;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_4th .step:nth-child(2),
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_end .step:nth-child(2) {
+	border-color: #3e8ef1;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_4th .step:nth-child(2) .date,
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_end .step:nth-child(2) .date {
+	color: #3e8ef1;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_4th .step:nth-child(3),
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_end .step:nth-child(3) {
+	border-color: #3e8ef1;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_4th .step:nth-child(3) .date,
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_end .step:nth-child(3) .date {
+	color: #3e8ef1;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_4th .step:last-child,
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_end .step:last-child {
+	border-color: #3e8ef1;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_4th .step:last-child .date,
+.section_schedule.vertical .schedule_box .schedule_item.jun .show_end .step:last-child .date {
+	color: #3e8ef1;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_1st .step:first-child {
+	border-color: #a143e8;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_1st .step:first-child .date {
+	color: #a143e8;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_2nd .step:first-child {
+	border-color: #a143e8;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_2nd .step:first-child .date {
+	color: #a143e8;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_2nd .step:nth-child(2) {
+	border-color: #a143e8;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_2nd .step:nth-child(2) .date {
+	color: #a143e8;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_3rd .step:first-child {
+	border-color: #a143e8;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_3rd .step:first-child .date {
+	color: #a143e8;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_3rd .step:nth-child(2) {
+	border-color: #a143e8;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_3rd .step:nth-child(2) .date {
+	color: #a143e8;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_3rd .step:nth-child(3) {
+	border-color: #a143e8;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_3rd .step:nth-child(3) .date {
+	color: #a143e8;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_4th .step:first-child,
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_end .step:first-child {
+	border-color: #a143e8;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_4th .step:first-child .date,
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_end .step:first-child .date {
+	color: #a143e8;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_4th .step:nth-child(2),
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_end .step:nth-child(2) {
+	border-color: #a143e8;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_4th .step:nth-child(2) .date,
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_end .step:nth-child(2) .date {
+	color: #a143e8;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_4th .step:nth-child(3),
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_end .step:nth-child(3) {
+	border-color: #a143e8;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_4th .step:nth-child(3) .date,
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_end .step:nth-child(3) .date {
+	color: #a143e8;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_4th .step:last-child,
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_end .step:last-child {
+	border-color: #a143e8;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_4th .step:last-child .date,
+.section_schedule.vertical .schedule_box .schedule_item.jul .show_end .step:last-child .date {
+	color: #a143e8;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_1st .step:first-child {
+	border-color: #23daaf;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_1st .step:first-child .date {
+	color: #23daaf;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_2nd .step:first-child {
+	border-color: #23daaf;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_2nd .step:first-child .date {
+	color: #23daaf;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_2nd .step:nth-child(2) {
+	border-color: #23daaf;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_2nd .step:nth-child(2) .date {
+	color: #23daaf;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_3rd .step:first-child {
+	border-color: #23daaf;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_3rd .step:first-child .date {
+	color: #23daaf;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_3rd .step:nth-child(2) {
+	border-color: #23daaf;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_3rd .step:nth-child(2) .date {
+	color: #23daaf;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_3rd .step:nth-child(3) {
+	border-color: #23daaf;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_3rd .step:nth-child(3) .date {
+	color: #23daaf;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_4th .step:first-child,
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_end .step:first-child {
+	border-color: #23daaf;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_4th .step:first-child .date,
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_end .step:first-child .date {
+	color: #23daaf;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_4th .step:nth-child(2),
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_end .step:nth-child(2) {
+	border-color: #23daaf;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_4th .step:nth-child(2) .date,
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_end .step:nth-child(2) .date {
+	color: #23daaf;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_4th .step:nth-child(3),
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_end .step:nth-child(3) {
+	border-color: #23daaf;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_4th .step:nth-child(3) .date,
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_end .step:nth-child(3) .date {
+	color: #23daaf;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_4th .step:last-child,
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_end .step:last-child {
+	border-color: #23daaf;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_4th .step:last-child .date,
+.section_schedule.vertical .schedule_box .schedule_item.aug .show_end .step:last-child .date {
+	color: #23daaf;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_1st .step:first-child {
+	border-color: #ffac0b;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_1st .step:first-child .date {
+	color: #ffac0b;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_2nd .step:first-child {
+	border-color: #ffac0b;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_2nd .step:first-child .date {
+	color: #ffac0b;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_2nd .step:nth-child(2) {
+	border-color: #ffac0b;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_2nd .step:nth-child(2) .date {
+	color: #ffac0b;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_3rd .step:first-child {
+	border-color: #ffac0b;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_3rd .step:first-child .date {
+	color: #ffac0b;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_3rd .step:nth-child(2) {
+	border-color: #ffac0b;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_3rd .step:nth-child(2) .date {
+	color: #ffac0b;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_3rd .step:nth-child(3) {
+	border-color: #ffac0b;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_3rd .step:nth-child(3) .date {
+	color: #ffac0b;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_4th .step:first-child,
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_end .step:first-child {
+	border-color: #ffac0b;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_4th .step:first-child .date,
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_end .step:first-child .date {
+	color: #ffac0b;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_4th .step:nth-child(2),
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_end .step:nth-child(2) {
+	border-color: #ffac0b;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_4th .step:nth-child(2) .date,
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_end .step:nth-child(2) .date {
+	color: #ffac0b;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_4th .step:nth-child(3),
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_end .step:nth-child(3) {
+	border-color: #ffac0b;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_4th .step:nth-child(3) .date,
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_end .step:nth-child(3) .date {
+	color: #ffac0b;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_4th .step:last-child,
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_end .step:last-child {
+	border-color: #ffac0b;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_4th .step:last-child .date,
+.section_schedule.vertical .schedule_box .schedule_item.sep .show_end .step:last-child .date {
+	color: #ffac0b;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_1st .step:first-child {
+	border-color: #637bfd;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_1st .step:first-child .date {
+	color: #637bfd;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_2nd .step:first-child {
+	border-color: #637bfd;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_2nd .step:first-child .date {
+	color: #637bfd;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_2nd .step:nth-child(2) {
+	border-color: #637bfd;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_2nd .step:nth-child(2) .date {
+	color: #637bfd;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_3rd .step:first-child {
+	border-color: #637bfd;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_3rd .step:first-child .date {
+	color: #637bfd;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_3rd .step:nth-child(2) {
+	border-color: #637bfd;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_3rd .step:nth-child(2) .date {
+	color: #637bfd;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_3rd .step:nth-child(3) {
+	border-color: #637bfd;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_3rd .step:nth-child(3) .date {
+	color: #637bfd;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_4th .step:first-child,
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_end .step:first-child {
+	border-color: #637bfd;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_4th .step:first-child .date,
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_end .step:first-child .date {
+	color: #637bfd;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_4th .step:nth-child(2),
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_end .step:nth-child(2) {
+	border-color: #637bfd;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_4th .step:nth-child(2) .date,
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_end .step:nth-child(2) .date {
+	color: #637bfd;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_4th .step:nth-child(3),
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_end .step:nth-child(3) {
+	border-color: #637bfd;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_4th .step:nth-child(3) .date,
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_end .step:nth-child(3) .date {
+	color: #637bfd;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_4th .step:last-child,
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_end .step:last-child {
+	border-color: #637bfd;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_4th .step:last-child .date,
+.section_schedule.vertical .schedule_box .schedule_item.oct .show_end .step:last-child .date {
+	color: #637bfd;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_1st .step:first-child {
+	border-color: #d943ff;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_1st .step:first-child .date {
+	color: #d943ff;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_2nd .step:first-child {
+	border-color: #d943ff;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_2nd .step:first-child .date {
+	color: #d943ff;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_2nd .step:nth-child(2) {
+	border-color: #d943ff;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_2nd .step:nth-child(2) .date {
+	color: #d943ff;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_3rd .step:first-child {
+	border-color: #d943ff;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_3rd .step:first-child .date {
+	color: #d943ff;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_3rd .step:nth-child(2) {
+	border-color: #d943ff;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_3rd .step:nth-child(2) .date {
+	color: #d943ff;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_3rd .step:nth-child(3) {
+	border-color: #d943ff;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_3rd .step:nth-child(3) .date {
+	color: #d943ff;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_4th .step:first-child,
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_end .step:first-child {
+	border-color: #d943ff;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_4th .step:first-child .date,
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_end .step:first-child .date {
+	color: #d943ff;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_4th .step:nth-child(2),
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_end .step:nth-child(2) {
+	border-color: #d943ff;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_4th .step:nth-child(2) .date,
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_end .step:nth-child(2) .date {
+	color: #d943ff;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_4th .step:nth-child(3),
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_end .step:nth-child(3) {
+	border-color: #d943ff;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_4th .step:nth-child(3) .date,
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_end .step:nth-child(3) .date {
+	color: #d943ff;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_4th .step:last-child,
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_end .step:last-child {
+	border-color: #d943ff;
+}
+
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_4th .step:last-child .date,
+.section_schedule.vertical .schedule_box .schedule_item.nov .show_end .step:last-child .date {
+	color: #d943ff;
+}
+
+.section_schedule.vertical .schedule_box .show_2nd + .progress {
+	animation: 3s progress2nd 1.7s forwards;
+}
+
+.section_schedule.vertical .schedule_box .show_3rd + .progress {
+	animation: 3s progress3rd 1.7s forwards;
+}
+
+.section_schedule.vertical .schedule_box .show_4th + .progress {
+	animation: 3s progress4th 1.7s forwards;
+}
+
+.section_schedule.vertical .schedule_box .show_end {
+	animation: none;
+}
+
+.section_schedule.vertical .schedule_box .show_end + .progress {
+	width: 99% !important;
+	transition: none !important;
+}
+
+.section_schedule.vertical .schedule_box .mo_info {
+	animation: 0.5s dateVertical1 4.5s forwards;
+}
+
+.section_schedule .icon_03 {
+	opacity: 0;
+	position: absolute;
+	right: 36px;
+	bottom: -139px;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -366px -334px;
+	width: 355px;
+	height: 333px;
+	z-index: 10;
+}
+
+.section_schedule .inner {
+	padding: 150px 30px;
+	text-align: center;
+}
+
+.section_schedule .inner_title {
+	opacity: 0;
+	margin: 0 auto;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -927px -841px;
+	width: 364px;
+	height: 80px;
+}
+
+.section_schedule .info_text {
+	opacity: 0;
+	font-size: 22px;
+	line-height: 34px;
+	margin-top: 26px;
+}
+
+.section_schedule .info_text em {
+	font-weight: 900;
+}
+
+.section_schedule .info_text.icon {
+	position: relative;
+	margin-top: 14px;
+}
+
+.section_schedule .info_text.icon:before {
+	content: '';
+	display: inline-block;
+	vertical-align: -3.5px;
+	margin-right: 8px;
+	background: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/icon_important.png) no-repeat 50% 50%;
+	background-size: 22px 22px;
+	width: 22px;
+	height: 22px;
+}
+
+.section_schedule .schedule_box {
+	opacity: 0;
+	position: relative;
+	border-radius: 20px;
+	border: 3px solid #000;
+	padding: 90px 10px 90px 72px;
+	background-color: #fff;
+	margin: 63px auto 0;
+	box-sizing: border-box;
+}
+
+.section_schedule .schedule_box .icon_04 {
+	opacity: 0;
+	position: absolute;
+	z-index: 10;
+	top: 138px;
+	left: -170px;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1512px -650px;
+	width: 170px;
+	height: 251px;
+}
+
+.section_schedule .schedule_box .icon_05 {
+	opacity: 0;
+	position: absolute;
+	z-index: 10;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1512px 0px;
+	width: 236px;
+	height: 219px;
+	top: -153px;
+	right: -60px;
+}
+
+.section_schedule .schedule_box .schedule_item:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.section_schedule .schedule_box .schedule_item + .schedule_item {
+	margin-top: 46px;
+}
+
+.section_schedule .schedule_box .schedule_item.on.jun .month {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -797px -868px;
+	width: 68px;
+	height: 31px;
+}
+
+.section_schedule .schedule_box .schedule_item.on.jul .month {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1221px -1372px;
+	width: 68px;
+	height: 31px;
+}
+
+.section_schedule .schedule_box .schedule_item.on.aug .month {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1367px -1372px;
+	width: 68px;
+	height: 31px;
+}
+
+.section_schedule .schedule_box .schedule_item.on.sep .month {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1513px -1372px;
+	width: 68px;
+	height: 31px;
+}
+
+.section_schedule .schedule_box .schedule_item.on.oct .month {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1659px -1372px;
+	width: 68px;
+	height: 31px;
+}
+
+.section_schedule .schedule_box .schedule_item.on.nov .month {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1626px -602px;
+	width: 68px;
+	height: 31px;
+}
+
+.section_schedule .schedule_box .schedule_item .month {
+	display: block;
+	float: left;
+	margin-top: 15px;
+	margin-right: 32px;
+}
+
+.section_schedule .schedule_box .schedule_item.jun .month {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -851px -600px;
+	width: 68px;
+	height: 31px;
+}
+
+.section_schedule .schedule_box .schedule_item.jun .progress_box .progress {
+	background: #3e8ef1;
+}
+
+.section_schedule .schedule_box .schedule_item.jun .progress_box .mo_info {
+	color: #3e8ef1;
+	left: 34px;
+}
+
+.section_schedule .schedule_box .schedule_item.jun .progress_box .step .info {
+	color: #3e8ef1;
+}
+
+.section_schedule .schedule_box .schedule_item.jul .month {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1148px -1372px;
+	width: 68px;
+	height: 31px;
+}
+
+.section_schedule .schedule_box .schedule_item.jul .progress_box .progress {
+	background: #a143e8;
+}
+
+.section_schedule .schedule_box .schedule_item.jul .progress_box .mo_info {
+	color: #a143e8;
+	left: 34px;
+}
+
+.section_schedule .schedule_box .schedule_item.jul .progress_box .step .info {
+	color: #a143e8;
+}
+
+.section_schedule .schedule_box .schedule_item.aug .month {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1294px -1372px;
+	width: 68px;
+	height: 31px;
+}
+
+.section_schedule .schedule_box .schedule_item.aug .progress_box .progress {
+	background: #23daaf;
+}
+
+.section_schedule .schedule_box .schedule_item.aug .progress_box .mo_info {
+	color: #23daaf;
+	left: 34px;
+}
+
+.section_schedule .schedule_box .schedule_item.aug .progress_box .step .info {
+	color: #23daaf;
+}
+
+.section_schedule .schedule_box .schedule_item.sep .month {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1440px -1372px;
+	width: 68px;
+	height: 31px;
+}
+
+.section_schedule .schedule_box .schedule_item.sep .progress_box .progress {
+	background: #ffac0b;
+}
+
+.section_schedule .schedule_box .schedule_item.sep .progress_box .mo_info {
+	color: #ffac0b;
+	left: 34px;
+}
+
+.section_schedule .schedule_box .schedule_item.sep .progress_box .step .info {
+	color: #ffac0b;
+}
+
+.section_schedule .schedule_box .schedule_item.oct .month {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1586px -1372px;
+	width: 68px;
+	height: 31px;
+}
+
+.section_schedule .schedule_box .schedule_item.oct .progress_box .progress {
+	background: #637bfd;
+}
+
+.section_schedule .schedule_box .schedule_item.oct .progress_box .mo_info {
+	color: #637bfd;
+	left: 45px;
+}
+
+.section_schedule .schedule_box .schedule_item.oct .progress_box .step .info {
+	color: #637bfd;
+}
+
+.section_schedule .schedule_box .schedule_item.nov .month {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -839px -1462px;
+	width: 68px;
+	height: 31px;
+}
+
+.section_schedule .schedule_box .schedule_item.nov .progress_box .progress {
+	background: #d943ff;
+}
+
+.section_schedule .schedule_box .schedule_item.nov .progress_box .mo_info {
+	color: #d943ff;
+	left: 40px;
+}
+
+.section_schedule .schedule_box .schedule_item.nov .progress_box .step .info {
+	color: #d943ff;
+}
+
+.section_schedule .schedule_box .schedule_item .point_box {
+	overflow: hidden;
+}
+
+.section_schedule .schedule_box .schedule_item .point_box.on .npay {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -418px -1462px;
+	width: 60px;
+	height: 60px;
+}
+
+.section_schedule .schedule_box .schedule_item .point_box.on .point_info {
+	color: #000;
+}
+
+.section_schedule .schedule_box .schedule_item .point_box .npay {
+	display: block;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -353px -1462px;
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 16px;
+}
+
+.section_schedule .schedule_box .schedule_item .point_box .point_info {
+	overflow: hidden;
+	text-align: left;
+	margin-top: 5px;
+	line-height: 24px;
+	color: #999;
+}
+
+.section_schedule .schedule_box .schedule_item .point_box .point_info .point {
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.section_schedule .schedule_box .schedule_item .point_box .point_info .count {
+	margin-top: 4px;
+	font-size: 20px;
+}
+
+.section_schedule .schedule_box .schedule_item .progress_box {
+	position: relative;
+	width: 608px;
+	margin-right: 35px;
+	margin-top: 20px;
+	float: left;
+	z-index: 10;
+}
+
+.section_schedule .schedule_box .schedule_item .progress_box:before {
+	content: '';
+	position: absolute;
+	background-color: #aaa;
+	top: 50%;
+	left: 1px;
+	right: 1px;
+	height: 8px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: -1;
+	border-radius: 20px;
+}
+
+.section_schedule .schedule_box .schedule_item .progress_box .mo_info {
+	display: none;
+}
+
+.section_schedule .schedule_box .schedule_item .progress_box .progress {
+	position: absolute;
+	top: 50%;
+	left: 1px;
+	right: 1px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	height: 8px;
+	width: 0%;
+	z-index: -1;
+	border-radius: 20px;
+	transition: all 3s;
+}
+
+.section_schedule .schedule_box .schedule_item .progress_box .steps {
+	display: flex;
+	justify-content: space-between;
+}
+
+.section_schedule .schedule_box .schedule_item .progress_box .step {
+	position: relative;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	border: 6px solid #aaa;
+	background-color: #fff;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.section_schedule .schedule_box .schedule_item .progress_box .step.active:first-child .info {
+	display: block;
+}
+
+.section_schedule .schedule_box .schedule_item .progress_box .step .info {
+	display: none;
+	opacity: 0;
+	position: absolute;
+	top: -35px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	font-size: 19px;
+	font-weight: bold;
+	line-height: 20px;
+	color: #999;
+	word-break: keep-all;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.section_schedule .schedule_box .schedule_item .progress_box .step .date {
+	position: absolute;
+	top: 24px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 20px;
+	color: #999;
+	word-break: keep-all;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.section_schedule .schedule_box .schedule_item .progress_box .step:first-child .date,
+.section_schedule .schedule_box .schedule_item .progress_box .step:first-child .info {
+	left: -5px;
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+}
+
+.section_schedule .schedule_box .schedule_item .progress_box .step:last-child .date,
+.section_schedule .schedule_box .schedule_item .progress_box .step:last-child .info {
+	left: inherit;
+	right: -5px;
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+}
+
+.section_step {
+	position: relative;
+	background-color: #23daaf;
+}
+
+.section_step.vertical .inner_title {
+	animation: .7s fadeVertical forwards;
+}
+
+.section_step .icon_06 {
+	opacity: 0;
+	position: absolute;
+	right: 60px;
+	bottom: -42px;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1512px -906px;
+	width: 190px;
+	height: 213px;
+	z-index: 15;
+}
+
+.section_step .inner {
+	padding: 150px 30px;
+	text-align: center;
+}
+
+.section_step .inner_title {
+	opacity: 0;
+	position: relative;
+	margin: 0 auto;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -542px -1372px;
+	width: 260px;
+	height: 80px;
+}
+
+.section_step .inner_title .icon_07 {
+	opacity: 0;
+	content: '';
+	position: absolute;
+	left: -165px;
+	top: -85px;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1753px -1555px;
+	width: 140px;
+	height: 126px;
+	z-index: 10;
+}
+
+.section_step .step_list {
+	position: relative;
+	margin: 32px -15px -15px;
+	font-size: 0;
+	z-index: 10;
+}
+
+.section_step .step_list .icon_08 {
+	opacity: 0;
+	content: '';
+	position: absolute;
+	left: -118px;
+	top: -124px;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1512px -1124px;
+	width: 210px;
+	height: 182px;
+	z-index: -1;
+}
+
+.section_step .step_list [class*="step_item"] {
+	display: inline-block;
+	width: calc(50% - 30px);
+	margin: 15px;
+	padding: 46px 30px 50px;
+	background-color: #fff;
+	border: 4px solid #000;
+	border-radius: 20px;
+	box-sizing: border-box;
+	min-height: 480px;
+	opacity: 0;
+}
+
+.section_step .step_list [class*="step_item"] .step {
+	display: block;
+	font-size: 32px;
+	font-weight: bold;
+	line-height: 36px;
+	color: #ff5c00;
+}
+
+.section_step .step_list [class*="step_item"] .step_title {
+	display: block;
+	font-weight: bold;
+	margin-top: 16px;
+	font-size: 28px;
+	line-height: 40px;
+}
+
+.section_step .step_list [class*="step_item"] .img_box {
+	height: 192px;
+}
+
+.section_step .step_list [class*="step_item"] .info_text {
+	font-size: 20px;
+	line-height: 30px;
+	letter-spacing: -0.3px;
+}
+
+.section_step .step_list [class*="step_item"] .info_text em {
+	font-weight: bold;
+	color: #3e8ef1;
+}
+
+.section_step .step_list .step_item_01.active {
+	animation: .7s fadeVertical .7s forwards;
+}
+
+.section_step .step_list .step_item_01 .img_box {
+	background: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/step_img_01.png) no-repeat 50% 59px;
+	background-size: 247px 101px;
+}
+
+.section_step .step_list .step_item_02.active {
+	animation: .7s fadeVertical 1s forwards;
+}
+
+.section_step .step_list .step_item_02 .img_box {
+	background: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/step_img_02.png) no-repeat 50% 50%;
+	background-size: 330px 150px;
+}
+
+.section_step .step_list .step_item_03.active {
+	animation: .7s fadeVertical .7s forwards;
+}
+
+.section_step .step_list .step_item_03 .img_box {
+	background: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/step_img_03.png) no-repeat 50% 50%;
+	background-size: 330px 150px;
+}
+
+.section_step .step_list .step_item_04.active {
+	animation: .7s fadeVertical 1s forwards;
+}
+
+.section_step .step_list .step_item_04 .img_box {
+	background: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/step_img_04.png) no-repeat 50% 50%;
+	background-size: 266px 125px;
+}
+
+.section_benefit {
+	position: relative;
+	background-color: #a143e8;
+}
+
+.section_benefit.vertical .inner_title {
+	animation: .7s fadeVertical forwards;
+}
+
+.section_benefit .deco {
+	opacity: 0;
+	position: absolute;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: 0px -1546px;
+	width: 210px;
+	height: 177px;
+	top: 965px;
+	right: 0;
+	z-index: 10;
+	transition: transform .1s ease;
+}
+
+.section_benefit .deco.active {
+	animation: 1s opacity 0.5s forwards;
+}
+
+.section_benefit .icon_09,
+.section_benefit .icon_10 {
+	opacity: 0;
+	position: absolute;
+	z-index: 10;
+}
+
+.section_benefit .icon_09 {
+	left: 71px;
+	top: -134px;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: 0px 0px;
+	width: 922px;
+	height: 329px;
+}
+
+.section_benefit .icon_10 {
+	right: 64px;
+	bottom: -106px;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: 0px -1079px;
+	width: 371px;
+	height: 288px;
+}
+
+.section_benefit .inner {
+	position: relative;
+	padding: 150px 30px;
+	text-align: center;
+}
+
+.section_benefit .inner_title {
+	opacity: 0;
+	margin: 0 auto;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -259px -1372px;
+	width: 278px;
+	height: 85px;
+}
+
+.section_benefit [class*="benefit_0"] {
+	opacity: 0;
+	position: relative;
+	background-color: #fff;
+	border: 4px solid #000;
+	border-radius: 20px;
+	padding: 80px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.section_benefit [class*="benefit_0"] + [class*="benefit_0"] {
+	margin-top: 30px;
+}
+
+.section_benefit [class*="benefit_0"] .ep {
+	display: block;
+	margin: 0 auto;
+}
+
+.section_benefit [class*="benefit_0"] .benefit_text {
+	font-size: 42px;
+	line-height: 56px;
+	margin-top: 20px;
+	font-weight: 800;
+}
+
+.section_benefit [class*="benefit_0"] .desc {
+	margin-top: 14px;
+	font-size: 22px;
+	line-height: 36px;
+}
+
+.section_benefit .benefit_01 {
+	margin-top: 40px;
+}
+
+.section_benefit .benefit_01.active {
+	animation: .7s fadeVertical forwards;
+}
+
+.section_benefit .benefit_01 .icon_11 {
+	opacity: 0;
+	position: absolute;
+	left: -150px;
+	top: -276px;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: 0px -334px;
+	width: 361px;
+	height: 610px;
+	z-index: 10;
+}
+
+.section_benefit .benefit_01 .ep {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1296px -891px;
+	width: 198px;
+	height: 28px;
+}
+
+.section_benefit .benefit_01 .sticker_box {
+	margin-top: 47px;
+}
+
+.section_benefit .benefit_01 .sticker_box .sticker_list {
+	width: 500px;
+	margin: 0 auto;
+	border-radius: 20px;
+	background-color: #ffe818;
+}
+
+.section_benefit .benefit_01 .sticker_box .sticker_view {
+	display: none;
+	padding: 36px 40px 16px;
+	animation-name: opacity;
+	animation-duration: .7s;
+	animation-fill-mode: both;
+}
+
+.section_benefit .benefit_01 .sticker_box .sticker_view .img_box {
+	float: right;
+	width: 145px;
+	height: 145px;
+}
+
+.section_benefit .benefit_01 .sticker_box .sticker_view .img_box img {
+	width: 100%;
+	height: 100%;
+}
+
+.section_benefit .benefit_01 .sticker_box .info_box {
+	overflow: hidden;
+	padding-bottom: 36px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.section_benefit .benefit_01 .sticker_box .info_text {
+	overflow: hidden;
+	text-align: left;
+}
+
+.section_benefit .benefit_01 .sticker_box .info_text .month {
+	display: block;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 34px;
+}
+
+.section_benefit .benefit_01 .sticker_box .info_text .sticker_title {
+	display: block;
+	margin-top: 10px;
+	font-size: 46px;
+	line-height: 52px;
+	font-weight: bold;
+	letter-spacing: -0.5px;
+}
+
+.section_benefit .benefit_01 .sticker_box .img_list {
+	padding-top: 16px;
+	font-size: 0;
+}
+
+.section_benefit .benefit_01 .sticker_box .img_item {
+	display: inline-block;
+	width: 84px;
+	height: 84px;
+}
+
+.section_benefit .benefit_01 .sticker_box .img_item img {
+	width: 100%;
+	height: 100%;
+}
+
+.section_benefit .benefit_01 .sticker_box .img_item + .img_item {
+	margin-left: 28px;
+}
+
+.section_benefit .benefit_01 .sticker_sample_box {
+	margin-top: 40px;
+}
+
+.section_benefit .benefit_01 .sticker_sample_box .swiper-wrapper {
+	justify-content: center;
+}
+
+.section_benefit .benefit_01 .sticker_sample_box .swiper-slide {
+	width: 80px;
+}
+
+.section_benefit .benefit_01 .sticker_sample_box .swiper-slide + .swiper-slide {
+	margin-left: 50px;
+}
+
+.section_benefit .benefit_01 .sticker_sample_box .swiper-slide a {
+	display: block;
+}
+
+.section_benefit .benefit_01 .sticker_sample_box .on .img_box {
+	background-color: #ffe818;
+}
+
+.section_benefit .benefit_01 .sticker_sample_box .on .img_box.month_06 {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/sticker/sticker_main_06.png);
+}
+
+.section_benefit .benefit_01 .sticker_sample_box .on .img_box.month_07 {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/sticker/sticker_main_07.png);
+}
+
+.section_benefit .benefit_01 .sticker_sample_box .on .img_box.month_08 {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/sticker/sticker_main_08.png);
+}
+
+.section_benefit .benefit_01 .sticker_sample_box .on .img_box.month_09 {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/sticker/sticker_main_09.png);
+}
+
+.section_benefit .benefit_01 .sticker_sample_box .on .img_box.month_10 {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/sticker/sticker_main_10.png);
+}
+
+.section_benefit .benefit_01 .sticker_sample_box .on .img_box.month_11 {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/sticker/sticker_main_11.png);
+}
+
+.section_benefit .benefit_01 .sticker_sample_box .on .month {
+	color: #000;
+}
+
+.section_benefit .benefit_01 .sticker_sample_box .coming {
+	pointer-events: none;
+}
+
+.section_benefit .benefit_01 .sticker_sample_box .coming .img_box {
+	padding: 0;
+}
+
+.section_benefit .benefit_01 .sticker_sample_box .coming .text {
+	color: #999;
+	font-size: 17px;
+	line-height: 80px;
+}
+
+.section_benefit .benefit_01 .sticker_sample_box .img_box {
+	border-radius: 24px;
+	overflow: hidden;
+	background-color: #ddd;
+	height: 80px;
+	background-size: 50px 50px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.section_benefit .benefit_01 .sticker_sample_box .img_box.month_06 {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/sticker/sticker_month_06.png);
+}
+
+.section_benefit .benefit_01 .sticker_sample_box .img_box.month_07 {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/sticker/sticker_month_07.png);
+}
+
+.section_benefit .benefit_01 .sticker_sample_box .img_box.month_08 {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/sticker/sticker_month_08.png);
+}
+
+.section_benefit .benefit_01 .sticker_sample_box .img_box.month_09 {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/sticker/sticker_month_09.png);
+}
+
+.section_benefit .benefit_01 .sticker_sample_box .img_box.month_10 {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/sticker/sticker_month_10.png);
+}
+
+.section_benefit .benefit_01 .sticker_sample_box .img_box.month_11 {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/sticker/sticker_month_11.png);
+}
+
+.section_benefit .benefit_01 .sticker_sample_box .month {
+	display: block;
+	margin-top: 12px;
+	font-size: 17px;
+	line-height: 20px;
+	color: #999;
+	font-weight: 600;
+}
+
+.section_benefit .benefit_02.active {
+	animation: .7s fadeVertical forwards;
+}
+
+.section_benefit .benefit_02 .icon_12 {
+	opacity: 0;
+	position: absolute;
+	top: 100px;
+	left: -127px;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1512px -224px;
+	width: 109px;
+	height: 421px;
+	z-index: 10;
+}
+
+.section_benefit .benefit_02 .ep {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -868px -1046px;
+	width: 312px;
+	height: 28px;
+}
+
+.section_benefit .benefit_02 .img_point {
+	position: relative;
+	margin: 50px auto 0;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -927px 0px;
+	width: 580px;
+	height: 350px;
+}
+
+.section_benefit .benefit_02 .text {
+	position: absolute;
+	background: #0a77ff;
+	border-radius: 50%;
+	top: -20px;
+	right: 0;
+	padding: 20px 22px 18px;
+	font-size: 20px;
+	line-height: 24px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.section_benefit .benefit_03.active {
+	animation: .7s fadeVertical forwards;
+}
+
+.section_benefit .benefit_03 .icon_13,
+.section_benefit .benefit_03 .icon_14 {
+	opacity: 0;
+	position: absolute;
+	z-index: 10;
+}
+
+.section_benefit .benefit_03 .icon_13 {
+	top: 277px;
+	left: -128px;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1753px -421px;
+	width: 186px;
+	height: 163px;
+}
+
+.section_benefit .benefit_03 .icon_14 {
+	left: -118px;
+	bottom: -57px;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1323px -355px;
+	width: 148px;
+	height: 258px;
+}
+
+.section_benefit .benefit_03 .ep {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1102px -1298px;
+	width: 374px;
+	height: 31px;
+}
+
+.section_benefit .benefit_03 .product_box {
+	margin-top: 79px;
+}
+
+.section_benefit .benefit_03 .product_box .product_item {
+	margin-bottom: 2px;
+}
+
+.section_benefit .benefit_03 .product_box .product_item.half {
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+.section_benefit .benefit_03 .product_box .product_item.half + .half {
+	margin-left: 160px;
+}
+
+.section_benefit .benefit_03 .product_box .product_item.half [class*="img_box_"] {
+	width: 300px;
+	height: 300px;
+	background-color: #f2f2f2;
+	border-radius: 50%;
+}
+
+.section_benefit .benefit_03 .product_box [class*="img_box_"] {
+	position: relative;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.section_benefit .benefit_03 .product_box .img_box_giveaway {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/benefit_01.png);
+	background-size: 555px 594px;
+	width: 555px;
+	height: 594px;
+}
+
+.section_benefit .benefit_03 .product_box .img_box_mac {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/benefit_02.png);
+	background-size: 218px 130px;
+}
+
+.section_benefit .benefit_03 .product_box .img_box_mac .label {
+	top: 25px;
+	right: 25px;
+}
+
+.section_benefit .benefit_03 .product_box .img_box_ipad {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/benefit_03_v2.png);
+	background-size: 115px 166px;
+}
+
+.section_benefit .benefit_03 .product_box .img_box_ipad .label {
+	top: 25px;
+	right: 25px;
+}
+
+.section_benefit .benefit_03 .product_box .label {
+	position: absolute;
+	font-size: 17px;
+	line-height: 22px;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 50%;
+	background-color: #0a77ff;
+	padding: 19px 0;
+	width: 82px;
+}
+
+.section_benefit .benefit_03 .product_box .product_name {
+	position: relative;
+	margin-top: 30px;
+}
+
+.section_benefit .benefit_03 .product_box .product_name .sub_text {
+	display: block;
+	font-size: 24px;
+	line-height: 1;
+}
+
+.section_benefit .benefit_03 .product_box .product_name .name {
+	display: block;
+	position: relative;
+	font-weight: bold;
+	font-size: 38px;
+	line-height: 1;
+	z-index: 1;
+	margin-top: 8px;
+}
+
+.section_benefit .benefit_03 .product_box .product_name .name:after {
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	z-index: -1;
+}
+
+.section_benefit .benefit_03 .product_box .product_name .name.mac:after {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1753px -1686px;
+	width: 154px;
+	height: 16px;
+}
+
+.section_benefit .benefit_03 .product_box .product_name .name.ipad:after {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -696px -1337px;
+	width: 201px;
+	height: 20px;
+}
+
+.section_benefit .benefit_03 .info_text {
+	margin-top: 55px;
+	font-size: 22px;
+	line-height: 26px;
+	color: #999;
+}
+
+.section_notice {
+	background-color: #f6f6f6;
+}
+
+.section_notice .inner {
+	margin: 0 auto;
+	padding: 140px 30px 150px;
+	text-align: left;
+}
+
+.section_notice .inner_title {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -696px -1298px;
+	width: 401px;
+	height: 34px;
+	margin: 0 auto 76px;
+}
+
+.section_notice .notice_list_title {
+	font-size: 24px;
+}
+
+.section_notice .notice_list {
+	margin-top: 30px;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.section_notice .notice_list + .notice_list_title {
+	margin-top: 50px;
+}
+
+.section_notice .notice_list .notice_item {
+	position: relative;
+	padding-left: 14px;
+}
+
+.section_notice .notice_list .notice_item + .notice_item {
+	margin-top: 10px;
+}
+
+.section_notice .notice_list .notice_item:before {
+	content: '';
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	background-color: #222;
+	border-radius: 50%;
+	top: 10px;
+	left: 0;
+}
+
+.stamp_pop_wrap {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 9999;
+}
+
+.stamp_pop_wrap .pop_container {
+	position: relative;
+	width: 800px;
+	background: #ffe818;
+	margin: 120px auto;
+	padding: 100px 60px 60px;
+	border-radius: 40px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.stamp_pop_wrap .pop_container:before {
+	content: '';
+	position: absolute;
+	right: -20px;
+	top: 9px;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -366px -672px;
+	width: 249px;
+	height: 254px;
+}
+
+.stamp_pop_wrap .pop_container:after {
+	content: '';
+	position: absolute;
+	left: 24px;
+	top: 1479px;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1753px 0px;
+	width: 192px;
+	height: 183px;
+}
+
+.stamp_pop_wrap .pop_title {
+	margin: 0 auto;
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1061px -1213px;
+	width: 360px;
+	height: 77px;
+}
+
+.stamp_pop_wrap .section_week {
+	margin-top: 65px;
+}
+
+.stamp_pop_wrap .section_week .inner {
+	text-align: center;
+	background-color: #fff;
+	border: 3px solid #000;
+	border-radius: 20px;
+	padding: 69px 60px 50px;
+}
+
+.stamp_pop_wrap .section_week .pop_section_title {
+	font-size: 38px;
+	line-height: 1;
+	font-weight: 800;
+}
+
+.stamp_pop_wrap .section_week .stamp_box {
+	margin-top: 45px;
+}
+
+.stamp_pop_wrap .section_week .month {
+	display: block;
+	float: left;
+	margin-top: 32px;
+	margin-right: 35px;
+}
+
+.stamp_pop_wrap .section_week .week_item:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.stamp_pop_wrap .section_week .week_item + .week_item {
+	margin-top: 30px;
+}
+
+.stamp_pop_wrap .section_week .week_item.jun .month {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -357px -1671px;
+	width: 66px;
+	height: 32px;
+}
+
+.stamp_pop_wrap .section_week .week_item.jun .active .img_stamp {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -210px -1728px;
+	width: 90px;
+	height: 90px;
+}
+
+.stamp_pop_wrap .section_week .week_item.jun .active .text {
+	color: #3e8ef1;
+}
+
+.stamp_pop_wrap .section_week .week_item.jul .month {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -286px -1671px;
+	width: 66px;
+	height: 32px;
+}
+
+.stamp_pop_wrap .section_week .week_item.jul .active .img_stamp {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -495px -1728px;
+	width: 90px;
+	height: 90px;
+}
+
+.stamp_pop_wrap .section_week .week_item.jul .active .text {
+	color: #a143e8;
+}
+
+.stamp_pop_wrap .section_week .week_item.aug .month {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -215px -1671px;
+	width: 66px;
+	height: 32px;
+}
+
+.stamp_pop_wrap .section_week .week_item.aug .active .img_stamp {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -400px -1728px;
+	width: 90px;
+	height: 90px;
+}
+
+.stamp_pop_wrap .section_week .week_item.aug .active .text {
+	color: #23daaf;
+}
+
+.stamp_pop_wrap .section_week .week_item.sep .month {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1678px -1583px;
+	width: 66px;
+	height: 32px;
+}
+
+.stamp_pop_wrap .section_week .week_item.sep .active .img_stamp {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -685px -1728px;
+	width: 90px;
+	height: 90px;
+}
+
+.stamp_pop_wrap .section_week .week_item.sep .active .text {
+	color: #ffac0b;
+}
+
+.stamp_pop_wrap .section_week .week_item.oct .month {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -428px -1671px;
+	width: 66px;
+	height: 32px;
+}
+
+.stamp_pop_wrap .section_week .week_item.oct .active .img_stamp {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -780px -1728px;
+	width: 90px;
+	height: 90px;
+}
+
+.stamp_pop_wrap .section_week .week_item.oct .active .text {
+	color: #637bfd;
+}
+
+.stamp_pop_wrap .section_week .week_item.nov .month {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1678px -1546px;
+	width: 66px;
+	height: 32px;
+}
+
+.stamp_pop_wrap .section_week .week_item.nov .active .img_stamp {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -590px -1728px;
+	width: 90px;
+	height: 90px;
+}
+
+.stamp_pop_wrap .section_week .week_item.nov .active .text {
+	color: #d943ff;
+}
+
+.stamp_pop_wrap .section_week .stamp_list {
+	overflow: hidden;
+	font-size: 0;
+}
+
+.stamp_pop_wrap .section_week .stamp_list .stamp_item {
+	display: inline-block;
+	width: 90px;
+}
+
+.stamp_pop_wrap .section_week .stamp_list .stamp_item + .stamp_item {
+	margin-left: 30px;
+}
+
+.stamp_pop_wrap .section_week .stamp_list .img_stamp {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -305px -1728px;
+	width: 90px;
+	height: 90px;
+}
+
+.stamp_pop_wrap .section_week .stamp_list .text {
+	display: block;
+	margin-top: 10px;
+	font-size: 17px;
+	line-height: 22px;
+	color: #999;
+	font-weight: bold;
+}
+
+.stamp_pop_wrap .section_week .info_text {
+	margin-top: 42px;
+	font-size: 20px;
+	line-height: 32px;
+}
+
+.stamp_pop_wrap .section_month {
+	margin-top: 30px;
+}
+
+.stamp_pop_wrap .section_month .inner {
+	text-align: center;
+	background-color: #fff;
+	border: 3px solid #000;
+	border-radius: 20px;
+	padding: 69px 60px 50px;
+}
+
+.stamp_pop_wrap .section_month .pop_section_title {
+	font-size: 38px;
+	line-height: 1;
+	font-weight: 800;
+}
+
+.stamp_pop_wrap .section_month .pop_sub_title {
+	margin-top: 13px;
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.stamp_pop_wrap .section_month .success_list {
+	margin: 20px -16px -20px;
+	font-size: 0;
+}
+
+.stamp_pop_wrap .section_month .success_item {
+	display: inline-block;
+	margin: 20px 16px;
+}
+
+.stamp_pop_wrap .section_month .success_item.on.jun .stamp_img {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -590px -1546px;
+	width: 120px;
+	height: 120px;
+}
+
+.stamp_pop_wrap .section_month .success_item.on.jun .month {
+	color: #3e8ef1;
+}
+
+.stamp_pop_wrap .section_month .success_item.on.jul .stamp_img {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -340px -1546px;
+	width: 120px;
+	height: 120px;
+}
+
+.stamp_pop_wrap .section_month .success_item.on.jul .month {
+	color: #a143e8;
+}
+
+.stamp_pop_wrap .section_month .success_item.on.aug .stamp_img {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -215px -1546px;
+	width: 120px;
+	height: 120px;
+}
+
+.stamp_pop_wrap .section_month .success_item.on.aug .month {
+	color: #23daaf;
+}
+
+.stamp_pop_wrap .section_month .success_item.on.sep .stamp_img {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -726px -530px;
+	width: 120px;
+	height: 120px;
+}
+
+.stamp_pop_wrap .section_month .success_item.on.sep .month {
+	color: #ffac0b;
+}
+
+.stamp_pop_wrap .section_month .success_item.on.oct .stamp_img {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1626px -352px;
+	width: 120px;
+	height: 120px;
+}
+
+.stamp_pop_wrap .section_month .success_item.on.oct .month {
+	color: #637bfd;
+}
+
+.stamp_pop_wrap .section_month .success_item.on.nov .stamp_img {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1626px -477px;
+	width: 120px;
+	height: 120px;
+}
+
+.stamp_pop_wrap .section_month .success_item.on.nov .month {
+	color: #d943ff;
+}
+
+.stamp_pop_wrap .section_month .success_item .stamp_img {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -465px -1546px;
+	width: 120px;
+	height: 120px;
+}
+
+.stamp_pop_wrap .section_month .success_item .month {
+	display: block;
+	font-size: 20px;
+	margin-top: 13px;
+	line-height: 22px;
+	color: #999;
+	font-weight: bold;
+}
+
+.stamp_pop_wrap .section_month .giveaway_box {
+	margin-top: 49px;
+	border-top: 2px solid rgba(0, 0, 0, 0.1);
+	padding-top: 51px;
+}
+
+.stamp_pop_wrap .section_month .giveaway_box .giveaway_list {
+	font-size: 0;
+}
+
+.stamp_pop_wrap .section_month .giveaway_box .giveaway_item {
+	display: inline-block;
+	width: 50%;
+}
+
+.stamp_pop_wrap .section_month .giveaway_box .giveaway_title {
+	display: block;
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 800;
+}
+
+.stamp_pop_wrap .section_month .giveaway_box .desc {
+	display: block;
+	margin-top: 5px;
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.stamp_pop_wrap .section_month .giveaway_box .img_box {
+	margin: 20px auto 0;
+}
+
+.stamp_pop_wrap .section_month .giveaway_box .img_box.ipad {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -726px -334px;
+	width: 190px;
+	height: 191px;
+}
+
+.stamp_pop_wrap .section_month .giveaway_box .img_box.car {
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -620px -672px;
+	width: 288px;
+	height: 191px;
+}
+
+.stamp_pop_wrap .section_month .info_text {
+	position: relative;
+	display: inline-block;
+	margin-top: 45px;
+	font-size: 20px;
+	line-height: 36px;
+	letter-spacing: -0.3px;
+}
+
+.stamp_pop_wrap .section_month .info_text .link_text {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.stamp_pop_wrap .section_month .info_text:after {
+	content: '';
+	background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+	-webkit-background-size: 1944px 1940px;
+	background-size: 1944px 1940px;
+	background-position: -1908px -945px;
+	width: 35px;
+	height: 34px;
+	position: absolute;
+	right: -35px;
+}
+
+.stamp_pop_wrap .btn_close {
+	position: absolute;
+	background-color: #fff;
+	border-radius: 50%;
+	border: 3px solid #000;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	top: -40px;
+	width: 80px;
+	height: 80px;
+}
+
+.stamp_pop_wrap .btn_close:after {
+	content: '';
+	width: 3px;
+	height: 30px;
+	background-color: #000;
+	border-radius: 3px;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 22px;
+	left: 36px;
+}
+
+.stamp_pop_wrap .btn_close:before {
+	content: '';
+	width: 3px;
+	height: 30px;
+	background-color: #000;
+	border-radius: 3px;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 22px;
+	left: 36px;
+}
+
+.creat_pop_wrap {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 9999;
+}
+
+.creat_pop_wrap .pop_container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	background: #fff;
+	border-radius: 12px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.creat_pop_wrap .pop_inner {
+	padding: 170px 20px 24px;
+	background: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/pop_creat_bg.png) no-repeat 50% 24px;
+	background-size: 260px 130px;
+	text-align: center;
+}
+
+.creat_pop_wrap .info_text {
+	font-size: 23px;
+	line-height: 30px;
+	letter-spacing: -0.3px;
+	font-weight: 800;
+}
+
+.creat_pop_wrap .info_text em {
+	display: block;
+	color: #2385ef;
+}
+
+.creat_pop_wrap .sub_text {
+	margin-top: 10px;
+	color: #444;
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.type_android .creat_pop_wrap .sub_text {
+	font-size: 14px;
+	letter-spacing: -0.5px;
+}
+
+.creat_pop_wrap .btn_box {
+	margin-top: 20px;
+}
+
+.creat_pop_wrap .btn_box [class*="btn_"] {
+	width: 100%;
+	height: 46px;
+	border-radius: 10px;
+}
+
+.creat_pop_wrap .btn_box [class*="btn_"] + [class*="btn_"] {
+	margin-top: 6px;
+}
+
+.creat_pop_wrap .btn_write {
+	font-size: 16px;
+	letter-spacing: -0.3px;
+	color: #fff;
+	background-color: #03c75a;
+}
+
+.creat_pop_wrap .btn_cancel {
+	font-size: 15px;
+	letter-spacing: -0.6px;
+	color: #666;
+	background-color: #eee;
+}
+
+.login_pop_wrap {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 9999;
+}
+
+.login_pop_wrap .pop_container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 280px;
+	background: #fff;
+	border-radius: 8px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.login_pop_wrap .pop_inner {
+	text-align: center;
+}
+
+.login_pop_wrap .info_text {
+	padding: 24px;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+}
+
+.login_pop_wrap .btn_box {
+	border-top: 1px solid #f1f1f1;
+	font-size: 0;
+}
+
+.login_pop_wrap .btn_box [class*="btn_"] {
+	width: 50%;
+	padding: 15px 0;
+	color: #323232;
+	font-size: 15px;
+	line-height: 18px;
+	box-sizing: border-box;
+}
+
+.login_pop_wrap .btn_box .btn_identify {
+	font-weight: 600;
+	color: #03c75a;
+	border-left: 1px solid #f1f1f1;
+}
+
+@media (max-width: 1249px) {
+	.spot {
+		position: relative;
+		top: inherit;
+		right: inherit;
+		left: inherit;
+		bottom: inherit;
+		height: 900px;
+	}
+	.spot .content_box {
+		padding-top: 60px;
+	}
+	.spot .spot_title {
+		margin: 24px auto 0;
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -868px -949px;
+		width: 612px;
+		height: 92px;
+	}
+	.spot .sub_title {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -828px -1146px;
+		width: 402px;
+		height: 45px;
+	}
+	.spot .sub_text {
+		margin-top: 30px;
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.spot .time_line_box {
+		display: none;
+	}
+	.spot .mo_time_line_box {
+		display: block;
+		position: relative;
+		margin-top: 58px;
+	}
+	.spot .mo_time_line_box:after {
+		content: '';
+		height: 0.5px;
+		background-color: #fff;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		z-index: -1;
+	}
+	.spot .mo_time_line_box .comment {
+		background-color: #fff;
+		border-radius: 20px;
+		padding: 5px 20px;
+		font-size: 16px;
+		line-height: 1;
+		color: #0061c9;
+		font-weight: bold;
+	}
+	.spot .btn_box {
+		margin-top: 65px;
+	}
+	.spot .btn {
+		padding: 0 58px;
+		height: 56px;
+		font-size: 18px;
+		border-radius: 15px;
+	}
+	.spot .btn + .btn {
+		margin-left: 10px;
+	}
+	.spot .spot_bottom_btn {
+		display: none;
+	}
+	.spot .user_name {
+		bottom: 20px;
+		left: 50px;
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.spot .spot_img_box .spot_img_01 {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/t_spot_bg_01.png);
+	}
+	.spot .spot_img_box .spot_img_02 {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/t_spot_bg_02.png);
+	}
+	.spot .spot_img_box .spot_img_03 {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/t_spot_bg_03.png);
+	}
+	.spot .spot_img_box .spot_img_04 {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/t_spot_bg_04.png);
+	}
+	.spot .spot_img_box .spot_img_05 {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/t_spot_bg_05.png);
+	}
+	.spot .spot_img_box .spot_img_06 {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/t_spot_bg_06.png);
+	}
+	.spot .figure_01 {
+		display: none;
+	}
+	.spot .figure_02 {
+		top: 183px;
+		right: 117px;
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);;
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -259px -1462px;
+		width: 89px;
+		height: 73px;
+	}
+	.spot .figure_03 {
+		display: none;
+	}
+	.spot .figure_04 {
+		top: 242px;
+		left: 118px;
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -483px -1462px;
+		width: 56px;
+		height: 57px;
+	}
+	.spot .figure_05 {
+		display: none;
+	}
+	.spot .figure_06 {
+		display: none;
+	}
+	.spot .figure_07 {
+		bottom: 240px;
+		left: 69px;
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1426px -1213px;
+		width: 58px;
+		height: 63px;
+	}
+	.spot .figure_08 {
+		display: none;
+	}
+	.spot .figure_09 {
+		bottom: 383px;
+		right: 41px;
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1892px -252px;
+		width: 37px;
+		height: 53px;
+	}
+	.spot .figure_10 {
+		display: none;
+	}
+	.content {
+		margin-top: 0;
+	}
+	.content .inner {
+		max-width: 768px;
+	}
+	.section_info .icon_01 {
+		right: 60px;
+		top: -40px;
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1753px -945px;
+		width: 150px;
+		height: 185px;
+	}
+	.section_info .icon_02 {
+		left: 104px;
+		bottom: -25px;
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1165px -1546px;
+		width: 83px;
+		height: 86px;
+	}
+	.section_info .inner {
+		padding: 110px 50px 90px;
+	}
+	.section_info .inner_title {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1296px -841px;
+		width: 181px;
+		height: 45px;
+	}
+	.section_info .info_text {
+		margin-top: 27px;
+		font-size: 18px;
+		line-height: 28px;
+		letter-spacing: -0.5px;
+	}
+	.type_android .section_info .info_text {
+		font-size: 17px;
+		letter-spacing: -1px;
+	}
+	.section_info .link_text {
+		margin-top: 30px;
+		font-size: 18px;
+		line-height: 18px;
+		padding-right: 12px;
+	}
+	.section_info .link_text:after, .section_info .link_text:before {
+		width: 2px;
+		height: 10px;
+	}
+	.section_info .link_text:before {
+		top: 1px;
+	}
+	.section_info .link_text:after {
+		top: 7px;
+	}
+	.section_schedule .icon_03 {
+		right: 39px;
+		bottom: -28px;
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1753px -1135px;
+		width: 150px;
+		height: 141px;
+	}
+	.section_schedule .inner {
+		padding: 100px 50px 129px;
+	}
+	.section_schedule .inner_title {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1512px -1311px;
+		width: 229px;
+		height: 45px;
+	}
+	.section_schedule .info_text {
+		margin-top: 29px;
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.section_schedule .info_text.icon {
+		margin-top: 12px;
+	}
+	.type_android .section_schedule .info_text.icon {
+		letter-spacing: -1px;
+		font-size: 17px;
+	}
+	.section_schedule .info_text.icon:before {
+		content: '';
+		display: inline-block;
+		vertical-align: -2.5px;
+		margin-right: 8px;
+		background-size: 16px 16px;
+		width: 16px;
+		height: 16px;
+	}
+	.section_schedule .schedule_box {
+		border-radius: 20px;
+		padding: 43px 50px 47px;
+		margin: 35px auto 0;
+	}
+	.section_schedule .schedule_box .icon_04 {
+		top: -120px;
+		left: -70px;
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -106px -1728px;
+		width: 99px;
+		height: 107px;
+	}
+	.section_schedule .schedule_box .icon_05 {
+		display: none;
+	}
+	.section_schedule .schedule_box .schedule_item {
+		position: relative;
+		padding-top: 9px;
+		padding-bottom: 42px;
+	}
+	.section_schedule .schedule_box .schedule_item + .schedule_item {
+		margin-top: 25px;
+	}
+	.section_schedule .schedule_box .schedule_item.on.jun .month {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1908px -1135px;
+		width: 35px;
+		height: 22px;
+	}
+	.section_schedule .schedule_box .schedule_item.on.jul .month {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1908px -984px;
+		width: 35px;
+		height: 22px;
+	}
+	.section_schedule .schedule_box .schedule_item.on.aug .month {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1908px -1065px;
+		width: 35px;
+		height: 22px;
+	}
+	.section_schedule .schedule_box .schedule_item.on.sep .month {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1908px -1038px;
+		width: 35px;
+		height: 22px;
+	}
+	.section_schedule .schedule_box .schedule_item.on.oct .month {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1893px -1410px;
+		width: 47px;
+		height: 22px;
+	}
+	.section_schedule .schedule_box .schedule_item.on.nov .month {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1893px -1490px;
+		width: 42px;
+		height: 22px;
+	}
+	.section_schedule .schedule_box .schedule_item.on .mo_info {
+		display: block;
+		position: absolute;
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 20px;
+		top: -41px;
+		opacity: 0;
+	}
+	.section_schedule .schedule_box .schedule_item .month {
+		float: none;
+		margin-top: 0;
+		margin-right: 0;
+	}
+	.section_schedule .schedule_box .schedule_item.jun .month {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1908px -1162px;
+		width: 35px;
+		height: 22px;
+	}
+	.section_schedule .schedule_box .schedule_item.jun .point_box.on:after {
+		background-color: #3e8ef1;
+	}
+	.section_schedule .schedule_box .schedule_item.jul .month {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1908px -1189px;
+		width: 35px;
+		height: 22px;
+	}
+	.section_schedule .schedule_box .schedule_item.jul .point_box.on:after {
+		background-color: #a143e8;
+	}
+	.section_schedule .schedule_box .schedule_item.aug .month {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1908px -1011px;
+		width: 35px;
+		height: 22px;
+	}
+	.section_schedule .schedule_box .schedule_item.aug .point_box.on:after {
+		background-color: #23daaf;
+	}
+	.section_schedule .schedule_box .schedule_item.sep .month {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1908px -1092px;
+		width: 35px;
+		height: 22px;
+	}
+	.section_schedule .schedule_box .schedule_item.sep .point_box.on:after {
+		background-color: #ffac0b;
+	}
+	.section_schedule .schedule_box .schedule_item.oct .month {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1893px -1437px;
+		width: 47px;
+		height: 22px;
+	}
+	.section_schedule .schedule_box .schedule_item.oct .point_box.on:after {
+		background-color: #3e8ef1;
+	}
+	.section_schedule .schedule_box .schedule_item.nov .month {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1893px -1517px;
+		width: 42px;
+		height: 22px;
+	}
+	.section_schedule .schedule_box .schedule_item.nov .point_box.on:after {
+		background-color: #d943ff;
+	}
+	.section_schedule .schedule_box .schedule_item .point_box {
+		position: absolute;
+		overflow: visible;
+		right: 0;
+		top: 0;
+		z-index: 1;
+	}
+	.section_schedule .schedule_box .schedule_item .point_box:after {
+		content: '';
+		position: absolute;
+		width: 2px;
+		height: 20px;
+		background-color: #999;
+		left: 50%;
+		margin-left: -1px;
+		bottom: -15px;
+		z-index: -1;
+	}
+	.section_schedule .schedule_box .schedule_item .point_box.on .npay {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1892px -355px;
+		width: 40px;
+		height: 40px;
+	}
+	.section_schedule .schedule_box .schedule_item .point_box .npay {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1892px -310px;
+		width: 40px;
+		height: 40px;
+		float: none;
+		margin-right: 0;
+	}
+	.section_schedule .schedule_box .schedule_item .point_box .point_info {
+		display: none;
+	}
+	.section_schedule .schedule_box .schedule_item .progress_box {
+		position: relative;
+		width: calc(100% - 17px);
+		margin: 20px auto 0;
+		float: none;
+	}
+	.section_schedule .schedule_box .schedule_item .progress_box:before {
+		height: 6px;
+	}
+	.section_schedule .schedule_box .schedule_item .progress_box .progress {
+		height: 6px;
+	}
+	.section_schedule .schedule_box .schedule_item .progress_box .step .info {
+		display: none !important;
+	}
+	.section_schedule .schedule_box .schedule_item .progress_box .step .date {
+		top: 27px;
+		font-size: 15px;
+		line-height: 18px;
+	}
+	.section_schedule .schedule_box .schedule_item .progress_box .step:first-child .date,
+	.section_schedule .schedule_box .schedule_item .progress_box .step:first-child .info {
+		text-align: left;
+	}
+	.section_schedule .schedule_box .schedule_item .progress_box .step:last-child .date,
+	.section_schedule .schedule_box .schedule_item .progress_box .step:last-child .info {
+		left: inherit;
+		text-align: right;
+	}
+	.section_step .icon_06 {
+		right: 78px;
+		bottom: 26px;
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: 0px -1728px;
+		width: 101px;
+		height: 114px;
+	}
+	.section_step .inner {
+		padding: 100px 50px;
+	}
+	.section_step .inner_title {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -620px -868px;
+		width: 172px;
+		height: 46px;
+	}
+	.section_step .inner_title .icon_07 {
+		display: none;
+	}
+	.section_step .step_list {
+		margin: 28px -10px -10px;
+	}
+	.section_step .step_list .icon_08 {
+		left: -50px;
+		top: -50px;
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 972px 970px;
+		background-size: 972px 970px;
+		background-position: -756px -562px;
+		width: 105px;
+		height: 91px;
+	}
+	.section_step .step_list [class*="step_item"] {
+		width: calc(50% - 20px);
+		margin: 10px;
+		padding: 40px 10px;
+		border: 3px solid #000;
+		border-radius: 20px;
+		min-height: 398px;
+	}
+	.section_step .step_list [class*="step_item"] .step {
+		font-size: 20px;
+		line-height: 36px;
+	}
+	.section_step .step_list [class*="step_item"] .step_title {
+		margin-top: 16px;
+		font-size: 26px;
+		line-height: 34px;
+	}
+	.section_step .step_list [class*="step_item"] .img_box {
+		height: 176px;
+	}
+	.section_step .step_list [class*="step_item"] .info_text {
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.type_android .section_step .step_list [class*="step_item"] .info_text {
+		font-size: 15px;
+		letter-spacing: -0.6px;
+	}
+	.section_step .step_list .step_item_01 .img_box {
+		background: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/t_step_img_01.png) no-repeat 50% 46px;
+		background-size: 243px 101px;
+	}
+	.section_step .step_list .step_item_02 .img_box {
+		background: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/t_step_img_02.png) no-repeat 50% 50%;
+		background-size: 260px 112px;
+	}
+	.section_step .step_list .step_item_03 .img_box {
+		background: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/t_step_img_03.png) no-repeat 50% 50%;
+		background-size: 264px 112px;
+	}
+	.section_step .step_list .step_item_04 .img_box {
+		background: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/t_step_img_04.png) no-repeat 50% 50%;
+		background-size: 238px 114px;
+	}
+	.section_benefit .deco {
+		display: none;
+	}
+	.section_benefit .icon_09 {
+		left: 24px;
+		top: -48px;
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -376px -1079px;
+		width: 447px;
+		height: 129px;
+	}
+	.section_benefit .icon_10 {
+		right: 24px;
+		bottom: -40px;
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1753px -1281px;
+		width: 162px;
+		height: 124px;
+	}
+	.section_benefit .inner {
+		padding: 100px 50px;
+	}
+	.section_benefit .inner_title {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -807px -1372px;
+		width: 155px;
+		height: 49px;
+	}
+	.section_benefit [class*="benefit_0"] {
+		border: 3px solid #000;
+		padding: 45px 20px;
+	}
+	.section_benefit [class*="benefit_0"] + [class*="benefit_0"] {
+		margin-top: 20px;
+	}
+	.section_benefit [class*="benefit_0"] .benefit_text {
+		font-size: 26px;
+		line-height: 34px;
+		margin-top: 12px;
+	}
+	.section_benefit [class*="benefit_0"] .desc {
+		margin-top: 12px;
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.section_benefit .benefit_01 {
+		margin-top: 37px;
+	}
+	.section_benefit .benefit_01 .icon_11 {
+		left: -60px;
+		top: -161px;
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1753px -188px;
+		width: 134px;
+		height: 228px;
+	}
+	.section_benefit .benefit_01 .ep {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1296px 1293px;
+		background-size: 1296px 1293px;
+		background-position: -864px -594px;
+		width: 132px;
+		height: 19px;
+	}
+	.section_benefit .benefit_01 .sticker_box {
+		margin-top: 25px;
+	}
+	.section_benefit .benefit_01 .sticker_box .sticker_list {
+		width: 295px;
+		border-radius: 10px;
+	}
+	.section_benefit .benefit_01 .sticker_box .sticker_view {
+		padding: 20px 20px 8px;
+	}
+	.section_benefit .benefit_01 .sticker_box .sticker_view .img_box {
+		width: 96px;
+		height: 96px;
+	}
+	.section_benefit .benefit_01 .sticker_box .info_box {
+		padding-bottom: 16px;
+	}
+	.section_benefit .benefit_01 .sticker_box .info_text .month {
+		font-size: 14px;
+		line-height: 14px;
+	}
+	.section_benefit .benefit_01 .sticker_box .info_text .sticker_title {
+		margin-top: 13px;
+		font-size: 28px;
+		line-height: 32px;
+		letter-spacing: -0.8px;
+	}
+	.section_benefit .benefit_01 .sticker_box .img_list {
+		padding-top: 8px;
+	}
+	.section_benefit .benefit_01 .sticker_box .img_item {
+		display: inline-block;
+		width: 55px;
+		height: 55px;
+	}
+	.section_benefit .benefit_01 .sticker_box .img_item + .img_item {
+		margin-left: 11px;
+	}
+	.section_benefit .benefit_01 .sticker_sample_box {
+		margin-top: 17px;
+	}
+	.section_benefit .benefit_01 .sticker_sample_box .swiper-slide {
+		width: 62px;
+	}
+	.section_benefit .benefit_01 .sticker_sample_box .swiper-slide + .swiper-slide {
+		margin-left: 12px;
+	}
+	.section_benefit .benefit_01 .sticker_sample_box .coming .text {
+		font-size: 14px;
+		line-height: 62px;
+	}
+	.section_benefit .benefit_01 .sticker_sample_box .img_box {
+		border-radius: 12px;
+		height: 62px;
+		background-size: 44px 44px;
+	}
+	.section_benefit .benefit_01 .sticker_sample_box .month {
+		font-size: 14px;
+		line-height: 1;
+	}
+	.section_benefit .benefit_02 .icon_12 {
+		display: none;
+	}
+	.section_benefit .benefit_02 .ep {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1296px 1293px;
+		background-size: 1296px 1293px;
+		background-position: -579px -698px;
+		width: 208px;
+		height: 19px;
+	}
+	.section_benefit .benefit_02 .img_point {
+		margin: 25px auto 0;
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1296px 1293px;
+		background-size: 1296px 1293px;
+		background-position: -618px 0px;
+		width: 387px;
+		height: 234px;
+	}
+	.section_benefit .benefit_02 .text {
+		top: -7px;
+		right: -10px;
+		padding: 14px 15px 13px;
+		font-size: 15px;
+		line-height: 18px;
+	}
+	.section_benefit .benefit_03 .icon_13 {
+		top: inherit;
+		bottom: -77px;
+		left: 16px;
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -845px -1546px;
+		width: 121px;
+		height: 106px;
+	}
+	.section_benefit .benefit_03 .icon_14 {
+		display: none;
+	}
+	.section_benefit .benefit_03 .ep {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1296px 1293px;
+		background-size: 1296px 1293px;
+		background-position: -735px -866px;
+		width: 249px;
+		height: 21px;
+	}
+	.section_benefit .benefit_03 .product_box {
+		margin-top: 32px;
+	}
+	.section_benefit .benefit_03 .product_box .product_item {
+		margin-bottom: 12px;
+	}
+	.section_benefit .benefit_03 .product_box .product_item.half {
+		margin-bottom: 0;
+	}
+	.section_benefit .benefit_03 .product_box .product_item.half + .half {
+		margin-left: 68px;
+	}
+	.section_benefit .benefit_03 .product_box .product_item.half [class*="img_box_"] {
+		width: 240px;
+		height: 240px;
+	}
+	.section_benefit .benefit_03 .product_box .img_box_giveaway {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/t_benefit_01.png);
+		background-size: 441px 507px;
+		width: 441px;
+		height: 507px;
+	}
+	.section_benefit .benefit_03 .product_box .img_box_mac {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/t_benefit_02.png);
+		background-size: 175px 104px;
+	}
+	.section_benefit .benefit_03 .product_box .img_box_mac .label {
+		top: -14px;
+		right: -13px;
+	}
+	.section_benefit .benefit_03 .product_box .img_box_ipad {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/t_benefit_03_v2.png);
+		background-size: 92px 128px;
+	}
+	.section_benefit .benefit_03 .product_box .img_box_ipad .label {
+		top: -14px;
+		right: -13px;
+	}
+	.section_benefit .benefit_03 .product_box .product_name {
+		margin-top: 27px;
+	}
+	.section_benefit .benefit_03 .product_box .product_name .sub_text {
+		font-size: 20px;
+	}
+	.section_benefit .benefit_03 .product_box .product_name .name {
+		font-size: 32px;
+	}
+	.section_benefit .benefit_03 .product_box .product_name .name.mac:after {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1753px -1707px;
+		width: 154px;
+		height: 16px;
+	}
+	.section_benefit .benefit_03 .product_box .product_name .name.ipad:after {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -902px -1337px;
+		width: 201px;
+		height: 20px;
+	}
+	.section_benefit .benefit_03 .info_text {
+		margin-top: 35px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.section_notice .inner {
+		padding: 100px 50px;
+	}
+	.section_notice .inner_title {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1235px -1146px;
+		width: 236px;
+		height: 32px;
+		margin: 0 auto 50px;
+	}
+	.section_notice .notice_list_title {
+		font-size: 20px;
+	}
+	.section_notice .notice_list {
+		margin-top: 15px;
+		font-size: 15px;
+		line-height: 25px;
+	}
+	.section_notice .notice_list .notice_item {
+		padding-left: 11px;
+	}
+	.stamp_pop_wrap .pop_container {
+		width: 343px;
+		margin: 82px auto;
+		padding: 80px 16px 20px;
+		border-radius: 20px;
+	}
+	.stamp_pop_wrap .pop_container:before {
+		right: -20px;
+		top: 9px;
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1626px -224px;
+		width: 121px;
+		height: 123px;
+	}
+	.stamp_pop_wrap .pop_container:after {
+		left: -30px;
+		top: 1667px;
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1069px -1546px;
+		width: 91px;
+		height: 87px;
+	}
+	.stamp_pop_wrap .pop_title {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -967px -1372px;
+		width: 176px;
+		height: 40px;
+	}
+	.stamp_pop_wrap .section_week {
+		margin-top: 24px;
+	}
+	.stamp_pop_wrap .section_week .inner {
+		padding: 40px 20px;
+	}
+	.stamp_pop_wrap .section_week .pop_section_title {
+		font-size: 26px;
+		line-height: 34px;
+	}
+	.stamp_pop_wrap .section_week .stamp_box {
+		margin-top: 30px;
+	}
+	.stamp_pop_wrap .section_week .month {
+		display: block;
+		float: none;
+		margin: 0;
+	}
+	.stamp_pop_wrap .section_week .week_item + .week_item {
+		margin-top: 32px;
+	}
+	.stamp_pop_wrap .section_week .week_item.jun .month {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1908px -1242px;
+		width: 35px;
+		height: 21px;
+	}
+	.stamp_pop_wrap .section_week .week_item.jun .active .img_stamp {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1687px -846px;
+		width: 54px;
+		height: 54px;
+	}
+	.stamp_pop_wrap .section_week .week_item.jul .month {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1898px -1607px;
+		width: 34px;
+		height: 21px;
+	}
+	.stamp_pop_wrap .section_week .week_item.jul .active .img_stamp {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -662px -1462px;
+		width: 54px;
+		height: 54px;
+	}
+	.stamp_pop_wrap .section_week .week_item.aug .month {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1908px -1216px;
+		width: 35px;
+		height: 21px;
+		background-position: -1907px -1216px;
+	}
+	.stamp_pop_wrap .section_week .week_item.aug .active .img_stamp {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -544px -1462px;
+		width: 54px;
+		height: 54px;
+	}
+	.stamp_pop_wrap .section_week .week_item.sep .month {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1898px -1581px;
+		width: 34px;
+		height: 21px;
+		background-position: -1897px -1581px;
+	}
+	.stamp_pop_wrap .section_week .week_item.sep .active .img_stamp {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -603px -1462px;
+		width: 54px;
+		height: 54px;
+	}
+	.stamp_pop_wrap .section_week .week_item.oct .month {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1893px -1464px;
+		width: 47px;
+		height: 21px;
+	}
+	.stamp_pop_wrap .section_week .week_item.oct .active .img_stamp {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -721px -1462px;
+		width: 54px;
+		height: 54px;
+	}
+	.stamp_pop_wrap .section_week .week_item.nov .month {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1898px -1555px;
+		width: 42px;
+		height: 21px;
+	}
+	.stamp_pop_wrap .section_week .week_item.nov .active .img_stamp {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -780px -1462px;
+		width: 54px;
+		height: 54px;
+	}
+	.stamp_pop_wrap .section_week .stamp_list {
+		margin-top: 12px;
+	}
+	.stamp_pop_wrap .section_week .stamp_list .stamp_item {
+		display: inline-block;
+		width: 54px;
+	}
+	.stamp_pop_wrap .section_week .stamp_list .stamp_item + .stamp_item {
+		margin-left: 16px;
+	}
+	.stamp_pop_wrap .section_week .stamp_list .img_stamp {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1452px -1079px;
+		width: 54px;
+		height: 54px;
+	}
+	.stamp_pop_wrap .section_week .stamp_list .text {
+		margin-top: 8px;
+		font-size: 15px;
+		line-height: 20px;
+	}
+	.stamp_pop_wrap .section_week .info_text {
+		margin-top: 30px;
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.stamp_pop_wrap .section_month {
+		margin-top: 20px;
+	}
+	.stamp_pop_wrap .section_month .inner {
+		padding: 40px 20px;
+	}
+	.stamp_pop_wrap .section_month .pop_section_title {
+		font-size: 26px;
+		line-height: 34px;
+	}
+	.stamp_pop_wrap .section_month .pop_sub_title {
+		margin-top: 6px;
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.stamp_pop_wrap .section_month .success_list {
+		margin: 14px -7.5px -10px;
+	}
+	.stamp_pop_wrap .section_month .success_item {
+		display: inline-block;
+		margin: 10px 6.5px;
+	}
+	.stamp_pop_wrap .section_month .success_item.on.jun .stamp_img {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1508px -1546px;
+		width: 80px;
+		height: 80px;
+	}
+	.stamp_pop_wrap .section_month .success_item.on.jul .stamp_img {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1423px -1546px;
+		width: 80px;
+		height: 80px;
+	}
+	.stamp_pop_wrap .section_month .success_item.on.aug .stamp_img {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1253px -1546px;
+		width: 80px;
+		height: 80px;
+	}
+	.stamp_pop_wrap .section_month .success_item.on.sep .stamp_img {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1593px -1546px;
+		width: 80px;
+		height: 80px;
+	}
+	.stamp_pop_wrap .section_month .success_item.on.oct .stamp_img {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1338px -1546px;
+		width: 80px;
+		height: 80px;
+	}
+	.stamp_pop_wrap .section_month .success_item.on.nov .stamp_img {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -875px -1728px;
+		width: 80px;
+		height: 80px;
+	}
+	.stamp_pop_wrap .section_month .success_item .stamp_img {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -960px -1728px;
+		width: 80px;
+		height: 80px;
+	}
+	.stamp_pop_wrap .section_month .success_item .month {
+		font-size: 15px;
+		margin-top: 6px;
+		line-height: 20px;
+	}
+	.stamp_pop_wrap .section_month .giveaway_box {
+		margin-top: 40px;
+		padding-top: 40px;
+	}
+	.stamp_pop_wrap .section_month .giveaway_box .giveaway_item {
+		display: block;
+		width: 100%;
+	}
+	.stamp_pop_wrap .section_month .giveaway_box .giveaway_item + .giveaway_item {
+		margin-top: 40px;
+	}
+	.stamp_pop_wrap .section_month .giveaway_box .giveaway_title {
+		font-size: 22px;
+		line-height: 22px;
+	}
+	.stamp_pop_wrap .section_month .giveaway_box .desc {
+		margin-top: 8px;
+		font-size: 16px;
+		line-height: 16px;
+	}
+	.stamp_pop_wrap .section_month .giveaway_box .img_box {
+		margin: 16px auto 0;
+	}
+	.stamp_pop_wrap .section_month .giveaway_box .img_box.ipad {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1753px -772px;
+		width: 168px;
+		height: 168px;
+	}
+	.stamp_pop_wrap .section_month .giveaway_box .img_box.car {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: 0px -1372px;
+		width: 254px;
+		height: 169px;
+	}
+	.stamp_pop_wrap .section_month .info_text {
+		margin-top: 30px;
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.stamp_pop_wrap .section_month .info_text:after {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1920px -1281px;
+		width: 20px;
+		height: 19px;
+		position: absolute;
+		right: 0;
+		top: -20px;
+	}
+	.stamp_pop_wrap .btn_close {
+		top: -20px;
+		width: 40px;
+		height: 40px;
+		border: 2px solid #000;
+	}
+	.stamp_pop_wrap .btn_close:after {
+		width: 2px;
+		height: 20px;
+		border-radius: 3px;
+		transform: rotate(45deg);
+		position: absolute;
+		top: 8px;
+		left: 17px;
+	}
+	.stamp_pop_wrap .btn_close:before {
+		width: 2px;
+		height: 20px;
+		border-radius: 3px;
+		transform: rotate(-45deg);
+		position: absolute;
+		top: 8px;
+		left: 17px;
+	}
+}
+
+@media (max-width: 767px) {
+	.spot {
+		height: 700px;
+	}
+	.spot .content_box {
+		padding-top: 147px;
+	}
+	.spot .spot_title {
+		margin: 4px auto 0;
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -376px -1213px;
+		width: 315px;
+		height: 150px;
+	}
+	.spot .sub_title {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1185px -1046px;
+		width: 285px;
+		height: 24px;
+	}
+	.spot .sub_text {
+		margin-top: 16px;
+	}
+	.spot .mo_time_line_box {
+		margin-top: 40px;
+	}
+	.spot .btn_box {
+		margin-top: 50px;
+	}
+	.spot .btn.write, .spot .btn.stamp {
+		width: 157px;
+		height: 50px;
+		padding: 0;
+	}
+	.spot .user_name {
+		left: 20px;
+	}
+	.spot .spot_img_box .spot_img_01 {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/mo_spot_bg_01.png);
+	}
+	.spot .spot_img_box .spot_img_02 {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/mo_spot_bg_02.png);
+	}
+	.spot .spot_img_box .spot_img_03 {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/mo_spot_bg_03.png);
+	}
+	.spot .spot_img_box .spot_img_04 {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/mo_spot_bg_04.png);
+	}
+	.spot .spot_img_box .spot_img_05 {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/mo_spot_bg_05.png);
+	}
+	.spot .spot_img_box .spot_img_06 {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/mo_spot_bg_06.png);
+	}
+	.spot .figure_02 {
+		top: 63px;
+		right: 37px;
+	}
+	.spot .figure_04 {
+		top: 142px;
+		left: 14px;
+	}
+	.spot .figure_07 {
+		bottom: 100px;
+		left: 28px;
+	}
+	.spot .figure_09 {
+		bottom: 203px;
+		right: 9px;
+	}
+	.section_info .icon_01 {
+		right: 15px;
+		top: -50px;
+	}
+	.section_info .icon_02 {
+		left: 32px;
+	}
+	.section_info .inner {
+		padding: 110px 20px 90px;
+	}
+	.section_schedule .icon_03 {
+		right: 17px;
+		bottom: -50px;
+	}
+	.section_schedule .inner {
+		padding: 100px 20px;
+	}
+	.section_schedule .info_text {
+		letter-spacing: -0.5px;
+	}
+	.section_schedule .schedule_box {
+		padding: 38px 20px 50px;
+		margin: 45px auto 0;
+	}
+	.section_schedule .schedule_box .icon_04 {
+		top: -268px;
+		left: -48px;
+	}
+	.section_step .icon_06 {
+		right: 17px;
+		bottom: 35px;
+	}
+	.section_step .inner {
+		padding: 100px 20px;
+	}
+	.section_step .step_list {
+		margin: 38px 0 0;
+	}
+	.section_step .step_list .icon_08 {
+		left: -50px;
+		top: -25px;
+	}
+	.section_step .step_list [class*="step_item"] {
+		width: 100%;
+		margin: 0;
+		padding: 40px 10px;
+		border: 3px solid #000;
+		border-radius: 20px;
+		min-height: 412px;
+	}
+	.section_step .step_list [class*="step_item"] + [class*="step_item"] {
+		margin-top: 24px;
+	}
+	.section_step .step_list [class*="step_item"] .step {
+		line-height: 1;
+	}
+	.section_step .step_list [class*="step_item"] .step_title {
+		margin-top: 15px;
+		font-size: 26px;
+		line-height: 34px;
+		letter-spacing: -0.5px;
+	}
+	.type_android .section_step .step_list [class*="step_item"] .step_title {
+		font-size: 25px;
+		letter-spacing: -1px;
+	}
+	.section_step .step_list [class*="step_item"] .img_box {
+		height: 172px;
+	}
+	.section_step .step_list [class*="step_item"] .info_text {
+		letter-spacing: -0.3px;
+	}
+	.section_step .step_list .step_item_01.active {
+		animation: .7s fadeVertical 0s forwards;
+	}
+	.section_step .step_list .step_item_01 .img_box {
+		background: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/mo_step_img_01.png) no-repeat 50% 59px;
+		background-size: 247px 100px;
+	}
+	.section_step .step_list .step_item_02.active {
+		animation: .7s fadeVertical 0s forwards;
+	}
+	.section_step .step_list .step_item_02 .img_box {
+		background: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/mo_step_img_02.png) no-repeat 50% 50%;
+		background-size: 275px 112px;
+	}
+	.section_step .step_list .step_item_03.active {
+		animation: .7s fadeVertical 0s forwards;
+	}
+	.section_step .step_list .step_item_03 .img_box {
+		background: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/mo_step_img_03.png) no-repeat 50% 50%;
+		background-size: 275px 112px;
+	}
+	.section_step .step_list .step_item_04.active {
+		animation: .7s fadeVertical 0s forwards;
+	}
+	.section_step .step_list .step_item_04 .img_box {
+		background: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/mo_step_img_04.png) no-repeat 50% 50%;
+		background-size: 266px 125px;
+	}
+	.section_benefit .icon_09 {
+		left: -214px;
+	}
+	.section_benefit .icon_10 {
+		right: 3px;
+		bottom: -50px;
+	}
+	.section_benefit .inner {
+		padding: 100px 20px;
+	}
+	.section_benefit .inner_title {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -807px -1372px;
+		width: 155px;
+		height: 49px;
+	}
+	.section_benefit .benefit_01 {
+		padding: 45px 0;
+	}
+	.section_benefit .benefit_02 .img_point {
+		margin: 15px auto 0;
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 972px 970px;
+		background-size: 972px 970px;
+		background-position: -464px 0px;
+		width: 290px;
+		height: 175px;
+	}
+	.section_benefit .benefit_02 .text {
+		top: -10px;
+		right: 12px;
+		padding: 11px 11px 10px;
+		font-size: 12px;
+		line-height: 14px;
+	}
+	.section_benefit .benefit_03 {
+		padding: 45px 0;
+	}
+	.section_benefit .benefit_03 .icon_13 {
+		top: inherit;
+		bottom: -77px;
+		left: -4px;
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -845px -1546px;
+		width: 121px;
+		height: 106px;
+	}
+	.section_benefit .benefit_03 .icon_14 {
+		display: none;
+	}
+	.section_benefit .benefit_03 .ep {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1296px 1293px;
+		background-size: 1296px 1293px;
+		background-position: -735px -866px;
+		width: 249px;
+		height: 21px;
+	}
+	.section_benefit .benefit_03 .product_box {
+		margin-top: 39px;
+	}
+	.section_benefit .benefit_03 .product_box .product_item {
+		margin-bottom: 4px;
+	}
+	.section_benefit .benefit_03 .product_box .product_item.half {
+		margin-bottom: 0;
+	}
+	.section_benefit .benefit_03 .product_box .product_item.half + .half {
+		margin-left: 17px;
+	}
+	.section_benefit .benefit_03 .product_box .product_item.half [class*="img_box_"] {
+		width: 134px;
+		height: 134px;
+	}
+	.section_benefit .benefit_03 .product_box .img_box_giveaway {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/mo_benefit_01.png);
+		background-size: 275px 343.5px;
+		width: 275px;
+		height: 343.5px;
+	}
+	.section_benefit .benefit_03 .product_box .img_box_mac {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/mo_benefit_02.png);
+		background-size: 96px 57px;
+	}
+	.section_benefit .benefit_03 .product_box .img_box_mac .label {
+		top: 6px;
+		right: 3px;
+	}
+	.section_benefit .benefit_03 .product_box .img_box_ipad {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/weekdiary/mo_benefit_03_v2.png);
+		background-size: 56px 78px;
+	}
+	.section_benefit .benefit_03 .product_box .img_box_ipad .label {
+		top: 6px;
+		right: 3px;
+	}
+	.section_benefit .benefit_03 .product_box .label {
+		font-size: 12px;
+		line-height: 14px;
+		width: 48px;
+		padding: 10px 0;
+	}
+	.section_benefit .benefit_03 .product_box .product_name {
+		margin-top: 16px;
+	}
+	.section_benefit .benefit_03 .product_box .product_name .sub_text {
+		font-size: 16px;
+	}
+	.section_benefit .benefit_03 .product_box .product_name .name {
+		font-size: 22px;
+	}
+	.section_benefit .benefit_03 .product_box .product_name .name.mac:after {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1063px -926px;
+		width: 100px;
+		height: 10px;
+	}
+	.section_benefit .benefit_03 .product_box .product_name .name.ipad:after {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -927px -926px;
+		width: 131px;
+		height: 10px;
+	}
+	.section_benefit .benefit_03 .info_text {
+		margin-top: 35px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.section_notice .inner {
+		padding: 100px 20px;
+	}
+	.section_notice .inner_title {
+		background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v2.png);
+		-webkit-background-size: 1944px 1940px;
+		background-size: 1944px 1940px;
+		background-position: -1235px -1146px;
+		width: 236px;
+		height: 32px;
+		margin: 0 auto 50px;
+	}
+	.section_notice .notice_list {
+		margin-top: 15px;
+		font-size: 15px;
+		line-height: 25px;
+	}
+	.section_notice .notice_list .notice_item {
+		padding-left: 11px;
+	}
+}
+
+@media (max-width: 480px) {
+	.section_benefit .benefit_01 .sticker_sample_box {
+		padding: 0 20px;
+	}
+	.section_benefit .benefit_01 .sticker_sample_box .swiper-wrapper {
+		justify-content: flex-start;
+	}
+}
+
+.loading_screen {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background: #fff;
+	z-index: 1500;
+	overflow: hidden;
+	animation: loading_screen_white 0.6s cubic-bezier(0.9, 0.03, 0.29, 0.82);
+	animation-delay: 0.9s;
+	animation-fill-mode: forwards;
+}
+
+.loading_screen:after {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background: #1c24f1;
+	content: '';
+	animation: loading_screen_black 0.6s cubic-bezier(0.9, 0.03, 0.29, 0.82);
+}
+
+@keyframes loading_screen_black {
+	0% {
+		transform: translate3d(0px, -100%, 0px);
+	}
+	100% {
+		transform: translate3d(0px, 0, 0px);
+	}
+}
+
+@keyframes loading_screen_white {
+	0% {
+		transform: translate3d(0px, 0, 0px);
+	}
+	100% {
+		transform: translate3d(0px, 100%, 0px);
+	}
+}
+
+@keyframes opacity {
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+	}
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+	}
+}
+
+@keyframes fadeVertical {
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-ms-transform: translateY(30px);
+		-webkit-transform: translateY(30px);
+		-moz-transform: translateY(30px);
+		-o-transform: translateY(30px);
+		transform: translateY(30px);
+	}
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-ms-transform: translateY(0);
+		-webkit-transform: translateY(0);
+		-moz-transform: translateY(0);
+		-o-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-ms-transform: translateY(20px);
+		-webkit-transform: translateY(20px);
+		-moz-transform: translateY(20px);
+		-o-transform: translateY(20px);
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-ms-transform: translateY(0);
+		-webkit-transform: translateY(0);
+		-moz-transform: translateY(0);
+		-o-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@keyframes dateVertical {
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-ms-transform: translate(-50%, 10px);
+		-webkit-transform: translate(-50%, 10px);
+		-moz-transform: translate(-50%, 10px);
+		-o-transform: translate(-50%, 10px);
+		transform: translate(-50%, 10px);
+	}
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-ms-transform: translate(-50%, 0);
+		-webkit-transform: translate(-50%, 0);
+		-moz-transform: translate(-50%, 0);
+		-o-transform: translate(-50%, 0);
+		transform: translate(-50%, 0);
+	}
+}
+
+@keyframes dateVertical1 {
+	0% {
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-ms-transform: translate(0, 10px);
+		-webkit-transform: translate(0, 10px);
+		-moz-transform: translate(0, 10px);
+		-o-transform: translate(0, 10px);
+		transform: translate(0, 10px);
+	}
+	100% {
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-ms-transform: translate(0, 0);
+		-webkit-transform: translate(0, 0);
+		-moz-transform: translate(0, 0);
+		-o-transform: translate(0, 0);
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes progress2nd {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 33.3333%;
+	}
+}
+
+@keyframes progress3rd {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 66.6666%;
+	}
+}
+
+@keyframes progress4th {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 99%;
+	}
+}
+
+@keyframes round {
+	2% {
+		opacity: 1;
+		z-index: 10;
+	}
+	15% {
+		opacity: 1;
+		z-index: 1;
+	}
+	40% {
+		opacity: 0;
+	}
+}
+
+@keyframes scale {
+	2% {
+		opacity: 1;
+		transform: scale(1.04);
+		z-index: 10;
+	}
+	15% {
+		opacity: 1;
+		z-index: 1;
+	}
+	40% {
+		opacity: 0;
+	}
+}
+
+/**
+ * Swiper 4.5.1
+ * Most modern mobile touch slider and framework with hardware accelerated transitions
+ * http://www.idangero.us/swiper/
+ *
+ * Copyright 2014-2019 Vladimir Kharlampidi
+ *
+ * Released under the MIT License
+ *
+ * Released on: September 13, 2019
+ */
+ .swiper-container{margin-left:auto;margin-right:auto;position:relative;overflow:hidden;list-style:none;padding:0;z-index:1}.swiper-container-no-flexbox .swiper-slide{float:left}.swiper-container-vertical>.swiper-wrapper{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}.swiper-wrapper{position:relative;width:100%;height:100%;z-index:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-transition-property:-webkit-transform;transition-property:-webkit-transform;-o-transition-property:transform;transition-property:transform;transition-property:transform,-webkit-transform;-webkit-box-sizing:content-box;box-sizing:content-box}.swiper-container-android .swiper-slide,.swiper-wrapper{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.swiper-container-multirow>.swiper-wrapper{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.swiper-container-free-mode>.swiper-wrapper{-webkit-transition-timing-function:ease-out;-o-transition-timing-function:ease-out;transition-timing-function:ease-out;margin:0 auto}.swiper-slide{-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;width:100%;height:100%;position:relative;-webkit-transition-property:-webkit-transform;transition-property:-webkit-transform;-o-transition-property:transform;transition-property:transform;transition-property:transform,-webkit-transform}.swiper-slide-invisible-blank{visibility:hidden}.swiper-container-autoheight,.swiper-container-autoheight .swiper-slide{height:auto}.swiper-container-autoheight .swiper-wrapper{-webkit-box-align:start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start;-webkit-transition-property:height,-webkit-transform;transition-property:height,-webkit-transform;-o-transition-property:transform,height;transition-property:transform,height;transition-property:transform,height,-webkit-transform}.swiper-container-3d{-webkit-perspective:1200px;perspective:1200px}.swiper-container-3d .swiper-cube-shadow,.swiper-container-3d .swiper-slide,.swiper-container-3d .swiper-slide-shadow-bottom,.swiper-container-3d .swiper-slide-shadow-left,.swiper-container-3d .swiper-slide-shadow-right,.swiper-container-3d .swiper-slide-shadow-top,.swiper-container-3d .swiper-wrapper{-webkit-transform-style:preserve-3d;transform-style:preserve-3d}.swiper-container-3d .swiper-slide-shadow-bottom,.swiper-container-3d .swiper-slide-shadow-left,.swiper-container-3d .swiper-slide-shadow-right,.swiper-container-3d .swiper-slide-shadow-top{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;z-index:10}.swiper-container-3d .swiper-slide-shadow-left{background-image:-webkit-gradient(linear,right top,left top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,0)));background-image:-webkit-linear-gradient(right,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:-o-linear-gradient(right,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:linear-gradient(to left,rgba(0,0,0,.5),rgba(0,0,0,0))}.swiper-container-3d .swiper-slide-shadow-right{background-image:-webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,0)));background-image:-webkit-linear-gradient(left,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:-o-linear-gradient(left,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:linear-gradient(to right,rgba(0,0,0,.5),rgba(0,0,0,0))}.swiper-container-3d .swiper-slide-shadow-top{background-image:-webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,0)));background-image:-webkit-linear-gradient(bottom,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:-o-linear-gradient(bottom,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:linear-gradient(to top,rgba(0,0,0,.5),rgba(0,0,0,0))}.swiper-container-3d .swiper-slide-shadow-bottom{background-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.5)),to(rgba(0,0,0,0)));background-image:-webkit-linear-gradient(top,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:-o-linear-gradient(top,rgba(0,0,0,.5),rgba(0,0,0,0));background-image:linear-gradient(to bottom,rgba(0,0,0,.5),rgba(0,0,0,0))}.swiper-container-wp8-horizontal,.swiper-container-wp8-horizontal>.swiper-wrapper{-ms-touch-action:pan-y;touch-action:pan-y}.swiper-container-wp8-vertical,.swiper-container-wp8-vertical>.swiper-wrapper{-ms-touch-action:pan-x;touch-action:pan-x}.swiper-button-next,.swiper-button-prev{position:absolute;top:50%;width:27px;height:44px;margin-top:-22px;z-index:10;cursor:pointer;background-size:27px 44px;background-position:center;background-repeat:no-repeat}.swiper-button-next.swiper-button-disabled,.swiper-button-prev.swiper-button-disabled{opacity:.35;cursor:auto;pointer-events:none}.swiper-button-prev,.swiper-container-rtl .swiper-button-next{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");left:10px;right:auto}.swiper-button-next,.swiper-container-rtl .swiper-button-prev{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");right:10px;left:auto}.swiper-button-prev.swiper-button-white,.swiper-container-rtl .swiper-button-next.swiper-button-white{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E")}.swiper-button-next.swiper-button-white,.swiper-container-rtl .swiper-button-prev.swiper-button-white{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E")}.swiper-button-prev.swiper-button-black,.swiper-container-rtl .swiper-button-next.swiper-button-black{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E")}.swiper-button-next.swiper-button-black,.swiper-container-rtl .swiper-button-prev.swiper-button-black{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E")}.swiper-button-lock{display:none}.swiper-pagination{position:absolute;text-align:center;-webkit-transition:.3s opacity;-o-transition:.3s opacity;transition:.3s opacity;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);z-index:10}.swiper-pagination.swiper-pagination-hidden{opacity:0}.swiper-container-horizontal>.swiper-pagination-bullets,.swiper-pagination-custom,.swiper-pagination-fraction{bottom:10px;left:0;width:100%}.swiper-pagination-bullets-dynamic{overflow:hidden;font-size:0}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{-webkit-transform:scale(.33);-ms-transform:scale(.33);transform:scale(.33);position:relative}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev{-webkit-transform:scale(.66);-ms-transform:scale(.66);transform:scale(.66)}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev{-webkit-transform:scale(.33);-ms-transform:scale(.33);transform:scale(.33)}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next{-webkit-transform:scale(.66);-ms-transform:scale(.66);transform:scale(.66)}.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next{-webkit-transform:scale(.33);-ms-transform:scale(.33);transform:scale(.33)}.swiper-pagination-bullet{width:8px;height:8px;display:inline-block;border-radius:100%;background:#000;opacity:.2}button.swiper-pagination-bullet{border:none;margin:0;padding:0;-webkit-box-shadow:none;box-shadow:none;-webkit-appearance:none;-moz-appearance:none;appearance:none}.swiper-pagination-clickable .swiper-pagination-bullet{cursor:pointer}.swiper-pagination-bullet-active{opacity:1;background:#007aff}.swiper-container-vertical>.swiper-pagination-bullets{right:10px;top:50%;-webkit-transform:translate3d(0,-50%,0);transform:translate3d(0,-50%,0)}.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet{margin:6px 0;display:block}.swiper-container-vertical>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);width:8px}.swiper-container-vertical>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{display:inline-block;-webkit-transition:.2s top,.2s -webkit-transform;transition:.2s top,.2s -webkit-transform;-o-transition:.2s transform,.2s top;transition:.2s transform,.2s top;transition:.2s transform,.2s top,.2s -webkit-transform}.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{margin:0 4px}.swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);white-space:nowrap}.swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{-webkit-transition:.2s left,.2s -webkit-transform;transition:.2s left,.2s -webkit-transform;-o-transition:.2s transform,.2s left;transition:.2s transform,.2s left;transition:.2s transform,.2s left,.2s -webkit-transform}.swiper-container-horizontal.swiper-container-rtl>.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{-webkit-transition:.2s right,.2s -webkit-transform;transition:.2s right,.2s -webkit-transform;-o-transition:.2s transform,.2s right;transition:.2s transform,.2s right;transition:.2s transform,.2s right,.2s -webkit-transform}.swiper-pagination-progressbar{background:rgba(0,0,0,.25);position:absolute}.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{background:#007aff;position:absolute;left:0;top:0;width:100%;height:100%;-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);-webkit-transform-origin:left top;-ms-transform-origin:left top;transform-origin:left top}.swiper-container-rtl .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{-webkit-transform-origin:right top;-ms-transform-origin:right top;transform-origin:right top}.swiper-container-horizontal>.swiper-pagination-progressbar,.swiper-container-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{width:100%;height:4px;left:0;top:0}.swiper-container-horizontal>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,.swiper-container-vertical>.swiper-pagination-progressbar{width:4px;height:100%;left:0;top:0}.swiper-pagination-white .swiper-pagination-bullet-active{background:#fff}.swiper-pagination-progressbar.swiper-pagination-white{background:rgba(255,255,255,.25)}.swiper-pagination-progressbar.swiper-pagination-white .swiper-pagination-progressbar-fill{background:#fff}.swiper-pagination-black .swiper-pagination-bullet-active{background:#000}.swiper-pagination-progressbar.swiper-pagination-black{background:rgba(0,0,0,.25)}.swiper-pagination-progressbar.swiper-pagination-black .swiper-pagination-progressbar-fill{background:#000}.swiper-pagination-lock{display:none}.swiper-scrollbar{border-radius:10px;position:relative;-ms-touch-action:none;background:rgba(0,0,0,.1)}.swiper-container-horizontal>.swiper-scrollbar{position:absolute;left:1%;bottom:3px;z-index:50;height:5px;width:98%}.swiper-container-vertical>.swiper-scrollbar{position:absolute;right:3px;top:1%;z-index:50;width:5px;height:98%}.swiper-scrollbar-drag{height:100%;width:100%;position:relative;background:rgba(0,0,0,.5);border-radius:10px;left:0;top:0}.swiper-scrollbar-cursor-drag{cursor:move}.swiper-scrollbar-lock{display:none}.swiper-zoom-container{width:100%;height:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;text-align:center}.swiper-zoom-container>canvas,.swiper-zoom-container>img,.swiper-zoom-container>svg{max-width:100%;max-height:100%;-o-object-fit:contain;object-fit:contain}.swiper-slide-zoomed{cursor:move}.swiper-lazy-preloader{width:42px;height:42px;position:absolute;left:50%;top:50%;margin-left:-21px;margin-top:-21px;z-index:10;-webkit-transform-origin:50%;-ms-transform-origin:50%;transform-origin:50%;-webkit-animation:swiper-preloader-spin 1s steps(12,end) infinite;animation:swiper-preloader-spin 1s steps(12,end) infinite}.swiper-lazy-preloader:after{display:block;content:'';width:100%;height:100%;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%20120%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%3E%3Cdefs%3E%3Cline%20id%3D'l'%20x1%3D'60'%20x2%3D'60'%20y1%3D'7'%20y2%3D'27'%20stroke%3D'%236c6c6c'%20stroke-width%3D'11'%20stroke-linecap%3D'round'%2F%3E%3C%2Fdefs%3E%3Cg%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(30%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(60%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(90%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(120%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(150%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.37'%20transform%3D'rotate(180%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.46'%20transform%3D'rotate(210%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.56'%20transform%3D'rotate(240%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.66'%20transform%3D'rotate(270%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.75'%20transform%3D'rotate(300%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.85'%20transform%3D'rotate(330%2060%2C60)'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");background-position:50%;background-size:100%;background-repeat:no-repeat}.swiper-lazy-preloader-white:after{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%20120%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%3E%3Cdefs%3E%3Cline%20id%3D'l'%20x1%3D'60'%20x2%3D'60'%20y1%3D'7'%20y2%3D'27'%20stroke%3D'%23fff'%20stroke-width%3D'11'%20stroke-linecap%3D'round'%2F%3E%3C%2Fdefs%3E%3Cg%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(30%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(60%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(90%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(120%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(150%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.37'%20transform%3D'rotate(180%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.46'%20transform%3D'rotate(210%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.56'%20transform%3D'rotate(240%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.66'%20transform%3D'rotate(270%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.75'%20transform%3D'rotate(300%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.85'%20transform%3D'rotate(330%2060%2C60)'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E")}@-webkit-keyframes swiper-preloader-spin{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes swiper-preloader-spin{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.swiper-container .swiper-notification{position:absolute;left:0;top:0;pointer-events:none;opacity:0;z-index:-1000}.swiper-container-fade.swiper-container-free-mode .swiper-slide{-webkit-transition-timing-function:ease-out;-o-transition-timing-function:ease-out;transition-timing-function:ease-out}.swiper-container-fade .swiper-slide{pointer-events:none;-webkit-transition-property:opacity;-o-transition-property:opacity;transition-property:opacity}.swiper-container-fade .swiper-slide .swiper-slide{pointer-events:none}.swiper-container-fade .swiper-slide-active,.swiper-container-fade .swiper-slide-active .swiper-slide-active{pointer-events:auto}.swiper-container-cube{overflow:visible}.swiper-container-cube .swiper-slide{pointer-events:none;-webkit-backface-visibility:hidden;backface-visibility:hidden;z-index:1;visibility:hidden;-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0;width:100%;height:100%}.swiper-container-cube .swiper-slide .swiper-slide{pointer-events:none}.swiper-container-cube.swiper-container-rtl .swiper-slide{-webkit-transform-origin:100% 0;-ms-transform-origin:100% 0;transform-origin:100% 0}.swiper-container-cube .swiper-slide-active,.swiper-container-cube .swiper-slide-active .swiper-slide-active{pointer-events:auto}.swiper-container-cube .swiper-slide-active,.swiper-container-cube .swiper-slide-next,.swiper-container-cube .swiper-slide-next+.swiper-slide,.swiper-container-cube .swiper-slide-prev{pointer-events:auto;visibility:visible}.swiper-container-cube .swiper-slide-shadow-bottom,.swiper-container-cube .swiper-slide-shadow-left,.swiper-container-cube .swiper-slide-shadow-right,.swiper-container-cube .swiper-slide-shadow-top{z-index:0;-webkit-backface-visibility:hidden;backface-visibility:hidden}.swiper-container-cube .swiper-cube-shadow{position:absolute;left:0;bottom:0;width:100%;height:100%;background:#000;opacity:.6;-webkit-filter:blur(50px);filter:blur(50px);z-index:0}.swiper-container-flip{overflow:visible}.swiper-container-flip .swiper-slide{pointer-events:none;-webkit-backface-visibility:hidden;backface-visibility:hidden;z-index:1}.swiper-container-flip .swiper-slide .swiper-slide{pointer-events:none}.swiper-container-flip .swiper-slide-active,.swiper-container-flip .swiper-slide-active .swiper-slide-active{pointer-events:auto}.swiper-container-flip .swiper-slide-shadow-bottom,.swiper-container-flip .swiper-slide-shadow-left,.swiper-container-flip .swiper-slide-shadow-right,.swiper-container-flip .swiper-slide-shadow-top{z-index:0;-webkit-backface-visibility:hidden;backface-visibility:hidden}.swiper-container-coverflow .swiper-wrapper{-ms-perspective:1200px}
