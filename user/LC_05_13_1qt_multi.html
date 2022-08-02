@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+		<div class="layout-def layout-lc theme-gray">
+			<div class="header">
+				<div class="inner">
+					<div class="headerBox">
+						<div class="headerBox_head">
+							<h1 class="tit">오답확인</h1>
+							<button class="btn-close-wrap">닫기</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //header -->
+
+			<div class="container ovy-h">
+				<div class="inner">
+					<div class="wa-wrapper">
+						<div class="wa-header">
+							<div class="wa-header-inner">
+								<div class="wa-head">
+									<ul>
+										<li><button>1</button></li>
+										<li><button class="on">2</button></li>
+										<li><button>3</button></li>
+										<li><button>4</button></li>
+										<li><button>5</button></li>
+										<li><button>6</button></li>
+										<li><button>7</button></li>
+										<li><button>8</button></li>
+										<li><button>9</button></li>
+										<li><button>10</button></li>
+									</ul>
+								</div>
+							</div>
+						</div><!-- //wa-header -->
+
+						<div class="wa-body">
+							<div class="wa-cont-wrap">
+								<div class="wa-cont-headwrap">
+									<div class="wa-cont_head">
+										<div class="txt-q">
+											<p>
+												Q. 두 분모의 최소공배수를 공통분모로 하여 분수를 통분하려고 합니다. □ 안에 알맞은 수를 써넣으시오.
+											</p>
+										</div>
+
+										<!-- 220314 1분기 개선사항 BTN 추가 -->
+										<!-- 기존 스위치 영역 제거 해 주시면 됩니다. -->
+										<!-- <div class="wa-switchBox">
+											<div class="wa-switchBox-inner">
+												<span class="txt">정답보기</span>
+												<button class="wa-switch">
+													<span class="btn-wa-switch"><span>OFF</span></span>
+												</button>
+											</div>
+										</div> -->
+										<!-- //기존 스위치 영역 제거 해 주시면 됩니다. -->
+										
+										<div class="wa-btnbox epnPopup-wrap">
+											<div class="flt_rgt">
+												<button class="btn_epn off btn-viewopen" type="button">풀이</button>
+												<button class="btn_redo off" type="button">다시풀기</button>
+												<button class="btn_chansr off on" type="button">정답확인</button>
+											</div>
+
+											<!-- 풀이 버튼 누르고 레이어 팝업 뜨는 영역 -->
+											<div class="viewopen-detail">
+
+												<!-- 220328 닫기 버튼 영역 추가  -->
+												<div class="popup_btnWrap">
+													<button class="btn_close" type="button"><span class="blind">닫기</span></button><!-- 220328 레이어 팝업 닫기 버튼 추가  -->
+												</div>
+												<!-- //220328 닫기 버튼 영역 추가  -->
+
+												<div class="viewopen-detail-inner">
+													<div class="pvBox" data-per="100">
+														<div class="pv-inner">
+															<div class="pv-cont">
+																//수식 작을때<br> (비율이 100%:data-per="100" )<br>
+																//수식 작을때<br> (비율이 100%:data-per="100" )<br>
+																//수식 작을때<br> (비율이 100%:data-per="100" )<br>
+																//수식 작을때<br> (비율이 100%:data-per="100" )<br>
+															</div>
+														</div>
+													</div>
+													<div class="pvBox" data-per="170">
+														<div class="pv-inner">
+															<div class="pv-cont">
+																//수식 클때<br> (비율이 170%:data-per="170" )<br>
+																//수식 클때<br> (비율이 100%:data-per="170" )<br>
+																//수식 클때<br> (비율이 100%:data-per="170" )<br>
+																//수식 클때<br> (비율이 100%:data-per="170" )<br>
+																//수식 클때<br> (비율이 100%:data-per="170" )<br>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="blocking_layer"></div><!--유저가 mathjax 문항 영역 클릭 못하게 막는 투명 레이어-->
+											</div>
+											<!-- //풀이 버튼 누르고 레이어 팝업 뜨는 영역 -->
+										</div>
+										<!-- //220314 1분기 개선사항 BTN 추가 -->
+										
+
+									</div>
+								</div>
+								
+								<div class="wa-cont-body multiple"><!-- 2022.07.29 객관식 문항 보여질 경우 addClass multiple -->
+									<div class="wa-cont">
+										<div class="wa-cont-inner">
+											<!-- 
+												wa-container에 추가될 클래스 정리
+												1. 정답보기 off일때 : 클래스 wa-wrong
+												2. 정답보기 on일때 : 클래스 wa-correct
+											-->
+											<div class="wa-container wa-wrong">
+												<!-- 수식영역 -->
+												<!-- 나의 오답 첫번째 조상인 mjx-box에 클래스 my-ans 추가 -->
+											</div>
+										</div>
+									</div>
+
+									<!-- 2022.07.29 2985) [AI바로셈] 객관식 문항 추가  -->
+									<div class="wa-answer-box">
+										<div class="multiple-choice-wrap">
+											<div class="answer-box">
+												<ul class="list">
+													<li>    
+														<input type="radio" name="answer1" id="answer-01" value="" checked>
+														<label for="answer-01" class="list-item incorrect"><span>선택</span></label><!-- 오답일때 addClass incorrect -->
+														<!-- 답 수식 영역 -->
+														<div class="math-answer">
+															<img src="static/images/common/multi_answer_sample.svg">
+														</div>
+														<!--// 답 수식 영역 -->
+													</li>
+													<li>    
+														<input type="radio" name="answer2" id="answer-02" value="" checked>
+														<label for="answer-02" class="list-item correct"><span>선택</span></label><!-- 정답일때 addClass correct -->
+														<!-- 답 수식 영역 -->
+														<div class="math-answer">
+															<img src="static/images/common/multi_answer_sample.svg">
+														</div>
+														<!--// 답 수식 영역 -->
+													</li>
+													<li>    
+														<input type="radio" name="answer" id="answer-03" value="" disabled>
+														<label for="answer-03" class="list-item"><span>선택</span></label>
+														<!-- 답 수식 영역 -->
+														<div class="math-answer">
+															<img src="static/images/common/multi_answer_sample.svg">
+														</div>
+														<!--// 답 수식 영역 -->
+													</li>
+													<li>    
+														<input type="radio" name="answer" id="answer-04" value="" disabled>
+														<label for="answer-04" class="list-item"><span>선택</span></label>
+														<!-- 답 수식 영역 -->
+														<div class="math-answer">
+															<img src="static/images/common/multi_answer_sample.svg">
+														</div>
+														<!--// 답 수식 영역 -->
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!--// 2022.07.29 2985) [AI바로셈] 객관식 문항 추가  -->
+
+									<div class="wa-cont-foot">
+										<button>맞힐 수 있는데 틀린문제</button>
+										<button>드릴다운 문제</button>
+									</div>
+								</div>
+							</div>
+						</div><!-- //wa-body -->
+					</div><!-- //wa-inner -->
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //layout-def -->
+		
+	</div>
+</div>
+
+
+<script>
+	//20220314 오답확인에서 풀이버튼 눌렀을 때 S
+	$(document).on('click', '.btn-viewopen', function(){
+	  $(this).toggleClass('on');
+	  $('.viewopen-detail').toggleClass('on');
+	});
+	//20220314 오답확인에서 풀이버튼 눌렀을 때 E
+	
+	//20220328 레이어 팝업 닫기 S
+	$('.btn_close').on('click', function(){
+		$('.epnPopup-wrap .viewopen-detail').toggleClass('on');
+	});
+	//20220328 레이어 팝업 닫기 E
+
+	$('.wa-switch').on('click', function(){
+		if($(this).hasClass('on')){
+			$(this).removeClass('on');
+			$(this).find('.btn-wa-switch span').text('OFF');
+			$('.wa-container').removeClass('wa-correct').addClass('wa-wrong');
+		}else{
+			$(this).addClass('on');
+			$(this).find('.btn-wa-switch span').text('ON');
+			$('.wa-container').removeClass('wa-wrong').addClass('wa-correct');
+		}
+	});
+
+	$('.wa-cont-body').scroll(function(){
+		if( ($('.wa-cont').height() ) > ($('.wa-cont-body').height() + 64) ){
+			if($(this).scrollTop() > 0 ){
+				$('.wa-header-inner').addClass('unactive');
+				$('.wa-body').addClass('unactive');
+			}else{
+				$('.wa-header-inner').removeClass('unactive');
+				$('.wa-body').removeClass('unactive');
+			}
+		}
+	});
+
+	var ajaxOtp = {
+	  url : 'ex_calc.html',
+	  async : true,
+	  dataType : "html",
+	  chache : false
+	}
+	$.ajax(ajaxOtp).done(function(data) {
+	  $('.wa-container').children().remove();
+	  $('.wa-container').html(data);
+	}).fail(function() {
+	  //console.log("error");
+	}).always(function() { });
+
+
+
+</script>
+</body>
+</html>

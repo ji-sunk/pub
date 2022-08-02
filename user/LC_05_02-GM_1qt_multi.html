@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+    <script src="static/js/lottie.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+		<div class="layout-def layout-learning gm">
+            <div class="header dark">
+                <div class="inner">
+                    <div class="headerBox">
+                        <div class="headerBox_head">
+                            <h1 class="tit left">소주제명</h1>
+                            <button class="btn-close-wrap">닫기</button>
+                        </div>
+                        <div class="headerBox_body">
+                            <div class="header-qa-wrap">
+                                <div class="qa-cnt-wrap"><span class="num">8</span> <span>/</span> <span class="num-tot num-ani">10</span></div><!-- 10문제 끝난뒤 팝업 뜨고 문제수가 늘어날때 : num-tot에 클래스 num-ani 추가, 다음문제 넘어갈때 num-ani 삭제 -->
+                                <div class="qa-time-wrap">07:12</div><!-- 시간정보 필요없으면 삭제가능 -->
+                                <div class="qa-as-wrap">
+                                    <div class="accuracy-cont">
+                                        <div class="accuracy">
+                                            <div class="accuracy-bar" style="width: 30%;"></div> <!-- 색상 %로 넣기  -->
+                                            <div class="accuracy-line">
+                                                <span class="line line1"></span>
+                                                <span class="line line2"></span>
+                                                <span class="line line3"></span>
+                                            </div>
+                                            <p class="tit">정확도</p>
+                                        </div>
+                                        <div class="accuracy-labelbox">
+                                            <div class="a-label label1 on"></div><!-- 66.6% 이하일때 : a-label에 클래스 on 추가 -->
+                                            <div class="a-label label2"><span class="ico"></span></div><!-- 80% 이하일때 : a-label에 클래스 on 추가 -->
+                                            <div class="a-label label3"><span class="ico"></span></div><!-- 95% 이하일때 : a-label에 클래스 on 추가 -->
+                                            <div class="a-label label4"><span class="ico"></span></div><!-- 95% 초과일때 : a-label에 클래스 on 추가 -->
+                                            <!-- (예시) 93%일때 : label1, label2, label3 모두 클래스 on 추가 -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="asv-wrap lr-asv-wrap">
+                                    <div class="speedometer-wrap">
+                                        <div class="speedometerBox">
+                                            <div class="gaugeBox noAni" data-sw-m="8" data-sw-t="8" data-sw-pc="8"><!-- 애니메이션 없게 할때 : .noAni 추가 -->
+                                                <canvas id="mySpeed2"></canvas>
+                                                <div class="gaugeArr"></div>
+                                                <div class="txtBox">
+                                                    <p class="tit">속도</p>
+                                                    <p class="txt">보통</p>
+                                                    <!-- p.txt의 텍스트 정리
+                                                        0 ~ 66.6% 이하일 때 : 미달
+                                                        66.% 초과 ~ 80% 이하일 때 : 보통
+                                                        80% 초과 ~ 95% 이하일 때 : 높음
+                                                        95% 초과 ~ 100% : 완벽
+                                                     -->
+                                                </div>
+                                            </div>
+                                            <script>
+                                                // 퍼블확인용 
+                                                $(document).ready(function(){
+                                                    speedometer("mySpeed2", 0.3, '#4d6f96', '#ff6e5f'); //accuracy-bar 에 들어가는 width %와 확인 필수 
+                                                });
+                                                // 개발용 : 화면 로딩 후 && 데이터 들어간 후에 실행
+                                                    //speedometer("mySpeed", 0.3, '#4d6f96', '#ff6e5f');
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //asv-wrap -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		
+			<div class="container">
+				<div class="inner">
+					<div class="learningBox">
+						<div class="leaningCont">
+							<div class="learning-wrap">
+								<div class="learning_head">
+									<div class="mathQuest-wrap">
+										<p class="tit">Q14. 다음 식을 계산하시오. <br>텍스트가 길어질 경우</p>
+									</div>
+                                    <!-- 220308 버튼 영역 추가 -->
+                                    <div class="btn_wrap scratch">
+                                        <div class="pos_rgt">
+                                            <button type="button" class="bg_ple wht pen on"></button>
+                                            <button type="button" class="bg_ple wht eraser off"></button>
+                                            <button type="button" class="bg_ple wht prev off"></button>
+                                            <button type="button" class="bg_ple wht next off"></button>
+                                        </div>
+                                    </div>
+                                    <!-- //220308 버튼 영역 추가 -->
+                                    <button type="button" class="btn-learning-del on">삭제</button> <!-- 220308 기존 액티브에서 기능 변경 on 클래스 추가 / off 삭제하면 활성화 -->
+                                    <!-- 220308 기존 아이콘에서 배경이 변경 되면서 grn클래스명 추가 -->
+                                    <!-- <button type="button" class="note_btn grn">연습장</button> -->
+                                    <!-- //220308 기존 아이콘에서 배경이 변경 되면서 grn클래스명 추가 -->
+
+
+                                    <!-- 220427 a/b test 버튼 수정 S -->
+                                    <a class="btn_ab_test" href="#none">
+                                        <span class="tap">TAP</span>
+                                        <span>Notepad</span>
+                                    </a>
+                                    
+                                    <a class="btn_ab_test" href="#none">
+                                        <span class="reset">Reset</span>
+                                        <span>Notepad</span>
+                                    </a>
+                                    <!-- //220427 a/b test 버튼 수정 E -->
+
+
+								</div><!-- //learning_head -->
+								<div class="learning_body">
+									<div class="mathExp-wrap">
+										<div class="mathExp-inner">
+											<div class="mathExt">
+												<!-- 수식영역 -->
+												<img src="static/images/tmp/ex_learning_mathExp.png" alt=""><!-- 퍼블 확인용 임시 이미지입니다. 개발시 꼭 삭제해주세요. -->
+    									        <div class="blocking_layer"></div><!--유저가 mathjax 문항 영역 클릭 못하게 막는 투명 레이어-->
+    									        <div class="learning_picture"></div><!-- 그림판영역 : 비활성화 될때 클래스 unactive 추가 -->
+											</div>
+										</div>
+									</div>
+								</div><!-- //learning_body -->
+							</div>
+						</div>
+
+						<div class="learningTail multiple"><!-- 2022.07.29 객관식 문항 보여질 경우 addClass multiple -->
+							<div class="onlyButtonBox">
+								<button class="btn btn-green btn-inputAnswer">정답 입력</button>
+                                <!-- 하늘색 테마일경우 -->
+<!--								<button class="btn btn-blue btn-inputAnswer">정답 입력</button>-->
+							</div>
+                            
+                           <!-- 2022.07.29 객관식 문항 시작 -->
+                           <div class="multiple-choice-wrap">
+                                <p class="title">정답을 선택해 주세요.</p><!-- 모바일의 경우에는 텍스트 숨겨짐 / css로 조절 -->
+                                <div class="answer-box">
+                                    <ul class="list">
+                                        <li>    
+                                            <input type="radio" name="multi_answer" id="answer1" value="" checked>
+                                            <label for="answer1" class="list-item"><span>선택</span></label>
+                                            <!-- 답 수식 영역 -->
+                                            <div class="math-answer">
+                                                <img src="static/images/common/multi_answer_sample.svg">
+                                            </div>
+                                            <!--// 답 수식 영역 -->
+                                        </li>
+                                        <li>    
+                                            <input type="radio" name="multi_answer" id="answer2" value="">
+                                            <label for="answer2" class="list-item"><span>선택</span></label>
+                                            <!-- 답 수식 영역 -->
+                                            <div class="math-answer">
+                                                <img src="static/images/common/multi_answer_sample.svg">
+                                            </div>
+                                            <!--// 답 수식 영역 -->
+                                        </li>
+                                        <li>    
+                                            <input type="radio" name="multi_answer" id="answer3" value="">
+                                            <label for="answer3" class="list-item"><span>선택</span></label>
+                                            <!-- 답 수식 영역 -->
+                                            <div class="math-answer">
+                                                <img src="static/images/common/multi_answer_sample.svg">
+                                            </div>
+                                            <!--// 답 수식 영역 -->
+                                        </li>
+                                        <li>    
+                                            <input type="radio" name="multi_answer" id="answer4" value="">
+                                            <label for="answer4" class="list-item"><span>선택</span></label>
+                                            <!-- 답 수식 영역 -->
+                                            <div class="math-answer">
+                                                <img src="static/images/common/multi_answer_sample.svg">
+                                            </div>
+                                            <!--// 답 수식 영역 -->
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-area">
+                                    <button class="btn btn-green" type="button">다음문제</button>
+                                </div>
+                            </div>
+                            <!--// 2022.07.29 객관식 문항 시작 -->
+
+                            <!-- 2022.07.12 : 2957) 개념확인 버튼 -->
+                            <div class="ask_area right">
+                                <a href="#null" class="notion">개념확인</a>
+                            </div>
+                            <!--// 2022.07.12 : 2957) 개념확인 버튼 -->
+
+                            <!-- 220428 A/B test 추가 S -->
+                            <div class="ask_area pos">    
+                                <button type="button" class="note_btn2 blue"> <span class="blind">연습장</span></button>
+                            </div>
+                            <!-- 220428 A/B test 추가 E -->
+                            <!--//진단테스트에서 노출되는 버튼-->
+							
+						</div>
+					</div>
+					<!-- //learningBox -->
+				</div>
+				
+				<!--연습장 안내-->
+				<div class="note_guide">
+				    <div class="txt_box">빈 공간은 연습장! 손가락이나 펜으로 쓸 수 있어.</div>
+				<!--//연습장 안내-->
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		
+	</div>
+</div>
+
+<!-- 퍼블단 확인용 스크립트입니다. 개발시 참조해서 "활용"해주세요. -->
+<script>
+	//학습하기에서 보기버튼 눌렀을때
+	$(document).on('click', '.btn-viewopen', function(){
+	  $(this).toggleClass('on');
+	  $(this).next('.viewopen-detail').toggleClass('on');
+	});
+
+	// 정답입력 버튼 눌렀을때 키패드로 전환
+	$(document).on('click', '.btn-inputAnswer', function(){
+		$('.learning_picture').addClass('unactive');
+		$('.onlyButtonBox').removeClass('active');
+		$('.keypadBox').addClass('active');
+		$('.v-mob .learningTail').addClass('on');
+		$('.learning_body').addClass('with_key');
+        if($('.v-mob .middle').is(':visible')){ //모바일에서 중등 키패드 노출시 다른 키패드보다 높이가 높으므로 learning_body에 클래스를 추가로 붙여 css에서 제어함  
+            $('.v-mob .learning_body.with_key').addClass('with_middle_key');
+        };
+        
+        //키패드의 화살표 버튼의 툴팁 페이드아웃
+        setTimeout( "$('.js_fadeout').addClass('disappear')" , 2000 );
+	});
+	$(document).on('click', '.btn-close-pad', function(){
+		$('.learning_picture').removeClass('unactive');
+		$('.onlyButtonBox').addClass('active');
+		$('.keypadBox').removeClass('active');
+		$('.v-tab .learningTail').removeClass('on');
+		$('.learning_body').removeClass('with_key');
+	});
+
+	// 필기패드로 전환
+	$(document).on('click', '.btn-chg-note', function(){
+	  var _target = $('.keypad_gm.notes').closest('.keypad_wrap');
+	  var _thisPad = $(this).closest('.keypad_wrap');
+	  $('.keypad_wrap').not(_target).css('display', 'none');
+	  _target.css('display', 'block');
+	  //필기패드에서 원래패드로 전환
+	  $('.btn-chg-num').on('click', function(){
+	  	$('.keypad_wrap').not(_thisPad).css('display', 'none');
+	  	_thisPad.css('display', 'block');
+	  });
+	});
+
+	//퍼블단의 화면 확인용 - 키패드 안의 분수 input의 size값이 value를 변화시킬때마다 조절되도록 설정
+	$(document).on('keydown', '.form-control', function(e){
+		var _inputLen = $(this).val().length;
+		var _key = event.which || event.keyCode || event.charCode;
+		if( _key == 8 || _key == 46){
+			_inputLen = (_inputLen < 2) ? 1 : _inputLen-1;
+		}else{
+			_inputLen = (_inputLen > 3) ? 4 : _inputLen+1;
+		}
+		$(this).attr('size', _inputLen);
+	});
+    
+    $(function(){
+        var _mathWrapHeight = $('.mathExp-wrap').height();
+        $('.note_guide').css('height', _mathWrapHeight+'px'); //연습장 안내 레이어가 보이기직전에 한번만
+
+        //연습장 안내 레이어 페이드아웃
+        setTimeout( "$('.note_guide').addClass('disappear')" , 2000 );
+        
+        //연습장 안내 레이어의 높이값 조정
+        var $tit = $('.mathQuest-wrap .tit'),
+            tit_h = $tit.innerHeight();
+        if(tit_h > 32){
+            $('.note_guide').addClass('short');
+        };
+        
+        //연습장 안내 레이어 클릭하거나 '정답입력' 버튼 클릭시 안내 레이어 사라짐
+        $('.note_guide, .btn-inputAnswer').on('click', function(){
+            $('.note_guide').hide();
+        });
+    });
+</script>
+
+<!-- 퍼블단에서 화면확인용 스크립트입니다. 개발시 "삭제"해주세요. -->
+<script>
+	// $('.btn-learning-del').on('click', function(){
+	//   $(this).remove();
+	// });
+	$('.tmpBtn button').on('click', function(){
+	  _target = $(this).attr('data-target');
+	  $('.keypad_wrap').not($(_target)).css('display', 'none');
+	  $(_target).css('display', 'block');
+	});
+
+
+	var ajaxOtp = {
+	  url : 'ex_calc.html',
+	  async : true,
+	  dataType : "html",
+	  chache : false
+	}
+	$.ajax(ajaxOtp).done(function(data) {
+	  $('.mathExt').children().remove();
+	  $('.mathExt').html(data);
+      $('.mathExt').append('<div class="learning_picture"></div>');
+	}).fail(function() {
+	  //console.log("error");
+	}).always(function() { });
+
+	// 클릭한 네모에만 클래스 focusedInput가 추가되도록 설정
+	// 입력이 모두 끝나면 클래스 focusedInput 삭제되도록 설정해주세요.
+	$(document).on('click', '.mjx-box', function(){
+		if($(this).closest('.mjx-box').length < 1 ){
+			$('.mjx-box').not($(this)).removeClass('focusedInput');
+			$(this).addClass('focusedInput');
+		}
+	});
+
+
+</script>
+
+</body>
+</html>

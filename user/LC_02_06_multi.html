@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>AI연산</title>
+
+    <script src="static/js/jquery.3.3.1.min.js"></script>
+	<script src="static/js/ui.js"></script>
+	<link href="static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 
+	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
+	1. mob : v-mob
+	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
+	3. pc : v-pc
+ -->
+
+<div class="wrap">
+	<div class="wrap-inner">
+		<div class="layout-def layout-learning lc-test">
+			<div class="header">
+				<div class="inner">
+					<div class="headerBox">
+						<div class="headerBox_head">
+							<h1 class="tit left">소주제명</h1>
+							<button class="btn-close-wrap">닫기</button>
+						</div>
+						<div class="headerBox_body">
+							<div class="barBox">
+								<div class="bar2 bar_def"><!-- 첫번째 이후로 클래스 bar_def 삭제 -->
+									<!-- 1. 50% 미만 -->
+									<div class="upper">진단 정확도 10%</div>
+									<!-- 2. 50% ~ 70% 미만 -->
+									<!-- <div class="upper">진단 정확도 40% 잘하고 있어!</div> -->
+									<!-- 3. 70% ~ 90% 미만 -->
+									<!-- <div class="upper">진단 정확도 80% 조금만 더 힘내!</div> -->
+									<!-- 4. 90% 이상 -->
+									<!-- <div class="upper">진단 정확도 90% 거의 다 됐어. 마지막이야!</div> -->
+									<div class="lower">
+										<div class="bar_bg">
+											<div class="bar" style="width: 10%"><!--width 값에 따라 길이 달라짐--></div>
+										</div>
+										<div class="time">08:31</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="inner">
+					<div class="learningBox">
+						<div class="leaningCont">
+							<div class="learning-wrap">
+								<div class="learning_head">
+									<div class="mathQuest-wrap">
+										<p class="tit">Q14. 다음 식을 계산하시오. <br>텍스트가 길어질 경우</p>
+										<!-- 보기가 있는 경우 영역 시작 -->
+										<div class="btn-viewopen-wrap">
+											<div class="viewopen-toast toast-pop">
+												<div class="viewopen-toast-inner">
+													<p>
+														여기를 누르면<br>보기가 나와
+													</p>
+												</div>
+											</div>
+											<button class="btn-viewopen">보기</button>
+											<div class="viewopen-detail">
+												<div class="viewopen-detail-inner">
+													<!-- 보기의 상세내용 영역 -->
+													<img src="static/images/tmp/ex_learning_viewdetail.png" alt=""><!-- 퍼블 확인용 임시 이미지입니다. 개발시 "꼭" 삭제해주세요. -->
+												</div>
+											</div>
+										</div>
+										<!-- //보기가 있는 경우 영역 끝 -->
+									</div>
+								</div><!-- //learning_head -->
+								<div class="learning_body">
+									<div class="learning_picture"></div><!-- 그림판영역 : 비활성화 될때 클래스 unactive 추가 -->
+									<div class="mathExp-wrap">
+										<div class="mathExp-inner">
+											<div class="mathExt">
+												<!-- 수식영역 -->
+												<img src="static/images/tmp/ex_learning_mathExp.png" alt=""><!-- 퍼블 확인용 임시 이미지입니다. 개발시 꼭 삭제해주세요. -->
+											</div>
+										</div>
+									</div>
+									<button class="btn-learning-del active">삭제</button><!-- 그림판에 낙서하는 순간 클래스 active 추가!   -->
+								</div><!-- //learning_body -->
+							</div>
+						</div>
+
+						<div class="learningTail multiple"><!-- 2022.07.29 객관식 문항 보여질 경우 addClass multiple -->
+							<div class="onlyButtonBox">
+								<button class="btn btn-blue btn-inputAnswer">정답입력</button>
+							</div>
+
+                            <!-- 2022.07.29 객관식 문항 시작 -->
+                            <div class="multiple-choice-wrap">
+                                <p class="title">정답을 선택해 주세요.</p><!-- 모바일의 경우에는 텍스트 숨겨짐 / css로 조절 -->
+                                <div class="answer-box">
+                                    <ul class="list">
+                                        <li>    
+											<input type="radio" name="multi_answer" id="answer1" value="" checked>
+											<label for="answer1" class="list-item"><span>선택</span></label>
+											<!-- 답 수식 영역 -->
+											<div class="math-answer">
+												<img src="static/images/common/multi_answer_sample.svg">
+											</div>
+											<!--// 답 수식 영역 -->
+                                        </li>
+                                        <li>    
+                                            <input type="radio" name="multi_answer" id="answer2" value="">
+											<label for="answer2" class="list-item"><span>선택</span></label>
+											<!-- 답 수식 영역 -->
+											<div class="math-answer">
+												<img src="static/images/common/multi_answer_sample.svg">
+											</div>
+											<!--// 답 수식 영역 -->
+                                        </li>
+                                        <li>    
+                                            <input type="radio" name="multi_answer" id="answer3" value="">
+											<label for="answer3" class="list-item"><span>선택</span></label>
+											<!-- 답 수식 영역 -->
+											<div class="math-answer">
+												<img src="static/images/common/multi_answer_sample.svg">
+											</div>
+											<!--// 답 수식 영역 -->
+                                        </li>
+										<li>    
+                                            <input type="radio" name="multi_answer" id="answer4" value="">
+											<label for="answer4" class="list-item"><span>선택</span></label>
+											<!-- 답 수식 영역 -->
+											<div class="math-answer">
+												<img src="static/images/common/multi_answer_sample.svg">
+											</div>
+											<!--// 답 수식 영역 -->
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btn-area">
+                                    <button class="btn btn-green" type="button">다음문제</button>
+                                </div>
+                            </div>
+                            <!--// 2022.07.29 객관식 문항 시작 -->
+							
+                            <!--진단테스트에서 노출되는 버튼-->
+                            <div class="ask_area">
+                                <button class="ask">잘 모르겠어요</button>
+                            </div>
+                            <!--//진단테스트에서 노출되는 버튼-->
+
+						</div>
+
+					</div>
+					<!-- //learningBox -->
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+		
+	</div>
+</div>
+
+
+<!-- 퍼블단 확인용 스크립트입니다. 개발시 참조해서 "활용"해주세요. -->
+<script>
+	//학습하기에서 보기버튼 눌렀을때
+	$(document).on('click', '.btn-viewopen', function(){
+	  $(this).toggleClass('on');
+	  $(this).next('.viewopen-detail').toggleClass('on');
+	});
+
+	// 정답입력 버튼 눌렀을때 키패드로 전환
+	$(document).on('click', '.btn-inputAnswer', function(){
+		$('.learning_picture').addClass('unactive');
+		$('.onlyButtonBox').removeClass('active');
+		$('.keypadBox').addClass('active');
+		$('.v-tab .learningTail').addClass('on');
+	});
+	$(document).on('click', '.btn-close-pad', function(){
+		$('.learning_picture').removeClass('unactive');
+		$('.onlyButtonBox').addClass('active');
+		$('.keypadBox').removeClass('active');
+		$('.v-tab .learningTail').removeClass('on');
+	});
+
+	// 필기패드로 전환
+	$(document).on('click', '.btn-chg-note', function(){
+	  var _target = $('.keypad.notes').closest('.keypad_wrap');
+	  var _thisPad = $(this).closest('.keypad_wrap');
+	  $('.keypad_wrap').not(_target).css('display', 'none');
+	  _target.css('display', 'block');
+	  //필기패드에서 원래패드로 전환
+	  $('.btn-chg-num').on('click', function(){
+	  	$('.keypad_wrap').not(_thisPad).css('display', 'none');
+	  	_thisPad.css('display', 'block');
+	  });
+	});
+
+	//퍼블단의 화면 확인용 - 키패드 안의 분수 input의 size값이 value를 변화시킬때마다 조절되도록 설정
+	$(document).on('keydown', '.form-control', function(e){
+		var _inputLen = $(this).val().length;
+		_inputLen = (_inputLen > 3) ? 4 : _inputLen+1;
+		$(this).attr('size', _inputLen);
+	});
+</script>
+
+<!-- 퍼블단에서 화면확인용 스크립트입니다. 개발시 "삭제"해주세요. -->
+<script>
+	$('.btn-learning-del').on('click', function(){
+	  $(this).remove();
+	});
+	$('.tmpBtn button').on('click', function(){
+	  _target = $(this).attr('data-target');
+	  $('.keypad_wrap').not($(_target)).css('display', 'none');
+	  $(_target).css('display', 'block');
+	});
+</script>
+
+</body>
+</html>
