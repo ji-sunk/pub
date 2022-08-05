@@ -15,8 +15,6 @@
 	<link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
 	<!-- <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/c ss/glightbox.min.css" rel="stylesheet"> -->
 	<link href="static/css/test_js.css" rel="stylesheet">
-	<!-- <link href="static/css/switch.css" rel="stylesheet"> -->
-	<link href="static/css/active.css" rel="stylesheet">
 	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet"> -->
     <!-- js -->
@@ -28,55 +26,6 @@
     <!-- <script src="https://code.jquery.com/jquery-3.1.0.js"></script> -->
 </head>
 <body>
-<!-- 
-<div class="wrap-inner">
-    <header>
-        <div class="head_type1">
-            <a href="#none"><h1 class="logo">logogogogo</h1></a>
-            <button type="button">
-                <span class="blind">메뉴가기</span>
-            </button>
-        </div>
-        <div class="overlay">
-            <div class="parallax">
-                <h1> timeline<span>Parallax Scrolling</span></h1>
-                <div class="one"></div>
-                <div class="two"></div>
-                <div class="three"></div>
-                <div class="four"></div>
-                <div class="five"></div>
-            </div>
-        </div>
-    </header>
-
-    <section id="scrollarrow" class="demo">
-        <a href="#section08"><span></span><span></span><span></span>Scroll</a>
-    </section>
-    <main>
-        <div id="section08" class="container">
-            <p>Sapiente nihil quidem tempora unde nobis eum corrupti veniam perferendis numquam, minima officia beatae quisquam quas cumque voluptatem facilis! Tenetur, praesentium corporis rerum repellendus vero temporibus quia voluptates corrupti, aliquam.</p><a href="https://www.w3schools.com/cssref/pr_mix-blend-mode.asp" target="blank">CSS mix-blend-mode</a>
-            <pre>dfdffffff}</pre>
-            <p>Sint sequi consequuntur eaque, harum, est tempora dolorem ullam perferendis quia laudantium porro magni necessitatibus sit dicta quidem. Sint autem quidem recusandae, ipsam, dolorem saepe blanditiis dolor. Aliquid, voluptate, at.</p>
-            <p>Tempore placeat veritatis ad excepturi, quasi, consequatur fuga. Corporis suscipit at aut quaerat nostrum maxime amet ipsum illo qui. Voluptate aperiam nostrum natus voluptatem modi, hic aliquid tempora quisquam, itaque.</p>
-        </div>
-    </main>
-    <section>
-        <div id="card">
-            
-        </div>
-    </section>
-    <div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-    </div>
-
-    <footer>
-        <p>Copyright &copy 2022 by <a href="https://twitter.com/andrejsharapov" target="_blank">@andrejsharapov</a></p>
-    </footer>
-
-</div> -->
-
 <div class="wrapper">
     <!-- header -->
     <header class="header">
@@ -97,7 +46,7 @@
         </div>
       </div>
       <div>
-        <input id="s2" type="checkbox" class="switch" checked>
+        <input id="s2" type="checkbox" class="switch mode-switch" checked>
         <label for="s2">Dark</label>
       </div>
     </header>
@@ -128,8 +77,8 @@
             <a href="#" class="btn">VIEW OUR PROJECTS</a>
           </div>
         </div>
-        <div class="domino__box domino__box--image bg lazy" data-bg="url(https://baillieogrady.com/landing/landings/img/domino_1.jpg)" data-aos="fade-left"
-          data-aos-delay="500"></div>
+        <!-- <div class="domino__box domino__box--image bg lazy" data-bg="url(https://baillieogrady.com/landing/landings/img/domino_1.jpg)" data-aos="fade-left"
+          data-aos-delay="500"></div> -->
       </section>
       <!-- /domino -->
       <!-- heading text -->
@@ -257,8 +206,8 @@
             <a href="#" class="btn">VIEW OUR PROJECTS</a>
           </div>
         </div>
-        <div class="domino__box domino__box--image bg lazy" data-bg="url(https://baillieogrady.com/landing/landings/img/domino_2.jpg)" data-aos="fade-left"
-          data-aos-delay="500"></div>
+        <!-- <div class="domino__box domino__box--image bg lazy" data-bg="url(https://baillieogrady.com/landing/landings/img/domino_2.jpg)" data-aos="fade-left"
+          data-aos-delay="500"></div> -->
       </section>
       <!-- /domino -->
       <!-- domino -->
@@ -274,8 +223,8 @@
             <a href="#" class="btn">VIEW OUR PROJECTS</a>
           </div>
         </div>
-        <div class="domino__box domino__box--image bg lazy" data-bg="url(https://baillieogrady.com/landing/landings/img/domino_3.jpg)" data-aos="fade-right"
-          data-aos-delay="500"></div>
+        <!-- <div class="domino__box domino__box--image bg lazy" data-bg="url(https://baillieogrady.com/landing/landings/img/domino_3.jpg)" data-aos="fade-right"
+          data-aos-delay="500"></div> -->
       </section>
       <!-- /domino -->
       <!-- domino -->
@@ -291,8 +240,8 @@
             <a href="#" class="btn">VIEW OUR PROJECTS</a>
           </div>
         </div>
-        <div class="domino__box domino__box--image bg lazy" data-bg="url(https://baillieogrady.com/landing/landings/img/domino_4.jpg)" data-aos="fade-left"
-          data-aos-delay="500"></div>
+        <!-- <div class="domino__box domino__box--image bg lazy" data-bg="url(https://baillieogrady.com/landing/landings/img/domino_4.jpg)" data-aos="fade-left"
+          data-aos-delay="500"></div> -->
       </section>
       <!-- /domino -->
     </main>
@@ -304,129 +253,73 @@
   </div>
 
 <script>
-    (function () {
-
-// globals
-const burger = document.querySelector('.burger'),
-  header__nav = document.querySelector('.header__nav'),
-  header = document.querySelector('.header');
-
-// burger
-burger.addEventListener('click', function () {
-  this.classList.toggle('active');
-  header__nav.classList.toggle('open');
-})
-
-// header 
-window.onscroll = function () {
-  if (
-    document.body.scrollTop >= 200 ||
-    document.documentElement.scrollTop >= 200
-  ) {
-    header.classList.add('header--scroll')
-  } else {
-    header.classList.remove('header--scroll')
-  }
-}
-
-// video
-const lightbox = GLightbox({
-  selector: "glightbox"
-})
-
-// AOS
-AOS.init({
-  duration: 1000,
-  once: true
-})
-
-// lazy load images
-var lazyLoadInstance = new LazyLoad({
-  elements_selector: ".lazy"
-})
-
-})()
-</script>
-
-
-<!-- <script>
-    // 스크롤 버튼
-    $(function() {
-        $('a[href*=#]').on('click', function(e) {
-            e.preventDefault();
-            $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-        });
+  document.addEventListener('DOMContentLoaded', function () {
+      var modeSwitch = document.querySelector('.mode-switch');
+    
+      modeSwitch.addEventListener('click', function () {                     
+      document.documentElement.classList.toggle('dark');
+        modeSwitch.classList.toggle('active');
+      });
     });
 
-    //parallax header
-    $(window).scroll(function() {
-    const 
-        a = $(this).scrollTop(),
-        b = 800;
-    $("h1").css({
-        backgroundPosition: "center " + a / 2 + "px" 
-    });
-    $(".parallax, #scrollarrow").css({ 
-        top: a / 1.6 + "px", 
-        opacity: 1 - a / b
-    });
-    });
+  // document.addEventListener('DOMContentLoaded', function () {
+  //   var modeSwitch = document.querySelector('.mode-switch');
+  
+  //   modeSwitch.addEventListener('click', function () {                     
+  //   document.documentElement.classList.toggle('dark');
+  //     modeSwitch.classList.toggle('active');
+  //   });
+  // });
 
-    // parallax scrolling
+  // var check = $(".mode-switch");
+  // check.click(function(){
+  //   $(document).addClass(".dark").toggle();
+  // });
+</script> 
 
-    document.addEventListener("scroll", () => {
-    const 
-        top = window.pageYOffset,
-        one = document.querySelector(".one"),
-        two = document.querySelector(".two"),
-        three = document.querySelector(".three"),
-        four = document.querySelector(".four"),
-        five = document.querySelector(".five");
+<script>
+  (function () {
+    // globals
+    const burger = document.querySelector('.burger'),
+      header__nav = document.querySelector('.header__nav'),
+      header = document.querySelector('.header');
 
-    one.style.bottom = -(top * 0.1) + "px";
-    two.style.bottom = -(top * 0.2) + "px";
-    three.style.bottom = -(top * 0.3) + "px";
-    four.style.bottom = -(top * 0.4) + "px";
-    five.style.bottom = -(top * 0.5) + "px";
-    });
+    // burger
+    burger.addEventListener('click', function () {
+      this.classList.toggle('active');
+      header__nav.classList.toggle('open');
+    })
 
-
-    var _tablet = (/tablet|ipad|sm-t/i.test(navigator.userAgent.toLowerCase()));
-    var _mobile = (/android|iphone|ipod/i.test(navigator.userAgent.toLowerCase()));
-
-    function chkDevice(){
-        $('.wrap-inner').removeClass('v-mob').removeClass('v-tab').removeClass('v-pc')
-        if(_mobile){
-            $(".wrap-inner").addClass("v-mob");
-        }else if(_tablet){
-            $(".wrap-inner").addClass("v-tab");
-        }else{
-            $(".wrap-inner").addClass("v-pc");
-        }
+    // header 
+    window.onscroll = function () {
+      if (
+        document.body.scrollTop >= 200 ||
+        document.documentElement.scrollTop >= 200
+      ) {
+        header.classList.add('header--scroll')
+      } else {
+        header.classList.remove('header--scroll')
+      }
     }
 
+    // video
+    const lightbox = GLightbox({
+      selector: "glightbox"
+    })
 
-</script> -->
+    // AOS
+    AOS.init({
+      duration: 1000,
+      once: true
+    })
 
-<!-- <script>
-    var swiper = new Swiper(".mySwiper", {
-	navigation: {
-		nextEl: ".swiper-next-button",
-		prevEl: ".swiper-prev-button"
-	},
-	effect: "fade",
-	loop: "infinite",
-	pagination: {
-          el: ".swiper-pagination",
-          type: "fraction",
-        }
-});
+    // lazy load images
+    var lazyLoadInstance = new LazyLoad({
+      elements_selector: ".lazy"
+    })
 
-swiper.on('slideChange', function(sld) {
-	document.body.setAttribute('data-sld', sld.realIndex);
-})
-</script> -->
-
+    })()
+</script>
 
 </body>
 </html>
