@@ -5084,8 +5084,8 @@ form.lr{padding-bottom: 70px;}
     .v-mob .tutorial-tip.step3 .tip-inner:before{bottom:-15px; right:20px; border-width:20px 0 20px 21px;}
     .v-mob .tutorial-tip .tip-inner > .tip-txt{margin-bottom:10px}
     /* 위치 */
-    .v-mob .tutorial-tip{top:185px;}
-    .v-mob .tutorial-tip.step1{top:300px}
+    .v-mob .tutorial-tip{/* top:185px; */ top:125px;}
+    /* .v-mob .tutorial-tip.step1{top:300px} */
 }
 
 .gl_main_theme_wrap.tutorial ~ .bottom_wrap{display:none}
@@ -5622,11 +5622,13 @@ form.lr{padding-bottom: 70px;}
 .email_pop .custom-radio-wrap label{padding-left:36px; line-height:36px; background-size:36px 36px; font-size:11px; color:#323c46}
 .email_pop .custom-radio-wrap input:checked + label {background-size:36px 36px; font-size:11px; color:#323c46}
 
-
 /* 워크시트 */
 .worksheet {width:100%;}
-.worksheet h2 {font-size:15px; font-weight: bold;}
-.worksheet div span {box-sizing: content-box;}
+/* .worksheet h2 {font-size:15px; font-weight: bold;}
+.worksheet div span {box-sizing: content-box;} */
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+.worksheet section :where (h2) {background-color:#0091e2; font-size:50px !important}
+}
 .worksheet .flx_area {display:flex;}
 .worksheet .header {height:172px; color:#fff; background-color: #00c3e1;}
 .worksheet .header_wrap {height:172px; background: url(../images/common/img_new_cha.png) no-repeat left 0% bottom -6px / cover; background-size:116px;}
