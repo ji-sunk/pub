@@ -10,12 +10,40 @@
 	<meta name="google" value="notranslate">
 	<title>test</title>
     <!-- css -->
-	<link href="static/css/switch.css" rel="stylesheet">
+    <!-- <link href="static/css/style.css" rel="stylesheet"> -->
+	<link href="static/css/main_js.css" rel="stylesheet">
+	<!-- <link href="static/css/switch.css" rel="stylesheet"> -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <!-- js -->
+    <!-- <script src="static/js/ui.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.1.0.js"></script> -->
 </head>
 <body>
 
-
 <div class="wrap-inner">
+    <header>
+        <div class="head_type1">
+            <a href="#none"><h1 class="logo">logogogogo</h1></a>
+            <button type="button">
+                <span class="blind">메뉴가기</span>
+            </button>
+        </div>
+        <div class="overlay">
+            <div class="parallax">
+                <h1> timeline<span>Parallax Scrolling</span></h1>
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+                <div class="five"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="scrollarrow" class="demo">
+        <a href="#section08"><span></span><span></span><span></span>Scroll</a>
+    </section>
     <main>
         <div id="section08" class="container">
             <p>Sapiente nihil quidem tempora unde nobis eum corrupti veniam perferendis numquam, minima officia beatae quisquam quas cumque voluptatem facilis! Tenetur, praesentium corporis rerum repellendus vero temporibus quia voluptates corrupti, aliquam.</p><a href="https://www.w3schools.com/cssref/pr_mix-blend-mode.asp" target="blank">CSS mix-blend-mode</a>
@@ -35,118 +63,13 @@
         <div class="wave"></div>
     </div>
 
-
-    <ul>
-        <li>
-          <input id="c1" type="checkbox">
-          <label for="c1">Checkbox</label>
-        </li>
-        <li>
-          <input id="c2" type="checkbox" checked>
-          <label for="c2">Checkbox</label>
-        </li>
-        <li>
-          <input id="r1" type="radio" name="radio" value="1">
-          <label for="r1">Radio</label>
-        </li>
-        <li>
-          <input id="r2" type="radio" name="radio" value="2" checked>
-          <label for="r2">Radio</label>
-        </li>
-        <li>
-          <input id="s1" type="checkbox" class="switch">
-          <label for="s1">Switch</label>
-        </li>
-        <li>
-          <input id="s2" type="checkbox" class="switch" checked>
-          <label for="s2">Switch</label>
-        </li>
-      </ul>
-      
-      <ul>
-        <li>
-          <input id="c1d" type="checkbox" disabled>
-          <label for="c1d">Checkbox</label>
-        </li>
-        <li>
-          <input id="c2d" type="checkbox" checked disabled>
-          <label for="c2d">Checkbox</label>
-        </li>
-        <li>
-          <input id="r1d" type="radio" name="radiod" value="1" disabled>
-          <label for="r1d">Radio</label>
-        </li>
-        <li>
-          <input id="r2d" type="radio" name="radiod" value="2" checked disabled>
-          <label for="r2d">Radio</label>
-        </li>
-        <li>
-          <input id="s1d" type="checkbox" class="switch" disabled>
-          <label for="s1d">Switch</label>
-        </li>
-        <li>
-          <input id="s2d" type="checkbox" class="switch" checked disabled>
-          <label for="s2d">Switch</label>
-        </li>
-    </ul>
-
-    
-
     <footer>
         <p>Copyright &copy 2022 by <a href="https://twitter.com/andrejsharapov" target="_blank">@andrejsharapov</a></p>
     </footer>
 
 </div>
 
-
-<!-- 
 <script>
-    (function () {
-
-// globals
-const burger = document.querySelector('.burger'),
-  header__nav = document.querySelector('.header__nav'),
-  header = document.querySelector('.header');
-
-// burger
-burger.addEventListener('click', function () {
-  this.classList.toggle('active');
-  header__nav.classList.toggle('open');
-})
-
-// header 
-window.onscroll = function () {
-  if (
-    document.body.scrollTop >= 200 ||
-    document.documentElement.scrollTop >= 200
-  ) {
-    header.classList.add('header--scroll')
-  } else {
-    header.classList.remove('header--scroll')
-  }
-}
-
-// video
-const lightbox = GLightbox({
-  selector: "glightbox"
-})
-
-// AOS
-AOS.init({
-  duration: 1000,
-  once: true
-})
-
-// lazy load images
-var lazyLoadInstance = new LazyLoad({
-  elements_selector: ".lazy"
-})
-
-})()
-</script> -->
-
-
-<!-- <script>
     // 스크롤 버튼
     $(function() {
         $('a[href*=#]').on('click', function(e) {
@@ -203,9 +126,9 @@ var lazyLoadInstance = new LazyLoad({
     }
 
 
-</script> -->
+</script>
 
-<!-- <script>
+<script>
     var swiper = new Swiper(".mySwiper", {
 	navigation: {
 		nextEl: ".swiper-next-button",
@@ -222,7 +145,7 @@ var lazyLoadInstance = new LazyLoad({
 swiper.on('slideChange', function(sld) {
 	document.body.setAttribute('data-sld', sld.realIndex);
 })
-</script> -->
+</script>
 
 
 </body>

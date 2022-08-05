@@ -15,6 +15,7 @@
 	<link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
 	<!-- <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/c ss/glightbox.min.css" rel="stylesheet"> -->
 	<link href="static/css/test_js.css" rel="stylesheet">
+	<!-- <link href="static/css/switch.css" rel="stylesheet"> -->
 	<link href="static/css/active.css" rel="stylesheet">
 	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -27,13 +28,6 @@
     <!-- <script src="https://code.jquery.com/jquery-3.1.0.js"></script> -->
 </head>
 <body>
-
-<!-- 
-	**** 접속했을때 wrap-inner에 추가되는 클래스 정리 ****
-	1. mob : v-mob
-	2. 태블릿 : v-tab ( 미디어쿼리 -  세로 : 800까지, 가로 : 801부터 )
-	3. pc : v-pc
- -->
 <!-- 
 <div class="wrap-inner">
     <header>
@@ -101,6 +95,10 @@
             <div class="burger__line"></div>
           </div>
         </div>
+      </div>
+      <div>
+        <input id="s2" type="checkbox" class="switch" checked>
+        <label for="s2">Dark</label>
       </div>
     </header>
     <!-- /header -->
