@@ -19,14 +19,23 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet"> -->
     <!-- js -->
     <!-- <script src="static/js/ui.js"></script> -->
-    <script src="static/js/jquery.3.3.1.min.js"></script>
+    <!-- <script src="static/js/jquery.3.3.1.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.1.0.js"></script> -->
+    <!-- 물결 그래픽 js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <!-- //물결 그래픽 js -->
 </head>
 <body>
+
+ 
+  
 <div class="wrapper">
+  <div class="rippleEffect">
+
+  </div>
     <!-- header -->
     <header class="header">
       <div class="container">
@@ -96,7 +105,7 @@
       <section class="gallery bg-color-grey">
         <div class="container">
           <div class="gallery__container">
-            <div class="gallery__box text-center" data-aos="fade-up">
+            <div class="gallery__box card text-center" data-aos="fade-up">
               <div class="gallery__icon"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                   viewBox="0 0 32 32">
                   <path
@@ -106,7 +115,7 @@
               <p class="black-65 light"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio temporibus
                 doloremque porro </p>
             </div>
-            <div class="gallery__box text-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="gallery__box card text-center" data-aos="fade-up" data-aos-delay="100">
               <div class="gallery__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24.5" height="32.667" viewBox="0 0 24.5 32.667">
                   <path
@@ -117,7 +126,7 @@
               <p class="black-65 light"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio temporibus
                 doloremque porro </p>
             </div>
-            <div class="gallery__box text-center" data-aos="fade-up" data-aos-delay="150">
+            <div class="gallery__box card text-center" data-aos="fade-up" data-aos-delay="150">
               <div class="gallery__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="36.267" viewBox="0 0 34 36.267">
                   <path
@@ -128,7 +137,7 @@
               <p class="black-65 light"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio temporibus
                 doloremque porro </p>
             </div>
-            <div class="gallery__box text-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="gallery__box card text-center" data-aos="fade-up" data-aos-delay="200">
               <div class="gallery__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="32" viewBox="0 0 28 32">
                   <path
@@ -139,7 +148,7 @@
               <p class="black-65 light"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio temporibus
                 doloremque porro </p>
             </div>
-            <div class="gallery__box text-center" data-aos="fade-up" data-aos-delay="250">
+            <div class="gallery__box card text-center" data-aos="fade-up" data-aos-delay="250">
               <div class="gallery__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="32" viewBox="0 0 30 32">
                   <path
@@ -150,7 +159,7 @@
               <p class="black-65 light"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio temporibus
                 doloremque porro </p>
             </div>
-            <div class="gallery__box text-center" data-aos="fade-up" data-aos-delay="300">
+            <div class="gallery__box card text-center" data-aos="fade-up" data-aos-delay="300">
               <div class="gallery__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                   <path
@@ -278,6 +287,11 @@
 </script> 
 
 <script>
+  $('body').ripples({
+    resolution: 512,
+    dropRadius: 20,
+    perturbance: 0.04,
+  });
   (function () {
     // globals
     const burger = document.querySelector('.burger'),
