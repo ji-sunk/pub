@@ -9,6 +9,11 @@
   --btnColor:#fff;
 }
 
+.gallery .card:root {
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
 html {
     font-size: 10px;
     box-sizing: border-box;
@@ -272,7 +277,7 @@ html {
   .black-65 {
     color: rgba(0, 0, 0, 0.65);
   }
-/*   
+  
   .p20 {
     padding-left: 20px;
     padding-right: 20px;
@@ -282,7 +287,7 @@ html {
     .p20 {
       padding-right: 0;
     }
-  } */
+  }
   
   .btn {
     font-size: 1rem;
@@ -305,20 +310,6 @@ html {
     .btn {
       padding: 2.5rem 4.5rem;
       font-size: 1.6rem;
-    }
-  }
-  
-  /* animation */
-  
-  @keyframes fadeInRight {
-    0% {
-      opacity: 0;
-      transform: translateX(-20%);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translateX(0%);
     }
   }
   
@@ -645,7 +636,6 @@ html {
   }
   
   /* video */
-  
   .video__content {
     display: flex;
     justify-content: center;
@@ -726,10 +716,101 @@ html {
   -webkit-filter: blur(5vw);
   -moz-filter: blur(5vw);
   -ms-filter: blur(5vw);
-  filter: blur(5vw);
+  filter: blur(55vw);
   background: linear-gradient(270deg, #0fffc1, #7e0fff);
   background-size: 200% 200%;
   animation: animateGlow 10s ease infinite;
+}
+
+
+/* 
+.card {
+  background: #191c29;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.card:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+.card:hover:before, .card:hover:after {
+  animation: none;
+  opacity: 0;
+} */
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+} 
+
+
+
+.card::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+
+
+/* .card::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+} */
+
+
+
+/* animation */
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
 
 @keyframes animateGlow {
@@ -744,3 +825,86 @@ html {
   }
 }
 
+@keyframes bounce {
+  from, 6.66%, 17.66%, 33.33% {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+
+  13.33%, 14.33% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0) scaleY(1.1);
+  }
+
+  23.33% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0) scaleY(1.05);
+  }
+
+  26.66% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0) scaleY(0.95);
+  }
+
+  30% {
+    transform: translate3d(0, -4px, 0) scaleY(1.02);
+  }
+}
+
+
+
+/* 물결 파동 */
+/* 
+html {
+  height: 100%;
+} */
+
+body {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-image: url(https://i.postimg.cc/XvT12qdD/3.jpg);
+  background-size: cover;
+  background-position: 50% 0;
+  height: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+} 
+
+body:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+.rippleEffect {
+  display: inline-block;
+  vertical-align: middle;
+  padding:  100px;
+  max-width: 500px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+
+
+
+/* ignore the code below */
+
+/* 
+.link-area
+{
+  position:fixed;
+  bottom:20px;
+  left:20px;  
+  padding:15px;
+  border-radius:40px;
+  background:tomato;
+}
+.link-area a
+{
+  text-decoration:none;
+  color:#fff;
+  font-size:25px;
+} */
