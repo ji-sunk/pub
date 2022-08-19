@@ -1,0 +1,243 @@
+@charset "utf-8";
+
+/* 수식 뷰어 */
+.pvBox { text-align: center; }
+.pvBox .pv-inner { display: inline-block; text-align:left; }
+.pvBox .pv-cont { display: inline-block; transform-origin: top left; }
+.pvBox table { width: auto; }
+
+.mathExp-wrap table { width: auto; }
+.tblTypeBox .viewer-calcBox { margin-top: 5px; }
+.viewer-calc { padding: 10px 15px; margin-top: 5px; border: 1px solid #dee2e6; border-radius: 5px; }
+.viewer-calc.mini { min-height: 100px; }
+
+/* 수식등록 팝업 */
+.calcEditWrap { max-width: 850px; background-color: #fff; }
+.calcEdit-titBox { position: relative; background-color: #186f80; color: #fff; padding: 10px 15px; }
+.calcEdit-titBox h1 { font-size: 24px; }
+.btn-close-calcEdit { position: absolute; top: 10px; right: 15px; width: 50px; height: 36px; cursor: pointer; background-color: transparent; border: 0; font-size: 26px; color: #000; overflow: hidden; }
+.btn-close-calcEdit:focus { outline: 1px dotted #ccc; }
+.btn-close-calcEdit .feather { width: 20px; height: 20px; vertical-align: top; margin-top: 5px; color: #fff; }
+.calcEdit-btnBox .btn-icon img {  }
+.calcEdit-btnBox .side-sbox { padding-bottom: 0.3rem; }
+.calcEdit-body { padding: 10px; }
+.calcEdit-viewer { padding: 15px 20px; border: 1px solid #ced4da; border-radius: 5px; min-height: 180px; }
+.calcEdit-textBox { padding-top: 10px; margin-top: 10px; border-top: 2px dotted #ced4da; }
+.calcEdit-footer { padding: 20px 0; text-align: center; }
+.modal-body_head { padding-bottom: 10px; border-bottom: 1px solid #ced4da; }
+.modal-body_cont { padding-top: 10px; }
+.calcTbl { width: auto; border-top: 1px solid #000; border-left: 1px solid #000; }
+.calcTbl td { min-width: 35px; height: auto !important; padding: 5px; border-right: 1px solid #000; border-bottom: 1px solid #000; text-align: center; vertical-align: middle; border-top: 1px solid #000; }
+/*.calcTbl td .nm-box { display: block; width: 100%; height: 100%; padding: 5px; min-height: 32px; }
+.calcTbl td .mjx-box { display: block; min-height: 32px; }*/
+.calcTbl td nm-box { display: block; width: 100%; height: 100%; padding: 5px; /*min-height: 32px;*/ }
+.calcTbl td mjx-box { display: block; /*min-height: 32px;*/ }
+.tbl-spaceline-list {  }
+.tbl-spaceline-list .inputTxt { display: inline-block; height: 100%; }
+.tbl-spaceline-list td { height: auto !important; padding: 0 10px; text-align: center; vertical-align: middle; border: 0; }
+.tbl-spaceline-list .spaceline-list-up td { padding-bottom: 5px; }
+.tbl-spaceline-list .spaceline-list-down td { padding-top: 5px; }
+.tbl-spaceline-list .lineTR td { position: relative; padding: 0; height: 10px !important; }
+.tbl-spaceline-list .lineTR td::after { position: absolute; top: 0; left: 50%; width: 1px; height: 10px; background-color: #000; content: ''; }
+.tbl-spaceline-list .line { position: absolute; top: 0; left: 0; display: inline-block; width: 100%; height: 10px; }
+.tbl-spaceline-list .line::before { position: absolute; top: 4px; right: 50%; width: 50%; height: 1px; background-color: #000; content: ''; }
+.tbl-spaceline-list .line::after { position: absolute; top: 4px; left: 50%; width: 50%; height: 1px; background-color: #000; content: ''; }
+.tbl-spaceline-list .lineTR td:first-child .line::before { display: none; }
+.tbl-spaceline-list .lineTR td:last-child .line::after { display: none; }
+.tbl-spaceline-list .MJXc-display { margin: 0.5em 0; }
+ .tbl-spaceline-list .mjx-char{text-align: center;}
+ .tbl-spaceline-list .mjx-line{left: 50%; transform: translateX(-50%);}
+.numberline-list { margin: 0; padding: 0; display: table; table-layout: fixed; }
+.numberline-list::after { display: block; clear: both; content: ''; }
+.numberline-list li { position: relative; display: table-cell; padding-right: 20px; vertical-align: middle; }
+.numberline-list li::after { position: absolute; right: 0; top: 50%; width: 20px; height: 1px; background-color: #000; content: ''; }
+.numberline-list li:last-child { padding-right: 0; }
+.numberline-list li:last-child::after { display: none; }
+.numberline-list .numberline-num { display: block; padding: 8px 10px; min-width: 30px; min-height: 32px; text-align: center; border: 1px solid #000; line-height: 1; }
+.numberline-list .numberline-num .MJXp-display { margin: 0; }
+.numberline-list .numberline-num .form-control { width: auto; }
+.calcEdit-popInputBox .numberline-list li::after { /*background-color: #ced4da;*/ }
+.tbl-fountain { width: auto; table-layout: fixed; }
+.table .hasInnerTbl table.tbl-fountain { width: auto; }
+.tbl-fountain tr td { padding: 5px; border-top: 0; vertical-align: middle; }
+.tbl-fountain td.bdline { border-bottom: 1px solid #000 !important; }
+label .tbl-fountain td.bdline { border-bottom: 1px solid #ced4da !important; }
+.tbl-top .table tbody td .tbl-fountain td { min-height: auto; height: auto; }
+.pop_input_fountain .tbl-fountain { max-width: 150px; }
+.choiceInputBox {  }
+.choiceInputBox .custom-radio { vertical-align: middle; }
+.choiceInputBox .choiceInput-type { display: inline-block; padding: 0 5px; border: 1px solid #333; }
+.choiceInputBox label .choiceInput-type { color: #ced4da; }
+.choiceInputBox .choiceInput-type1 { width: 30px; height: 30px; }
+.choiceInputBox .choiceInput-type2 { width: 50px; height: 30px; }
+.choiceInputBox .choiceInput-type3 { width: 70px; height: 30px; }
+.choiceInputBox .choiceInput-type4 { width: 100px; height: 30px; }
+.choiceInputBox .choiceInput-type5 { width: 50px; height: 70px; }
+.choiceInputBox .choiceInput-type6 { width: 100px; height: 70px; }
+.multiple-wrap { margin: 10px 0; }
+.tbl-multiple { width: auto; table-layout: fixed; border: 0; }
+.tbl-multiple td { height: auto !important; text-align: center; word-break: break-word; background-color: #fff; padding: 0; border: 0; }
+.tbl-multiple .inputBox-min { display: inline-block; width: 100%; margin: 1px 3px; }
+.tbl-multiple .inputBox-min .form-control { height: 100%; text-align: center; padding: 2px 4px; line-height: 1; }
+.tbl-multiple .inputBox-min .inputTxt { display: inline-block; min-width: 40px; height: 100%; min-height: 32px; border: 1px solid #000; padding: 4px 10px 5px; }
+.tbl-multiple .diagonal { height: 22px; }
+.tbl-multiple .diagonal .line{ position: relative; display: inline-block; width: 25px; height: 1px; background-color: #000; transform: rotate( 45deg ); transform-origin: top left; vertical-align: top; }
+.tbl-multiple .diagonal .line::before { position: absolute; top: auto; bottom: 0; left: auto; right: 0; width: 7px; height: 1px; background-color: #000; transform: rotate( 315deg ); transform-origin: bottom right;  content: ''; }
+.tbl-multiple .diagonal .line::after { position: absolute; top: auto; bottom: 0; left: auto; right: 0; width: 7px; height: 1px; background-color: #000; transform: rotate( 45deg ); transform-origin: bottom right;  content: ''; }
+.tbl-multiple .d-left .diagonal .line { transform: rotate( -45deg ); transform-origin: top right;}
+.tbl-multiple .d-left .diagonal .line::before { left: 0; top: 0; transform: rotate( 45deg ); transform-origin: top left; }
+.tbl-multiple .d-left .diagonal .line::after { left: 0; top: 0; transform: rotate( -45deg ); transform-origin: bottom left; }
+.tbl-multiple .multiple-reverse .d-right { text-align: right; }
+.tbl-multiple .multiple-reverse .d-left { text-align: left; }
+.tbl-inequalityBox td { height: auto !important; padding: 0 3px; border: 0; vertical-align: middle; }
+.tbl-inequalityBox .inputTxt { display: inline-block; padding: 4px 5px 5px; }
+.tbl-inequalityBox .round-inequalityBox { display: inline-block; width: 32px; height: 32px; padding: 8px 0; border: 1px solid #000; border-radius: 50%; text-align: center; font-size: 12px; }
+.tbl-inequalityBox .form-control { width: auto; }
+.round-inequality { display: inline-block; border: 1px solid #ced4da; border-radius: 50%; }
+.round-inequality .form-control { width: 32px; height: 32px; border: 0; background-color: transparent; text-align: center; }
+.round-inequalityBox .MJXc-display { margin: 0; }
+.tbl-htreeD td { height: auto !important; padding: 0; vertical-align: middle; border: 0; }
+.tbl-htreeD .diagonal { display: inline-block; width: 30px; }
+.tbl-htreeD .d-up { vertical-align: bottom; }
+.tbl-htreeD .d-down { vertical-align: top; }
+.tbl-htreeD .diagonal .line{ position: relative; display: inline-block; width: 30px; height: 1px; background-color: #000; transform: rotate( 30deg ); transform-origin: top left; vertical-align: top; }
+.tbl-htreeD .diagonal .line::before { position: absolute; top: auto; bottom: 0; left: auto; right: 0; width: 7px; height: 1px; background-color: #000; transform: rotate( 315deg ); transform-origin: bottom right;  content: ''; }
+.tbl-htreeD .diagonal .line::after { position: absolute; top: auto; bottom: 0; left: auto; right: 0; width: 7px; height: 1px; background-color: #000; transform: rotate( 45deg ); transform-origin: bottom right;  content: ''; }
+.tbl-htreeD .d-up .diagonal .line { transform: rotate( -30deg ); transform-origin: bottom left; vertical-align: bottom; }
+.tbl-htreeD .inputTxtN { display: inline-block; padding: 5px; }
+.tbl-htreeM td { height: auto !important; vertical-align: middle; border: 0; }
+.tbl-htreeM .divisorBox { display: inline-block; position: relative; padding-right: 30px; }
+
+.multiline-inputList { margin: 0; padding: 0 0 0 10px; }
+.multiline-inputList li { position: relative; padding: 3px 0 3px 15px; }
+.multiline-inputList li::before { position: absolute; top: 50%; left: 0; width: 10px; height: 1px; background-color: #000; content: ''; }
+.multiline-inputList li::after { position: absolute; left: 0; bottom: 50%; width: 1px; height: 100%; background-color: #000; content: ''; }
+.multiline-inputList li:first-child::after { display: none; }
+.tbl-division { width: auto; }
+.tbl-division td { height: auto !important; padding: 0; border: 0; }
+.tbl-division .division-quotient { display: inline-block; padding: 0 0 5px 30px; }
+.tbl-division .division-divisor { display: inline-block; }
+.tbl-division .division-dividend { position: relative; display: inline-block; padding: 5px 0 0 30px; overflow: hidden; }
+.tbl-division .division-dividend::before { position: absolute; top: 0; right: 0; width: calc(100% - 15px); height: 1px; background-color: #000; content: ''; }
+.tbl-division .division-dividend::after { position: absolute; top: -20px; left: -50px; width: 70px; height: 70px; border: 1px solid #000; border-radius: 50%;  content: ''; }
+.tbl-division .inputTxt { display: inline-block; padding: 3px 2px; }
+.tbl-division .division-dividend .inputTxt { padding-top: 0; }
+.tbl-factorization { width: auto; }
+.tbl-factorization td { position: relative; height: auto !important; padding: 0; border: 0; border-bottom: 1px solid #000; text-align: right; }
+.tbl-factorization .dividend_box { display: inline-block; padding: 5px; text-align: right; }
+.tbl-factorization .dividend_box .form-control { text-align: right; padding: 1px 5px; height: auto; }
+.tbl-factorization .fact-divisor .dividend_box { margin-right: 15px; padding: 7px 5px 0; }
+.tbl-factorization .fact-divisor { position: relative; border-bottom: 0; }
+.tbl-factorization .curvedline { position: absolute; bottom: -1px; right: 0; width: 20px; height: 21px; display: block; overflow: hidden; }
+.tbl-factorization .curvedline::before { display: inline-block; position: absolute; right: 0; bottom: 0; width: 10px; height: 1px; background-color: #000; content: ''; }
+.tbl-factorization .curvedline::after { display: inline-block; position: absolute; top: -25px; right: 8px; width: 100px; height: 70px; border-radius: 50%; border: 1px solid #000; content: ''; }
+.tbl-factorization .last .curvedline { display: none; }
+.tbl-factorization .last td { border-bottom: 0; }
+
+
+/* 키패드 안의 분수 */
+.keypad .write { padding-top: 25px; font-size: 27px; }
+    .v-mob .keypad .write { padding-top: 20px; }
+.keypad .fraction_box { text-align: center; }
+.keypad .fraction_box .write { display: inline-block; }
+.keypad .tbl-fountain tr td,
+.keypad_gm .tbl-fountain tr td { padding: 2px 5px; line-height: 1; }
+.keypad .tbl-fountain td.bdline { border-bottom: 3px solid #000 !important; }
+    .v-mob .keypad .tbl-fountain td.bdline { border-bottom: 2px solid #000 !important; }
+.keypad .tbl-fountain .form-control,
+.keypad_gm .tbl-fountain .form-control { width: auto; min-width: 45px; height: 39px; padding: 0 3px; border: 2px solid #0cc6e2; box-sizing: border-box; text-align: center; font-size: 30px; line-height: 1; vertical-align: text-bottom; }
+    .v-mob .keypad .tbl-fountain .form-control,
+    .v-mob .keypad_gm .tbl-fountain .form-control { height: 31px; font-size: 25px; border-width: 2px; }
+.keypad .tbl-fountain .form-control:focus,
+.keypad_gm .tbl-fountain .form-control:focus { border-color: #ffb300; }
+.keypad .tbl-fountain .form-control.inputFocused,
+.keypad_gm .tbl-fountain .form-control.inputFocused { border: 3px solid #ffb300 !important; }
+    .v-mob .keypad .tbl-fountain .form-control.inputFocused,
+    .v-mob .keypad_gm .tbl-fountain .form-control.inputFocused { border: 2px solid #ffb300 !important; }
+
+/* 문제풀이 - 네모의 활성화 및 포커스 공통 */
+.mathExt.on .active-bd { position: relative; }
+.mathExt.on .active-bd::after { position: absolute; top: -2px; left: -2px; width: calc(100% + 4px); height: calc(100% + 4px); border: 2px solid #0cc6e2; box-sizing: border-box; content: ''; z-index: 2; } 
+.mathExt.on .active-bd.focusedInput::after { border: 3px solid #ffb300; z-index: 2; }
+
+/* 테이블형태/크기비교형태 특수처리 */
+.mathExt.on mjx-mtd.active-bd::after { left: -1px; width: calc(100% + 3px); }
+.mathExt.on mjx-cbox.active-bd { position: absolute; border: 2px solid #0cc6e2; }
+.mathExt.on mjx-cbox.active-bd::after { display: none; }
+.mathExt.on mjx-cbox.focusedInput { border: 3px solid #ffb300; }
+
+/* 오답확인 */
+.wa-container .active-bd { position: relative; }
+.wa-container .active-bd::after { position: absolute; top: -2px; left: -2px; width: calc(100% + 4px); height: calc(100% + 4px); border: 2px solid #0cc6e2; box-sizing: border-box; content: ''; z-index: 2; }
+/* 테이블형태/크기비교형태 특수처리 */
+.wa-container mjx-mtd.active-bd::after { left: -1px; width: calc(100% + 3px); }
+.wa-container mjx-cbox.active-bd { position: absolute; border: 2px solid #0cc6e2; }
+.wa-container mjx-cbox.active-bd::after { display: none; }
+.wa-container mjx-cbox.focusedInput { border: 3px solid #ffb300; }
+/* 정답/오답 특수처리 */
+.wa-container.wa-wrong .my-ans { color: #f05a46 !important; }
+.wa-container.wa-wrong .my-ans::after { border-color: #f05a46 !important; }
+.wa-container.wa-wrong mjx-cbox.active-bd { border-color: #f05a46; }
+.wa-container.wa-correct .my-ans { color: #00c3e1 !important; }
+.wa-container.wa-correct .my-ans::after { border-color: #00c3e1 !important; }
+.wa-container.wa-correct mjx-cbox.active-bd { border-color: #00c3e1; }
+
+/* 모으기/가르기 여백처리 */
+.mathExt .tbl-multiple .inputBox-min .inputTxt,
+.wa-container .tbl-multiple .inputBox-min .inputTxt { padding: 8px 10px; }
+
+/*수식 - 교문향 추가*/
+.curly_bracket{font-size: 100px; display: inline-block; padding-bottom: 22px;}
+.tbl-htreeD.input_cases td.upper{vertical-align: bottom;}
+.tbl-htreeD.input_cases td.lower{vertical-align: top;}
+.tbl-htreeD.tree_chain td{padding-left: 2px;}
+.tbl-htreeD.tree_chain td .inputTxt{display: inline-block; padding-top: 1px; padding-bottom: 4px; padding: 5px;}
+.tbl-htreeD.tree_chain td.d-down{vertical-align: top; position: relative; bottom: 1px;}
+.tbl-htreeD.tree_chain td.d-up{vertical-align: bottom;}
+.tbl-htreeD.tree_chain td input{text-align: center;}
+.tbl-htreeD.tree_chain .diagonal .line::before,
+.tbl-htreeD.tree_chain .diagonal .line::after{content: none;}
+.tbl-htreeD.tree_chain .form-control-sm{width: 70px;}
+.inlineblock_cont{display: inline-block; vertical-align: top;}
+.inlineblock_cont.v_m{vertical-align: middle;}
+.tbl-factorization .dividend_box .form-control.align_l{text-align: left;}
+.tbl-factorization td.align_l{text-align: left;}
+.tbl-factorization td.align_c{text-align: center;}
+.tbl-factorization.ver2 td{padding: 10px 0;}
+.tbl-factorization.ver2 td.bb1{border-bottom: 1px solid #000;}
+.tbl-factorization.ver2 tr:first-of-type td{padding: 0;}
+.tbl-factorization.ver2 td input{text-align: center;}
+.tbl-factorization.ver2 td input.align_r{text-align: right;}
+.m05{margin: 0 5px;}
+.img_cont{display: inline-block; vertical-align: middle;}
+.img_cont img{width: 100%;}
+.calcEdit-popInputBox .r_cont{display: inline-block; vertical-align: middle; margin-left: 10px; padding-top: 35px; padding-right: 20px;}
+.tbl_number_box{}
+.tbl_number_box tr td{border-top: 0;}/*scss 때문에 보더 생기는 것 막기*/
+.tbl_number_box td{position: relative;}
+.tbl_number_box td input[type="text"]{width: 80px; text-align: center;}
+.tbl_number_box td input.form-control-sm{width: 30px; text-align: center;}
+.tbl_number_box td input.form-control-sm.long{}
+.tbl_number_box td .num{position: absolute; width: 20px; height: 20px; border: 1px solid #333; text-align: center; border-radius: 50%; left: 50%; transform: translate(-50%); top: -30px; color: #333; font-size: 12px}
+.tbl_number_box.viewer td{padding: 2px 10px;}
+.tbl_number_box.viewer td.td_box{border: 1px solid #000;}
+.ta-l {text-align: left !important;}
+.ta-r {text-align: right !important;}
+.calcEdit-viewer_inner{margin-top: 10px; white-space: nowrap;}
+.tbl-factorization .dividend_box.pr0{padding-right: 0;}
+.tbl-factorization .dividend_box.pl0{padding-left: 0;}
+.tbl-factorization .last td.border_b{border-bottom: 1px solid #000;}
+
+/* 오답확인 _ 커스텀 수식에서 빨강/파란 테두리 노출 안되는 부분 원래 있던 CSS 적용 */
+.wa-container.wa-wrong .my-ans { border:1px solid #f05a46 !important;color: #f05a46 !important;}
+.wa-container.wa-correct .my-ans { border-color: #00c3e1 !important; color: #00c3e1 !important;}
+
+/* Mathjax3.0 검증계220220 QA user/admin 스타일 통일 수정 -kjs */
+.pv-ib {margin: 1em 0px;}
+/* Mathjax3.0 검증계220220 QA 20. 폰트 기울기 24. 약수, 배수 입력(가지치기) _(중앙정렬) -kjs */
+mjx-utext {font-style:normal !important;}
+.tbl-htreeM .divisorBox {display: block;}
+.tbl-htreeM .divisorBox::after {position: absolute; top: 0; right: 0; font-size: 20px; content: '\21D2'; line-height:1;}
+mjx-container[jax="CHTML"][display="true"] {outline: none; display:inline-block !important; margin:0 !important}
+
+

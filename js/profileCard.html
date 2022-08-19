@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="generator" content="">
+	<meta name="google" value="notranslate">
+	<title>Profile</title>
+    <!-- css -->
+	<link href="static/css/icon.css" rel="stylesheet">
+	<link href="static/css/card.css" rel="stylesheet">
+    <!-- js -->
+    <!-- 물결 그래픽 js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <!-- //물결 그래픽 js -->
+</head>
+<body>
+
+    <!-- 프로필 영역 -->
+    <article class="profile">
+        <div class="profile-image">
+            <a class="" href="https://ji-sunk.github.io/pub/user/index.html">
+                <img src="https://raw.githubusercontent.com/ji-sunk/pub/main/user/static/images/common/pro.jpg"  alt="프로필사진" />
+            </a>
+        </div>
+        <h2 class="profile-username" target="_blank">Kwon</h2>
+        <small class="profile-user-handle">cutcarrot@naver.com</small>
+        <div class="profile-actions">
+            <button class="btn btn--primary">Follow</button>
+            <button class="btn btn--icon">
+                <i class="ph-export"></i>
+            </button>
+            <button class="btn btn--icon">
+                <i class="ph-dots-three-outline-fill"></i>
+            </button>
+        </div>
+        <div class="profile-links">
+            <a href="#" class="link link--icon">
+                <i class="ph-twitter-logo"></i>
+            </a>
+            <a href="#" class="link link--icon">
+                <i class="ph-facebook-logo"></i>
+            </a>
+            <a href="#" class="link link--icon">
+                <i class="ph-instagram-logo"></i>
+            </a>
+        </div>
+    </article>
+    <!-- //프로필 영역 -->
+
+    <script>
+        // 물결 파동
+        $('body').ripples({
+          resolution: 512,
+          dropRadius: 20,
+          perturbance: 0.04,
+        });
+        (function () {
+          // globals
+          const burger = document.querySelector('.burger'),
+            header__nav = document.querySelector('.header__nav'),
+            header = document.querySelector('.header');
+      
+          // burger
+          burger.addEventListener('click', function () {
+            this.classList.toggle('active');
+            header__nav.classList.toggle('open');
+          })
+        });
+      </script>
+</body>
+</html>
