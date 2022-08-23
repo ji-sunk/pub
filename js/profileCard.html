@@ -12,16 +12,21 @@
     <!-- css -->
 	<link href="static/css/icon.css" rel="stylesheet">
 	<link href="static/css/card.css" rel="stylesheet">
+    <!-- card -->
+	<link href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" rel="stylesheet">
     <!-- js -->
+    <!-- card -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <!-- 물결 그래픽 js -->
+	<!-- <script src="static/js/ui.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
-    <!-- //물결 그래픽 js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script> -->
 </head>
 <body>
-
     <!-- 프로필 영역 -->
-    <article class="profile">
+    <!-- <article class="profile">
         <div class="profile-image">
             <a class="" href="#">
                 <img src="https://raw.githubusercontent.com/ji-sunk/pub/main/user/static/images/common/pro.jpg"  alt="프로필사진" />
@@ -49,28 +54,130 @@
                 <i class="ph-instagram-logo"></i>
             </a>
         </div>
-    </article>
+    </article>-->
+    <main>NEXT</main> 
     <!-- //프로필 영역 -->
+
+
+    <!-- slide area -->
+
+    <div class="slide-container">
+        <div class="wrapper">
+            <article class="profile">
+                <div class="profile-image">
+                    <a href="#">
+                        <img src="https://raw.githubusercontent.com/ji-sunk/pub/main/user/static/images/common/pro.jpg"  alt="프로필사진" />
+                    </a>
+                </div>
+                <h2 class="profile-username" target="_blank">kkk</h2>
+                <small class="profile-user-handle">cutcarrot@naver.com</small>
+                <div class="profile-actions">
+                    <a class="btn btn--primary" href="https://ji-sunk.github.io/pub/user/index.html" >Follow</a>
+                    <button type="button" class="btn btn--icon">
+                        <i class="ph-export"></i>
+                    </button>
+                    <button type="button" class="btn btn--icon">
+                        <i class="ph-dots-three-outline-fill"></i>
+                    </button>
+                </div>
+                <div class="profile-links">
+                    <a href="#" class="link link--icon">
+                        <i class="ph-twitter-logo"></i>
+                    </a>
+                    <a href="#" class="link link--icon">
+                        <i class="ph-facebook-logo"></i>
+                    </a>
+                    <a href="#" class="link link--icon">
+                        <i class="ph-instagram-logo"></i>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+       
+
+
+
+
+  
+        <div class="wrapper">
+          <div class="clash-card barbarian">
+            <div class="clash-card__image clash-card__image--barbarian">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="barbarian" />
+            </div>
+            <div class="clash-card__level clash-card__level--barbarian">Level 4</div>
+            <div class="clash-card__unit-name">The Barbarian</div>
+            <div class="clash-card__unit-description">
+              The Barbarian is a kilt-clad Scottish warrior with an angry, battle-ready expression, hungry for destruction. He has Killer yellow horseshoe mustache.
+            </div>
+      
+            <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+              <div class="one-third">
+                <div class="stat">20<sup>S</sup></div>
+                <div class="stat-value">Training</div>
+              </div>
+      
+              <div class="one-third">
+                <div class="stat">16</div>
+                <div class="stat-value">Speed</div>
+              </div>
+      
+              <div class="one-third no-border">
+                <div class="stat">150</div>
+                <div class="stat-value">Cost</div>
+              </div>
+            </div>
+          </div> <!-- end clash-card barbarian-->
+        </div> <!-- end wrapper -->
+    
+        
+    </div> <!-- end container -->
+    <!-- //slide area -->
+
 
     <script>
         // 물결 파동
-        $('body').ripples({
-          resolution: 512,
-          dropRadius: 20,
-          perturbance: 0.04,
-        });
-        (function () {
-          // globals
-          const burger = document.querySelector('.burger'),
-            header__nav = document.querySelector('.header__nav'),
-            header = document.querySelector('.header');
+        // $('body').ripples({
+        //   resolution: 512,
+        //   dropRadius: 20,
+        //   perturbance: 0.04,
+        // });
+        // (function () {
+        //   // globals
+        //   const burger = document.querySelector('.burger'),
+        //     header__nav = document.querySelector('.header__nav'),
+        //     header = document.querySelector('.header');
       
-          // burger
-          burger.addEventListener('click', function () {
-            this.classList.toggle('active');
-            header__nav.classList.toggle('open');
-          })
-        });
+        //   // burger
+        //   burger.addEventListener('click', function () {
+        //     this.classList.toggle('active');
+        //     header__nav.classList.toggle('open');
+        //   })
+        // });
+
+        // card
+        (function() {
+  
+            var slideContainer = $('.slide-container');
+            
+            slideContainer.slick();
+            
+            $('.clash-card__image img').hide();
+            $('.slick-active').find('.clash-card img, .profile-image a img').fadeIn(200);
+            
+            // On before slide change
+            slideContainer.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+                $('.slick-active').find('.clash-card img, .profile-image a img').fadeOut(1000);
+            });
+            
+            // On after slide change
+            slideContainer.on('afterChange', function(event, slick, currentSlide) {
+                $('.slick-active').find('.clash-card img, .profile-image a img').fadeIn(200);
+            });
+            
+        })();
+
+
       </script>
 </body>
 </html>
