@@ -408,3 +408,5 @@ function funcSMlineanim(ctx, x,y,radius,minRad, i, strokeWidth, barColor) {
   ctx.stroke();
 }
 
+
+/**  */
