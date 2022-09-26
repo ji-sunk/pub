@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40.804" height="32.932" viewBox="0 0 40.804 32.932">
+    <defs>
+        <linearGradient id="linear-gradient" x1=".5" y1="1" x2=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fff"/>
+            <stop offset="1" stop-color="#f0f0f0"/>
+        </linearGradient>
+        <clipPath id="clip-path">
+            <path id="패스_11966" data-name="패스 11966" d="M24.866 4H9.991A2.881 2.881 0 0 1 7.375.965h5.9a.873.873 0 0 0 .79-.937.873.873 0 0 0-.79-.937h-6.7a2.9 2.9 0 0 1-2.619-3.1v-.362h5.67a.873.873 0 0 0 .79-.937.873.873 0 0 0-.79-.937h-6.7A2.9 2.9 0 0 1 .31-9.35v-.362h17.441c2.361 0 4.282 2.276 4.282 5.074v2.173a3.271 3.271 0 0 0 2.87 3.5 1.381 1.381 0 0 1 1.211 1.479A1.38 1.38 0 0 1 24.866 4z" transform="translate(-.31 9.712)" style="fill:#e6f0ff"/>
+        </clipPath>
+        <filter id="패스_432" x="0" y="4.223" width="40.804" height="28.709" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            
+        </style>
+    </defs>
+    <g id="icon_all_s_32_Wings_solid" transform="translate(4.402)">
+        <g id="그룹_13326" data-name="그룹 13326" transform="translate(3.098 9.723)">
+            <g id="그룹_13114" data-name="그룹 13114">
+                <path id="패스_11968" data-name="패스 11968" d="M-1.14-.9h6.961a.994.994 0 1 1 0 1.989H-.731C-1.28 1.086-4.187-2.188-1.14-.9z" transform="translate(4.393 4.276)" style="fill:#e7e9ec"/>
+                <path id="패스_11967" data-name="패스 11967" d="M.409-1.444h6.464a.994.994 0 0 1 .994.994.941.941 0 0 1-1 .921H.3c-.554.001-2.935-3.676.109-1.915z" transform="translate(6.793 10.219)" style="fill:#dddee7"/>
+                <g transform="translate(-7.5 -9.72)" style="filter:url(#패스_432)">
+                    <path id="패스_432-2" data-name="패스 432" d="M24.866 4H9.991A2.881 2.881 0 0 1 7.375.965h5.9a.873.873 0 0 0 .79-.937.873.873 0 0 0-.79-.937h-6.7a2.9 2.9 0 0 1-2.619-3.1v-.362h5.67a.873.873 0 0 0 .79-.937.873.873 0 0 0-.79-.937h-6.7A2.9 2.9 0 0 1 .31-9.35v-.362h17.441c2.361 0 4.282 2.276 4.282 5.074v2.173a3.271 3.271 0 0 0 2.87 3.5 1.381 1.381 0 0 1 1.211 1.479A1.38 1.38 0 0 1 24.866 4z" transform="translate(7.19 19.43)" style="fill:url(#linear-gradient)"/>
+                </g>
+            </g>
+        </g>
+        <path id="사각형_2437" data-name="사각형 2437" style="fill:none" d="M0 0h32v32H0z"/>
+    </g>
+</svg>

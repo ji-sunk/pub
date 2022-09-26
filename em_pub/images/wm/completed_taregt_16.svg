@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <linearGradient id="gi1n3vdvga" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#2bd9c5"/>
+            <stop offset="1" stop-color="#46cbc4"/>
+        </linearGradient>
+    </defs>
+    <path data-name="사각형 730" style="fill:#fff;opacity:.003" d="M0 0h16v16H0z"/>
+    <g data-name="그룹 13749">
+        <g data-name="그룹 13308">
+            <path data-name="다각형 27" d="M9.435.155a.5.5 0 0 1 .588.135l.88 1.052a.5.5 0 0 0 .365.179l1.348.05a.5.5 0 0 1 .466.374l.351 1.355a.5.5 0 0 0 .246.314l1.207.652a.5.5 0 0 1 .254.531l-.258 1.389a.5.5 0 0 0 .086.384l.82 1.136a.5.5 0 0 1 0 .585l-.82 1.136a.5.5 0 0 0-.086.384l.258 1.389a.5.5 0 0 1-.254.531l-1.207.652a.5.5 0 0 0-.246.314l-.352 1.355a.5.5 0 0 1-.466.374l-1.348.05a.5.5 0 0 0-.365.179l-.88 1.052a.5.5 0 0 1-.588.135l-1.234-.55a.5.5 0 0 0-.41 0l-1.23.553a.5.5 0 0 1-.588-.135L5.1 14.658a.5.5 0 0 0-.365-.179l-1.348-.05a.5.5 0 0 1-.466-.374L2.567 12.7a.5.5 0 0 0-.246-.314l-1.207-.652a.5.5 0 0 1-.255-.534l.258-1.389a.5.5 0 0 0-.086-.384l-.82-1.134a.5.5 0 0 1 0-.585l.82-1.136a.5.5 0 0 0 .086-.384L.859 4.8a.5.5 0 0 1 .254-.531l1.207-.655a.5.5 0 0 0 .247-.314l.352-1.355a.5.5 0 0 1 .466-.374l1.348-.05a.5.5 0 0 0 .367-.179L5.977.291a.5.5 0 0 1 .588-.136L7.8.708a.5.5 0 0 0 .41 0z" style="fill:url(#gi1n3vdvga)"/>
+            <path data-name="사각형 730" style="fill:#fff;opacity:.003" d="M0 0h12v12H0z" transform="translate(2 2)"/>
+            <path data-name="패스 283" d="m-1.916-.943 3.9 4.979-2.97 2.951" transform="rotate(90 1.5 9.5)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+        </g>
+    </g>
+</svg>
