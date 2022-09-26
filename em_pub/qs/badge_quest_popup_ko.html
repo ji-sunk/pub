@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>mathpid</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <!--<meta name="theme-color" content="#C70026"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="description" content="">
+    <link rel="canonical" href="">
+    <meta name="robots" content="index,follow">
+
+    <link rel="stylesheet" type="text/css" href="../css/vendor/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <!-- 2022.09.19 불필요 css 삭제 -->
+    <link rel="stylesheet" type="text/css" href="../css/qs.css"/>
+    <!-- 2022.09.21 add popup.css -->
+    <link rel="stylesheet" type="text/css" href="../css/popup.css"/>
+
+
+</head>
+<body class="sub_page qs badge_quest">
+<!--2022.09.02 mode btn test 삭제 -->
+
+<!-- header -->
+<header>
+  <div class="header_wrap">
+    <div class="header_inner">
+      <div class="sub_title">
+        <a href="..">
+          <!-- 2022.09.07 back text 추가 -->
+          <span class="sr">back</span>          
+          <i class="icon_24">
+            <img src="../images/common/white_arrow_24.svg" aria-hidden="true" alt="close">
+          </i>
+        </a>
+        <!-- 2022.09.07 title a tag 밖으로 -->  
+       <div class="text_wrap">
+         <h2>Badge Quest</h2>
+       </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- header -->
+<main class="container qs_main">
+  <audio preload="auto" class="audio_wrap"><source class="audio_source" src=""/></audio>
+ 
+  <section class="qs_contents">
+    <!--START :: result contents-->
+    <div class="wrap ">
+      <!-- bage title imgs -->
+      <!-- 2022.08.10 이미지 -> text로 변경-->
+      <article class="badge_quest_text">
+       <p>Let’s collect various badges <br><span>by Clearing Quests.</span></p>
+      </article>
+      <!-- 2022.09.20 클래스명 .badge_step_wrap -> .badge_cate_wrap -->
+      <div class="badge_cate_wrap ho_scroll"> 
+        <!--first bage list -->
+        <!-- 2022.09.20 클래스명 .badge_step -> .badge_cate -->
+        <article class="badge_cate ho_scroll_item">
+          <!-- 2022.09.20 클래스명 .badge_step_title -> .badge_cate_title -->
+          <div class="badge_cate_title">
+            <h3>First - Step</h3>
+            <div class="badge_num">
+              <span class="acquired_badge_num">2</span>
+              <span>/</span>
+              <span class="total_badge_num">3</span>
+            </div>
+          </div>
+          <!-- list class- get_badge, lock_badge  클릭 시 팝업 상세정보 --> 
+          <!-- 2022.08.24 flex내 넓이 값이 없어 겹침이 발생합니다.
+           js로 li갯수와, 마진 값을 계산하여 ul의 넓이를 계산해서 넓이 값을 넣어줍니다.
+            qs.js 04라인 입니다.
+          -->
+          <!-- 2022.09.20 클래스명 .badge_step_list -> .badge_cate_list -->
+          <div class="badge_cate_list ho_scroll_item_list">
+            <ul>
+              <li class="get_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_icon_welcome.webp" alt="">                  
+                    </i>                 
+                  </div>    
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Test starter Test starter Test starter</h4>
+                  <time datetime="2022.04.12">2022.04.12</time>
+                </a>
+              </li>
+              <li class="get_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_icon_newbie.webp" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">첫 진단테스트를 완료 했어요</h4>
+                  <time datetime="2022.04.12">2022.04.12</time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">3일 연속 매쓰피드를 접속 했어요</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!--Category title list -->
+        <!-- 2022.09.20 클래스명 .badge_step -> .badge_cate -->
+        <article class="badge_cate ho_scroll_item">
+          <!-- 2022.09.20 클래스명 .badge_step_title -> .badge_cate_title -->
+          <div class="badge_cate_title">
+            <h3>Category title</h3>
+            <div class="badge_num">
+              <span class="acquired_badge_num">0</span>
+              <span>/</span>
+              <span class="total_badge_num">12</span>
+            </div>
+          </div>
+          <!-- 2022.09.20 클래스명 .badge_step_list -> .badge_cate_list -->
+          <div class="badge_cate_list ho_scroll_item_list">
+            <ul>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="get_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_icon_welcome.webp" alt="">                  
+                    </i>                 
+                  </div>                
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Test starter</h4>
+                  <time datetime="2022.04.12">2022.04.12</time>
+                </a>
+              </li>
+              <li class="get_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_icon_newbie.webp" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>
+                  <time datetime="2022.04.12">2022.04.12</time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>   
+            </ul>
+          </div>
+        </article>   
+        <!-- 2022.09.20 클래스명 .badge_step -> .badge_cate -->    
+        <article class="badge_cate ho_scroll_item">
+           <!-- 2022.09.20 클래스명 .badge_step_title -> .badge_cate_title -->
+          <div class="badge_cate_title">
+            <h3>First - Step</h3>
+            <div class="badge_num">
+              <span class="acquired_badge_num">2</span>
+              <span>/</span>
+              <span class="total_badge_num">3</span>
+            </div>
+          </div>
+          <!-- list class- get_badge, lock_badge  클릭 시 팝업 상세정보 --> 
+           <!-- 2022.09.20 클래스명 .badge_step_list -> .badge_cate_list -->
+          <div class="badge_cate_list ho_scroll_item_list">
+            <ul>
+              <li class="get_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_icon_welcome.webp" alt="">                  
+                    </i>                 
+                  </div>                
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Test starter</h4>
+                  <time datetime="2022.04.12">2022.04.12</time>
+                </a>
+              </li>
+              <li class="get_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_icon_newbie.webp" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>
+                  <time datetime="2022.04.12">2022.04.12</time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+              <li class="lock_badge">
+                <a href="javascrpit:void(0)">
+                  <div class="bage_icon">
+                    <i class="icon_64">
+                      <img src="../images/qs/badge_lock_icon_64.svg" alt="">
+                    </i>                 
+                  </div>
+                  <!-- 2022.08.24 두줄이상 말줄임 text_dline_ellipsis  -->
+                  <h4 class="text_dline_ellipsis">Learning Master</h4>                  
+                  <time datetime=""></time>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>  
+      </div>    
+    </div>
+    <!--END :: result contents-->
+  </section>
+    <!--main-->
+</main>
+<!--container-->
+
+
+<!-- 팝업  top_icon_popup 공통 common.css-->
+<!-- 2022.08.18 팝업에 비주얼 폰트 -> add ko class -->
+<div class="top_icon_popup ko active ">
+  <div class="top_icon_popup_con">
+    <article class="popup_box badge_popup guide_badge_popup active">
+      <div class="top_icon">
+        <i class="icon_128">
+          <img src="../images/qs/badge_icon_newbie.webp" alt="">
+        </i>
+        <!-- 2022.08.03 팝업 인터랙션 추가 -->
+        <div class="particle_badge">
+          <figure>
+            <img src="../images/interaction/particle_qs_badge.webp" alt="">
+          </figure>
+        </div>
+      </div>
+      <div class="text_wrap">
+      <span class="top_icon_desc">You got New Badge!</span>
+        <div class="badge_popup_title">
+          <h3>매쓰피드 서비스 시작</h3>    
+        </div>
+        <span class="badge_popup_text">Clear first AI Diagnostic Test</span>
+      </div>
+      <div class="btn_wrap">
+        <a href="">
+          <span>Check Badge Quest</span>
+          <i class="icon_16">
+            <img src="../images/common/w_arrow_r_16.svg" alt="">
+          </i>
+        </a>
+      </div>
+      <div class="sns_link">
+        <ul>
+          <li>
+            <a href="javascript:void(0)">
+              <span class="sr">instagram</span>
+              <i>
+                <img src="../images/common/instagram_icon_56.svg" alt="">
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <span class="sr">facebook</span>    
+              <i>
+                <img src="../images/common/facebook_icon_56.svg" alt="">
+              </i>        
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <span class="sr">download</span>   
+              <i>
+                <img src="../images/common/download_icon_56.svg" alt="">
+              </i> 
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button class="popup_close_btn">
+        <i class="icon_24">
+          <img src="../images/common/w_close_icon_24.svg" alt="">
+        </i>
+        <span>Close</span>
+      </button>
+    </article>  
+  </div>
+</div>
+
+
+<!--2022.09.02 fullscreen btn test 삭제 -->
+<script type="text/javascript" src="../js/vendor/gsap.min.js"></script>
+<script type="text/javascript" src="../js/vendor/ScrollToPlugin.min.js"></script>
+<script type="text/javascript" src="../js/vendor/swiper.min.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="../js/qs.js"></script>
+
+
+</body>
+</html>

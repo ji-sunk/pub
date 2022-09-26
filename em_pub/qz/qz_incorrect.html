@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>mathpid</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <!--<meta name="theme-color" content="#C70026"> -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="description" content="">
+  <link rel="canonical" href="">
+  <meta name="robots" content="index,follow">
+  
+  <link rel="stylesheet" type="text/css" href="../css/vendor/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/qz.css"/>
+  <!-- 2022.09.19 불필요 css 삭제 -->
+<!-- test 샥제바람 -->
+  <style>
+    .mcp{position: absolute; top:20px; right:15%; z-index: 1000;}
+  </style>
+<!--  -->
+</head>
+<body class="sub_page qz incorrect junior">
+<!--2022.09.02 mode btn test 삭제 -->
+
+  <!-- header -->
+  <header>
+    <div class="header_wrap">		
+      <div class="header_inner">
+        <div class="sub_title">
+          <a href="..">
+             <!-- 2022.09.07 back text 추가 -->
+            <span class="sr">back</span>
+            <i class="icon_24">        
+              <img src="../images/common/white_arrow_24.svg" aria-hidden="true" alt="화살표">           
+            </i>
+          </a> 
+          <!-- 2022.09.07 title a tag 밖으로 -->  
+         <div class="text_wrap">
+           <h2>Incorrect Answers</h2>
+         </div>
+        </div>
+      </div>      
+    </div>
+    <div class="incorrect_list">
+      <div class="list_inner">
+        <ul>
+          <li><button data-inc-list="inc1" class="active">1</button></li>
+          <li><button data-inc-list="inc2">2</button></li>    
+        </ul>
+      </div>
+    </div>
+  </header>
+<!-- //header -->
+  <main class="container">
+    <audio preload="auto" class="audio_wrap"><source class="audio_source" src/></audio>
+    
+    <section class="main_contents">   
+      <div class="wrap newscroll_bar">
+        <article class="incorrect_tag_list_wrap">        
+          <span class="sr">오답 태그</span>      
+          <ul class="incorrect_tag_list">
+            <li>
+              <button data-tag-list="tag1">
+                <i class="icon_20">           
+                  <object data="../images/common/incorrect_icon.svg" type="" class="add_new_color"></object>
+                </i>
+                <p>Incorrect Answer by Mistake</p>
+              </button>
+            </li>
+            <li>
+              <button data-tag-list="tag1">
+                <i class="icon_20">            
+                  <object data="../images/common/percent10.svg" type="" class="add_new_color"></object>
+                </i>
+                <p>a question that is only 10 percent correct</p>
+              </button>
+            </li>
+            <li>
+              <button data-tag-list="tag1">
+                <i class="icon_20">
+                  <object data="../images/common/frequently.svg" type="" class="add_new_color"></object>
+                </i>
+                <p>a frequently asked</p>
+              </button>
+            </li>
+          </ul>        
+          <button class="tag_list_down_btn">
+            <span class="sr">태그 전체보기</span>
+            <i class="icon_16"><img src="../images/common/select_down_arrow.svg" alt=""></i>
+          </button> 
+        </article>  
+        <article class="quiz_desc">         
+          <p><span>Q.</span>Calculate the following fractions (but if the answer is a fraction, express it as a logarithmic fraction)</p>
+        </article>
+        <article class="incorrect_check">
+          <ul class="check_inner">
+            <li>
+              <button class="answer">
+                <span>Answer</span> 
+                <i class="icon_12"><object data="../images/common/check_icon_12.svg" type=""></object></i>
+              </button>
+              <div class="bubble_desc">
+                <p>If you can't solve the problem, <br>Skip this problem</p>
+              </div>
+            </li>
+            <li>
+              <button class="steps exam_btn">
+                <span>Steps</span> 
+                <i class="icon_12"><object data="../images/common/down_arrow_12.svg" type=""></object></i>
+              </button>
+            </li>
+            <li>
+              <button class="retray">
+                <span>Re-try</span> 
+                <i class="icon_12"><object data="../images/common/white_arrow_12.svg" type=""></object></i>
+              </button>
+            </li>
+          </ul>
+          <div class="exam_content">
+            <div class="exam_content_inner newscroll_bar">
+            문제 예시 문제 예시 문제 예시      
+            <img src="https://dummyimage.com/500x138/dbdbdb/333333" alt="">   
+            </div>
+          </div>
+        </article>
+        <article class="quiz_content ">
+          <div class="quiz_content_inner">  
+            <!-- 그리기도구 -->
+            <div class="draw_tools notepade_tool">              
+              <div class="inner_wrap">
+                <div class="tools_wrap pad_tools">
+                  <button>
+                    <span class="sr">previous</span>
+                    <i class="icon_24"><img src="../images/svg/tool_pad_prev_24.svg" alt=""></i></button>
+                  <button>
+                    <span class="sr">next</span>
+                    <i class="icon_24"><img src="../images/svg/tool_pad_next_24.svg" alt=""></i></button>
+                  <button>
+                    <span class="sr">clean</span>
+                    <i class="icon_24"><img src="../images/svg/tool_pad_wastebasket_24.svg" alt=""></i></button>
+                </div>
+                <div class="tools_wrap instrument">
+                  <button class="active">
+                    <span class="sr">pen</span>
+                    <i class="icon_24"><object type="image/svg+xml" data="../images/svg/tool_pad_pen_24.svg" class="add_new_color"></object></i>
+                  </button>
+                  <button>
+                    <span class="sr">eraser</span>
+                    <i class="icon_24"><object type="image/svg+xml" data="../images/svg/tool_pad_eraser_24.svg" class="add_new_color"></object></i>
+                  </button>
+                </div>
+              </div>          
+            </div>   
+            <!-- 문제 영역 -->
+            <div class="quiz_area ">
+              <div class="problem newscroll_bar">
+                <figure><img src="https://dummyimage.com/1200x1400/dbdbdb/333333" alt=""></figure>
+                <span class="notepad_tip_line"></span>
+                <div class="notepad_tip_desc">
+                  <p>If you can't solve the problem, <br>Skip this problem</p>
+                </div>
+              </div> 
+            </div>
+          </div>  
+        </article>  
+      </div>        
+    </section>    
+    <section class="input_tool"> 
+      <div class="tool_wrap ">    
+        <!-- 객관식 --> 
+        <article class="input_tool_wrap multi_choice_board active">
+          <div class="wrap">          
+            <!-- test 답여러줄 -->
+            <button class="mline" style="position:absolute; top:10px; right:10px; padding:4px; background-color:var(--subText); color:#ffffff; z-index:1" >정답<br>list</button>
+            <form class="multi_answer_list_wrap">
+              <!-- 답이 한줄일때 -->
+              <ul class="multi_answer_list newscroll_bar active" >
+                <li>
+                  <input type="radio" name="multi_answer" id="answer1" value="">
+                  <label for="answer1">
+                    <span>27</span>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="multi_answer" id="answer2" value="" checked>
+                  <label for="answer2">
+                    <span>28</span>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="multi_answer" id="answer3" value="">
+                  <label for="answer3">
+                    <span>29</span>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="multi_answer" id="answer4" value="">
+                  <label for="answer4">
+                    <span>30</span>
+                  </label>
+                </li>            
+              </ul>
+              <!-- 답이 한줄이상일때 이미지 -->
+              <ul class="multi_answer_list newscroll_bar answer_mline">
+                <li>
+                  <input type="radio" name="multi_answer" id="answer5" value="">
+                  <label for="answer5">
+                    <span><figure><img src="https://dummyimage.com/100x36/dbdbdb/333333" alt=""></figure></span>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="multi_answer" id="answer6" value="">
+                  <label for="answer6">
+                    <span><figure><img src="https://dummyimage.com/100x36/dbdbdb/333333" alt=""></figure></span>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="multi_answer" id="answer7" value="">
+                  <label for="answer7">
+                    <span><figure><img src="https://dummyimage.com/100x36/dbdbdb/333333" alt=""></figure></span>
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="multi_answer" id="answer8" value="">
+                  <label for="answer8">
+                    <span><figure><img src="https://dummyimage.com/100x36/dbdbdb/333333" alt=""></figure></span>
+                  </label>
+                </li>            
+              </ul>
+            </form>
+          </div>
+        </article>       
+      </div>
+    </section>
+    <!--main-->   
+  </main>
+<!--container-->
+
+  <!--2022.09.07 fullscreen btn test 삭제 -->
+<!-- test 객관식 문제 보기 -->
+<button class="mcp">
+    객관식 문제
+  </button>
+
+<!--2022.09.02 fullscreen btn test 삭제 -->
+
+  <script type="text/javascript" src="../js/vendor/gsap.min.js"></script>
+  <script type="text/javascript" src="../js/vendor/ScrollToPlugin.min.js"></script>
+  <script type="text/javascript" src="../js/vendor/swiper.min.js"></script>	
+  <script type="text/javascript" src="../js/main.js"></script>
+  <script type="text/javascript" src="../js/qz.js"></script>
+  </body>
+</html>

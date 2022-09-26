@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>mathpid</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <!--<meta name="theme-color" content="#C70026"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="description" content="">
+    <link rel="canonical" href="">
+    <meta name="robots" content="index,follow">
+
+    <link rel="stylesheet" type="text/css" href="../css/vendor/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+  <!-- 2022.09.19 불필요 css 삭제 -->
+    <link rel="stylesheet" type="text/css" href="../css/wm.css"/>
+    <!-- test 삭제 -->
+   
+
+</head>
+<body class="sub_page wm currency_history">
+<!--2022.09.07 mode btn test 삭제 -->
+
+<!-- header -->
+<header>
+  <div class="header_wrap">
+    <div class="header_inner">
+      <div class="sub_title">
+        <a href="..">
+          <!-- 2022.09.07 back text 추가 -->
+          <span class="sr">back</span>
+          <i class="icon_24">
+            <img src="../images/common/white_arrow_24.svg" aria-hidden="true" alt="close">
+          </i>
+        </a>
+        <!-- 2022.09.07 title a tag 밖으로 -->  
+        <div class="text_wrap">
+          <h2>Currency History</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- header -->
+<main class="container wm_main currency_history">
+  <audio preload="auto" class="audio_wrap"><source class="audio_source" src=""/></audio>
+  <section class="wm_top">
+    <div class="wrap">
+      <article class="wing_info">
+        <div class="wing_info_inner">
+          <!-- wing score icon -->
+          <div class="wing_info_icon">
+            <i class="icon_32">
+              <img src="../images/wm/w_wings_icon_32.svg" alt="">
+            </i>
+          </div>
+          <div class="wing_score_wrap">
+            <!-- wing score title -->
+            <!-- 2022.09.19 img -> text변경 -->
+            <div class="wing_score_title">
+              <h3>My Wings</h3>        
+            </div>
+            <!-- wing score -->
+            <div class="wing_score">
+              <div class="wing_score">   
+                <span>23</span>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <!-- Go to Market link -->
+        <div class="wm_margkt_link">
+          <a href="javascript:void(0)">
+            <span>Go to Market</span>
+            <i class="icon_16">
+              <img src="../images/common/w_arrow_r_16.svg" alt="">
+            </i>
+          </a>
+        </div>     
+      </article>   
+    </div>
+  </section>
+
+
+  <section class="wm_contents">
+    <!-- category -->
+    <div class="currency_cat_btn">
+      <ul>
+        <li class="active"><button><span>All</span></button></li>
+        <li><button><span>Earn</span></button></li>
+        <li><button><span>Used</span></button></li>
+      </ul>
+    </div>
+    <!--START :: contents-->
+    <!-- currency history list -->
+    <div class="wrap ho_scroll currency_history_list">   
+       <!-- category class - earn, used 클래스로 구분  -->
+      <article class="big_card card_ui earn">        
+        <div class="card_ui_inner">          
+          <div class="card_title_wrap">
+            <div class="card_title">
+              <p class="currency_cat">Earn</p>
+              <time datetime="2022.06.09">2022.06.09</time>
+            </div>
+            <div class="card_wings">
+              <i class="icon_32">
+                <img src="../images/wm/c_shadow_wings_icon_32.svg" alt="" >
+              </i>
+              <span class="wings_num_text">+1</span>
+            </div>            
+          </div>
+          <div class="curren_text">
+            <p>Weekly mission clear</p>
+          </div>
+        </div>
+      </article> 
+      <article class="big_card card_ui earn">        
+        <div class="card_ui_inner">          
+          <div class="card_title_wrap">
+            <div class="card_title">
+              <p class="currency_cat">Earn</p>
+              <time datetime="2022.06.09">2022.06.09</time>
+            </div>
+            <div class="card_wings">
+              <i class="icon_32">
+                <img src="../images/wm/c_shadow_wings_icon_32.svg" alt="">
+              </i>
+              <span class="wings_num_text">+1</span>
+            </div>            
+          </div>
+          <div class="curren_text">
+            <p>Weekly mission clear</p>
+          </div>
+        </div>
+      </article> 
+      <article class="big_card card_ui used">        
+        <div class="card_ui_inner">          
+          <div class="card_title_wrap">
+            <div class="card_title">
+              <p class="currency_cat">Used</p>
+              <time datetime="2022.06.07">2022.06.07</time>
+            </div>
+            <div class="card_wings">
+              <i class="icon_32">
+                <img src="../images/wm/c_shadow_wings_icon_32.svg" alt="">
+              </i>
+              <span class="wings_num_text">-10</span>
+            </div>            
+          </div>
+          <div class="curren_text">
+            <p>New theme</p>
+          </div>
+        </div>
+      </article> 
+      <article class="big_card card_ui earn">        
+        <div class="card_ui_inner">          
+          <div class="card_title_wrap">
+            <div class="card_title">
+              <p class="currency_cat">Earn</p>
+              <time datetime="2022.06.09">2022.06.09</time>
+            </div>
+            <div class="card_wings">
+              <i class="icon_32">
+                <img src="../images/wm/c_shadow_wings_icon_32.svg" alt="">
+              </i>
+              <span class="wings_num_text">+1</span>
+            </div>            
+          </div>
+          <div class="curren_text">
+            <p>Weekly mission clear</p>
+          </div>
+        </div>
+      </article> 
+      <article class="big_card card_ui earn">        
+        <div class="card_ui_inner">          
+          <div class="card_title_wrap">
+            <div class="card_title">
+              <p class="currency_cat">Earn</p>
+              <time datetime="2022.06.09">2022.06.09</time>
+            </div>
+            <div class="card_wings">
+              <i class="icon_32">
+                <img src="../images/wm/c_shadow_wings_icon_32.svg" alt="">
+              </i>
+              <span class="wings_num_text">+1</span>
+            </div>            
+          </div>
+          <div class="curren_text">
+            <p>Weekly mission clear</p>
+          </div>
+        </div>
+      </article> 
+      <article class="big_card card_ui earn">        
+        <div class="card_ui_inner">          
+          <div class="card_title_wrap">
+            <div class="card_title">
+              <p class="currency_cat">Earn</p>
+              <time datetime="2022.06.09">2022.06.09</time>
+            </div>
+            <div class="card_wings">
+              <i class="icon_32">
+                <img src="../images/wm/c_shadow_wings_icon_32.svg" alt="">
+              </i>
+              <span class="wings_num_text">+1</span>
+            </div>            
+          </div>
+          <div class="curren_text">
+            <p>Weekly mission clear</p>
+          </div>
+        </div>
+      </article> 
+      <article class="big_card card_ui earn">        
+        <div class="card_ui_inner">          
+          <div class="card_title_wrap">
+            <div class="card_title">
+              <p class="currency_cat">Earn</p>
+              <time datetime="2022.06.09">2022.06.09</time>
+            </div>
+            <div class="card_wings">
+              <i class="icon_32">
+                <img src="../images/wm/c_shadow_wings_icon_32.svg" alt="">
+              </i>
+              <span class="wings_num_text">+1</span>
+            </div>            
+          </div>
+          <div class="curren_text">
+            <p>Weekly mission clear</p>
+          </div>
+        </div>
+      </article> 
+    </div>
+    <!--END :: result contents-->
+  </section>
+    <!--main-->
+</main>
+<!--container-->
+<!--2022.09.07 fullscreen btn test 삭제 -->
+<script type="text/javascript" src="../js/vendor/gsap.min.js"></script>
+<script type="text/javascript" src="../js/vendor/ScrollToPlugin.min.js"></script>
+<script type="text/javascript" src="../js/vendor/swiper.min.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="../js/wm.js"></script>
+
+
+</body>
+</html>

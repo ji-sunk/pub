@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>mathpid</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <!--<meta name="theme-color" content="#C70026"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="description" content="">
+    <link rel="canonical" href="">
+    <meta name="robots" content="index,follow">
+
+    <link rel="stylesheet" type="text/css" href="../css/vendor/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <!-- 2022.09.19 불필요 css 삭제 -->
+    <link rel="stylesheet" type="text/css" href="../css/wm.css"/>
+    <!-- 2022.09.21 add popup.css -->
+    <link rel="stylesheet" type="text/css" href="../css/popup.css"/>
+    <!-- test 삭제바람 -->
+    <style>
+      /* 퀴즈 활성화 버튼 */
+      .qz_acitve_btn{position: fixed; bottom:20px; right:3%; display: flex; justify-content: center; align-items: center; padding:6px 12px; background-color:#303030; color:#ffffff;  z-index: 99; }
+    </style>
+
+</head>
+<body class="sub_page wm">
+<!--2022.09.07 mode btn test 삭제 -->
+
+<!-- header -->
+<header>
+  <div class="header_wrap">
+    <div class="header_inner">
+      <div class="sub_title">
+        <a href="..">
+          <!-- 2022.09.07 back text 추가 -->
+          <span class="sr">back</span>
+          <i class="icon_24">
+            <img src="../images/common/white_arrow_24.svg" aria-hidden="true" alt="close">
+          </i>
+        </a>
+        <!-- 2022.09.07 title a tag 밖으로 -->  
+        <div class="text_wrap">
+          <h2>Weekly Mission</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- header -->
+<main class="container wm_main">
+  <audio preload="auto" class="audio_wrap"><source class="audio_source" src=""/></audio>
+  <section class="wm_top">
+    <div class="wrap">
+      <article class="wing_info">
+        <div class="wing_info_inner">
+          <div class="wing_info_icon">
+            <i class="icon_32">
+              <img src="../images/wm/w_wings_icon_32.svg" alt="">
+            </i>
+          </div>
+          <div class="wing_score_wrap">
+              <!-- wing score title -->
+            <div class="wing_score_title">
+              <h3>My Wings</h3>        
+            </div>
+            <div class="wing_score">   
+              <span>23</span>
+            </div>
+          </div>  
+        </div>
+        <div class="wm_margkt_link">
+          <a href="javascript:void(0)">
+            <span>Go to Market</span>
+            <i class="icon_16">
+              <img src="../images/common/w_arrow_r_16.svg" alt="">
+            </i>
+          </a>
+        </div>     
+      </article>   
+    </div>
+  </section>
+
+
+  <section class="wm_contents">
+    <!--START :: result contents-->
+    <div class="wrap ho_scroll">
+      <div class="responsive_section">
+        <article class="big_card card_ui pop_quiz wing_icon_40_wrap">
+          <div class="card_ui_inner">
+            <div class="card_title_wrap">
+            <div class="card_title">
+              <h3>POP Quiz</h3>
+            </div>
+            <div class="card_wings">
+              <i class="icon_40">
+                <img src="../images/wm/c_wings_icon_40.svg" alt="">
+              </i>
+              <i class="card_wings_num">
+                <img src="../images/wm/wm_black_plus5.svg" alt="">
+              </i>
+            </div>            
+            </div>
+            <div class="card_desc">
+              <p>After completing the three course, solve a customized problem for you!</p>
+            </div>
+            <div class="btn_wrap">
+              <a href="javascript_void(0)">
+                <span>Start</span>
+                <i class="icon_16">
+                  <img src="../images/common/w_arrow_r_16.svg" alt="">
+                </i>
+              </a>
+            </div> 
+          </div>
+        </article>
+        <article class="big_card card_ui monthly_test wing_icon_40_wrap">
+          <div class="card_ui_inner">
+            <div class="card_title_wrap">
+              <div class="card_title">
+                <h3>Monthly Test</h3>
+              </div>
+              <div class="card_wings">
+                <i class="icon_40">
+                  <img src="../images/wm/c_wings_icon_40.svg" alt="">
+                </i>
+                <i class="card_wings_num">
+                  <img src="../images/wm/wm_black_plus5.svg" alt="">
+                </i>
+              </div>            
+            </div>
+            <div class="card_desc">
+              <p>Complete the 10 courses! I ‘ll find a problem that helps you!</p>
+            </div>
+            <div class="btn_wrap">
+              <a href="javascript_void(0)">
+                <span>Start</span>
+                <i class="icon_16">
+                  <img src="../images/common/w_arrow_r_16.svg" alt="">
+                </i>
+              </a>
+            </div> 
+          </div>
+        </article>
+      </div>
+
+      <article class="big_card card_ui ing_wm target_list_wrap">
+        <div class="card_ui_inner">
+          <div class="card_title_wrap">
+            <div class="card_title">
+              <h3>Weekly Mission</h3>
+            </div>                         
+          </div>
+          <div class="mission_icon_out newscroll_bar">
+            <div class="mission_icon_wrap">
+              <p>Finish Daily Topic <strong>3 times</strong></p>
+              <div class="weekly_icons_inner">
+                <ul class="weekly_icons separ_active">
+                  <!-- 미션완료 active 아이콘 활성화 -->
+                  <li class="active">
+                    <span class="sr">1 완료</span>
+                    <i class="icon_48"><object type="image/svg+xml" data="../images/svg/weekly_target_icon.svg" class="add_new_color"></object></i>
+                  </li>
+                  <li class="">
+                    <span class="sr">2 완료</span>
+                    <i class="icon_48"><object type="image/svg+xml" data="../images/svg/weekly_target_icon.svg" class="add_new_color"></object></i>
+                  </li>
+                  <li>
+                    <span class="sr">3day 미완료</span>
+                    <i class="icon_48"><object type="image/svg+xml" data="../images/svg/weekly_target_icon.svg" class="add_new_color"></object></i>
+                  </li>   
+                </ul>
+                <a href="javascript:void(0)">
+                  <i class="icon_16">                     
+                    <img src="../images/common/gray_arrow_16.svg" aria-hidden="true" alt="화살표"> 
+                  </i>
+                </a>
+              </div>
+            </div>
+            <div class="mission_icon_wrap">
+              <p>User Learning with OCR <strong>3 times</strong></p>
+              <div class="weekly_icons_inner">
+                <ul class="weekly_icons separ_active">
+                  <!-- 미션완료 active 아이콘 활성화 -->
+                  <li class="">
+                    <span class="sr">1 완료</span>
+                    <i class="icon_48"><object type="image/svg+xml" data="../images/svg/weekly_target_icon.svg" class="add_new_color"></object></i>
+                  </li>
+                  <li class="">
+                    <span class="sr">2 완료</span>
+                    <i class="icon_48"><object type="image/svg+xml" data="../images/svg/weekly_target_icon.svg" class="add_new_color"></object></i>
+                  </li>
+                  <li>
+                    <span class="sr">3day 미완료</span>
+                    <i class="icon_48"><object type="image/svg+xml" data="../images/svg/weekly_target_icon.svg" class="add_new_color"></object></i>
+                  </li>   
+                </ul>
+                <a href="javascript:void(0)">
+                  <i class="icon_16">                     
+                    <img src="../images/common/gray_arrow_16.svg" aria-hidden="true" alt="화살표"> 
+                  </i>
+                </a>
+              </div>
+            </div> 
+            <div class="mission_icon_wrap">
+              <p>Get <strong>‘Nice’ or ‘Better’</strong> in learning</p>
+              <div class="weekly_icons_inner">
+                <ul class="weekly_icons separ_active">
+                  <!-- 미션완료 active 아이콘 활성화 -->
+                  <li class="">
+                    <span class="sr">1 완료</span>
+                    <i class="icon_48"><object type="image/svg+xml" data="../images/svg/weekly_target_icon.svg" class="add_new_color"></object></i>
+                  </li>
+                  <li class="">
+                    <span class="sr">2 완료</span>
+                    <i class="icon_48"><object type="image/svg+xml" data="../images/svg/weekly_target_icon.svg" class="add_new_color"></object></i>
+                  </li>
+                  <li>
+                    <span class="sr">3day 미완료</span>
+                    <i class="icon_48"><object type="image/svg+xml" data="../images/svg/weekly_target_icon.svg" class="add_new_color"></object></i>
+                  </li>   
+                </ul>
+                <a href="javascript:void(0)">
+                  <i class="icon_16">                     
+                    <img src="../images/common/gray_arrow_16.svg" aria-hidden="true" alt="화살표"> 
+                  </i>
+                </a>
+              </div>
+            </div>   
+          </div>        
+        </div>
+      </article>
+      <article class="big_card card_ui complete_wm target_list_wrap">
+        <div class="card_ui_inner">
+          <div class="card_title_wrap">
+            <div class="card_title">
+              <h3>Completed Weekly Mission</h3>
+            </div>                         
+          </div>
+          <div class="mission_icon_out newscroll_bar">
+            <div class="mission_icon_wrap">
+              <p>Finish Daily Topic <strong>3 times</strong></p>
+              <div class="weekly_icons_inner">
+                <ul class="weekly_icons separ_active">
+                  <!-- 미션완료 active 아이콘 활성화 -->
+                  <li class="active">
+                    <span class="sr">1 완료</span>
+                    <i class="icon_48"><object type="image/svg+xml" data="../images/svg/weekly_target_icon.svg" class="add_new_color"></object></i>
+                  </li>
+                  <li class="active">
+                    <span class="sr">2 완료</span>
+                    <i class="icon_48"><object type="image/svg+xml" data="../images/svg/weekly_target_icon.svg" class="add_new_color"></object></i>
+                  </li>
+                  <li class="active">
+                    <span class="sr">3day 미완료</span>
+                    <i class="icon_48"><object type="image/svg+xml" data="../images/svg/weekly_target_icon.svg" class="add_new_color"></object></i>
+                  </li>   
+                </ul>
+                <div class="target_complete">
+                  <i class="icon_16">                     
+                    <img src="../images/wm/completed_taregt_16.svg" aria-hidden="true" alt=""> 
+                  </i>
+                  <span>Complete!</span>
+                </div>
+              </div>
+            </div>            
+            <div class="mission_icon_wrap">
+              <p>Get <strong>‘Nice’ or ‘Better’</strong> in learning</p>
+              <div class="weekly_icons_inner">
+                <ul class="weekly_icons separ_active">
+                  <!-- 미션완료 active 아이콘 활성화 -->
+                  <li class="active">
+                    <span class="sr">1 완료</span>
+                    <i class="icon_48"><object type="image/svg+xml" data="../images/svg/weekly_target_icon.svg" class="add_new_color"></object></i>
+                  </li>
+                  <li class="active">
+                    <span class="sr">2 완료</span>
+                    <i class="icon_48"><object type="image/svg+xml" data="../images/svg/weekly_target_icon.svg" class="add_new_color"></object></i>
+                  </li>
+                  <li class="active">
+                    <span class="sr">3day 미완료</span>
+                    <i class="icon_48"><object type="image/svg+xml" data="../images/svg/weekly_target_icon.svg" class="add_new_color"></object></i>
+                  </li>   
+                </ul>
+                <div class="target_complete">
+                  <i class="icon_16">                     
+                    <img src="../images/wm/completed_taregt_16.svg" aria-hidden="true" alt=""> 
+                  </i>
+                  <span>Complete!</span>
+                </div>
+              </div>
+            </div>
+            <div class="mission_icon_wrap">
+              <p>Get <strong>‘Nice’ or ‘Better’</strong> in learning</p>
+              <div class="weekly_icons_inner">
+                <ul class="weekly_icons separ_active">
+                  <!-- 미션완료 active 아이콘 활성화 -->
+                  <li class="active">
+                    <span class="sr">1 완료</span>
+                    <i class="icon_48"><object type="image/svg+xml" data="../images/svg/weekly_target_icon.svg" class="add_new_color"></object></i>
+                  </li>
+                  <li class="active">
+                    <span class="sr">2 완료</span>
+                    <i class="icon_48"><object type="image/svg+xml" data="../images/svg/weekly_target_icon.svg" class="add_new_color"></object></i>
+                  </li>
+                  <li class="active">
+                    <span class="sr">3day 미완료</span>
+                    <i class="icon_48"><object type="image/svg+xml" data="../images/svg/weekly_target_icon.svg" class="add_new_color"></object></i>
+                  </li>   
+                </ul>
+                <div class="target_complete">
+                  <i class="icon_16">                     
+                    <img src="../images/wm/completed_taregt_16.svg" aria-hidden="true" alt=""> 
+                  </i>
+                  <span>Complete!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <!--END :: result contents-->
+  </section>
+    <!--main-->
+</main>
+
+<!-- 팝업  top_icon_popup 공통 common.css-->
+<div class="top_icon_popup active">
+  <div class="top_icon_popup_con">   
+    <article class="popup_box wm_popup active">
+      <div class="top_icon">
+        <i class="icon_128">
+          <img src="../images/wm/w_wings_icon_32.svg" alt="">
+        </i>
+        <!-- 2022.08.03 팝업 인터랙션 추가 -->
+        <div class="particle_mission">
+          <figure>
+            <img src="../images/interaction/particle_wm_mission.webp" alt="">
+          </figure>
+        </div>
+      </div>
+      <span class="top_icon_desc">You Got New Wing!</span>
+      <div class="wm_popup_counter">
+        <i class="icon_64">
+          <img src="../images/wm/c_wings_icon_40.svg" alt="">
+        </i>
+        <span class="wm_popup_num">+5</span>
+        <!-- <i class="wm_popup_num">
+          <img src="../images/wm/wm_black_plus5.svg" alt="">
+        </i> -->
+      </div>  
+      <div class="wm_popup_text">
+        <p>Finish Daily Topic 3 Times </p>   
+        <span>Succeed!</span>
+      </div>
+      <div class="btn_wrap">
+        <a href="">
+          <span>Check Weekly Mission</span>
+          <i class="icon_16">
+            <img src="../images/common/w_arrow_r_16.svg" alt="">
+          </i>
+        </a>
+      </div>
+      <button class="popup_close_btn">
+        <i class="icon_24">
+          <img src="../images/common/w_close_icon_24.svg" alt="">
+        </i>
+        <span>Close</span>
+      </button>
+    </article>  
+  </div>
+</div>
+
+<!--container-->
+<!--2022.09.07 fullscreen btn test 삭제 -->
+<button class="qz_acitve_btn">퀴즈 활성화</button>
+
+<script type="text/javascript" src="../js/vendor/gsap.min.js"></script>
+<script type="text/javascript" src="../js/vendor/ScrollToPlugin.min.js"></script>
+<script type="text/javascript" src="../js/vendor/swiper.min.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript" src="../js/wm.js"></script>
+
+
+</body>
+</html>

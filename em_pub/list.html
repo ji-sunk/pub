@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>웅진 매쓰피드 퍼블목록</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Category</th>
+            <th>url</th>
+            <th>File</th>
+            <th>Updated</th>
+          </tr>
+        </thead>
+        <tbody id="table"></tbody>
+      </table>
+    </div>
+    <script>
+      var list = [
+        {category: '홈', name: '홈   ', fileName: 'index.html', date: '2022.09.23'},
+        {category: '홈', name: '홈 주니어', fileName: 'junior_index.html', date: '2022.09.23'},
+        {category: '홈', name: '홈 시니어', fileName: 'senior_index.html', date: '2022.09.23'},
+        {category: '홈', name: '구독팝업   ', fileName: 'subscribe_popup.html', date: '2022.09.23'},
+        {category: '홈', name: '학습시작전 구독팝업', fileName: 'tl_before_popup.html', date: '2022.09.23'},  
+        {category: '코스학습', name: '코스학습 메인', fileName: 'daily_course/course_main.html', date: '2022.09.23'},
+        {category: '코스학습', name: '코스학습 완료 후 재학습 팝업', fileName: 'daily_course/course_main_complete_retry.html', date: '2022.09.23'},
+        {category: '주제학습', name: '주제학습 주제, 학년별 ', fileName: 'daily_topic/topic_main.html', date: '2022.09.23'},
+        {category: '주제학습', name: '주제학습 리스트  ', fileName: 'daily_topic/topic_main.html', date: '2022.09.23'},
+        {category: '주제학습', name: '주제학습 학기몇 주제변경 슬라이드업', fileName: 'daily_topic/grade1.html', date: '2022.09.23'},
+        {category: '주제학습', name: '주제학습 소주제 리스트', fileName: 'daily_topic/number1.html', date: '2022.09.23'},
+        {category: '문제풀이', name: '문제풀이 공통 메인  ', fileName: 'qz/qz.html', date: '2022.09.23'},
+        {category: '문제풀이', name: '문제풀이 팝업 ', fileName: 'qz/qz_message_popup.html', date: '2022.09.23'},
+        {category: '문제풀이', name: '문제풀이 팝업 캐릭터 peter', fileName: 'qz/qz_message_popup_peter.html', date: '2022.09.23'},
+        {category: '문제풀이', name: '문제풀이 팝업 캐릭터 pidy', fileName: 'qz/qz_message_popup_pidy.html', date: '2022.09.23'},
+        {category: '문제풀이', name: '문제풀이 팝업 캐릭터 rachael', fileName: 'qz/qz_message_popup_rachael.html', date: '2022.09.23'},
+        {category: '문제풀이', name: '문제풀이 종료 팝업  ', fileName: 'qz/qz_learn_end_popup.html', date: '2022.09.23'},
+        {category: '문제풀이', name: '문제풀이 오답 확인 ', fileName: 'qz/qz_incorrect.html', date: '2022.09.23'}, 
+        {category: '진단테스트', name: '진단테스트 메인 ', fileName: 'dt/dt_diag.html', date: '2022.09.23'}, 
+        {category: '진단테스트', name: '진단테스트 팝업 ', fileName: 'dt/dt_diag_learn_end_popup.html', date: '2022.09.23'},
+        {category: '진단테스트', name: '진단테스트 오답 확인 ', fileName: 'dt/dt_incorrect.html', date: '2022.09.23'},   
+        {category: '진단테스트', name: '진단테스트 안내 ', fileName: 'dt/dt_ai_diag.html', date: '2022.09.23'},   
+        {category: '진단테스트', name: '진단테스트 학습종료 결과 로딩 ', fileName: 'dt/dt_message_popup.html', date: '2022.09.23'},   
+        {category: '학습결과', name: '코스학습 결과 ', fileName: 'learning_result/result_course_learning.html', date: '2022.09.23'},  
+        {category: '학습결과', name: '코스학습 결과 advanced', fileName: 'learning_result/result_course_learning_advanced.html', date: '2022.09.23'},  
+        {category: '학습결과', name: '코스학습 결과 basic', fileName: 'learning_result/result_course_learning_basic.html', date: '2022.09.23'},  
+        {category: '학습결과', name: '코스학습 결과 belowbasic', fileName: 'learning_result/result_course_learning_belowbasic.html', date: '2022.09.23'},  
+        {category: '학습결과', name: '코스학습 결과 proficient', fileName: 'learning_result/result_course_learning_proficient.html', date: '2022.09.23'},  
+        {category: '학습결과', name: '코스학습 결과 상세페이지', fileName: 'learning_result/result_course_learning_view.html', date: '2022.09.23'}, 
+        {category: '학습결과', name: '주제학습 결과 ', fileName: 'learning_result/result_topic_learning.html', date: '2022.09.23'},  
+        {category: '학습결과', name: '결과 진단 ', fileName: 'learning_result/result_diagnostic_test.html', date: '2022.09.23'},
+        {category: '학습결과', name: '개념확인 ', fileName: 'learning_result/check_the_concept.html', date: '2022.09.23'},  
+        {category: '학습결과', name: '개념확인 팝업 ', fileName: 'learning_result/check_the_concept_popup.html', date: '2022.09.23'},  
+        {category: '학습노트', name: '상태, 히스토리', fileName: 'progress_report/progress_report.html', date: '2022.09.23'}, 
+        {category: '학습노트', name: '구독 팝업', fileName: 'progress_report/progress_report_subscribe_popup.html', date: '2022.09.23'},  
+        {category: '학습노트', name: '상태 리스트 없음', fileName: 'progress_report/progress_report_none_staus_list.html', date: '2022.09.23'},
+        {category: '학습노트', name: '히스토리 리스트 없음', fileName: 'progress_report/progress_report_none_history_list.html', date: '2022.09.23'},
+        {category: 'OCR학습', name: '문제 촬영, 그리기 등 ', fileName: 'ocr/filming.html', date: '2022.09.23'},  
+        {category: 'OCR학습', name: '문제 촬영 인식 ', fileName: 'ocr/recog.html', date: '2022.09.23'},  
+        {category: 'OCR학습', name: '문제 촬영 인식 오류 ', fileName: 'ocr/recog_error.html', date: '2022.09.23'},  
+        {category: 'OCR학습', name: '문제 촬영 인식 오류 캐릭터 peter', fileName: 'ocr/recog_error_peter.html', date: '2022.09.23'}, 
+        {category: 'OCR학습', name: '문제 촬영 인식 오류 캐릭터 pidy', fileName: 'ocr/recog_error_pidy.html', date: '2022.09.23'}, 
+        {category: 'OCR학습', name: '문제 촬영 인식 오류 캐릭터 rachael', fileName: 'ocr/recog_error_rachael.html', date: '2022.09.23'}, 
+        {category: 'OCR학습', name: 'OCR 인식 결과 ', fileName: 'ocr/recog_result.html', date: '2022.09.23'}, 
+        {category: 'OCR학습', name: 'OCR 인식 결과 이전 레이아웃 ', fileName: 'ocr/recog_result_old.html', date: '2022.09.23'}, 
+        {category: 'OCR학습', name: 'OCR 인식 결과 추천학습 없음 ', fileName: 'ocr/recog_result_old_none_list.html', date: '2022.09.23'}, 
+        {category: 'OCR학습', name: '촬영 히스토리 ', fileName: 'ocr/ocr_history.html', date: '2022.09.23'},   
+        {category: 'OCR학습', name: '촬영 히스토리 팝업 ', fileName: 'ocr/ocr_history_unselected_popup.html', date: '2022.09.23'}, 
+        {category: 'OCR학습', name: '촬영 전 가이드팝업 ', fileName: 'ocr/filming_before_guide_popup.html', date: '2022.09.23'}, 
+        {category: 'OCR학습', name: 'OCR 가이드 ', fileName: 'ocr/howto_ocr.html', date: '2022.09.23'}, 
+        {category: 'OCR학습', name: '[영어 이미지] OCR 가이드  ', fileName: 'ocr/howto_ocr_en_img.html', date: '2022.09.23'}, 
+        {category: 'OCR학습', name: '촬영 히스토리 리스트 없음', fileName: 'ocr/ocr_history_none.html', date: '2022.09.23'},        
+        {category: '온보딩', name: '스플레쉬 ', fileName: 'ob/splash_load.html', date: '2022.09.23'}, 
+        {category: '온보딩', name: '온보딩', fileName: 'ob/on_boarding.html', date: '2022.09.23'},      
+        {category: '온보딩', name: '프리미엄팝업 ', fileName: 'ob/premium_popup.html', date: '2022.09.23'},      
+        {category: '온보딩', name: '약관 ', fileName: 'ob/tos.html', date: '2022.09.23'},
+        {category: '회원', name: '로그인 ', fileName: 'mb/login.html', date: '2022.09.23'}, 
+        {category: '회원', name: '로그인 팝업 ', fileName: 'mb/login_popup.html', date: '2022.09.23'},  
+        {category: '회원', name: '비밀번호 찾기 ', fileName: 'mb/login_forgot_password.html', date: '2022.09.23'},
+        {category: '회원', name: '비밀번호 찾기 완료 ', fileName: 'mb/login_forgot_password_complete.html', date: '2022.09.23'}, 
+        {category: '회원', name: '회원가입 ', fileName: 'mb/create_account.html', date: '2022.09.23'}, 
+        {category: '회원', name: '회원가입 게스트', fileName: 'mb/create_account_guest.html', date: '2022.09.23'}, 
+        {category: '회원', name: '회원가입 완료', fileName: 'mb/create_account_complete.html', date: '2022.09.23'},   
+        {category: '회원', name: '이용약관', fileName: 'mb/terms_of_use.html', date: '2022.09.23'},           
+        {category: '회원', name: '개인정보', fileName: 'mb/personal_information.html', date: '2022.09.23'},  
+        {category: '회원', name: '마케팅', fileName: 'mb/marketing_acc.html', date: '2022.09.23'},
+        {category: '어카운트', name: '로그인', fileName: 'ac/ac_login.html', date: '2022.09.23'}, 
+        {category: '어카운트', name: '비로그인', fileName: 'ac/ac_non_login.html', date: '2022.09.23'}, 
+        {category: '어카운트', name: '이메일 변경 팝업', fileName: 'ac/ac_login_email_changed_popup.html', date: '2022.09.23'},          
+        {category: '어카운트', name: '이메일 변경 인증 팝업', fileName: 'ac/ac_login_email_auth_popup.html', date: '2022.09.23'}, 
+        {category: '어카운트', name: '비밀번호 변경 팝업', fileName: 'ac/ac_login_pass_changed_popup.html', date: '2022.09.23'},
+        {category: '어카운트', name: '회원탈퇴', fileName: 'ac/ac_withdrawal.html', date: '2022.09.23'}, 
+        {category: '어카운트', name: '회원탈퇴 패스워드 팝업', fileName: 'ac/ac_withdrawal_pass_popup.html', date: '2022.09.23'},   
+        {category: '어카운트', name: '회원탈퇴 완료', fileName: 'ac/ac_withdrawal_complete.html', date: '2022.09.23'}, 
+        {category: '프로필', name: '비로그인 프로필', fileName: 'pr/pr_non_mb.html', date: '2022.09.23'},  
+        {category: '프로필', name: '비로그인 프로필 팝업', fileName: 'pr/pr_non_mb_popup.html', date: '2022.09.23'},  
+        {category: '프로필', name: '로그인 프로필', fileName: 'pr/pr_mb.html', date: '2022.09.23'},  
+        {category: '프로필', name: '프로필 추가', fileName: 'pr/pr_add_pr.html', date: '2022.09.23'},
+        {category: '프로필', name: '프로필 수정', fileName: 'pr/pr_change_pr.html', date: '2022.09.23'},
+        {category: '프로필', name: '캐릭터 변경', fileName: 'pr/pr_change_character.html', date: '2022.09.23'},
+        {category: '프로필', name: '프로필 계정 비밀번호', fileName: 'pr/pr_confrim_pass.html', date: '2022.09.23'},
+        {category: '위클리 미션', name: '위클리 미션 리스트', fileName: 'wm/weekly_mission.html', date: '2022.09.23'},
+        {category: '위클리 미션', name: '위클리 미션 팝업', fileName: 'wm/weekly_mission_popup.html', date: '2022.09.23'},
+        {category: '위클리 미션', name: 'ai 추천 학습', fileName: 'wm/ai_recom.html', date: '2022.09.23'},
+        {category: '위클리 미션', name: '커런시 히스토리', fileName: 'wm/currnercy_history.html', date: '2022.09.23'},
+        {category: '위클리 미션', name: '커런시 히스토리 리스트 없음', fileName: 'wm/currnercy_history_none.html', date: '2022.09.23'},
+        {category: '뱃지 퀘스트', name: '뱃지 리스트', fileName: 'qs/badge_quest.html', date: '2022.09.23'},
+        {category: '뱃지 퀘스트', name: '뱃지 리스트 획득 안내 팝업', fileName: 'qs/badge_quest_popup.html', date: '2022.09.23'},
+        {category: '고객문의', name: '1:1문의', fileName: 'cs/cs_list.html', date: '2022.09.23'},
+        {category: '고객문의', name: '1:1문의 내역없음', fileName: 'cs/cs_none_list.html', date: '2022.09.23'},
+        {category: '고객문의', name: '1:1문의 상세', fileName: 'cs/cs_view.html', date: '2022.09.23'},
+        {category: '고객문의', name: '1:1문의 작성', fileName: 'cs/cs_write.html', date: '2022.09.23'},
+        {category: '고객문의', name: '1:1문의 삭제 팝업', fileName: 'cs/cs_view_delete_popup.html', date: '2022.09.23'},
+        {category: '제품소개', name: '제품소개 슬라이드', fileName: 'ab/introduction.html', date: '2022.09.23'},  
+        {category: '오류팝업', name: '버전 업데이트 안내 팝업', fileName: 'er/update_popup.html', date: '2022.09.23'},  
+        {category: '오류팝업', name: '알 수 없는 에러 안내 팝업', fileName: 'er/unknown_popup.html', date: '2022.09.23'},   
+        {category: '오류팝업', name: '인터넷오류 안내 팝업', fileName: 'er/network_error_popup.html', date: '2022.09.23'},  
+        {category: '오류팝업', name: '서버접속불가 안내 팝업', fileName: 'er/server_failed_popup.html', date: '2022.09.23'},  
+        {category: '오류팝업', name: '유효하지 않은 접속 경로 안내 팝업', fileName: 'er/invalid_access_popup.html', date: '2022.09.23'}, 
+        {category: '오류팝업', name: '같은 계정의 동시접속 안내 팝업', fileName: 'er/other_account_popup.html', date: '2022.09.23'},  
+        {category: '오류팝업', name: '앱 미사용시 종료 안내 팝업', fileName: 'er/inactivity_popup.html', date: '2022.09.23'}, 
+        {category: '구매랜딩페이지', name: '구매랜딩페이지', fileName: 'purchase/purchase_landing.html', date: '2022.09.23'}, 
+        {category: '구매랜딩페이지', name: '구매완료 페이지 ', fileName: 'purchase/purchase_complete.html', date: '2022.09.23'}, 
+        {category: '워크시트', name: '워크시트', fileName: 'worksheet/ws.html', date: '2022.08.16'}, 
+        {category: '워크시트', name: '워크시트 팝업 이메일정보 유', fileName: 'worksheet/ws_email_popup_has_email.html', date: '2022.08.17'}, 
+        {category: '워크시트', name: '워크시트 팝업 이메일정보 무', fileName: 'worksheet/ws_email_popup_none_email.html', date: '2022.08.17'}, 
+        {category: '이메일 전송 케이스', name: '회원가입 시 인증', fileName: 'email/verify_email_email.html', date: '2022.08.03'}, 
+        {category: '이메일 전송 케이스', name: '회원가입 후', fileName: 'email/welcom_email.html', date: '2022.08.03'}, 
+        {category: '이메일 전송 케이스', name: '이메일 변경', fileName: 'email/change_email_email.html', date: '2022.08.03'}, 
+        {category: '이메일 전송 케이스', name: '비밀번호 변경', fileName: 'email/change_pw_email.html', date: '2022.08.03'}, 
+        {category: '이메일 전송 케이스', name: '프리미엄 구독', fileName: 'email/premium_email.html', date: '2022.08.03'}, 
+        {category: '이메일 전송 케이스', name: '프리미엄 구독 해제', fileName: 'email/unsubscribe_email.html', date: '2022.08.03'}, 
+        {category: '이메일 전송 케이스', name: '회원탈퇴', fileName: 'email/withdrawal_email.html', date: '2022.08.03'},
+        {category: '이메일 전송 케이스', name: '1:1문의 답변 완료', fileName: 'email/inquiry_email.html', date: '2022.08.03'},
+        {category: '이메일 전송 케이스', name: '워크시트 메일', fileName: 'email/worksheet_email.html', date: '2022.08.16'},
+        {category: '[한국] 온보드', name: '온보딩', fileName: 'ob/on_boarding_ko.html', date: '2022.09.23'}, 
+        {category: '[한국] 뱃지 퀘스트', name: '뱃지 퀘스트 한글', fileName: 'qs/badge_quest_ko.html', date: '2022.09.23'},      
+        {category: '구매랜딩페이지', name: '기본', fileName: 'purchase/purchase_landing_basic.html', date: '2022.09.23'}, 
+        {category: '[한국] 구매랜딩페이지', name: '온보드 후 결재', fileName: 'purchase/purchase_landing_kr_obafter.html', date: '2022.09.23'}, 
+        {category: '[한국] 구매랜딩페이지', name: '결재시', fileName: 'purchase/purchase_landing_kr_payment.html', date: '2022.09.23'}, 
+        {category: '[인도-필리핀] 구매랜딩페이지', name: '온보드 후 결재', fileName: 'purchase/purchase_landing_in-ph_obafter.html', date: '2022.09.23'}, 
+        {category: '[인도-필리핀] 구매랜딩페이지', name: '결재시', fileName: 'purchase/purchase_landing_in-ph_payment.html', date: '2022.09.23'}, 
+        {category: '[한국 비주얼타이틀] 뱃지 퀘스트 팝업', name: '뱃지 퀘스트 한글', fileName: 'qs/badge_quest_popup_ko.html', date: '2022.09.23'}, 
+        {category: '[한국 비주얼타이틀] 위클리미션', name: '위클리미션', fileName: 'wm/weekly_mission_ko.html', date: '2022.09.23'}, 
+        {category: '[한국 비주얼타이틀] 위클리미션', name: 'AI추천', fileName: 'wm/ai_recom_ko.html', date: '2022.09.23'}, 
+        {category: '[한국 비주얼타이틀] 코스학습', name: '코스결과 상세', fileName: 'wm/ai_recom_ko.html', date: '2022.09.23'}, 
+        {category: '튜토리얼', name: '메인 튜토리얼', fileName: ' main_tuto.html', date: '2022.09.23'},
+        {category: '튜토리얼', name: '코스학습 튜토리얼', fileName: 'daily_course/course_tuto.html', date: '2022.09.23'}, 
+        {category: '튜토리얼', name: '주제학습 튜토리얼', fileName: 'daily_topic/topic_tuto.html', date: '2022.09.23'},      
+        {category: '튜토리얼', name: 'OCR 튜토리얼', fileName: 'ocr/ocr_tuto.html', date: '2022.09.23'},
+        {category: '[한국] 튜토리얼', name: '메인 튜토리얼', fileName: ' main_tuto_kr.html', date: '2022.09.23'},
+        {category: '[한국] 튜토리얼', name: '코스학습 튜토리얼', fileName: 'daily_course/course_tuto_kr.html', date: '2022.09.23'}, 
+        {category: '[한국] 튜토리얼', name: '주제학습 튜토리얼', fileName: 'daily_topic/topic_tuto_kr.html', date: '2022.09.23'},      
+        {category: '[한국] 튜토리얼', name: 'OCR 튜토리얼', fileName: 'ocr/ocr_tuto_kr.html', date: '2022.09.23'},
+        {category: '[한국] 주제학습', name: '주제학습 리스트', fileName: 'daily_topic/topic_main_kr.html', date: '2022.09.23'},
+        {category: '[한국] 주제학습', name: '주제학습 소주제', fileName: 'daily_topic/number1_kr.html', date: '2022.09.23'},
+        {category: '[한국] 문제풀이', name: '문제풀이 공통 메인  ', fileName: 'qz/qz_kr.html', date: '2022.09.23'},
+        {category: '[한국] 문제풀이 결과', name: '주제학습 결과', fileName: 'learning_result/result_topic_learning_kr.html', date: '2022.09.23'},
+
+
+      ]
+      var html = []
+      var i, item
+      for (i = 0; i < list.length; i++) {
+        item = list[i]
+        html += '<tr>'
+        html += '<td>' + (i+1) + '</td>'
+        html += '<td>' + item.category + '</td>'
+        html += '<td><a href="' + item.fileName + '">' + item.name + '</a></td>'
+        html += '<td>' + item.fileName + '</td>'
+        html += '<td>' + item.date + '</td>'
+        html += '</tr>'
+      }
+      $('#table').append(html)
+    </script>
+    <style>
+      table{width: 100%;max-width: 900px;margin: 20px;}
+      table th{padding: 5px 10px;background: #ffb6b6;font-size: 14px;text-align: left;}
+      table td{padding: 5px 10px;font-size: 14px;border: 1px solid #dddd;}
+    </style>
+  </body>
+</html>

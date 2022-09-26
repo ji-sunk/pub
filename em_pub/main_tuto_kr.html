@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>mathpid</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <!--<meta name="theme-color" content="#C70026"> -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="description" content="">
+  <link rel="canonical" href="">
+  <meta name="robots" content="index,follow">
+  
+  <link rel="stylesheet" type="text/css" href="css/vendor/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="css/common.css"/>
+  <link rel="stylesheet" type="text/css" href="css/main.css"/>
+  <!-- 2022.09.19 불필요 css 삭제 -->
+    <!-- 2022.08.27 튜토리얼 css 분리 -->
+    <link rel="stylesheet" type="text/css" href="css/tuto.css"/>
+
+  <!-- test 삭세바람 -->
+  <style>   
+    .course_active{position:fixed; bottom:40px; right:20px; z-index: 999; padding:8px 20px; background-color:#666666; color:#ffffff;}
+  </style>
+  <!-- -->
+</head>
+<body class="main_page junior ko">
+<!-- header -->
+  <!--2022.09.02 mode test 삭제 -->  
+  
+  <header>
+    <div class="header_wrap">	
+      <div class="hamburger">
+        <button class="hamburger_btn">
+          <span class="sr">메뉴오픈</span>
+          <i><img src="images/common/icon-menu.svg" alt="메인 메뉴 아이콘"></i>
+        </button>
+        <!-- 2022.07.14 구독여부 태그 -->
+        <div class="subscribe_tag">
+          <div class="subscribe_tag_inner subscribe_l">
+            <i><img src="images/common/h_limited_icon.svg" alt="limited"></i>
+            <span>Limited</span>
+          </div>
+          <div class="subscribe_tag_inner subscribe_p">
+            <i><img src="images/common/h_premium_icon_16.svg" alt="premium"></i>
+            <span>Premium</span>
+          </div>
+        </div>
+      </div>     
+      <div class="top_wing">
+        <div class="top_wing_inner">
+          <i><img src="images/common/icon-wings.svg" alt="윙"></i>
+          <span class="wing_val">002</span> 
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2022.07.14 gnb -->
+  <secton class="gnb ">
+    <div class="gnb_inner">
+      <div class="close_gnb_wrap">
+        <button class="close_gnb">
+          <span class="sr">close global navigation</span> 
+          <i class="icon_24">
+            <img src="images/common/w_close_icon_24.svg" alt="">
+          </i>
+        </button>
+      </div>
+      <div class="gnb_info">
+        <article class="user_profile">
+          <div class="profile_character">
+            <figure>
+              <img src="images/character/img_PR_character01.webp" alt="">
+            </figure>
+          </div>
+          <div class="btn_wrap">
+            <a href="javascript:void(0)">
+              <span>Change Profile</span>
+              <i class="icon_12">
+                <object data="images/common/c_arrow_right_12.svg" type="" class="add_new_color"></object>
+              </i>
+            </a>
+          </div>
+        </article>
+        <article class="learn_list">
+          <ul>
+            <li>
+              <a href="javascript:void(0)">
+                <span>Daily Course</span>
+                <i class="icon_16">
+                  <img src="images/common/white_arrow_16.svg" alt="">
+                </i>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <span>Daily Topic</span>
+                <i class="icon_16">
+                  <img src="images/common/white_arrow_16.svg" alt="">
+                </i>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <span>Math Camera</span>
+                <i class="icon_16">
+                  <img src="images/common/white_arrow_16.svg" alt="">
+                </i>
+              </a>
+            </li>
+          </ul>
+        </article>
+        <article class="service_list">
+          <ul>
+            <li>
+              <a href="javascript:void(0)">
+                <div class="icon_wrap">
+                  <i class="icon_48 ">
+                    <object data="images/svg/gnb_weeklymission_on_48.svg" type="" class="add_new_color"></object>
+                  </i>
+                </div>
+                <span>Weekly <br>Mission</span>            
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <div class="icon_wrap">
+                  <i class="icon_48">                 
+                    <object data="images/svg/gnb_badgequest_48.svg" type="" class="add_new_color"></object>
+                  </i>
+                </div>
+                <span>Badge <br>Quest</span>            
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <div class="icon_wrap">
+                  <i class="icon_48">           
+                    <object data="images/svg/gnb_market_icon_48.svg" type="" class="add_new_color"></object>
+                  </i>
+                </div>
+                <span>Mathpid <br>Market</span>            
+              </a>
+            </li>
+          </ul>
+        </article>
+        <article class="support_list">
+          <ul>
+            <li>
+              <a href="javascript:void(0)">
+                <span>Progress Report</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <span>Account</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <span>Customer Support</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <span>Product Introduction</span>
+              </a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </secton>
+
+<!-- //header -->
+  <main class="container">
+    <audio preload="auto" class="audio_wrap"><source class="audio_source" src/></audio>    
+    <!-- main top profile, weekly_mission -->
+    <section class="main_top">
+      <article class="profile">
+        <div class="profile_inner">
+          <div class="profile_info">
+            <a href="javascript:void(0);">
+              <h2 class="profile_name">Olivia Lily Collins</h2>
+              <i> 
+                <object type="image/svg+xml" data="images/svg/black_icon_12.svg"></object>
+              </i>
+            </a>
+            <div class="profile_grade">
+              <div class="grade_icon_wrap">
+                <i class="grade_icon">
+                  <!-- <img src="images/main/icon-junior-sneakers.svg" alt="등급 주니어 스니커즈">   -->
+                  <object data="images/main/icon-junior-sneakers.svg" type="" class="add_new_color"></object>                           
+                </i>
+                <i class="grade_level_icon"><img src="images/main/icon-level-01.svg" alt="레벨 1"></i>
+              </div>
+              <!-- 등급 progress -->
+              <div class="grade_track">
+                <span class="sr">등급 경험치 30%</span>
+                <span class="gard_bar" style="width:50%"></span>
+              </div>
+            </div>
+          </div>
+          <div class="badges">
+            <span class="badges_more_num active"><span class="sr">총획득 배지개수 </span>+5<span class="sr">개</span></span>
+            <!-- 배찌가 3개 이상이면  badges_more_num에 active-->
+            <ul>
+              <li>
+                <i><figure>
+                <!--2022.07.14 이미지 변경  -->
+                <img src="images/main/icon_mo_b_64_first step.webp" srcset="" alt="대표 배지1"></figure></i>
+              </li>  
+              <li>
+                <i><figure>
+                <img src="images/main/icon_mo_b_64_temp02.webp" srcset="images/main/icon_mo_b_64_temp02@2x.webp 2x, images/main/icon_mo_b_64_temp02@3x.webp 3x" alt="대표 배지2"></figure></i>
+              </li> 
+              <li>
+                <i><figure>
+                <img src="images/main/icon_mo_b_64_temp01.webp" srcset="images/main/icon_mo_b_64_temp01@2x.webp 2x, images/main/icon_mo_b_64_temp01@3x.webp 3x" alt="대표 배지3"></figure></i>
+              </li> 
+            </ul>          
+          </div>
+        </div>
+      </article>
+      <article class="weekly_mission_wrap">
+        <div class="wrap">
+          <article class="weekly_mission">
+            <div class="weekly_header">
+              <h3>Weekly Mission</h3>
+              <span class="weekly_day">D-3</span>
+            </div>
+            <span class="sr">미션 2개 완료</span>
+            <div class="weekly_icon_wrap">
+              <ul class="weekly_icons separ_active">
+                <!-- 미션완료 active 아이콘 활성화 -->
+                <li class="active">
+                  <span class="sr">1day 완료</span>
+                  <i>      
+                    <!-- 2022.07.14 이미지 변경 -->
+                    <object type="image/svg+xml" data="images/svg/icon_all_junior_v_48_WeeklyMission_on.svg"  class="add_new_color"></object>
+                  </i>
+                </li>
+                <li class="active">
+                  <span class="sr">2day 완료</span>
+                  <i>        
+                    <!-- 2022.07.14 이미지 변경 -->          
+                    <object type="image/svg+xml" data="images/svg/icon_all_junior_v_48_WeeklyMission_on.svg"  class="add_new_color"></object>
+                  </i>
+                </li>
+                <li>
+                  <span class="sr">3day 미완료</span>
+                  <i>    
+                    <!-- 2022.07.14 이미지 변경 -->                
+                    <object type="image/svg+xml" data="images/svg/icon_all_junior_v_48_WeeklyMission_on.svg"  class="add_new_color"></object>
+                  </i>
+                </li>
+                <li>
+                  <span class="sr">4day 미완료</span>
+                  <i>  
+                    <!-- 2022.07.14 이미지 변경 -->                
+                    <object type="image/svg+xml" data="images/svg/icon_all_junior_v_48_WeeklyMission_on.svg"  class="add_new_color"></object>
+                  </i>
+                </li>
+                <li>
+                  <span class="sr">5day 미완료</span>
+                  <i>   
+                    <!-- 2022.07.14 이미지 변경 -->                 
+                    <object type="image/svg+xml" data="images/svg/icon_all_junior_v_48_WeeklyMission_on.svg"  class="add_new_color"></object>
+                  </i>
+                </li>
+              </ul>
+              <div class="text_btn_wrap">
+                <a href="javascript:void(0)">
+                  <span>Get-more-Wings!</span>
+                  <i class="icon_16 ">                    
+                    <img src="images/common/gray_arrow_16.svg" aria-hidden="true" alt="화살표"> 
+                  </i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </article>
+    </section>
+    <!-- main contents -->
+    <section class="main_contents">
+      <!-- landscape scroll wrap -->
+      <div class="wrap ho_scroll"> 
+        <!-- 2022.07.14 pop quiz, monthly test 추가-->
+        <article class="main_pop_quiz divide_card_half divide_card_wrap card_ui">
+          <div class="card_ui_inner">
+            <a href="daily_course/course_main.html" class="audio_btn" data-audio="hm_click">
+              <div class="card_title_wrap">             
+                <div class="card_title">
+                  <h3>POP Quiz</h3>
+                  <p>May week 2!</p>
+                </div>
+              </div>   
+              <div class="icon_wrap">
+                <i class="card_icon">
+                  <object type="image/svg+xml"data="images/svg/icon_all_junior_v_48_PopQuiz.svg" class="add_new_color"></object>
+                </i>    
+                <i class="icon_16 gray_arrow">
+                  <img src="images/common/gray_arrow_16.svg" aria-hidden="true" alt="화살표"> 
+                </i>
+              </div>
+            </a>
+          </div>
+        </article>
+        <article class="main_monthly_test divide_card_half divide_card_wrap card_ui">
+          <div class="card_ui_inner">
+            <a href="daily_topic/topic_main.html" class="audio_btn" data-audio="hm_click">
+              <div class="card_title_wrap">             
+                <div class="card_title">
+                  <h3>Monthly Test</h3>
+                  <p>May</p>
+                </div>
+              </div>   
+              <div class="icon_wrap">
+                <i class="card_icon">
+                  <object type="image/svg+xml"data="images/svg/icon_senior_v_48_MonthlyTest.svg" class="add_new_color"></object>
+                </i>
+                <i class="icon_16 gray_arrow">
+                  <img src="images/common/gray_arrow_16.svg" aria-hidden="true" alt="화살표"> 
+                </i>
+              </div>
+            </a>
+          </div>
+        </article>  
+        <!-- 2022.07.14 코스 시작전 course_before-->
+        <article class="daily_course big_card card_ui junior_course_before">
+          <div class="card_ui_inner">
+            <div class="card_title_wrap">
+              <div class="icon_wrap">
+                <i class="card_icon">
+                  <object type="image/svg+xml" data="images/svg/daliy_course_icon.svg" class="add_new_color"></object>               
+                </i>
+              </div>
+              <div class="card_title">
+                <h3>Let me know Your Level</h3>
+                <p>Start AI Diagnostic Test <br>for your optimized daily course!</p>
+              </div>
+            </div>
+            <div class="card_question_img">
+              <figure><img src="https://dummyimage.com/267x117/dbdbdb/333333" alt=""></figure>
+            </div>
+            <div class="card_btn_wrap">        
+              <a href="daily_course/course_main.html" class="card_btn audio_btn" data-audio="hm_click">
+                <span>Test Start</span>          
+                <i class="icon_16">
+                  <img src="images/common/white_arrow_16.svg" aria-hidden="true" alt="화살표">                                    
+                </i>
+              </a>  
+            </div>
+          </div>
+        </article>
+        <article class="daily_topic big_card card_ui">
+          <div class="card_ui_inner">
+            <div class="card_title_wrap">
+              <div class="icon_wrap">
+                <i class="card_icon">
+                  <object type="image/svg+xml" data="images/svg/daily_topic_icon.svg" class="add_new_color"></object>  
+                </i>
+              </div>
+              <div class="card_title">
+                <h3>Daily Topic</h3>
+                <p>One-digit Addition</p>
+              </div>
+            </div>
+            <div class="card_question_img">
+              <figure><img src="https://dummyimage.com/267x117/dbdbdb/333333" alt=""></figure>
+            </div>
+            <div class="card_btn_wrap">        
+              <a href="daily_topic/topic_main.html" class="card_btn audio_btn" data-audio="hm_click">
+                <span>Start</span>          
+                <i class="icon_16 white_arrow">                
+                  <img src="images/common/white_arrow_16.svg" aria-hidden="true" alt="화살표">         
+                </i>
+              </a>  
+            </div>
+          </div>
+        </article>
+        <div class="card_wrap divide_3_card_wrap">
+          <article class="ocr link_card card_ui">
+            <div class="card_ui_inner">
+              <a href="javascript:void(0)" class="audio_btn" data-audio="hm_click">
+                <div class="card_title_wrap">
+                  <div class="icon_wrap">
+                    <i class="card_icon">
+                      <!-- 20220714 이미지변경 -->
+                      <object type="image/svg+xml" data="images/svg/icon_all_junior_v_48_OCR.svg" class="add_new_color"></object>       
+                    </i>
+                  </div>
+                  <div class="card_title">
+                    <h3>Learning with OCR</h3> 
+                    <i class="icon_16 gray_arrow">                     
+                      <img src="images/common/gray_arrow_16.svg" aria-hidden="true" alt="화살표"> 
+                    </i>    
+                  </div>
+                </div>
+              </a>
+            </div>
+          </article>
+          <article class="market link_card card_ui">
+            <div class="card_ui_inner"> 
+              <a href="javascript:void(0)" class="audio_btn" data-audio="hm_click">
+                <div class="card_title_wrap">
+                  <div class="icon_wrap">
+                    <i class="card_icon">
+                      <!-- 20220714 이미지변경 -->
+                      <object type="image/svg+xml" data="images/svg/icon_all_junior_v_48_Market.svg" class="add_new_color"></object>
+                    </i>
+                  </div>
+                  <div class="card_title">
+                    <h3>Mathpid Market</h3> 
+                    <i class="icon_16">
+                      <img src="images/common/gray_arrow_16.svg" aria-hidden="true" alt="화살표"> 
+                    </i>    
+                  </div>
+                </div>
+              </a>
+            </div>
+          </article> 
+          <article class="ai_card card_ui">
+            <div class="card_ui_inner">
+              <div class="ai_slider" >
+                <div class="swiper-wrapper">
+                  <div class="item1 slider_item swiper-slide">
+                    <a href="javacript:void(0)">
+                      <div class="slider_text">
+                        <h3>AI Barosam</h3>
+                        <p>Completed with powerful AI Edutech. Open Event!</p>
+                      </div>
+                      <div class="img_wrap">
+                        <figure><img src="images/main/img_banner_temp01.webp" srcset="images/main/img_banner_temp01@2x.webp 2x, images/main/img_banner_temp01@3x.webp 3x"></figure>
+                      </div> 
+                    </a>             
+                  </div>
+                  <div class="item2 slider_item swiper-slide">
+                    <a href="javacript:void(0)">
+                      <div class="slider_text">
+                        <h3>AI Barosam</h3>
+                        <p>Completed with powerful AI Edutech. Open Event!</p>
+                      </div>
+                      <div class="img_wrap">
+                        <figure><img src="images/main/img_banner_temp01.webp" srcset="images/main/img_banner_temp01@2x.webp 2x, images/main/img_banner_temp01@3x.webp 3x"></figure>
+                      </div> 
+                    </a>             
+                  </div>
+                  <div class="item3 slider_item swiper-slide">
+                    <a href="javacript:void(0)">
+                      <div class="slider_text">
+                        <h3>AI Barosam</h3>
+                        <p>Completed with powerful AI Edutech. Open Event!</p>
+                      </div>
+                      <div class="img_wrap">
+                        <figure><img src="images/main/img_banner_temp01.webp" srcset="images/main/img_banner_temp01@2x.webp 2x, images/main/img_banner_temp01@3x.webp 3x"></figure>
+                      </div> 
+                    </a>             
+                  </div>
+                  <div class="item4 slider_item swiper-slide">
+                    <a href="javacript:void(0)">
+                      <div class="slider_text">
+                        <h3>AI Barosam</h3>
+                        <p>Completed with powerful AI Edutech. Open Event!</p>
+                      </div>
+                      <div class="img_wrap">
+                        <figure><img src="images/main/img_banner_temp01.webp" srcset="images/main/img_banner_temp01@2x.webp 2x, images/main/img_banner_temp01@3x.webp 3x"></figure>
+                      </div> 
+                    </a>             
+                  </div>
+                </div>
+              </div>
+              <div class="ai_bullets_wrap"></div>
+            </div>
+          </article>
+        </div>       
+        
+        <!-- senior -->  
+        <!-- 2022.07.14 divide_2_card_wrap pop quiz, monthly test 추가-->
+        <div class="card_wrap divide_2_card_wrap">
+          <article class="main_pop_quiz divide_card_m divide_card_wrap card_ui">
+            <div class="card_ui_inner">
+              <a href="javascript:void(0)" class="audio_btn" data-audio="hm_click">
+                <div class="card_title_wrap">             
+                  <div class="card_title">
+                    <h3>POP Quiz</h3>
+                    <p>May week 2!</p>
+                  </div>
+                </div>   
+                <div class="icon_wrap">
+                  <i class="card_icon">
+                    <object type="image/svg+xml"data="images/svg/icon_all_junior_v_48_PopQuiz.svg" class="add_new_color"></object>
+                  </i>    
+                  <i class="icon_16 gray_arrow">
+                    <img src="images/common/gray_arrow_16.svg" aria-hidden="true" alt="화살표"> 
+                  </i>
+                </div>
+              </a>
+            </div>
+          </article>
+          <article class="main_monthly_test divide_card_l divide_card_wrap card_ui">
+            <div class="card_ui_inner">
+              <a href="javascript:void(0)" class="audio_btn" data-audio="hm_click">
+                <div class="card_title_wrap">             
+                  <div class="card_title">
+                    <h3>Monthly Test</h3>
+                    <p>May</p>
+                  </div>
+                </div>   
+                <div class="icon_wrap">
+                  <i class="card_icon">
+                    <object type="image/svg+xml"data="images/svg/icon_senior_v_48_MonthlyTest.svg" class="add_new_color"></object>
+                  </i>
+                  <i class="icon_16 gray_arrow">
+                    <img src="images/common/gray_arrow_16.svg" aria-hidden="true" alt="화살표"> 
+                  </i>
+                </div>
+              </a>
+            </div>
+          </article> 
+        </div>
+
+        <!-- 2022.07.14 코스 시작전 course_before-->
+        <article class="daily_course divide_card_l divide_card_wrap card_ui senior_course_before">
+          <div class="card_ui_inner">
+            <a href="daily_course/course_main.html" class="audio_btn" data-audio="hm_click">
+              <div class="card_title_wrap">             
+                <div class="card_title">
+                  <h3>Let me know Your Level</h3>
+                  <p>Start AI Diagnostic Test for your optimized daily course!</p>
+                </div>
+              </div>   
+              <div class="icon_wrap">
+                <i class="card_icon">
+                  <object type="image/svg+xml"data="images/svg/daliy_course_icon.svg" class="add_new_color"></object>
+                </i>    
+                <i class="icon_16 gray_arrow">
+                  <img src="images/common/gray_arrow_16.svg" aria-hidden="true" alt="화살표"> 
+                </i>
+              </div>
+              <div class="card_btn_wrap">        
+                <button class="card_btn audio_btn">
+                  <span>Test Start</span>          
+                  <i class="icon_16">
+                    <img src="images/common/white_arrow_16.svg" aria-hidden="true" alt="화살표">                                    
+                  </i>
+                </button>  
+            </div>
+            </a>
+          </div>
+        </article>
+        <article class="daily_topic divide_card_m divide_card_wrap card_ui">
+          <div class="card_ui_inner">
+            <a href="daily_topic/topic_main.html" class="audio_btn" data-audio="hm_click">
+              <div class="card_title_wrap">             
+                <div class="card_title">
+                  <h3>Daily <br>Topic</h3>
+                  <p>Multiplication</p>
+                </div>
+              </div>   
+              <div class="icon_wrap">
+                <i class="card_icon">
+                  <object type="image/svg+xml"data="images/svg/daily_topic_icon.svg" class="add_new_color"></object>
+                </i>
+                <i class="icon_16 gray_arrow">
+                  <img src="images/common/gray_arrow_16.svg" aria-hidden="true" alt="화살표"> 
+                </i>
+              </div>
+            </a>
+          </div>
+        </article>  
+        <div class="card_wrap divide_3_card_wrap order_change">
+          <article class="ocr link_card card_ui">
+            <div class="card_ui_inner">
+              <a href="javascript:void(0)" class="audio_btn" data-audio="hm_click">
+                <div class="card_title_wrap">
+                  <div class="icon_wrap">
+                    <i class="card_icon">
+                      <!-- 20220714 이미지변경 -->
+                      <object type="image/svg+xml" data="images/svg/icon_all_junior_v_48_OCR.svg" class="add_new_color"></object>  
+                    </i>
+                  </div>
+                  <div class="card_title">
+                    <h3>Learning with OCR</h3> 
+                    <i class="icon_16">
+                      <img src="images/common/gray_arrow_16.svg" aria-hidden="true" alt="화살표"> 
+                    </i>    
+                  </div>
+                </div>
+              </a>
+            </div>
+          </article>
+          <article class="ai_card card_ui">
+            <div class="card_ui_inner">
+              <div class="ai_slider" >
+                <div class="swiper-wrapper">
+                  <div class="item1 slider_item swiper-slide">
+                    <a href="javacript:void(0)">
+                      <div class="slider_text">
+                        <h3>AI Barosam</h3>
+                        <p>Completed with powerful AI Edutech. Open Event!</p>
+                      </div>
+                      <div class="img_wrap">
+                        <figure><img src="images/main/img_banner_temp01.webp" srcset="images/main/img_banner_temp01@2x.webp 2x, images/main/img_banner_temp01@3x.webp 3x"></figure>
+                      </div> 
+                    </a>             
+                  </div>
+                  <div class="item2 slider_item swiper-slide">
+                    <a href="javacript:void(0)">
+                      <div class="slider_text">
+                        <h3>AI Barosam</h3>
+                        <p>Completed with powerful AI Edutech. Open Event!</p>
+                      </div>
+                      <div class="img_wrap">
+                        <figure><img src="images/main/img_banner_temp01.webp" srcset="images/main/img_banner_temp01@2x.webp 2x, images/main/img_banner_temp01@3x.webp 3x"></figure>
+                      </div> 
+                    </a>             
+                  </div>
+                  <div class="item3 slider_item swiper-slide">
+                    <a href="javacript:void(0)">
+                      <div class="slider_text">
+                        <h3>AI Barosam</h3>
+                        <p>Completed with powerful AI Edutech. Open Event!</p>
+                      </div>
+                      <div class="img_wrap">
+                        <figure><img src="images/main/img_banner_temp01.webp" srcset="images/main/img_banner_temp01@2x.webp 2x, images/main/img_banner_temp01@3x.webp 3x"></figure>
+                      </div> 
+                    </a>             
+                  </div>
+                  <div class="item4 slider_item swiper-slide">
+                    <a href="javacript:void(0)">
+                      <div class="slider_text">
+                        <h3>AI Barosam</h3>
+                        <p>Completed with powerful AI Edutech. Open Event!</p>
+                      </div>
+                      <div class="img_wrap">
+                        <figure><img src="images/main/img_banner_temp01.webp" srcset="images/main/img_banner_temp01@2x.webp 2x, images/main/img_banner_temp01@3x.webp 3x"></figure>
+                      </div> 
+                    </a>             
+                  </div>
+                </div>
+              </div>
+              <div class="ai_bullets_wrap"></div>
+            </div>
+          </article>        
+          <article class="market link_card card_ui">
+            <div class="card_ui_inner">
+              <a href="javascript:void(0)" class="audio_btn" data-audio="hm_click">
+                <div class="card_title_wrap">
+                  <div class="icon_wrap">
+                    <i class="card_icon">
+                      <!-- 20220714 이미지변경 -->
+                      <object type="image/svg+xml" data="images/svg/icon_all_junior_v_48_Market.svg" class="add_new_color"></object>
+                    </i>
+                  </div>
+                  <div class="card_title">
+                    <h3>Mathpid Market</h3> 
+                    <i class="icon_16">
+                      <img src="images/common/gray_arrow_16.svg" aria-hidden="true" alt="화살표"> 
+                    </i>    
+                  </div>
+                </div>
+              </a>
+            </div>
+          </article>
+        </div>  
+        <!-- 2022.07.14  math_game mathpid_event math_game_list삭제 -->         
+      </div>
+    </section>
+  </main>
+
+    <!-- 하단 캐릭터 퍼실리테이터 -->
+  <section class="facilitatorWrap">
+    <article class="facilitator facilitatorType01" >
+      <div class="img_wrap"><figure><img src="images/character/img_mo_mod01_temp01.webp"  srcset="images/character/img_mo_mod01_temp01@2x.webp 2x, images/character/img_mo_mod01_temp01@3x.webp 3x"alt=""></figure></div>
+      <a href="javascript:void(0);">
+        <div class="text_wrap">
+          <p>Single-digit addition Shall we continue?</p>
+          <i class="icon_16"> 
+            <img src="images/common/white_arrow_16.svg" aria-hidden="true" alt="화살표">              
+          </i>
+        </div>
+      </a>
+    </article>
+      <!-- <article class="facilitator facilitatorType02" style="display: none;">
+        <div class="img_wrap"><figure><img src="images/character/img_character_temp02.webp"  srcset="images/character/img_character_temp02@2x.webp 2x, images/character/img_character_temp02@3x.webp 3x"alt=""></figure></div>  
+        <div class="text_wrap">
+          <p>Shall we start learning?</p>        
+        </div>   
+      </article> -->
+  </section>
+
+  <!--2022.07.22 tutorial main tutorial -->
+   <!-- 2022.08.22 튜토 이미지 변경 -->
+   <!-- 2022.08.27 튜토 이미지 변경 -->
+  <section class="tutorial_wrap ko">
+    <div class="tuto_indicator">
+      <button class="tuto_close">
+        <span class="sr">clase totorial</span>
+        <i class="icon_24">
+          <img src="images/common/w_close_icon_24.svg" alt="">
+        </i>
+      </button>  
+      <div class="tuto_dot"></div>
+    </div>
+     <!-- main tutorial -->
+    <article class="tuto main_tuto">
+      <div class="tuto_slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide tuto_item tuto_01">
+            <div class="img_wrap">
+              <figure>  
+                <img class="mo_tuto_bg" src="images/tutorial/ko_mo_img_HM_character_tutorial_scene01.webp" alt="">                
+                <img class="po_tuto_bg" src="images/tutorial/ko_po_img_HM_character_tutorial_scene01.webp" alt="">
+                <img class="la_tuto_bg" src="images/tutorial/ko_la_img_HM_character_tutorial_scene01.webp" alt=""> 
+              </figure>              
+            </div>   
+            <!-- 2022.08.31 말풍선 추가 -->
+            <div class="tuto_con">
+              <div class="tuto_bubble">
+                <p>안녕, Mathpid에 온 걸 환영해! <br>함께 매쓰피드를 사용하는 방법에 대해 알아보자!</p>
+              </div>             
+            </div>       
+          </div>          
+          <div class="swiper-slide tuto_item tuto_02">
+            <div class="img_wrap">
+              <figure>               
+                <img class="mo_tuto_bg" src="images/tutorial/ko_mo_img_HM_character_tutorial_scene02.webp" alt="">                
+                <img class="po_tuto_bg" src="images/tutorial/ko_po_img_HM_character_tutorial_scene02.webp" alt="">
+                <img class="la_tuto_bg" src="images/tutorial/ko_la_img_HM_character_tutorial_scene02.webp" alt=""> 
+              </figure>
+            </div>   
+            <!-- 2022.08.31 말풍선 추가 -->
+            <div class="tuto_con">
+              <div class="tuto_bubble">
+                <p>진단테스트를 진행하고, 네게 맞는 코스 학습을 진행해봐!</p>
+              </div>             
+            </div>       
+          </div>
+          <div class="swiper-slide tuto_item tuto_03">
+            <div class="img_wrap">
+              <figure>                
+                <img class="mo_tuto_bg" src="images/tutorial/ko_mo_img_HM_character_tutorial_scene03.webp" alt="">                
+                <img class="po_tuto_bg" src="images/tutorial/ko_po_img_HM_character_tutorial_scene03.webp" alt="">
+                <img class="la_tuto_bg" src="images/tutorial/ko_la_img_HM_character_tutorial_scene03.webp" alt=""> 
+              </figure>
+            </div>   
+            <!-- 2022.08.31 말풍선 추가 -->  
+            <div class="tuto_con">
+              <div class="tuto_bubble">
+                <p>네가 하고 싶은 주제의 학습에 <br>집중할 수 있어!</p>
+              </div>             
+            </div>      
+          </div>
+          <div class="swiper-slide tuto_item tuto_04">
+            <div class="img_wrap">
+              <figure>                
+                <img class="mo_tuto_bg" src="images/tutorial/ko_mo_img_HM_character_tutorial_scene04.webp" alt="">                
+                <img class="po_tuto_bg" src="images/tutorial/ko_po_img_HM_character_tutorial_scene04.webp" alt="">
+                <img class="la_tuto_bg" src="images/tutorial/ko_la_img_HM_character_tutorial_scene04.webp" alt=""> 
+              </figure>
+            </div>   
+            <!-- 2022.08.31 말풍선 추가 -->
+            <div class="tuto_con">
+              <div class="tuto_bubble">
+                <p>잘 모르겠는 문제는 사진을 찍어 <br>개념을 확인해봐!</p>
+              </div>             
+            </div>        
+          </div>   
+          <div class="swiper-slide tuto_item tuto_05">
+            <div class="img_wrap">
+              <figure>                
+                <img class="mo_tuto_bg" src="images/tutorial/ko_mo_img_HM_character_tutorial_scene05.webp" alt="">                
+                <img class="po_tuto_bg" src="images/tutorial/ko_po_img_HM_character_tutorial_scene05.webp" alt="">
+                <img class="la_tuto_bg" src="images/tutorial/ko_la_img_HM_character_tutorial_scene05.webp" alt=""> 
+              </figure>
+            </div>   
+            <!-- 2022.08.31 말풍선 추가 -->
+            <div class="tuto_con">
+              <div class="tuto_bubble">
+                <p>Mathpid가 추천하는 수학 게임이야! <br>선택하면 스토어로 연결되니 <br>다운받아, 재미있게 수학을 공부해보자!</p>
+              </div>             
+            </div>        
+          </div>         
+          <div class="swiper-slide tuto_item tuto_06">
+            <div class="img_wrap">
+              <figure>                
+                <img class="mo_tuto_bg" src="images/tutorial/ko_mo_img_HM_character_tutorial_scene06.webp" alt="">                
+                <img class="po_tuto_bg" src="images/tutorial/ko_po_img_HM_character_tutorial_scene06.webp" alt="">
+                <img class="la_tuto_bg" src="images/tutorial/ko_la_img_HM_character_tutorial_scene06.webp" alt=""> 
+              </figure>
+            </div>    
+            <!-- 2022.08.31 말풍선 추가 -->   
+            <div class="tuto_con">
+              <div class="tuto_bubble">
+                <p>자, 이제 설명이 끝났어! <br>지금 바로 하고 싶은 것을 골라봐!</p>
+              </div>             
+            </div>   
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="bottom_zero_btn_wrap tuto_btn">    
+      <button class="bottom_zero_btn active"><span>Confirm</span></button>
+    </article>       
+  </section>
+
+  <!--  2022.09.02 test 전체 화면 보기 아이콘 삭제바람-->
+  <!-- 2022.07.14  코스 학습 이후 테스트-->
+  <button class="course_active">코스학습 활성</button>
+  <!--  -->
+  
+  <script type="text/javascript" src="js/vendor/gsap.min.js"></script>
+  <script type="text/javascript" src="js/vendor/swiper.min.js"></script>	
+  <script type="text/javascript" src="js/vendor/screenfull.js"></script>	
+  <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

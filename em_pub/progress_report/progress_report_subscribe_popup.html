@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>mathpid</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <!--<meta name="theme-color" content="#C70026"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="description" content="">
+    <link rel="canonical" href="">
+    <meta name="robots" content="index,follow">
+
+    <link rel="stylesheet" type="text/css" href="../css/vendor/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/result.css"/>
+    <!-- 2022.09.19 불필요 css 삭제 -->
+    <!-- 2022.09.21 add popup.css -->
+    <link rel="stylesheet" type="text/css" href="../css/popup.css"/>
+
+</head>
+<body class="sub_page nt">
+<!--2022.09.02 mode btn test 삭제 -->
+
+<!-- header -->
+<header>
+    <div class="header_wrap">
+        <div class="header_inner">
+            <div class="sub_title">
+                <a href="..">
+                    <span class="sr">close</span>
+                    <i class="icon_24">
+                        <img src="../images/result/icon-all-s-24-close-bold-white.svg" aria-hidden="true" alt="close">
+                    </i>
+                </a>
+                <!-- 2022.09.07 title a tag 밖으로 -->  
+               <div class="text_wrap">
+                   <h2>Progress Report</h2>
+               </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header -->
+<main class="container progress_report">
+    <audio preload="auto" class="audio_wrap"><source class="audio_source" src=""/></audio>
+    <section class="sub_content_top_wrap">
+        <div class="wrap">
+            <article class="sub_content_top">
+                <div class="tab_wrap">
+                    <div class="tab_inner sub_scrolltop_obj">
+                        <ul class="tab_nav">
+                            <li><a class="active" href="#status_con">Status</a></li>
+                            <li><a href="#history_con">History</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="main_contents mt0">
+        <!--START :: result contents-->
+        <div class="wrap tab_content_wrap">
+            <!-- Status content -->
+            <article class="tab_content status_con active">
+                <!--TAB Landscape 에서만 노출-->
+                <ul class="landscape_title_list">
+                    <li><a href="#part_1" class="on">Cumulative learning</a></li>
+                    <li><a href="#part_2">Diagnostic Test</a></li>
+                    <li><a href="#part_3">Daily Course</a></li>
+                    <li><a href="#part_4">Daily Topic</a></li>
+                </ul>
+                <!--TAB Landscape 에서만 노출-->
+
+                <div class="con_sec_wrap ho_scroll">
+                    <div class="con_sec part_1">
+                        <h3 class="sec_tit first">Cumulative learning</h3>
+                        <div class="progress_area">
+                            <div id="progress">
+                                <svg viewBox="0 0 114 90" data-value="40" style="stroke-linecap: round;">
+                                    <path class="bg" stroke="#cee1fd" stroke-width="8" d="M 0,0 m 12,80 a 50,50 0 1 1 90,0"  fill="none"/>
+                                    <path id="custom-path" stroke="#5a8bee" stroke-width="8" d="M 0,0 m 12,80 a 50,50 0 1 1 90,0" fill="none" stroke-dasharray="350" stroke-dashoffset="350"/>
+                                </svg>
+                            </div>
+                            <div class="progress_number">
+                                <span class="start">0%</span>
+                                <span class="end">100%</span>
+                            </div>
+                            <div class="desc">
+                                <span>Correct Answer Rate</span>
+                                <span class="per_num"></span>
+                                <!-- 2022.09.19 캐릭터 파일명 변경 -->
+                                <img src="../images/character/pidy_NT_character.webp" alt="캐릭터 이미지" class="ch_img">
+                            </div>
+                        </div>
+                        <div class="big_card card_ui">
+                            <div class="card_ui_inner">
+                                <div class="card_box">
+                                    <div class="card_item half">
+                                        <span class="tit">Learning Days</span>
+                                        <div class="score">
+                                            30
+                                        </div>
+                                    </div>
+                                    <div class="card_item half">
+                                        <span class="tit">Questions Solved</span>
+                                        <div class="score">
+                                            90
+                                        </div>
+                                    </div>
+                                    <div class="card_item half">
+                                        <span class="tit">Total Time</span>
+                                        <div class="score">
+                                            1h 15m
+                                        </div>
+                                    </div>
+                                    <div class="card_item half">
+                                        <span class="tit">Average Speed</span>
+                                        <div class="score">
+                                            1m 30s
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con_sec part_2">
+                        <h3 class="sec_tit">Diagnostic Test</h3>
+                        <div class="big_card card_ui my_diagnosis">
+                            <div class="card_ui_inner responsive_width">
+                                <div class="card_chart">
+                                    <h4>Changes in<br class="responsive_br"/> my diagnosis results</h4>
+                                    <div class="chart_wrap">
+                                        <div class="chart">
+                                            <figure>
+                                                <img src="https://dummyimage.com/273x117/dbdbdb/333333" alt="">
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrow_ui">
+                            <a class="item" href="#">
+                                <h4 class="tit">One-digit Addition (1)</h4>
+                                <span class="desc">2022. 04. 01</span>
+                                <i class="icon_16"><img src="../images/common/gray_arrow_16.svg" alt="icon"/></i>
+                            </a>
+                            <a class="item" href="#">
+                                <h4 class="tit">One-digit Addition (1)</h4>
+                                <span class="desc">2022. 04. 01</span>
+                                <i class="icon_16"><img src="../images/common/gray_arrow_16.svg" alt="icon"/></i>
+                            </a>
+                            <a class="item" href="#">
+                                <h4 class="tit">One-digit Addition (1)</h4>
+                                <span class="desc">2022. 04. 01</span>
+                                <i class="icon_16"><img src="../images/common/gray_arrow_16.svg" alt="icon"/></i>
+                            </a>
+
+                            <div class="btn_wrap">
+                                <a href="#" class="btn_white">more <i class="icon_12"><img src="../images/result/icon-mo-s-12-arrow-right-regular-gray.svg" alt="icon"/></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con_sec part_3">
+                        <div class="responsive_section">
+                            <h3 class="sec_tit">Daily Course</h3>
+                            <p class="sec_desc">Single-digit add-on ~ Acceptable add-on
+                                I learned a total of 12 stages in the course learning.
+                            </p>
+                            <div class="big_card card_ui course_progress">
+                                <div class="card_ui_inner">
+                                    <div class="card_chart">
+                                        <h4>Amount of learning according to course progress</h4>
+                                        <div class="chart_wrap">
+                                            <div class="chart">
+                                                <figure>
+                                                    <img src="https://dummyimage.com/273x117/dbdbdb/333333" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="responsive_section">
+                            <p class="sec_desc">Learning with a high level of understanding
+                                <span class="emphasis blue underline dot">Two-digit addition (3)</span> with acceptance<br/>
+                                Learning that I didn’t understand well
+                                <span class="emphasis red underline dot">Single-digit addition</span> with acceptance.
+                            </p>
+                            <div class="landscape_section">
+                                <div class="big_card card_ui accuracy_according">
+                                    <div class="card_ui_inner">
+                                        <div class="card_chart">
+                                            <h4>Accuracy according to course learning progress</h4>
+                                            <div class="chart_wrap">
+                                                <div class="chart">
+                                                    <figure>
+                                                        <img src="https://dummyimage.com/273x117/dbdbdb/333333" alt="">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="big_card card_ui accuracy_results">
+                                    <div class="card_ui_inner responsive_width">
+                                        <div class="card_chart">
+                                            <h4>Accuracy results compared to others</h4>
+                                            <div class="chart_label">
+                                                <span><i class="label_icon_line"></i>Number of student</span>
+                                                <span><i class="label_icon_circle"></i>You</span>
+                                            </div>
+
+                                            <div class="responsive_chart">
+                                                <div class="responsive_section">
+                                                    <p class="sec_desc">Good understanding of learning
+                                                        <span class="emphasis blue">Two-Digit Addition (3)</span>
+                                                    </p>
+                                                    <div class="chart_wrap">
+                                                        <div class="chart">
+                                                            <h4>Correct Answer Rate</h4>
+                                                            <!--차트영역 :: 임의의 width, height-->
+                                                            <figure>
+                                                                <img src="https://dummyimage.com/273x117/dbdbdb/333333" alt="">
+                                                            </figure>
+                                                        </div>
+                                                        <div class="chart">
+                                                            <h4>Accuracy</h4>
+                                                            <!--차트영역 :: 임의의 width, height-->
+                                                            <figure>
+                                                                <img src="https://dummyimage.com/273x117/dbdbdb/333333" alt="">
+                                                            </figure>
+                                                        </div>
+                                                        <div class="chart">
+                                                            <h4>Speed</h4>
+                                                            <!--차트영역 :: 임의의 width, height-->
+                                                            <figure>
+                                                                <img src="https://dummyimage.com/273x117/dbdbdb/333333" alt="">
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="responsive_section">
+                                                    <p class="sec_desc">Poor understanding of learning
+                                                        <span class="emphasis red">Multiplication (3)</span>
+                                                    </p>
+                                                    <div class="chart_wrap">
+                                                        <div class="chart">
+                                                            <h4>Correct Answer Rate</h4>
+                                                            <!--차트영역 :: 임의의 width, height-->
+                                                            <figure>
+                                                                <img src="https://dummyimage.com/273x117/dbdbdb/333333" alt="">
+                                                            </figure>
+                                                        </div>
+                                                        <div class="chart">
+                                                            <h4>Accuracy</h4>
+                                                            <!--차트영역 :: 임의의 width, height-->
+                                                            <figure>
+                                                                <img src="https://dummyimage.com/273x117/dbdbdb/333333" alt="">
+                                                            </figure>
+                                                        </div>
+                                                        <div class="chart">
+                                                            <h4>Speed</h4>
+                                                            <!--차트영역 :: 임의의 width, height-->
+                                                            <figure>
+                                                                <img src="https://dummyimage.com/273x117/dbdbdb/333333" alt="">
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con_sec part_4">
+                        <div class="responsive_section">
+                            <h3 class="sec_tit">Daily Topic</h3>
+                            <p class="sec_desc">You learned the most Number 1 Learning at  <span class="emphasis">50%</span> and the average correct answer rate is <span class="emphasis">90%</span>.</p>
+                        </div>
+                        <div class="responsive_section">
+                            <div class="big_card card_ui">
+                                <div class="card_ui_inner responsive_width">
+                                    <div class="card_chart">
+                                        <h4>Rate of completion<br/> of learning by subject</h4>
+                                        <div class="line_progressbar_area">
+                                            <div class="item">
+                                                <span><strong>Number 1</strong> - Average Answer Rate 90%</span>
+                                                <div class="line_progressbar">
+                                                    <span class="rate_tit">Completion rate</span>
+                                                    <div class="bg">
+                                                        <span class="percent" id="line01" style="width:80%;"></span>
+                                                    </div>
+                                                    <span class="rate_num">80%</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <span><strong>Number 2</strong> - Average Answer Rate 90%</span>
+                                                <div class="line_progressbar">
+                                                    <span class="rate_tit">Completion rate</span>
+                                                    <div class="bg">
+                                                        <span class="percent" id="line02" style="width:40%;"></span>
+                                                    </div>
+                                                    <span class="rate_num">40%</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <span><strong>Number 3</strong> - Average Answer Rate 90%</span>
+                                                <div class="line_progressbar">
+                                                    <span class="rate_tit">Completion rate</span>
+                                                    <div class="bg">
+                                                        <span class="percent" id="line03" style="width:20%;"></span>
+                                                    </div>
+                                                    <span class="rate_num">20%</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <span><strong>Number 4</strong> - Average Answer Rate 90%</span>
+                                                <div class="line_progressbar">
+                                                    <span class="rate_tit">Completion rate</span>
+                                                    <div class="bg">
+                                                        <span class="percent" id="line04" style="width:10%;"></span>
+                                                    </div>
+                                                    <span class="rate_num">10%</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <span><strong>Number 5</strong> - Average Answer Rate 90%</span>
+                                                <div class="line_progressbar">
+                                                    <span class="rate_tit">Completion rate</span>
+                                                    <div class="bg">
+                                                        <span class="percent" id="line05" style="width:85%;"></span>
+                                                    </div>
+                                                    <span class="rate_num">85%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="sec_desc ty2">You completed <span class="emphasis">50%</span> of the first grade’s progress in Korean Standards.</p>
+                                </div>
+                            </div>
+                            <div class="big_card card_ui grade">
+                                <div class="card_ui_inner">
+                                    <div class="card_chart">
+                                        <h4>My progress in learning by grade</h4>
+                                        <div class="cate_select">
+                                            <div class="cate_select_inner">
+                                                <a class="nation_select_btn" href="javascript:void(0);">
+                                                    <span class="cate_select_text">By Korean Standards</span>
+                                                    <span class="sr">카테고리 영역 선택 열기</span>
+                                                    <i class="icon_16">
+                                                        <img src="../images/common/select_down_arrow.svg" aria-hidden="true" alt="아래화살표">
+                                                    </i>
+                                                </a>
+                                                <ul class="cate_select_list separ_active">
+                                                    <li>
+                                                        <a class="active" href="javascript:void(0)">
+                                                            <span>By Korean Standards</span>
+                                                            <i class="icon_16">
+                                                                <object type="image/svg+xml" data="../images/common/check_icon.svg" class="add_new_color"></object>
+                                                            </i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="" href="javascript:void(0)">
+                                                            <span>By Korean Standards</span>
+                                                            <i class="icon_16 ">
+                                                                <object type="image/svg+xml" data="../images/common/check_icon.svg" class="add_new_color"></object>
+                                                            </i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="" href="javascript:void(0)">
+                                                            <span>By Korean Standards</span>
+                                                            <i class="icon_16 ">
+                                                                <object type="image/svg+xml" data="../images/common/check_icon.svg" class="add_new_color"></object>
+                                                            </i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="" href="javascript:void(0)">
+                                                            <span>By Korean Standards</span>
+                                                            <i class="icon_16 ">
+                                                                <object type="image/svg+xml" data="../images/common/check_icon.svg" class="add_new_color"></object>
+                                                            </i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="chart_wrap">
+                                            <div class="chart">
+                                                <figure>
+                                                    <img src="https://dummyimage.com/273x117/dbdbdb/333333" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- History content -->
+            <article class="tab_content history_con">
+                <div class="top_sort">
+                    <div class="cate_select">
+                        <div class="cate_select_inner">
+                            <a class="cate_select_btn" href="javascript:void(0);">
+                                <span class="cate_select_text">ALL</span>
+                                <span class="sr">카테고리 영역 선택 열기</span>
+                                <i class="icon_16">
+                                    <img src="../images/common/select_down_arrow.svg" aria-hidden="true" alt="아래화살표">
+                                </i>
+                            </a>
+                            <ul class="cate_select_list separ_active">
+                                <li>
+                                    <a class="active" href="javascript:void(0)">
+                                        <span>ALL</span>
+                                        <i class="icon_16">
+                                            <object type="image/svg+xml" data="../images/common/check_icon.svg" class="add_new_color"></object>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" href="javascript:void(0)">
+                                        <span>Course</span>
+                                        <i class="icon_16 ">
+                                            <object type="image/svg+xml" data="../images/common/check_icon.svg" class="add_new_color"></object>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" href="javascript:void(0)">
+                                        <span>Topic</span>
+                                        <i class="icon_16 ">
+                                            <object type="image/svg+xml" data="../images/common/check_icon.svg" class="add_new_color"></object>
+                                        </i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="" href="javascript:void(0)">
+                                        <span>OCR</span>
+                                        <i class="icon_16 ">
+                                            <object type="image/svg+xml" data="../images/common/check_icon.svg" class="add_new_color"></object>
+                                        </i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="calendar">
+                        <i class="icon_24">
+                            <object type="image/svg+xml" data="../images/common/icon_all_s_24_Calender_solid.svg" class="add_new_color"></object>
+                        </i>
+                    </div>
+                </div>
+
+                <div class="report_list_wrap ho_scroll">
+                    <div class="responsive_section">
+                        <div class="report_date">2022. 04. 12</div>
+                        <div class="report_list">
+                            <div class="arrow_ui">
+                                <a class="item mint" href="#">
+                                    <span class="flag_report">Topic</span>
+                                    <span class="desc">04. 12</span>
+                                    <h4 class="tit">One-digit Addition (1)</h4>
+                                    <i class="icon_16"><img src="../images/common/gray_arrow_16.svg" alt="icon"/></i>
+                                </a>
+
+                                <a class="item mint" href="#">
+                                    <span class="flag_report">Topic</span>
+                                    <span class="desc">04. 12</span>
+                                    <h4 class="tit">One-digit Addition (1)</h4>
+                                    <i class="icon_16"><img src="../images/common/gray_arrow_16.svg" alt="icon"/></i>
+                                </a>
+
+                                <a class="item red" href="#">
+                                    <span class="flag_report">Course</span>
+                                    <span class="desc">04. 12</span>
+                                    <h4 class="tit">Multiply 2-digit numbers by 1-digit numbers (1)</h4>
+                                    <span class="level red">Below Basic</span>
+                                    <i class="icon_16"><img src="../images/common/gray_arrow_16.svg" alt="icon"/></i>
+                                </a>
+
+                                <a class="item mint test_none" href="#">
+                                    <span class="flag_report">Topic</span>
+                                    <span class="desc">04. 12</span>
+                                    <h4 class="tit">One-digit Addition (1)</h4>
+                                    <i class="icon_16"><img src="../images/common/gray_arrow_16.svg" alt="icon"/></i>
+                                </a>
+
+                                <a class="item red test_none" href="#">
+                                    <span class="flag_report">Course</span>
+                                    <span class="desc">04. 12</span>
+                                    <h4 class="tit">Multiply 2-digit numbers by 1-digit numbers (1)</h4>
+                                    <span class="level red">Below Basic</span>
+                                    <i class="icon_16"><img src="../images/common/gray_arrow_16.svg" alt="icon"/></i>
+                                </a>
+
+                                <div class="btn_wrap">
+                                    <a href="#" class="btn_white">more <i class="icon_12"><img src="../images/result/icon-mo-s-12-arrow-right-regular-gray.svg" alt="icon"/></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="responsive_section">
+                        <div class="report_date">2022. 04. 10</div>
+                        <div class="report_list">
+                            <div class="arrow_ui">
+                                <a class="item sky" href="#">
+                                    <span class="flag_report">Math Camera</span>
+                                    <span class="desc">04. 12</span>
+                                    <h4 class="tit">One-digit Addition (1)</h4>
+                                    <span class="level purple">Proficient</span>
+                                    <i class="icon_16"><img src="../images/common/gray_arrow_16.svg" alt="icon"/></i>
+                                </a>
+
+                                <a class="item purple" href="#">
+                                    <span class="flag_report">Topic</span>
+                                    <span class="desc">04. 12</span>
+                                    <h4 class="tit">One-digit Addition (1)</h4>
+                                    <span class="level yellow">Basic</span>
+                                    <i class="icon_16"><img src="../images/common/gray_arrow_16.svg" alt="icon"/></i>
+                                </a>
+
+                                <a class="item red" href="#">
+                                    <span class="flag_report">Course</span>
+                                    <span class="desc">04. 12</span>
+                                    <h4 class="tit">Multiply 2-digit numbers by 1-digit numbers (1)</h4>
+                                    <span class="level green">Advanced</span>
+                                    <i class="icon_16"><img src="../images/common/gray_arrow_16.svg" alt="icon"/></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <!--END :: result contents-->
+    </section>
+    <!--main-->
+    
+    <!-- 팝업  top_icon_popup 공통 common.css-->
+    <div class="top_icon_popup active">
+        <div class="top_icon_popup_con">   
+            <article class="popup_box subscribe_popup logo_premi active">
+            <div class="top_img ">
+                <div class="logo_img">
+                    <figure>
+                        <!-- 2022.08.26 이미지 변경 -->
+                        <img src="../images/common/logo_275x43.svg">
+                    </figure>
+                </div>
+                <div class="premium_img">
+                    <i class="icon_20 crown_icon">
+                    <img src="../images/common/crown_icon.webp" srcset="../images/common/crown_icon@2x.webp 2x, ../images/common/crown_icon@3x.webp 3x">
+                    </i>
+                    <span>Premium</span>
+                </div>
+            </div>
+            <div class="text_wrap">
+                <span class="subscribe_top_title">Get Your Personalized <br>Learning Course!</span>             
+            </div>
+
+            <!-- 가격 박스 -->
+            <!-- 2022.08.18  discount_board_wrap, inner 추가 - 가격 변경시 크기 auto-->
+            <div class="discount_board_wrap"> 
+                <div class="discount_board">   
+                    <div class="discount_board_inner">
+                        <div class="org_price">
+                            <span class="price">$20.00</span>
+                        </div>   
+                        <div class="opt_price">
+                            <span class="price">$3.99 / Year</span>
+                        </div>    
+                    </div>        
+                </div>
+            </div>
+            
+            <div class="btn_wrap">
+                <a href="javascript:void(0)">
+                <span>Start Premium Now!</span>        
+                </a>
+            </div>
+
+            <a href="javascript:void(0)" class="giveup_btn">
+                <span>Give up maximize math potential​</span>
+            </a>
+            <button class="popup_close_btn">
+                <i class="icon_24">
+                <img src="../images/common/w_close_icon_24.svg" alt="">
+                </i>
+                <span>Close</span>
+            </button>
+            </article>  
+        </div>
+    </div>
+
+
+</main>
+<!--container-->
+<!--2022.09.02 fullscreen btn test 삭제 -->
+
+<script type="text/javascript" src="../js/vendor/gsap.min.js"></script>
+<script type="text/javascript" src="../js/vendor/ScrollToPlugin.min.js"></script>
+<script type="text/javascript" src="../js/vendor/swiper.min.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+
+<!--progressbar js-->
+<script type="text/javascript" src="../js/vendor/progressbar.min.js"></script>
+<script>
+    //프로그레스바
+    (function(){
+        const percentNum = 85;
+        const numEle = document.querySelector('.per_num');
+        // numEle.innerText = `${percentNum}%`
+        function toDecimal(percent) {
+            return parseFloat(percent) / 100;
+        }
+        function progressbarCircle(elementId, animatePercentage){
+            const element = document.getElementById(elementId);
+            const bar = new ProgressBar.Path(element, {
+                easing: 'easeInOut',
+                duration: 1400,
+                //2022.07.11  
+                step: (el, val) => {             
+                const number = Math.round(val.value() * 100);   
+                numEle.innerText = `${number}%`;  
+            }      
+            });
+            bar.animate(animatePercentage);
+        }
+        progressbarCircle("custom-path", toDecimal(percentNum));
+    })();
+
+    /*히스토리 sort 셀렉트박스*/
+    (function(){
+        const select_btn = document.querySelector(".cate_select_btn");
+        if(!select_btn) return;
+        select_btn.addEventListener('click', function(e){
+            e.preventDefault();
+            const btn_wrap = this.parentNode;
+            const select_list = this.nextElementSibling;//select list
+
+            if (this.classList.contains("on")) {//셀렉트 박스 접기
+                gsap.to(select_list, { display: 'none', height: 0, duration: .3 });//gsap animation library
+                this.classList.toggle('on');
+                btn_wrap.classList.toggle('on_wrap');
+            } else {
+                this.classList.toggle('on');
+                btn_wrap.classList.toggle('on_wrap');
+                gsap.set(select_list, { display: 'block' });
+                gsap.to(select_list, { height: 'auto', duration: .3 });
+            }
+        })
+    })();
+
+    /*국가 셀렉트박스*/
+    (function(){
+        const select_btn = document.querySelector(".nation_select_btn");
+        if(!select_btn) return;
+        select_btn.addEventListener('click', function(e){
+            e.preventDefault();
+            const btn_wrap = this.parentNode;
+            const select_list = this.nextElementSibling;//select list
+
+            if (this.classList.contains("on")) {//셀렉트 박스 접기
+                gsap.to(select_list, { display: 'none', height: 0, duration: .3 });//gsap animation library
+                this.classList.toggle('on');
+                btn_wrap.classList.toggle('on_wrap');
+            } else {
+                this.classList.toggle('on');
+                btn_wrap.classList.toggle('on_wrap');
+                gsap.set(select_list, { display: 'block' });
+                gsap.to(select_list, { height: 'auto', duration: .3 });
+            }
+        })
+    })();
+
+    /*landscape 시 탭 스크롤*/
+    (function(){
+        const wrap = document.querySelector('.con_sec_wrap');
+        const tabEle = document.querySelectorAll(".landscape_title_list li a");
+
+        tabEle.forEach(item =>{
+            item.addEventListener('click', e =>{
+                e.preventDefault();
+                const target_btn = e.target;
+                const target_class =  `.${target_btn.getAttribute('href').substr(1)}`; //주소에서 클래스로 변환
+                const target_con =  document.querySelector(target_class);
+                if (window.matchMedia('(orientation: landscape)').matches) {
+                    const target_dist = target_con.offsetLeft;
+                    gsap.to(wrap, { scrollTo: {x:target_dist+2} , duration:.5});
+                }
+                target_con.focus();
+            })
+        });
+
+        for(let i = 0; i < tabEle.length; i++){
+            tabEle[i].addEventListener('click', e => {
+                e.preventDefault();
+                for(let j =0; j <tabEle.length; j++){
+                    tabEle[j].classList.remove('on')
+                }
+                tabEle[i].classList.add('on')
+            })
+        }
+    })();
+
+    /*히스토리 박스 더보기*/
+    (function(){
+        const btnWhite = document.querySelector('.report_list .arrow_ui .btn_white');
+        btnWhite.addEventListener('click', e =>{
+            e.preventDefault();
+            const target_btn = e.target;
+            const items = document.querySelectorAll(".arrow_ui .item")
+            items.forEach(item => {
+                if(item.classList.contains("test_none")){
+                    item.classList.remove("test_none");
+                    if(!item.classList.contains("test_none")){
+                        btnWhite.style.display = "none"
+                    }
+                }
+            })
+        })
+    })();
+
+</script>
+</body>
+</html>
