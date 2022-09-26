@@ -1,0 +1,426 @@
+@charset "utf-8";
+
+.text_btn_wrap{display: flex;}
+
+.main_page header {position: fixed; top:0; left:0; background-color:#f3f3f3; transition: padding, box-shadow, .3s ;}
+.main_page header.on_scroll{box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);}
+.main_page .container{overflow-x: hidden; overflow-y: auto; margin-top:55px; height:100%;}
+
+/*상단 profile*/
+.profile{padding:20px 15px 0 30px;}
+.profile .profile_inner{display: flex; justify-content: space-between;}
+.profile .profile_inner .profile_info{flex-shrink: 0;}
+.profile .profile_inner .profile_info a{display: flex; align-items: baseline;}
+.profile .profile_inner .profile_info a h2{margin-right:5px; min-width: 115px; max-width: 200px; font-size:22px; letter-spacing: -0.01px; color:var(--textColor)}
+.profile .profile_inner .profile_info a i{display: block; width:12px; height:12px;}
+.profile .profile_inner .profile_info .profile_grade{margin:5px 0 0; display: flex; align-items: center;}
+.profile .profile_inner .profile_info .profile_grade .grade_icon_wrap{position:relative; margin-right:10px; width:32px; height:32px;}
+.profile .profile_inner .profile_info .profile_grade .grade_icon_wrap i{display: block;}
+.profile .profile_inner .profile_info .profile_grade .grade_icon_wrap .grade_icon{ width:32px; height:32px;}
+.profile .profile_inner .profile_info .profile_grade .grade_icon_wrap .grade_level_icon{position:absolute; top:-2px; right:-2px; width:16px; height:16px;}
+/*profile prgress*/
+.profile .profile_inner .profile_info .profile_grade .grade_track{position:relative; width:85px; height:5px; border-radius: 2.5px; background-color: var(--disabled_bg); overflow: hidden;}
+.profile .profile_inner .profile_info .profile_grade .grade_track .gard_bar{position: absolute; top:50%; left:0; z-index: 1; transform: translateY(-50%); display: block; width:0; height:5px; border-radius: 2.5px; background-image: -moz-linear-gradient(to bottom, var(--gradationStart), var(--gradationEnd));
+ background-image: linear-gradient(to bottom, var(--gradationStart), var(--gradationEnd)); transition: width, .5s;}
+ /*profile 우측 배지*/
+.profile .profile_inner .badges{position: relative;}
+.profile .profile_inner .badges ul{display: flex;}
+.profile .profile_inner .badges ul li{position: relative; }
+.profile .profile_inner .badges ul li:nth-child(1){z-index: 3;}
+.profile .profile_inner .badges ul li:nth-child(2){z-index: 2; margin-left:-50px;}
+.profile .profile_inner .badges ul li:nth-child(3){z-index: 1; margin-left:-50px;}
+.profile .profile_inner .badges i{display: block; width:64px; height:64px;}
+/*배지가 3개 이상이면 숫자 추가*/
+.profile .profile_inner .badges .badges_more_num{position: absolute; top:50%; right:0; transform: translateY(-50%); z-index: 4; display: none; padding:2px 8px 2px 7px; font-weight: bold; color: #ffffff; border-radius:11.5px; background-color: var(--moreBadgeBg);}
+.profile .profile_inner .badges .badges_more_num.active{display: block;}
+.profile .profile_inner .badges .badges_more_num.active + ul{margin-right:8px;}
+
+/*weekly_mission*/
+.weekly_mission_wrap{padding-top:5px; }
+.weekly_mission{margin-top:20px; padding:20px 20px 21px; border-radius: var(--borderRadius);  background-color: #ffffff;  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.02);}
+.weekly_mission .weekly_header{display: flex; justify-content: space-between; align-items: baseline;}
+.weekly_mission .weekly_header h3{height:27px; font-size:20px; letter-spacing: -0.01px;}
+.weekly_mission .weekly_header .weekly_day{font-weight: bold; color:var(--bulletColor);}
+.weekly_mission .weekly_icons{margin-top:10px; margin-left:-5px; display: flex;}
+.weekly_mission .weekly_icons li i{ display: block; width:48px; height:48px;}
+.weekly_mission .text_btn_wrap{margin-top:15px; justify-content: flex-end;} 
+.weekly_mission .text_btn_wrap a{display: flex; align-items: center; color: #666666; font-weight: 500;}
+.weekly_mission .text_btn_wrap a span{height:19px; margin-right:5px;}
+
+/*main conntents*/
+.main_page .main_contents{padding-bottom:170px;}
+.main_page .main_contents>.wrap{margin:0 -7.5px; display: flex; flex-wrap: wrap; width:auto;}
+
+/*2022.09.17card ui -> common.css*/
+
+/*link card - ocr, market 형태 사이즈*/
+.link_card .card_ui_inner{padding:0;}
+.link_card a{display: block; padding:20px 20px 19px 15px;}
+.link_card .card_title{display: flex; align-items: center; justify-content: space-between; width: 100%;}
+.link_card.ocr .card_title_wrap .card_title p{display: none;}
+
+/* 2022.08.10 메인 워크시트, 비디오 추가 */
+.main_worksheet .card_title_wrap .card_title,
+.learn_videos .card_title_wrap .card_title{gap:0 56px;}
+.main_worksheet .card_title_wrap .card_title h3,
+.learn_videos .card_title_wrap .card_title h3{font-size: 14px; line-height: 1.43; letter-spacing: normal;}
+
+/* 메인 게임 */
+.main_game .card_ui_inner{padding:20px 0 0; overflow: hidden;}
+.main_game .card_title_wrap{ padding: 0 15px;}
+.main_game .card_title_wrap .title_inner{padding-bottom:12px; display: flex; align-items: center; gap: 0 15px; width: 100%; border-bottom:1px solid #eeeeee; }
+.main_game .game_list_wrap{margin-top:20px; padding-bottom:15px}
+.main_game .game_list_wrap .game_list{padding:0 20px; }
+.main_game .game_list_wrap li{padding:10px 0;}
+.main_game .game_list_wrap li:first-child{padding-top:0;}
+.main_game .game_list_wrap .game_item{display: flex; align-items: center; gap:0 20px;}
+.main_game .game_list_wrap .game_item .game_img{flex-shrink: 0;}
+.main_game .game_list_wrap .game_item .game_img figure{width:60px; height:60px;}
+.main_game .game_list_wrap .game_item .text_wrap{display: flex; justify-content: space-between; align-items: center; gap:0 10px; width:100%;}
+.main_game .game_list_wrap .game_item .text_wrap .text_inner h4{font-size: 16px; font-weight: bold; line-height: 1.5;}
+.main_game .game_list_wrap .game_item .text_wrap .text_inner p{margin-top: 2px; font-weight: 500; color: #666;}
+.main_game .game_list_wrap .game_item .text_wrap .game_get{flex-shrink: 0;}
+.main_game .game_list_wrap .game_item .text_wrap .game_get button{padding: 9px 19px 8px; border-radius: var(--borderRadius); background-color: #f4f7fe;}
+.main_game .game_list_wrap .game_item .text_wrap .game_get button span{font-size: 12px; font-weight: bold; line-height: 1.67; color: var(--subText);}
+.main_game .game_dots{padding-bottom:15px; display: flex; justify-content: center;}
+.main_game .game_dots.swiper-pagination-lock {display: none;}
+.main_game .game_dots span{ margin:0 2.5px; display: block; width:5px; height:5px; border-radius: 2.5px; background-color: #dddddd; opacity: 1; transition: width .3s;}
+.main_game .game_dots span.swiper-pagination-bullet-active{width:15px; background-color: var(--bulletColor);}
+.main_game .game_more_soon{margin-top:15px; padding-bottom: 50px;display: flex; justify-content: center; }
+.main_game .game_more_soon span{display: block; text-align: center; font-weight: 500; color:#666666;}
+.main_game .game_more_soon.game_more_lines{display: none;}
+
+/*ai card 이미지 슬라이더 card ui*/
+.ai_card .card_ui_inner{overflow: hidden; padding:5px 0 15px;}
+.ai_card .card_ui_inner .ai_slider{overflow: hidden;}
+.ai_card .slider_item{padding:0 0 0 20px; }
+.ai_card .slider_item a{display: flex; align-items: center; justify-content: space-between;}
+.ai_card .slider_item .slider_text{margin-right:25px;}
+.ai_card .slider_item .slider_text h3{height:22px; font-size:16px; line-height: 1.5;}
+.ai_card .slider_item .slider_text p{margin-top:10px; font-weight: 500; color:#666666;}
+.ai_card .slider_item .img_wrap figure{width:120px; height:100px;}
+.ai_card .ai_bullets_wrap{margin-top:6px; display: flex; justify-content: center;}
+.ai_card .ai_bullets_wrap span{ margin:0 2.5px; display: block; width:5px; height:5px; border-radius: 2.5px; background-color: #dddddd; opacity: 1; transition: width .3s;}
+.ai_card .ai_bullets_wrap span.swiper-pagination-bullet-active{width:15px; background-color: var(--bulletColor);}
+
+/*반으로 나누어진 card ui*/
+.divide_card_wrap .card_ui_inner{position: relative; padding:20px; height:239px;}
+/*나누어진것 중 large divide card  */
+.divide_card_l{width:54.575%;}
+/*나누어진것 중 medium divide card  */
+.divide_card_m{width:45.425%;}
+.divide_card_wrap .icon_wrap{position:absolute; bottom:15px; left:0; padding:0 20px 0 15px; display: flex; justify-content: space-between; align-items: flex-end; width:100%;}
+.divide_card_wrap .icon_wrap i{display: block;}
+.divide_card_wrap .icon_wrap .gray_arrow{margin-bottom:5px;}
+
+/* 2022.07.14 divide card half*/
+.divide_card_half{width:50%;}
+/* 2022.07.14 main_pop_quiz main_monthly_test card*/
+.main_pop_quiz .card_ui_inner,
+.main_monthly_test .card_ui_inner{height:169px;}
+.main_pop_quiz .card_title_wrap .card_title h3,
+.main_monthly_test .card_title_wrap .card_title h3{font-size:18px;}
+
+.vertical_50_card{width:100%;}
+
+/* 2022.07.14 course_before*/
+.junior_course_before .card_ui_inner{padding:20px 48px 25px; display: flex; flex-direction: column; justify-content: center;}
+.junior_course_before .card_title_wrap {justify-content: center;}
+.junior_course_before .card_title_wrap .icon_wrap{display: none;}
+.junior_course_before .card_title_wrap .card_title h3 {text-align: center;}
+.junior_course_before .card_title_wrap .card_title p {margin-top: 10px; text-align: center;}
+.junior_course_before .card_question_img{display: none;}
+.junior_course_before .card_btn_wrap {margin-top: 20px;}
+.junior_course_before .card_btn_wrap span{height:22px;}
+.senior_course_before .card_ui_inner{padding: 20px 20px 25px;}
+.senior_course_before .card_ui_inner a{ display: flex; flex-direction: column; justify-content: center;}
+.senior_course_before .card_title_wrap .card_title h3 {text-align: center; font-size:18px; line-height: 1.33; letter-spacing: -0.01px;}
+.senior_course_before .card_title_wrap .card_title p {margin-top: 10px; text-align: center;}
+.senior_course_before .card_btn_wrap{margin-top:19px;}
+.senior_course_before .icon_wrap{display: none;}
+
+/* 2022.08.15 구독취소 코스학습 잠김*/
+.cancel_main_course{margin-top:22px; padding-bottom: 17.5px; display: none; }
+.cancel_main_course .icon_wrap{position: relative!important; bottom:inherit!important; display: flex; justify-content: center;}
+.cancel_main_course p{margin-top:7px; padding:0 10px; font-weight: 500; text-align: center; color: #666;}
+
+.cancel_subscribe_course .cancel_main_course{display: block;}
+.cancel_subscribe_course .card_title_wrap{align-items: center;}
+.cancel_subscribe_course .card_title_wrap .card_title p{display: none;}
+.cancel_subscribe_course .card_question_img{display: none;}
+/* 시니어 구독취소 */
+.senior .cancel_subscribe_course .card_title_wrap .card_title h3 br{display: none;}
+.senior .cancel_main_course p {padding: 0;}
+.senior .cancel_subscribe_course .card_btn_wrap {display: flex!important;}
+.senior .cancel_subscribe_course .icon_wrap{display: none!important;}
+
+/*math game slider */
+.math_game_list .card_ui_inner{padding:28px 20px 30px 20px;}
+.math_game_list .card_title_wrap{margin:0; display: block;}
+.math_game_list .card_title_wrap a{display: flex; justify-content: space-between; align-items: center;}
+.math_game_list .game_slider{margin-top:30px; overflow: hidden;}
+.math_game_list .game_slider .game_item{margin-right:10px; width:90px; height:90px;}
+
+/*2022.08.23 main notice */
+.main_notice{padding: 0; }
+.main_notice .card_ui_inner {padding: 13px 15px 15px;}
+.main_notice .card_title_wrap .card_title{display: flex; align-items: center; gap:0 5px;}
+.main_notice .card_title_wrap .card_title h3{font-size: 14px; font-weight: bold; line-height: 1.43;}
+.main_notice .notice_con{margin-top:7px; padding:0 5px;}
+.main_notice .notice_con .notice_text{font-weight: bold; color: #666;}
+.main_notice .notice_con .notice_date{margin-top:5px; display: block; font-weight: 500; color: #666;}
+
+@media (max-width:280px) {
+  /*profile*/
+  .profile .profile_inner .profile_info a h2 {max-width: 115px;}
+  .profile .profile_inner .badges .badges_more_num {top: 30%;}
+
+   /*위클리 미션*/
+  .weekly_mission .weekly_icons li i {width: 40px; height: 40px;}
+}
+
+@media (max-width:359px) {  
+  /*profile*/
+  .profile .profile_inner .profile_info a h2 { font-size: 18px;}
+  .profile .profile_inner .badges i {width: 56px; height: 56px;}
+
+   /*위클리 미션*/
+  .weekly_mission .weekly_icons {flex-wrap: wrap;}  
+  
+  .main_worksheet .card_title_wrap .card_title, 
+  .learn_videos .card_title_wrap .card_title {gap: 0 20px;}
+ 
+  .ai_card .slider_item .slider_text {margin-right: 10px;}
+  .ai_card .slider_item .img_wrap figure {width: 80px; height: 68px;}
+  
+  .divide_card_wrap .card_ui_inner {height: 180px;}
+  .divide_card_l {width: 100%;}
+  .divide_card_m {width: 100%;}
+}
+
+@media (max-width:374px) {
+  .card_ui .card_btn_wrap .card_btn span {font-size: 14px;}
+}
+
+@media (min-width:600px) {
+  .main_page .container {margin-top: 76px;}
+  /*profile*/
+  .profile {padding: 30px 15px 0 30px;}
+  .profile .profile_inner .profile_info a h2{max-width: 400px;}
+
+  /*위클리 미션*/
+  .weekly_mission_wrap {padding-top: 20px;}
+  .weekly_mission {padding: 20px 20px 15px;}  
+  .weekly_mission .weekly_header h3 {height:22px; font-size: 16px; }
+  .weekly_mission .weekly_icon_wrap {display: flex; justify-content: space-between; align-items: flex-end;}
+  .weekly_mission .weekly_icons li i {width: 40px; height: 40px;}
+  .weekly_mission .text_btn_wrap {margin-bottom: 5px;} 
+
+/*2022.09.17card ui -> common.css*/
+ 
+ /*ai 슬라이더*/
+  .ai_card .card_ui_inner {padding: 5px 0 15px;}
+  .ai_card .slider_item{padding:0 10px 0 25px; }
+  .ai_card .slider_item .slider_text {width: 249px;}  
+  .ai_card .ai_bullets_wrap { margin-top: 3px;}
+  
+ /*link card ui*/
+  .link_card {width:100%;}
+  .link_card .card_ui_inner {padding:0; height: 128px;}
+  .link_card a {position: relative;  padding: 25px 15px 25px 25px; height: 100%;}
+  .link_card.card_ui .card_title_wrap .icon_wrap {position: absolute; bottom:20px; left:20px;}
+  .link_card.card_ui .card_title_wrap .card_title i{position: absolute; bottom:25px; right:20px;}
+
+  .link_card.ocr{width:100%;}
+  .link_card.ocr .card_ui_inner{height:auto;}
+  .link_card.ocr a{padding:25px;}
+  .link_card.ocr .card_title_wrap .icon_wrap {position: relative; bottom: inherit; left: inherit;}
+  .link_card.ocr .card_title_wrap .card_title i{position: relative; bottom:inherit; right:inherit;}
+  .link_card.ocr .card_title_wrap .card_title h3 br{display: none;}
+
+  .link_card.market{width:100%;}
+  .link_card.market .card_ui_inner{height:auto;}
+  .link_card.market a{padding:25px;}
+  .link_card.market .card_title_wrap .icon_wrap {position: relative; bottom: inherit; left: inherit;}
+  .link_card.market .card_title_wrap .card_title i{position: relative; bottom:inherit; right:inherit;}
+   
+  /*math game slider*/
+  .main_game .card_ui_inner {padding: 20px 0 0;}
+  .main_game .card_title_wrap {padding: 0 25px;}
+  .main_game .game_list_wrap .game_list {padding: 0px 25px;}
+  .math_game_list .card_ui_inner {padding: 25px 20px 30px 25px;}
+  .math_game_list .game_slider{position:relative;}
+  .math_game_list .game_slider::before{content: ""; position:absolute; top:0; right:-20px; bottom:0; z-index: 9; display: block; width:58px; height:100%;  background-image: linear-gradient(to left, #fff, #fff 51%, rgba(255, 255, 255, 0));}  
+
+  .main_pop_quiz .card_title_wrap .card_title h3,
+  .main_monthly_test .card_title_wrap .card_title h3{font-size: 20px; line-height: 1.3; letter-spacing: -0.01px;}
+
+  .daily_course .card_title_wrap .card_title h3 br{display: none;}
+  .daily_topic .card_title_wrap .card_title h3 br{display: none;}
+  
+  .main_worksheet .card_title_wrap .card_title h3, 
+  .learn_videos .card_title_wrap .card_title h3 {font-size: 16px; line-height: 1.5; letter-spacing: 0px;}
+
+  /*divied card ui */
+  .divide_card_wrap .card_ui {padding: 0 10px;}
+  .divide_card_l {width: 57.2727%;}
+  .divide_card_m {width: 42.7272%;}
+  .divide_card_wrap .card_ui_inner {padding: 25px; height: 276px;} 
+  .divide_card_wrap .icon_wrap {bottom: 20px; padding: 0 20px 0 20px;}    
+
+  /* 2022.09.22 divide_3_card_wrap 미사용 삭제 */
+
+  .vertical_50_card{display: flex; width:100%;}
+
+  .main_pop_quiz .card_ui_inner,
+  .main_monthly_test .card_ui_inner{height:176px;}
+
+  .junior_course_before .card_ui_inner {padding: 71px 48px 71px;}
+  .junior_course_before .card_title_wrap .card_title h3 {height: 27px; font-size: 20px; line-height: 1.3; letter-spacing: -0.01px;}
+  .junior_course_before .card_title_wrap .card_title p {font-size:14px; line-height: 1.43;}
+  .senior_course_before .card_title_wrap .card_title p {font-size:14px; line-height: 1.43;}
+
+  .senior .cancel_subscribe_course a{display: flex; flex-direction: column; justify-content: center; align-items: center;}
+  .senior .cancel_subscribe_course .cancel_main_course { margin-top: 5px; padding-bottom: 5px;}
+  
+  /*2022.08.23 main notice */
+  .main_notice .card_title_wrap .card_title h3 {  font-size: 16px; line-height: 1.5;}
+  .main_notice .notice_con .notice_text {font-size: 16px; line-height: 1.5;}
+}
+
+/*tablet 세로*/
+@media (min-width:600px) and (orientation: portrait) {
+  /*profile*/
+	.profile .profile_inner .profile_info a h2 {margin-right: 5px; font-size: 26px;}
+  .profile .profile_inner .profile_info a i {width: 16px; height: 16px;}
+  .profile .profile_inner .profile_info a i svg{width: 16px; height: 16px;}
+  /*profile progress*/
+  .profile .profile_inner .profile_info .profile_grade .grade_track {width: 100px; height: 6px; border-radius: 3px;}
+  .profile .profile_inner .profile_info .profile_grade .grade_track .gard_bar {height: 6px; border-radius: 3px;}
+  .profile .profile_inner .profile_info .profile_grade .grade_track .gard_bar {background-image: -moz-linear-gradient(to right, var(--gradationStart), var(--gradationEnd)); background-image: linear-gradient(to right, var(--gradationStart), var(--gradationEnd));}
+  
+  .main_page .main_contents {max-width: 550px;  margin: 0 auto;}
+  .main_page .main_contents>.wrap {margin: 0 -10px; max-width: initial;}
+
+  /*2022.09.17card ui -> common.css*/
+
+  /* 2022.09.22 divide_3_card_wrap 삭제 */
+
+  .junior_course_before .card_btn_wrap {margin-top: 20px;}
+  .junior_course_before .card_title_wrap .card_title p {font-size: 14px;}
+
+  /* 2022.08.23 main notice */
+  .main_notice {padding: 0;}
+  .main_notice .card_ui_inner{padding: 20px; display: flex; align-items: center; gap:0 40px;}
+  .main_notice .notice_con {margin-top: 0; padding: 0;}
+}
+
+
+@media (min-width:1200px) and (orientation: portrait) {
+  .wrap { max-width: 1100px;}
+}
+
+@media (min-width:712px) and (orientation: landscape) {
+  .main_page .main_contents>.wrap { margin: 0 auto; gap:0 15px;}
+  /* card ui common 이동 */
+
+  .divide_card_half {width:calc(50% - 7.5px);}
+
+  /* 2022.09.22 divide_3_card_wrap 미사용 삭제 */
+
+  .link_card {width: calc(50% - 7.5px);}
+  .divide_2_card_wrap{gap:0 15px;} 
+  .main_page .divide_card_m {width: calc(50% - 7.5px);}
+  .main_page .divide_card_l{width: calc(50% - 7.5px);}
+
+  .vertical_50_card{gap:0 20px;}
+}
+
+@media (min-width:1024px) and (orientation: landscape) {  
+
+  .main_page .container {margin-top: 76px;}
+
+  .main_top{margin-top:27px; display: flex; justify-content: space-between;} 
+  .profile{padding: 0 15px 0 50px;}  
+
+  .weekly_mission_wrap {padding-top: 0px;}
+  .weekly_mission {width:490px; margin-top: 0;}  
+
+  .main_page .main_contents {margin-top:80px;}
+  .main_page .main_contents .wrap{margin:0; padding-right:30px; display: flex; flex-wrap: nowrap; gap: 0;}
+
+  /*2022.09.17card ui -> common.css*/
+
+  /* 2022.08.24 */
+  .main_page .big_card .card_ui_inner{ min-height: 276px;}
+
+  .ai_card .card_ui_inner {width:500px;}
+
+   /* 2022.09.22 divide_3_card_wrap 미사용 삭제 */
+  
+  .link_card .card_ui_inner {padding: 0; height: 100%;}
+  .link_card.ocr .card_ui_inner{width:210px; height:100%; min-height: 276px; }
+  .link_card.ocr .card_title_wrap .icon_wrap {position: absolute; bottom:20px; left:20px;}
+  .link_card.ocr .card_title {display: block;}
+  .link_card.ocr .card_title_wrap .card_title i{position: absolute; bottom:25px; right:20px;}
+  .link_card.ocr .card_title_wrap .card_title h3 br{display: block;}
+  .link_card.ocr .card_title_wrap .card_title p{display: block;}
+
+  .link_card.market .card_ui_inner {height:100%;}
+  .link_card.market .card_title_wrap{align-items: center; height:100%;}
+
+  .vertical_50_card .link_card.market,
+  .vertical_50_card .ai_card{width:444px; height:calc(50% - 10px);} 
+  .vertical_50_card .link_card.market .card_ui_inner{width:444px;}
+  .vertical_50_card .ai_card .card_ui_inner {width:444px;}
+
+  .divide_card_wrap .card_ui_inner {width:270px; height: 100%;}
+  .divide_card_wrap .card_ui {padding:0 20px 0 0;}
+
+  .main_pop_quiz .card_ui_inner,
+  .main_monthly_test .card_ui_inner{width:210px; height:100%;}
+
+  .junior_course_before .card_btn_wrap {margin-top: 20px;}
+
+  /* */
+  .divide_2_card_wrap{min-height:276px; gap:20px 0;}
+  .divide_2_card_wrap .divide_card_m {width: 100%; height:calc(50% - 10px);}
+  .divide_2_card_wrap .divide_card_l {width: 100%; height:calc(50% - 10px);}
+  .main_page .divide_2_card_wrap .card_ui_inner {max-height: 100%; width:327px;}
+  .divide_2_card_wrap .main_pop_quiz a,
+  .divide_2_card_wrap .main_monthly_test a{position: relative; padding-left:68px; display: flex; align-items: center;}
+  .divide_2_card_wrap .main_pop_quiz .icon_wrap,
+  .divide_2_card_wrap .main_monthly_test .icon_wrap{position: absolute; top: 50%; transform: translateY(-50%); bottom: inherit; padding: 0; }
+  
+  .vertical_50_card{padding-right:20px; flex-wrap: wrap; gap:20px 0; min-height:276px;}
+  .vertical_50_card .link_card{padding:0; width:100%;}
+  .vertical_50_card .link_card .card_ui_inner{width:335px;}
+
+  .main_game .card_ui_inner{padding: 25px 0 0; position: relative;} 
+  .main_game .game_dots {position: absolute; top: 44px; right: 32px;}
+  
+  /*임시 삭제바람 [임시 퍼블에서는 숨김] land_remove_game 클래스.*/
+  .land_remove_game{display: none;}
+
+  /*2022.08.23  notice*/
+  .main_notice{margin-bottom:0; padding-right:20px;}
+  .main_notice .card_ui_inner{ padding: 25px 20px ; display: block; width:235px; height:100%; min-height:276px;}
+  .main_notice .notice_con{margin-top: 20px; padding:0 5px;}
+ 
+}  
+
+@media (min-width: 1024px) and (max-height:712px) and (orientation: landscape){ 
+  .main_page .main_contents {margin-top: 48px;}
+}
+
+@media (min-width:1440px){
+  /* common 이동 */
+
+  /* 2022.09.22 divide_3_card_wrap 미사용 삭제 */
+
+  .senior .divide_2_card_wrap {width: auto; max-width: 347px;}
+  .senior .divide_2_card_wrap .divide_card_m {width:auto;}
+  .senior .divide_2_card_wrap .divide_card_l {width:auto;}
+  .senior .divide_card_l {width:auto;}
+  .senior .divide_card_m{width:auto;}
+}

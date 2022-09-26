@@ -1,0 +1,494 @@
+@charset "utf-8";
+
+/* 
+*  Daily Topic 
+*/
+/*상단 배경*/
+.sub_page.tl{background-image: linear-gradient(335deg, var(--topicGradationStart), var(--topicGradationEnd));  }
+
+/* Daily Topic*/
+/* 2022.09.07 */
+.sub_page.tl_learn_list header .sub_title .text_wrap {cursor: pointer;}
+.sub_page.tl_learn_list header .sub_title .text_wrap i{transition: transform, .3s;}
+.sub_page.tl_learn_list header .sub_title .text_wrap.popup_cat_active i{transform: rotate(180deg);}
+
+/*2022.09.20 sub_scrolltop_obj.sticky -> common */
+
+.sub_content_top_wrap {margin-top:30px;}
+.sub_content_top_wrap .sub_content_top .text_wrap{text-align: center;}
+.sub_content_top_wrap .sub_content_top .text_wrap span{display: block; font-size:22px; font-weight: bold; letter-spacing: -0.01px;}
+.sub_content_top_wrap .sub_content_top .text_wrap p{margin-top:8px; font-weight: 500; line-height: 1.43; color:#666666;}
+
+/*2022.09.17 상단 탭 ui -> common*/
+.sub_page .main_contents{padding-top:20px; padding-bottom:170px;}
+
+/*daily topic list*/
+.arithmetic_list{margin:-10px -7.5px; display: flex; flex-wrap:wrap;}
+.arithmetic_list li{padding:10px 7.5px; width:50%;}
+.arithmetic_list li a{position: relative; padding:25px 20px 15px 15px; height:150px; border-radius:var(--borderRadius); background-color:#ffffff; box-shadow:0 5px 15px 0 rgba(0, 0, 0, .02);}
+.arithmetic_list li a .icon_wrap{position:absolute; bottom:15px; left:0; padding:0 20px 0 15px; display: flex; justify-content: space-between; align-items: flex-end; width:100%;}
+.arithmetic_list li a .icon_wrap .arithmetic_icon .st0{fill:var(--bulletColor);}
+.arithmetic_list li a .icon_wrap .arithmetic_icon .st0.opacity_50{opacity:.5;}
+.arithmetic_list li a .icon_wrap .icon_16{margin-bottom:5px;}
+.arithmetic_list li.arithmetic_next a{display: flex; justify-content: center; align-items: center;  background-color:#dbe3ee; font-size:16px; font-weight:bold; line-height:1.5;  text-align:center; color:#879dbf; pointer-events: none;}
+/* 2022.07.15  add ing*/
+.arithmetic_list li a .ing_tag{position: absolute; bottom:calc(100% - 13px); padding: 3px 12px; display: none; border-radius: 12px; background-color: var(--point_yellow);}
+.arithmetic_list li a .ing_tag span{height: 17px; font-size: 12px; font-weight: bold; line-height: 1.33;}
+.arithmetic_list li a .ing_tag::before{content: ""; position: absolute; top:100%; left:50%; transform: translateX(-50%);  border-top: 7px solid var(--point_yellow); border-left: 4px solid transparent; border-right: 4px solid transparent; }
+.arithmetic_list li a .arithmetic_ing_progress{margin-top:10px; display: none; width:100%; height:6px; border-radius: 3px; background-color: #fff4db; overflow: hidden; }
+.arithmetic_list li a .arithmetic_ing_progress .bar{display: block; height:100%; border-radius: 3px; background-image: linear-gradient(to right, var(--point_yellow_g_start), var(--point_yellow_g_end));}
+.arithmetic_list li.arithmetic_ing a .ing_tag{display: block;}
+.arithmetic_list li.arithmetic_ing a .arithmetic_ing_progress{display: block;}
+
+/*daily topic grade 나라별 학년 선택*/
+.country_year{position:relative; margin-top:30px; display: none; height:50px;}
+.country_year.active{display: block;}
+.country_year .country_year_inner{position: absolute; top:0; right:0; left:0; z-index: 2; border-radius: var(--borderRadius); background-color: #ffffff;  }
+.country_year .country_year_inner::before{content: ""; position: absolute; top: 0; left:0; right:0; bottom:0; display: block; width:100%; height:100%; border:1px solid #999999; border-radius: var(--borderRadius); pointer-events: none; box-sizing: border-box;  transition: border-color .3s;}
+.country_year .country_year_inner.on_wrap::before{border-width: 2px; border-color: var(--subText); }
+.country_year .country_year_btn{padding:14px 20px; display: flex; justify-content: space-between; align-items: center;}
+.country_year .country_year_btn .country_year_text{height:22px; font-size:16px; line-height: 1.5; font-weight: bold;}
+.country_year .country_year_inner .country_year_btn i{transition: transform .3s;}
+.country_year .country_year_inner.on_wrap .country_year_btn i{transform: rotate(180deg);}
+.country_year .country_year_list{height: 0; overflow: hidden; }
+.country_year .country_year_list li:nth-child(n+2){margin-top:5px; }
+.country_year .country_year_list li:last-child{padding-bottom:20px;}
+.country_year .country_year_list li a{padding:10px 18px; display: flex; justify-content: space-between; align-items: center;}
+.country_year .country_year_list li a span{font-size:16px; line-height: 1.5; font-weight: 500;}
+.country_year .country_year_list li a i{display: none;}
+.country_year .country_year_list li a.active{background: var(--countrySelectBg);}
+.country_year .country_year_list li a.active span{color:var(--subText); font-weight: bold;}
+.country_year .country_year_list li a.active i{display: block;}
+
+/*daily topic grade 셀렉트 박스*/
+.grade_list .grade .grade_inner{background-color: #ffffff; border-radius: var(--borderRadius);}
+.grade_list .grade:nth-child(n+2){margin-top:20px;}
+.grade_list .grade .grade_list_btn{padding:25px 20px 25px 25px; display: flex; justify-content: space-between; align-items: center;}
+.grade_list .grade .grade_list_btn h4{height:24px; font-size:18px; line-height: 1.56; font-weight: bold; letter-spacing: -0.01px;}
+.grade_list .grade .grade_list_btn i{transition: transform .3s; }
+.grade_list .grade .grade_list_btn.on h4{color:var(--subActive);}
+.grade_list .grade .grade_list_btn.on i{transform: rotate(180deg);}
+.grade_list .grade .grade_learn_list{padding:0 20px; height: 0; overflow: hidden;}
+.grade_list .grade .grade_learn_list li:first-child{padding-top:5px;}
+.grade_list .grade .grade_learn_list li:nth-child(n+2){border-top:1px solid #f4f4f4; }
+.grade_list .grade .grade_learn_list li:last-child{padding-bottom:30px;}
+.grade_list .grade .grade_learn_list li a{padding:14.5px 0 14.5px 5px; display: flex; justify-content: space-between; align-items: center;}
+.grade_list .grade .grade_learn_list li a span{font-size:16px; line-height: 1.5; font-weight: 500; color: #666;}
+.grade_list .grade:first-child .grade_learn_list{height: auto;}
+
+  /*learn detail - number1.html*/
+.tl_learn_list .main_contents{padding-top:35px;}
+.tl_learn_list .sub_content_top{height:75px;}
+.tl_learn_list .sub_content_top_wrap .wrap{padding:0; }
+
+/*상단 가로 학습코스*/
+.tl_subject_list_wrap .tl_subject_list{ margin:0 -5px; padding:0 20px; display: flex; overflow-x: auto; scrollbar-width: none;}
+.tl_subject_list_wrap .tl_subject_list::-webkit-scrollbar {display: none;}  
+.tl_subject_list_wrap{position:relative; z-index:9; margin:0 auto; display:flex; width: 100%; border-radius: var(--borderRadius);  transition: padding-top .3s; box-sizing: border-box;}
+/*상단코스 상단 고정*/
+.tl_subject_list_wrap.sticky{padding: 20px 0 35px; background-image: linear-gradient(to bottom, #f5f5f5, #f5f5f5 74%, rgba(245, 245, 245, 0)); }
+/*각 학습코스*/
+.tl_subject_list .tl_subject{padding:0 5px;}
+.tl_subject_list .tl_subject a{padding:10px 25px; display: flex; justify-content: center; align-items: center; width:156px; height:75px; border-radius: var(--borderRadius); background-color: #ffffff;}
+.tl_subject_list .tl_subject a.current_subject{color:#ffffff; background-image: linear-gradient(116deg, var(--currentSubjectBgStart), var(--currentSubjectBgEnd));}
+.tl_subject_list .tl_subject a h3{ height:auto; font-weight: 500; line-height: 1.43; text-align: center; color:#999999; }
+/*현재 학습 코스*/
+.tl_subject_list .tl_subject a.current_subject h3{color:#ffffff; }
+/*학습 코스 프로그래스*/
+.tl_subject_list .tl_subject a .tl_subject_progress{margin-top:10px; height:6px; border-radius: 3px;  background-color: #fff4db; overflow: hidden;}
+.tl_subject_list .tl_subject a .tl_subject_progress>span{display: block; width:0; height: 6px; border-radius: 3px; background-image: linear-gradient(to right, var(--point_yellow_g_start), var(--point_yellow_g_end));}
+
+/* 학습 코스별 소주제 문제 */
+.tl_learn_question .question_thumb:nth-child(n+2){margin-top:20px;}
+.tl_learn_question .question_thumb .question_thumb_inner{padding:30px 34px; border-radius: var(--borderRadius); background-color: #ffffff;}
+.question_thumb .question_thumb_inner .text_wrap h4{font-size: 16px; font-weight: 500; text-align: center; line-height: 1.5;  color: #666; }
+.question_thumb .question_thumb_inner .img_wrap{margin-top:20px; display: flex; justify-content: center;}
+.question_thumb .question_thumb_inner .btn_wrap{margin-top:10px; display: flex; justify-content: center;}
+/* 2022.07.13 */
+.question_thumb .question_thumb_inner .btn_wrap .thumb_start_btn{ padding: 8px 15px 8px 20px; display: flex; justify-content: center; align-items: center; gap: 0 5px; border-radius: var(--borderRadius); background-image: linear-gradient(103deg, var(--gradationStart), var(--gradationEnd));}
+.question_thumb .question_thumb_inner .btn_wrap .thumb_start_btn span{font-size: 16px; font-weight: bold; line-height: 1.5; color:#ffffff;}
+.question_thumb .question_thumb_inner .btn_list_wrap{margin-top:20px; display: flex; justify-content: center; align-items: center; gap: 0 30px;}
+.question_thumb .question_thumb_inner .btn_list_wrap a{display: flex; align-items: center; gap:0 5px;}
+.question_thumb .question_thumb_inner .btn_list_wrap a span {font-weight: 500; color: #666;}
+/* 학습 다시 버튼 */
+.question_thumb.q_learn_retry .question_thumb_inner .btn_wrap .thumb_start_btn{ background-image: linear-gradient(to right, var(--point_yellow_g_start), var(--point_yellow_g_end));   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.05);}
+.question_thumb.q_learn_retry .question_thumb_inner .btn_wrap .thumb_start_btn span{ color:#303030;}
+
+/*토픽 하단 팝업 메뉴 */
+/*슬라이드 업 팝업 메뉴(타이틀 버튼 클릭)*/
+/* 2022.09.08 */
+.change_arithmetic .change_arithmetic_inner{position:fixed; top:100%; left:50%; transform: translateX(-50%); z-index: 101; width:100%; height:calc(100vh - 137px); border-radius: var(--borderRadius) var(--borderRadius)  0 0; }
+.change_arithmetic .change_arithmetic_inner .scroll_popup_symbol {padding-bottom: 20px;}
+.change_arithmetic .sub_content_top_wrap {position: absolute; top:0; left:0; right:0; z-index: 1; width:100%; margin-top: 0;}
+.change_arithmetic .sub_content_top {height: auto; }
+.change_arithmetic .change_arithmetic_inner {margin-top: 0;}
+.change_arithmetic .change_arithmetic_inner.active{top:137px;}
+.change_arithmetic .main_contents {padding-top: 60px; padding-bottom:0;  overflow-y: auto; height:100%; scrollbar-width: none;}
+.change_arithmetic .main_contents::-webkit-scrollbar {display: none;}
+.change_arithmetic .main_contents .arithmetic_list_con{margin-top:30px;}
+.change_arithmetic .main_contents .sub_content_top .text_wrap{text-align: center;}
+.change_arithmetic .main_contents .sub_content_top .text_wrap span{display: block; font-size:22px; font-weight: bold; letter-spacing: -0.01px;}
+.change_arithmetic .main_contents .sub_content_top .text_wrap p{margin-top:8px; font-weight: 500; line-height: 1.43; color:#666666;}
+.change_arithmetic .arithmetic_list{padding-bottom:70px;}
+.change_arithmetic .arithmetic_list li a.active {color: #ffffff; background-image: linear-gradient(135deg, var(--currentSubjectBgStart), var(--currentSubjectBgEnd));}
+/* 2022.07.15  change_arithmetic grade_list 추가*/
+/* 2022.09.08 */
+.change_arithmetic .main_contents .grade_list_con{padding-top: 30px;}
+.change_arithmetic .grade_list{padding-bottom:70px;}
+
+
+/*한국 주제학습 메인 */
+.ko header .sub_title a .text_wrap h2 {line-height: 1.36;}
+.ko .sub_content_top_wrap .tab_wrap .tab_inner .tab_nav li a {font-size: 16px; font-weight: bold;}
+.ko .arithmetic_list li a .learn_title h4{font-size: 20px; font-weight: bold; line-height: 1.3; letter-spacing: -0.01px;}
+
+/*한국 주제학습 소수제 */
+.ko .tl_subject_list .tl_subject a h3 {font-size: 18px; letter-spacing: -0.01px;}
+.ko .question_thumb .question_thumb_inner .text_wrap h4 {font-size: 18px; font-weight: 500; line-height: 1.56;
+  letter-spacing: -0.01px; color: #666;}
+.ko .question_thumb .question_thumb_inner .btn_wrap .thumb_start_btn span {font-size: 18px; font-weight: bold;
+  line-height: 1.56; letter-spacing: -0.01px;}
+.ko .question_thumb .question_thumb_inner .btn_list_wrap a span {font-size: 16px; font-weight: 500; line-height: 1.5;}
+
+.ko .change_arithmetic .arithmetic_list li a .learn_title h3 {font-size: 20px; line-height: 1.3; letter-spacing: -0.01px;}
+
+
+@media (max-width:359px){
+  .arithmetic_list li a { height: 130px;}
+
+  .country_year .country_year_btn .country_year_text {font-size: 14px;}
+
+  .grade_list .grade .grade_list_btn h4 {font-size: 16px;}
+  .grade_list .grade .grade_list_btn {padding: 16px 20px 16px 25px;}
+  .grade_list .grade .grade_learn_list li a span { font-size: 14px;}
+
+  /* 학습 코스별 소주제 문제 */
+  .question_thumb .question_thumb_inner .btn_wrap{margin-top:8px;}
+  .question_thumb .question_thumb_inner .btn_wrap ul {flex-wrap: wrap; justify-content: center;}
+  .question_thumb .question_thumb_inner .btn_wrap ul li {margin-top: 8px;}
+  .question_thumb .question_thumb_inner .btn_wrap ul li a span {font-size: 14px;}
+  .question_thumb .question_thumb_inner .btn_wrap ul li.thumb_start_btn a {width: 174px;} 
+}
+
+@media (min-width:600px){
+/*2022.09.17 상단 탭 ui -> common*/
+
+  .arithmetic_list{margin: -10px -10px;}
+  .arithmetic_list li{padding: 10px 10px; width:33.3333%;}
+  .arithmetic_list li a{padding: 25px 20px 20px 20px; height:170px;}
+  /*learn detail*/
+  .tl_learn_list .sub_content_top_wrap .wrap{max-width: inherit;}
+  .tl_subject_list_wrap .tl_subject_list {margin: 0 -10px; padding: 0px 40px;}
+  .tl_subject_list .tl_subject {padding: 0 10px;}
+  .tl_subject_list .tl_subject a {padding: 20px 25px; width: 205px; height: 80px;}
+  .tl_subject_list .tl_subject a .tl_subject_progress {margin-top: 15px;}
+  /* 학습 코스별 소주제 문제 */
+  .tl_learn_question .question_thumb .question_thumb_inner {padding: 30px 28px 25px 27px;}
+  .question_thumb .question_thumb_inner .img_wrap{margin-top:20px;}
+
+/* 20220908 */
+  .change_arithmetic .main_contents .sub_content_top .text_wrap span {font-size: 26px;}
+  .change_arithmetic .main_contents .sub_content_top .text_wrap p {margin-top: 10px; font-size: 18px; line-height: 1.334; letter-spacing: -0.01px;}
+  .change_arithmetic .main_contents .arithmetic_list_con {margin-top: 50px;}
+  .change_arithmetic .arithmetic_list {padding-bottom: 40px;}
+   
+}
+
+@media (min-width:600px) and (orientation: portrait) {
+  /*2022.09.17 상단 탭 ui -> common*/
+  .sub_page .main_contents{padding-top:30px;}  
+  .scroll_popup_wrap .sub_content_top_wrap {margin-top: 0;}
+/* 2022.09.08 */
+  .scroll_popup .scroll_popup_close {top: 30px; right: 30px;}
+  .change_arithmetic .main_contents {padding-top: 70px;}
+  .change_arithmetic .change_arithmetic_inner {margin-left: auto; margin-right: auto; width: 82.9268%; height: calc(100vh - 180px); border-radius: var(--borderRadius); overflow: hidden; }
+  .change_arithmetic .change_arithmetic_inner.active {top: 90px;}
+  
+  .topic_main .main_contents{padding-top:40px;}
+  .grade_main .main_contents{padding-top:20px;}
+ 
+} 
+
+@media (min-width:800px) and (orientation: portrait) {
+  /*2022.09.17 상단 탭 ui -> common*/
+  .arithmetic_list li a .learn_title h4{font-size: 18px; letter-spacing: -0.01px; }
+  .arithmetic_list li a .icon_wrap .icon_40{width:56px; height:56px;}
+
+  /*학습 코스별 소주제 문제 */
+  .tl_learn_list .main_contents{padding-top: 50px;}
+  .tl_subject_list .tl_subject a h3{font-size: 16px;  font-weight: bold; line-height: 1.5;} 
+  .question_thumb .question_thumb_inner .text_wrap h4 {font-size: 18px; font-weight: 500; line-height: 1.56; letter-spacing: -0.01px;}
+  .question_thumb .question_thumb_inner .btn_wrap {margin-top: 20px;}
+  .question_thumb .question_thumb_inner .btn_wrap .thumb_start_btn {font-size: 16px; line-height: 1.5;}
+  .question_thumb .question_thumb_inner .btn_list_wrap a span {font-size: 16px; line-height: 1.5;}
+  
+  /* 20220908 */
+  .scroll_popup .scroll_popup_close {top: 30px; right: 30px;}
+  .change_arithmetic .main_contents {padding-top: 70px;} 
+  .change_arithmetic .arithmetic_list li a .learn_title h3{font-size: 18px; line-height: 1.56; letter-spacing: -0.01px;}
+
+  /* 한국 주제학습메인 */
+  .ko .sub_content_top_wrap .tab_wrap .tab_inner .tab_nav li a {padding:10px 13px 8px; font-size: 22px; line-height: 1.2;}  
+  .ko .arithmetic_list li a .learn_title h4 {font-size: 30px; line-height: 1.33; letter-spacing: -0.01px;}
+  .ko .arithmetic_list li.arithmetic_next a h4{font-size:20px;}
+
+  /* 한국 주제학습 소수제*/
+  .ko.tl_learn_list .main_contents{padding-top: 50px;}
+  .ko .tl_subject_list .tl_subject a h3 {font-size: 20px; line-height: 1.3; letter-spacing: -0.01px;}
+  .ko .question_thumb .question_thumb_inner .text_wrap h4 {font-size: 20px; font-weight: 500; line-height: 1.3;   letter-spacing: -0.01px;}
+  .ko .question_thumb .question_thumb_inner .btn_list_wrap a span {font-size: 18px; font-weight: 500;     line-height: 1.56; letter-spacing: -0.01px;}
+
+  .ko .change_arithmetic .arithmetic_list li a .learn_title h3 { font-size: 30px; line-height: 1.07; letter-spacing: -0.01px;}
+  .ko .change_arithmetic .arithmetic_list li.arithmetic_next a .learn_title h3{ font-size: 20px; line-height: 1.3;}
+}
+
+
+@media (min-width:1600px) and (orientation: portrait) {  
+  .topic_main .main_contents {padding-top: 120px;}
+  /*2022.09.17 상단 탭 ui -> common*/
+  .arithmetic_list {margin: -20px -20px;}
+  .arithmetic_list li {padding: 20px 20px;}
+  .arithmetic_list li a {padding: 45px 40px 30px 30px; height: 340px;}
+  .arithmetic_list li a .learn_title h4 {font-size: 36px; line-height: 1.5; letter-spacing: -0.01px;}
+  .arithmetic_list li a .arithmetic_ing_progress {margin-top: 20px; height: 12px; border-radius: 6px;}
+  .arithmetic_list li a .arithmetic_ing_progress .bar {border-radius: 6px;}
+  .arithmetic_list li a .icon_wrap {bottom: 30px; left: 0; padding: 0 40px 0 30px;}
+  .arithmetic_list li a .icon_wrap .icon_40{width:112px; height: 112px;}
+  .arithmetic_list li a .icon_wrap .icon_16{width:32px; height: 32px;}
+  .arithmetic_list li a .ing_tag span {height: auto; font-size: 24px; line-height: 1.33;}
+  .arithmetic_list li a .ing_tag {bottom: calc(100% - 13px); padding: 6px 24px 7px; border-radius: 20px;}
+  .arithmetic_list li a .ing_tag::before {border-top: 14px solid var(--point_yellow); border-left: 8px solid transparent; border-right: 8px solid transparent;}
+
+  .sub_content_top_wrap {margin-top: 100px;}
+  .tl_learn_list .main_contents{padding-top: 100px;}
+  .tl_subject_list_wrap.sticky { padding: 40px 0 70px;}
+  .tl_learn_list .sub_content_top {height: 160px;}
+  .tl_subject_list_wrap .tl_subject_list {margin: 0 -20px;}
+  .tl_subject_list .tl_subject {padding: 0 20px;}
+  .tl_subject_list .tl_subject a {padding: 34px 50px 35px; width: 410px; height: 160px;}
+  .tl_subject_list .tl_subject a h3 {font-size: 32px; line-height: 1.47; letter-spacing: -0.01px;}
+  .tl_learn_question .question_thumb:nth-child(n+2) {margin-top: 40px;}
+  .tl_learn_question .question_thumb .question_thumb_inner {padding: 55px 50px 56px 50px;}
+   
+  /*학습 코스별 소주제 문제 */
+  .question_thumb .question_thumb_inner .text_wrap h4 {font-size: 36px; font-weight: 500; line-height: 1.5; letter-spacing: -0.01px;}
+  .question_thumb .question_thumb_inner .img_wrap {margin-top: 40px;}
+  .question_thumb .question_thumb_inner .img_wrap figure{width:534px; height:234px;}
+  .question_thumb .question_thumb_inner .btn_wrap {margin-top: 40px;}
+  .question_thumb .question_thumb_inner .btn_wrap .thumb_start_btn { padding: 16px 30px 17px 40px; box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.05); gap: 0 16px;}
+  .question_thumb .question_thumb_inner .btn_wrap .thumb_start_btn span {font-size: 32px; letter-spacing: -0.01px;}
+  .question_thumb .question_thumb_inner .btn_wrap .thumb_start_btn i{width:32px; height:32px;}
+  .question_thumb .question_thumb_inner .btn_list_wrap {margin-top: 36px; gap: 0 50px;}
+  .question_thumb .question_thumb_inner .btn_list_wrap a {gap: 0 16px;}
+  .question_thumb .question_thumb_inner .btn_list_wrap a span {font-size: 32px; line-height: 1.5; letter-spacing: -0.01px;}
+  .question_thumb .question_thumb_inner .btn_list_wrap a i{width:32px; height:32px;}
+
+   /* 20220908 */
+   .sub_page.tl_learn_list header .sub_title .text_wrap i {width:24px; height:24px;}
+   .scroll_popup .scroll_popup_close {top: 60px; right: 60px;}
+   .scroll_popup .scroll_popup_close i {width: 64px; height: 64px;}
+   .change_arithmetic .main_contents .sub_content_top .text_wrap span {font-size: 52px;}
+   .change_arithmetic .main_contents .sub_content_top .text_wrap p {font-size: 36px; line-height: 1.334; letter-spacing: -0.01px;}
+   .change_arithmetic .arithmetic_list li a .learn_title h3 {font-size: 36px;}
+  
+/* 한국 */
+  .ko .topic_main .main_contents {padding-top: 0px;}
+  .ko .arithmetic_list_con { padding-top: 100px;}
+  .ko .sub_content_top_wrap .tab_wrap .tab_inner .tab_nav li a {font-size: 44px; line-height: 1.8; letter-spacing: -0.01px;}
+  .ko .arithmetic_list li a .learn_title h4 {font-size: 60px; letter-spacing: -0.02px;}
+  .ko .arithmetic_list li.arithmetic_next a h4{font-size:40px;}
+
+  .ko.tl_learn_list .main_contents{padding-top: 100px;}
+  .ko .tl_subject_list .tl_subject a h3 { font-size: 40px; line-height: 1.3; letter-spacing: -0.01px;}
+  .ko .question_thumb .question_thumb_inner .text_wrap h4 {font-size: 39px; line-height: 1.31; letter-spacing: -0.01px;}
+  .ko .question_thumb .question_thumb_inner .btn_wrap .thumb_start_btn span {font-size: 34px; line-height: 1.56; letter-spacing: -0.01px;}
+  .ko .question_thumb .question_thumb_inner .btn_list_wrap a span {font-size: 34px; font-weight: 500; line-height: 1.59; letter-spacing: -0.01px;}
+
+  .ko .change_arithmetic .main_contents .sub_content_top .text_wrap span {font-size: 60px;}
+  .ko .change_arithmetic .main_contents .sub_content_top .text_wrap p {font-size: 44px;}
+  .ko .change_arithmetic .main_contents .arithmetic_list_con {margin-top: 100px; padding-top: 0;}
+  .ko .change_arithmetic .arithmetic_list li a .learn_title h3 {font-size: 60px; letter-spacing: -0.02px;}
+
+}
+
+
+ @media (min-width:1024px) and (orientation: landscape) {
+  .sub_page .main_contents{padding-top:60px;}  
+  /*2022.09.17 상단 탭 ui -> common*/
+
+  .country_year{margin-top: 20px; width:100%; justify-content: flex-end;}
+  .country_year.active{display: flex;}
+  .country_year .country_year_inner{left: inherit; right:0; width:260px;}
+  /* 2022.08.04 padding top, 리스트 높이 수정*/
+  .tab_content .ho_scroll{padding: 20px 50px 0; align-content: flex-start;}  
+  .arithmetic_list{flex-direction: column; height: 360px;}
+  .arithmetic_list li{width: auto;}
+  .arithmetic_list li a{height: 150px; width: 160px;} 
+  .main_contents.grade_main{padding-top:46px;}
+  .grade_list .grade .grade_list_btn .selec_down_arrow {display: none;}
+  .grade_list{margin:0 -10px;}
+  .grade_list .grade{padding:0 10px;}
+  .grade_list .grade .grade_inner{width:415px;}
+  .grade_list .grade:nth-child(n+2){margin-top: 0;}
+  .grade_list .grade .grade_list_btn {pointer-events: none;}
+  .grade_list .grade .grade_learn_list {margin-right:5px; padding: 0 11px 0 20px; height: 263px; overflow-y: auto;}
+  .grade_list .grade .grade_learn_list li:first-child a{padding: 0 0 14.5px 5px;}
+  .grade_list .grade .grade_learn_list::-webkit-scrollbar {width: 4px; border-radius: 2px;}
+  .grade_list .grade .grade_learn_list::-webkit-scrollbar-thumb {background-color: var(--scrollBar); border-radius: 2px;}
+  .grade_list .grade:first-child .grade_learn_list{ height: 263px; }
+  .grade_list .grade .grade_list_btn.on span{color:inherit;}
+
+  /* 2022.08.04 padding 수정*/
+  .sub_page .main_contents {padding-top: 50px;}
+  .topic_main .main_contents{padding-top:70px;}
+  .grade_main .main_contents{padding-top:0;}  
+  /*learn detail*/
+  .tl_learn_list .sub_content_top_wrap {margin-top: 100px;}
+  .tl_subject_list_wrap .tl_subject_list {padding: 0px 50px;}
+  .tl_learn_list .main_contents .wrap{padding:0;}
+  .tl_learn_question{padding:0 50px; margin:0 -10px}
+  .tl_learn_question .question_thumb{padding:0 10px}
+  .tl_learn_question .question_thumb:nth-child(n+2) {margin-top: 0;}
+  .tl_learn_question .question_thumb .question_thumb_inner {width: 452px;}
+  
+  /* 20220908 bottom change arithmetic menu*/
+  .change_arithmetic .main_contents{padding-top: 70px; padding-bottom:70px;   overflow: hidden;}
+  .change_arithmetic .change_arithmetic_inner {width: 85%; height:100%; max-height: 77vh; border-radius: var(--borderRadius);}
+  .change_arithmetic .change_arithmetic_inner.active {top: 95px;}
+  .change_arithmetic .sub_content_top_wrap {margin-top: 0;}
+  .change_arithmetic .main_contents .sub_content_top {justify-content: flex-start;}
+  .change_arithmetic .main_contents .sub_content_top .text_wrap{text-align: left; padding:0 50px;}
+  .change_arithmetic .scroll_popup.avtive .sub_content_top_wrap {margin-top: 70px;}
+  .change_arithmetic .sub_content_top_wrap .wrap{padding:0 50px;}
+  .change_arithmetic .main_contents .arithmetic_list{padding: 0 50px; height:340px;}
+  .change_arithmetic .arithmetic_list {margin: -10px -7.5px; overflow-x: auto; scrollbar-width: none;}
+  .change_arithmetic .arithmetic_list::-webkit-scrollbar {display: none;}
+
+  .change_arithmetic .arithmetic_list li {padding:10px 7.5px;}
+  /* 2022.07.15 */
+  .change_arithmetic .main_contents .grade_list {height: auto;}
+
+ }
+
+
+@media (min-width:1280px) and (orientation: landscape) {  
+  .sub_content_top_wrap .tab_wrap .tab_inner .tab_nav li a {font-size: 18px; letter-spacing: -0.01px; line-height: 1.2; }
+  .arithmetic_list {height: 400px;}
+  .arithmetic_list li a {height: 170px;}
+  .arithmetic_list li a .learn_title h4{font-size: 18px; line-height: 1.56; letter-spacing: -0.01px;}
+  .arithmetic_list li a .icon_wrap .icon_40{width:56px; height:56px;}
+
+  .sub_page .main_contents {padding-top: 0; padding-bottom: 120px;}  
+  /*학습 코스별 소주제 문제 */
+  .question_thumb .question_thumb_inner .text_wrap h4 {font-size: 18px; font-weight: 500; line-height: 1.56; letter-spacing: -0.01px;}
+  .question_thumb .question_thumb_inner .btn_wrap {margin-top: 20px;}
+  .question_thumb .question_thumb_inner .btn_wrap .thumb_start_btn {font-size: 16px; line-height: 1.5;}
+  .question_thumb .question_thumb_inner .btn_list_wrap a span {font-size: 16px; line-height: 1.5;}
+  .arithmetic_list_con{padding-top:80px;}
+
+  .tl_learn_list .main_contents{padding-top: 80px;}
+  .tl_subject_list .tl_subject a h3{font-size: 16px;  font-weight: bold; line-height: 1.5;} 
+ 
+  /* 20220908 */
+  .change_arithmetic .change_arithmetic_inner.active {top: 70px;}
+  .change_arithmetic .change_arithmetic_inner { max-height: 80vh;}
+  .change_arithmetic .main_contents {padding-top: 50px; padding-bottom: 50px;}
+  .change_arithmetic .main_contents .arithmetic_list_con {padding-top:0;}
+  .change_arithmetic .main_contents .arithmetic_list {height: 450px;}
+  .change_arithmetic .arithmetic_list li a .learn_title h3{font-size: 18px; line-height: 1.56; letter-spacing: -0.01px;}
+
+  /* 한국 주제학습 메인 */
+  .ko .main_contents {padding-bottom: 100px;}
+  .ko .sub_content_top_wrap .tab_wrap .tab_inner .tab_nav li a {padding:10px 13px 8px; font-size: 22px; line-height: 1.2;}  
+
+  .ko .arithmetic_list li a .learn_title h4 {font-size: 30px; line-height: 1.33; letter-spacing: -0.01px;}
+  .ko .arithmetic_list li.arithmetic_next a h4{font-size:20px;}
+
+  /* 한국 주제학습 소수제*/
+  .ko.tl .main_contents {padding-top: 0;}
+  .ko.tl_learn_list .main_contents{padding-top: 80px;}
+  .ko .tl_subject_list .tl_subject a h3 {font-size: 20px; line-height: 1.3; letter-spacing: -0.01px;}
+  .ko .question_thumb .question_thumb_inner .text_wrap h4 {font-size: 20px; font-weight: 500; line-height: 1.3;   letter-spacing: -0.01px;}
+  .ko .question_thumb .question_thumb_inner .btn_list_wrap a span {font-size: 18px; font-weight: 500; line-height: 1.56; letter-spacing: -0.01px; }
+
+  .ko .change_arithmetic .arithmetic_list li a .learn_title h3 { font-size: 30px; line-height: 1.07; letter-spacing: -0.01px;}
+  .ko .change_arithmetic .arithmetic_list li.arithmetic_next a .learn_title h3{ font-size: 20px; line-height: 1.3;}
+
+}
+
+
+@media (min-width:2650px) and (orientation: landscape) {
+  .sub_content_top_wrap .tab_wrap {margin-top: 30px; height: 90px;}
+  .sub_content_top_wrap .tab_wrap .tab_inner {width: 7200px;}
+  .sub_content_top_wrap .tab_wrap .tab_inner .tab_nav { max-width: 720px; height: 90px;}
+  .sub_content_top_wrap .tab_wrap .tab_inner .tab_nav li a {padding: 19px 20px 22px;  height:90px; font-size: 36px; line-height: 1.5; letter-spacing: -0.01px;}
+  .topic_main .main_contents {padding-top: 0px;}   
+  .tab_content .ho_scroll {padding: 60px 230px 0;}
+  .arithmetic_list_con { padding-top:100px; }
+  .arithmetic_list {margin: -20px -15px; height: 820px;}
+  .arithmetic_list li {padding: 20px 15px;}
+  .arithmetic_list li a {padding: 45px 40px 30px 30px; width:340px; height: 340px;}
+  .arithmetic_list li a .learn_title h4 {font-size: 36px; line-height: 1.5; letter-spacing: -0.01px;}
+  .arithmetic_list li a .arithmetic_ing_progress {margin-top: 20px; height: 12px; border-radius: 6px;}
+  .arithmetic_list li a .arithmetic_ing_progress .bar {border-radius: 6px;}
+  .arithmetic_list li a .icon_wrap {bottom: 30px; left: 0; padding: 0 40px 0 30px;}
+  .arithmetic_list li a .icon_wrap .icon_40{width:112px; height: 112px;}
+  .arithmetic_list li a .icon_wrap .icon_16{width:32px; height: 32px;}
+  .arithmetic_list li a .ing_tag span {height: auto; font-size: 24px; line-height: 1.33;}
+  .arithmetic_list li a .ing_tag {bottom: calc(100% - 13px); padding: 6px 24px 7px; border-radius: 20px;}
+  .arithmetic_list li a .ing_tag::before {border-top: 14px solid var(--point_yellow); border-left: 8px solid transparent; border-right: 8px solid transparent;}
+  .grade_main .main_contents {padding-top: 0;}
+
+  .tl_learn_list .main_contents{padding-top: 160px;}
+  .tl_learn_list .sub_content_top_wrap {margin-top: 200px;}
+  .tl_learn_list .sub_content_top {height: 160px;}
+  .tl_subject_list_wrap .tl_subject_list {margin: 0 -20px;  padding: 0px 100px;}  
+  .tl_subject_list .tl_subject {padding: 0 20px;}
+  .tl_subject_list .tl_subject a {padding: 34px 50px 35px; width: 410px; height: 160px;}
+  .tl_subject_list .tl_subject a h3 {font-size: 32px; line-height: 1.47; letter-spacing: -0.01px;}
+
+  .tl_learn_question {padding: 0 100px;  margin: 0 -20px;}
+  .tl_learn_question .question_thumb {padding: 0 20px;}
+  .tl_learn_question .question_thumb .question_thumb_inner {width: 904px;}
+  .tl_learn_question .question_thumb .question_thumb_inner {padding: 55px 50px 56px 50px;}
+
+   /*학습 코스별 소주제 문제 */
+   .question_thumb .question_thumb_inner .text_wrap h4 {font-size: 36px; font-weight: 500; line-height: 1.5; letter-spacing: -0.01px;}
+   .question_thumb .question_thumb_inner .img_wrap {margin-top: 40px;}
+   .question_thumb .question_thumb_inner .img_wrap figure{width:534px; height:234px;}
+   .question_thumb .question_thumb_inner .btn_wrap {margin-top: 40px;}
+   .question_thumb .question_thumb_inner .btn_wrap .thumb_start_btn { padding: 16px 30px 17px 40px; box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.05); gap: 0 16px;}
+   .question_thumb .question_thumb_inner .btn_wrap .thumb_start_btn span {font-size: 32px; letter-spacing: -0.01px;}
+   .question_thumb .question_thumb_inner .btn_wrap .thumb_start_btn i{width:32px; height:32px;}
+   .question_thumb .question_thumb_inner .btn_list_wrap {margin-top: 36px; gap: 0 50px;}
+   .question_thumb .question_thumb_inner .btn_list_wrap a {gap: 0 16px;}
+   .question_thumb .question_thumb_inner .btn_list_wrap a span {font-size: 32px; line-height: 1.5; letter-spacing: -0.01px;}
+   .question_thumb .question_thumb_inner .btn_list_wrap a i{width:32px; height:32px;}
+
+/* 20220908 */
+  .change_arithmetic .change_arithmetic_inner {max-height: 86vh;}
+  .sub_page.tl_learn_list header .sub_title .text_wrap i {width:24px; height:24px;}
+  .scroll_popup .scroll_popup_close {top: 60px; right: 60px;}
+  .scroll_popup .scroll_popup_close i {width: 64px; height: 64px;}
+  .change_arithmetic .sub_content_top_wrap { margin-top: 0;}
+  .change_arithmetic .main_contents .sub_content_top .text_wrap span {font-size: 52px;}
+  .change_arithmetic .main_contents .sub_content_top .text_wrap p {font-size: 36px; line-height: 1.334; letter-spacing: -0.01px;}
+  .change_arithmetic .main_contents .arithmetic_list {height: 900px;}
+  .change_arithmetic .arithmetic_list li a .learn_title h3 {font-size: 36px;}
+ 
+  .ko .sub_content_top_wrap .tab_wrap .tab_inner .tab_nav li a {font-size: 44px; line-height: 1.8; letter-spacing: -0.01px;}
+  .ko .arithmetic_list li a .learn_title h4 {font-size: 60px; letter-spacing: -0.02px;}
+  .ko .arithmetic_list li.arithmetic_next a h4{font-size:40px;}
+
+  .ko.tl_learn_list .main_contents{padding-top: 160px;}
+  .ko .tl_subject_list .tl_subject a h3 { font-size: 40px; line-height: 1.3; letter-spacing: -0.01px;}
+  .ko .question_thumb .question_thumb_inner .text_wrap h4 {font-size: 39px; line-height: 1.31; letter-spacing: -0.01px;}
+  .ko .question_thumb .question_thumb_inner .btn_wrap .thumb_start_btn span {font-size: 34px; line-height: 1.56; letter-spacing: -0.01px;}
+  .ko .question_thumb .question_thumb_inner .btn_list_wrap a span {font-size: 34px; font-weight: 500; line-height: 1.59; letter-spacing: -0.01px;}
+
+  .ko .change_arithmetic .main_contents .sub_content_top .text_wrap span {font-size: 60px;}
+  .ko .change_arithmetic .main_contents .sub_content_top .text_wrap p {font-size: 44px;}
+  .ko .change_arithmetic .main_contents .arithmetic_list_con {margin-top: 100px; padding-top: 0;}
+  .ko .change_arithmetic .arithmetic_list li a .learn_title h3 {font-size: 60px; letter-spacing: -0.02px;}
+
+}

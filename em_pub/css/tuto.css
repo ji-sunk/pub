@@ -1,0 +1,409 @@
+/* tuto init */
+.tutorial_wrap{position: fixed; top:0; left:0; z-index: 99999; width:100%; height:100%; overflow-x: hidden; overflow-y: auto; background-color: #f3f3f3;} 
+.tutorial_wrap .tuto_indicator{position: absolute; top:64px; left:20px; z-index: 2; right:20px;}
+.tutorial_wrap .tuto_indicator .tuto_dot{position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); display: flex; gap:0 5px}
+.tutorial_wrap .tuto_indicator .tuto_dot .swiper-pagination-bullet{border-radius: 4px; background-color: #dddddd; opacity: 1; transition: width, backgroundColor, .3s;}
+.tutorial_wrap .tuto_indicator .tuto_dot .swiper-pagination-bullet-active {width:25px; background-color:var(--bulletColor);}
+.tutorial_wrap .tuto{overflow: hidden;}
+.tutorial_wrap .tuto_item{position: relative; overflow: hidden;}
+.tutorial_wrap .tuto_item .mo_tuto_bg{display: block; width:100%; height:100%; object-fit: cover;}
+.tutorial_wrap .tuto_item .po_tuto_bg{display: none; width:100%; height:100%; object-fit: cover;}
+.tutorial_wrap .tuto_item .la_tuto_bg{display: none; width:100%; height:100%; object-fit: cover;}
+.tutorial_wrap .tuto_item .tuto_con{position: absolute; left:0; padding: 0 20px; display: flex;  width:100%;}
+.tutorial_wrap .tuto_item .tuto_bubble{position: relative; z-index: 1;}
+.tutorial_wrap .tuto_item .tuto_bubble p{position: relative; padding:15px 20px; width:100%; max-width: 265px; border-radius: 30px; background-color: #ffbe30; font-size: 16px; font-weight: bold; line-height: 1.5; text-align: center; }
+.tutorial_wrap .tuto_item .tuto_bubble p::before{content: ""; position: absolute; top:100%; width:12px; height:10px; background:url("../images/common/img-textbox-tale-left.svg")no-repeat center /cover; font-size:0; line-height: 1em;}
+.tutorial_wrap .tuto_btn{position: fixed; transform: translateX(-50%) translateY(100%); transition: all, .3s;}
+.tutorial_wrap .tuto_btn.active{transform: translateX(-50%) translateY(0);}
+.tutorial_wrap .tuto_btn .bottom_zero_btn{text-align: center;}
+
+/* 메인튜토 */
+.tutorial_wrap .main_tuto .tuto_con{justify-content: center;}
+.tutorial_wrap .main_tuto .tuto_bubble p::before{ right:70px;}
+.tutorial_wrap .main_tuto .tuto_01 .tuto_con{bottom:53.4482%; }
+.tutorial_wrap .main_tuto .tuto_02 .tuto_con{bottom:27.09359%;}
+.tutorial_wrap .main_tuto .tuto_02 .tuto_bubble p::before{transform: scaleX(-1);}
+.tutorial_wrap .main_tuto .tuto_03 .tuto_con{bottom:27.09359%;}
+.tutorial_wrap .main_tuto .tuto_03 .tuto_bubble p::before{ transform: scaleX(-1);}
+.tutorial_wrap .main_tuto .tuto_04 .tuto_con{bottom:73.6453%;}
+.tutorial_wrap .main_tuto .tuto_05 .tuto_con{bottom:54.80295%; }
+.tutorial_wrap .main_tuto .tuto_05 .tuto_con p{max-width: 305px;}
+.tutorial_wrap .main_tuto .tuto_06 .tuto_con{bottom:59.3596%;}
+
+/* 코스학습 */
+.tutorial_wrap .course_tuto .tuto_con{justify-content: center;}
+.tutorial_wrap .course_tuto .tuto_bubble p::before{ right:40px;}
+.tutorial_wrap .course_tuto .tuto_01 .tuto_con{bottom:57.8817%;}
+.tutorial_wrap .course_tuto .tuto_01 .tuto_bubble p::before{ right:70px;}
+.tutorial_wrap .course_tuto .tuto_02 .tuto_con{top:49.1379%; bottom:inherit; justify-content: flex-start;}
+.tutorial_wrap .course_tuto .tuto_02 .tuto_bubble p{width: 255px;}
+.tutorial_wrap .course_tuto .tuto_02 .tuto_bubble p::before{top:inherit; bottom: 100%; right:70px; transform: rotate(180deg);}
+.tutorial_wrap .course_tuto .tuto_03 .tuto_con{bottom:69.4581%; justify-content: flex-start;}
+.tutorial_wrap .course_tuto .tuto_03 .tuto_bubble p{width: 225px;}
+.tutorial_wrap .course_tuto .tuto_03 .tuto_bubble p::before{transform: scaleX(-1);}
+.tutorial_wrap .course_tuto .tuto_04 .tuto_con{bottom:58.2512%; }
+.tutorial_wrap .course_tuto .tuto_04 .tuto_bubble p{width: 245px;}
+.tutorial_wrap .course_tuto .tuto_04 .tuto_bubble p::before{right:50px; }
+.tutorial_wrap .course_tuto .tuto_05 .tuto_con{bottom:37.3152%; }
+.tutorial_wrap .course_tuto .tuto_05 .tuto_bubble p{width: 270px; margin-right: 20px;}
+.tutorial_wrap .course_tuto .tuto_06 .tuto_con{bottom:71.3054%; justify-content: flex-end;}
+.tutorial_wrap .course_tuto .tuto_06 .tuto_bubble p{width: 222px;}
+.tutorial_wrap .course_tuto .tuto_06 .tuto_bubble p::before{left:30px; right:inherit; }
+
+/* 코스학습 한글 */
+.ko.tutorial_wrap .course_tuto .tuto_02 .tuto_bubble p{width: 222px;}
+.ko.tutorial_wrap .course_tuto .tuto_03 .tuto_bubble p {width: 231px;}
+.ko.tutorial_wrap .course_tuto .tuto_04 .tuto_bubble p{width: 265px;}
+
+/* 주제학습 */
+.tutorial_wrap .topic_tuto .tuto_con{justify-content: center;}
+.tutorial_wrap .topic_tuto .tuto_bubble p::before{ left:112px;}
+.tutorial_wrap .topic_tuto .tuto_01 .tuto_con{bottom:54.6798%; padding:0 20px 0 30px;}
+.tutorial_wrap .topic_tuto .tuto_01 .tuto_bubble p{ max-width: 325px;}
+.tutorial_wrap .topic_tuto .tuto_02 .tuto_con{bottom:25%; padding:0 25px 0 35px; justify-content: flex-end;}
+.tutorial_wrap .topic_tuto .tuto_02 .tuto_bubble p{max-width: 325px; }
+.tutorial_wrap .topic_tuto .tuto_03 .tuto_con{bottom:10.2216%; justify-content: flex-end;}
+.tutorial_wrap .topic_tuto .tuto_03 .tuto_bubble p{max-width: 215px;}
+.tutorial_wrap .topic_tuto .tuto_03 .tuto_bubble p::before{left:32px; }
+.tutorial_wrap .topic_tuto .tuto_04 .tuto_con{bottom:19.0886%; padding:0 20px 0 30px}
+.tutorial_wrap .topic_tuto .tuto_04 .tuto_bubble p{max-width: 325px;}
+.tutorial_wrap .topic_tuto .tuto_04 .tuto_bubble p::before{left:177px;}
+.tutorial_wrap .topic_tuto .tuto_05 .tuto_con{bottom:19.0886%; padding:0 20px 0 30px}
+.tutorial_wrap .topic_tuto .tuto_05 .tuto_bubble p::before{left:177px;}
+.tutorial_wrap .topic_tuto .tuto_05 .tuto_bubble p{max-width: 325px;}
+.tutorial_wrap .topic_tuto .tuto_06 .tuto_con{bottom:19.0886%; padding:0 20px 0 30px}
+.tutorial_wrap .topic_tuto .tuto_06 .tuto_bubble p{ max-width: 325px;}
+.tutorial_wrap .topic_tuto .tuto_06 .tuto_bubble p::before{left: inherit; right:105px; }
+.tutorial_wrap .topic_tuto .tuto_07 .tuto_con{bottom:59.35960%; }
+.tutorial_wrap .topic_tuto .tuto_07 .tuto_bubble p{max-width: 295px;}
+.tutorial_wrap .topic_tuto .tuto_07 .tuto_bubble p::before{left:97px; transform: scaleX(-1);}
+
+/* 주제학습 한글 */
+.ko.tutorial_wrap .topic_tuto .tuto_02 .tuto_bubble p{width:265px;}
+.ko.tutorial_wrap .topic_tuto .tuto_03 .tuto_con{bottom:17.8571%;}
+.ko.tutorial_wrap .topic_tuto .tuto_03 .tuto_bubble p{width:233px; max-width: 100%;}
+
+/* 수학카메라(ocr)  */
+.tutorial_wrap .ocr_tuto .tuto_con{justify-content: center;}
+.tutorial_wrap .ocr_tuto .tuto_01 .tuto_con{bottom:59.3596%;}
+.tutorial_wrap .ocr_tuto .tuto_01 .tuto_bubble p{width:245px;}
+.tutorial_wrap .ocr_tuto .tuto_01 .tuto_bubble p::before{ right:48px; transform: scaleX(-1);}
+.tutorial_wrap .ocr_tuto .tuto_02 .tuto_con{bottom:59.2364%; justify-content: flex-end; padding-right:30px;}
+.tutorial_wrap .ocr_tuto .tuto_02 .tuto_bubble p {width: 245px;}
+.tutorial_wrap .ocr_tuto .tuto_02 .tuto_bubble p::before{ right:54px;}
+.tutorial_wrap .ocr_tuto .tuto_03 .tuto_con{bottom:53.5714%; justify-content: flex-end;}
+.tutorial_wrap .ocr_tuto .tuto_03 .tuto_bubble p {width: 245px;}
+.tutorial_wrap .ocr_tuto .tuto_03 .tuto_bubble p::before{ left:44px;}
+.tutorial_wrap .ocr_tuto .tuto_04 .tuto_con{bottom:25.2463%; justify-content: flex-start; padding-left:32px;}
+.tutorial_wrap .ocr_tuto .tuto_04 .tuto_bubble p::before{ left:72px;}
+.tutorial_wrap .ocr_tuto .tuto_05 .tuto_con{bottom:37.9310%;}
+.tutorial_wrap .ocr_tuto .tuto_05 .tuto_bubble p {width: 305px;}
+.tutorial_wrap .ocr_tuto .tuto_05 .tuto_bubble p::before{ right:108px; transform: scaleX(-1);}
+.tutorial_wrap .ocr_tuto .tuto_06 .tuto_con{bottom:69.2118%; justify-content: flex-end; padding-right:25px;}
+.tutorial_wrap .ocr_tuto .tuto_06 .tuto_bubble p {width: 215px;}
+.tutorial_wrap .ocr_tuto .tuto_07 .tuto_con{bottom:71.4285%; justify-content: flex-start; padding-left:30px;}
+.tutorial_wrap .ocr_tuto .tuto_07 .tuto_bubble p{width:205px;}
+.tutorial_wrap .ocr_tuto .tuto_07 .tuto_bubble p::before{ right:32px;  transform: scaleX(-1);}
+
+/* 한국 수학카메라(ocr)  */
+.ko.tutorial_wrap .ocr_tuto .tuto_01 .tuto_bubble p{width:195px;}
+.ko.tutorial_wrap .ocr_tuto .tuto_04 .tuto_bubble p {width: 290px;}
+
+@media (max-width:280px){    
+	.tutorial_wrap .tuto_item .tuto_bubble p {font-size: 12px;}
+	.tutorial_wrap .tuto_item .tuto_bubble p br{display: none;}
+}
+
+@media (max-width:319px){    
+	/* tuto init */
+	.tuto_slider {height:100vh; }
+	.tutorial_wrap .tuto .tuto_item .img_wrap{height: 100%;}
+	.tutorial_wrap .tuto .tuto_item .img_wrap figure{height:100%;}
+	.tutorial_wrap .tuto .tuto_item .tuto_bubble p {width: calc(100% - 20px)!important; margin: 0 auto!important;}
+}
+
+@media (min-width:600px){
+	/* tuto init */
+	.tutorial_wrap .tuto_indicator {top: 50px; left: 0; right: 0; padding:0 40px;}
+	.tutorial_wrap .tuto_indicator .tuto_close i{width:32px; height:32px;}
+	.tutorial_wrap .tuto_indicator .tuto_dot {position: relative; top:initial; left: inherit; transform: translate(0); margin-top: 18px;  justify-content: center;}
+	.tutorial_wrap .tuto_item .mo_tuto_bg{display: none;}
+	.tutorial_wrap .tuto_item .po_tuto_bg{display: block;}
+	.tutorial_wrap .tuto_item .la_tuto_bg{display: none;}		
+	.tuto_slider {height:100vh; }
+	.tutorial_wrap .tuto .tuto_item .img_wrap{height: 100%;}
+	.tutorial_wrap .tuto .tuto_item .img_wrap figure{height:100%;}
+}
+
+
+@media (min-width:600px) and (orientation: portrait){
+/* 메인 튜토 */
+	.tutorial_wrap .main_tuto .tuto_01 .tuto_con{bottom:61.8644%; }
+	.tutorial_wrap .main_tuto .tuto_02 .tuto_con{bottom:16.5254%; padding-right:99px; justify-content: flex-end;}
+	.tutorial_wrap .main_tuto .tuto_03 .tuto_con{bottom:18.3050%; padding-right:87px; justify-content: flex-end;}
+	.tutorial_wrap .main_tuto .tuto_04 .tuto_con{bottom:69.1525%;}
+	.tutorial_wrap .main_tuto .tuto_05 .tuto_con{bottom:67.0338%;}
+	.tutorial_wrap .main_tuto .tuto_06 .tuto_con{bottom:59.4915%;}
+/* 한글메인 */
+	.ko.tutorial_wrap .main_tuto .tuto_05 .tuto_con {bottom: 44.6610%;}
+
+	/* 코스학습 */
+	.tutorial_wrap .course_tuto .tuto_01 .tuto_con{bottom:58.3050%;}
+	.tutorial_wrap .course_tuto .tuto_02 .tuto_con{top:34.4067%; bottom:inherit; justify-content: center;}
+	.tutorial_wrap .course_tuto .tuto_02 .tuto_bubble p {margin-right: 40px;}
+	.tutorial_wrap .course_tuto .tuto_02 .tuto_bubble p::before{right:40px;}
+	.tutorial_wrap .course_tuto .tuto_03 .tuto_con{ top:13.1355%; bottom:inherit; justify-content: center;}
+	.tutorial_wrap .course_tuto .tuto_03 .tuto_bubble p{margin-left:100px;}
+	.tutorial_wrap .course_tuto .tuto_04 .tuto_con{bottom:67.1186%; }
+	.tutorial_wrap .course_tuto .tuto_04 .tuto_bubble p{margin-right: 120px;}
+	.tutorial_wrap .course_tuto .tuto_05 .tuto_con{bottom:26.2711%; }
+	.tutorial_wrap .course_tuto .tuto_05 .tuto_bubble p {margin-right: 170px;}
+	.tutorial_wrap .course_tuto .tuto_06 .tuto_con{top:11.2711%; bottom:inherit; justify-content: center;}
+	.tutorial_wrap .course_tuto .tuto_06 .tuto_bubble p{margin-left: 400px;}
+	/* 한글 코스학습 */
+	.ko.tutorial_wrap .course_tuto .tuto_02 .tuto_bubble p {width: 255px;	}
+	.ko.tutorial_wrap .course_tuto .tuto_03 .tuto_bubble p {width: 245px;}
+	.ko.tutorial_wrap .course_tuto .tuto_05 .tuto_bubble p {width: 270px; max-width: 100%;}
+
+	/* 주제학습 */
+	.tutorial_wrap .topic_tuto .tuto_01 .tuto_con{bottom:55.6779%; padding-left:35px; justify-content: flex-start;}
+	.tutorial_wrap .topic_tuto .tuto_02 .tuto_con{bottom:17.1186%; justify-content: center;}
+	.tutorial_wrap .topic_tuto .tuto_02 .tuto_bubble p{margin-left: 140px; max-width: 315px;  }
+	.tutorial_wrap .topic_tuto .tuto_02 .tuto_bubble p::before{left:inherit; right:94px; transform: scaleX(-1); }
+	.tutorial_wrap .topic_tuto .tuto_03 .tuto_con{bottom:17.1186%; justify-content: center;}
+	.tutorial_wrap .topic_tuto .tuto_03 .tuto_bubble p{max-width: 315px; margin-left:184px; }
+	.tutorial_wrap .topic_tuto .tuto_03 .tuto_bubble p::before{left:inherit; right:124px; transform: scaleX(-1); }
+	.tutorial_wrap .topic_tuto .tuto_04 .tuto_con{bottom:14.0677%;}
+	.tutorial_wrap .topic_tuto .tuto_04 .tuto_bubble p{margin-left: 70px; max-width: 315px;}	
+	.tutorial_wrap .topic_tuto .tuto_04 .tuto_bubble p::before{left:inherit; right:47px; transform: scaleX(-1);}
+	.tutorial_wrap .topic_tuto .tuto_05 .tuto_con{bottom:12.3728%;}
+	.tutorial_wrap .topic_tuto .tuto_05 .tuto_bubble p{margin-right: 100px; max-width: 315px;}
+	.tutorial_wrap .topic_tuto .tuto_05 .tuto_bubble p::before{left:80px;}
+	.tutorial_wrap .topic_tuto .tuto_06 .tuto_con{bottom:14.0677%;}
+	.tutorial_wrap .topic_tuto .tuto_06 .tuto_bubble p{margin-left:100px; max-width: 315px;}
+	.tutorial_wrap .topic_tuto .tuto_06 .tuto_bubble p::before{left: inherit; right:57px; transform: scaleX(-1);}
+	.tutorial_wrap .topic_tuto .tuto_07 .tuto_con{bottom:55.93220%; }
+	.tutorial_wrap .topic_tuto .tuto_07 .tuto_bubble p{max-width: 315px;}
+	.tutorial_wrap .topic_tuto .tuto_07 .tuto_bubble p::before{left:102px;}
+/* 한글 주제학습 */
+	.ko.tutorial_wrap .topic_tuto .tuto_03 .tuto_bubble p {width: 255px;}
+	.ko.tutorial_wrap .topic_tuto .tuto_05 .tuto_bubble p {max-width: 320px;}
+	.ko.tutorial_wrap .topic_tuto .tuto_06 .tuto_bubble p {max-width: 325px;}
+
+/* 수학 카메라(ocr) 튜토*/
+	.tutorial_wrap .ocr_tuto .tuto_01 .tuto_con{bottom:46.6949%; padding-right:65px; justify-content: flex-end;}
+	.tutorial_wrap .ocr_tuto .tuto_01 .tuto_bubble p { width: 265px;}
+	.tutorial_wrap .ocr_tuto .tuto_02 .tuto_con{bottom:61.6949%; justify-content: center;}
+	.tutorial_wrap .ocr_tuto .tuto_02 .tuto_bubble p {margin-left:180px; width: 370px; max-width: 100%;}
+	.tutorial_wrap .ocr_tuto .tuto_02 .tuto_bubble p::before{ left:50%; right:inherit; transform: translateX(-50%);}
+	.tutorial_wrap .ocr_tuto .tuto_03 .tuto_con{bottom:42.9661%; justify-content: flex-start; padding-left:145px;}
+	.tutorial_wrap .ocr_tuto .tuto_03 .tuto_bubble p {width: 370px; max-width: 100%;}
+	.tutorial_wrap .ocr_tuto .tuto_03 .tuto_bubble p::before{ left:44px;}
+	.tutorial_wrap .ocr_tuto .tuto_04 .tuto_con{bottom:17.7118%;  padding-left:40px;}
+	.tutorial_wrap .ocr_tuto .tuto_04 .tuto_bubble p::before{ left:inherit; right:108px;}
+	.tutorial_wrap .ocr_tuto .tuto_05 .tuto_con{bottom:25.4237%;}
+	.tutorial_wrap .ocr_tuto .tuto_05 .tuto_bubble p {width: 530px; max-width: 100%;}
+	.tutorial_wrap .ocr_tuto .tuto_06 .tuto_con{bottom:71.1864%; justify-content: center;}
+	.tutorial_wrap .ocr_tuto .tuto_06 .tuto_bubble p {width: 220px;}
+	.tutorial_wrap .ocr_tuto .tuto_07 .tuto_con{bottom:71.0169%; justify-content: center; padding-left:30px;}
+	.tutorial_wrap .ocr_tuto .tuto_07 .tuto_bubble p{width:255px;}
+	.tutorial_wrap .ocr_tuto .tuto_07 .tuto_bubble p::before{ right:32px;  transform: scaleX(-1);}
+
+	.ko.tutorial_wrap .ocr_tuto .tuto_01 .tuto_bubble p { width: 265px;}
+	.ko.tutorial_wrap .ocr_tuto .tuto_02 .tuto_bubble p { width: 265px;}
+	.ko.tutorial_wrap .ocr_tuto .tuto_02 .tuto_con{bottom:61.59.7457%;}
+	.ko.tutorial_wrap .ocr_tuto .tuto_02 .tuto_bubble p::before {left: inherit; right: 75px; transform: translateX(0);}
+	.ko.tutorial_wrap .ocr_tuto .tuto_03 .tuto_bubble p {width: 265px;}
+	.ko.tutorial_wrap .ocr_tuto .tuto_05 .tuto_bubble p {width: 305px;}
+	.ko.tutorial_wrap .ocr_tuto .tuto_06 .tuto_con {bottom:73.2203%;}
+	.ko.tutorial_wrap .ocr_tuto .tuto_07 .tuto_con {bottom:71.6949%;}
+} 
+
+/* 20220708 추가 */
+@media (min-width:712px) and (orientation: landscape) {
+		/* tuto init */
+	.tuto_slider {height:100%; }
+
+	/* 메인 튜토 */
+	.tutorial_wrap .main_tuto .tuto_01 .tuto_con{bottom:61.1219%; }
+	.tutorial_wrap .main_tuto .tuto_02 .tuto_con{bottom:18.8292%; padding-right:148px; justify-content: flex-end;}
+	.tutorial_wrap .main_tuto .tuto_03 .tuto_con{bottom:20.8292%; padding-right:0;}
+	.tutorial_wrap .main_tuto .tuto_04 .tuto_con{bottom:69.5121%;}
+	.tutorial_wrap .main_tuto .tuto_04 .tuto_bubble p{margin-right:80px;}
+	.tutorial_wrap .main_tuto .tuto_05 .tuto_con{bottom:69.02439%;}
+	.tutorial_wrap .main_tuto .tuto_05 .tuto_bubble p{ max-width:435px;}
+	.tutorial_wrap .main_tuto .tuto_06 .tuto_con{bottom:59.0975%;}
+/* 한글 메인 */
+	.ko.tutorial_wrap .main_tuto .tuto_03 .tuto_con {bottom: 15.8292%;}
+	.ko.tutorial_wrap .main_tuto .tuto_05 .tuto_con {bottom: 45.02439%;}
+	.ko.tutorial_wrap .main_tuto .tuto_05 .tuto_bubble p {max-width: 301px;}
+	
+/* 코스학습 */
+	.tutorial_wrap .course_tuto .tuto_01 .tuto_con{bottom:57.9512%;}
+	.tutorial_wrap .course_tuto .tuto_02 .tuto_con{top:inherit; bottom:58.5365%; justify-content: center;}
+	.tutorial_wrap .course_tuto .tuto_02 .tuto_bubble p {margin-right: 40px;}
+	.tutorial_wrap .course_tuto .tuto_03 .tuto_con{ top:4.6829%; justify-content: flex-end;}
+	.tutorial_wrap .course_tuto .tuto_03 .tuto_bubble p{margin-left:0; margin-right: 226px;}
+	.tutorial_wrap .course_tuto .tuto_04 .tuto_con{bottom:inherit; top:21.5853%; }
+	.tutorial_wrap .course_tuto .tuto_04 .tuto_bubble p{margin-right: 0px; margin-left:20px;}
+	.tutorial_wrap .course_tuto .tuto_04 .tuto_bubble p::before{left:30px; right: inherit; transform: scaleX(1);}	
+	.tutorial_wrap .course_tuto .tuto_05 .tuto_con{bottom:22.7317%; }
+	.tutorial_wrap .course_tuto .tuto_05 .tuto_bubble p {margin-right:0; margin-left:0px;}
+	.tutorial_wrap .course_tuto .tuto_06 .tuto_con{top:12.5853%; justify-content: center;}
+	.tutorial_wrap .course_tuto .tuto_06 .tuto_bubble p{margin-left: 400px;}
+/* 한글 코스학습 */	
+	.ko.tutorial_wrap .course_tuto .tuto_01 .tuto_con {bottom: 58.5609%;}
+	.ko.tutorial_wrap .course_tuto .tuto_03 .tuto_con {top: 15.6829%;}
+	.ko.tutorial_wrap .course_tuto .tuto_04 .tuto_con {top: 25.5853%;}
+
+	/* 주제학습 */
+	.tutorial_wrap .topic_tuto .tuto_01 .tuto_con{bottom:55.6779%; padding-left:35px; justify-content: flex-start;}	
+	.tutorial_wrap .topic_tuto .tuto_02 .tuto_con{bottom:18.6341%; justify-content: center;}
+	.tutorial_wrap .topic_tuto .tuto_02 .tuto_bubble p{margin-left: 130px; max-width: 315px;  }
+	.tutorial_wrap .topic_tuto .tuto_02 .tuto_bubble p::before{left:inherit; right:94px; transform: scaleX(-1); }
+	.tutorial_wrap .topic_tuto .tuto_03 .tuto_con{bottom:18.6341%; justify-content: center;}
+	.tutorial_wrap .topic_tuto .tuto_03 .tuto_bubble p{margin-left:130px; max-width: 315px;  }
+	.tutorial_wrap .topic_tuto .tuto_03 .tuto_bubble p::before{left:inherit; right:124px; transform: scaleX(-1); }
+	.tutorial_wrap .topic_tuto .tuto_04 .tuto_con{bottom:15.2439%;}
+	.tutorial_wrap .topic_tuto .tuto_04 .tuto_bubble p{margin-left: 100px; max-width: 315px;}	
+	.tutorial_wrap .topic_tuto .tuto_04 .tuto_bubble p::before{left:inherit; right:47px; transform: scaleX(-1);}
+	.tutorial_wrap .topic_tuto .tuto_05 .tuto_con{bottom:15.7317%;}
+	.tutorial_wrap .topic_tuto .tuto_05 .tuto_bubble p{margin-right: 0px; max-width: 315px;}
+	.tutorial_wrap .topic_tuto .tuto_05 .tuto_bubble p::before{left:80px;}
+	.tutorial_wrap .topic_tuto .tuto_06 .tuto_con{bottom:13.6097%;}
+	.tutorial_wrap .topic_tuto .tuto_06 .tuto_bubble p{margin-left:0; margin-right:30px; max-width: 315px;}
+	.tutorial_wrap .topic_tuto .tuto_06 .tuto_bubble p::before{left: inherit; right:101px; transform: scaleX(-1);}
+	.tutorial_wrap .topic_tuto .tuto_07 .tuto_con{bottom:56%; }
+	.tutorial_wrap .topic_tuto .tuto_07 .tuto_bubble p{max-width: 315px;}
+	.tutorial_wrap .topic_tuto .tuto_07 .tuto_bubble p::before{left:102px;}
+/* 한글 주제학습 */
+	.ko.tutorial_wrap .topic_tuto .tuto_02 .tuto_bubble p {margin-left: 370px;}
+	.ko.tutorial_wrap .topic_tuto .tuto_03 .tuto_con {bottom: 17.6341%;}
+	.ko.tutorial_wrap .topic_tuto .tuto_03 .tuto_bubble p { margin-left: 160px;}
+	.ko.tutorial_wrap .topic_tuto .tuto_05 .tuto_bubble p {max-width: 318px;}
+	.ko.tutorial_wrap .topic_tuto .tuto_06 .tuto_bubble p {max-width: 325px;}
+
+	/* 수학 카메라(ocr) 튜토*/
+	.tutorial_wrap .ocr_tuto .tuto_01 .tuto_con{bottom:47.02439%; padding-right:65px; justify-content: flex-end;}
+	.tutorial_wrap .ocr_tuto .tuto_01 .tuto_bubble p { width: 265px;}
+	.tutorial_wrap .ocr_tuto .tuto_02 .tuto_con{bottom:62.439%; justify-content: center;}
+	.tutorial_wrap .ocr_tuto .tuto_02 .tuto_bubble p { width: 370px; max-width: 100%;}
+	.tutorial_wrap .ocr_tuto .tuto_02 .tuto_bubble p::before{ left:50%; right:inherit; transform: translateX(-50%);}
+	.tutorial_wrap .ocr_tuto .tuto_03 .tuto_con{bottom:44.1707%; justify-content: flex-start; padding-left:145px;}
+	.tutorial_wrap .ocr_tuto .tuto_03 .tuto_bubble p {width: 370px; max-width: 100%;}
+	.tutorial_wrap .ocr_tuto .tuto_03 .tuto_bubble p::before{ left:44px;}
+	.tutorial_wrap .ocr_tuto .tuto_04 .tuto_con {bottom: 18.2463%; justify-content: flex-start; padding-left: 32px;}
+	.tutorial_wrap .ocr_tuto .tuto_04 .tuto_bubble p::before{ left:74px; right:inherit;}
+	.tutorial_wrap .ocr_tuto .tuto_05 .tuto_con{bottom:29.8048%;}
+	.tutorial_wrap .ocr_tuto .tuto_05 .tuto_bubble p {width: 530px; max-width: 100%;}
+	.tutorial_wrap .ocr_tuto .tuto_06 .tuto_con{bottom:70.6341%; justify-content: center;}
+	.tutorial_wrap .ocr_tuto .tuto_06 .tuto_bubble p {margin-left: 90px; width: 220px;}
+	.tutorial_wrap .ocr_tuto .tuto_07 .tuto_con{bottom:71.5853%; justify-content: center; padding-left:30px;}
+	.tutorial_wrap .ocr_tuto .tuto_07 .tuto_bubble p{width:255px; margin-right:60px;} 
+	.tutorial_wrap .ocr_tuto .tuto_07 .tuto_bubble p::before{ right:32px;  transform: scaleX(-1);}
+
+	.ko.tutorial_wrap .ocr_tuto .tuto_01 .tuto_bubble p { width: 265px;}
+	.ko.tutorial_wrap .ocr_tuto .tuto_02 .tuto_bubble p {width: 265px;}
+	.ko.tutorial_wrap .ocr_tuto .tuto_03 .tuto_con {padding-left: 97px;}
+	.ko.tutorial_wrap .ocr_tuto .tuto_03 .tuto_bubble p {width: 265px;}
+	.ko.tutorial_wrap .ocr_tuto .tuto_05 .tuto_bubble p {width: 305px;}
+	.ko.tutorial_wrap .ocr_tuto .tuto_06 .tuto_bubble p {margin-left: 90px; width: 220px;}	
+} 
+
+
+@media (min-width:1024px) and (orientation: landscape) {
+		/* tuto init */
+	.tuto_slider {height:100vh; }
+	.tutorial_wrap .tuto_indicator {padding: 0px 50px;}
+	.tutorial_wrap .tuto_item .mo_tuto_bg{display: none;}
+	.tutorial_wrap .tuto_item .po_tuto_bg{display: none;}
+	.tutorial_wrap .tuto_item .la_tuto_bg{display: block;}
+
+/* 메인 튜토 */
+	.tutorial_wrap .main_tuto .tuto_01 .tuto_con{bottom:55.1219%; }
+	.tutorial_wrap .main_tuto .tuto_02 .tuto_con{bottom:26.8292%; padding-right:148px; justify-content: flex-end;}
+	.tutorial_wrap .main_tuto .tuto_02 .tuto_bubble p::before{left:50px;  transform: scaleX(1);}
+	.tutorial_wrap .main_tuto .tuto_03 .tuto_con{bottom:26.8292%; padding-right:0; padding-left: 188px; justify-content: flex-start;}
+	.tutorial_wrap .main_tuto .tuto_03 .tuto_bubble p::before{left:43px;  transform: scaleX(1);}
+	.tutorial_wrap .main_tuto .tuto_04 .tuto_con{bottom:69.5121%;}
+	.tutorial_wrap .main_tuto .tuto_04 .tuto_bubble p{margin-right:80px;}
+	.tutorial_wrap .main_tuto .tuto_04 .tuto_bubble p::before{right:34px;  transform: scaleX(-1);}
+	.tutorial_wrap .main_tuto .tuto_05 .tuto_con{bottom:69.02439%;}
+	.tutorial_wrap .main_tuto .tuto_05 .tuto_bubble p{margin-right:400px; max-width:435px;}
+	.tutorial_wrap .main_tuto .tuto_05 .tuto_bubble p::before{right:35px;  transform: scaleX(-1);}
+	.tutorial_wrap .main_tuto .tuto_06 .tuto_con{bottom:61.0975%;}
+/* 한글 메인 */
+	.ko.tutorial_wrap .main_tuto .tuto_05 .tuto_bubble p {margin-right: 260px;  max-width: 301px;}
+
+/* 코스학습 */
+	.tutorial_wrap .course_tuto .tuto_01 .tuto_con{bottom:61.9512%;}
+	.tutorial_wrap .course_tuto .tuto_02 .tuto_con{top:inherit; bottom:58.5365%; justify-content: center;}
+	.tutorial_wrap .course_tuto .tuto_02 .tuto_bubble p {margin-right: 320px;}
+	.tutorial_wrap .course_tuto .tuto_02 .tuto_bubble p::before{bottom:inherit; top:100%; right:60px; transform: rotate(0) scaleX(-1);}
+	.tutorial_wrap .course_tuto .tuto_03 .tuto_con{ top:7.6829%; justify-content: flex-end;}
+	.tutorial_wrap .course_tuto .tuto_03 .tuto_bubble p{margin-left:0; margin-right: 226px;}
+	.tutorial_wrap .course_tuto .tuto_04 .tuto_con{bottom:inherit; top:16.5853%; }
+	.tutorial_wrap .course_tuto .tuto_04 .tuto_bubble p{margin-right: 0px; margin-left:220px;}
+	.tutorial_wrap .course_tuto .tuto_04 .tuto_bubble p::before{left:30px; right: inherit; transform: scaleX(1);}	
+	.tutorial_wrap .course_tuto .tuto_05 .tuto_con{bottom:60.7317%; }
+	.tutorial_wrap .course_tuto .tuto_05 .tuto_bubble p {margin-right:0; margin-left:150px;}
+	.tutorial_wrap .course_tuto .tuto_06 .tuto_con{top:16.5853%; justify-content: center;}
+	.tutorial_wrap .course_tuto .tuto_06 .tuto_bubble p{margin-left: 90px;}
+/* 한글 코스학습 */
+	.ko.tutorial_wrap .course_tuto .tuto_01 .tuto_con{bottom:62.5609%;}
+	.ko.tutorial_wrap .course_tuto .tuto_03 .tuto_con {top: 7.6829%;}
+	.ko.tutorial_wrap .course_tuto .tuto_04 .tuto_con{top: 16.5853%;}
+
+	/* 주제학습 */
+	.tutorial_wrap .topic_tuto .tuto_01 .tuto_con{bottom:55.6779%; padding-left:35px; justify-content: flex-start;}	
+	.tutorial_wrap .topic_tuto .tuto_02 .tuto_con{bottom:24.6341%; justify-content: center;}
+	.tutorial_wrap .topic_tuto .tuto_02 .tuto_bubble p{margin-left: 320px; max-width: 315px;  }
+	.tutorial_wrap .topic_tuto .tuto_02 .tuto_bubble p::before{left:inherit; right:94px; transform: scaleX(-1); }
+	.tutorial_wrap .topic_tuto .tuto_03 .tuto_con{bottom:24.6341%; justify-content: center;}
+	.tutorial_wrap .topic_tuto .tuto_03 .tuto_bubble p{margin-left:340px; max-width: 315px;  }
+	.tutorial_wrap .topic_tuto .tuto_03 .tuto_bubble p::before{left:inherit; right:124px; transform: scaleX(-1); }
+	.tutorial_wrap .topic_tuto .tuto_04 .tuto_con{bottom:20.2439%;}
+	.tutorial_wrap .topic_tuto .tuto_04 .tuto_bubble p{margin-left: 320px; max-width: 315px;}	
+	.tutorial_wrap .topic_tuto .tuto_04 .tuto_bubble p::before{left:inherit; right:47px; transform: scaleX(-1);}
+	.tutorial_wrap .topic_tuto .tuto_05 .tuto_con{bottom:20.7317%;}
+	.tutorial_wrap .topic_tuto .tuto_05 .tuto_bubble p{margin-right: 560px; max-width: 315px;}
+	.tutorial_wrap .topic_tuto .tuto_05 .tuto_bubble p::before{left:80px;}
+	.tutorial_wrap .topic_tuto .tuto_06 .tuto_con{bottom:25.6097%;}
+	.tutorial_wrap .topic_tuto .tuto_06 .tuto_bubble p{margin-left:0; margin-right:30px; max-width: 315px;}
+	.tutorial_wrap .topic_tuto .tuto_06 .tuto_bubble p::before{left: inherit; right:101px; transform: scaleX(-1);}
+	.tutorial_wrap .topic_tuto .tuto_07 .tuto_con{bottom:60%; }
+	.tutorial_wrap .topic_tuto .tuto_07 .tuto_bubble p{max-width: 315px;}
+	.tutorial_wrap .topic_tuto .tuto_07 .tuto_bubble p::before{left:102px;}
+/* 한글 주제학습 */
+	.ko.tutorial_wrap .topic_tuto .tuto_02 .tuto_bubble p {margin-left: 370px;}
+	.ko.tutorial_wrap .topic_tuto .tuto_03 .tuto_con {bottom: 24.6341%;}
+	.ko.tutorial_wrap .topic_tuto .tuto_03 .tuto_bubble p { margin-left: 420px;}
+	.ko.tutorial_wrap .topic_tuto .tuto_05 .tuto_bubble p {max-width: 318px;}
+	.ko.tutorial_wrap .topic_tuto .tuto_06 .tuto_bubble p {max-width: 325px;}
+
+	/* 수학 카메라(ocr) 튜토*/
+	.tutorial_wrap .ocr_tuto .tuto_01 .tuto_con{bottom:59.02439%; padding-right:65px; justify-content: flex-end;}
+	.tutorial_wrap .ocr_tuto .tuto_01 .tuto_bubble p { width: 265px;}
+	.tutorial_wrap .ocr_tuto .tuto_02 .tuto_con{bottom:57.4390%; justify-content: center;}
+	.tutorial_wrap .ocr_tuto .tuto_02 .tuto_bubble p { width: 370px; max-width: 100%;}
+	.tutorial_wrap .ocr_tuto .tuto_02 .tuto_bubble p::before{ left:50%; right:inherit; transform: translateX(-50%);}
+	.tutorial_wrap .ocr_tuto .tuto_03 .tuto_con{bottom:53.1707%; justify-content: flex-start; padding-left:145px;}
+	.tutorial_wrap .ocr_tuto .tuto_03 .tuto_bubble p {width: 370px; max-width: 100%;}
+	.tutorial_wrap .ocr_tuto .tuto_03 .tuto_bubble p::before{ left:44px;}
+	.tutorial_wrap .ocr_tuto .tuto_04 .tuto_con{bottom:23.2926%; padding-right:50px; justify-content: flex-end;}
+	.tutorial_wrap .ocr_tuto .tuto_04 .tuto_bubble p::before{ left:74px; right:inherit;}
+	.tutorial_wrap .ocr_tuto .tuto_05 .tuto_con{bottom:37.8048%;}
+	.tutorial_wrap .ocr_tuto .tuto_05 .tuto_bubble p {width: 530px; max-width: 100%;}
+	.tutorial_wrap .ocr_tuto .tuto_06 .tuto_con{bottom:54.6341%; justify-content: center;}
+	.tutorial_wrap .ocr_tuto .tuto_06 .tuto_bubble p {margin-left: 600px; width: 220px;}
+	.tutorial_wrap .ocr_tuto .tuto_07 .tuto_con{bottom:66.5853%; justify-content: center; padding-left:30px;}
+	.tutorial_wrap .ocr_tuto .tuto_07 .tuto_bubble p{width:255px; margin-right:650px;} 
+	.tutorial_wrap .ocr_tuto .tuto_07 .tuto_bubble p::before{ right:32px;  transform: scaleX(-1);}
+
+	.ko.tutorial_wrap .ocr_tuto .tuto_01 .tuto_bubble p { width: 265px;}
+	.ko.tutorial_wrap .ocr_tuto .tuto_02 .tuto_bubble p {width: 265px;}
+	.ko.tutorial_wrap .ocr_tuto .tuto_03 .tuto_con {padding-left: 97px;}
+	.ko.tutorial_wrap .ocr_tuto .tuto_03 .tuto_bubble p {width: 265px;}
+	.ko.tutorial_wrap .ocr_tuto .tuto_05 .tuto_bubble p {width: 305px;}
+	.ko.tutorial_wrap .ocr_tuto .tuto_06 .tuto_bubble p {margin-left: 640px; width: 255px;}
+} 

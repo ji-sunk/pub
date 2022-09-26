@@ -1,0 +1,264 @@
+@charset "utf-8";
+/* 위클리 미션 */
+.wm{background-image: linear-gradient(335deg, var(--gradationStart), var(--gradationEnd));}
+.wm .wm_main{margin-top: 0;  height: calc(100vh - 55px); background: transparent; }
+
+/*weekly mission 상단 점수 */
+.wm .wm_top{margin-top:30px;}
+.wm .wm_top .wing_info{padding: 0 10px;}
+.wm .wm_top .wing_info_inner{ padding-bottom:14px; border-bottom:1px solid rgba(238, 238, 238, 0.2);}
+.wm .wm_top .wing_info .wing_info_icon{flex-shrink: 0; width:44px; height:36px; padding: 2px 6px; border-radius:20px; background-image: linear-gradient(to bottom, #00cdff, #00cbfd 10%, #00c8fc 20%, #00c6fa 30%, #00c3f8 40%, #00c1f6 50%, #00bef5 60%, #00bcf3 70%, #00baf1 80%, #00b7ef 90%, #00b5ee);}
+.wm .wm_top .wing_info .wing_info_icon i{display: flex; justify-content: centerc; align-items: center;}
+.wm .wm_top .wing_info .wing_score_wrap{margin-top:5px; display: flex; justify-content:space-between; align-items: baseline; gap:0 10px; width:100%;}
+.wm .wm_top .wing_info .wing_score_wrap .wing_score_title{flex-shrink: 0;}
+.wm .wm_top .wing_info .wing_score_wrap .wing_score_title h3{font-family: 'baloobhaina', sans-serif; font-size: 36px; font-weight: bold; line-height: 1.22; letter-spacing: -0.01px; color: #fff;}
+.wm .wm_top .wing_info .wing_score_wrap .wing_score span{display: block; height:40px; font-family: 'baloobhaina', sans-serif; font-size: 48px; font-weight: bold; line-height: 1.17; letter-spacing: -0.01px; text-align: right; color: var(--point_yellow);}
+.wm .wm_top .wing_info .wm_margkt_link{margin-top:15px; display: flex; justify-content: center;}
+.wm .wm_top .wing_info .wm_margkt_link a{display: flex; gap: 0 5px; align-items: center;}
+.wm .wm_top .wing_info .wm_margkt_link a span{height: 19px; font-weight: bold; line-height: 1.43; color: #fff;}
+
+/*weekly mission 컨텐즈 */
+.wm .wm_contents{margin-top:30px; min-height: calc(100% - 190px); border-radius: var(--borderRadius) var(--borderRadius) 0 0; background-color: #f5f5f5;}
+.wm .wm_contents .wrap{padding-top:30px; padding-bottom:120px;}
+.wm .wm_contents .card_ui{padding:0;}
+.wm .wm_contents .card_ui .card_ui_inner{padding:30px 25px;}
+.wm .wm_contents .card_ui .card_title_wrap {margin:0; display:flex; justify-content: space-between; align-items: center; gap:0 15px;}
+.wm .wm_contents .card_ui .card_title_wrap>div{padding:0}
+.wm .wm_contents .card_ui .card_title_wrap .card_wings{display: flex; align-items: center; gap:0 5px;}
+/* history title wings num  */
+.wm .wm_contents .card_ui .card_wings_num{height:24px; font-family:'baloobhaina', sans-serif; font-size: 24px; 
+  font-weight: bold; line-height: 1.33; letter-spacing: -0.01px; color: #000;}
+.wm .wm_contents .card_ui .card_title_wrap .card_title h3 {height: 24px; font-size: 18px; line-height: 1.56;}
+.wm .wm_contents .card_ui .card_ui_inner a {width: auto; height: auto;}
+.wm .wm_contents .card_ui .card_desc{margin-top:7px;}
+.wm .wm_contents .card_ui .card_desc p{font-weight: 500; line-height: 1.43; color: #666;}
+/* weekly mission pop quiz, monthly test button */
+.wm .wm_contents .card_ui .btn_wrap{margin-top:20px; display: none;}
+.wm .wm_contents .card_ui .btn_wrap a{ padding: 8px 15px 8px 20px; display: flex; align-items: center; gap: 0 5px; border-radius: var(--borderRadius); box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.05); background-image: linear-gradient(112deg, var(--gradationStart), var(--gradationEnd) 100%);}
+.wm .wm_contents .card_ui .btn_wrap a span{ height: 22px; font-size: 16px; font-weight: bold; color: #fff;}
+.wm .wm_contents.qz_active .btn_wrap{display: flex;}
+.wm .wm_contents .pop_quiz{margin-top:0;}
+.wm .wm_contents .wing_icon_40_wrap .card_ui_inner{padding: 22px 25px 30px; }
+/* mission card */
+.wm .wm_contents .card_ui .mission_icon_out{margin-top:30px;}
+.wm .wm_contents .card_ui.target_list_wrap .mission_icon_out .mission_icon_wrap{padding-bottom:15px; border-bottom:1px solid #eeeeee;}
+.wm .wm_contents .card_ui.target_list_wrap .mission_icon_out .mission_icon_wrap:nth-child(n+2){margin-top:15px;}
+.wm .wm_contents .card_ui.target_list_wrap .mission_icon_out .mission_icon_wrap:last-child{padding-bottom:0; border-bottom:none;}
+.wm .wm_contents .card_ui .mission_icon_out .mission_icon_wrap a{padding:10px 0 10px 20px;}
+.wm .wm_contents .card_ui .mission_icon_out .mission_icon_wrap p{height: 19px; font-weight: 500; line-height: 1.43;}
+.wm .wm_contents .card_ui .mission_icon_out .mission_icon_wrap p strong{color:var(--subText)}
+.wm .wm_contents .card_ui .mission_icon_out .mission_icon_wrap .weekly_icons_inner{margin-top:10px; display: flex; justify-content: space-between; align-items: center;}
+.wm .wm_contents .card_ui .mission_icon_out .mission_icon_wrap .weekly_icons_inner .weekly_icons{display: flex; align-items: center;}
+.wm .wm_contents .card_ui .mission_icon_out .mission_icon_wrap .weekly_icons_inner .target_complete{display: flex; align-self: center ; gap: 0 5px;}
+.wm .wm_contents .card_ui .mission_icon_out .mission_icon_wrap .weekly_icons_inner .target_complete span{height: 19px; font-weight: 500; line-height: 1.1; color: #32d6c5;}
+.wm .wm_contents .newscroll_bar::-webkit-scrollbar {width: 4px; height: 4px;}
+.wm .wm_contents .newscroll_bar::-webkit-scrollbar-thumb {background: var(--subText); border-radius: 2px;}
+
+/* currency history */
+.currency_history .currency_cat_btn{padding:30px 20px 0;}
+.currency_history .currency_cat_btn ul{display: flex; align-items: center; gap:0 20px;}
+.currency_history .currency_cat_btn ul li button{position: relative;}
+.currency_history .currency_cat_btn ul li button::before{content:""; position: absolute; top:calc(100% + 5px); left:50%; transform: translateX(-50%); display: none; width:7px; height:7px; border-radius: 50%; background-image: linear-gradient(to right, var(--gradationStart), var(--gradationEnd)); }
+.currency_history .currency_cat_btn ul li button span{height:24px; font-size:18px; font-weight:500; line-height:1.56; letter-spacing:-0.01px; color: #999999;}
+.currency_history .currency_cat_btn ul li.active button span{font-weight: bold; color:#303030;}
+.currency_history .currency_cat_btn ul li.active button::before{display: block;}
+.currency_history .currency_history_list .card_ui:first-child{margin-top:0;}
+.currency_history .currency_history_list .card_ui .card_ui_inner{padding: 24px 25px 30px;}
+.currency_history .currency_history_list .card_ui .card_title{display: flex; align-items: center; gap:0 20px;}
+.currency_history .currency_history_list .card_ui .card_title p{position: relative; margin-top: 0;  height: 19px; font-weight: 500; line-height: 1.43;}
+.currency_history .currency_history_list .card_ui .card_title p::before{content: ""; position: absolute; top:50%; right:-10px; transform: translateY(-50%); display: block; width:1px; height:10px; background-color:#eeeeee;}
+.currency_history .currency_history_list .card_ui.earn .card_title p{color: var(--subText);}
+.currency_history .currency_history_list .card_ui.used .card_title p{color: #ff8678;}
+.currency_history .currency_history_list .card_ui .card_title time{height: 19px; font-weight: 500; line-height: 1.43; color: #999;}
+.currency_history .currency_history_list .card_ui .card_wings span {height: 22px; font-size: 16px; font-weight: bold; line-height: 1.5;}
+.currency_history .currency_history_list .card_ui .curren_text{margin-top:3px;  }
+.currency_history .currency_history_list .card_ui .curren_text p{height: 22px;  font-size: 16px; font-weight: 500; line-height: 1.5;}
+
+/* ai 추천 */
+.ai_recom_main .wm_top {margin-top: 41px;}
+.ai_recom_main .wm_top .ai_wing_state_title{display: flex; justify-content: center;}
+.ai_recom_main .wm_top .ai_wing_state_title h3{font-family:'baloobhaina', sans-serif;  font-size: 32px; font-weight: bold; line-height: 1.22; letter-spacing: -0.01px; color:#ffffff;}
+.ai_recom_main .ai_wing_score_wrap{position: relative; z-index: 1; margin-top:23px; display: flex; justify-content: center; align-items: center; gap:0 10px;}
+.ai_recom_main .ai_wing_score_wrap .ai_wing_top_icon{width: 70px; height: 56px; padding: 3px 10px; border-radius: 28px; background-image: linear-gradient(to bottom, #00cdff, #00cbfd 10%, #00c8fc 20%, #00c6fa 30%, #00c3f8 40%, #00c1f6 50%, #00bef5 60%, #00bcf3 70%, #00baf1 80%, #00b7ef 90%, #00b5ee); overflow: hidden;}
+.ai_recom_main .ai_wing_score_wrap .ai_wing_top_icon i{display: flex; justify-content: center; align-items: center;}
+.ai_recom_main .ai_wing_score_wrap .ai_wing_score span{display: block; height:40px; font-family:'baloobhaina', sans-serif;  font-size: 48px; font-weight: bold; font-stretch: normal; font-style: normal;  line-height: 1.17; letter-spacing: -0.01px; color: var(--point_yellow);}
+.ai_recom_main .ai_wing_score_wrap .particle_recom{position: absolute; top:50%; left:50%; transform: translate(-50%, -58%); z-index: -1; width:460px;}
+
+.ai_recom_main .ai_wing_state_text{margin-top:20px; }
+.ai_recom_main .ai_wing_state_text span{display: block; height: 22px; font-size: 16px; font-weight: bold; line-height: 1.5; text-align: center; color: #fff;}
+
+.ai_recom_main .ai_recom_contents{margin-top:30px; min-height: calc(100% - 228px); border-radius: var(--borderRadius) var(--borderRadius) 0 0; background-color: #f5f5f5;}
+.ai_recom_main .ai_recom_contents .wrap{padding-top:30px; padding-bottom:120px;}
+.ai_recom_main .ai_recom_contents .card_ui {margin-top: 20px; padding: 0;}
+.ai_recom_main .ai_recom_contents .card_ui:first-child{margin-top:0;}
+.ai_recom_main .ai_recom_contents .card_ui .card_ui_inner {padding: 25px 25px 25px;}
+.ai_recom_main .ai_recom_contents .card_box{display: flex; flex-wrap: wrap;}
+.ai_recom_main .ai_recom_contents .card_item{flex-basis: 100%;}
+.ai_recom_main .ai_recom_contents .card_item + .card_item { padding-top: 20px;}
+.ai_recom_main .ai_recom_contents .card_item.half{position:relative; width: 50%; flex-basis: 50%; display: inline-flex; flex-direction: column; padding: 0;}
+.ai_recom_main .ai_recom_contents .card_item.half:first-child{padding:5px 27px 5px 0;}
+.ai_recom_main .ai_recom_contents .card_item.half:nth-child(2){padding-left:21px}
+.ai_recom_main .ai_recom_contents .card_item.half.unsolvable_q{padding: 20px 5px 0;}
+.ai_recom_main .ai_recom_contents .card_item.half + .half:before{content: ''; position: absolute; background: #f5f5f5; width: 1px; height: 50px; left:0; top:50%; transform: translateY(-35%)}
+.ai_recom_main .ai_recom_contents .card_item .tit{display:block; width: 100%; font-size: 14px; color:#999999; text-align: center;}
+.ai_recom_main .ai_recom_contents .card_item.half .tit{display: flex; min-height: 40px; justify-content: center; align-items: center;}
+.ai_recom_main .ai_recom_contents .card_item .score{margin-top:5px; font-size: 24px; line-height: 1.33; font-weight: bold; text-align: center;}
+.ai_recom_main .ai_recom_contents .card_item .score > i{display: inline-block; margin-top: -3px; vertical-align: middle;}
+.ai_recom_main .ai_recom_contents .card_item .score span{font-size: 24px; line-height: 1.33; font-weight: bold;}
+.ai_recom_main .ai_recom_contents .card_item.row{display:flex; flex-wrap: nowrap; justify-content: space-between; align-items: center;}
+.ai_recom_main .ai_recom_contents .card_item.row .tit{width:auto; flex: 0 0 auto;}
+.ai_recom_main .ai_recom_contents .card_item .btn_wrap{font-size: 0; flex: 1 1 auto; text-align: right}
+.ai_recom_main .ai_recom_contents .card_item .btn_wrap .chk_btn{display:inline-block; width:auto; min-width: 45px; padding: 8px 18px; background: #f4f7fe; border-radius: 17.5px; text-align: center;}
+.ai_recom_main .ai_recom_contents .card_item .btn_wrap .chk_btn + .chk_btn{margin-left: 10px;}
+.ai_recom_main .ai_recom_contents .card_item .btn_wrap .chk_btn span{font-size: 14px; font-weight: bold; color: var(--subText);}
+.ai_recom_main .ai_recom_contents .card_item .btn_wrap .chk_btn.arrow{min-width: 65px; padding: 8px 15px 8px 20px; border-radius: 19px;}
+.ai_recom_main .ai_recom_contents .card_item .btn_wrap .chk_btn.arrow span{font-size: 16px; line-height: 1.5;}
+.ai_recom_main .ai_recom_contents .card_item .btn_wrap .chk_btn.arrow span + i{display: inline-block; vertical-align: middle; margin-top: -4px;}
+.ai_recom_main .ai_recom_contents .card_item.row .btn_wrap{margin-top:0; justify-content: flex-end; }
+
+.ai_recom_main .ai_recom_contents .card_ui .incorrect_answer {padding: 11px 20px 10px;}
+.ai_recom_main .ai_recom_contents .card_ui .incorrect_answer .card_item .btn_wrap{margin:0; flex: none; display: flex; justify-content: flex-start; }
+.ai_recom_main .ai_recom_contents .card_ui .incorrect_answer .card_item .btn_wrap a{padding: 8px 15px 8px 20px; display: flex; align-items: center; gap:0 5px; border-radius: var(--borderRadius); }
+.ai_recom_main .ai_recom_contents .card_ui .incorrect_answer .card_item .btn_wrap a span{height: 22px; font-size: 16px; font-weight: bold; color: var(--subText);}
+.ai_recom_main .ai_recom_contents .ai_recom_check .card_ui_inner{padding: 30px 20px 15px;}
+.ai_recom_main .ai_recom_contents .ai_recom_check h3{padding:0 5px; height: 24px; font-size: 18px; font-weight: bold; line-height: 1.56; letter-spacing: -0.01px;}
+.ai_recom_main .ai_recom_contents .ai_recom_check .check_concept_list{margin-top:15px;}
+.ai_recom_main .ai_recom_contents .ai_recom_check .check_concept_list li{padding:15px 5px 15px; display: flex; justify-content: space-between; align-items: center; gap: 0 10px; border-bottom: 1px solid #eeeeee; }
+
+.ai_recom_main .ai_recom_contents .ai_recom_check .check_concept_list li:last-child{border-bottom: none;}
+.ai_recom_main .ai_recom_contents .ai_recom_check .check_concept_list li .concept_text{font-size: 16px; font-weight: 500; line-height: 1.5; color: #666;}
+.ai_recom_main .ai_recom_contents .ai_recom_check .check_concept_list li a{display: flex; align-items: center; gap:0 5px; width: auto; height: auto; }
+.ai_recom_main .ai_recom_contents .ai_recom_check .check_concept_list li a span{height: 19px; font-weight: 500; line-height: 1.43; color: #666;}
+
+/* 20220818 kor */
+.ko .wm_top .wing_info .wing_score_wrap .wing_score_title h3{font-family:'NotoSansCJK_KR', 'NotoSans', sans-serif; font-size: 28px;}
+.ko .ai_recom_main .wm_top .ai_wing_state_title h3{font-family:'NotoSansCJK_KR', 'NotoSans', sans-serif;  font-size: 28px; line-height: 1.29; text-align: center; color: #fff;}
+
+
+@media(max-width:319px){
+  .wm .wm_contents .card_ui .card_title_wrap {gap:5px; flex-wrap: wrap; justify-content: center;}
+  .wm .wm_contents .card_ui .card_title_wrap .card_title{width: 100%;}
+  .wm .wm_contents .card_ui .card_title_wrap .card_title h3 {text-align: center;}
+  .wm .wm_contents .card_ui .mission_icon_out .mission_icon_wrap .weekly_icons_inner .target_complete span {display: none;}
+}
+
+@media(max-width:359px){
+  .wm_complete_popup .popup_box .wm_popup_text p {height: auto;}
+
+  .ai_recom_main .ai_recom_contents .card_item.half {width:100%; flex-basis: 100%;}
+  .ai_recom_main .ai_recom_contents .card_item.half:first-child {padding: 0; padding-bottom:20px; border-bottom: 1px solid #eeeeee;}
+  .ai_recom_main .ai_recom_contents .card_item.half:nth-child(2) {margin-top:20px; padding-left: 0; }
+  .ai_recom_main .ai_recom_contents .card_ui .incorrect_answer .card_item.row {flex-direction: column; gap: 20px;}
+}
+
+@media (min-width:600px){ 
+  .wm .wm_main{ height: calc(100vh - 76px);}
+
+  .wm .wm_top {margin-top: 25px;}
+  .wm .wm_top .wing_info {padding: 0 25px;}
+  .wm .wm_top .wing_info_inner{padding-bottom: 25px;display: flex; align-items: center; gap: 0 15px;}
+  .wm .wm_top .wing_info .wing_score_wrap {margin-top: 0px;}
+  .wm .wm_top .wing_info .wing_score_wrap .wing_score_title h3{font-size: 48px; line-height: 1.17;}
+  .wm .wm_top .wing_info .wing_score_wrap .wing_score span{ height:53px;  font-size: 64px; line-height: 1.13;  letter-spacing: -0.06px; }  
+  .wm .wm_top .wing_info .wm_margkt_link {margin-top: 25px;}
+
+  .wm .wm_contents {margin-top: 40px; min-height: calc(100% - 188px);}
+
+  .currency_history .currency_cat_btn ul {justify-content: center;}
+  .currency_history .wrap.currency_history_list{padding-top: 40px;}
+  .currency_history .currency_history_list .card_ui .card_ui_inner {padding: 23px 25px 30px;}
+  .currency_history .currency_history_list .card_ui .curren_text {margin-top: 4px;}
+
+  .ai_recom_main .wm_top .ai_wing_state_title h3 {font-size: 40px;}
+  .ai_recom_main .ai_wing_score_wrap{margin-top:25px; }
+  .ai_recom_main .ai_recom_contents .ai_recom_check .check_concept_list li {padding: 15px 5px 14px;}
+
+  .ko .ai_recom_main .wm_top .ai_wing_state_title h3 {font-size: 34px; line-height: 1.24; letter-spacing: -0.01px;}  
+ }
+
+@media (min-width:600px) and (orientation: portrait) {
+  .ai_recom_main .wm_top {margin-top: 55px;}
+
+  .ai_recom_main .ai_recom_contents {margin-top: 40px; min-height: calc(100% - 267px);}
+  .ai_recom_main .ai_recom_contents .card_item.half {align-items: center;}
+  .ai_recom_main .ai_recom_contents .card_item.half:first-child {padding: 5px 0 5px ;}
+  .ai_recom_main .ai_recom_contents .card_item.half:nth-child(2) {padding-left: 0;}
+  .ai_recom_main .ai_recom_contents .card_item.half .item_inner {max-width: 130px;}
+  .ai_recom_main .ai_recom_contents  .card_box .card_item:nth-last-child(-n+2) {margin-top: 0; border-top: none;}
+  .ai_recom_main .ai_recom_contents .card_item.half + .half:before {content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-35%);   width: 1px; height: 50px; background: #f5f5f5;}
+  .ai_recom_main .ai_recom_contents .card_ui .incorrect_answer {padding: 16px 18px 15px 20px;}
+
+  .ko .ai_recom_main .ai_recom_contents {min-height: calc(100% - 260px);}
+}
+
+@media (min-width:712px) and (orientation: landscape) { 
+  .ai_recom_main .ai_recom_contents .wrap { padding: 0 20px; padding-top: 30px; padding-bottom: 120px;}
+
+  .currency_history .wrap.currency_history_list {padding: 40px 20px 120px;}
+}
+
+@media (min-width:1024px) and (orientation: landscape) {  
+  .wm .wm_top .wrap{max-width: 550px; padding:0;}
+  .wm .wm_contents {margin-top: 30px; height: calc(100% - 192px); min-height: 0;}
+  .wm .wm_contents .wrap {padding:60px 55px 0 60px; gap: 20px; justify-content: center; height:100%;}
+  .wm .wm_contents .card_ui .card_desc {margin-top: 13px;}
+  .wm .wm_contents .big_card.ing_wm{margin-right:5px;}
+  .wm .wm_contents .big_card .card_ui_inner {width:100%; max-width: 340px;   }  
+  .wm .wm_contents .responsive_section{display: flex; flex-direction:column; gap:20px 0; width:33.3333%; max-width: 340px; max-height: 408px;}  
+  .wm .wm_contents .responsive_section .card_ui{height:50%; max-height: 194px;} 
+  .wm .wm_contents .wing_icon_40_wrap .card_ui_inner {padding: 18px 25px 26px 25px; display: flex; flex-direction: column; justify-content: center;}   
+  .wm .wm_contents .big_card.target_list_wrap{max-height: 408px; width:33.3333%; max-width: 340px;}
+  .wm .wm_contents .big_card.target_list_wrap .card_ui_inner{position:relative; padding:30px 5px 0 20px; overflow: hidden;}
+  .wm .wm_contents .big_card.target_list_wrap .card_ui_inner::before{content: ""; position: absolute; bottom:0; left:0; display: block; width:100%; height:50px;box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.02);  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);  }
+  .wm .wm_contents .card_ui .mission_icon_out {padding-right: 11px;  margin-top: 40px; height:calc(100% - 64px); overflow-y: auto;}
+  .wm .wm_contents .card_ui.target_list_wrap .mission_icon_out .mission_icon_wrap {padding-bottom: 20px;}
+  .wm .wm_contents .card_ui.target_list_wrap .mission_icon_out .mission_icon_wrap:nth-child(n+2) {margin-top: 20px;}
+  .wm .wm_contents .card_ui.target_list_wrap .mission_icon_out .mission_icon_wrap:last-child {padding-bottom: 60px;}
+  .wm .wm_contents .card_ui .mission_icon_out .mission_icon_wrap .weekly_icons_inner {margin-top: 11px;}
+
+  /*currency history  */
+  .currency_history .wm_contents {height: calc(100% - 192px);}
+  .currency_history .currency_cat_btn {padding: 50px 60px 0;}
+  .currency_history .currency_cat_btn ul {justify-content: flex-start; height:24px;}
+  .currency_history .wrap.currency_history_list { padding: 30px 60px 0 ; flex-direction: column; justify-content: flex-start; align-items: flex-start; flex-wrap: wrap;  width: auto; height: calc(100% - 74px); align-content: flex-start;}
+  .currency_history .wrap.currency_history_list .card_ui{width: auto;}
+  .currency_history .wrap.currency_history_list .big_card .card_ui_inner {padding: 49px 25px 56px; width:340px;}
+  .ai_recom_main .big_card .card_ui_inner {width:335px;  }  
+  .ai_recom_main .ai_recom_contents .card_ui .card_ui_inner {padding: 25px 20px 24px; }
+
+  /* ai 추천학습 완료 */
+  .ai_recom_main .ai_recom_contents {min-height: calc(100% - 227px);}
+  .ai_recom_main .ai_recom_contents .wrap {padding: 0; padding-top: 80px; padding-bottom: 0; justify-content: center; gap: 20px;}
+  .ai_recom_main .ai_recom_contents .card_ui {margin-top: 0; width: auto;}
+  .ai_recom_main .ai_recom_contents .responsive_section{display: flex; flex-direction: column; gap: 20px 0; max-height: 314px;}
+  .ai_recom_main .ai_recom_contents .ai_recom_check{max-height: 314px;}
+  .ai_recom_main .ai_recom_contents .card_ui .card_ui_inner {padding: 25px 20px 24px;}
+  .ai_recom_main .ai_recom_contents .card_ui:first-child {height: 100%;}
+  .ai_recom_main .ai_recom_contents .card_item.half {width:100%; flex-basis: 100%;}
+  .ai_recom_main .ai_recom_contents .card_item.half:first-child {padding: 0; padding-bottom:20px; border-bottom: 1px solid #eeeeee;}
+  .ai_recom_main .ai_recom_contents .card_item.half:nth-child(2) {margin-top:20px; padding-left: 0; }
+  .ai_recom_main .ai_recom_contents .card_item.half + .half:before {display: none;}  
+  .ai_recom_main .ai_recom_contents .card_item.half .tit {min-height: auto;}
+  .ai_recom_main .ai_recom_contents .card_ui .incorrect_answer {flex-shrink: 0; padding: 16px 20px;}
+  .ai_recom_main .ai_recom_contents .card_item .score { margin-top: 15px;}
+
+  .ai_recom_main .ai_recom_contents .ai_recom_check .card_ui_inner {position: relative; padding:30px 5px 0 25px; overflow: hidden;}
+  .ai_recom_main .ai_recom_contents .ai_recom_check .card_ui_inner::before{content: ""; position: absolute; bottom:0; left:0; display: block; width:100%; height:50px;box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.02);  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);  }
+  .ai_recom_main .ai_recom_contents .ai_recom_check .check_concept_list {margin-top:35px; padding-right:11px; max-height: calc(100% - 59px); overflow: auto;}  
+  .ai_recom_main .ai_recom_contents .ai_recom_check .check_concept_list li:last-child {padding-bottom: 60px;}
+
+  .ko .wm_contents {height: calc(100% - 181px);}
+  .ko .ai_recom_main .ai_recom_contents {min-height: calc(100% - 220px);}
+}
+
+/* 높이가 작은 타블렛 */
+@media (min-width: 1024px) and (max-height:819px) and (orientation: landscape){
+  .wm .wm_contents {padding-bottom: 0; height: 90%;}
+  .wm .wm_contents .responsive_section { max-height: 100%;}
+
+  .ai_recom_main .ai_recom_contents .wrap {padding-bottom: 120px;}
+}
+
+@media (min-width:1440px){
+  .currency_history .wrap.currency_history_list {height: calc(100% - 120px);}
+}

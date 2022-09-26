@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+.cs{background-color: #ffffff; min-height: 100vh; overflow-y: auto;}
+.cs header .sub_title .text_wrap h2 {color: #303030;}
+.cs .cs_main {margin-top: 0; height: auto; background-color: transparent; border-radius: 0;}
+
+/*cs select */
+.cs_select{position:relative; margin: 0 auto; height:50px;}
+.cs_select .cs_select_inner{position: absolute; top:0; right:0; left:0; z-index: 2; border-radius: var(--borderRadius); background-color: #ffffff;  }
+.cs_select .cs_select_inner::before{content: ""; position: absolute; top: 0; left:0; right:0; bottom:0; display: block; width:100%; height:100%; border:1px solid #999999; border-radius: var(--borderRadius); pointer-events: none; box-sizing: border-box;  transition: border-color .3s;}
+.cs_select .cs_select_inner.on_wrap::before{border-width: 2px; border-color: var(--subText); }
+.cs_select .cs_select_btn{padding:14px 20px; display: flex; justify-content: space-between; align-items: center;}
+.cs_select .cs_select_btn .cs_select_text{height:22px; font-size:16px; line-height: 1.5; font-weight: 500; color:#999999;}
+.cs_select .cs_select_inner .cs_select_btn i{transition: transform .3s;}
+.cs_select .cs_select_inner.on_wrap .cs_select_btn i{transform: rotate(180deg);}
+.cs_select .cs_select_list{height: 0; overflow: hidden; }
+.cs_select .cs_select_list li:nth-child(n+2){margin-top:5px; }
+.cs_select .cs_select_list li:last-child{padding-bottom:20px;}
+.cs_select .cs_select_list li a{padding:10px 18px; display: flex; justify-content: space-between; align-items: center;}
+.cs_select .cs_select_list li a span{font-size:16px; line-height: 1.5; font-weight: 500;}
+.cs_select .cs_select_list li a i{display: none;}
+.cs_select .cs_select_list li a.active{background: var(--countrySelectBg);}
+.cs_select .cs_select_list li a.active span{color:var(--subText); font-weight: bold;}
+.cs_select .cs_select_list li a.active i{display: block;}
+
+/* cs state */
+.cs .cs_state{padding:5px 10px; display: flex; justify-content: center; align-items: center; height:27px; border-radius: var(--borderRadius); box-shadow: 0 0 0 1px #666666 inset; }
+.cs .cs_state span{font-size: 12px; font-weight: bold; line-height: 1.67; color: #666666;}
+
+/* cs list */
+.cs_list .main_contents {padding-top: 20px; padding-bottom: 120px;}
+.cs_list .cs_list_wrap{margin-top: 30px;}
+.cs_list .cs_list_wrap ul li{padding:30px 10px; border-bottom: 1px solid #eeeeee;}
+.cs_list .cs_list_wrap ul li:first-child{padding-top: 0;}
+.cs_list .cs_list_wrap ul li a .cs_list_item_con{display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap:0 10px;}
+.cs_list .cs_list_wrap ul li a .cs_list_item_con .cs_state_wrap{ flex-shrink: 0;}
+.cs_list .cs_list_wrap ul li a .cs_list_item_con time{height: 19px; font-size: 14px; font-weight: 500; line-height: 1.43; color: #999999;}
+.cs_list .cs_list_wrap ul li a .cs_list_item_con p{margin-top:10px; width:calc(100% - 26px);/*gap + icon*/  height: 22px; font-size: 16px; font-weight: bold; line-height: 1.5;}
+.cs_list .cs_list_wrap ul li a .cs_list_item_con i{margin-top:16px; flex-shrink: 0;}
+/*complete*/
+.cs_list .cs_list_wrap ul li.cs_complete a .cs_list_item_con .cs_state{ box-shadow: 0 0 0 1px var(--subText) inset;}
+.cs_list .cs_list_wrap ul li.cs_complete a .cs_list_item_con .cs_state span{color: var(--subText);}
+/* 하단버튼 */
+.cs_list .bottom_zero_btn_wrap {position: fixed;}
+/* 리스트 없음 */
+.none_list{margin-top:21.1822vh;}
+.none_list .img_wrap{display: flex; justify-content: center; }
+.none_list .img_wrap figure{max-width: 295px;}
+.none_list .text_wrap{margin-top:30px;}
+.none_list .text_wrap p{font-size: 16px; font-weight: bold; line-height: 1.5; text-align: center;}
+
+/* cs_write form */
+.cs_write .main_contents {padding-top: 40px; padding-bottom: 70px;}
+.cs_write .cs_input_title{padding-left:10px; display: block; font-size: 18px; font-weight: bold; line-height: 1.56; letter-spacing: -0.01px;}
+.cs_write .input_out{margin-top:30px;}
+.cs_write .cs_select_wrap .cs_select,
+.cs_write .input_out .input_wrap{margin-top:20px;}
+.cs_write .content_wrap .input_wrap{position: relative; padding:0; height: auto; overflow: hidden; font-size: 0; line-height: 1em;}
+.cs_write .content_wrap textarea{height:280px; resize: none;}
+.cs_write .content_wrap .input_wrap .textarea_counter{position: absolute; bottom:15px; right:20px;}
+.cs_write .content_wrap .input_wrap .textarea_counter span{height: 19px; font-weight: 500; color: #999999;}
+
+/* cs_view  */
+/* 2022.09.22 그림자 opcity 0.1-> 0.05 */
+.cs_view header.on_scroll{box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);}
+.cs_view .cs_main { height: calc(100vh - 55px);}
+.cs_view .main_contents {padding-top:20px; padding-bottom: 120px;}
+.cs_view .cs_view_cat{display: flex;}
+.cs_view .cs_view_cat .cs_state{box-shadow: 0 0 0 1px var(--subText) inset;}
+.cs_view .cs_view_cat .cs_state span{color: var(--subText);}
+.cs_view .cs_view_title{margin-top:10px;}
+.cs_view .cs_view_title h3{font-size: 16px; line-height: 1.5;}
+.cs_view .cs_view_state{margin-top:10px; display: flex; justify-content: space-between; align-items: center; }
+.cs_view .cs_view_state.q_state{margin-top:5px; align-items: flex-end;}
+.cs_view .cs_view_state time{ height: 19px; font-weight: 500; color: #999;}
+.cs_view .cs_view_con_wrap{padding:0 10px 20px; }
+.cs_view .cs_view_con_wrap:nth-child(n+2){padding:20px 10px 20px; border-top:1px solid #eeeeee;}
+.cs_view .cs_view_con_wrap .cs_view_question_text{margin-top:30px;}
+.cs_view .cs_view_con_wrap .cs_view_question_text p{font-weight: bold;}
+.cs_view .cs_view_con_wrap .cs_view_answer_text p{font-weight: 500;}
+.cs_view .comment_box{padding:20px 10px 20px 30px; border-top:1px solid #eeeeee;}
+.cs_view .comment_box span{font-weight: bold;}
+.cs_view .comment_box p{font-weight: 500;}
+.cs_view .comment_write_form{margin-top:20px;}
+.cs_view .comment_write_form .input_wrap {padding: 0 20px; display: flex; align-items: flex-end; gap:0 17px; height: 50px; transition:height, .3s;}
+.cs_view .comment_write_form .input_wrap .comment_write_area{padding:12px 0; width:100%; height:100%; border:none; resize: none;}
+.cs_view .comment_write_form .input_wrap .commnet_submit{margin-bottom:9px; padding:4px; width:32px; height:32px; border-radius:10px; background-color:#bfcfe7; transition: background-color, background-image, .3s;  }
+.cs_view .comment_write_form .input_wrap.active {position: fixed; left:20px; right:20px; bottom:37px; align-items: flex-end; height: 98px;}
+.cs_view .comment_write_form .input_wrap.active .commnet_submit{background-color: transparent; background-image: linear-gradient(to right, var(--gradationStart), var(--gradationEnd));}
+
+/* 2022.08.08 고객지원 이메일 */
+.cs_email .container {height: auto; background-color: #ffffff;}
+.cs_email .main_contents {padding-top: 12.3152vh; }
+.cs_email .main_contents .cs_email_wrap .img_wrap figure{margin:0 auto; max-width:295px;}
+.cs_email .main_contents .cs_email_wrap .text_wrap{margin-top:40px; padding:0 20px;}
+.cs_email .main_contents .cs_email_wrap .text_wrap h3{padding:0 11px; font-size: 20px; font-weight: bold; line-height: 1.3; letter-spacing: -0.01px; text-align: center;}
+.cs_email .main_contents .cs_email_wrap .text_wrap p{margin-top:20px; font-size: 14px; font-weight: 500; line-height: 1.43; text-align: center;   color: #666;}
+.cs_email .main_contents .cs_email_wrap .text_wrap p br:nth-child(1){display: none;}
+.cs_email .main_contents .cs_email_wrap .text_wrap .btn_wrap{margin-top:30px; display: flex; justify-content: center;}
+.cs_email .main_contents .cs_email_wrap .text_wrap .btn_wrap a{font-size: 16px; font-weight: bold; line-height: 1.5; text-align: center; color:var(--subText); text-decoration: underline;}
+
+
+@media(max-width:319px){
+  .cs_view .comment_write_form .input_wrap .comment_write_area::placeholder{font-size:12px;}
+}
+
+@media(max-width:374px){
+  .cs_email .main_contents .cs_email_wrap .text_wrap p br{display: none;}
+  .cs_email .main_contents .cs_email_wrap .text_wrap h3 {padding: 0;}
+}
+
+@media (min-width:600px){ 
+  .cs_select{max-width: 335px; }  
+  .cs_list .cs_list_wrap ul li{padding:20px 0; }
+  .cs_list .cs_list_wrap ul li a .cs_list_item_con {flex-wrap: nowrap; gap:0;}
+  .cs_list .cs_list_wrap ul li a .cs_list_item_con .cs_state_wrap{display: flex; width:98px;}
+  .cs_list .cs_list_wrap ul li a .cs_list_item_con time {order: 2; flex-shrink: 0; margin:0 19px 0 22px; text-align: right; }
+  .cs_list .cs_list_wrap ul li a .cs_list_item_con p {order: 1; margin-top: 0; width: 100%;}
+  .cs_list .cs_list_wrap ul li a .cs_list_item_con i {order: 3; margin-top: 0;}
+
+  .none_list .img_wrap figure{max-width: 371px;}
+
+  .cs_write .cs_select{max-width: 100%;}
+  .cs_write .cs_input_title {font-size: 20px; line-height: 1.3;}
+  .cs_write .bottom_zero_btn_wrap {position: fixed;}
+
+  .cs_view .cs_main {height: calc(100vh - 76px);}
+  .cs_view .comment_write_form .input_wrap.active {position: relative; left: inherit; right: inherit; bottom: inherit;}
+
+  .cs_email .main_contents .cs_email_wrap .img_wrap figure { max-width: 370px;}
+  .cs_email .main_contents .cs_email_wrap .text_wrap {margin-top: 50px; padding:0;}
+  .cs_email .main_contents .cs_email_wrap .text_wrap p br{display: none;}
+  .cs_email .main_contents .cs_email_wrap .text_wrap p br:nth-child(1){display: block;}
+  .cs_email .main_contents .cs_email_wrap .text_wrap .btn_wrap {margin-top: 49px;}  
+}
+
+@media (min-width:600px) and (orientation: portrait) {
+  .cs_list .main_contents {padding-top: 59px;}
+  .cs_list .cs_list_wrap { margin-top: 80px;}
+  
+  .none_list {margin-top: 23.3050vh;}
+
+  .cs_write .main_contents {padding-top: 120px;  padding-bottom: 100px; }
+
+  .cs_view .main_contents {padding-top: 120px;}
+
+ /*20220808 */
+  .cs_email .main_contents {padding-top: 23.3050vh;}
+}
+
+@media (min-width:712px) and (orientation: landscape) { 
+ 
+}
+
+@media (min-width:1024px) and (orientation: landscape) {
+  .cs_list .main_contents {padding-top: 19px;}
+  .cs_list .main_contents .wrap {padding: 0; max-width: 550px;}
+  .cs_list .cs_list_wrap { margin-top: 70px;}
+
+  .none_list {margin-top: 15.2439vh;}
+
+  .cs_write .main_contents {padding-top: 60px; padding-bottom: 160px;}
+  .cs_write .main_contents .wrap {padding: 0; max-width: 550px;}
+
+  .cs_view .main_contents {padding-top: 60px;}
+  .cs_view .wrap {padding: 0; max-width: 550px;}
+
+   /*20220808 */
+  .cs_email .main_contents {padding-top: 12.31707vh; padding-bottom: 60px;}
+  .cs_email .wrap{padding: 0; max-width: 550px;}
+}
