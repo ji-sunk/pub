@@ -1,0 +1,6 @@
+<?xml-stylesheet type="text/css" href="../../css/svg.css"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">         
+  <path style="fill:#fff;opacity:.003" d="M0 0h16v16H0z"/>            
+  <path class="concept_check_icon" d="M110.643 34.695a5.963 5.963 0 1 0 5.964 5.963 5.963 5.963 0 0 0-5.964-5.963zm2.437 6.41-3.245 1.542a.718.718 0 0 1-1.111-.7v-2.738a.718.718 0 0 1 1.111-.7l3.245 1.542c.611.29.611.766 0 1.057z" transform="translate(-102.576 -32.667)"/>
+</svg>

@@ -1,0 +1,12 @@
+<?xml-stylesheet type="text/css" href="../../css/svg.css"?>
+<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+<g>
+	<path class="wm_circle_blue" d="M24,6C14.1,6,6,14.1,6,24s8.1,18,18,18s18-8.1,18-18S33.9,6,24,6z M24,36c-6.6,0-12-5.4-12-12s5.4-12,12-12
+		s12,5.4,12,12S30.6,36,24,36z"/>
+	<circle class="st0 wm_circle_blue" cx="24" cy="24" r="6"/>
+</g>
+<g class="weekly_arrow">	
+	<path class="arrow_stick" d="M24,25.5c-0.4,0-0.8-0.1-1.1-0.4c-0.6-0.6-0.6-1.5,0-2.1l8.5-8.5c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2.1 l-8.5,8.5C24.8,25.4,24.4,25.5,24,25.5z"/>
+	<path class="arrow_feather" d="M34.6,6.7l-5.8,5.8c-0.3,0.3-0.4,0.7-0.3,1.1l1.5,3.9c0.1,0.2,0.3,0.4,0.5,0.5l3.9,1.5c0.4,0.1,0.8,0,1.1-0.3 l5.8-5.8c0.4-0.4,0.4-1,0.1-1.4c-0.1-0.1-0.2-0.2-0.4-0.2l-3.3-0.9c-0.3-0.1-0.5-0.3-0.6-0.6L36.3,7c-0.1-0.5-0.6-0.8-1.1-0.6 c0,0-0.1,0-0.1,0C34.9,6.5,34.7,6.5,34.6,6.7z"/>
+</g>
+</svg>
