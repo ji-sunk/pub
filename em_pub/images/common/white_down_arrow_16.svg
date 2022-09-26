@@ -1,0 +1,5 @@
+<?xml-stylesheet type="text/css" href="../../css/svg.css"?>
+<svg class="down_arrow_16" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <path style="fill:#fff;opacity:.003" d="M0 0h16v16H0z"/>
+    <path class="arrow_line"  d="m0 0 4.626 4.626L0 9.252" transform="rotate(90 3.485 9.154)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.5px"/>
+</svg>

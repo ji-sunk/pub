@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g data-name="사각형 839" style="stroke:red;stroke-width:.2px;fill:none">
+        <path style="stroke:none" d="M0 0h14v18H0z" transform="translate(5 3)"/>
+        <path style="fill:none" d="M.1.1h13.8v17.8H.1z" transform="translate(5 3)"/>
+    </g>
+    <g data-name="사각형 866" style="stroke:red;stroke-width:.2px;fill:none">
+        <path style="stroke:none" d="M0 0h18v14H0z" transform="translate(3 5)"/>
+        <path style="fill:none" d="M.1.1h17.8v13.8H.1z" transform="translate(3 5)"/>
+    </g>
+    <g data-name="사각형 867" style="stroke:red;stroke-width:.2px;fill:none">
+        <path style="stroke:none" d="M0 0h16v16H0z" transform="translate(4 4)"/>
+        <path style="fill:none" d="M.1.1h15.8v15.8H.1z" transform="translate(4 4)"/>
+    </g>
+    <circle data-name="타원 1331" cx="12" cy="12" r="12" style="fill:#ddd"/>
+    <path data-name="패스 283" d="M7.286 4.626 0 11.912" transform="rotate(90 5.956 14.313)" style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.5px;fill:none"/>
+    <path data-name="패스 11343" d="M7.285 7.286 0 0" transform="rotate(90 3.644 12.001)" style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.5px;fill:none"/>
+</svg>

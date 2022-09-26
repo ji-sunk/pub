@@ -1,0 +1,6 @@
+<?xml-stylesheet type="text/css" href="../../css/svg.css"?>
+
+<svg class="circle_time_icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <circle class="icon_bg" data-name="타원 1504" cx="9" cy="9" r="9" transform="translate(3 3)" />
+    <path class="st0" data-name="패스 10030" d="M35.016 15.51v4.335l2.951 1.729" transform="translate(-23.016 -6.625)" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:#d4e5ff"/>
+</svg>

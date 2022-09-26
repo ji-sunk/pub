@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="164" height="26" viewBox="0 0 164 26">
+    <defs>
+        <linearGradient id="9lhro16lub" y1=".5" x2="1" y2=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#00d7ff"/>
+            <stop offset=".626" stop-color="#00cdff"/>
+        </linearGradient>
+        <linearGradient id="1dwsac7bwc" y1=".5" x2="1" y2=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#00cdff"/>
+            <stop offset="1" stop-color="#00beff"/>
+        </linearGradient>
+        <clipPath id="wc0yzsz1ca">
+            <path data-name="사각형 10087" transform="translate(95 151.093)" style="fill:none" d="M0 0h164v26H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="마스크 그룹 28487" style="clip-path:url(#wc0yzsz1ca)" transform="translate(-95 -151.093)">
+        <g data-name="그룹 33535">
+            <g data-name="그룹 33523">
+                <path data-name="패스 17249" d="M191.76 286.455c-.957-.446-3.137-1.9-2.709-5.725a26.139 26.139 0 0 1 1.052-4.375 29.444 29.444 0 0 0 .837-3.214l-4.036-2.686c1.633-2.454 4.982-4.311 7.969-2.918 1.007.47 3.308 1.994 2.922 6a26.094 26.094 0 0 1-1.121 4.787 17.9 17.9 0 0 0-.82 3.413 2.073 2.073 0 0 0-1.193-1.5z" transform="translate(-88.875 -112.516)" style="fill:#00d7ff"/>
+                <path data-name="패스 17250" d="M208.34 286.9a5.073 5.073 0 0 1-2.141-.485l2.9-6.217a1.714 1.714 0 0 0-1.465-.01c.823-.521 2.506-3.412 3.511-5.138a40.965 40.965 0 0 1 3.385-5.219c2.917-3.535 5.633-3 6.993-2.364 1.02.476 3.344 2.024 2.869 6.114a27.32 27.32 0 0 1-1.229 4.869 18.632 18.632 0 0 0-.909 3.546 2.107 2.107 0 0 0-1.219-1.553l-2.9 6.216c-.935-.436-3.01-1.819-2.707-5.4a24.948 24.948 0 0 1-1.95 2.749c-1.895 2.251-3.703 2.892-5.138 2.892z" transform="translate(-103.313 -112.472)" style="fill:url(#9lhro16lub)"/>
+                <path data-name="패스 17251" d="M249.862 287.241a5.039 5.039 0 0 1-2.128-.48 3.43 3.43 0 0 1 1.787-6.523 34.521 34.521 0 0 0 3.316-4.975 42.494 42.494 0 0 1 3.474-5.278c2.954-3.549 5.669-3.017 7.025-2.385 1.02.476 3.344 2.024 2.869 6.11a26.884 26.884 0 0 1-1.211 4.8 3.43 3.43 0 0 1 2.925 5.33c-1.633 2.454-4.982 4.311-7.97 2.918-.948-.442-3.067-1.856-2.694-5.544a27.367 27.367 0 0 1-2.2 3.11c-1.931 2.276-3.755 2.917-5.193 2.917z" transform="translate(-132.912 -112.578)" style="fill:url(#1dwsac7bwc)"/>
+                <g data-name="그룹 33522" transform="translate(96 154.883)">
+                    <circle data-name="타원 1988" cx="4.885" cy="4.885" r="4.885" style="fill:#00ebff"/>
+                </g>
+            </g>
+            <g transform="translate(142.149 151.508)">
+                <g data-name="그룹 33524">
+                    <path data-name="패스 17252" d="M756.858 299.109a8.054 8.054 0 1 1 8.054-8.054 8.063 8.063 0 0 1-8.054 8.054zm0-11.578a3.524 3.524 0 1 0 3.524 3.524 3.528 3.528 0 0 0-3.524-3.524z" transform="translate(-651.495 -275.952)" style="fill:#00cdff"/>
+                </g>
+                <g data-name="그룹 33525">
+                    <path data-name="패스 17253" d="m794.362 265-3.55 20.136h4.6L798.963 265z" transform="translate(-682.93 -262.483)" style="fill:#00cdff"/>
+                </g>
+                <path data-name="패스 17254" d="M375.012 263.335 366.188 255l-3.994 22.653h4.6l2.4-13.585 4.863 4.593 6.3-2.664-2.057 11.656h4.6l3.363-19.075z" transform="translate(-362.194 -255)" style="fill:#00cdff"/>
+                <g data-name="그룹 33527">
+                    <g data-name="그룹 33526">
+                        <path data-name="패스 17255" d="M466.054 297.109a8.054 8.054 0 1 1 8.054-8.054 8.063 8.063 0 0 1-8.054 8.054zm0-11.578a3.524 3.524 0 1 0 3.524 3.524 3.528 3.528 0 0 0-3.524-3.524z" transform="translate(-433.886 -274.456)" style="fill:#00cdff"/>
+                    </g>
+                </g>
+                <g data-name="그룹 33528">
+                    <path data-name="패스 17256" d="m502.272 285-2.663 15.1h4.6l2.663-15.1z" transform="translate(-465.022 -277.449)" style="fill:#00cdff"/>
+                </g>
+                <circle data-name="타원 1989" cx="2.765" cy="2.765" r="2.765" transform="translate(92.202 .255)" style="fill:#00cdff"/>
+                <g data-name="그룹 33529">
+                    <path data-name="패스 17257" d="m719.268 285-2.663 15.1h4.6l2.663-15.1z" transform="translate(-627.4 -277.449)" style="fill:#00cdff"/>
+                </g>
+                <g data-name="그룹 33530">
+                    <path data-name="패스 17258" d="m538.7 275-3.107 17.619h4.6L543.3 275z" transform="translate(-491.946 -269.966)" style="fill:#00cdff"/>
+                </g>
+                <g data-name="그룹 33531">
+                    <path data-name="패스 17259" d="m534.491 289-.71 4.027h10.068l.71-4.027z" transform="translate(-490.593 -280.442)" style="fill:#00cdff"/>
+                </g>
+                <g data-name="그룹 33532">
+                    <path data-name="패스 17260" d="M575.589 285.136h4.6L583.74 265h-4.6z" transform="translate(-521.878 -262.483)" style="fill:#00cdff"/>
+                    <path data-name="패스 17261" d="M614.589 318.161h4.6l1.592-9.028-4.847 1.4z" transform="translate(-551.062 -295.508)" style="fill:#00cdff"/>
+                </g>
+                <path data-name="패스 17262" d="M610.553 289.578c.711-4.031-1.364-6.578-5.976-6.578a11.167 11.167 0 0 0-2.769.5l-.888 5.034a2.527 2.527 0 0 1 2.769-2.014c2.024.193 2.447 2.014 2.017 4.454z" transform="translate(-540.833 -275.952)" style="fill:#00cdff"/>
+                <g data-name="그룹 33533">
+                    <path data-name="패스 17263" d="M657.44 299.109a8.054 8.054 0 1 1 8.054-8.054 8.064 8.064 0 0 1-8.054 8.054zm0-11.578a3.524 3.524 0 1 0 3.524 3.524 3.528 3.528 0 0 0-3.524-3.524z" transform="translate(-577.1 -275.952)" style="fill:#00cdff"/>
+                </g>
+                <g data-name="그룹 33534">
+                    <path data-name="패스 17264" d="m643.937 285-3.107 17.619h4.6L648.537 285z" transform="translate(-570.698 -277.449)" style="fill:#00cdff"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,5 @@
+<?xml-stylesheet type="text/css" href="../../css/svg.css"?>
+<svg class="check_icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <path style="fill:#fff;opacity:.003" d="M0 0h16v16H0z"></path>
+  <path class="st0" d="m-.17 2.2 3.144 3.391L8.937.07" transform="translate(3.537 5.163)" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.5px"></path>
+</svg>

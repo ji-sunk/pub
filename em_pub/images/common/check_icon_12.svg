@@ -1,0 +1,5 @@
+<?xml-stylesheet type="text/css" href="../../css/svg.css"?>
+<svg class="check_icon_12" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+    <path data-name="사각형 730" style="fill:#fff;opacity:.003" d="M0 0h12v12H0z"/>
+    <path class="line" d="m-1.916-.943 3.9 4.979-2.97 2.951" transform="rotate(90 1.5 7.5)" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <path style="fill:none" d="M0 0h64v64H0z"/>
+    <path data-name="빼기 142" d="M22596 18667h-38a5.008 5.008 0 0 1-5-5v-20a5.01 5.01 0 0 1 5-5h38a5.01 5.01 0 0 1 5 5v20a5.008 5.008 0 0 1-5 5zm-26-25a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h15a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2z" transform="translate(-22545 -18615)" style="fill:#999"/>
+    <path data-name="패스 13576" d="m69 112.3 3.346-9.284a4.4 4.4 0 0 1 1.7-1.9 6.82 6.82 0 0 1 2.88-.572h27.459a6.352 6.352 0 0 1 2.623.572 4.79 4.79 0 0 1 1.7 1.769l3.554 9.418" transform="translate(-58.549 -86.537)" style="fill:transparent;stroke:#999;stroke-width:4px"/>
+</svg>

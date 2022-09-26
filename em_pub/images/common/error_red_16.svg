@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <g data-name="그룹 12169">
+        <circle data-name="타원 1570" cx="5" cy="5" r="5" transform="translate(3 3)" style="fill:#fc8678"/>
+        <g data-name="그룹 12168" transform="translate(0 .5)">
+            <circle data-name="타원 1569" cx="1" cy="1" r="1" transform="translate(7 4)" style="fill:#fff"/>
+            <rect data-name="사각형 2166" width="2" height="4" rx="1" transform="translate(7 7)" style="fill:#fff"/>
+        </g>
+    </g>
+</svg>

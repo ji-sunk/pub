@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <g data-name="그룹 251">
+        <g data-name="그룹 200">
+            <path data-name="패스 259" d="M5.25 0h3.5A5.027 5.027 0 0 1 14 4.769V8H0V4.769A5.027 5.027 0 0 1 5.25 0z" style="fill:none;stroke:#bfcfe7;stroke-width:4px" transform="translate(17 8)"/>
+        </g>
+        <path data-name="제외 4" d="M-2746 23359h-24a6.007 6.007 0 0 1-6-6v-16a6 6 0 0 1 6-6h24a6.008 6.008 0 0 1 6 6v16a6.01 6.01 0 0 1-6 6zm-12-20a3.991 3.991 0 0 0-4 3.975v.053a3.914 3.914 0 0 0 1.6 3.178l-1.6 4.8h8l-1.594-4.8a3.94 3.94 0 0 0 1.594-3.178v-.053a3.991 3.991 0 0 0-4-3.975z" transform="translate(2782 -23317)" style="fill:#bfcfe7"/>
+    </g>
+</svg>

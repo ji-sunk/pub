@@ -1,0 +1,34 @@
+<svg id="icon_mo_s_32_hide_regular_gray" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: none;
+        stroke: #999;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke-linejoin: round;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-miterlimit: 5;
+      }
+
+      .cls-4 {
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_2157" data-name="사각형 2157" class="cls-1" width="32" height="32"/>
+  <g id="그룹_12146" data-name="그룹 12146" transform="translate(4.569 24.326)">
+    <path id="패스_11344" data-name="패스 11344" class="cls-2" d="M10.446,14q5.292,0,9.66-5.958h0a1.765,1.765,0,0,0,0-2.083Q15.738,0,10.446,0T.786,5.958h0a1.765,1.765,0,0,0,0,2.083Q5.154,14,10.446,14Z" transform="translate(0.984 -15.326)"/>
+    <path id="패스_11346" data-name="패스 11346" class="cls-3" d="M4,8A4,4,0,1,0,0,4,4,4,0,0,0,4,8Z" transform="translate(7.431 -12.327)"/>
+    <path id="패스_11347" data-name="패스 11347" class="cls-4" d="M-14418.466-21290.766v22" transform="translate(-4840.241 25234.135) rotate(45)"/>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <clipPath id="ly2juvvgja">
+            <circle data-name="타원 1672" cx="24" cy="24" r="24" style="fill:#3b579d"/>
+        </clipPath>
+    </defs>
+    <circle data-name="타원 1671" cx="24" cy="24" r="24" transform="translate(4 4)" style="fill:#3b579d"/>
+    <g data-name="마스크 그룹 13475" transform="translate(4 4)" style="clip-path:url(#ly2juvvgja)">
+        <path data-name="합치기 51" d="M6 40.934v-18H0v-7.2h6v-5.97h-.036c0-4.332 1.186-6.184 2.8-7.453C13.23-1.2 20.044.281 20.8.467v6.506h-4.4a5.067 5.067 0 0 0-2.255.439c-.192.152-.953.617-.953 2.352v5.971H20.4l-.836 7.2H13.2v18z" transform="translate(16.8 7.069)" style="fill:#fff"/>
+    </g>
+</svg>
