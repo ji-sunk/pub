@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>mathpid</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <!--<meta name="theme-color" content="#C70026"> -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="description" content="">
+  <link rel="canonical" href="">
+  <meta name="robots" content="index,follow">
+  
+  <link rel="stylesheet" type="text/css" href="../css/vendor/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+   <!-- 2022.09.19 불필요 css 삭제 sub course 분리 -->
+  <link rel="stylesheet" type="text/css" href="../css/daily_course.css"/>
+  <!-- 2022.08.27 튜토리얼 css 분리 -->
+  <link rel="stylesheet" type="text/css" href="../css/tuto.css"/>
+
+<!-- test 삭제바람 -->
+  <style>
+    .next_course{position:fixed; bottom:40px; right:20px; z-index: 999; padding:8px 20px; background-color:#666666; color:#ffffff;}
+  </style>
+
+</head>
+<!-- 2022.09.19 tt클래스 삭제-->
+<body class="sub_page cl junior ko">
+ <!--2022.09.02 mode btn test 삭제 -->
+
+  <!-- header -->
+  <header>
+    <div class="header_wrap">		
+      <div class="header_inner">
+        <div class="sub_title">
+          <a href="..">
+            <!-- 2022.09.07 back text 추가 -->
+            <span class="sr">back</span>
+            <i class="icon_24">
+              <img src="../images/common/white_arrow_24.svg" alt="">
+            </i>
+          </a> 
+          <!-- 2022.09.07 title a tag 밖으로 -->
+          <div class="text_wrap">
+            <!-- 2022.08.24 타이틀 변경 -->
+            <h2>My Course</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<!-- header -->
+  <main class="container">
+    <audio preload="auto" class="audio_wrap"><source class="audio_source" src=""/></audio>
+    <section class="main_contents">      
+      <div class="wrap ho_scroll">  
+        <!-- 코스라인을 헤더 코스라인과 리스트 안 코스 라인으로 구분(각 course_part별로 라인)-->
+        <!-- 첫번째 코스라인에만 start아이콘  -->
+        <!-- 2022.06.24 레벨 별 코스 레벨1  -->
+        <article class="course_wrap level_1" data-clevel=1>
+          <!-- 레벨 헤더 -->
+          <div class="course_header course_part">    
+            <div class="inner_wrap course_title">
+              <!--2022.06.24 레벨 타틀 -> 레벨별로 , 헤더 아이콘 삭제 -->
+              <div class="title_inner">               
+                <!-- 2022.07.04 span sr 삭제 / title - level image, number img -> h3 text -->
+                <span class="level_text">
+                  <figure>
+                    <img src="../images/svg/cl_tie_level_text.svg" alt="level" class="level_text">
+                  </figure>
+                </span>    
+                <h3 class="level_num">1</h3>
+              </div>  
+              <!-- 헤더 코스 라인 -->
+              <div class="line">
+                <!-- 첫번째 시작 아이콘 - 첫번째만  -->
+                <span class="course_start">                 
+                  <object type="image/svg+xml" data="../images/svg/course_start_icon.svg" class="add_new_color"></object>
+                </span>
+                <object type="image/svg+xml" data="../images/svg/mo_first_course_line.svg" class="mo_line add_new_color"></object>                 
+                <object type="image/svg+xml" data="../images/svg/port_first_course_line.svg" class="po_line add_new_color"></object>          
+                <object type="image/svg+xml" data="../images/svg/land_first_course_line.svg" class="lan_line add_new_color"></object>
+              </div> 
+            </div>								
+          </div>
+          <!-- 레벨 코스 리스트 -->
+          <div class="course_list">
+            <ul>
+            <!-- 학습 item 기존 class -> 완료 course_complete, 시작 course_learning, 홀수even, 짝수odd -->
+            <!-- 2022.06.24 추가되는 class -> 중간 다시 시작 learn_retry, 학습 미리보기 잠금 course_preview -->
+            <!-- 혹수 짝수는 레벨 헤더 포함 course_part -->
+
+            <!-- 2022.08.24 아직 학습 전 소주제(course_list_item)에  course_preview 클래스 추가-->
+              <li class="course_list_item course_part course_complete course_preview"><!--course_complete-->
+                <div class="inner_wrap">
+                  <a href="../index.html" class="audio_btn" data-audio="cl_click">
+                    <!-- 레벨 코스 타이틀 -->
+                    <div class="course_list_title">              
+                      <h4>One-digit Addition (1)</h4>
+                    </div>
+                    <!-- 레벨 코스 이미지 -->
+                    <div class="question_img">
+                      <figure><img src="https://dummyimage.com/181x80/dbdbdb/333333" alt=""></figure>
+                    </div>                                        
+                  </a>  
+                    <!-- 2022.06.24 레벨 코스 상태 아이콘 -->
+                    <!-- 2022.07.13 코스 상태 a tag 밖으로, work_sheet 다운로드 버튼 추가 -->
+                    <div class="course_state_wrap">
+                      <div class="state_inner">
+                        <!-- 2022.06.24 잠김 아이콘  
+                        course_part가 course_preview클래스를 가지면 작은 아이콘 없으면 큰아이콘 css-->
+                        <div class="course_lock">
+                          <i class="icon_24">
+                            <object type="image/svg+xml" data="../images/svg/lock_icon.svg" class="add_new_color"></object>                            
+                          </i>
+                        </div>
+                        <!-- 2022.07.13 work_sheet-->
+                        <a href="javascript:void(0);" class="work_sheet">
+                          <i class="icon_24">
+                            <object type="image/svg+xml" data="../images/common/c_worksheet_icon_24.svg" class="add_new_color"></object>    
+                          </i>
+                        </a>
+                        <!-- 2022.06.24 다시 시작 아이콘 -->
+                        <div class="state_learn_retry">
+                          <i class="icon_24">
+                            <img src="../images/common/retry_24.svg" alt="">
+                          </i>
+                        </div>
+                        <!-- 2022.06.24 학습 시작 -->
+                        <div class="learn_start">
+                          <span>Start Learning</span><!--change text - Start Learning, Continue-->
+                          <i class="icon_16">
+                            <img src="../images/common/black_arrow_16.svg" alt="">                            
+                          </i>
+                        </div> 
+                        <!-- 2022.06.24 학습 완료 후 능숙, 기본이하 class로 표시-->
+                        <!-- 2022.08.26 retry삭제 화살표 icon 추가 state_review->복습  -->
+                        <div class="complete_state state_proficient"><!-- state_proficient  state_below_basic state_basic state_advanced state_review-->
+                          <div class="complete_state_text">Proficient</div>
+                          <i class="icon_16">
+                            <!-- 2022.08.31 img->object-->                           
+                            <object data="../images/common/black_arrow_16.svg" type=""></object>                       
+                          </i>                         
+                        </div>                          
+                      </div>
+                    </div>                   
+                </div>
+                <!-- 코스 위 상태 아이콘 -->
+                <div class="course_state_icon">
+                  <!-- 완료 체크 아이콘 -->
+                  <!-- 2022.07.13 아이콘 이미지 교체-->
+                  <i class="icon_16 check_icon_wrap">                    
+                    <img src="../images/common/w_check_icon_16.svg" alt="">
+                  </i>
+                  <!-- 학습 시작 아이콘  -->
+                  <!-- 2022.07.13 아이콘 이미지 교체-->
+                  <i class="icon_16 airplane_icon_wrap">                    
+                    <img src="../images/svg/airplane_icon_16.svg" alt="">                  
+                  </i>
+                </div>
+                <!-- 코스라인 -->
+                <div class="line">    
+                  <object type="image/svg+xml" data="../images/svg/mo_course_line.svg" class="mo_line add_new_color"></object>  
+                  <object type="image/svg+xml" data="../images/svg/port_course_line.svg" class="po_line add_new_color"></object>              
+                  <object type="image/svg+xml" data="../images/svg/land_course_line.svg" class="lan_line add_new_color"></object>
+                </div>              
+              </li>
+            <!-- 학습 item -->
+              <li class="course_list_item course_part course_complete course_preview"> <!--course_complete-->
+                <div class="inner_wrap">                             
+                  <a href="javascript:void(0)" class="audio_btn" data-audio="cl_click">              
+                    <div class="course_list_title">     
+                      <h4>One-digit Addition (1)</h4>
+                    </div>
+                    <div class="question_img">
+                      <figure><img src="https://dummyimage.com/181x80/dbdbdb/333333" alt=""></figure>
+                    </div>                                            
+                  </a>    
+                  <!-- 2022.06.24 레벨 코스 상태 아이콘 -->
+                  <!-- 2022.07.13 코스 상태 a tag 밖으로, work_sheet 다운로드 버튼 추가 -->
+                  <div class="course_state_wrap">
+                    <div class="state_inner">
+                      <!-- 2022.06.24 잠김 아이콘  
+                      course_part가 course_preview클래스를 가지면 작은 아이콘 없으면 큰아이콘 css-->
+                      <div class="course_lock">
+                        <i class="icon_24">
+                          <object type="image/svg+xml" data="../images/svg/lock_icon.svg" class="add_new_color"></object>                            
+                        </i>
+                      </div>
+                      <!-- 2022.07.13 work_sheet-->
+                      <a href="javascript:void(0);" class="work_sheet">
+                        <i class="icon_24">
+                          <object type="image/svg+xml" data="../images/common/c_worksheet_icon_24.svg" class="add_new_color"></object>    
+                        </i>
+                      </a>
+                      <!-- 2022.06.24 다시 시작 아이콘 -->
+                      <div class="state_learn_retry">
+                        <i class="icon_24">
+                          <img src="../images/common/retry_24.svg" alt="">
+                        </i>
+                      </div>
+                      <!-- 2022.06.24 학습 시작 -->
+                      <div class="learn_start">
+                        <span>Start Learning</span><!--change text - Start Learning, Continue-->
+                        <i class="icon_16">
+                          <img src="../images/common/black_arrow_16.svg" alt="">                            
+                        </i>
+                      </div> 
+                        <!-- 2022.06.24 학습 완료 후 능숙, 기본이하 class로 표시-->
+                      <!-- 2022.08.26 retry삭제 화살표 icon 추가 state_review->복습  -->
+                      <div class="complete_state state_below_basic"><!-- state_proficient  state_below_basic state_basic state_advanced state_review-->
+                        <div class="complete_state_text">Below basic</div>
+                        <i class="icon_16">
+                           <!-- 2022.08.31 img->object-->                           
+                           <object data="../images/common/black_arrow_16.svg" type=""></object>          
+                        </i>                         
+                      </div> 
+                    </div>
+                  </div>               
+                </div>
+                <div class="course_state_icon">
+                  <!-- 2022.07.13 아이콘 이미지 교체-->
+                  <i class="icon_16 check_icon_wrap">                    
+                    <img src="../images/common/w_check_icon_16.svg" alt="">
+                  </i>
+                  <!-- 2022.07.13 아이콘 이미지 교체-->
+                  <i class="icon_16 airplane_icon_wrap">                    
+                    <img src="../images/svg/airplane_icon_16.svg" alt=""> 
+                  </i>
+                </div>
+                <div class="line"> 
+                  <object type="image/svg+xml" data="../images/svg/mo_course_line.svg" class="mo_line add_new_color"></object>   
+                  <object type="image/svg+xml" data="../images/svg/port_course_line.svg" class="po_line add_new_color"></object>
+                  <object type="image/svg+xml" data="../images/svg/land_course_line.svg" class="lan_line add_new_color"></object>        
+                </div>               
+              </li>
+              <li class="course_list_item course_part course_complete course_preview"> <!--course_complete-->
+                <div class="inner_wrap">                             
+                  <a href="javascript:void(0)" class="audio_btn" data-audio="cl_click">              
+                    <div class="course_list_title">     
+                      <h4>One-digit Addition (1)</h4>
+                    </div>
+                    <div class="question_img">
+                      <figure><img src="https://dummyimage.com/181x80/dbdbdb/333333" alt=""></figure>
+                    </div>                                            
+                  </a>    
+                  <!-- 2022.06.24 레벨 코스 상태 아이콘 -->
+                  <!-- 2022.07.13 코스 상태 a tag 밖으로, work_sheet 다운로드 버튼 추가 -->
+                  <div class="course_state_wrap">
+                    <div class="state_inner">
+                      <!-- 2022.06.24 잠김 아이콘  
+                      course_part가 course_preview클래스를 가지면 작은 아이콘 없으면 큰아이콘 css-->
+                      <div class="course_lock">
+                        <i class="icon_24">
+                          <object type="image/svg+xml" data="../images/svg/lock_icon.svg" class="add_new_color"></object>                            
+                        </i>
+                      </div>
+                      <!-- 2022.07.13 work_sheet-->
+                      <a href="javascript:void(0);" class="work_sheet">
+                        <i class="icon_24">
+                          <object type="image/svg+xml" data="../images/common/c_worksheet_icon_24.svg" class="add_new_color"></object>    
+                        </i>
+                      </a>
+                      <!-- 2022.06.24 다시 시작 아이콘 -->
+                      <div class="state_learn_retry">
+                        <i class="icon_24">
+                          <img src="../images/common/retry_24.svg" alt="">
+                        </i>
+                      </div>
+                      <!-- 2022.06.24 학습 시작 -->
+                      <div class="learn_start">
+                        <span>Start Learning</span><!--change text - Start Learning, Continue-->
+                        <i class="icon_16">
+                          <img src="../images/common/black_arrow_16.svg" alt="">                            
+                        </i>
+                      </div> 
+                      <!-- 2022.06.24 학습 완료 후 능숙, 기본이하 class로 표시-->
+                      <!-- 2022.08.26 retry삭제 화살표 icon 추가 state_review->복습  -->
+                      <div class="complete_state state_basic"><!-- state_proficient  state_below_basic state_basic state_advanced state_review-->
+                        <div class="complete_state_text">Basic</div>
+                        <i class="icon_16">
+                           <!-- 2022.08.31 img->object-->                           
+                           <object data="../images/common/black_arrow_16.svg" type=""></object>           
+                        </i>                         
+                      </div> 
+                    </div>
+                  </div>               
+                </div>
+                <div class="course_state_icon">
+                  <!-- 2022.07.13 아이콘 이미지 교체-->
+                  <i class="icon_16 check_icon_wrap">                    
+                    <img src="../images/common/w_check_icon_16.svg" alt="">
+                  </i>
+                  <!-- 2022.07.13 아이콘 이미지 교체-->
+                  <i class="icon_16 airplane_icon_wrap">                    
+                    <img src="../images/svg/airplane_icon_16.svg" alt=""> 
+                  </i>
+                </div>
+                <div class="line"> 
+                  <object type="image/svg+xml" data="../images/svg/mo_course_line.svg" class="mo_line add_new_color"></object>   
+                  <object type="image/svg+xml" data="../images/svg/port_course_line.svg" class="po_line add_new_color"></object>
+                  <object type="image/svg+xml" data="../images/svg/land_course_line.svg" class="lan_line add_new_color"></object>        
+                </div>               
+              </li>
+              <li class="course_list_item course_part course_complete course_preview"> <!--course_complete-->
+                <div class="inner_wrap">                             
+                  <a href="javascript:void(0)" class="audio_btn" data-audio="cl_click">              
+                    <div class="course_list_title">     
+                      <h4>One-digit Addition (1)</h4>
+                    </div>
+                    <div class="question_img">
+                      <figure><img src="https://dummyimage.com/181x80/dbdbdb/333333" alt=""></figure>
+                    </div>                                            
+                  </a>    
+                  <!-- 2022.06.24 레벨 코스 상태 아이콘 -->
+                  <!-- 2022.07.13 코스 상태 a tag 밖으로, work_sheet 다운로드 버튼 추가 -->
+                  <div class="course_state_wrap">
+                    <div class="state_inner">
+                      <!-- 2022.06.24 잠김 아이콘  
+                      course_part가 course_preview클래스를 가지면 작은 아이콘 없으면 큰아이콘 css-->
+                      <div class="course_lock">
+                        <i class="icon_24">
+                          <object type="image/svg+xml" data="../images/svg/lock_icon.svg" class="add_new_color"></object>                            
+                        </i>
+                      </div>
+                      <!-- 2022.07.13 work_sheet-->
+                      <a href="javascript:void(0);" class="work_sheet">
+                        <i class="icon_24">
+                          <object type="image/svg+xml" data="../images/common/c_worksheet_icon_24.svg" class="add_new_color"></object>    
+                        </i>
+                      </a>
+                      <!-- 2022.06.24 다시 시작 아이콘 -->
+                      <div class="state_learn_retry">
+                        <i class="icon_24">
+                          <img src="../images/common/retry_24.svg" alt="">
+                        </i>
+                      </div>
+                      <!-- 2022.06.24 학습 시작 -->
+                      <div class="learn_start">
+                        <span>Start Learning</span><!--change text - Start Learning, Continue-->
+                        <i class="icon_16">
+                          <img src="../images/common/black_arrow_16.svg" alt="">                            
+                        </i>
+                      </div> 
+                      <!-- 2022.06.24 학습 완료 후 능숙, 기본이하 class로 표시-->
+                      <!-- 2022.08.26 retry삭제 화살표 icon 추가 state_review->복습  -->
+                      <div class="complete_state state_advanced"><!-- state_proficient  state_below_basic state_basic state_advanced state_review-->
+                        <div class="complete_state_text">Advanced</div>
+                        <i class="icon_16">
+                           <!-- 2022.08.31 img->object-->                           
+                           <object data="../images/common/black_arrow_16.svg" type=""></object>         
+                        </i>                         
+                      </div> 
+                    </div>
+                  </div>               
+                </div>
+                <div class="course_state_icon">
+                  <!-- 2022.07.13 아이콘 이미지 교체-->
+                  <i class="icon_16 check_icon_wrap">                    
+                    <img src="../images/common/w_check_icon_16.svg" alt="">
+                  </i>
+                  <!-- 2022.07.13 아이콘 이미지 교체-->
+                  <i class="icon_16 airplane_icon_wrap">                    
+                    <img src="../images/svg/airplane_icon_16.svg" alt=""> 
+                  </i>
+                </div>
+                <div class="line"> 
+                  <object type="image/svg+xml" data="../images/svg/mo_course_line.svg" class="mo_line add_new_color"></object>   
+                  <object type="image/svg+xml" data="../images/svg/port_course_line.svg" class="po_line add_new_color"></object>
+                  <object type="image/svg+xml" data="../images/svg/land_course_line.svg" class="lan_line add_new_color"></object>        
+                </div>               
+              </li>
+              <li class="course_list_item course_part course_complete course_preview"> <!--course_complete-->
+                <div class="inner_wrap">                             
+                  <a href="javascript:void(0)" class="audio_btn" data-audio="cl_click">              
+                    <div class="course_list_title">     
+                      <h4>One-digit Addition (1)</h4>
+                    </div>
+                    <div class="question_img">
+                      <figure><img src="https://dummyimage.com/181x80/dbdbdb/333333" alt=""></figure>
+                    </div>                                            
+                  </a>    
+                  <!-- 2022.06.24 레벨 코스 상태 아이콘 -->
+                  <!-- 2022.07.13 코스 상태 a tag 밖으로, work_sheet 다운로드 버튼 추가 -->
+                  <div class="course_state_wrap">
+                    <div class="state_inner">
+                      <!-- 2022.06.24 잠김 아이콘  
+                      course_part가 course_preview클래스를 가지면 작은 아이콘 없으면 큰아이콘 css-->
+                      <div class="course_lock">
+                        <i class="icon_24">
+                          <object type="image/svg+xml" data="../images/svg/lock_icon.svg" class="add_new_color"></object>                            
+                        </i>
+                      </div>
+                      <!-- 2022.07.13 work_sheet-->
+                      <a href="javascript:void(0);" class="work_sheet">
+                        <i class="icon_24">
+                          <object type="image/svg+xml" data="../images/common/c_worksheet_icon_24.svg" class="add_new_color"></object>    
+                        </i>
+                      </a>
+                      <!-- 2022.06.24 다시 시작 아이콘 -->
+                      <div class="state_learn_retry">
+                        <i class="icon_24">
+                          <img src="../images/common/retry_24.svg" alt="">
+                        </i>
+                      </div>
+                      <!-- 2022.06.24 학습 시작 -->
+                      <div class="learn_start">
+                        <span>Start Learning</span><!--change text - Start Learning, Continue-->
+                        <i class="icon_16">
+                          <img src="../images/common/black_arrow_16.svg" alt="">                            
+                        </i>
+                      </div> 
+                      <!-- 2022.06.24 학습 완료 후 능숙, 기본이하 class로 표시-->
+                      <!-- 2022.08.26 retry삭제 화살표 icon 추가 state_review->복습  -->
+                      <div class="complete_state state_review"><!-- state_proficient  state_below_basic state_basic state_advanced state_review-->
+                        <div class="complete_state_text">Start Learning</div>
+                        <i class="icon_16">
+                           <!-- 2022.08.31 img->object-->                           
+                           <object data="../images/common/black_arrow_16.svg" type=""></object>         
+                        </i>                         
+                      </div> 
+                    </div>
+                  </div>               
+                </div>
+                <div class="course_state_icon">
+                  <!-- 2022.07.13 아이콘 이미지 교체-->
+                  <i class="icon_16 check_icon_wrap">                    
+                    <img src="../images/common/w_check_icon_16.svg" alt="">
+                  </i>
+                  <!-- 2022.07.13 아이콘 이미지 교체-->
+                  <i class="icon_16 airplane_icon_wrap">                    
+                    <img src="../images/svg/airplane_icon_16.svg" alt=""> 
+                  </i>
+                </div>
+                <div class="line"> 
+                  <object type="image/svg+xml" data="../images/svg/mo_course_line.svg" class="mo_line add_new_color"></object>   
+                  <object type="image/svg+xml" data="../images/svg/port_course_line.svg" class="po_line add_new_color"></object>
+                  <object type="image/svg+xml" data="../images/svg/land_course_line.svg" class="lan_line add_new_color"></object>        
+                </div>               
+              </li>
+            <!-- 2022.06.24 학습 item class 추가 - 미리보기 course_preview, 중간 학습 다시 시작 learn_retry--> 
+              <li class="course_list_item course_part course_preview learn_retry"><!-- learn_retry 중단된 학습 -->
+                <div class="inner_wrap">
+                  <a href="javascript:void(0)" class="audio_btn" data-audio="cl_click">
+                    <div class="course_list_title">                 
+                      <h4>Multiply 2-digit numbers by 1-digit numbers (1)</h4>
+                    </div>
+                    <div class="question_img">
+                      <figure><img src="https://dummyimage.com/181x80/dbdbdb/333333" alt=""></figure>
+                    </div>                                       
+                  </a>  
+                   <!-- 2022.06.24 레벨 코스 상태 아이콘 -->
+                   <!-- 2022.07.13 코스 상태 a tag 밖으로, work_sheet 다운로드 버튼 추가 -->
+                  <div class="course_state_wrap">
+                    <div class="state_inner">
+                      <!-- 2022.06.24 잠김 아이콘  
+                      course_part가 course_preview클래스를 가지면 작은 아이콘 없으면 큰아이콘 css-->
+                      <div class="course_lock">
+                        <i class="icon_24">
+                          <object type="image/svg+xml" data="../images/svg/lock_icon.svg" class="add_new_color"></object>                            
+                        </i>
+                      </div>
+                      <!-- 2022.07.13 work_sheet-->
+                      <a href="javascript:void(0);" class="work_sheet">
+                        <i class="icon_24">
+                          <object type="image/svg+xml" data="../images/common/c_worksheet_icon_24.svg" class="add_new_color"></object>    
+                        </i>
+                      </a>
+                      <!-- 2022.06.24 다시 시작 아이콘 -->
+                      <div class="state_learn_retry">
+                        <i class="icon_24">
+                          <img src="../images/common/retry_24.svg" alt="">
+                        </i>
+                      </div>
+                      <!-- 2022.06.24 학습 시작 -->
+                      <div class="learn_start">
+                        <span>Continue</span><!--change text - Start Learning, Continue-->
+                        <i class="icon_16">
+                          <img src="../images/common/black_arrow_16.svg" alt="">                            
+                        </i>
+                      </div> 
+                      <!-- 2022.06.24 학습 완료 후 능숙, 기본이하 class로 표시-->
+                      <!-- 2022.08.31 retry삭제 화살표 icon 추가 state_review->복습  -->
+                      <div class="complete_state state_review"><!-- state_proficient  state_below_basic state_basic state_advanced state_review-->
+                        <div class="complete_state_text">Proficient</div>
+                        <i class="icon_16">
+                           <!-- 2022.08.31 img->object-->                           
+                           <object data="../images/common/black_arrow_16.svg" type=""></object>     
+                        </i>                         
+                      </div>   
+                    </div>
+                  </div>                     
+                </div>
+                <div class="course_state_icon">
+                  <!-- 2022.07.13 아이콘 이미지 교체-->
+                  <i class="icon_16 check_icon_wrap">                    
+                    <img src="../images/common/w_check_icon_16.svg" alt="">
+                  </i>
+                  <!-- 2022.07.13 아이콘 이미지 교체-->
+                  <i class="icon_16 airplane_icon_wrap">                    
+                    <img src="../images/svg/airplane_icon_16.svg" alt=""> 
+                  </i>
+                </div>
+                <div class="line"> 
+                  <object type="image/svg+xml" data="../images/svg/mo_course_line.svg" class="mo_line add_new_color"></object> 
+                  <object type="image/svg+xml" data="../images/svg/port_course_line.svg" class="po_line add_new_color"></object>
+                  <object type="image/svg+xml" data="../images/svg/land_course_line.svg" class="lan_line add_new_color"></object>   
+           
+                </div>  
+              </li>
+            <!-- 학습 item -->
+            <!-- 2022.08.24 아직 학습 전 소주제(course_list_item)에  course_preview 클래스 추가-->
+              <li class="course_list_item course_part course_preview ">
+                <div class="inner_wrap">
+                  <a href="javascript:void(0)" class="audio_btn" data-audio="cl_click">
+                    <div class="course_list_title">   
+                      <h4>Multiply 2-digit numbers by 1-digit numbers (1)11111</h4>
+                    </div>
+                    <div class="question_img">
+                      <figure><img src="https://dummyimage.com/181x80/dbdbdb/333333" alt=""></figure>
+                    </div>                                   
+                  </a> 
+                  <!-- 2022.07.13 코스 상태 a tag 밖으로, work_sheet 다운로드 버튼 추가 -->
+                  <div class="course_state_wrap">
+                    <div class="state_inner">
+                      <!-- 2022.06.24 잠김 아이콘  
+                      course_part가 course_preview클래스를 가지면 작은 아이콘 없으면 큰아이콘 css-->
+                      <div class="course_lock">
+                        <i class="icon_24">
+                          <object type="image/svg+xml" data="../images/svg/lock_icon.svg" class="add_new_color"></object>                            
+                        </i>
+                      </div>
+                      <!-- 2022.07.13 work_sheet-->
+                      <a href="javascript:void(0);" class="work_sheet">
+                        <i class="icon_24">
+                          <object type="image/svg+xml" data="../images/common/c_worksheet_icon_24.svg" class="add_new_color"></object>    
+                        </i>
+                      </a>
+                      <!-- 2022.06.24 다시 시작 아이콘 -->
+                      <div class="state_learn_retry">
+                        <i class="icon_24">
+                          <img src="../images/common/retry_24.svg" alt="">
+                        </i>
+                      </div>
+                      <!-- 2022.06.24 학습 시작 -->
+                      <div class="learn_start">
+                        <span>Start Learning</span><!--change text - Start Learning, Continue-->
+                        <i class="icon_16">
+                          <img src="../images/common/black_arrow_16.svg" alt="">                            
+                        </i>
+                      </div> 
+                        <!-- 2022.06.24 학습 완료 후 능숙, 기본이하 class로 표시-->
+                      <!-- 2022.08.31 retry삭제 화살표 icon 추가 state_review->복습  -->
+                      <div class="complete_state state_review"><!-- state_proficient  state_below_basic state_basic state_advanced state_review-->
+                        <div class="complete_state_text">Proficient</div>
+                        <i class="icon_16">
+                          <!-- 2022.08.31 img->object-->                           
+                          <object data="../images/common/black_arrow_16.svg" type=""></object>     
+                        </i>                         
+                      </div>    
+                    </div>
+                  </div>                      
+                </div>
+                <div class="course_state_icon">
+                  <!-- 2022.07.13 아이콘 이미지 교체-->
+                  <i class="icon_16 check_icon_wrap">                    
+                    <img src="../images/common/w_check_icon_16.svg" alt="">
+                  </i>
+                  <!-- 2022.07.13 아이콘 이미지 교체-->
+                  <i class="icon_16 airplane_icon_wrap">                    
+                    <img src="../images/svg/airplane_icon_16.svg" alt=""> 
+                  </i>
+                </div>
+                <div class="line"> 
+                  <object type="image/svg+xml" data="../images/svg/mo_course_line.svg" class="mo_line add_new_color"></object> 
+                  <object type="image/svg+xml" data="../images/svg/port_course_line.svg" class="po_line add_new_color"></object>
+                  <object type="image/svg+xml" data="../images/svg/land_course_line.svg" class="lan_line add_new_color"></object>  
+                </div>  
+              </li>             
+            </ul>
+          </div>
+        </article>  
+        <!-- 레벨별 코스 -->
+        <article class="course_wrap level_17" data-clevel=17>
+          <div class="course_header course_part ">
+            <div class="inner_wrap course_title">
+              <div class="title_inner">
+                <!-- 2022.07.04 span sr 삭제 / title - level image, number img -> h3 text -->
+                <span class="level_text">
+                  <figure>
+                    <img src="../images/svg/cl_tie_level_text.svg" alt="level" class="level_text">
+                  </figure>
+                </span>    
+                <h3 class="level_num">17</h3>
+              </div>
+                <div class="line"> 
+                  <object type="image/svg+xml" data="../images/svg/mo_course_line.svg" class="mo_line add_new_color"></object>   
+                  <object type="image/svg+xml" data="../images/svg/port_course_line.svg" class="po_line add_new_color"></object>
+                  <object type="image/svg+xml" data="../images/svg/land_course_line.svg" class="lan_line add_new_color"></object>               
+                </div>  
+            </div>								
+          </div>
+          <div class="course_list">
+            <ul>
+              <!-- 2022.08.24 아직 학습 전 소주제(course_list_item)에  course_preview 클래스 추가-->
+              <li class="course_list_item course_part course_preview">
+                <div class="inner_wrap">
+                  <a href="javascript:void(0)"  class="audio_btn" data-audio="cl_click">
+                    <div class="course_list_title">                 
+                      <h4>One-digit Addition (1)</h4>
+                    </div>
+                    <div class="question_img">
+                      <figure><img src="https://dummyimage.com/181x80/dbdbdb/333333" alt=""></figure>
+                    </div>                                     
+                  </a>  
+                   <!-- 2022.07.13 코스 상태 a tag 밖으로, work_sheet 다운로드 버튼 추가 -->
+                  <div class="course_state_wrap">
+                    <div class="state_inner">
+                      <!-- 2022.06.24 잠김 아이콘  
+                      course_part가 course_preview클래스를 가지면 작은 아이콘 없으면 큰아이콘 css-->
+                      <div class="course_lock">
+                        <i class="icon_24">
+                          <object type="image/svg+xml" data="../images/svg/lock_icon.svg" class="add_new_color"></object>                            
+                        </i>
+                      </div>
+                      <!-- 2022.07.13 work_sheet-->
+                      <a href="javascript:void(0);" class="work_sheet">
+                        <i class="icon_24">
+                          <object type="image/svg+xml" data="../images/common/c_worksheet_icon_24.svg" class="add_new_color"></object>    
+                        </i>
+                      </a>
+                      <!-- 2022.06.24 다시 시작 아이콘 -->
+                      <div class="state_learn_retry">
+                        <i class="icon_24">
+                          <img src="../images/common/retry_24.svg" alt="">
+                        </i>
+                      </div>
+                      <!-- 2022.06.24 학습 시작 -->
+                      <div class="learn_start">
+                        <span>Start Learning</span><!--change text - Start Learning, Continue-->
+                        <i class="icon_16">
+                          <img src="../images/common/black_arrow_16.svg" alt="">                            
+                        </i>
+                      </div> 
+                        <!-- 2022.06.24 학습 완료 후 능숙, 기본이하 class로 표시-->
+                      <!-- 2022.08.31 retry삭제 화살표 icon 추가 state_review->복습  -->
+                      <div class="complete_state state_review"><!-- state_proficient  state_below_basic state_basic state_advanced state_review-->
+                        <div class="complete_state_text">Proficient</div>
+                        <i class="icon_16">
+                          <!-- 2022.08.31 img->object-->                           
+                          <object data="../images/common/black_arrow_16.svg" type=""></object>     
+                        </i>                         
+                      </div>     
+                    </div>
+                  </div>                    
+                </div>
+                <div class="course_state_icon">
+                  <!-- 2022.07.13 아이콘 이미지 교체-->
+                  <i class="icon_16 check_icon_wrap">                    
+                    <img src="../images/common/w_check_icon_16.svg" alt="">
+                  </i>
+                  <!-- 2022.07.13 아이콘 이미지 교체-->
+                  <i class="icon_16 airplane_icon_wrap">                    
+                    <img src="../images/svg/airplane_icon_16.svg" alt="">                    
+                  </i>
+                </div>
+                <div class="line"> 
+                  <object type="image/svg+xml" data="../images/svg/mo_course_line.svg" class="mo_line add_new_color"></object>    
+                  <object type="image/svg+xml" data="../images/svg/port_course_line.svg" class="po_line add_new_color"></object>
+                  <object type="image/svg+xml" data="../images/svg/land_course_line.svg" class="lan_line add_new_color"></object>        
+                </div>  
+              </li>
+              <!-- 2022.08.24 아직 학습 전 소주제(course_list_item)에  course_preview 클래스 추가-->
+              <li class="course_list_item course_part course_preview">
+                <div class="inner_wrap">
+                  <a href="javascript:void(0)" class="audio_btn" data-audio="cl_click">
+                    <div class="course_list_title">                 
+                      <h4>Divide 2-digit numbers by 1-digit numbers(1)</h4>
+                    </div>
+                    <div class="question_img">
+                      <figure><img src="https://dummyimage.com/181x80/dbdbdb/333333" alt=""></figure>
+                    </div>                                         
+                  </a> 
+                  <!-- 2022.07.13 코스 상태 a tag 밖으로, work_sheet 다운로드 버튼 추가 -->
+                  <div class="course_state_wrap">
+                    <div class="state_inner">
+                      <!-- 2022.06.24 잠김 아이콘  
+                      course_part가 course_preview클래스를 가지면 작은 아이콘 없으면 큰아이콘 css-->
+                      <div class="course_lock">
+                        <i class="icon_24">
+                          <object type="image/svg+xml" data="../images/svg/lock_icon.svg" class="add_new_color"></object>                            
+                        </i>
+                      </div>
+                      <!-- 2022.07.13 work_sheet-->
+                      <a href="javascript:void(0);" class="work_sheet">
+                        <i class="icon_24">
+                          <object type="image/svg+xml" data="../images/common/c_worksheet_icon_24.svg" class="add_new_color"></object>    
+                        </i>
+                      </a>
+                      <!-- 2022.06.24 다시 시작 아이콘 -->
+                      <div class="state_learn_retry">
+                        <i class="icon_24">
+                          <img src="../images/common/retry_24.svg" alt="">
+                        </i>
+                      </div>
+                      <!-- 2022.06.24 학습 시작 -->
+                      <div class="learn_start">
+                        <span>Start Learning</span><!--change text - Start Learning, Continue-->
+                        <i class="icon_16">
+                          <img src="../images/common/black_arrow_16.svg" alt="">                            
+                        </i>
+                      </div> 
+                      <!-- 2022.06.24 학습 완료 후 능숙, 기본이하 class로 표시-->
+                      <!-- 2022.08.31 retry삭제 화살표 icon 추가 state_review->복습  -->
+                      <div class="complete_state state_review"><!-- state_proficient  state_below_basic state_basic state_advanced state_review-->
+                        <div class="complete_state_text">Proficient</div>
+                        <i class="icon_16">
+                          <!-- 2022.08.31 img->object-->                           
+                          <object data="../images/common/black_arrow_16.svg" type=""></object>                     
+                        </i>                         
+                      </div>     
+                    </div>
+                  </div>                  
+                </div>
+                <div class="course_state_icon">
+                  <!-- 2022.07.13 아이콘 이미지 교체-->
+                  <i class="icon_16 check_icon_wrap">                    
+                    <img src="../images/common/w_check_icon_16.svg" alt="">
+                  </i>
+                  <!-- 2022.07.13 아이콘 이미지 교체-->
+                  <i class="icon_16 airplane_icon_wrap">                    
+                    <img src="../images/svg/airplane_icon_16.svg" alt=""> 
+                  </i>
+                </div>
+                <div class="line"> 
+                  <object type="image/svg+xml" data="../images/svg/mo_course_line.svg" class="mo_line add_new_color"></object> 
+                  <object type="image/svg+xml" data="../images/svg/port_course_line.svg" class="po_line add_new_color"></object>
+                  <object type="image/svg+xml" data="../images/svg/land_course_line.svg" class="lan_line add_new_color"></object>           
+                </div>  
+              </li>
+            </ul>
+          </div>
+        </article> 
+        <!-- 레벨별 코스 -->
+        <article class="course_wrap level_64" data-clevel=64>
+          <div class="course_header course_part">
+            <div class="inner_wrap course_title">
+              <div class="title_inner">                          
+               <!-- 2022.07.04 span sr 삭제 / title - level image, number img -> h3 text -->
+               <span class="level_text">
+                  <figure>
+                    <img src="../images/svg/cl_tie_level_text.svg" alt="level" class="level_text">
+                  </figure>
+                </span>    
+                <h3 class="level_num">64</h3>
+              </div>
+              <div class="line"> 
+                <object type="image/svg+xml" data="../images/svg/mo_course_line.svg" class="mo_line add_new_color"></object>  
+                <object type="image/svg+xml" data="../images/svg/port_course_line.svg" class="po_line add_new_color"></object>
+                <object type="image/svg+xml" data="../images/svg/land_course_line.svg" class="lan_line add_new_color"></object>             
+              </div>  
+            </div>								
+          </div>
+          <div class="course_list">
+            <ul>
+              <!-- 2022.08.24 아직 학습 전 소주제(course_list_item)에  course_preview 클래스 추가-->
+              <li class="course_list_item course_part course_preview">
+                <div class="inner_wrap">
+                  <a href="javascript:void(0)" class="audio_btn" data-audio="cl_click">
+                    <div class="course_list_title">         
+                      <h4>Divide 2-digit numbers by 1-digit numbers(1)</h4>
+                    </div>
+                    <div class="question_img">
+                      <figure><img src="https://dummyimage.com/181x80/dbdbdb/333333" alt=""></figure>
+                    </div>                                        
+                  </a>  
+                  <!-- 2022.07.13 코스 상태 a tag 밖으로, work_sheet 다운로드 버튼 추가 -->
+                  <div class="course_state_wrap">
+                    <div class="state_inner">
+                      <!-- 2022.06.24 잠김 아이콘  
+                      course_part가 course_preview클래스를 가지면 작은 아이콘 없으면 큰아이콘 css-->
+                      <div class="course_lock">
+                        <i class="icon_24">
+                          <object type="image/svg+xml" data="../images/svg/lock_icon.svg" class="add_new_color"></object>                            
+                        </i>
+                      </div>
+                      <!-- 2022.07.13 work_sheet-->
+                      <a href="javascript:void(0);" class="work_sheet">
+                        <i class="icon_24">
+                          <object type="image/svg+xml" data="../images/common/c_worksheet_icon_24.svg" class="add_new_color"></object>    
+                        </i>
+                      </a>
+                      <!-- 2022.06.24 다시 시작 아이콘 -->
+                      <div class="state_learn_retry">
+                        <i class="icon_24">
+                          <img src="../images/common/retry_24.svg" alt="">
+                        </i>
+                      </div>
+                      <!-- 2022.06.24 학습 시작 -->
+                      <div class="learn_start">
+                        <span>Start Learning</span><!--change text - Start Learning, Continue-->
+                        <i class="icon_16">
+                          <img src="../images/common/black_arrow_16.svg" alt="">                            
+                        </i>
+                      </div> 
+                      <!-- 2022.06.24 학습 완료 후 능숙, 기본이하 class로 표시-->
+                      <!-- 2022.08.31 retry삭제 화살표 icon 추가 state_review->복습  -->
+                      <div class="complete_state state_review"><!-- state_proficient  state_below_basic state_basic state_advanced state_review-->
+                        <div class="complete_state_text">Proficient</div>
+                        <i class="icon_16">
+                          <!-- 2022.08.31 img->object-->                           
+                          <object data="../images/common/black_arrow_16.svg" type=""></object>     
+                        </i>                         
+                      </div>     
+                    </div>
+                  </div>                 
+                </div>
+                <div class="course_state_icon">
+                  <!-- 2022.07.13 아이콘 이미지 교체-->
+                  <i class="icon_16 check_icon_wrap">                    
+                    <img src="../images/common/w_check_icon_16.svg" alt="">
+                  </i>
+                  <!-- 2022.07.13 아이콘 이미지 교체-->
+                  <i class="icon_16 airplane_icon_wrap">                    
+                    <img src="../images/svg/airplane_icon_16.svg" alt=""> 
+                  </i>
+                </div>
+                <div class="line"> 
+                  <object type="image/svg+xml" data="../images/svg/mo_course_line.svg" class="mo_line add_new_color"></object>
+                  <object type="image/svg+xml" data="../images/svg/port_course_line.svg" class="po_line add_new_color"></object>
+                  <object type="image/svg+xml" data="../images/svg/land_course_line.svg" class="lan_line add_new_color"></object>                
+                </div>  
+              </li>
+              <!-- 2022.08.24 아직 학습 전 소주제(course_list_item)에  course_preview 클래스 추가-->
+              <li class="course_list_item course_part course_preview">
+                <div class="inner_wrap">
+                  <a href="javascript:void(0)" class="audio_btn" data-audio="cl_click">
+                    <div class="course_list_title">               
+                      <h4>Divide 2-digit numbers by 1-digit numbers(1)</h4>
+                    </div>
+                    <div class="question_img">
+                      <figure><img src="https://dummyimage.com/181x80/dbdbdb/333333" alt=""></figure>
+                    </div>                                    
+                  </a> 
+                  <!-- 2022.07.13 코스 상태 a tag 밖으로, work_sheet 다운로드 버튼 추가 -->
+                  <div class="course_state_wrap">
+                    <div class="state_inner">
+                        <!-- 2022.06.24 잠김 아이콘  
+                      course_part가 course_preview클래스를 가지면 작은 아이콘 없으면 큰아이콘 css-->
+                      <div class="course_lock">
+                        <i class="icon_24">
+                          <object type="image/svg+xml" data="../images/svg/lock_icon.svg" class="add_new_color"></object>                            
+                        </i>
+                      </div>
+                      <!-- 2022.07.13 work_sheet-->
+                      <a href="javascript:void(0);" class="work_sheet">
+                        <i class="icon_24">
+                          <object type="image/svg+xml" data="../images/common/c_worksheet_icon_24.svg" class="add_new_color"></object>    
+                        </i>
+                      </a>
+                      <!-- 2022.06.24 다시 시작 아이콘 -->
+                      <div class="state_learn_retry">
+                        <i class="icon_24">
+                          <img src="../images/common/retry_24.svg" alt="">
+                        </i>
+                      </div>
+                      <!-- 2022.06.24 학습 시작 -->
+                      <div class="learn_start ">
+                        <span>Start Learning</span><!--change text - Start Learning, Continue-->
+                        <i class="icon_16">
+                          <img src="../images/common/black_arrow_16.svg" alt="">                            
+                        </i>
+                      </div> 
+                      <!-- 2022.06.24 학습 완료 후 능숙, 기본이하 class로 표시-->
+                      <!-- 2022.08.31 retry삭제 화살표 icon 추가 state_review->복습  -->
+                      <div class="complete_state state_review"><!-- state_proficient  state_below_basic state_basic state_advanced state_review-->
+                        <div class="complete_state_text">Proficient</div>
+                        <i class="icon_16">
+                          <!-- 2022.08.31 img->object-->                           
+                          <object data="../images/common/black_arrow_16.svg" type=""></object>     
+                        </i>                         
+                      </div>    
+                    </div>
+                  </div>                      
+                </div>
+                <div class="course_state_icon">
+                  <!-- 2022.07.13 아이콘 이미지 교체-->
+                  <i class="icon_16 check_icon_wrap">                    
+                    <img src="../images/common/w_check_icon_16.svg" alt="">
+                  </i>
+                  <!-- 2022.07.13 아이콘 이미지 교체-->
+                  <i class="icon_16 airplane_icon_wrap">                    
+                    <img src="../images/svg/airplane_icon_16.svg" alt="">               
+                  </i>
+                </div>
+                <div class="line"> 
+                  <object type="image/svg+xml" data="../images/svg/mo_course_line.svg" class="mo_line add_new_color"></object>
+                  <object type="image/svg+xml" data="../images/svg/port_course_line.svg" class="po_line add_new_color"></object>
+                  <object type="image/svg+xml" data="../images/svg/land_course_line.svg" class="lan_line add_new_color"></object>                
+                </div>  
+              </li>               
+            </ul>
+          </div>
+        </article>
+
+        <!-- 2022.06.24 코스 커밍 추가 -->
+        <article class="course_coming">          
+          <div class="course_list">
+            <ul>
+              <li class="course_list_item">
+                <div class="inner_wrap">
+                  <a href="javascript:void(0)" class="audio_btn" data-audio="cl_click">
+                    <div class="course_list_title">                       
+                      <h4>Coming Soon</h4>
+                      <p>We are currently <br>preparing additional <br>daily courses.</p>
+                    </div>                           
+                    <div class="course_state_wrap">
+                      <div class="state_inner">  
+                        <div class="course_back_home">
+                          <span>Back to Home</span>
+                          <i class="icon_16">
+                            <img src="../images/common/white_arrow_16.svg" alt="">                            
+                          </i>
+                        </div> 
+                      </div>
+                    </div>                  
+                  </a>                  
+                </div>                              
+              </li>             
+            </ul>
+          </div>
+        </article>  
+        
+        <!-- back currnt learn -->
+         <!-- 2022.06.24 현재 학습 코스로 돌아가기 버튼-->
+        <div class="back_currnt_learn">
+          <button>
+            <i class="icon_24">
+              <img src="../images/common/backto_icon_24.svg" alt="">
+            </i>
+            <span>Back to my progress</span>
+          </button>
+        </div>         
+      </div>
+    </section>
+
+    <!--main-->
+     <!-- 2022.06.24 이디케이터 -->
+    <div class="course_indicator">
+      <div class="course_indicator_inner">  
+        <!-- 2022.06.24 bar 인디케이터 -->
+        <div class="indicator_bar"><span></span></div>
+        <!-- 2022.06.24 dot 인디케이터 -->
+        <div class="scroll_indicator">
+          <div class="scroll_dot">
+        <!-- 2022.06.24 dot 인디케이터 레벨별 정보 -->
+            <div class="scroll_label">
+              <span class="curr_level">1</span>/<span class="total_level"></span>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>    
+  </main>
+<!--container-->
+
+ <!--2022.07.22 tutorial -->
+  <!-- 2022.08.22 튜토 이미지 변경 -->
+  <!-- 2022.08.27 한글 튜토 이미지 변경 -->
+ <section class="tutorial_wrap ko">
+    <div class="tuto_indicator">
+      <button class="tuto_close">
+        <span class="sr">clase totorial</span>
+        <i class="icon_24">
+          <img src="../images/common/w_close_icon_24.svg" alt="">
+        </i>
+      </button>  
+      <div class="tuto_dot"></div>
+    </div>
+     <!-- main tutorial -->
+    <article class="tuto course_tuto">
+      <div class="tuto_slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide tuto_item tuto_01">
+            <div class="img_wrap">
+              <figure>  
+                <img class="mo_tuto_bg" src="../images/tutorial/ko_mo_img_CL_character_tutorial_scene01.webp" alt="">                
+                <img class="po_tuto_bg" src="../images/tutorial/ko_po_img_CL_character_tutorial_scene01.webp" alt="">
+                <img class="la_tuto_bg" src="../images/tutorial/ko_la_img_CL_character_tutorial_scene01.webp" alt=""> 
+              </figure>              
+            </div>  
+            <!-- 2022.08.31 말풍선 추가 -->
+            <div class="tuto_con">
+              <div class="tuto_bubble">
+                <p>안녕! 코스학습은 처음이구나? <br>나와 함께 잠깐 빠르게 둘러보자!</p>
+              </div>             
+            </div>          
+          </div>
+          <div class="swiper-slide tuto_item tuto_02">
+            <div class="img_wrap">
+              <figure>                
+                <img class="mo_tuto_bg" src="../images/tutorial/ko_mo_img_CL_character_tutorial_scene02.webp" alt="">                
+                <img class="po_tuto_bg" src="../images/tutorial/ko_po_img_CL_character_tutorial_scene02.webp" alt="">
+                <img class="la_tuto_bg" src="../images/tutorial/ko_la_img_CL_character_tutorial_scene02.webp" alt=""> 
+              </figure>
+            </div>  
+            <!-- 2022.08.31 말풍선 추가 -->
+            <div class="tuto_con">
+              <div class="tuto_bubble">
+                <p>코스학습은 진단 테스트 <br>결과에 따라 레벨이 설정돼!</p>
+              </div>             
+            </div>          
+          </div>
+          <div class="swiper-slide tuto_item tuto_03">
+            <div class="img_wrap">
+              <figure>                
+                <img class="mo_tuto_bg" src="../images/tutorial/ko_mo_img_CL_character_tutorial_scene03.webp" alt="">                
+                <img class="po_tuto_bg" src="../images/tutorial/ko_po_img_CL_character_tutorial_scene03.webp" alt="">
+                <img class="la_tuto_bg" src="../images/tutorial/ko_la_img_CL_character_tutorial_scene03.webp" alt=""> 
+              </figure>
+            </div>   
+            <!-- 2022.08.31 말풍선 추가 -->
+            <div class="tuto_con">
+              <div class="tuto_bubble">
+                <p>그리고 아래에는 레벨에 맞는 학습 목록이 차례대로 있어!</p>
+              </div>             
+            </div>         
+          </div>      
+          <div class="swiper-slide tuto_item tuto_04">
+            <div class="img_wrap">
+              <figure>           
+                <img class="mo_tuto_bg" src="../images/tutorial/ko_mo_img_CL_character_tutorial_scene04.webp" alt="">                
+                <img class="po_tuto_bg" src="../images/tutorial/ko_po_img_CL_character_tutorial_scene04.webp" alt="">
+                <img class="la_tuto_bg" src="../images/tutorial/ko_la_img_CL_character_tutorial_scene04.webp" alt=""> 
+              </figure>
+            </div>   
+            <!-- 2022.08.31 말풍선 추가 -->
+            <div class="tuto_con">
+              <div class="tuto_bubble">
+                <p>학습을 마치면 학습 결과가 <br>나오고 복습도 할 수 있어.</p>
+              </div>             
+            </div>         
+          </div>        
+          <div class="swiper-slide tuto_item tuto_05">
+            <div class="img_wrap">
+              <figure>                
+                <img class="mo_tuto_bg" src="../images/tutorial/ko_mo_img_CL_character_tutorial_scene05.webp" alt="">                
+                <img class="po_tuto_bg" src="../images/tutorial/ko_po_img_CL_character_tutorial_scene05.webp" alt="">
+                <img class="la_tuto_bg" src="../images/tutorial/ko_la_img_CL_character_tutorial_scene05.webp" alt=""> 
+              </figure>
+            </div> 
+            <!-- 2022.08.31 말풍선 추가 -->  
+            <div class="tuto_con">
+              <div class="tuto_bubble">
+                <p>오른쪽 막대는 학습 진행 상황을 <br>나타내고, 점은 현재 나의 스크롤된 위치를 보여줘!</p>
+              </div>             
+            </div>         
+          </div>
+          <div class="swiper-slide tuto_item tuto_06">
+            <div class="img_wrap">
+              <figure>                
+                <img class="mo_tuto_bg" src="../images/tutorial/ko_mo_img_CL_character_tutorial_scene06.webp" alt="">                
+                <img class="po_tuto_bg" src="../images/tutorial/ko_po_img_CL_character_tutorial_scene06.webp" alt="">
+                <img class="la_tuto_bg" src="../images/tutorial/ko_la_img_CL_character_tutorial_scene06.webp" alt=""> 
+              </figure>
+            </div>   
+            <!-- 2022.08.31 말풍선 추가 -->
+            <div class="tuto_con">
+              <div class="tuto_bubble">
+                <p>그럼 첫 번째 코스를 시작해 <br>볼까? 시작버튼을 눌러봐!</p>
+              </div>             
+            </div>         
+          </div>         
+        </div>
+      </div>
+    </article>
+    <article class="bottom_zero_btn_wrap tuto_btn">    
+      <button class="bottom_zero_btn active"><span>시작!</span></button>
+    </article>       
+  </section>  
+
+
+
+  <!--2022.09.02 fullscreen btn test 삭제 -->
+  <!-- 2022.06.24  다음 학습 테스트-->
+  <button class="next_course">다음 학습</button>
+
+
+
+
+  <script type="text/javascript" src="../js/vendor/gsap.min.js"></script>
+  <script type="text/javascript" src="../js/vendor/ScrollToPlugin.min.js"></script>
+  <script type="text/javascript" src="../js/vendor/swiper.min.js"></script>	
+  <!--test fullscren-->
+  <script type="text/javascript" src="../js/vendor/screenfull.js"></script>  	
+  <script type="text/javascript" src="../js/main.js"></script>
+
+
+  <script>
+    // course_part 홀짝 구분 
+    const list_wrap = document.querySelectorAll(".course_part");    
+    list_wrap.forEach((item, index) =>{		
+      (index+1) % 2 === 0 ? item.classList.add("even") : item.classList.add("odd");
+
+      index === 0 ? item.classList.add("first_item") : "";		
+      index+1 ===  list_wrap.length ? item.classList.add("last_item") : "";		
+    });
+  </script>
+
+
+  </body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>mathpid</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <!--<meta name="theme-color" content="#C70026"> -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="description" content="">
+  <link rel="canonical" href="">
+  <meta name="robots" content="index,follow">
+  
+  <link rel="stylesheet" type="text/css" href="../css/vendor/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+  <!-- 2022.09.19 불필요 css 삭제 -->
+  <link rel="stylesheet" type="text/css" href="../css/dt.css"/>
+<!-- test 샥제 -->
+  
+</head>
+<body class="sub_page dt ai_diag ">
+
+<!--2022.09.02 mode btn test 삭제 -->
+
+  <header>
+    <div class="header_wrap">		
+      <div class="header_inner">
+        <div class="sub_title">
+          <a href="..">
+            <!-- 2022.09.07 back text 추가 -->
+            <span class="sr">back</span>
+            <i class="icon_24">        
+              <img src="../images/common/close_icon_24.svg" aria-hidden="true" alt="닫기">           
+            </i>
+          </a> 
+          <!-- 2022.09.07 title a tag 밖으로 -->
+          <div class="text_wrap">
+            <h2>AI Diagnostic Test</h2>
+          </div>
+        </div>
+      </div>      
+    </div>    
+  </header>
+
+  <main class="container ai_diag_main">
+    <audio preload="auto" class="audio_wrap"><source class="audio_source" src/></audio>  
+    <section class="main_contents">         
+      <div class="wrap">      
+        <!-- 슬라이더 -->
+        <article class="ai_diag_slider_wrap">    
+          <div class="ai_diag_dot">
+          </div>           
+          <div class="ai_diag_slider">
+            <div class="swiper-wrapper">             
+              <div class="ai_diag_intro slider_item swiper-slide">               
+                <div class="slider_content">
+                  <div class="img_wrap">
+                    <figure>
+                      <img class="mo_img" src="../images/dt/mo_img_DT_Start.webp" alt="">
+                      <img class="ta_img" src="../images/dt/ta_img_DT_Start.webp" alt="">
+                    </figure>
+                  </div>
+                  <div class="text_wrap">        
+                    <h3>Hello!</h3>                          
+                    <p class="">The AI diagnostic test provides a <br>customized curriculum <br>by accurately <br>identifying the starting point of learning by <br>solving only 5 to 15 questions.</p>  
+                  </div>
+                </div>              
+              </div>
+              <div class="ai_diag_notice slider_item swiper-slide">               
+                <div class="slider_content">            
+                  <span class="notice_title">Notice</span>       
+                  <div class="diag_notic_box_wrap">
+                    <div class="ai_diag_notic_box box1">
+                      <div class="img_wrap">
+                        <div class="ch">
+                          <figure>
+                            <img src="../images/character/pidy_DT_notice01.webp" alt="">
+                          </figure>
+                        </div>
+                        <div class="blue_bubble">
+                          <i class="icon_48">
+                            <img src="../images/dt/icon_all_s_48_restart_bold_white.svg" alt="">  
+                          </i>
+                        </div>
+                      </div>
+                      <div class="text_wrap">                                  
+                        <p class="">If you stop during the test <br>Or do not <br>complete it to the end, <br>You will start over.</p>
+                      </div>
+                    </div>
+                    <div class="ai_diag_notic_box box2">
+                      <div class="img_wrap">
+                        <div class="ch">
+                          <figure>
+                            <img src="../images/character/pidy_DT_notice02.webp" alt="">
+                          </figure>
+                        </div>
+                        <div class="blue_bubble">
+                          <i class="icon_48">
+                            <img src="../images/dt/icon_all_s_48_quite_bold_white.svg" alt="">  
+                          </i>
+                        </div>
+                      </div>
+                      <div class="text_wrap">                                  
+                        <p class="">Please proceed calmly in a quiet <br>Place for an accurate diagnosis.</p> 
+                      </div>
+                    </div>
+                  </div>
+                </div>              
+              </div>
+              <div class="ai_diag_select_level slider_item swiper-slide">               
+                <div class="slider_content">            
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0)" data-ai_diag_level="a" class="select_level_btn">
+                        <div class="diag_sele_header">
+                          <span class="select_level">A</span>
+                          <i>                            
+                            <object data="../images/dt/img_DT_level01_off.svg" type=""></object>
+                          </i>
+                        </div>
+                        <div class="text_wrap">
+                          <p>I know the numbers from 1 to 10.</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" data-ai_diag_level="b" class="select_level_btn">
+                        <div class="diag_sele_header">
+                          <span class="select_level">B</span>
+                          <i>
+                          <object data="../images/dt/img_DT_level02_off.svg" type=""></object>
+                          </i>
+                        </div>
+                        <div class="text_wrap">
+                          <p>I can do addition and subtraction.</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" data-ai_diag_level="c" class="select_level_btn">
+                        <div class="diag_sele_header">
+                          <span class="select_level">C</span>
+                          <i>
+                            <object data="../images/dt/img_DT_level03_off.svg" type=""></object>
+                          </i>
+                        </div>
+                        <div class="text_wrap">
+                          <p>I can do multiplication and division.</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" data-ai_diag_level="d" class="select_level_btn">
+                        <div class="diag_sele_header">
+                          <span class="select_level">D</span>
+                          <i>
+                            <object data="../images/dt/img_DT_level04_off.svg" type=""></object>
+                          </i>
+                        </div>
+                        <div class="text_wrap">
+                          <p>I can do fractions and decimals.</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>                 
+                </div>              
+              </div>
+              <div class="ai_diag_guide slider_item swiper-slide">               
+                <div class="slider_content">            
+                  <span class="diag_guide_title">Number of problems <br>and time suggested by AI</span>       
+                  <div class="diag_guide_info">
+                    <div class="info_box">
+                      <i class="icon_40">
+                        <object data="../images/dt/icon_all_s_40_predict_solid.svg" type="" class="add_new_color"></object>
+                      </i>
+                      <div class="text_wrap">
+                        <p>Number of <br>Problems</p>
+                        <span>10</span>
+                      </div>
+                    </div>
+                    <div class="info_box">
+                      <i class="icon_40">
+                        <object data="../images/dt/icon_all_s_40_time_solid.svg" type="" class="add_new_color"></object>
+                      </i>
+                      <div class="text_wrap">
+                        <p>Time</p>
+                        <span>about 5 min</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="diag_guide_desc">
+                    <p>Do you want to start <br>the Diagnostic Test?</p>
+                  </div>
+                </div>              
+              </div>
+          </div>          
+        </article>
+        <!-- 하단버튼 -->
+        <article class="bottom_btn_wrap">         
+          <div class="btn_wrap">           
+            <button class="bottom_btn ad_diag_prev"><span>Previous</span></button>
+            <button class="bottom_btn ad_diag_next active"><span>Next</span></button>
+            <a href=".." class="bottom_btn ad_diag_start"><span>Start</span></a>
+          </div>
+        </article>       
+      </div>
+    </section>
+    <!--main-->  
+  </main>
+  </div>
+<!--container-->
+
+<!--2022.09.02 fullscreen btn test 삭제 -->
+  <script type="text/javascript" src="../js/vendor/gsap.min.js"></script>
+  <script type="text/javascript" src="../js/vendor/ScrollToPlugin.min.js"></script>
+  <script type="text/javascript" src="../js/vendor/swiper.min.js"></script>	
+  <script type="text/javascript" src="../js/vendor/screenfull.js"></script>	
+  <script type="text/javascript" src="../js/main.js"></script>
+  <script type="text/javascript" src="../js/dt.js"></script>
+  </body>
+</html>
