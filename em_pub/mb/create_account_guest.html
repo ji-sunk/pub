@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>mathpid</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <!--<meta name="theme-color" content="#C70026"> -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="description" content="">
+  <link rel="canonical" href="">
+  <meta name="robots" content="index,follow">
+  
+  <link rel="stylesheet" type="text/css" href="../css/vendor/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+  <!-- 2022.09.19 불필요 css 삭제 -->
+  <link rel="stylesheet" type="text/css" href="../css/mb.css"/>
+
+</head>
+<body class="sub_page mb login create_acc mb_guest">
+<!-- 2022.09.07 test mode btn 삭제 -->  
+  <header class=""> 
+    <div class="header_wrap">		
+      <div class="header_inner">
+        <div class="sub_title">
+          <a href="..">
+            <!-- 2022.09.07 back text 추가 -->
+            <span class="sr">back</span>
+            <i class="icon_24">        
+              <img src="../images/common/black_arrow_24.svg" aria-hidden="true" alt="화살표">           
+            </i> 
+          </a> 
+          <!-- 2022.09.07 title a tag 밖으로 -->    
+          <div class="text_wrap">
+            <h2>Create Account</h2>
+          </div>       
+        </div>       
+      </div>
+    </div>
+  </header>
+  <!--  -->
+  <main class="container create_acc_main">
+    <audio preload="auto" class="audio_wrap"><source class="audio_source" src/></audio>  
+    <section class="main_contents">         
+      <div class="wrap"> 
+        <!-- 로고 -->
+        <article class="create_acc_logo">            
+          <div class="img_wrap">
+            <figure>
+              <!-- 2022.08.26 이미지 변경 -->
+              <img src="../images/common/logo_275x43.svg">
+            </figure>
+          </div>
+        </article>
+
+        <!-- form -->
+        <article class="create_acc_form form_wrap">
+          <form class="create_acc_wrap">    
+            <div class="create_acc_inner">
+              <!-- 이메일 -->
+              <div class="email_wrap input_out">    
+                <div class="focus_bubble bubble_desc">
+                  <p>Used to retrieve passwords.  <br>Please enter a valid email address.</p>
+                </div>
+                <div class="input_wrap">
+                  <label for="uname" class="sr"><b>e-mail</b></label>
+                  <input type="email" placeholder="E-mail" name="uname" class="fc" required>          
+                </div>           
+                <div class="input_message email_message">
+                  <i class="icon_16">
+                    <img src="../images/common/error_red_16.svg" alt="">
+                  </i>
+                  <span>Invalid email format.  E.g.)abc@mathpid.com</span>
+                </div>                
+              </div>
+              <!-- 패스워드 -->
+              <div class="pass_wrap input_out">
+                <div class="input_wrap">
+                  <label for="psw" class="sr"><b>Password</b></label>
+                  <input type="password" placeholder="" name="psw" class="input_pass" id="password" maxlength="20" required>
+                  <span class="new_placeholder">Password <small>(more than 6 characters)</small> </span>    
+                  <i class="icon_32 pass_icon" >
+                    <img src="../images/common/pass_hide_32.svg" alt="" class="pass_h_icon">
+                    <img src="../images/common/pass_view_32.svg" alt="" class="pass_s_icon">      
+                  </i>           
+                </div>
+                <div class="input_message pass_message">
+                  <i class="icon_16">
+                    <img src="../images/common/error_red_16.svg" alt="">
+                  </i>
+                  <span>Please enter a password of at least 6 characters.</span>
+                </div>
+              </div>             
+            </div>
+            <!-- 동의 -->
+            <div class="agree_wrap">
+              <div class="full_agree">
+                <div class="check_box_wrap">
+                  <input type="checkbox" name="" id="all_agree" value="">
+                  <label for="all_agree"><span>Full agreement of terms and conditions</span></label>
+                </div>           
+              </div>    
+              <ul class="select_agree">
+                <li>
+                  <div class="check_box_wrap">
+                    <input type="checkbox" name="" id="agre_terms" value="">
+                    <label for="agre_terms">
+                      <span>Accept the terms of use <small>(required)</small></span>  
+                    </label>                      
+                  </div>
+                  <a href="javascript:void(0)">                     
+                    <i class="icon_12">
+                      <img src="../images/common/gray_arrow_12.svg" alt="">
+                    </i>      
+                  </a>
+                </li>
+                <li>
+                  <div class="check_box_wrap">
+                    <input type="checkbox" name="" id="agree_information" value="">
+                    <label for="agree_information">
+                      <span>Consent of collection and use of personal information <small>(required)</small></span>
+                    </label>
+                  </div>
+                  <a href="javascript:void(0)">                     
+                    <i class="icon_12">
+                      <img src="../images/common/gray_arrow_12.svg" alt="">
+                    </i>        
+                  </a>
+                </li>
+                <li>
+                  <div class="check_box_wrap">
+                    <input type="checkbox" name="" id="agree_marketing" value="">
+                    <label for="agree_marketing">
+                      <span>Consent to receive marketing <small>(optional)</small></span> 
+                    </label>
+                  </div>
+                  <a href="javascript:void(0)">                      
+                    <i class="icon_12">
+                      <img src="../images/common/gray_arrow_12.svg" alt="">
+                    </i>       
+                  </a>
+                </li>
+              </ul>         
+            </div>
+          </form>
+        </article>
+      </div>
+    </section>
+    <!--main-->  
+    <!-- 하단버튼 -->
+    <article class="bottom_zero_btn_wrap">
+      <button type="submit" class="bottom_zero_btn">
+        <span>Complete Registration</span>
+      </button>         
+    </article>
+  </main>
+<!--container-->
+
+<!-- 2022.09.07 test fullscreen btn 삭제 -->
+  <script type="text/javascript" src="../js/vendor/gsap.min.js"></script>
+  <script type="text/javascript" src="../js/vendor/ScrollToPlugin.min.js"></script>
+  <script type="text/javascript" src="../js/vendor/swiper.min.js"></script>	
+  <script type="text/javascript" src="../js/main.js"></script>
+  <script type="text/javascript" src="../js/qz.js"></script>
+  <script type="text/javascript" src="../js/ocr.js"></script>
+  <script type="text/javascript" src="../js/ob.js"></script>
+  <script type="text/javascript" src="../js/mb.js"></script>
+  </body>
+</html>

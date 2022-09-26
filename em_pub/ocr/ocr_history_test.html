@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>mathpid</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <!--<meta name="theme-color" content="#C70026"> -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="description" content="">
+  <link rel="canonical" href="">
+  <meta name="robots" content="index,follow">
+  
+  <link rel="stylesheet" type="text/css" href="../css/vendor/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+  <!-- 2022.09.19 불필요 css 삭제 -->
+  <link rel="stylesheet" type="text/css" href="../css/ocr.css"/>
+<!-- test 샥제바람 -->
+  <style> 
+    /*2022.07.12 test */
+    @media (min-width:1024px) and (orientation:landscape) {
+      .ocr_history .history_block .history_list_wrap  .history_list{display:flex!important; flex-direction:column; flex-wrap:wrap; height:340px; gap:20px 30px;}
+      .ocr_history .history_block .history_list .history_item {margin-top: 0px;}
+    }
+  </style>
+<!--  -->
+</head>
+<body class="sub_page ocr ocr_history junior">
+<!--2022.09.02 mode btn test 삭제 -->
+
+  <!-- header -->
+  <header>
+    <div class="header_wrap">		
+      <div class="header_inner">
+        <div class="sub_title">
+          <a href="..">
+            <!-- 2022.09.07 back text 추가 -->
+            <span class="sr">back</span>
+            <i class="icon_24">        
+              <img src="../images/common/white_arrow_24.svg" aria-hidden="true" alt="화살표">           
+            </i>
+          </a> 
+          <!-- 2022.09.07 title a tag 밖으로 -->  
+          <div class="text_wrap">
+            <h2>Math Camera History</h2>
+          </div>
+        </div>       
+      </div>
+      <div class="history_mode_btn">
+        <button>
+          <i class="icon_24"><img src="../images/common/w_edit_icon_24.svg" alt=""></i>
+          <span>Edit</span>
+        </button>
+      </div>
+    </div>
+  </header>
+<!-- //header -->
+  <main class="container ocr_history_main">
+    <audio preload="auto" class="audio_wrap"><source class="audio_source" src/></audio>  
+    <section class="main_contents">  
+      <div class="wrap select_all_wrap"> 
+        <div class="select_all">
+          <div class="history_item_dot">
+            <input type="checkbox" name="" id="his_item_all" value="">
+            <label for="his_item_all"> <span>Select all</span></label>
+          </div>
+        </div>  
+      </div> 
+      <div class="wrap ho_scroll">        
+        <article class="history_block ho_scroll_item">
+          <div class="history_date">
+            <div class="history_item_dot"></div>
+            <span>2022.04.12</span>
+          </div>
+          <div class="history_list_wrap ho_scroll_item_list">
+ <!--test 2022.07.12 list ul분리 말고 li로만  -->
+            <ul class="history_list">
+              <li class="history_item">
+                <div class="history_item_dot">
+                  <input type="checkbox" name="" id="his_item_041201" value="">
+                  <label for="his_item_041201"></label>
+                </div>
+                <a href="javascript:void(0)" class="history_item_btn">
+                  <div class="history_item_problem">
+                    <figure><img src="https://dummyimage.com/181x80/dbdbd1/333333" alt=""></figure>
+                  </div>
+                  <div class="history_item_problem_photo">
+                    <figure><img src="https://dummyimage.com/70x70/dbdbd1/333333" alt=""></figure>
+                  </div>
+                </a>
+              </li>
+              <li class="history_item">
+                <div class="history_item_dot">
+                  <input type="checkbox" name="" id="his_item_041202" value="">
+                  <label for="his_item_041202"></label>
+                </div>
+                <a href="javascript:void(0)" class="history_item_btn">
+                  <div class="history_item_problem">
+                    <figure><img src="https://dummyimage.com/181x80/dbdb1b/333333" alt=""></figure>
+                  </div>
+                  <div class="history_item_problem_photo">
+                    <figure><img src="https://dummyimage.com/70x70/dbdb1b/333333" alt=""></figure>
+                  </div>
+                </a>
+              </li>
+              <li class="history_item">
+                <div class="history_item_dot">
+                  <input type="checkbox" name="" id="his_item_041203" value="">
+                  <label for="his_item_041203"></label>
+                </div>
+                <a href="javascript:void(0)" class="history_item_btn">
+                  <div class="history_item_problem">
+                    <figure><img src="https://dummyimage.com/181x80/dbd1db/333333" alt=""></figure>
+                  </div>
+                  <div class="history_item_problem_photo">
+                    <figure><img src="https://dummyimage.com/70x70/dbd1db/333333" alt=""></figure>
+                  </div>
+                </a>
+              </li>
+              <li class="history_item item_hidden">
+                <div class="history_item_dot">
+                  <input type="checkbox" name="" id="his_item_041204" value="">
+                  <label for="his_item_041204"></label>
+                </div>
+                <a href="javascript:void(0)" class="history_item_btn">
+                  <div class="history_item_problem">
+                    <figure><img src="https://dummyimage.com/181x80/db1bdb/333333" alt=""></figure>
+                  </div>
+                  <div class="history_item_problem_photo">
+                    <figure><img src="https://dummyimage.com/70x70/dbd1db/333333" alt=""></figure>
+                  </div>
+                </a>
+              </li>
+              <li class="history_item item_hidden">
+                <div class="history_item_dot">
+                  <input type="checkbox" name="" id="his_item_041205" value="">
+                  <label for="his_item_041205"></label>
+                </div>
+                <a href="javascript:void(0)" class="history_item_btn">
+                  <div class="history_item_problem">
+                    <figure><img src="https://dummyimage.com/181x80/d1dbdb/333333" alt=""></figure>
+                  </div>
+                  <div class="history_item_problem_photo">
+                    <figure><img src="https://dummyimage.com/70x70/d1dbdb/333333" alt=""></figure>
+                  </div>
+                </a>
+              </li>
+            </ul>   
+          </div>
+          <div class="btn_wrap">
+            <button>
+              <span>more</span>
+              <i class="icon_12"><object data="../images/common/plus_icon_12.svg" type="" class="add_new_color"></object></i>
+            </button>
+          </div>
+        </article> 
+        <article class="history_block ho_scroll_item">
+          <div class="history_date">
+            <div class="history_item_dot"></div>
+            <span>2022.04.12</span>
+          </div>
+          <div class="history_list_wrap ho_scroll_item_list">
+<!--test 2022.07.12 list ul분리 말고 li로만  -->
+            <ul class="history_list">
+              <li class="history_item">
+                <div class="history_item_dot">
+                  <input type="checkbox" name="" id="his_item_041201" value="">
+                  <label for="his_item_041201"></label>
+                </div>
+                <a href="javascript:void(0)" class="history_item_btn">
+                  <div class="history_item_problem">
+                    <figure><img src="https://dummyimage.com/181x80/dbdbd1/333333" alt=""></figure>
+                  </div>
+                  <div class="history_item_problem_photo">
+                    <figure><img src="https://dummyimage.com/70x70/dbdbd1/333333" alt=""></figure>
+                  </div>
+                </a>
+              </li>
+              <li class="history_item">
+                <div class="history_item_dot">
+                  <input type="checkbox" name="" id="his_item_041202" value="">
+                  <label for="his_item_041202"></label>
+                </div>
+                <a href="javascript:void(0)" class="history_item_btn">
+                  <div class="history_item_problem">
+                    <figure><img src="https://dummyimage.com/181x80/dbdb1b/333333" alt=""></figure>
+                  </div>
+                  <div class="history_item_problem_photo">
+                    <figure><img src="https://dummyimage.com/70x70/dbdb1b/333333" alt=""></figure>
+                  </div>
+                </a>
+              </li>
+              <li class="history_item">
+                <div class="history_item_dot">
+                  <input type="checkbox" name="" id="his_item_041203" value="">
+                  <label for="his_item_041203"></label>
+                </div>
+                <a href="javascript:void(0)" class="history_item_btn">
+                  <div class="history_item_problem">
+                    <figure><img src="https://dummyimage.com/181x80/dbd1db/333333" alt=""></figure>
+                  </div>
+                  <div class="history_item_problem_photo">
+                    <figure><img src="https://dummyimage.com/70x70/dbd1db/333333" alt=""></figure>
+                  </div>
+                </a>
+              </li>
+              <li class="history_item item_hidden">
+                <div class="history_item_dot">
+                  <input type="checkbox" name="" id="his_item_041204" value="">
+                  <label for="his_item_041204"></label>
+                </div>
+                <a href="javascript:void(0)" class="history_item_btn">
+                  <div class="history_item_problem">
+                    <figure><img src="https://dummyimage.com/181x80/db1bdb/333333" alt=""></figure>
+                  </div>
+                  <div class="history_item_problem_photo">
+                    <figure><img src="https://dummyimage.com/70x70/dbd1db/333333" alt=""></figure>
+                  </div>
+                </a>
+              </li>              
+            </ul>   
+          </div>
+          <div class="btn_wrap">
+            <button>
+              <span>more</span>
+              <i class="icon_12"><object data="../images/common/plus_icon_12.svg" type="" class="add_new_color"></object></i>
+            </button>
+          </div>
+        </article>
+               
+      </div>
+      <div class="history_confirm">
+        <button>
+        <span>Confirm</span>
+          <i class="icon_16">
+            <img src="../images/common/white_arrow_16.svg" alt="">
+          </i>          
+        </button>
+      </div>
+    </section>
+    <!--main-->  
+  </main>
+<!--container-->
+
+<!--2022.09.02 fullscreen btn test 삭제 -->
+  <script type="text/javascript" src="../js/vendor/gsap.min.js"></script>
+  <script type="text/javascript" src="../js/vendor/ScrollToPlugin.min.js"></script>
+  <script type="text/javascript" src="../js/vendor/swiper.min.js"></script>	
+  <script type="text/javascript" src="../js/vendor/screenfull.js"></script>	
+  <script type="text/javascript" src="../js/main.js"></script>
+  <script type="text/javascript" src="../js/ocr.js"></script>
+
+
+  <script>
+
+  /**
+   * @param {margin} 리스트 사이값
+  */     
+  function flex_list_width(margin){
+    const ho_scroll_item = document.querySelectorAll(".ho_scroll_item"); //각 날짜별 
+    const w_width = window.innerWidth;
+    if(!ho_scroll_item) return;
+    
+    ho_scroll_item.forEach(item => {  
+      const list_wrap = item.querySelector(".ho_scroll_item_list"); //날짜별 리스트
+      const history_mode_btn = item.querySelector(".btn_wrap button"); 
+
+      if(w_width < 1024){
+        list_wrap.style.width = "auto";
+      }else{
+        if(list_wrap.classList.contains("list_active")){
+          list_width();
+        }
+      }      
+
+      function list_width(e){
+        if(w_width < 1024){
+          list_wrap.style.width = "auto"; 
+          return;
+        }   
+        const list = list_wrap.querySelectorAll("li"); //리스트
+        const card_length = list.length;
+        const card_width = list[0].getBoundingClientRect().width;
+        const counter = Math.ceil(card_length / 3); 
+        const blank =(counter-1) * margin; // 20 - 사이값    
+        const list_width =  (card_width * counter) + blank;
+    
+        list_wrap.style.width = `${list_width}px`;
+      }      
+
+      history_mode_btn.addEventListener("click", e =>{     
+        list_wrap.classList.add("list_active");  //확장된 리스트 wrap    
+        list_width(e);  
+      })    
+    });
+  }
+  
+  flex_list_width(20);//리스트 사이값
+
+  window.addEventListener("resize", function(){
+    flex_list_width(20);
+  }); 
+  </script>
+
+
+
+
+  </body>
+</html>

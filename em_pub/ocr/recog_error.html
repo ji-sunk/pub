@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>mathpid</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <!--<meta name="theme-color" content="#C70026"> -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="description" content="">
+  <link rel="canonical" href="">
+  <meta name="robots" content="index,follow">
+  
+  <link rel="stylesheet" type="text/css" href="../css/vendor/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+  <!-- 2022.09.19 불필요 css 삭제 -->
+  <link rel="stylesheet" type="text/css" href="../css/ocr.css"/>
+  <!-- 2022.09.21 add popup.css -->
+  <link rel="stylesheet" type="text/css" href="../css/popup.css"/>
+  
+</head>
+<body class="sub_page ocr ocr_recog_error junior">
+<!--2022.09.02 mode btn test 삭제 -->
+
+<!-- container -->
+<main class="container">
+
+    <section class="main_contents">     
+      <div class="problem_photo">
+      <figure>
+        <img src="https://dummyimage.com/500x400/dbdbdb/333333" alt="">   
+      </figure>
+    </div>
+    </section>    
+
+    <!--2022.07.18 팝업  -->
+    <div class="message_popup active">
+      <div class="message_content">
+         <!-- 2022.07.18 ocr 인식오류 팝업 오답 -->
+        <article class="message_item basic nomal_desc ocr_error active">
+          <p class="message_title peach">OOPS!</p>
+          <div class="img_wrap">
+            <figure>
+              <img src="../images/interaction/pidy_oc_error.webp" srcset="" alt="팝업 캐릭터1"></figure>         
+          </div>
+          <p class="message_desc">It was not recognized. <br>Please take a picture of the <br>question again.</p>
+        </article>
+      </div>
+    </div>
+    <!-- 하단 버튼 -->
+    <article class="bottom_zero_btn_wrap">
+      <button class="bottom_zero_btn bottom_btn_cancel active">        
+        <i class="icon_24">
+          <img src="../images/common/backto_icon_24.svg" alt="">
+        </i>
+        <span>Back</span>
+      </button>      
+    </article>
+
+
+</main>
+<!-- //container -->
+
+<!--2022.09.02 fullscreen btn test 삭제 -->
+  <script type="text/javascript" src="../js/vendor/gsap.min.js"></script>
+  <script type="text/javascript" src="../js/vendor/ScrollToPlugin.min.js"></script>
+  <script type="text/javascript" src="../js/vendor/swiper.min.js"></script>	
+  <script type="text/javascript" src="../js/main.js"></script>
+  <script type="text/javascript" src="../js/ocr.js"></script>
+  </body>
+</html>

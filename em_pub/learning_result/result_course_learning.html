@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>mathpid</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <!--<meta name="theme-color" content="#C70026"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="description" content="">
+    <link rel="canonical" href="">
+    <meta name="robots" content="index,follow">
+
+    <link rel="stylesheet" type="text/css" href="../css/vendor/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/result.css"/>
+  <!-- 2022.09.19 불필요 css 삭제 -->
+</head>
+<body class="sub_page nt">
+<!-- 2022.09.07 test mode btn 삭제 -->
+
+<!-- header -->
+<header>
+    <div class="header_wrap">
+        <div class="header_inner">
+            <div class="sub_title">
+                <a href="..">
+                    <span class="sr">close</span>
+                    <i class="icon_24">
+                        <img src="../images/result/icon-all-s-24-close-bold-white.svg" aria-hidden="true" alt="close">
+                    </i>
+                </a>
+                <!-- 2022.09.07 title a tag 밖으로 -->
+                <div class="text_wrap">
+                    <h2>Numbers 1 ~ 5</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header -->
+<main class="container result course_learning">
+    <audio preload="auto" class="audio_wrap"><source class="audio_source" src=""/></audio>
+    <section class="result_top flex_reverse">
+        <article class="progress_area">
+            <div id="progress"></div>
+            <div class="progress_number">
+                <span class="start">0%</span>
+                <span class="end">100%</span>
+            </div>
+            <div class="desc">
+                <span class="tit">Accuracy</span>
+                <strong class="level">Advanced</strong>
+                <i class="icon_40"><img src="../images/result/icon-all-v-48-speed.svg" alt=""/></i>
+            </div>
+        </article>
+        <article class="comment">
+            <!-- 20220804 이미지교체 -->
+            <img src="../images/interaction/pidy_cl_result.webp" alt="캐릭터 이미지" class="ch_img">
+            <div class="box">
+                <p>Great! If you keep trying, You will be the master of arithmetic</p>
+                <!-- 2022.09.13 말풍선 꼭지 css bg -> object로 변경-->
+                <i class="bubble_tap_wrap">
+                    <object data="../images/result/img-textbox-tale-left.svg" type="" class="add_new_color"></object>
+                </i>
+            </div>
+            
+        </article>
+    </section>
+    <section class="result_contents mt0">
+        <!--START :: result contents-->
+        <div class="wrap ho_scroll">
+            <div class="responsive_section comlum_respon resulte_top_info">
+                <!-- 2022.08.24 add comlum_respon_inner_top -->
+                <article class="comlum_respon_inner_top big_card card_ui mt0">
+                    <div class="card_ui_inner">
+                        <div class="card_box">
+                            <div class="card_item">
+                                <span class="tit">Number of Correct Answers</span>
+                                <div class="score">
+                                    <span class="answer">9</span>
+                                    <span>/</span>
+                                    <span class="total">10</span>
+                                </div>
+                            </div>
+                            <div class="card_item half">
+                                <span class="tit">Correct Answer Rate</span>
+                                <div class="score">
+                                    <i class="icon_24">                              
+                                        <object data="../images/result/icon-all-s-24-accuracy-sollid.svg" type="" class="add_new_color"></object>
+                                    </i>
+                                    <!-- 2022.07.12 correct_num 클래스 추가 progressbar counter-->
+                                    <span class="correct_num">90%</span>                                    
+                                </div>
+                            </div>
+                            <div class="card_item half">
+                                <span class="tit">Study Time</span>
+                                <div class="score">
+                                    <i class="icon_24">                              
+                                        <object data="../images/result/icon-all-s-24-time-solid.svg" type="" class="add_new_color"></object>
+                                    </i>
+                                    0m 31s
+                                </div>
+                            </div>
+                            <div class="card_item row concept_check">
+                                <span class="tit">Concept Check</span>
+                                <div class="btn_wrap">
+                                    <a href="" class="chk_btn"><span>1</span></a>
+                                    <a href="" class="chk_btn"><span>2</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="big_card card_ui">
+                    <div class="card_ui_inner incorrect_answer">
+                        <div class="card_item row">
+                            <span class="tit">Incorrect Answers</span>
+                            <div class="btn_wrap">
+                                <a href="" class="chk_btn arrow"><span>99</span>
+                                    <i class="icon_16">                     
+                                        <object data="../images/result/icon-all-s-16-arrow-right-regular-blue.svg" type="" class="add_new_color"></object>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <article class="big_card card_ui">
+                <div class="card_ui_inner flex_basic">
+                    <span class="flag_text">Next Stage</span>
+                    <h3>Multiply 2-digit numbers<br/> by 1-digit numbers (1)</h3>
+                    <div class="card_btn_wrap">
+                        <a href="#" class="card_btn audio_btn" data-audio="hm_click">
+                            <span>Start</span>
+                            <i class="icon_16">
+                                <img src="../images/common/white_arrow_16.svg" aria-hidden="true" alt="화살표">
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="big_card card_ui accuracy_compared">
+                <div class="card_ui_inner responsive_width">
+                    <div class="card_chart">
+                        <h3>Accuracy results<br class="responsive_br"/> compared to others</h3>
+                        <p>If you learn again you can do better!</p>
+                        <div class="chart_label">
+                            <span><i class="label_icon_line"></i>Number of student</span>
+                            <span><i class="label_icon_circle"></i>You</span>
+                        </div>
+                        <div class="chart_wrap">
+                            <div class="chart">
+                                <h4>Correct Answer Rate</h4>
+                                <!--차트영역 :: 임의의 width, height-->
+                                <figure>
+                                    <img src="https://dummyimage.com/273x117/dbdbdb/333333" alt="">
+                                </figure>
+                            </div>
+                            <div class="chart">
+                                <h4>Accuracy</h4>
+                                <!--차트영역 :: 임의의 width, height-->
+                                <figure>
+                                    <img src="https://dummyimage.com/273x117/dbdbdb/333333" alt="">
+                                </figure>
+                            </div>
+                            <div class="chart">
+                                <h4>Speed</h4>
+                                <!--차트영역 :: 임의의 width, height-->
+                                <figure>
+                                    <img src="https://dummyimage.com/273x117/dbdbdb/333333" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="big_card card_ui change_learning">
+                <div class="card_ui_inner">
+                    <div class="card_chart">
+                        <h3>Changes in my learning<br class="responsive_br"/>
+                            outcomes</h3>
+                        <!-- 2022.08.23 change_learning_inner 추가 -->
+                        <div class="change_learning_inner">
+                            <div class="chart_detail chart_wrap flex_column">
+                                <div class="chart">
+                                    <!--차트영역 :: 임의의 width, height-->
+                                    <figure>
+                                        <img src="https://dummyimage.com/275x137/dbdbdb/333333" alt="">
+                                    </figure>
+                                </div>
+                                <div class="chart_label">
+                                    <span class="mint"><i class="label_icon_circle"></i>Correct Answer Rate</span>
+                                    <span class="peach"><i class="label_icon_circle"></i>Accuracy</span>
+                                    <span class="purple"><i class="label_icon_circle"></i>Speed</span>
+                                </div>
+                            </div>
+                            <div class="chart_detail">
+                                <strong class="date">2022. 04. 01<span class="label peach">Below Basic</span></strong>
+                                <ul class="detail_list">
+                                    <li class="item">
+                                        <span class="tit">Number of Correct Answers</span>
+                                        <span class="result">9/10<span class="desc">(Incorrect Answers 0)</span></span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="tit">Correct Answers Rate</span>
+                                        <span class="result">100%</span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="tit">Accuracy</span>
+                                        <span class="result">95%</span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="tit">Speed</span>
+                                        <span class="result">Fast</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="chart_detail">
+                                <strong class="date">2022. 04. 05<span class="label purple">Proficient</span></strong>
+                                <ul class="detail_list">
+                                    <li class="item">
+                                        <span class="tit">Number of Correct Answers</span>
+                                        <span class="result">9/10<span class="desc">(Incorrect Answers 0)</span></span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="tit">Correct Answers Rate</span>
+                                        <span class="result">100%</span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="tit">Accuracy</span>
+                                        <span class="result">95%</span>
+                                    </li>
+                                    <li class="item">
+                                        <span class="tit">Speed</span>
+                                        <span class="result">Fast</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 2022.07.13 worksheet 추가-->
+            <div class="responsive_section comlum_respon">
+                <!-- 2022.08.24 add comlum_respon_inner_top -->
+                <article class="comlum_respon_inner_top big_card card_ui">
+                    <div class="card_ui_inner flex_basic">
+                        <h3>Let’s review it!</h3>
+                        <div class="card_btn_wrap">
+                            <a href="#" class="card_btn audio_btn">
+                                <span>Review</span>
+                                <i class="icon_16">
+                                    <img src="../images/common/white_arrow_16.svg" aria-hidden="true" alt="화살표">
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <!-- 2022.07.13 worksheet 추가-->
+                <!-- 2022.08.24 add worksheet_card -->
+                <article class="worksheet_card big_card card_ui">
+                    <div class="card_ui_inner incorrect_answer worksheet">
+                        <div class="card_item row">
+                            <span class="tit">Worksheet</span>
+                            <div class="btn_wrap">
+                                <a href="javascript:void(0)" class="chk_btn arrow">
+                                    <i class="icon_24">                     
+                                        <object data="../images/common/c_worksheet_icon_24.svg" type="" class="add_new_color"></object>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <!--END :: result contents-->
+    </section>
+    <!--main-->
+</main>
+<!--container-->
+<!-- 2022.09.07 test fullscreen btn 삭제 -->
+<style>
+    .mode{position:absolute; top:60px; right:8px; z-index: 9999; display:flex;}
+    .mode li{padding:0 8px;}
+    .mode li a{color:blue;}
+</style>
+    <ul class="mode">
+        <li><a href="index.html" data-mpop="pidy">junior</a></li>
+        <li><a href="senior_index.html" data-mpop="pidy">senior</a></li>
+        <li class="theme"><a href="javascipt:void(0)" data-mpop="rachael">rachael</a></li>
+        <li class="theme"><a href="javascipt:void(0)" data-mpop="peter">peter</a></li>
+  </ul>
+
+<script type="text/javascript" src="../js/vendor/gsap.min.js"></script>
+<script type="text/javascript" src="../js/vendor/ScrollToPlugin.min.js"></script>
+<script type="text/javascript" src="../js/vendor/swiper.min.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+
+<script>
+    //character test
+    const btn = document.querySelectorAll(".mode a");
+    const img = document.querySelector(".result_top .comment .ch_img");
+
+    btn.forEach(item =>{
+        item.addEventListener("click", function(e){
+          const data = e.currentTarget.dataset.mpop;    
+          img.src = `../images/interaction/${data}_cl_result.webp`;
+        })
+
+    });
+  </script>
+
+<!--progressbar js-->
+<script type="text/javascript" src="../js/vendor/progressbar.min.js"></script>
+<script>  
+    progressbarCircle("progress", toDecimal(55.5)); 
+
+    function toDecimal(percent) {          
+        return parseFloat(percent) / 100;
+    }
+
+    function progressbarCircle(elementId, animatePercentage){       
+        const startColor = '#ffc445';
+        const endColor = '#ffca39';        
+        const element = document.getElementById(elementId); 
+        //2022.07.12   
+        const text = document.querySelector(".correct_num");          
+        const bar = new ProgressBar.SemiCircle(element, {
+            strokeWidth: 6,
+            easing: 'easeInOut',
+            duration: 1400,
+            color: startColor,
+            trailColor: 'rgba(255, 255, 255, 0.2)',
+            trailWidth: 6,
+            svgStyle: {
+                strokeLinecap: 'round',
+            },
+            step: (el, val) => {
+                // console.log(el, val)
+                const number = Math.round(val.value() * 100);
+                // val.setText(number + ' %');
+                //2022.07.12   
+                text.innerText = `${number}%`;  
+            }           
+        });
+
+        bar.animate(animatePercentage,{
+            from: {
+                color: startColor
+            },
+            to: {
+                color: endColor
+            }
+        });
+    }
+
+
+</script>
+</body>
+</html>

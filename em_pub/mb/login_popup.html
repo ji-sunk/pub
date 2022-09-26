@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>mathpid</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <!--<meta name="theme-color" content="#C70026"> -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="description" content="">
+  <link rel="canonical" href="">
+  <meta name="robots" content="index,follow">
+  
+  <link rel="stylesheet" type="text/css" href="../css/vendor/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/mb.css"/>
+  <!-- 2022.09.19 불필요 css 삭제 -->
+  <!-- 2022.09.21 add popup.css -->
+  <link rel="stylesheet" type="text/css" href="../css/popup.css"/>
+
+ 
+</head>
+<body class="sub_page mb login">
+<!-- 2022.09.07 test mode btn 삭제 -->
+
+  
+  <header class=""> 
+    <div class="header_wrap">		
+      <div class="header_inner">
+        <div class="sub_title">
+          <a href="..">
+            <!-- 2022.09.07 back text 추가 -->
+            <span class="sr">back</span>
+            <i class="icon_24">        
+              <img src="../images/common/black_arrow_24.svg" aria-hidden="true" alt="화살표">           
+            </i>  
+          </a> 
+          <!-- 2022.09.07 title a tag 밖으로 -->   
+          <div class="text_wrap">
+            <h2>Login</h2>
+          </div>       
+        </div>       
+      </div>
+    </div>
+  </header>
+  <!--  -->
+  <main class="container login_main">
+    <audio preload="auto" class="audio_wrap"><source class="audio_source" src/></audio>  
+    <section class="main_contents">         
+      <div class="wrap"> 
+        <article class="login_logo">            
+          <div class="img_wrap">
+            <figure>
+              <!-- 2022.08.26 이미지 변경 -->
+              <img src="../images/common/logo_275x43.svg">
+            </figure>
+          </div>
+        </article>
+
+        <article class="login_form form_wrap">
+          <form class="login_form_wrap">    
+            <div class="login_form_inner">
+              <div class="email_wrap input_out">
+                <div class="input_wrap">
+                  <label for="uname" class="sr"><b>e-mail</b></label>
+                  <input type="email" placeholder="E-mail" name="uname" class="fc" required>
+                </div>
+                <div class="input_message email_message">
+                  <i class="icon_16">
+                    <img src="../images/common/error_red_16.svg" alt="">
+                  </i>
+                  <span>Invalid email format.  E.g.)abc@mathpid.com</span>
+                </div>
+              </div>
+
+              <div class="pass_wrap input_out">
+                <div class="input_wrap">
+                  <label for="psw" class="sr"><b>Password</b></label>
+                  <input type="password" placeholder="Password" name="psw" id="password" maxlength="20" class="input_pass" required>
+                  <i class="icon_32 pass_icon" >
+                    <img src="../images/common/pass_view_32.svg" alt="" class="pass_h_icon">
+                    <img src="../images/common/pass_hide_32.svg" alt="" class="pass_s_icon">      
+                  </i>
+                </div>
+              </div>
+
+              <div class="btn_wrap">          
+                <button type="submit" id="" class="login_btn">
+                  <span>Login</span> 
+                </button>
+                <div class="input_message btn_message">
+                  <i class="icon_16">
+                    <img src="../images/common/error_red_16.svg" alt="">
+                  </i>
+                  <span>The password does not match the email you <br>entered. Please check your email or password again.</span>
+                </div>                
+                <div class="forgot_pass">
+                  <a href="javascript:void(0);">
+                    <span>Forgot your password?</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </article>       
+      </div>
+    </section>
+    <!--main-->  
+    <article class="bottom_btn_wrap">
+      <a href="" class="create_acc_btn">
+        <span>Create account</span>
+      </a>         
+    </article>
+  </main>
+<!--container-->
+
+<!-- 팝업 -->
+<!-- 2022.07.12  lean_end_popup ->confirm_popup 클래스명 변경-->
+  <div class="confirm_popup active">
+    <div class="confirm_popup_content">
+      <article class="popup_box lep_basic active">
+       <!-- 2022.08.04 캐릭터 이미지 삭제-->
+        <p class="confirm_popup_desc">This is the device where the email <br>is registered. Are you sure <br>
+       you want to change your  <br><strong>t**@wjtb.net</strong> email?</p>
+        <ul class="btn_wrap">
+          <li><button class="negative_btn">Cancel</button></li>
+          <li><button class="positive_btn">Confirm</button></li>          
+        </ul>
+      </article>  
+    </div>
+  </div>
+
+<!-- 2022.09.07 test fullscreen btn 삭제 -->
+  <script type="text/javascript" src="../js/vendor/gsap.min.js"></script>
+  <script type="text/javascript" src="../js/vendor/ScrollToPlugin.min.js"></script>
+  <script type="text/javascript" src="../js/vendor/swiper.min.js"></script>	
+  <script type="text/javascript" src="../js/main.js"></script>
+  <script type="text/javascript" src="../js/qz.js"></script>
+  <script type="text/javascript" src="../js/ocr.js"></script>
+  <script type="text/javascript" src="../js/ob.js"></script>
+  <script type="text/javascript" src="../js/mb.js"></script>
+  </body>
+</html>

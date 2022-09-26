@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>mathpid</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <!--<meta name="theme-color" content="#C70026"> -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="description" content="">
+  <link rel="canonical" href="">
+  <meta name="robots" content="index,follow">
+  
+  <link rel="stylesheet" type="text/css" href="../css/vendor/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+  <!-- 2022.09.19 불필요 css 삭제 -->
+  <link rel="stylesheet" type="text/css" href="../css/ocr.css"/>
+  <!-- 2022.09.21 add popup.css -->
+  <link rel="stylesheet" type="text/css" href="../css/popup.css"/>
+  
+</head>
+<body class="sub_page ocr cmr_filming junior">
+  <!--2022.09.02 mode btn test 삭제 -->
+
+  <!-- header -->
+  <header>
+    <div class="header_wrap">		
+      <div class="header_inner">
+        <div class="sub_title">
+          <a href=".." class="cmr_title">
+            <i class="icon_24"></i>
+            <h2>Math Camera</h2>
+          </a> 
+        </div>
+        <a href="" class="cmr_help">
+          <span class="sr">도움말</span>         
+        </a>
+      </div>
+    </div>
+  </header>
+<!-- //header -->
+
+<!-- container -->
+<main>
+  <!-- filming -->
+  <div class="cmr_filmingBody">
+    <!-- 촬영 박스 -->
+    <section class="cmr_filmingBox">
+      <article class="zone">
+        <span class="guide lt"></span>
+        <span class="guide rt"></span>
+        <span class="guide lb"></span>
+        <span class="guide rb"></span>
+        <div class="message"><p>Please crop just one problem <br>within the area</p></div>
+      </article>
+    </section>
+    <!-- //촬영 박스 -->
+
+    <!-- 촬영 전 -->
+    <section class="filming_before" >
+      <article class="cmr_filmingBtn">
+        <ul>
+          <li>
+            <a href="javascript:void(0)" class="scenery">
+              <span class="sr">사진보기</span>
+              <i class="icon_32">
+                <img src="../images/ocr/scenery.svg" alt="">
+              </i>              
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="filming filming_btn">
+              <span>촬영</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="history_icon">
+              <span class="sr">기록보기</span>
+              <i class="icon_32">
+                <img src="../images/ocr/time.svg" alt="">
+              </i>
+            </a>
+          </li>
+        </ul>
+        <div class="message"><p>Tap the shutter button to search</p></div>
+      </article>
+    </section>
+    <!-- //촬영 전 -->
+
+    <!-- 촬영 후 확인 -->
+    <section class="cmr_filmingConfirm filming_after" style="display:none;">
+      <a href="javascript:void(0)" class="retake filming_retake">
+        <i class="icon_24">
+          <img src="../images/ocr/retake.svg" alt="">
+        </i>
+        <span>Retake</span>
+      </a>
+      <a href="recog.html" class="confirm">
+        <i class="icon_24">
+          <img src="../images/ocr/confirm.svg" alt="">
+        </i>
+        <span>Confirm</span>
+      </a>
+    </section>
+    <!-- //촬영 후 확인 -->
+
+  </div>
+  <!-- filming -->
+
+  <!--full filming screen -->
+  <div class="cmr_fscreenBody">
+    <div></div>
+  </div>
+  <!-- filming -->  
+
+  <!-- draw -->
+  <div class="cmr_drawBody" style="display:none;">
+    <section class="cmr_drawBox">
+      <article class="zone"></article>
+      <div class="draw_guide">
+        <div class="message"><p>Start drawing with a finger<br>or a stylus pen</p></div>
+      </div>
+    </section>
+
+    <section class="cmr_drawFunction" style="display:none;">
+      <div class="draw_tools notepade_tool">              
+        <div class="inner_wrap">
+          <div class="tools_wrap pad_tools">
+            <button>
+              <span class="sr">previous</span>
+              <i class="icon_24"><img src="../images/svg/tool_pad_prev_24.svg" alt=""></i></button>
+            <button>
+              <span class="sr">next</span>
+              <i class="icon_24"><img src="../images/svg/tool_pad_next_24.svg" alt=""></i></button>
+            <button>
+              <span class="sr">clean</span>
+              <i class="icon_24"><img src="../images/svg/tool_pad_wastebasket_24.svg" alt=""></i></button>
+          </div>
+          <div class="tools_wrap instrument">
+            <button class="active">
+              <span class="sr">pen</span>
+              <i class="icon_24"><object type="image/svg+xml" data="../images/svg/tool_pad_pen_24.svg" class="add_new_color"></object></i>
+            </button>
+            <button>
+              <span class="sr">eraser</span>
+              <i class="icon_24"><object type="image/svg+xml" data="../images/svg/tool_pad_eraser_24.svg" class="add_new_color"></object></i>
+            </button>
+          </div>
+        </div>          
+      </div>  
+    </section>
+
+    <section>
+      <article class="cmr_drawBtn">    
+        <ul>        
+          <li>
+            <a href="javascript:void(0)" class="drawFinish">
+              <span class="sr">그리기 완료</span>
+              <i class="icon_48">
+                <img src="../images/ocr/draw.svg" alt="">
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="" class="history_icon">
+              <span class="sr">기록보기</span>
+              <i class="icon_32">
+                <img src="../images/ocr/time.svg" alt="">
+              </i>
+            </a>
+          </li>
+        </ul>
+        </ul>
+        <div class="message"><p>When you're finished drawing<br>Tap the button to search</p></div>
+      </article>
+    </section>
+
+  </div>
+  <!-- //draw -->
+
+  <!-- camera btn -->
+  <section class="cmr_cameraBtn ">
+    <div class="cmr_camera_slider_wrap">
+      <div class="cmr_camera_slider">
+        <article class="swiper-wrapper" >
+          <div class="swiper-slide"><a href="javascript:void(0)">Full Page</a></div>
+          <div class="swiper-slide"><a href="javascript:void(0)">Camera</a></div>
+          <div class="swiper-slide"><a href="javascript:void(0)">Draw</a></div>
+        </article> 
+      </div>
+    </div>
+  </section>
+  <!-- //camera btn -->
+
+  <!-- 2022.07.18 촬영전안내팝업 -->
+  <div class="confirm_popup active">
+    <div class="confirm_popup_content">
+      <article class="popup_box lep_basic active">
+        <!-- 2022.08.04 캐릭터 이미지 삭제-->
+        <p class="confirm_popup_desc">PDo you want to allow AI Mathpid to <br>: Accessing device photos, </br>media, and file</p>
+        <ul class="btn_wrap">
+          <li><button class="negative_btn">disagree</button></li>
+          <li><button class="positive_btn">agree</button></li>          
+        </ul>
+      </article>  
+    </div>
+  </div>
+
+</main>
+<!-- //container -->
+
+  <!--2022.09.02 fullscreen btn test 삭제 -->
+  <script type="text/javascript" src="../js/vendor/gsap.min.js"></script>
+  <script type="text/javascript" src="../js/vendor/ScrollToPlugin.min.js"></script>
+  <script type="text/javascript" src="../js/vendor/swiper.min.js"></script>	
+  <script type="text/javascript" src="../js/main.js"></script>
+  <script type="text/javascript" src="../js/ocr.js"></script>
+
+  </body>
+</html>
