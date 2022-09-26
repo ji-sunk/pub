@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <defs>
+        <clipPath id="tr4zwdxk0a">
+            <path data-name="패스 12480" d="m45.456-40.279.018-.018a1.757 1.757 0 0 1 2.494 0l8.449 8.423a1.79 1.79 0 0 1 .034 2.486l-.034.035-.018.018a1.757 1.757 0 0 1-2.494 0l-8.449-8.423a1.79 1.79 0 0 1-.034-2.486z" transform="translate(-44.936 40.816)" style="clip-rule:evenodd;fill:#fff"/>
+        </clipPath>
+        <clipPath id="mddu7oltvb">
+            <path data-name="패스 12482" d="m56.4-40.3.018.018a1.79 1.79 0 0 1 .034 2.486l-.034.035-8.449 8.423a1.757 1.757 0 0 1-2.494 0l-.018-.018a1.79 1.79 0 0 1-.034-2.487l.034-.035 8.448-8.422a1.757 1.757 0 0 1 2.495 0z" transform="translate(-44.936 40.816)" style="clip-rule:evenodd;fill:#fff"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 13916">
+        <path data-name="합치기 54" d="m24.013 30.035-12.88-8.771H5a5 5 0 0 1-5-5v-2a5 5 0 0 1 5-5h6.1L24.013.473a1.3 1.3 0 0 1 1.663.182.96.96 0 0 1 .25.637v27.924a1.119 1.119 0 0 1-1.185 1.038 1.3 1.3 0 0 1-.728-.219z" transform="translate(4 8.746)" style="fill:#fff"/>
+        <g data-name="그룹 13759">
+            <g data-name="그룹 13757" style="opacity:.5;clip-path:url(#tr4zwdxk0a)" transform="translate(32 18)">
+                <path data-name="패스 12479" d="m33.13-39.5 13.039-13.37L59.208-39.5 46.169-26.133z" transform="translate(-40.169 45.502)" style="fill:#fff"/>
+            </g>
+            <g data-name="그룹 13758" style="clip-path:url(#mddu7oltvb)" transform="translate(32 18)">
+                <path data-name="패스 12481" d="M46.169-52.87 59.208-39.5 46.169-26.133 33.13-39.5z" transform="translate(-40.169 45.502)" style="fill:#fff"/>
+            </g>
+        </g>
+    </g>
+</svg>

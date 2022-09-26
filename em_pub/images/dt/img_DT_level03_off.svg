@@ -1,0 +1,15 @@
+<?xml-stylesheet type="text/css" href="../../css/svg.css"?>
+
+<svg class="dt_level" xmlns="http://www.w3.org/2000/svg" width="74" height="33" viewBox="0 0 74 33">
+    <g data-name="그룹 13975">
+        <g data-name="그룹 13643" transform="translate(39.227 .271)">
+            <rect class="st0" width="28" height="6" rx="3" transform="translate(1.773 12.729)"/>
+            <circle class="st1" cx="4" cy="4" r="4" transform="translate(11.773 2.729)" />
+            <circle class="st1" cx="4" cy="4" r="4" transform="translate(11.773 21.729)" />
+        </g>
+        <g data-name="그룹 13976">
+            <path class="st1" d="m2.973.027 23.785.215a3.039 3.039 0 0 1 3 3 2.909 2.909 0 0 1-2.946 2.946L3.027 5.973a3.039 3.039 0 0 1-3-3A2.909 2.909 0 0 1 2.973.027z" transform="rotate(45 -.103 13.275)" />
+            <path class="st0" d="m2.973-.027 23.785-.215A2.909 2.909 0 0 1 29.7 2.7a3.039 3.039 0 0 1-3 3l-23.781.219A2.909 2.909 0 0 1-.027 2.973a3.039 3.039 0 0 1 3-3z" transform="rotate(135 13.396 10.355)" />
+        </g>
+    </g>
+</svg>
