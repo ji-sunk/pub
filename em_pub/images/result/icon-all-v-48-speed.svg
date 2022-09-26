@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <defs>
+        <filter id="dz5nnv9l5b" x="14.946" y="3.5" width="40.668" height="44.592" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="ve84xjivxd" x="9.479" y="12.499" width="23" height="17.5" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur-2"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="pv1qlncawf" x="5.73" y="22.56" width="25.218" height="17.5" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur-3"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-3"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="xsosjm329g" x="-4.334" y="17.529" width="26.562" height="17.5" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur-4"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-4"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="6vxuwxoosh" x="9.666" y="17.529" width="19.562" height="17.5" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur-5"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite operator="in" in2="blur-5"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <linearGradient id="i9mkt4ee8c" x1=".052" y1=".646" x2=".963" y2=".349" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ffc445"/>
+            <stop offset="1" stop-color="#ffb339"/>
+        </linearGradient>
+        <linearGradient id="5emll56vme" x1="1" y1="1" x2="0" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#222121"/>
+            <stop offset="1" stop-color="#3b3b3b"/>
+        </linearGradient>
+        <clipPath id="aqwm454maa">
+            <path data-name="사각형 2256" transform="translate(161.113 279)" style="fill:none" d="M0 0h48v48H0z"/>
+        </clipPath>
+    </defs>
+    <path data-name="사각형 2362" style="fill:none" d="M0 0h48v48H0z"/>
+    <g data-name="마스크 그룹 69" style="clip-path:url(#aqwm454maa)" transform="translate(-161.113 -279)">
+        <g data-name="그룹 10631">
+            <g style="filter:url(#dz5nnv9l5b)" transform="translate(161.108 278.998)">
+                <path data-name="패스 10019" d="m14.115 8.628-3.1.477a.583.583 0 0 1-.682-.58l.03-6.825A1.709 1.709 0 0 0 7.157.886L.2 13.914A1.708 1.708 0 0 0 1.939 16.4l3.1-.477a.583.583 0 0 1 .682.58l-.034 6.821a1.709 1.709 0 0 0 3.206.819l6.958-13.029a1.708 1.708 0 0 0-1.74-2.49z" transform="matrix(.89 .45 -.45 .89 33.81 9)" style="fill:url(#i9mkt4ee8c)"/>
+            </g>
+            <g style="filter:url(#ve84xjivxd)" transform="translate(161.108 278.998)">
+                <rect data-name="사각형 1817" width="8" height="2.5" rx="1.25" transform="translate(16.98 18)" style="fill:url(#5emll56vme)"/>
+            </g>
+            <g style="filter:url(#pv1qlncawf)" transform="translate(161.108 278.998)">
+                <rect data-name="사각형 1818" width="10.218" height="2.5" rx="1.25" transform="translate(13.23 28.06)" style="fill:url(#5emll56vme)"/>
+            </g>
+            <g style="filter:url(#xsosjm329g)" transform="translate(161.108 278.998)">
+                <rect data-name="사각형 1819" width="11.562" height="2.5" rx="1.25" transform="translate(3.17 23.03)" style="fill:url(#5emll56vme)"/>
+            </g>
+            <g style="filter:url(#6vxuwxoosh)" transform="translate(161.108 278.998)">
+                <rect data-name="사각형 1823" width="4.562" height="2.5" rx="1.25" transform="translate(17.17 23.03)" style="fill:url(#5emll56vme)"/>
+            </g>
+        </g>
+    </g>
+</svg>
