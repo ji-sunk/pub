@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <clipPath id="mko9pvz2pa">
+            <path data-name="패스 9648" d="M.8-11.161 5-12l4.2.839a1 1 0 0 1 .8.981v5.488A3.977 3.977 0 0 1 7.5-1a6.731 6.731 0 0 1-5 0A3.977 3.977 0 0 1 0-4.693v-5.487a1 1 0 0 1 .8-.981z" style="clip-rule:evenodd;fill:#4264ce"/>
+        </clipPath>
+        <clipPath id="6ucll5v60b">
+            <path data-name="패스 9647" d="M-3 2h16v-16H-3z" style="fill:#4264ce"/>
+        </clipPath>
+        <clipPath id="upny1g2zyc">
+            <path data-name="패스 9649" d="M-3 2h16v-16H-3z" style="fill:none"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 8990" transform="translate(3 14)" style="clip-path:url(#mko9pvz2pa)">
+        <g data-name="그룹 8989" style="clip-path:url(#6ucll5v60b)">
+            <path data-name="패스 9646" d="M-1-13h12V.642H-1z" style="fill:#4264ce"/>
+        </g>
+    </g>
+    <g data-name="그룹 8992" transform="translate(3 14)" style="clip-path:url(#upny1g2zyc)">
+        <g data-name="그룹 8991">
+            <text data-name="7" transform="translate(3.064 -4)" style="fill:#fff;font-size:7px;font-family:NotoSans-Bold,Noto Sans;font-weight:700"><tspan x="0" y="0">7</tspan></text>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <clipPath id="3215buu06a">
+            <path data-name="패스 9644" d="M.8-11.161 5-12l4.2.839a1 1 0 0 1 .8.981v5.488A3.977 3.977 0 0 1 7.5-1a6.731 6.731 0 0 1-5 0A3.977 3.977 0 0 1 0-4.693v-5.487a1 1 0 0 1 .8-.981z" style="clip-rule:evenodd;fill:#46d7e3"/>
+        </clipPath>
+        <clipPath id="j85pz9rbxb">
+            <path data-name="패스 9643" d="M-3 2h16v-16H-3z" style="fill:#46d7e3"/>
+        </clipPath>
+        <clipPath id="8ndh9q9b6c">
+            <path data-name="패스 9645" d="M-3 2h16v-16H-3z" style="fill:none"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 8985" transform="translate(3 14)" style="clip-path:url(#3215buu06a)">
+        <g data-name="그룹 8984" style="clip-path:url(#j85pz9rbxb)">
+            <path data-name="패스 9642" d="M-1-13h12V.642H-1z" style="fill:#46d7e3"/>
+        </g>
+    </g>
+    <g data-name="그룹 8987" transform="translate(3 14)" style="clip-path:url(#8ndh9q9b6c)">
+        <g data-name="그룹 8986">
+            <text data-name="6" transform="translate(3.064 -4)" style="fill:#fff;font-size:7px;font-family:NotoSans-Bold,Noto Sans;font-weight:700"><tspan x="0" y="0">6</tspan></text>
+        </g>
+    </g>
+</svg>

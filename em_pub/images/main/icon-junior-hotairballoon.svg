@@ -1,0 +1,16 @@
+<?xml-stylesheet type="text/css" href="../../css/svg.css"?>
+
+<svg class="main_grade_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="2.9164" y1="16.0009" x2="29.082" y2="16.0009">
+	<stop  offset="0" />
+	<stop  offset="1" />
+</linearGradient>
+<path class="st0" d="M27,14c-0.5,5.2-9,7.9-9,10h-0.5l0-0.1c0.1-0.5,0.3-0.9,0.5-1.3l0.1-0.2l1.3-1.9c1.3-1.9,2.1-4.2,2.1-6.6h-1
+	l0,0.4c-0.1,2-0.8,4-1.9,5.6l-0.1,0.1l-1.2,1.8l-0.1,0.2l-0.1,0.2c-0.2,0.4-0.4,0.7-0.5,1.2l-1.1,0l0-0.2c-0.2-0.5-0.4-1-0.7-1.4
+	l-0.1-0.1l-0.3-0.5l-0.6-0.9l-0.6-0.9l-0.2-0.4c-1.2-1.5-1.8-3.4-1.9-5.3h-1l0,0.3c0.2,2.2,1,4.2,2.3,5.9l1.3,2l0.2,0.3
+	c0.3,0.4,0.5,1,0.6,1.5H14c0-2.1-8.4-5-9-10H27z M16,4c5.9,0,10.7,3.2,11,9H5C5.3,7.2,10.1,4,16,4z M14,25h4v3h-4V25z"/>
+</svg>
