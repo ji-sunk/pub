@@ -346,7 +346,7 @@ color: #fff;}
 .terms .bottom_zero_btn_wrap {position: fixed;}
 
 /* 하단버튼 */
-.bottom_zero_btn_wrap{position: relative; bottom: 0; padding: 0; left: 50%; z-index: 1; transform: translateX(-50%); width: 100%;}
+.bottom_zero_btn_wrap{position: relative; bottom: -2px; padding: 0; left: 50%; z-index: 1; transform: translateX(-50%); width: 100%;}
 .bottom_zero_btn_wrap .bottom_zero_btn{padding: 30px 0 38px; width: 100%; border-radius: 0; background-color: var(--disabled_bg);}
 .bottom_zero_btn_wrap .bottom_zero_btn span{height: 22px; font-size: 16px; font-weight: bold; line-height: 1.375; text-align: center; color: var(--disabled_text);}
 .bottom_zero_btn_wrap .bottom_zero_btn.active{background-color: transparent; background-image: linear-gradient(100deg, var(--gradationStart), var(--gradationEnd) 100%);}
