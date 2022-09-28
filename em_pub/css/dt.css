@@ -94,7 +94,7 @@
 
 /* slider btn */
 .ai_diag .bottom_btn_wrap{position:fixed; bottom:0; left:0; right:0; z-index: 1; width:100%; display: flex; flex-direction: column; align-items: center; }
-.ai_diag .bottom_btn_wrap .btn_wrap{position: relative; display: flex; width:100%; height:90px;}
+.ai_diag .bottom_btn_wrap .btn_wrap{position: relative; display: flex; width:100%; height:92px;}
 .ai_diag .bottom_btn_wrap .btn_wrap .bottom_btn{padding:30px 0 38px; text-align: center; transition: width, opacity,visibility, .3s;} 
 .ai_diag .bottom_btn_wrap .btn_wrap .bottom_btn.ad_diag_prev{flex-shrink: 0;  width:34.7%; background-color: #f2f7ff; }
 .ai_diag .bottom_btn_wrap .btn_wrap .bottom_btn.ad_diag_next{width:100%; background-color: #bfcfe7; pointer-events: none;}
