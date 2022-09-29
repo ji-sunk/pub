@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>퍼블리싱 가이드</title>
+  <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+  <link rel="stylesheet" type="text/css" href="guide.css"/>
+</head>
+<body class="_pub-guide">
+  <header>
+    <div class="header_wrap">
+      <div class="header_left">
+        <div class="ws_info_wrap">
+          <div class="ws_title_wrap">
+            <div class="logo">
+              <h1>
+                <img src="../images/ws/logo_mo_203x35.webp" alt="mathpid">
+              </h1>
+            </div>
+            <div class="ws_title">
+              <h2>퍼블리싱 가이드</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <section class="main_content">
+      <ul class="menu_list">  
+        <li><a href="icons.html">Icons</a></li>
+        <li><a href="theme.html">Icons (Theme Color)</a></li>
+        <li class="current"><a href="forms.html">Forms</a></li>
+        <li><a href="contents.html">Contents</a></li>
+        <li><a href="popup.html">Popup</a></li>
+      </ul>
+      <article class="guide_content">
+        <h3>Forms</h3>
+        <!-- <p>--</p> -->
+        
+        <h4>Inputs</h4>
+        <div class="guide_component">
+            <div class="guide_comp_box">
+                <div class="_block">
+                    <!-- s : component -->
+                    <article class="form_wrap">
+                        <form class=""> 
+                            <div class="email_wrap input_out">
+                                <label for="uname" class=""><b>Title</b></label>
+                                <div class="basic_input_box">
+                                  <div class="input_wrap">                    
+                                    <input type="email" placeholder="E-mail" name="uname" class="email" required="" value="abc@naver.com" readonly="">
+                                  </div>
+                                  <button class="" data-change="change_email"><span>Change</span></button>                    
+                                </div>  
+                                <div class="input_message email_message active">
+                                  <i class="icon_16"><img src="../images/common/error_red_16.svg" alt=""></i>
+                                  <span>Invalid email format.  E.g.)abc@mathpid.com</span>
+                                </div>
+                                <!-- 인증코드 -->
+                                <div class="auth_code_box">
+                                  <div class="input_wrap">                    
+                                    <input type="text" placeholder="Enter the 4-digit verification code" maxlength="4" name="code" class="auth_code" required="">
+                                    <i class="icon_24">
+                                      <object data="../images/common/input_check_icon_24.svg" type=""></object>
+                                    </i>
+                                  </div>
+                                </div>   
+                                <div class="input_message auth_code_message active">
+                                  <i class="icon_16">
+                                    <img src="../images/common/error_red_16.svg" alt="">
+                                  </i>
+                                  <span>If you do not receive a verification email, please <br>check your spam folder.</span>
+                                </div>             
+                            </div>
+                        </form>
+                    </article>
+                    <!--// e : component -->
+                    <style>
+                      .input_out{position: relative;}
+                      /* ac.css */
+                      .input_out label {height:24px; font-size:18px; font-weight:bold; line-height:1.56; letter-spacing:-0.01px; }
+                      .input_out .basic_input_box {margin-top:20px; display:flex; align-items:center; gap:0 5px; }
+                      .input_out .basic_input_box .input_wrap {width: 100%; background-color: #f2f2f2; }
+                      .input_out .basic_input_box input {background: transparent; }
+                      .input_out .basic_input_box button { flex-shrink:0; min-width:100px; height:50px; padding:16px 10px 15px; border-radius:15px; background-image:linear-gradient(117deg,var(--gradationStart),var(--gradationEnd)); }
+                      .input_out .basic_input_box button span {height:19px; font-size:14px; font-weight:bold; line-height:1.43; text-align:center; color:#fff; }
+                      .auth_code_box {margin-top: 15px; }
+                    </style>
+                    <br>
+                    <!-- s : component -->
+                    <article class="form_wrap">
+                        <form class="">
+                            <div class="email_wrap input_out">
+                                <div class="input_wrap">
+                                    <label for="uname" class="sr"><b>e-mail</b></label>
+                                    <input type="email" placeholder="E-mail" name="uname" class="" required="">     
+                                    <button class="input_delete_btn">
+                                        <span class="sr">delete</span>
+                                        <i class="icon_24"><img src="../images/common/icon_all_s_24_delete.svg" alt=""></i>
+                                    </button>
+                                </div>
+                                <div class="input_message email_message active">
+                                    <i class="icon_16"><img src="../images/common/error_red_16.svg" alt=""></i>
+                                    <span>Invalid email format.  E.g.)abc@mathpid.com</span>
+                                </div> 
+                            </div><!--// input_out -->    
+                            <br>
+                            <div class="pass_wrap input_out">
+                                <div class="input_wrap">
+                                    <label for="psw" class="sr"><b>Password</b></label>                  
+                                    <input type="password" placeholder="" name="psw" class="input_pass" id="password" maxlength="20" required="">
+                                    <span class="new_placeholder">Password <small>(more than 6 characters)</small> </span> 
+                                    <i class="icon_32 pass_icon">
+                                        <img src="../images/common/pass_hide_32.svg" alt="" class="pass_h_icon">
+                                        <img src="../images/common/pass_view_32.svg" alt="" class="pass_s_icon">      
+                                    </i>
+                                </div>
+                                <div class="input_message pass_message active">
+                                    <i class="icon_16"><img src="../images/common/error_red_16.svg" alt=""></i>
+                                    <span>Please enter a password of at least 6 characters.</span>
+                                </div>
+                            </div><!--// input_out -->    
+                            <br>
+                            <div class="pass_wrap input_out">
+                                <div class="input_wrap">
+                                    <label for="psw" class="sr"><b>Password</b></label>                  
+                                    <input type="password" placeholder="" name="psw" class="input_pass" id="password" maxlength="20" required="">
+                                    <span class="new_placeholder">Password <small>(more than 6 characters)</small> </span> 
+                                    <i class="icon_32 pass_icon">
+                                        <img src="../images/common/pass_hide_32.svg" alt="" class="pass_s_icon">
+                                        <img src="../images/common/pass_view_32.svg" alt="" class="pass_h_icon">      
+                                    </i>
+                                </div>
+                                <div class="input_message pass_message active">
+                                    <i class="icon_16"><img src="../images/common/error_red_16.svg" alt=""></i>
+                                    <span>Please enter a password of at least 6 characters.</span>
+                                </div>
+                            </div><!--// input_out -->
+                            <br>
+                        </form>
+                    </article>
+                    <!--// e : component -->
+                </div><!--// _block -->
+            </div><!--// guide_comp_box -->
+        </div><!--// Inputs -->
+
+        <h4>Textarea</h4>
+        <div class="guide_component">
+            <div class="guide_comp_box">
+              <div class="_block">
+                <!-- s : component -->
+                <article class="form_wrap">
+                    <form class="">  
+                        <div class="comment_write input_out">     
+                            <div class="input_wrap"> 
+                                <textarea id="comment_write_content" class="comment_write_area" maxlength="1000" placeholder="Please enter a contents"></textarea>  
+                                <button type="submit" class="commnet_submit">
+                                    <span class="sr">commnet submit</span>
+                                    <i class="icon_24">
+                                    <img src="../images/common/w_pen_24.svg" alt="commnet submit">
+                                    </i>
+                                </button>       
+                            </div>              
+                        </div>
+                    </form>
+                </article>
+                <!--// e : component -->
+                <br>
+                <!-- s : component -->
+                <article class="form_wrap">
+                    <form class="">  
+                        <div class="content_wrap input_out">
+                            <label for="cs_content" class="title">Content</label>       
+                            <div class="input_wrap"> 
+                                <textarea id="cs_content" class="content_area" cols="30" rows="10" maxlength="1000" placeholder="Please enter a contents"></textarea>
+                                <div class="textarea_counter">
+                                    <span class="current_text_num">0</span>
+                                    <span>/</span>
+                                    <span>1000</span>
+                                </div>
+                            </div>                
+                          </div>
+                    </form>
+                </article>
+                <!--// e : component -->
+                <style>
+                    /* cs.css */
+                    .comment_write .input_wrap {padding: 0 20px; display: flex; align-items: flex-end; gap: 0 17px; height: 50px; transition: height, .3s; }
+                    .input_wrap .comment_write_area {padding: 12px 0; width: 100%; height: 100%; border: none; resize: none; }
+                    .input_wrap .commnet_submit {margin-bottom: 9px; padding: 4px; width: 32px; height: 32px; border-radius: 10px; background-color: #bfcfe7;  transition: background-color, background-image, .3s; }
+
+                    .content_wrap .title {padding-left:10px;display:block;font-size:18px;font-weight:bold;line-height:1.56;letter-spacing:-0.01px;}
+                    .content_wrap .input_wrap {position:relative;padding:0;height:auto;overflow:hidden;font-size:0;line-height:1em;margin-top:20px;}
+                    .content_wrap textarea {height:280px;resize:none;}
+                    .content_wrap .input_wrap .textarea_counter {position:absolute;bottom:15px;right:20px;}
+                    .content_wrap .input_wrap .textarea_counter span {height:19px;font-weight:500;color:#999999;}
+                    @media (min-width: 600px) {
+                        .content_wrap .title {font-size: 20px; line-height: 1.3;}
+                    }
+                </style>
+              </div>
+            </div><!--// guide_comp_box -->
+        </div><!--// Textarea -->
+
+        <h4>Checks</h4>
+        <div class="guide_component">
+            <div class="guide_comp_box">
+              <!-- <h5>Title</h5> -->
+              <div class="_block">
+                <!-- s : component -->
+                <div class="check_box_wrap">
+                  <input type="checkbox" name="" id="agree_information" value="">
+                  <label for="agree_information">
+                    <span>Consent of collection and use of personal information <small>(required)</small></span>
+                  </label>
+                </div>
+                <!--// e : component -->
+              </div>
+            </div><!--// guide_comp_box -->
+        </div><!--// Checks -->
+      </article>
+    </section>
+  </main>
+</body>
+</html>
