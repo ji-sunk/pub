@@ -61,20 +61,14 @@ a{color:#303030;}
 
 .worksheet_new {background-color: #ffffff;}
 /* header */
-.worksheet_new header{padding:0; background-color: #2e91f6;}
-.worksheet_new .header_wrap{padding:30px 50px 0px 50px; max-width: 720px; margin:0 auto; display: flex; justify-content: space-between; align-items: flex-end;}
+.worksheet_new header {padding:0; background-color: #2e91f6;}
+.worksheet_new .header_wrap {padding:30px 50px 0px 50px; max-width: 720px; margin:0 auto; display: flex; justify-content: space-between; align-items: flex-end;}
 .worksheet_new .main_top {padding:27px 0 21px 0; background-color: #edf4fb; font-family: 'Noto Sans';}
 .worksheet_new .dcr_wrap {margin:0 auto; padding:0 50px; max-width:820px; display: flex; justify-content: space-between;}
 .worksheet_new .dcr_area {padding-right:35px; width:70%}
 .worksheet_new .dcr_area h2 {font-size: 23px; color:#0e3e6a}
 .worksheet_new .dcr_area > p {margin-top:10px; font-size: 15px;}
-/* .worksheet_new .header_wrap .qr_wrap::before{content: ""; position: absolute; top:50%; left:50%; transform: translate(-50%,-50%); display: block; width:131.0769%; height:119.6923%; 
-    background: url("../images/ws/img_worksheet_bg_line.svg")no-repeat center / cover;} */
-/* 
-.worksheet_new .header_wrap .btn_wrap button {display: flex; justify-content: center; align-items: center; width:32px; height:32px; border-radius: 50px 50px; background-color: #ffffff; overflow: hidden;}
-.worksheet_new .header_wrap .ws_info_wrap{margin-top:39px;} */
 .worksheet_new .header_wrap .header_left .ws_title h1 {font-size: 40px; font-family: "BalooBhaina"; font-weight: 500; color: #fff;}
-
 /* qrcode + character */
 .worksheet_new .header_wrap .header_right{position: relative; display: flex; align-items: flex-end; gap: 0 30px;}
 .worksheet_new .header_wrap .img_wrap {width:237px; position: relative;}
@@ -85,29 +79,34 @@ a{color:#303030;}
 .worksheet_new .container .qr_area {display: inline-grid; text-align: center; width:182px; height:196px; border:1px solid #d3d3d3; border-radius:20px; background-color:#fff;}
 .worksheet_new .container .qr_area a {position:relative;}
 /* .worksheet_new .container .qr_area a::before {content: ""; position: absolute; top:50%; left:50%; transform: translate(-50%,-50%); display: block; width:fit-content; height:fit-content; background: url("../worksheet_new/images/btn_play.svg")no-repeat center / cover;} */
-.worksheet_new .container .main_content{padding:30px 50px 0 50px; margin:0 auto; width:100%; max-width: 820px; box-sizing: border-box;}
-.worksheet_new .container .main_content .problem_text {margin-top:20px;}
+.worksheet_new .container .main_content{clear:both; display:block; content: ''; padding:30px 50px 0 50px; margin:0 auto; width:100%; max-width: 820px; box-sizing: border-box;}
+.worksheet_new .container .main_content .problem_text {clear:both; display:block; content: ''; margin-top:20px;}
 .worksheet_new .container .main_content .problem_text h3{font-size: 16px; font-weight:500; line-height: 1.5;}
 .worksheet_new .container .main_content .problem_text p,
 .worksheet_new .container .main_content .problem_text span{margin-top:10px; font-size: 16px; font-weight: 500; line-height: 1.5; }
-.worksheet_new .container .main_content .problem_list{margin-top:30px;}
-.worksheet_new .container .main_content .problem_list ul{display:inline-grid; margin-right:10px; gap:20px 40px;}
-/* .worksheet_new .container .main_content .problem_list ul li{width:calc(50% - 20px);} */
+.worksheet_new .container .main_content .problem_list {clear:both; content: ''; margin:30px 0;}
+.worksheet_new .container .main_content .problem_list ul {float:left; margin-right:10px;}
+.worksheet_new .container .main_content .problem_list ul:last-child {margin-right: 0;}
+.worksheet_new .container .main_content .problem_list ul li {margin-bottom:20px; background-color: #d3d3d3;}
+.worksheet_new .container .main_content .problem_list ul li:last-child {margin-bottom:0;}
+.worksheet_new .container .main_content .problem_list.one ul li {width:100%;}
+.worksheet_new .container .main_content .problem_list.two ul {width:calc(50% - 10px);}
+.worksheet_new .container .main_content .problem_list.three ul {width:calc(33.333% - 10px);}
+.worksheet_new .container .main_content .problem_list.four ul {width:calc(25% - 10px);}
 .worksheet_new .container .main_content .problem_list ul li .problem_list_item{display: flex; gap: 0 10px; }
-
 .worksheet_new .container .main_content .problem_list ul li .problem_list_item .problem_list_item_num
 {flex-shrink: 0; display: flex; justify-content: center; align-items: center; width:30px; height:30px; border-radius: 50px; background-color:#97caff; font-size: 16px; font-weight: bold; line-height: 1.5; color: #fff; } 
 .worksheet_new .container .main_content .problem_list ul li .problem_list_item figure{width:260px;}
 
-.qr_area .play_inner {padding-top:14px; display: flex; justify-content:center; vertical-align: middle;}
-.qr_area .play_inner > * {width:91.5px; height:113px}
-.qr_area .play_btn {display: block; position:absolute; top:50%; left:50%; transform: translate(-50%,-50%);}
-.qr_area .play_btn img {width:63px; height:63px}
-.problem_day {width:100%; display: flex; justify-content:flex-start; align-items: center;}
-.problem_day div {font-weight: bold;}
-.problem_day .day {padding-left:12px; width:82px; height:38px; line-height:37px; font-size:18px; color:#fff; background-color: #0e306a; border-top-right-radius:50px; border-bottom-right-radius:50px;}
-.problem_day .examples {z-index: -1; margin-left:-14px; padding-left:20px; width:150px; height:38px; line-height:37px; font-size:22px; color:#2e91f6; background-color: #eaeff4; border-top-right-radius:50px; border-bottom-right-radius:50px;}
-.qr_inner {display: flex; justify-content:space-around; align-items: center; border-top:1px solid #d3d3d3;}
+.worksheet_new .qr_area .play_inner {padding-top:14px; display: flex; justify-content:center; vertical-align: middle;}
+.worksheet_new .qr_area .play_inner > * {width:91.5px; height:113px}
+.worksheet_new .qr_area .play_btn {display: block; position:absolute; top:50%; left:50%; transform: translate(-50%,-50%);}
+.worksheet_new .qr_area .play_btn img {width:63px; height:63px}
+.worksheet_new .problem_day {width:100%; display: flex; justify-content:flex-start; align-items: center;}
+.worksheet_new .problem_day div {font-weight: bold;}
+.worksheet_new .problem_day .day {padding-left:12px; width:82px; height:38px; line-height:37px; font-size:18px; color:#fff; background-color: #0e306a; border-top-right-radius:50px; border-bottom-right-radius:50px;}
+.worksheet_new .problem_day .examples {z-index: -1; margin-left:-14px; padding-left:20px; width:150px; height:38px; line-height:37px; font-size:22px; color:#2e91f6; background-color: #eaeff4; border-top-right-radius:50px; border-bottom-right-radius:50px;}
+.worksheet_new .qr_inner {display: flex; justify-content:space-around; align-items: center; border-top:1px solid #d3d3d3;}
 
 /* @media(max-width:720px) {
   .worksheet_new .container .main_content {padding: 0 20px 50px;}
