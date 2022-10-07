@@ -1,14 +1,14 @@
 @charset "utf-8";
-@font-face {font-family:"NotoSans"; src:url("/font/NotoSans-Light.woff") format("woff"); font-weight: 500;}
-@font-face {font-family:"NotoSans"; src:url("/font/BalooBhaina2-SemiBold.woff") format("woff"); font-weight:600;}
-@font-face {font-family:"NotoSans"; src:url("/font/NotoSans-Bold.woff") format("woff"); font-weight: 700;}
-@font-face {font-family:"NotoSansCJK_KR"; src:url("/font/NotoSansCJKkr-Regular.woff") format("woff"); font-weight: 400;}
-@font-face {font-family:"NotoSansCJK_KR"; src:url("/font/NotoSansCJKkr-Medium.woff") format("woff"); font-weight: 500;}
-@font-face {font-family:"NotoSansCJK_KR"; src:url("/font/NotoSansCJKkr-Bold.woff") format("woff"); font-weight: 700;}
+@font-face {font-family:"NotoSans"; src:url("../font/NotoSans-Light.woff") format("woff"); font-weight: 500;}
+@font-face {font-family:"NotoSans"; src:url("../font/BalooBhaina2-SemiBold.woff") format("woff"); font-weight:600;}
+@font-face {font-family:"NotoSans"; src:url("../font/NotoSans-Bold.woff") format("woff"); font-weight: 700;}
+@font-face {font-family:"NotoSansCJK_KR"; src:url("../font/NotoSansCJKkr-Regular.woff") format("woff"); font-weight: 400;}
+@font-face {font-family:"NotoSansCJK_KR"; src:url("../font/NotoSansCJKkr-Medium.woff") format("woff"); font-weight: 500;}
+@font-face {font-family:"NotoSansCJK_KR"; src:url("../font/NotoSansCJKkr-Bold.woff") format("woff"); font-weight: 700;}
 /* @font-face {font-family:"cambria"; src:url("../font/cambria.woff") format("woff"); font-weight: normal;}
 @font-face {font-family:"cambria"; src:url("../font/cambriab.woff") format("woff"); font-weight: bold;} */
-@font-face {font-family:"baloobhaina"; src:url("/font/BalooBhaina2-SemiBold.woff") format("woff"); font-weight:600;}
-@font-face {font-family:"baloobhaina"; src:url("/font/BalooBhaina2-Bold.woff") format("woff"); font-weight:700;}
+@font-face {font-family:"baloobhaina"; src:url("../font/BalooBhaina2-SemiBold.woff") format("woff"); font-weight:600;}
+@font-face {font-family:"baloobhaina"; src:url("../font/BalooBhaina2-Bold.woff") format("woff"); font-weight:700;}
 
 
 /* ===============================
