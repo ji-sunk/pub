@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=760"><!-- viewport 변경 확인  -->
+  <title>worksheet_New</title>
+  <link rel="stylesheet" type="text/css" href="css/ws_new.css"/>
+<!-- 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.jss"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.js"></script> -->
+  
+  <style>
+    body, html {
+    padding: 50px;
+}
+
+.step {
+    position: relative;
+}
+
+.step span {
+    display: block;
+    width: 80px;
+    height: 50px;
+    border: 5px solid red;
+    border-radius: 0 30% 0 0;
+    animation: loadingstep 1s linear infinite;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.step span + span {
+    animation-delay: .5s;
+}
+
+@keyframes loadingstep {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    20% {
+        transform: translate(-30%, 0%) rotate(0deg);
+    }
+    40% {
+        transform: translate(-50%, 0 ) rotate(30deg);
+    }
+    60% {
+        transform: translate(-50%, -50%) rotate(30deg);
+    }
+    80% {
+        transform: translate(20%, -20%) rotate(0deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+
+@keyframes loadingbackstep {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    20% {
+        transform: translate(-0, -30%) rotate(0deg);
+    }
+    40% {
+        transform: translate(0, -50%) rotate(30deg);
+    }
+    60% {
+        transform: translate(-50%, -50%) rotate(30deg);
+    }
+    80% {
+        transform: translate(-20%, 20%) rotate(0deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+
+  </style>
+</head>
+
+<body class="worksheet_new">
+    <div class="step">
+        <span class="left"></span>
+        <span class="right"></span>
+      </div>
+</body>
+</html>
