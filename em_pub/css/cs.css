@@ -41,7 +41,8 @@
 .cs_list .cs_list_wrap ul li.cs_complete a .cs_list_item_con .cs_state{ box-shadow: 0 0 0 1px var(--subText) inset;}
 .cs_list .cs_list_wrap ul li.cs_complete a .cs_list_item_con .cs_state span{color: var(--subText);}
 /* 하단버튼 */
-.cs_list .bottom_zero_btn_wrap {position: fixed;}
+.cs_list .bottom_zero_btn_wrap {position: fixed; height:90px;}
+.cs_list .bottom_zero_btn_wrap .bottom_zero_btn{height:100%;}
 /* 리스트 없음 */
 .none_list{margin-top:21.1822vh;}
 .none_list .img_wrap{display: flex; justify-content: center; }
@@ -59,6 +60,8 @@
 .cs_write .content_wrap textarea{height:280px; resize: none;}
 .cs_write .content_wrap .input_wrap .textarea_counter{position: absolute; bottom:15px; right:20px;}
 .cs_write .content_wrap .input_wrap .textarea_counter span{height: 19px; font-weight: 500; color: #999999;}
+.cs_write .bottom_zero_btn_wrap {position: fixed; height:90px;}
+.cs_write .bottom_zero_btn_wrap .bottom_zero_btn{height:100%;}
 
 /* cs_view  */
 /* 2022.09.22 그림자 opcity 0.1-> 0.05 */

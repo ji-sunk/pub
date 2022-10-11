@@ -1,0 +1,52 @@
+/* Layout */
+html{height:100%;}
+.ws_page_body{background:#fff; height:100%;}
+.ws_page_wrap{width:720px; height:100%; margin:0 auto;}
+.ws_page_wrap .ws_page_header{display:flex; height:110px; padding: 0; align-items: flex-end; background-color: #2e91f6;}
+.ws_page_wrap h1{width:100%; padding:0 50px; font-family:"baloobhaina"; font-size:40px; color:#fff; line-height:1.5; margin-bottom: 10px;}
+.ws_page_wrap .ws_page_content{padding:0 50px 0;}
+.ws_page_content table{width:100%}
+.ws_page_content table caption{display:none}
+.ws_review_content{padding-top:40px;}
+
+/* 커리큘럼 */
+.ws_page_wrap .top_title{position:relative; padding:25px 0 20px;}
+.ws_page_wrap .top_title .img{position: absolute; bottom:0; right:-25px; width:229px; height:159px}
+.ws_page_wrap .top_title .title{display:inline-block; border:3px solid #2e91f6; height:42px; margin:0; padding:8px 20px; border-radius:21px;}
+.ws_page_wrap .top_title .title i {display:inline-block; vertical-align: top; margin-right:5px;}
+.ws_page_wrap .top_title .title span{display:inline-block; font-family:"baloobhaina"; font-size:23px; color:#2e91f6; vertical-align: top; line-height: 1.2;}
+.ws_page_wrap .top_title .sub_desc{font-size:18px; font-weight:500; margin-top:13px; color:#333}
+.ws_curr_content{position: relative;}
+.ws_curr_content ~ .ws_curr_content{margin-top:12px;}
+.ws_curr_table{border-top:2px solid #d9d9d9; border-bottom:2px solid #d9d9d9}
+.ws_curr_table table th, .ws_curr_table table td{text-align: left; border-left:1px solid #d9d9d9; border-top:1px solid #d9d9d9; vertical-align:middle; text-align:center; padding:18px 5px; font-size:13px; line-height:19px; color:#333;}
+.ws_curr_table table th{border-left:none; color:#333; font-size:17px; font-weight: 700;}
+.ws_curr_table table td.td_left{text-align: left; font-size:11px; padding:18px 24px; font-weight:normal; line-height:18px;}
+.ws_curr_table table tr:first-child td,.ws_curr_table table tr:first-child th{border-top: none;}
+.ws_curr_table.now{border-color:#2e91f6;}
+.ws_curr_table.now table th{font-size:20px}
+.ws_curr_table.now table th, .ws_curr_table.now table td{background-color: #f5faff; color:#2e91f6; font-weight:700;}
+.ws_curr_table.now table td.td_left{font-weight:500;}
+.ws_page_wrap .page_num{position:fixed; bottom:0; left:50%; transform: translateX(-50%); -webkit-transform: translateX(-50%); color:#0e3e6a; font-size:14px; text-align: center; width:73px; height:38px; border-radius:38px 38px 0 0; background-color: #e9f3ff; line-height:3;}
+.ws_curr_content .ws_character{position:absolute; bottom:-12px; left:-35px; width:146px; height:205px;}
+
+/* 스터디 플랜 */
+.ws_plan_content{padding-top:30px;}
+.ws_plan_table table thead th{border-bottom:2px solid #2e91f6; color:#2e91f6; font-size:13px; font-weight:700; padding:8px}
+.ws_plan_table table tbody tr th,
+.ws_plan_table table tbody tr td{border-bottom: 1px solid #d9d9d9; border-left:1px solid #d9d9d9; text-align:center; vertical-align:middle; color:#333; line-height: 20px; padding:16px 10px}
+.ws_plan_table table tbody tr th,
+.ws_plan_table table tbody tr .sub_tit{font-size:14px; font-weight:700; line-height: 22px }
+.ws_plan_table table tbody tr th{border-left:0;  line-height: 17px;}
+.ws_plan_table table tbody tr th span{display:block; font-size:12px;}
+.ws_plan_table tr.sum_line{position: relative}
+.ws_plan_table tr.sum_line th:before,
+.ws_plan_table tr.sum_line td:last-child:after{position:absolute; left:0; display:block; content:''; width:100%; height:2px; background-color: #2e91f6;}
+.ws_plan_table tr.sum_line th:before{top:-1px;}
+.ws_plan_table tr.sum_line td:last-child:after{bottom:-1px}
+.ws_plan_content ~ .ws_img{margin-top: 35px;}
+
+@media print {
+    .ws_page_wrap{-webkit-print-color-adjust:exact;}
+  }
+  

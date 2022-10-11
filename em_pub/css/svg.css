@@ -288,3 +288,7 @@
 .dt_guide_icon .st1{fill:var(--subText);}
 
 .bubble_tap .tap{fill:var(--point_yellow);}
+
+/* 프로필 edit */
+.edit_pen_24 .st0{fill:var(--subText);}
+.edit_pen_24 .st1{fill:var(--subText);}

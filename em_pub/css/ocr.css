@@ -126,11 +126,12 @@
 /* ocr_recog */
 .ocr_recog {background-color: #ffffff;}
 .ocr_recog header {padding: 19px 0 0px;}
+.ocr_recog .header_wrap{min-height:28px;}
 /* 2022.09.22 a 삭제 */
 .ocr_recog header .sub_title .text_wrap h2 {color: #303030;}
 
-.ocr_recog .qz_progress {margin-top:32px; background-color: #f4f7fe;}
-.ocr_recog .container {margin:0; height: calc(100vh - 80px); background-color: transparent; border-radius:0;}
+.ocr_recog .qz_progress {/* margin-top:32px; */ background-color: #f4f7fe;}
+.ocr_recog .container {margin:0; height: calc(100vh - 64px); /* height: calc(100vh - 80px); */ background-color: transparent; border-radius:0;}
 .ocr_recog .main_contents {padding-top: 30px; padding-bottom: 0;}
 .ocr_recog .recog_message{display: flex; justify-content: center; }
 .ocr_recog .recog_message p{ font-size: 18px; font-weight: bold; line-height: 1.56; letter-spacing: -0.01px; color: var(--subText); text-align: center;}
@@ -338,7 +339,8 @@ color: #666;}
 /* 2022.07.15 */
 /* ocr 사용 방법 */
 .howto_ocr { background-image: linear-gradient(305deg, var(--gradationStart) 100%, var(--gradationEnd) 0%);}
-.howto_ocr .container {margin-top: 0; height: calc(100vh - 55px);}
+.howto_ocr .container {margin-top:15px; height: calc(100vh - 70px);}
+/* .howto_ocr .container {margin-top: 0; height: calc(100vh - 55px);} */
 .howto_ocr .howto_ocr_contents{padding-top:50px; padding-bottom:120px;}
 .howto_ocr .howto_ocr_step:nth-child(n+2){margin-top:60px;}
 .howto_ocr .howto_ocr_step .ocr_step_title .ocr_step_num{display: flex; justify-content: center;}
@@ -431,9 +433,10 @@ color: #666;}
   
   /* ocr_recog */
   /* 2022.07.18 */
-  .ocr_recog header {padding: 22px 0 0px;}
-  .ocr_recog .qz_progress {margin-top: 31px;}
-  .ocr_recog .container {margin:0; height: calc(100vh - 91px);}
+  .ocr_recog header {padding: 23px 0 0px; /* padding: 22px 0 0px; */}
+  .ocr_recog .header_wrap{min-height:34px;}
+  .ocr_recog .qz_progress {margin-top: 25px; /* margin-top: 31px; */}
+  .ocr_recog .container {margin:0; height: calc(100vh - 87px); /* height: calc(100vh - 91px); */}
   .ocr_recog .recog_message p {font-size: 24px; line-height: 1.17;}
   .ocr_recog .recog_message p span {margin-top:10px; font-size: 18px; line-height: 1.56; letter-spacing: -0.01px;}
 
@@ -488,7 +491,7 @@ color: #666;}
   .history_confirm button {margin:0 auto; padding: 24px 80px; width: 400px; border-radius: var(--borderRadius);}
   
   /* how to ocr */
-  .howto_ocr .container {height: calc(100vh - 76px);}
+  .howto_ocr .container {margin-top:0; height: calc(100vh - 76px);}
   .howto_ocr .howto_ocr_contents {padding-top: 60px;}
   .howto_ocr .howto_ocr_step.step1 .ocr_step_content .ocr_step_item .text_wrap p br{display: block;}  
 }

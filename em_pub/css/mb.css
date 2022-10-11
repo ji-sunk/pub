@@ -42,13 +42,14 @@
 .forgot_pass .forgot_text p strong{color:var(--subText);}
 .forgot_pass .forgot_text .emph{margin-top:15px; color:var(--subText);}
 .forgot_pass .forgot_form_wrap{margin-top:35px;}
+.forgot_pass .bottom_zero_btn_wrap{position: fixed;}
 
 /*패스워드 찾기 완료*/
 .forget_complete .main_contents{padding-bottom: 0; display: flex; justify-content: center; align-items: center;}
 .forget_complete .forgot_content{margin-top:29.4334vh;}
 .forget_complete .forgot_text {margin-top: 0; padding: 0;}
 .forget_complete .forgot_text .forgot_complete_desc{margin-top:20px; font-size: 14px; font-weight: 500; line-height: 1.43; text-align: center; color: #666;}
-.forget_complete .bottom_zero_btn_wrap{position: fixed;}
+.forget_complete .bottom_zero_btn_wrap{position: fixed; bottom:0}
 
 /*회원가입*/
 .create_acc .main_contents { padding-bottom: 126px;}
@@ -83,10 +84,8 @@
 .create_acc_comp .bottom_zero_btn_wrap{position: fixed;}
 
 
-@media (max-width: 359px){}
-
 @media (max-width: 599px) and (min-height:720px) {
-  .login .bottom_btn_wrap{position:fixed;  margin-top:0;}
+  .login .bottom_btn_wrap{position:fixed; margin-top:0;}
 }
 
 @media (min-width:600px){  
@@ -94,7 +93,7 @@
   .login .login_form { margin-top: 70px;}
   .login .bottom_btn_wrap .create_acc_btn{margin: 0 auto;max-width: 550px;}
   .login .btn_wrap .forgot_pass {margin-top: 25px;}
-  .login .bottom_btn_wrap{position:fixed;  margin-top:0;}
+  .login .bottom_btn_wrap {position:fixed; margin-top:0;}
   /* 하단 버튼 */
   .bottom_zero_btn_wrap .bottom_zero_btn{height:90px; padding:26px 0 37px; width: 100%; border-radius: 0; background-color: #bfcfe7;}
   .bottom_zero_btn_wrap .bottom_zero_btn span{height: 27px; font-size: 20px; line-height: 1.3; letter-spacing: -0.01px;}
@@ -171,7 +170,7 @@
   .login .wrap {padding:0; max-width: 550px;} 
   .login .login_main .wrap { padding: 0;} 
   .login .login_logo {margin-top: 80px;}
-  .login .bottom_btn_wrap {position: fixed;  margin-top: 0;}
+  .login .bottom_btn_wrap {position: unset; transform: translateX(0%);}
   /* 하단버튼 */
   .bottom_zero_btn_wrap {position: fixed;}  
   

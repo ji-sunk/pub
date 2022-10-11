@@ -24,12 +24,12 @@ border-top: 5px solid transparent; border-bottom: 5px solid transparent;}
 .purchase_landing .discount_board .opt_price{flex-shrink: 0;}
 .purchase_landing .discount_board .opt_price .price{font-weight: bold; text-align: center; color: var(--subText);}
 .purchase_landing .discount_board .opt_price .period{height:19px; font-weight: bold; line-height: 1.43; text-align: center; color: var(--subText);}
-.purchase_landing .purchase_desc_list{margin-top:40px; padding:0 10px;}
+.purchase_landing .purchase_desc_list{margin-top:40px; padding:0 10px; display: flex; justify-content: center;}
 .purchase_landing .purchase_desc_list ul li{display: flex; gap:0 15px;}
 .purchase_landing .purchase_desc_list ul li:nth-child(n+2){margin-top:20px;}
 .purchase_landing .purchase_desc_list ul li i{flex-shrink: 0;}
 .purchase_landing .purchase_desc_list ul li .text_wrap p{margin-top:10px; font-weight: 500;}
-.purchase_landing .bottom_zero_btn_wrap{margin-top:63px;}
+.purchase_landing .bottom_zero_btn_wrap{margin-top:63px; position:fixed;}
 
 /* 결제 완료 */
 .purchase_complete{background-color: #ffffff;}
@@ -50,10 +50,17 @@ border-top: 5px solid transparent; border-bottom: 5px solid transparent;}
 .pl_basic .discount_board {margin: 54px auto 0;}
 .pl_basic .bottom_zero_btn_wrap {margin-top: 76px;}
 .pl_basic .purchase_desc_list ul li .text_wrap p {font-size: 12px; font-weight: 500; line-height: 1.33; color: #303030;}
+/* 2022.10.04 하단 버튼 고정, 컨텐츠 세로 중앙 정렬 */
+body.purchase:not(.in-ph){min-height:100vh}
+body.purchase:not(.in-ph) .purchase_landing_main{height:calc(100% - 55px);display:flex; align-items:center;}
+body.purchase:not(.in-ph) .purchase_landing_main .main_contents .wrap{padding-bottom:120px}
+.pl_basic .bottom_zero_btn_wrap{position: fixed; margin-top:0}
+.main_contents .wrap .free_btn {margin-top:60px; margin-bottom:0}
 
 .free_btn {margin-bottom:40px;}
 .free_btn .btn_wrap{display: flex; justify-content: center;}
 .free_btn .btn_wrap a span{font-weight: 500; text-align: center; color: #666; border-bottom: 1px solid #666666;}
+
 
 /* 결제 비교 테이블 */
 .purchase_table{margin-top:40px;}
@@ -103,7 +110,6 @@ border-top: 5px solid transparent; border-bottom: 5px solid transparent;}
 .discount_plan .discount_plan_inner .discount_plan_item .btn_wrap a span{font-size: 16px; font-weight: bold;
 line-height: 1.5; color: #fff;}
 
-
 /* kok :lang(ko)*/
 .ko .purchase_landing_logo .img_wrap figure {width: 150px;}
 .ko .purchase_landing_con {margin-top: 50px;}
@@ -117,18 +123,16 @@ line-height: 1.5; color: #fff;}
   letter-spacing: -0.01px; }
 .ko .discount_board .opt_price {display: flex; gap: 0 5px; align-items: baseline;  }
 .ko .discount_board .opt_price .price{font-size: 24px; font-weight: bold; line-height: 1.33;  letter-spacing: -0.01px;}
-.ko .bottom_zero_btn_wrap {margin-top:  60px;}
+/* .ko .bottom_zero_btn_wrap {margin-top:  60px;} */
 
 /* 인도 필리핀 */
 .in-ph .purchase_landing_con{margin-top: 40px;}
 .in-ph .free_btn{margin:60px 0 0;}
 .in-ph .main_contents .wrap{padding-bottom:120px;}
 
-
 @media (max-width:319px){    
   .purchase_landing .purchase_landing_logo {flex-wrap: wrap; gap: 10px 0; }
 }
-
 
 @media (max-width: 359px){
   .ko .purchase_desc_list {padding: 0 0;}
@@ -144,7 +148,10 @@ line-height: 1.5; color: #fff;}
   .purchase_landing header .sub_title a i{width:32px; height:32px;}
   .purchase_landing .purchase_desc_list {padding: 0;}
   .purchase_landing .bottom_zero_btn_wrap {position: fixed; margin-top: 0;}
-
+  /* 2022.10.04 하단 버튼 고정, 컨텐츠 세로 중앙 정렬 */
+  body.purchase:not(.in-ph){min-height:auto; height:100vh}
+  body.purchase:not(.in-ph) .purchase_landing_main{height: calc(100% - 175px);}
+ 
   /* 걸재 완료 */
   .purchase_complete header {padding: 23px 0 21px;}
   .purchase_complete header .sub_title a i{width:32px; height:32px;}
@@ -167,27 +174,33 @@ line-height: 1.5; color: #fff;}
   .in-ph .purchase_desc_list ul li .text_wrap p br{display: none;}
 }
 
-
 @media (min-width:600px) and (orientation: portrait) {
     /* 걸재 랜딩페이지 */
-  .purchase_landing .purchase_landing_main {padding-top: 160px;}
+  /* .purchase_landing .purchase_landing_main {padding-top: 160px;} 2022.10.04 컨텐츠 세로 중앙 정렬 이슈로 삭제 */ 
   .purchase_landing .purchase_desc_list ul li:nth-child(n+2) {margin-top: 40px;}
-
-  .ko .purchase_landing_main{padding-top: 158px;}
+  /* .ko .purchase_landing_main{padding-top: 158px;} 2022.10.04 컨텐츠 세로 중앙 정렬 이슈로 삭제 */
   .ko .purchase_desc_list ul li:nth-child(n+2) {margin-top: 15px;}
-
   .in-ph .purchase_landing_main {padding-top: 20px;}
+  body.purchase:not(.in-ph) .purchase_landing_main .main_contents .wrap{padding-bottom:0}
 }
 
+/* 2022.10.04 하단 버튼 고정, 컨텐츠 세로 중앙 정렬 */
+@media (min-width:768px) and (orientation: landscape) {
+  body.purchase:not(.in-ph) .purchase_landing_main .main_contents .wrap{padding-bottom:60px;}
+}
+
+@media (max-height:768px) and (orientation: landscape) {
+  body.purchase:not(.in-ph) .purchase_landing_main{align-items: flex-start; }
+}
 
 @media (max-width:768px) and (orientation: landscape) { 
-  .purchase_landing .bottom_zero_btn_wrap {position: relative; margin-top: 63px;}  
+  /* .purchase_landing .bottom_zero_btn_wrap {position: relative; margin-top: 63px;}  2022.10.04 하단 버튼 고정 이슈로 삭제 */
 }
 
 @media (min-width:1024px) and (orientation: landscape) {
     /* 걸재 랜딩페이지 */
   .purchase_landing  .wrap {padding: 0; max-width: 550px;}
-  .purchase_landing .purchase_landing_main {padding-top: 20px;}
+  /* .purchase_landing .purchase_landing_main {padding-top: 20px;} 2022.10.04 컨텐츠 세로 중앙 정렬 이슈로 삭제 */
   .purchase_landing .bottom_zero_btn_wrap {position: fixed; margin-top: 0;}
   /* 걸재 완료 */
   .purchase_complete .purchase_complete_con .img_wrap figure{max-width: 308px;}
@@ -199,7 +212,7 @@ line-height: 1.5; color: #fff;}
 /* 높이가 작은 타블렛 */
 @media (min-width: 1024px) and (max-height:819px) and (orientation: landscape){
  /* 걸재 랜딩페이지 */
-  .purchase_landing .purchase_landing_main { padding-bottom: 120px;}
+  /* .purchase_landing .purchase_landing_main { padding-bottom: 120px;} 2022.10.04 컨텐츠 세로 중앙 정렬 이슈로 삭제 */
   
   /* 2022.08.16 기본 결제 렌딩 페이지 */
   .pl_basic .purchase_landing_con {margin-top: 32px;  }

@@ -142,14 +142,14 @@ header .header_wrap .subscribe_tag.subscribe_on .subscribe_tag_inner span{color:
 .gnb{position: fixed; top:0; left:0; z-index:999; width:100%; height:100%; background-color: rgba(48, 48, 48, 0.7); opacity: 0; visibility: hidden; }
 /* 2022.09.07 */
 .gnb .gnb_inner{position: absolute; top:0; right:100%; padding:19px 20px 50px; width:calc(100% - 50px); height:100vh; overflow: auto; background-image: linear-gradient(to bottom, var(--gradationStart), var(--gradationEnd)); transition:transform, .5s;}
-.gnb .gnb_inner .gnb_info{margin-top:24px; padding:0 10px;}
+.gnb .gnb_inner .gnb_info{margin-top:4px; padding:0 10px;}
 .gnb .gnb_inner .gnb_info article:nth-child(n+3){border-top:1px solid rgba(255,255,255,.1)}
 .gnb .gnb_inner .gnb_info .user_profile .profile_character{display: flex; justify-content: center; }
 .gnb .gnb_inner .gnb_info .user_profile .profile_character figure{width:120px; height:120px; border-radius: 50%; overflow: hidden;}
 .gnb .gnb_inner .gnb_info .user_profile .btn_wrap{margin-top:10px; display: flex; justify-content: center; }
 .gnb .gnb_inner .gnb_info .user_profile .btn_wrap a{padding:5px 10px; display: flex; align-items: center; gap: 0 5px; border-radius: var(--borderRadius); background-color: #ffffff;}
 .gnb .gnb_inner .gnb_info .user_profile .btn_wrap a span{height: 17px; font-size: 12px; font-weight: bold; color: var(--subText);}
-.gnb .gnb_inner .gnb_info .learn_list{margin-top:57px;}
+.gnb .gnb_inner .gnb_info .learn_list{margin-top:47px;}
 .gnb .gnb_inner .gnb_info .learn_list ul{display: flex; flex-direction: column; gap: 25px 0;} 
 .gnb .gnb_inner .gnb_info .learn_list ul li a{display: flex; justify-content: space-between; align-items: center;}
 .gnb .gnb_inner .gnb_info .learn_list ul li a span{height: 30px; font-size: 22px; font-weight: bold; letter-spacing: -0.01px; color: #fff;}
@@ -433,7 +433,7 @@ color: #fff;}
   .sub_page header .sub_title a i img{width:100%;}
 	
 	/* gnb */
-	.gnb .gnb_inner{padding: 26px 40px 50px; width:calc(100% - 120px);}
+	.gnb .gnb_inner{padding: 23px 40px 50px; /* padding: 26px 40px 50px; */ width:calc(100% - 120px);}
 	.gnb .gnb_inner .close_gnb_wrap .close_gnb .icon_24{width:32px; height:32px;}
 	.gnb .gnb_inner .gnb_info .user_profile .profile_character figure {width: 160px; height: 160px;}	
 	.gnb .gnb_inner .gnb_info .service_list ul {padding:0 34px; gap: 0 40px;}

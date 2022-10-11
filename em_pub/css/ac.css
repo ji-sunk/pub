@@ -14,6 +14,7 @@
 .acc .acc_form .terms_policise .terms_policise_list_wrap .terms_policise_list li:nth-child(n+2){margin-top:10px;}
 .acc .acc_form .terms_policise .terms_policise_list_wrap .terms_policise_list a span{height: 19px; font-weight: 500; line-height: 1.14; color: #666; border-bottom: 1px solid #666666;}
 .acc .acc_form .terms_policise .terms_policise_agree .check_box_wrap input[type="checkbox"] + label {gap: 0 10px;}
+.acc .acc_form .terms_policise .terms_policise_agree .check_box_wrap input[type="checkbox"] + label span {white-space: nowrap;}
 /* 어카운터 로그인 */
 .acc_login .acc_input_wrap .input_out:nth-child(n+2){margin-top:30px;}
 .acc_login .acc_input_wrap .input_out label{height: 24px; font-size: 18px; font-weight: bold; line-height: 1.56; letter-spacing: -0.01px;}

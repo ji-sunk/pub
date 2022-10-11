@@ -72,3 +72,9 @@
   .worksheet .header_wrap .header_right {right:20px;  }
   .worksheet .header_wrap .qr_inner {width: 80px; height: 80px;}
 }
+/* 프린트 출력 시 CSS */
+@media print {
+  .worksheet {-webkit-print-color-adjust:exact;}
+  .worksheet .header_wrap .ch .img_wrap{position:relative; bottom:-32px;}
+  .worksheet .header_wrap .ch {display:block;}
+}

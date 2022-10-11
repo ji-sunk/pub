@@ -11,6 +11,7 @@ header.fixed_header + .container {margin-top: 109.8px;}
 .qz{position:relative; background-color: #ffffff;}
 .qz header {position: relative; padding: 19px 0 0px;}
 .qz header.on{z-index: 1; box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);}
+.qz:not(.incorrect) .header_wrap{min-height:28px}
 /* 탑 페이지네이션, 프로그레스 */
 .qz_pagination{height:24px;}
 .qz_pagination span{font-size:18px; font-weight: 500; line-height: 1.56; letter-spacing: -0.01px;}
@@ -50,12 +51,23 @@ header.fixed_header + .container {margin-top: 109.8px;}
 /* 문제영역  */
 /* 2022.07.08*/
 .quiz_content .quiz_area {position: relative; padding-bottom:60px; margin:10px auto 0; display: flex;}
-.quiz_content .quiz_area .problem{position: relative; z-index: 1; margin: 0 auto; padding:0 20px; }
+.quiz_content .quiz_area .problem{position: relative; z-index: 1; margin: 0 auto; padding:0 20px;/*  word-break: break-all; */ }
 .quiz_content .quiz_area .problem figure img{width:auto;}
+
+/* 2022.09.29 문제영역 세로 스크롤100% 처리 */
+.quiz_content .quiz_area.newscroll_bar{overflow: overlay;}
+.quiz_content .quiz_area .problem.newscroll_bar{overflow: overlay; padding-bottom:60px}
+.qz .main_contents>.wrap {display:flex; flex-direction: column;}
+.qz .container.notepad_on .main_contents>.wrap {display:block;}
+.qz .quiz_content{flex-grow: 1;}
+.qz .quiz_content .quiz_content_inner{height:100%;}
+.qz .quiz_content .quiz_area{height:100%;}
+.qz.incorrect .quiz_content .quiz_content_inner{height:100%;}
+.qz.incorrect .quiz_content .quiz_content_inner .quiz_area{height:100%;}
 
   /* 2022.08.08 노트패드 영역*/
 .notepad_area{position: absolute; top:0; left:0; z-index: 1; display: none; width:100%; height:100%;}
-.notepad_area .notepad_tip_line{position: absolute; top:0; left:0; right:0; bottom:0; z-index: 9; display: none; width:100%; height:100%; border:dashed 3px #ffbe30;} 
+.notepad_area .notepad_tip_line{position: absolute; top:0; left:0; right:0; bottom:0; z-index: 9; display: none; width:100%; /* height:100%; */ height:calc(100% + 25px); border:dashed 3px #ffbe30;} 
 .notepad_area .notepad_tip_desc{position:absolute; bottom:20px; left:50%; transform: translateX(-50%);  z-index: 9;  padding:10px 20px; display: none; width:calc(100% - 40px); max-width: 335px; border-radius: var(--borderRadius); background-color: #ffbe30;}
 .notepad_area .notepad_tip_desc p{font-weight:bold; line-height:1.43; text-align: center;}
 
@@ -97,18 +109,20 @@ header.fixed_header + .container {margin-top: 109.8px;}
 /*그리기, 키보드 전환*/
 /* 2022.08.12 */
 /* 2022.09.21 bottom:0 -> bottom:35px 높이가 달라져 키패드 영역(95 line)과 문제 영역의 높이(35 line) 값이 달라집니다.*/
-.input_tool .tools_controll{position: absolute; bottom:35px; left:0; right:0; z-index: 3; width:100%;}
+/* 2022.10.04 bottom:35px; -> bottom:0; 아이폰 홈bar 고려 위치, 높이값 수정 */
+.input_tool .tools_controll{position: absolute; bottom:0; left:0; right:0; z-index: 3; width:100%;}
 .input_tool .tools_controll .inner_wrap{display: flex;}
-.input_tool .tools_controll .inner_wrap .tool_select_btn_wrap{flex-shrink: 0; display: flex; align-items: center;}
-.input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .tool_select_btn{flex-shrink: 0; padding:16px 25px 15px 26px; width:75px; height: 55px;  background-color: #6460f0; } 
+.input_tool .tools_controll .inner_wrap .tool_select_btn_wrap{flex-shrink: 0; display: flex; align-items: center; height:90px}
+.input_tool .tools_controll .inner_wrap .tool_select_btn_wrap button{height: 100%;}
+.input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .tool_select_btn{flex-shrink: 0; width:75px; padding:0 25px 10px 26px; /* padding:16px 25px 15px 26px; */ /* height: 55px; */  background-color: #6460f0; } 
 .input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .tool_select_btn i{display: none;}
 .input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .tool_select_btn.mode_key i.tool_keyboard{display: block;}
 .input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .tool_select_btn.mode_pen i.tool_pen{display: block;}
-.input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .keyborad_string{flex-shrink: 0;  padding:18px 28px; display: none;  width:75px; background-color: #a3a0ff;}
+.input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .keyborad_string{flex-shrink: 0;  /* padding:18px 28px; */ padding:0 28px 10px; display: none;  width:75px; background-color: #a3a0ff;}
 .input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .keyborad_string span{height:19px; font-weight: bold; line-height: inherit; text-align: center; color:#ffffff;}
 .input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .keyborad_string.active{display: block;}
 .input_tool .tools_controll .inner_wrap .tool_check_btn_wrap{display: flex; align-items:center; width:100%; }
-.input_tool .tools_controll .inner_wrap .tool_check_btn_wrap button{padding:16px 25px 15px;  display: flex; justify-content: center; 
+.input_tool .tools_controll .inner_wrap .tool_check_btn_wrap button{/* padding:16px 25px 15px; */ padding:0 25px 10px; display: flex; justify-content: center; 
   align-items:center; width:100%; height:100%;  background-color: var(--disabled_bg);}
 .input_tool .tools_controll .inner_wrap .tool_check_btn_wrap button span{margin-right:10px; font-size:16px; font-weight: bold; line-height:1.5; color:var(--disabled_text);}
 .input_tool .tools_controll .inner_wrap .tool_check_btn_wrap button.active{background-image: linear-gradient(100deg, var(--gradationStart), var(--gradationEnd));}
@@ -128,12 +142,12 @@ header.fixed_header + .container {margin-top: 109.8px;}
 .qz .container.notepad_on .main_contents .bubble_desc{top:inherit; bottom: calc(100% + 15px);}
 .qz .container.notepad_on .main_contents .bubble_desc::before{top:100%; transform: rotate(180deg);  }
 .qz .container.notepad_on .main_contents .quiz_content_inner{height:100%;}
-.qz .container.notepad_on .main_contents .quiz_area{position: relative; margin: 0 auto; padding-bottom:0; width:100%; height:100%; overflow: hidden;}
+.qz .container.notepad_on .main_contents .quiz_area{position: relative; margin: 0 auto; padding-bottom:0; width:100%; height:100%; /* overflow: hidden; */}
 .qz .container.notepad_on .main_contents .quiz_area .problem { padding: 28px 10px 0;}
 .qz .container.notepad_on .quiz_content{height: calc(100% - 93px);}
 .qz .container.notepad_on .main_contents .quiz_area::-webkit-scrollbar {width: 5px; height: 5px;}
 /* 2022.08.08 */
-.qz .container.notepad_on .notepad_area{display: block;}
+.qz .container.notepad_on .notepad_area{display: block; height:calc(100% - 25px)}
 .qz .container.notepad_on .notepad_tip_line{display: block;} 
 .qz .container.notepad_on .notepad_tip_desc{ display: block;}
 .qz .container.notepad_on .main_contents .note_wrap {bottom: 0; z-index: 999;}
@@ -230,6 +244,13 @@ header.fixed_header + .container {margin-top: 109.8px;}
 .multi_choice_board .multi_answer_list li input[type="radio"] + label span{font-family:'cambria', serif; font-size: 22px; letter-spacing: -0.01px; color: #303030;}
 .multi_choice_board .multi_answer_list li input[type="radio"] + label:before{counter-increment: answer_list;  content: counter(answer_list); margin-right:20px; display: flex; justify-content: center; align-items: center; width:40px; height:40px; font-size: 16px; font-weight: bold; line-height: 1.5; color: var(--subText); border-radius: 15px; background-color: #ffffff;}
 .multi_choice_board .multi_answer_list li input[type="radio"]:checked + label:before{ color:#ffffff; background-color: var(--subText);}
+/* checkbox */
+.multi_choice_board .multi_answer_list li input[type="checkbox"]{position:absolute; padding:0; margin:-1px; width:1px; height:1px; border:0; overflow:hidden; clip:rect(0,0,0,0); }
+.multi_choice_board .multi_answer_list li input[type="checkbox"] + label{position:relative; display:flex; align-items: center; width:100%; cursor:pointer; }
+.multi_choice_board .multi_answer_list li input[type="checkbox"] + label span{font-family:'cambria', serif; font-size: 22px; letter-spacing: -0.01px; color: #303030;}
+.multi_choice_board .multi_answer_list li input[type="checkbox"] + label:before{counter-increment: answer_list;  content: counter(answer_list); margin-right:20px; display: flex; justify-content: center; align-items: center; width:40px; height:40px; font-size: 16px; font-weight: bold; line-height: 1.5; color: var(--subText); border-radius: 15px; background-color: #ffffff;}
+.multi_choice_board .multi_answer_list li input[type="checkbox"]:checked + label:before{ color:#ffffff; background-color: var(--subText);}
+
 .multi_choice_board .multi_answer_list.answer_mline li{margin-bottom: 10px;}
 .multi_choice_board .multi_answer_list.answer_mline li input[type="radio"] + label span{padding:12px 10px; }
   /* test 삭제바람*/
@@ -239,12 +260,11 @@ header.fixed_header + .container {margin-top: 109.8px;}
 /* 2022.09.22 객관식 문제 선택 후 노트패드 on*/
 .qz .container.multi_choice.notepad_on .note_wrap::before{display: none;}
 
-
 /* 오답노트 */
 .incorrect{background-image: linear-gradient(335deg, var(--currentSubjectBgStart), var(--currentSubjectBgEnd));}
-.incorrect header {padding: 16px 0 0px;}
+.incorrect header {padding: 19px 0 0px; /* padding: 16px 0 0px; */}
 .incorrect header .header_wrap {display: block;}
-.incorrect .quiz_content .quiz_area {width: 100%;}
+.incorrect .quiz_content .quiz_area {width: 100%; padding-bottom:0;} /* 2022.09.28 가로스크롤 이슈로 padding 추가 */
 /* 오답 리스트 */
 .incorrect_list{margin-top:22px; }
 .incorrect_list .list_inner{display: flex; justify-content: center;}
@@ -285,7 +305,8 @@ header.fixed_header + .container {margin-top: 109.8px;}
 .incorrect_check .check_inner .bubble_desc{ right: inherit; left:0;}
 .incorrect_check .check_inner .bubble_desc::before {right: inherit; left:30px;}
 /* 오답 steps */
-.incorrect_check .exam_content{position: fixed; left:20px; transform: translateY(10px); z-index: 9;  padding:5px; display: none; width:calc(100% - 40px); min-height:190px; max-height: 515px;  border:1px solid #707070; border-radius: 15px; box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.02); background-color: #ffffff; overflow: hidden;}
+/* 2022.09.28 max-height js에서 조정됨. js 개발 적용되면 원복 필요. */
+.incorrect_check .exam_content{position: fixed; left:20px; transform: translateY(10px); z-index: 9;  padding:5px; display: none; width:calc(100% - 40px); min-height:190px; max-height: 450px; /* max-height: 515px; */  border:1px solid #707070; border-radius: 15px; box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.02); background-color: #ffffff; overflow: hidden;}
 .incorrect_check .exam_content .exam_content_inner{padding:15px; overflow: overlay;  width:100%; }
 .incorrect_check .exam_content.active{display: block;}
 
@@ -350,18 +371,16 @@ header.fixed_header + .container {margin-top: 109.8px;}
 
 @media (min-width:600px){    
   /* 2022.09.22 bubble_desc -> common 이동   */
-
   /* 2022.09.22 미사용 삭제 */
-
-  .qz header {position: relative; padding: 26px 0 0px; }
+  .qz header {position: relative; padding: 23px 0 0px; /* padding: 26px 0 0px; */ }
+  .qz:not(.incorrect) .header_wrap{min-height:34px}
   .qz_pagination {height: 27px;}
   .qz_pagination span {font-size: 20px;}
-
   .quiz_desc{margin:40px auto 0; padding:0 30px; width:100%; max-width: 100%;}
   .quiz_desc p,
   .quiz_desc span {font-size: 18px;}
     /* 2022.08.02*/
-  .quiz_content {margin-top: 15px; height: calc(100% - 109px);}
+  .quiz_content {margin-top: 15px; /* height: calc(100% - 109px); */}/* 2022.09329 ipad에서 하단 붙음 현상때문에 height 주석처리 */
   .quiz_content .quiz_content_inner {height: 100%;}
   .quiz_content .quiz_area {margin: 30px auto 0;}
   .quiz_content .quiz_area .problem{margin: 0 auto; padding:0 50px; }
@@ -406,12 +425,12 @@ header.fixed_header + .container {margin-top: 109.8px;}
   .input_tool .tool_wrap{height:500px;}
     /*2022.09.20 그리기 툴 -> common */
   .input_tool .tools_controll {bottom: 0px;}
-  .input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .tool_select_btn {padding: 30px 64px; width: 160px; height:92px;}
+  .input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .tool_select_btn {/* padding: 30px 64px; */ padding:0 64px; width: 160px; /* height:92px; */}
   .input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .tool_select_btn i{width:32px; height:32px;}
   .input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .tool_select_btn i img{width:100%;}
-  .input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .keyborad_string {padding: 33px 67px 32px; width:160px; height:92px;}
+  .input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .keyborad_string {/* padding: 33px 67px 32px; */ padding:0 67px; width:160px; /* height:92px; */}
   .input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .keyborad_string span {height: 27px; font-size:20px; }
-  .input_tool .tools_controll .inner_wrap .tool_check_btn_wrap button {padding: 33px 32px 32px; height: 92px;}
+  .input_tool .tools_controll .inner_wrap .tool_check_btn_wrap button {padding:0 32px; /* padding: 33px 32px 32px; */ /* height: 92px; */}
   .input_tool .tools_controll .inner_wrap .tool_check_btn_wrap button span {height:27px; font-size: 20px; line-height: 1.3;}
      
   /* 키보드 */
@@ -447,7 +466,7 @@ header.fixed_header + .container {margin-top: 109.8px;}
   
   /* 오답 노트*/
   .incorrect{background-image: linear-gradient(35deg, var(--currentSubjectBgStart),var(--currentSubjectBgEnd));}
-  .incorrect header {padding: 22px 0 0px;}
+  .incorrect header {padding: 23px 0 0px; /* padding: 22px 0 0px; */}
   .incorrect header .sub_title a .text_wrap h2 {height: 33px; font-size: 24px; line-height: 1.33;}
   /* 오답 리스트 */
   .incorrect_list {margin-top: 25px;}
@@ -478,7 +497,6 @@ header.fixed_header + .container {margin-top: 109.8px;}
   .incorrect .container.multi_choice .main_contents>.wrap {height: calc(100vh - 588px);}
 }
 
-
 @media (min-width:600px) and (orientation: portrait) {   
   .qz .main_contents .wrap {height: calc(100vh - 588px);/* 588 - 헤더  + 키패드*/ max-width: inherit;}  
   .quiz_content .quiz_area .notepad .notepad_tip_desc { bottom: 30px; width:100%;}
@@ -493,10 +511,13 @@ header.fixed_header + .container {margin-top: 109.8px;}
   .incorrect_check .exam_content{left: 50%; transform:translateY(10px) translateX(-25%); width: 550px; max-height: 464px!important;}
 }
 
+/* 갤럭시 폴드 펼침 상태 */
+@media (min-width:590px){
+  .input_tool .tools_controll {bottom: 0px;}
+}
 
 @media (max-width:768px) and (orientation: portrait) { 
   .main_contents.notepad_on + .input_tool {bottom: 35px;}
-
   .keyboard .key_type .key_type_inner .key_wrap>li .more_key_wrap .key {width: 60px;}
 }
 
@@ -593,11 +614,11 @@ header.fixed_header + .container {margin-top: 109.8px;}
   .input_tool{ position: relative; width:46%; height: calc(100vh - 89px);}
   .input_tool .tool_wrap {margin-top: 0; height: 100%;}  
   .input_tool .input_tool_wrap {height: calc(100% - 55px);}
-  .input_tool .tools_controll .inner_wrap .tool_check_btn_wrap button {padding: 17px 25px 16px; height:55px;}
+  .input_tool .tools_controll .inner_wrap .tool_check_btn_wrap button {padding: 17px 25px 16px; /* height:55px; */}
   .input_tool .tools_controll .inner_wrap .tool_check_btn_wrap button span {margin-right: 10px; height: 22px; font-size: 16px;  line-height: 1.5;}
-  .input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .tool_select_btn {padding: 16px 25px 15px 26px; width:75px; height:55px;}  
+  .input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .tool_select_btn {padding: 16px 25px 15px 26px; width:75px; /* height:55px; */}  
   .input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .tool_select_btn i {width: 24px; height: 24px;}
-  .input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .keyborad_string {padding: 18px 28px; width:75px; height:55px;}
+  .input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .keyborad_string {padding: 18px 28px; width:75px; /* height:55px; */}
   .input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .keyborad_string span {height: 19px; font-size:14px;}
   .keyboard .key_type .key_type_inner .key_num .key_wrap>li .key span {height: 21px; font-size: 18px; line-height: 1.44;}
   .keyboard .key_type .key_type_inner .key_oper .key_wrap>li .key span {height: 28px; font-size: 24px; line-height: 1.33;}   
@@ -681,9 +702,9 @@ header.fixed_header + .container {margin-top: 109.8px;}
   .input_tool .tools_controll {border-left: 1px solid #f3f3f3;}
   
   /* 그리기 툴 -> common */
-  .input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .tool_select_btn {padding: 30px 29px; width: 90px; height: 92px;}
+  .input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .tool_select_btn {padding:0 29px; /* padding: 30px 29px; */ width: 90px; /* height: 92px; */}
   .input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .tool_select_btn i {width: 32px; height:32px;}
-  .input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .keyborad_string {padding: 33px 32px 32px; width:90px; height: 92px}  
+  .input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .keyborad_string {padding: 0 32px; /* padding: 33px 32px 32px; */ width:90px; /* height: 92px */}  
   .input_tool .tools_controll .inner_wrap .tool_select_btnwrap .keyborad_string span {height: 27px; font-size: 20px;}
 
   .keyboard .key_type .key_type_inner {display: block;}
@@ -727,7 +748,7 @@ header.fixed_header + .container {margin-top: 109.8px;}
   .keyboard .key_type .key_type_inner .key_wrap>li .more_key + .more_key_wrap{top:inherit; bottom: calc(100% - 1px); left: inherit; right:1px;  }
   .keyboard .key_type .key_type_inner .key_wrap>li .more_key.arrow_bracket + .more_key_wrap{bottom:inherit; top: calc(100% - 1px); }
   .keyboard .key_type .key_type_inner .key_wrap>li .more_key.key_num_dot + .more_key_wrap{left:0; right:inherit; }
-  .input_tool .tools_controll .inner_wrap .tool_check_btn_wrap button {padding: 33px 32px 32px; height: 92px;}
+  .input_tool .tools_controll .inner_wrap .tool_check_btn_wrap button {padding:0 32px; /* padding: 33px 32px 32px; */ /* height: 92px; */}
   .input_tool .tools_controll .inner_wrap .tool_check_btn_wrap button span {height:27px; font-size: 20px; line-height: 1.3;}
   .input_tool .tools_controll .inner_wrap .tool_select_btn_wrap .keyborad_string span {height: auto; font-size: 20px;}
   /* 2022.07.26 */
