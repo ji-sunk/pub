@@ -2,9 +2,9 @@
 html{height:100%;}
 .ws_page_body{background:#fff; height:100%;}
 .ws_page_wrap{width:720px; height:100%; margin:0 auto;}
-.ws_page_wrap .ws_page_header{display:flex; height:110px; padding: 0; align-items: flex-end; background-color: #2e91f6;}
-.ws_page_wrap h1{width:100%; padding:0 50px; font-family:"baloobhaina"; font-size:40px; color:#fff; line-height:1.5; margin-bottom: 10px;}
-.ws_page_wrap .ws_page_content{padding:0 50px 0;}
+.ws_page_wrap .ws_page_header{height:110px; padding: 40px 0 10px; background-color: #2e91f6;}
+.ws_page_wrap .ws_page_header h1{width:100%; padding:0 50px; font-family:"baloobhaina"; font-size:40px; color:#fff; line-height:1.5; vertical-align: top;}
+.ws_page_wrap .ws_page_content{padding:0 50px 50px;}
 .ws_page_content table{width:100%}
 .ws_page_content table caption{display:none}
 .ws_review_content{padding-top:40px;}
@@ -12,11 +12,12 @@ html{height:100%;}
 /* 커리큘럼 */
 .ws_page_wrap .top_title{position:relative; padding:25px 0 20px;}
 .ws_page_wrap .top_title .img{position: absolute; bottom:0; right:-25px; width:229px; height:159px}
-.ws_page_wrap .top_title .title{display:inline-block; border:3px solid #2e91f6; height:42px; margin:0; padding:8px 20px; border-radius:21px;}
-.ws_page_wrap .top_title .title i {display:inline-block; vertical-align: top; margin-right:5px;}
-.ws_page_wrap .top_title .title span{display:inline-block; font-family:"baloobhaina"; font-size:23px; color:#2e91f6; vertical-align: top; line-height: 1.2;}
+.ws_page_wrap .top_title .title{display:inline-block; align-items: center; border:3px solid #2e91f6; height:42px; margin:0; padding:0 20px 0 16px; border-radius:21px;}
+.ws_page_wrap .top_title .title i {display:inline-block; width:34px; height:34px; margin-right:5px}
+.ws_page_wrap .top_title .title span{display:inline-block; font-family:"baloobhaina"; font-size:23px; color:#2e91f6; vertical-align: top; line-height: 1.8; text-transform: uppercase;}
 .ws_page_wrap .top_title .sub_desc{font-size:18px; font-weight:500; margin-top:13px; color:#333}
 .ws_curr_content{position: relative;}
+.ws_curr_content .none_img{max-width:422px; margin: 0 auto;}
 .ws_curr_content ~ .ws_curr_content{margin-top:12px;}
 .ws_curr_table{border-top:2px solid #d9d9d9; border-bottom:2px solid #d9d9d9}
 .ws_curr_table table th, .ws_curr_table table td{text-align: left; border-left:1px solid #d9d9d9; border-top:1px solid #d9d9d9; vertical-align:middle; text-align:center; padding:18px 5px; font-size:13px; line-height:19px; color:#333;}
@@ -45,6 +46,12 @@ html{height:100%;}
 .ws_plan_table tr.sum_line th:before{top:-1px;}
 .ws_plan_table tr.sum_line td:last-child:after{bottom:-1px}
 .ws_plan_content ~ .ws_img{margin-top: 35px;}
+
+/* 노트 */
+.ws_note_content{position: relative}
+.ws_note_content .ws_sub_theme{position: absolute; top:145px; left:117px; width:100%; max-width:488px;}
+.ws_sub_theme dl dt{color:#333; font-size: 16px; font-weight:700;}
+.ws_sub_theme dl dd{width:100%; height:120px; margin-top:5px}
 
 @media print {
     .ws_page_wrap{-webkit-print-color-adjust:exact;}

@@ -351,6 +351,7 @@
 .ko .result_top .responsive_section .card_item.row .btn_wrap { margin-top: 5px; justify-content: flex-end;}
 .ko .card_item .btn_wrap .chk_btn{padding:6px 18px;}
 .ko .card_item .btn_wrap .chk_btn.arrow span {line-height: 1.24;}
+.ko .result_view .result_contents{min-height: calc(100% - 420px);}
 
 @media (min-width:280px) and (max-width:320px){
     .card_ui .card_chart .chart_wrap .chart{width: 100%;}

@@ -121,6 +121,40 @@
 .main_pop_quiz .card_title_wrap .card_title h3,
 .main_monthly_test .card_title_wrap .card_title h3{font-size:18px;}
 
+/* divide_card_ 없을 때  */
+@media (orientation: portrait) { 
+  .main_pop_quiz:not([class*="divide_card_"]) .card_ui_inner,
+  .main_monthly_test:not([class*="divide_card_"]) .card_ui_inner{height:auto; padding: 20px}
+  .main_pop_quiz:not([class*="divide_card_"]) .card_ui_inner a,
+  .main_monthly_test:not([class*="divide_card_"]) .card_ui_inner a{position: relative; display: flex; gap:15px; align-items: center;}
+  .main_pop_quiz:not([class*="divide_card_"]) .card_ui_inner a .card_title_wrap,
+  .main_monthly_test:not([class*="divide_card_"]) .card_ui_inner a .card_title_wrap{order:2; display: block;}
+  .main_pop_quiz:not([class*="divide_card_"]) .card_ui_inner a .icon_wrap,
+  .main_monthly_test:not([class*="divide_card_"]) .card_ui_inner a .icon_wrap{order:1;}
+  .main_pop_quiz:not([class*="divide_card_"]) .card_ui_inner a .icon_wrap .icon_16,
+  .main_monthly_test:not([class*="divide_card_"]) .card_ui_inner a .icon_wrap .icon_16{position: absolute; top:50%; right:0; transform: translateY(-50%); -webkit-transform: translateY(-50%);}
+  .main_pop_quiz:not([class*="divide_card_"]) .card_title_wrap .card_title p,
+  .main_monthly_test:not([class*="divide_card_"]) .card_title_wrap .card_title p{display:none}
+}
+
+@media (min-width: 600px) { 
+  .main_pop_quiz:not([class*="divide_card_"]) .card_ui_inner,
+  .main_monthly_test:not([class*="divide_card_"]) .card_ui_inner{padding: 20px}
+  .main_pop_quiz:not([class*="divide_card_"]) .card_ui_inner a .icon_wrap,
+  .main_monthly_test:not([class*="divide_card_"]) .card_ui_inner a .icon_wrap{bottom:20px}
+}
+
+@media (orientation: landscape) { 
+  .main_pop_quiz:not([class*="divide_card_"]) .card_ui_inner,
+  .main_monthly_test:not([class*="divide_card_"]) .card_ui_inner{padding:25px; position: relative;}
+  .main_pop_quiz:not([class*="divide_card_"]) .card_ui_inner a .icon_wrap,
+  .main_monthly_test:not([class*="divide_card_"]) .card_ui_inner a .icon_wrap{position: absolute; bottom: 20px; left: 0; padding: 0 20px; display: flex; justify-content: space-between; align-items: flex-end; width: 100%; }
+  .main_pop_quiz:not([class*="divide_card_"]) .card_ui_inner a .icon_wrap .icon_16,
+  .main_monthly_test:not([class*="divide_card_"]) .card_ui_inner a .icon_wrap .icon_16{margin-bottom:5px}
+}
+
+
+
 .vertical_50_card{width:100%;}
 
 /* 2022.07.14 course_before*/

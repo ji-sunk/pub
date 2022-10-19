@@ -171,8 +171,8 @@ line-height: 1; letter-spacing: -0.02px; text-align: center; color: #ffce62;}
 .course_coming .course_state_wrap .state_inner .course_back_home span{height: 22px; font-size: 16px; font-weight: bold; line-height: 1.5; color: #fff;}
 
 /* back currnt learn btn */
-.back_currnt_learn{position: fixed; bottom:0; left:0; transform: translateY(100%); z-index: 9; width:100%; transition: transform .3s;}
-.back_currnt_learn button{padding:30px 80px 36px; display: flex; justify-content: center; align-items: center; gap:0 10px; width:100%; align-items: center; background-image: linear-gradient(103deg, var(--gradationStart), var(--gradationEnd) 100%);}
+.back_currnt_learn{position: fixed; bottom:0; left:0; transform: translateY(100%); z-index: 9; width:100%; transition: transform .3s; height:90px}
+.back_currnt_learn button{padding:30px 80px 36px; display: flex; justify-content: center; align-items: center; gap:0 10px; width:100%; height:100%; align-items: center; background-image: linear-gradient(103deg, var(--gradationStart), var(--gradationEnd) 100%);}
 .back_currnt_learn button span{height: 22px;  font-size: 16px; font-weight: bold; line-height: 1.5; color:#ffffff;}
 .back_currnt_learn.active{transform: translateY(0);}
 
