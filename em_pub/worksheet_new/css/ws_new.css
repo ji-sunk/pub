@@ -27,23 +27,17 @@ table{ border-collapse: collapse; border-spacing: 0;}
 caption,th,td{font-weight: normal;}
 figure,article,header,footer,nav,hgroup,video,audio,aside,main {display: block;}
 a{display:block; text-decoration: none;}
-figure, img, i{font-size:0px; line-height: 1;}
 figure img{width:100%; display:block;}
-
 button{display: block;}
-
-body{margin:0 auto; width:100%;  overflow-x: hidden; font-family: 'NotoSans', 'NotoSansCJK_KR', sans-serif; word-break: keep-all; color: #303030; font-size:14px; font-weight: 400; line-height: 1.43; background-color: #f3f3f3;  }
-body.none_scroll{position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; overflow: hidden;}
+body{margin:0 auto; width:100%;  overflow: auto; font-family: 'NotoSans', 'NotoSansCJK_KR', sans-serif; word-break: keep-all; color: #303030; font-size:14px; font-weight: 400; line-height: 1.43; background-color: #f3f3f3;  }
+/* body.none_scroll{position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; overflow: hidden;} */
 button{border:none; background:none; outline:none; cursor: pointer;}
 a{color:#303030;}
 
 /* ===============================*/
 
-.worksheet_new {background-color: #ffffff;}
+.worksheet_new { overflow: auto; background-color: #ffffff;}
 .worksheet_new .main_cont_lst {height:auto;}
-.worksheet_new .main_cont_lst .page_num_box {display:none; position:absolute; bottom:0; left:44%;}
-.worksheet_new .main_cont_lst .page_num_box .page_num {display: flex;justify-content: center; align-items: center; width:73px; height:38px; text-align:center; font-family: 'Noto Sans'; font-weight: 300;
-     border-top-left-radius:50px; border-top-right-radius:50px; background-color: #e9f3ff; color:#0e306a}
 /* header */
 .worksheet_new header {padding:0; background-color: #2e91f6;}
 .worksheet_new .header_wrap {padding:30px 50px 0px 50px; max-width:720px; margin:0 auto; display: flex; justify-content: space-between; align-items: flex-end;}
@@ -52,8 +46,7 @@ a{color:#303030;}
 .worksheet_new .dcr_area h2 {font-size: 23px; color:#0e3e6a;}
 .worksheet_new .dcr_area > p {margin-top:10px; font-size: 15px;}
 .worksheet_new .header_wrap .header_left .ws_title h1 {font-size: 40px; font-family: "BalooBhaina"; font-weight: 500; color: #fff;}
-.worksheet_new .header_wrap .header_right{position:relative; display: flex; align-items:flex-end; /* gap: 0 30px; */ }
-
+.worksheet_new .header_wrap .header_right{position:relative; display: flex; align-items:flex-end;}
 /* qrcode + character */
 .worksheet_new .header_wrap .img_wrap {width:237px; position: relative;}
 .worksheet_new .header_wrap .img_wrap .qr {position:absolute; right:28px; top:16px}
@@ -69,48 +62,57 @@ a{color:#303030;}
 .worksheet_new .container .qr_area .play_btn {display: block; position:absolute; top:50%; left:50%; transform: translate(-50%,-50%);}
 .worksheet_new .container .qr_area .play_btn img {width:63px; height:63px}
 /* .worksheet_new .container .qr_area a::before {content: ""; position: absolute; top:50%; left:50%; transform: translate(-50%,-50%); display: block; width:fit-content; height:fit-content; background: url("../worksheet_new/images/btn_play.svg")no-repeat center / cover;} */
-.worksheet_new .container .main_content {clear:both; display:block; content: ''; padding:30px 50px; margin:0 auto; height:auto; width:100%; max-width: 820px; box-sizing: border-box;}
+.worksheet_new .container .main_content {clear:both; display:block; content: ''; overflow:hidden; padding:30px 50px; margin:0 auto; height:auto; width:100%; max-width: 820px; box-sizing: border-box;}
 .worksheet_new .container .main_content .problem_text {clear:both; display:block; content: '';}
 .worksheet_new .container .main_content .problem_text h3{ display: inline-flex; margin-top:20px; font-size: 16px; font-family: 'NotoSans'; font-weight: 600; line-height: 1.5;}
 .worksheet_new .container .main_content .problem_text p, .worksheet_new .container .main_content .problem_text span {margin-top:10px; font-size: 16px; font-weight: 500; line-height: 1.5; }
 
+.worksheet_new .container .main_content .problem_list { position: relative; clear:both; content: ''; width:100%; display:inline-block; margin:30px 0;}
+.worksheet_new .container .main_content .problem_list ul {float:left; margin-right:10px;}
+.worksheet_new .container .main_content .problem_list ul:last-child {margin-right: 0;}
+.worksheet_new .container .main_content .problem_list ul li {margin-bottom:20px;}
+.worksheet_new .container .main_content .problem_list ul li:last-child {margin-bottom:0;}
+.worksheet_new .container .main_content .problem_list ul li .problem_list_item{display: flex; gap: 0 10px;}
+.worksheet_new .container .main_content .problem_list ul li .problem_list_item .problem_list_item_num {flex-shrink: 0; display: flex; justify-content: center; align-items: center; width:30px; height:30px; border-radius: 50px; background-color:#97caff; font-size: 16px; font-weight: bold; line-height: 1.5; color: #fff; } 
 .worksheet_new .container .main_content .problem_list.one ul {width:100%;}
 .worksheet_new .container .main_content .problem_list.two ul {width:calc(50% - 10px);}
 .worksheet_new .container .main_content .problem_list.three ul {width:calc(33.333% - 10px);}
 .worksheet_new .container .main_content .problem_list.four ul {width:calc(25% - 10px);}
-.worksheet_new .container .main_content .problem_list ul li {margin-bottom:20px;}
-.worksheet_new .container .main_content .problem_list { position: relative; clear:both; content: ''; display:inline-block; margin:30px 0;}
-.worksheet_new .container .main_content .problem_list ul {float:left; margin-right:10px;}
-.worksheet_new .container .main_content .problem_list ul:last-child {margin-right: 0;}
-.worksheet_new .container .main_content .problem_list ul li:last-child {margin-bottom:0;}
-.worksheet_new .container .main_content .problem_list ul li .problem_list_item{display: flex; gap: 0 10px;}
-.worksheet_new .container .main_content .problem_list ul li .problem_list_item .problem_list_item_num
-{flex-shrink: 0; display: flex; justify-content: center; align-items: center; width:30px; height:30px; border-radius: 50px; background-color:#97caff; font-size: 16px; font-weight: bold; line-height: 1.5; color: #fff; } 
-/* .worksheet_new .container .main_content .problem_list ul li .problem_list_item figure{width:260px;} */
 .worksheet_new .container .main_content .problem_day {width:100%; display: flex; justify-content:flex-start; align-items: center; font-family: 'baloobhaina'; }
 .worksheet_new .container .main_content .problem_day div {font-weight: bold;}
 .worksheet_new .container .main_content .problem_day .day {padding-left:12px; width:82px; height:38px; line-height:42px; font-size:18px; color:#fff; background-color: #0e306a; border-top-right-radius:50px; border-bottom-right-radius:50px;}
 .worksheet_new .container .main_content .problem_day .examples {z-index: -1; margin-left:-14px; padding-left:20px; width:150px; height:38px; line-height:42px; font-size:22px; color:#2e91f6; background-color: #eaeff4; border-top-right-radius:50px; border-bottom-right-radius:50px;}
-.worksheet_new .container .main_content .problem_list.hgt_s {min-height: 549px;}  /* 지문 1줄 (상단 설명 있을 때) 기본 */
-.worksheet_new .container .main_content .problem_list.hgt_s2 {min-height: 504px;} /* 지문 2줄 (상단 설명 있을 때) */
-.worksheet_new .container .main_content .problem_list.hgt_m {min-height: 789px;}  /* 지문 1줄 (상단 설명 없을 때) */
-.worksheet_new .container .main_content .problem_list.hgt_m2 {min-height: 763px;} /* 지문 2줄 (상단 설명 없을 때) */
-.worksheet_new .container .main_content .problem_list.hgt_l {min-height: 972px;}  /* 다음 장으로 넘어가서 헤더 없을 때 / 상단 지문만 있을 때 */
-.worksheet_new .container .main_content .problem_list.hgt_l2 {min-height: 947px;} /* 다음 장으로 넘어가서 헤더 없을 때 / 상단 지문 2줄 일 때 */
+
+/* 지문 1줄 (상단 설명 있을 때) 기본 */
+/* .worksheet_new .container .main_content .problem_list.hgt_s {min-height: 549px;} */
+/* 지문 2줄 (상단 설명 있을 때) */
+/* .worksheet_new .container .main_content .problem_list.hgt_s2 {min-height: 504px;} */
+/* 지문 1줄 (상단 설명 없을 때) */
+/* .worksheet_new .container .main_content .problem_list.hgt_m {min-height: 789px;} */
+ /* 지문 2줄 (상단 설명 없을 때) */  
+/* .worksheet_new .container .main_content .problem_list.hgt_m2 {min-height: 763px;} */
+/* 다음 장으로 넘어가서 헤더 없을 때 / 상단 지문만 있을 때 */
+/* .worksheet_new .container .main_content .problem_list.hgt_l {min-height: 972px;} */
+ /* 다음 장으로 넘어가서 헤더 없을 때 / 상단 지문 2줄 일 때 */ 
+/* .worksheet_new .container .main_content .problem_list.hgt_l2 {min-height: 947px;} */
 
 /* Mathjax3.0 기존 스타일 추가 */
-.pv-ib {margin: 1em 0px;}
-mjx-utext {font-style:normal !important;}
-.tbl-htreeM .divisorBox {display: block}
-.tbl-htreeM .divisorBox::after {position: absolute; top: 0; right: 0; font-size: 20px; content: '\21D2'; line-height:1;}
-mjx-container[jax="CHTML"][display="true"] {outline: none; display:inline-block !important; margin:0 !important}
-.worksheet_new .container .main_content .qst_lst {display: flex;flex-wrap: wrap;gap:20px 10px;}
+.worksheet_new .pv-ib {margin: 1em 0px;}
+.worksheet_new mjx-utext {font-style:normal !important;}
+.worksheet_new .tbl-htreeM .divisorBox {display: block}
+.worksheet_new .tbl-htreeM .divisorBox::after {position: absolute; top: 0; right: 0; font-size: 20px; content: '\21D2'; line-height:1;}
+.worksheet_new mjx-container[jax="CHTML"][display="true"] {outline: none; display:inline-block !important; margin:0 !important}
+/* 추가 된 3~4단에 맞춰 매쓰잭스 커스텀  */
+.worksheet_new .container .main_content .qst_lst {display: flex;flex-wrap: wrap; gap:20px 10px;}
+/* .worksheet_new .problem_list.three mjx-menclose, .worksheet_new .problem_list.four mjx-menclose {margin-left:-15px;} */
+.worksheet_new .problem_list.three mjx-mglyph img, .worksheet_new .problem_list.four mjx-mglyph img {width: 7.876em !important; height: 5.768em !important;}
+.worksheet_new .page_num_box {display:none;}
 
 /* 프린트 출력 시 */
 @media print {
     .worksheet_new {-webkit-print-color-adjust:exact;}
-    .worksheet_new .main_cont_lst {page-break-inside: auto;}
-    .worksheet_new .main_cont_lst .page_num_box {display:block}
-    .worksheet_new .container .main_content .problem_list {display:block;}
+    /* .worksheet_new .main_cont_lst {page-break-inside: auto; clear:both; content: '';} */
+    .worksheet_new .page_num_box {display: flex; justify-content: space-around;}
+    .worksheet_new .page_num_box .page_num {display: flex; justify-content: center; align-items: center; width:73px; height:38px; text-align:center; font-family: 'Noto Sans'; font-weight: 300; border-top-left-radius:50px; border-top-right-radius:50px; background-color: #e9f3ff; color:#0e306a}
 }
 
