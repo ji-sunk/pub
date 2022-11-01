@@ -981,26 +981,16 @@
 
   <!-- 2022.08.25 dt학습 종료-->
   <div class="message_popup active">
-    <!-- 
-      s: 2022.09.29 수정 
-      1. message_content에 addClass .message_case
-      2. .message_item 아래에 자식요소들 감싸는 div.item_wrap 추가
-      3. .img_wrap를 감싸는 div.img_bg 추가
-    -->
-    <div class="message_content message_case"><!-- 2022.09.29 addClass .message_case -->  
+    <div class="message_content">  
       <!-- 학습종료 및 결과 로딩-->
       <!-- 텍스트 변경 아래 script -->
       <article class="message_item learn_end_popup learn_end_rolling_text active">
-        <div class="item_wrap"> <!-- 2022.09.29 item_wrap 추가 -->
-          <div class="img_bg"> <!-- 2022.09.29 img_bg 추가 -->
-            <div class="img_wrap">
-              <figure>
-                <img src="../images/interaction/pidy_qz_learn_end_basic.webp" srcset="" alt="팝업 캐릭터3"></figure>       
-              </figure>
-            </div>
-          </div>
-          <p class="message_desc message_desc_em">Analyzing <br>Learning Results...</p>    
+        <div class="img_wrap">
+          <figure>
+            <img src="../images/interaction/pidy_qz_learn_end_basic.webp" srcset="" alt="팝업 캐릭터3"></figure>       
+          </figure>
         </div>
+        <p class="message_desc message_desc_em">Analyzing <br>Learning Results...</p>    
       </article>      
     </div>
   </div>

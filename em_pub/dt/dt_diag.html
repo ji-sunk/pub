@@ -83,6 +83,7 @@
             <!-- 문제 영역 -->           
             <div class="quiz_area newscroll_bar">
               <div class="problem">
+                <div style="width:1500px; height:auto; background:#adadad; color:#fff; padding:10px">컨텐츠 길어질 경우</div>
                 <figure><img src="https://dummyimage.com/315x138/dbdbdb/333333" alt=""></figure>                
               </div>              
             </div>
@@ -1075,7 +1076,13 @@
         </article>
         <!-- 객관식 --> 
         <article class="input_tool_wrap multi_choice_board ">
-          <div class="wrap">
+          <!-- 2022.10.12 닫기 버튼 추가  -->
+          <button class="multi_toggle_btn"><!-- 닫을 경우 addClass .close -->
+            <span class="sr">닫기</span>
+            <i class="icon_20"><img src="../images/common/icon_keypad_down.svg" alt="닫기"></i>
+          </button>
+          <!--// 2022.10.12 닫기 버튼 추가  -->
+          <div class="wrap"><!-- 닫을 경우 addClass .close -->
             <p class="note">Please choose the answer from the <span>4 choices.</span></p>
             <!-- test 답여러줄 -->
             <button class="mline" style="position:absolute; top:10px; right:10px; padding:4px; background-color:var(--subText); color:#ffffff;" >정답<br>list</button>
@@ -1083,25 +1090,25 @@
               <!-- 답이 한줄일때 -->
               <ul class="multi_answer_list newscroll_bar active" >
                 <li>
-                  <input type="radio" name="multi_answer" id="answer1" value="">
+                  <input type="checkbox" name="multi_answer" id="answer1" value="">
                   <label for="answer1">
                     <span>27</span>
                   </label>
                 </li>
                 <li>
-                  <input type="radio" name="multi_answer" id="answer2" value="">
+                  <input type="checkbox" name="multi_answer" id="answer2" value="">
                   <label for="answer2">
                     <span>28</span>
                   </label>
                 </li>
                 <li>
-                  <input type="radio" name="multi_answer" id="answer3" value="">
+                  <input type="checkbox" name="multi_answer" id="answer3" value="">
                   <label for="answer3">
                     <span>29</span>
                   </label>
                 </li>
                 <li>
-                  <input type="radio" name="multi_answer" id="answer4" value="">
+                  <input type="checkbox" name="multi_answer" id="answer4" value="">
                   <label for="answer4">
                     <span>30</span>
                   </label>
@@ -1110,25 +1117,25 @@
               <!-- 답이 한줄이상일때 이미지 -->
               <ul class="multi_answer_list newscroll_bar answer_mline">
                 <li>
-                  <input type="radio" name="multi_answer" id="answer5" value="">
+                  <input type="checkbox" name="multi_answer" id="answer5" value="">
                   <label for="answer5">
                     <span><figure><img src="https://dummyimage.com/100x36/dbdbdb/333333" alt=""></figure></span>
                   </label>
                 </li>
                 <li>
-                  <input type="radio" name="multi_answer" id="answer6" value="">
+                  <input type="checkbox" name="multi_answer" id="answer6" value="">
                   <label for="answer6">
                     <span><figure><img src="https://dummyimage.com/100x36/dbdbdb/333333" alt=""></figure></span>
                   </label>
                 </li>
                 <li>
-                  <input type="radio" name="multi_answer" id="answer7" value="">
+                  <input type="checkbox" name="multi_answer" id="answer7" value="">
                   <label for="answer7">
                     <span><figure><img src="https://dummyimage.com/100x36/dbdbdb/333333" alt=""></figure></span>
                   </label>
                 </li>
                 <li>
-                  <input type="radio" name="multi_answer" id="answer8" value="">
+                  <input type="checkbox" name="multi_answer" id="answer8" value="">
                   <label for="answer8">
                     <span><figure><img src="https://dummyimage.com/100x36/dbdbdb/333333" alt=""></figure></span>
                   </label>
@@ -1188,5 +1195,18 @@
   <script type="text/javascript" src="../js/vendor/screenfull.js"></script>	
   <script type="text/javascript" src="../js/main.js"></script>
   <script type="text/javascript" src="../js/qz.js"></script>
+  <script>
+    const toggle_btn = document.querySelector(".multi_toggle_btn");
+
+    toggle_btn.addEventListener("click", function(){
+      if (this.classList.contains("close")) {
+        this.classList.remove("close");
+        this.nextElementSibling.classList.remove("close");
+      } else {
+        this.classList.add("close");
+      this.nextElementSibling.classList.add("close");
+      }
+    });
+  </script>
   </body>
 </html>
