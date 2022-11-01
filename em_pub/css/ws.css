@@ -44,7 +44,8 @@
 /* 2022.08.04 숫자 추가*/
 .worksheet .container .main_content .problem_list ul li .problem_list_item .problem_list_item_num{flex-shrink: 0; display: flex; justify-content: center; align-items: center; width:34px; height:34px; border-radius: 15px; background-color: var(--subText); font-size: 16px; font-weight: bold; line-height: 1.5; color: #fff; } 
 .worksheet .container .main_content .problem_list ul li .problem_list_item figure{width:260px;}
-
+/* 221025 상단 정렬 맞춤 수정 */
+.worksheet .pv-ib {margin: 8px 0px 1em;}
 
 @media(max-width:720px) {
   .worksheet .container .main_content {padding: 0 20px 50px;}
@@ -67,12 +68,11 @@
 
 @media(max-width:355px) {
   .worksheet .container .main_content .problem_list ul li{width:100%;} 
- 
   .worksheet .header_wrap {padding: 20px 20px 0 20px;}
   .worksheet .header_wrap .header_right {right:20px;  }
   .worksheet .header_wrap .qr_inner {width: 80px; height: 80px;}
 }
-/* 프린트 출력 시 CSS */
+/* 프린트 출력 시 */
 @media print {
   .worksheet {-webkit-print-color-adjust:exact;}
   .worksheet .header_wrap .ch .img_wrap{position:relative; bottom:-32px;}

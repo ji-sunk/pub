@@ -38,7 +38,7 @@
 .arithmetic_list li a .arithmetic_ing_progress{margin-top:10px; display: none; width:100%; height:6px; border-radius: 3px; background-color: #fff4db; overflow: hidden; }
 .arithmetic_list li a .arithmetic_ing_progress .bar{display: block; height:100%; border-radius: 3px; background-image: linear-gradient(to right, var(--point_yellow_g_start), var(--point_yellow_g_end));}
 .arithmetic_list li.arithmetic_ing a .ing_tag{display: block;}
-.arithmetic_list li.arithmetic_ing a .arithmetic_ing_progress{display: block;}
+.arithmetic_list li.arithmetic_ing a .arithmetic_ing_progress{display: block; width:100%}
 
 /*daily topic grade 나라별 학년 선택*/
 .country_year{position:relative; margin-top:30px; display: none; height:50px;}
@@ -103,6 +103,8 @@
 .tl_learn_question .question_thumb .question_thumb_inner{padding:30px 34px; border-radius: var(--borderRadius); background-color: #ffffff;}
 .question_thumb .question_thumb_inner .text_wrap h4{font-size: 16px; font-weight: 500; text-align: center; line-height: 1.5;  color: #666; }
 .question_thumb .question_thumb_inner .img_wrap{margin-top:20px; display: flex; justify-content: center;}
+/* 221031 매쓰잭스 노출 되는 문항 리스트(svg) 사이즈 재수정 */
+.question_thumb .question_thumb_inner .img_wrap img {width:267px; height:117px;}
 .question_thumb .question_thumb_inner .btn_wrap{margin-top:10px; display: flex; justify-content: center;}
 /* 2022.07.13 */
 .question_thumb .question_thumb_inner .btn_wrap .thumb_start_btn{ padding: 8px 15px 8px 20px; display: flex; justify-content: center; align-items: center; gap: 0 5px; border-radius: var(--borderRadius); background-image: linear-gradient(103deg, var(--gradationStart), var(--gradationEnd));}
@@ -171,8 +173,7 @@
 }
 
 @media (min-width:600px){
-/*2022.09.17 상단 탭 ui -> common*/
-
+  /*2022.09.17 상단 탭 ui -> common*/
   .arithmetic_list{margin: -10px -10px;}
   .arithmetic_list li{padding: 10px 10px; width:33.3333%;}
   .arithmetic_list li a{padding: 25px 20px 20px 20px; height:170px;}
@@ -186,12 +187,11 @@
   .tl_learn_question .question_thumb .question_thumb_inner {padding: 30px 28px 25px 27px;}
   .question_thumb .question_thumb_inner .img_wrap{margin-top:20px;}
 
-/* 20220908 */
+  /* 20220908 */
   .change_arithmetic .main_contents .sub_content_top .text_wrap span {font-size: 26px;}
   .change_arithmetic .main_contents .sub_content_top .text_wrap p {margin-top: 10px; font-size: 18px; line-height: 1.334; letter-spacing: -0.01px;}
   .change_arithmetic .main_contents .arithmetic_list_con {margin-top: 50px;}
   .change_arithmetic .arithmetic_list {padding-bottom: 40px;}
-   
 }
 
 @media (min-width:600px) and (orientation: portrait) {
@@ -374,11 +374,11 @@
 @media (min-width:1280px) and (orientation: landscape) {  
   .sub_content_top_wrap .tab_wrap .tab_inner .tab_nav li a {font-size: 18px; letter-spacing: -0.01px; line-height: 1.2; }
   .arithmetic_list {height: 400px;}
-  .arithmetic_list li a {height: 170px;}
+  .arithmetic_list li a {padding: 25px 20px 20px 20px; height: 170px;}
   .arithmetic_list li a .learn_title h4{font-size: 18px; line-height: 1.56; letter-spacing: -0.01px;}
   .arithmetic_list li a .icon_wrap .icon_40{width:56px; height:56px;}
 
-  .sub_page .main_contents {padding-top: 0; padding-bottom: 120px;}  
+  .sub_page .main_contents {padding-top: 0; padding-bottom: 90px;}  
   /*학습 코스별 소주제 문제 */
   .question_thumb .question_thumb_inner .text_wrap h4 {font-size: 18px; font-weight: 500; line-height: 1.56; letter-spacing: -0.01px;}
   .question_thumb .question_thumb_inner .btn_wrap {margin-top: 20px;}

@@ -129,13 +129,32 @@
                 </article>
             </div>
 
-            <article class="big_card card_ui">
+            <!-- 2022.10.28 수정
+             1. div.responsive_section 추가 
+             2.  Let’s review it! 영역 이동 -->
+            <div class="responsive_section comlum_respon">
+              <article class="big_card card_ui">
+                  <div class="card_ui_inner flex_basic">
+                      <span class="flag_text">Next Stage</span>
+                      <h3>Multiply 2-digit numbers<br/> by 1-digit numbers (1)</h3>
+                      <div class="card_btn_wrap">
+                          <a href="#" class="card_btn audio_btn" data-audio="hm_click">
+                              <span>Start</span>
+                              <i class="icon_16">
+                                  <img src="../images/common/white_arrow_16.svg" aria-hidden="true" alt="화살표">
+                              </i>
+                          </a>
+                      </div>
+                  </div>
+              </article>
+              
+              <!-- 2022.10.28 위치 수정 -->
+              <article class="comlum_respon_inner_top big_card card_ui">
                 <div class="card_ui_inner flex_basic">
-                    <span class="flag_text">Next Stage</span>
-                    <h3>Multiply 2-digit numbers<br/> by 1-digit numbers (1)</h3>
+                    <h3>Let’s review it!</h3>
                     <div class="card_btn_wrap">
-                        <a href="#" class="card_btn audio_btn" data-audio="hm_click">
-                            <span>Start</span>
+                        <a href="#" class="card_btn audio_btn">
+                            <span>Review</span>
                             <i class="icon_16">
                                 <img src="../images/common/white_arrow_16.svg" aria-hidden="true" alt="화살표">
                             </i>
@@ -143,113 +162,117 @@
                     </div>
                 </div>
             </article>
+            <!--//  2022.10.28 위치 수정 -->
+          </div>
+          <!--// 2022.10.28 수정 : div.responsive_section 추가 -->
+           
+          <article class="big_card card_ui accuracy_compared">
+              <div class="card_ui_inner responsive_width">
+                  <div class="card_chart">
+                      <h3>Accuracy results<br class="responsive_br"/> compared to others</h3>
+                      <p>If you learn again you can do better!</p>
+                      <div class="chart_label">
+                          <span><i class="label_icon_line"></i>Number of student</span>
+                          <span><i class="label_icon_circle"></i>You</span>
+                      </div>
+                      <div class="chart_wrap">
+                          <div class="chart">
+                              <h4>Correct Answer Rate</h4>
+                              <!--차트영역 :: 임의의 width, height-->
+                              <figure>
+                                  <img src="https://dummyimage.com/273x117/dbdbdb/333333" alt="">
+                              </figure>
+                          </div>
+                          <div class="chart">
+                              <h4>Accuracy</h4>
+                              <!--차트영역 :: 임의의 width, height-->
+                              <figure>
+                                  <img src="https://dummyimage.com/273x117/dbdbdb/333333" alt="">
+                              </figure>
+                          </div>
+                          <div class="chart">
+                              <h4>Speed</h4>
+                              <!--차트영역 :: 임의의 width, height-->
+                              <figure>
+                                  <img src="https://dummyimage.com/273x117/dbdbdb/333333" alt="">
+                              </figure>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </article>
 
-            <article class="big_card card_ui accuracy_compared">
-                <div class="card_ui_inner responsive_width">
-                    <div class="card_chart">
-                        <h3>Accuracy results<br class="responsive_br"/> compared to others</h3>
-                        <p>If you learn again you can do better!</p>
-                        <div class="chart_label">
-                            <span><i class="label_icon_line"></i>Number of student</span>
-                            <span><i class="label_icon_circle"></i>You</span>
-                        </div>
-                        <div class="chart_wrap">
-                            <div class="chart">
-                                <h4>Correct Answer Rate</h4>
-                                <!--차트영역 :: 임의의 width, height-->
-                                <figure>
-                                    <img src="https://dummyimage.com/273x117/dbdbdb/333333" alt="">
-                                </figure>
-                            </div>
-                            <div class="chart">
-                                <h4>Accuracy</h4>
-                                <!--차트영역 :: 임의의 width, height-->
-                                <figure>
-                                    <img src="https://dummyimage.com/273x117/dbdbdb/333333" alt="">
-                                </figure>
-                            </div>
-                            <div class="chart">
-                                <h4>Speed</h4>
-                                <!--차트영역 :: 임의의 width, height-->
-                                <figure>
-                                    <img src="https://dummyimage.com/273x117/dbdbdb/333333" alt="">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <article class="big_card card_ui change_learning">
-                <div class="card_ui_inner">
-                    <div class="card_chart">
-                        <h3>Changes in my learning<br class="responsive_br"/>
-                            outcomes</h3>
-                        <!-- 2022.08.23 change_learning_inner 추가 -->
-                        <div class="change_learning_inner">
-                            <div class="chart_detail chart_wrap flex_column">
-                                <div class="chart">
-                                    <!--차트영역 :: 임의의 width, height-->
-                                    <figure>
-                                        <img src="https://dummyimage.com/275x137/dbdbdb/333333" alt="">
-                                    </figure>
-                                </div>
-                                <div class="chart_label">
-                                    <span class="mint"><i class="label_icon_circle"></i>Correct Answer Rate</span>
-                                    <span class="peach"><i class="label_icon_circle"></i>Accuracy</span>
-                                    <span class="purple"><i class="label_icon_circle"></i>Speed</span>
-                                </div>
-                            </div>
-                            <div class="chart_detail">
-                                <strong class="date">2022. 04. 01<span class="label peach">Below Basic</span></strong>
-                                <ul class="detail_list">
-                                    <li class="item">
-                                        <span class="tit">Number of Correct Answers</span>
-                                        <span class="result">9/10<span class="desc">(Incorrect Answers 0)</span></span>
-                                    </li>
-                                    <li class="item">
-                                        <span class="tit">Correct Answers Rate</span>
-                                        <span class="result">100%</span>
-                                    </li>
-                                    <li class="item">
-                                        <span class="tit">Accuracy</span>
-                                        <span class="result">95%</span>
-                                    </li>
-                                    <li class="item">
-                                        <span class="tit">Speed</span>
-                                        <span class="result">Fast</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="chart_detail">
-                                <strong class="date">2022. 04. 05<span class="label purple">Proficient</span></strong>
-                                <ul class="detail_list">
-                                    <li class="item">
-                                        <span class="tit">Number of Correct Answers</span>
-                                        <span class="result">9/10<span class="desc">(Incorrect Answers 0)</span></span>
-                                    </li>
-                                    <li class="item">
-                                        <span class="tit">Correct Answers Rate</span>
-                                        <span class="result">100%</span>
-                                    </li>
-                                    <li class="item">
-                                        <span class="tit">Accuracy</span>
-                                        <span class="result">95%</span>
-                                    </li>
-                                    <li class="item">
-                                        <span class="tit">Speed</span>
-                                        <span class="result">Fast</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
+          <article class="big_card card_ui change_learning">
+              <div class="card_ui_inner">
+                  <div class="card_chart">
+                      <h3>Changes in my learning<br class="responsive_br"/>
+                          outcomes</h3>
+                      <!-- 2022.08.23 change_learning_inner 추가 -->
+                      <div class="change_learning_inner">
+                          <div class="chart_detail chart_wrap flex_column">
+                              <div class="chart">
+                                  <!--차트영역 :: 임의의 width, height-->
+                                  <figure>
+                                      <img src="https://dummyimage.com/275x137/dbdbdb/333333" alt="">
+                                  </figure>
+                              </div>
+                              <div class="chart_label">
+                                  <span class="mint"><i class="label_icon_circle"></i>Correct Answer Rate</span>
+                                  <span class="peach"><i class="label_icon_circle"></i>Accuracy</span>
+                                  <span class="purple"><i class="label_icon_circle"></i>Speed</span>
+                              </div>
+                          </div>
+                          <div class="chart_detail">
+                              <strong class="date">2022. 04. 01<span class="label peach">Below Basic</span></strong>
+                              <ul class="detail_list">
+                                  <li class="item">
+                                      <span class="tit">Number of Correct Answers</span>
+                                      <span class="result">9/10<span class="desc">(Incorrect Answers 0)</span></span>
+                                  </li>
+                                  <li class="item">
+                                      <span class="tit">Correct Answers Rate</span>
+                                      <span class="result">100%</span>
+                                  </li>
+                                  <li class="item">
+                                      <span class="tit">Accuracy</span>
+                                      <span class="result">95%</span>
+                                  </li>
+                                  <li class="item">
+                                      <span class="tit">Speed</span>
+                                      <span class="result">Fast</span>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="chart_detail">
+                              <strong class="date">2022. 04. 05<span class="label purple">Proficient</span></strong>
+                              <ul class="detail_list">
+                                  <li class="item">
+                                      <span class="tit">Number of Correct Answers</span>
+                                      <span class="result">9/10<span class="desc">(Incorrect Answers 0)</span></span>
+                                  </li>
+                                  <li class="item">
+                                      <span class="tit">Correct Answers Rate</span>
+                                      <span class="result">100%</span>
+                                  </li>
+                                  <li class="item">
+                                      <span class="tit">Accuracy</span>
+                                      <span class="result">95%</span>
+                                  </li>
+                                  <li class="item">
+                                      <span class="tit">Speed</span>
+                                      <span class="result">Fast</span>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </article>
 
             <!-- 2022.07.13 worksheet 추가-->
             <div class="responsive_section comlum_respon">
                 <!-- 2022.08.24 add comlum_respon_inner_top -->
+                <!-- 2022.10.28 위치 변경 
                 <article class="comlum_respon_inner_top big_card card_ui">
                     <div class="card_ui_inner flex_basic">
                         <h3>Let’s review it!</h3>
@@ -262,7 +285,8 @@
                             </a>
                         </div>
                     </div>
-                </article>
+                </article> 
+                -->
                 <!-- 2022.07.13 worksheet 추가-->
                 <!-- 2022.08.24 add worksheet_card -->
                 <article class="worksheet_card big_card card_ui">
@@ -279,7 +303,61 @@
                         </div>
                     </div>
                 </article>
+
+                <!-- 2022.10.27 3088) 매쓰팜 배너 추가 / 2022.10.28 위치 이동 -->
+                <article class="main_game big_card card_ui">
+                  <div class="card_ui_inner">
+                    <div class="card_title_wrap">
+                      <div class="title_inner">
+                        <!-- 2022.10.28 삭제
+                          <div class="icon_wrap">
+                            <i class="card_icon">
+                                <object type="image/svg+xml" data="../images/svg/game_icon.svg" class="add_new_color"></object>  
+                            </i>
+                          </div>
+                          -->
+                        <div class="card_title">
+                          <h3>재미있는 수학게임을 해볼까?</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="game_list_wrap">
+                      <!--
+                        2022.10.28 수정 : swiper 기능 삭제
+                        1. div.swiper-wrapper 삭제
+                        2. .swiper-slide 클래스 삭제
+                      -->
+                      <div class="game_list_1 game_list">
+                        <ul>
+                          <li>
+                            <div class="game_item">
+                              <div class="game_img">
+                                <figure><img src="../images/main/img_game_temp04.webp" alt=""></figure>
+                              </div>
+                              <div class="text_wrap">
+                                <div class="text_inner">
+                                  <h4>지니의 매쓰팜</h4>
+                                  <p>Age 7~10</p>
+                                </div>
+                                <div class="game_get">
+                                  <button>
+                                    <span>열기</span>
+                                  </button>
+                                </div>
+                              </div>                        
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </article>
+                <!--// 2022.10.27 3088) 매쓰팜 배너 추가 -->
             </div>
+
+            <!-- 2022.10.28 수정 : .responsive_section 안쪽으로 매쓰팜 게임 배너 이동 -->
+
         </div>
         <!--END :: result contents-->
     </section>

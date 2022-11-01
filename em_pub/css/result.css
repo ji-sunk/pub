@@ -34,7 +34,7 @@
 .result_contents>.wrap {margin: 0 -7.5px;display: flex;flex-wrap: wrap;width: auto;}
 
 /*[class^=result] 결과페이지만 적용 결과, 리포트 공통  */
-[class^=result] .card_ui .card_ui_inner.incorrect_answer{padding: 11px 20px 10px;}
+[class^=result] .card_ui .card_ui_inner.incorrect_answer{/* padding: 11px 20px 10px; */padding: 20px 25px;}
 .card_box{display: flex; flex-wrap: wrap;}
 /*코스 결과 스코어 영역 */
 .card_item{flex-basis: 100%;}
@@ -57,7 +57,6 @@
 .card_item .btn_wrap .chk_btn.arrow span{font-size: 16px; line-height: 1.5;}
 .card_item .btn_wrap .chk_btn.arrow span + i{display: inline-block; vertical-align: middle; margin-top: -4px;}
 .card_item.row .btn_wrap{margin-top:0; justify-content: flex-end; }
-
 
 /* 결과 flag text(next stage).. */
 [class^=result] .card_ui .card_ui_inner .flag_text{display: block; width:auto; margin: 0 auto; padding:5px 10px; font-size: 12px; font-weight: bold; line-height: 1.67; color: #00bcfe; border:1px solid #10b3fa; border-radius:20px; text-align: center; box-sizing: border-box;}
@@ -105,6 +104,32 @@
 .card_ui .card_chart .detail_list li .result{flex: 0 0 50%; font-size: 14px; text-align: right; font-weight: bold; color: #303030;}
 .card_ui .card_chart .detail_list li .result .desc{display: block; font-size: 12px; line-height: 1.67; color: #999999;}
 [class^=result] .responsive_section{width:100%;}
+
+/* 2022.10.27 게임배너 추가 */
+/* 메인 게임 */
+[class^=result] .card_ui.main_game .card_ui_inner{padding:20px 0 0; overflow: hidden;}
+.main_game .card_title_wrap{ padding: 0 25px;}
+.main_game .card_title_wrap .title_inner{display: flex; align-items: center; gap: 0 15px; width: 100%; justify-content: center;}
+.main_game .game_list_wrap{margin-top:20px; padding-bottom:15px}
+.main_game .game_list_wrap .game_list{padding:0 25px; }
+.main_game .game_list_wrap li{padding:15px 0; border-top:1px solid #eee;}
+.main_game .game_list_wrap li:first-child{padding-top:0; border-top:0;}
+.main_game .game_list_wrap .game_item{display: flex; align-items: center; gap:0 20px;}
+.main_game .game_list_wrap .game_item .game_img{flex-shrink: 0;}
+.main_game .game_list_wrap .game_item .game_img figure{width:60px; height:60px;}
+.main_game .game_list_wrap .game_item .text_wrap{display: flex; justify-content: space-between; align-items: center; gap:0 10px; width:100%;}
+.main_game .game_list_wrap .game_item .text_wrap .text_inner h4{font-size: 16px; font-weight: bold; line-height: 1.5;}
+.main_game .game_list_wrap .game_item .text_wrap .text_inner p{margin-top: 2px; font-weight: 500; color: #666; text-align: left;}
+.main_game .game_list_wrap .game_item .text_wrap .game_get{flex-shrink: 0;}
+.main_game .game_list_wrap .game_item .text_wrap .game_get button{padding: 9px 19px 8px; border-radius: var(--borderRadius); background-color: #f4f7fe;}
+.main_game .game_list_wrap .game_item .text_wrap .game_get button span{font-size: 12px; font-weight: bold; line-height: 1.67; color: var(--subText);}
+.main_game .game_dots{padding-bottom:15px; display: flex; justify-content: center;}
+.main_game .game_dots.swiper-pagination-lock {display: none;}
+.main_game .game_dots span{ margin:0 2.5px; display: block; width:5px; height:5px; border-radius: 2.5px; background-color: #dddddd; opacity: 1; transition: width .3s;}
+.main_game .game_dots span.swiper-pagination-bullet-active{width:15px; background-color: var(--bulletColor);}
+.main_game .game_more_soon{margin-top:15px; padding-bottom: 50px;display: flex; justify-content: center; }
+.main_game .game_more_soon span{display: block; text-align: center; font-weight: 500; color:#666666;}
+.main_game .game_more_soon.game_more_lines{display: none;}
 
 /* 프리미엄 car ui */
 .premium_card .card_ui_inner p{margin-top:10px; text-align: center; font-weight: 500; color:#666666; }
@@ -383,6 +408,14 @@
     .card_ui .card_chart h4 {text-align: center;}
     .arrow_ui .btn_wrap .btn_white {font-size: 14px; line-height: 1.43;}
 
+    /*math game slider*/
+    [class^=result] .main_game.card_ui .card_ui_inner {padding: 20px 0 0;}
+    [class^=result] .main_game.card_ui .card_title_wrap {padding: 0 25px;}
+    [class^=result] .main_game.card_ui .game_list_wrap .game_list {padding: 0px 25px;}
+    .math_game_list .card_ui_inner {padding: 25px 20px 30px 25px;}
+    .math_game_list .game_slider{position:relative;}
+    .math_game_list .game_slider::before{content: ""; position:absolute; top:0; right:-20px; bottom:0; z-index: 9; display: block; width:58px; height:100%;  background-image: linear-gradient(to left, #fff, #fff 51%, rgba(255, 255, 255, 0));}  
+
     /* result 프리미엄 card ui */
     .premium_card .card_ui_inner h3 br{display: none;}
     .premium_card .card_ui_inner p{margin-top:10px; text-align: center; font-weight: 500; color:#666666; }
@@ -459,21 +492,21 @@
     .concept_check .main_contents {width:100%;}
     .concept_check .wrap {padding:0 20px;}
     .concept_check .container {margin-top: 0; height: auto; padding-bottom:120px;}
-
     .result_view .bottom_zero_btn_wrap {position: relative;}   
+    .main_game .card_title_wrap .title_inner{justify-content: flex-start;}
 }
 
 @media (min-width:1024px) and (orientation: landscape) {
     /* 2022.07.13 */
     .comlum_respon{display: flex!important;; flex-direction: column;}    
     .comlum_respon .big_card.comlum_respon_inner_top{height:100%;}
-    .comlum_respon .big_card.comlum_respon_inner_top .card_ui_inner{width:335px; min-height: 230px;}
+    .comlum_respon .big_card.comlum_respon_inner_top .card_ui_inner{width:335px; /* min-height: 230px; */}
     .comlum_respon .big_card.worksheet_card{flex-shrink: 0;}
     .comlum_respon.resulte_top_info .big_card.comlum_respon_inner_top .card_ui_inner{width:406px;}
-
+    .comlum_respon .big_card.main_game{height:100%;}
 
     /*  */
-    .big_card .card_ui_inner.flex_basic{width: 335px; min-height: 310px;}
+    .big_card .card_ui_inner.flex_basic{width: 335px; /* min-height: 310px; */}
     .big_card .card_ui_inner.worksheet{width: 335px;}
     .sub_page.nt .result_contents{margin-top:36px; padding-top: 80px; height: calc(100% - 280px); padding-bottom: 0;}
     .flex_column{flex-direction: column;}
@@ -495,7 +528,6 @@
     .result_contents .card_item.concept_check .btn_wrap{justify-content: center; text-align: center;}
     .result_contents .responsive_section .card_ui + .card_ui{margin-top: 20px;}
     
-
     [class*=contents] .card_ui .responsive_width{width:auto;}
     [class^=result] .responsive_section{width:auto;}
 
@@ -514,7 +546,6 @@
     .sub_page.nt .result_contents {padding-bottom: 40px; height:auto; min-height: calc(100% - 240px); padding-top:0;   }
     .sub_page.nt .diagnostic_test .result_contents {padding-bottom:40px; height:auto; min-height: calc(100% - 283px);}
     .sub_page.nt .topic_learning .result_contents {padding-bottom:40px; height:auto; min-height: calc(100vh - 340px);}
-    
     .sub_page.nt .result_contents .card_ui{width:auto;}
 
     /* 차트 간격  */
@@ -542,7 +573,7 @@
     .result_top .responsive_section .incorrect_answer .card_item .btn_wrap{margin-top:10px; text-align: right;}
  
     /* 2022.08.31 */
-    .resulte_top_info .card_item.row {flex-direction: column;}
+    .resulte_top_info .card_item.row {/* flex-direction: column; */}
 
     /* restult change_learning */
     .sub_page.nt .card_ui.change_learning .card_ui_inner{padding: 30px 25px 30px; width: auto;} 
@@ -551,11 +582,14 @@
     .card_ui.change_learning .change_learning_inner .chart_detail:nth-child(1){width:411px;}
     .card_ui.change_learning .change_learning_inner .chart_detail:nth-child(1) .chart{margin:9px auto 0; width:275px;}
     .card_ui.change_learning .change_learning_inner .chart_detail:nth-child(n+2){border-top:none; border-left:1px solid #eeeeee;}
+    
+    /* 매쓰팜 게임 배너 */
+    .main_game .card_ui_inner{padding: 25px 0 0; position: relative; width:335px;} 
+    .main_game .game_dots {position: absolute; top: 44px; right: 32px;}
 
     /* result 프리미엄 카드 */
     .premium_card .card_ui_inner h3 br{display: block;}
     
-
     /* --progress report -- */
 
     /* diagnostic test page */

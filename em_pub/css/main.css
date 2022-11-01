@@ -68,11 +68,11 @@
 /* 메인 게임 */
 .main_game .card_ui_inner{padding:20px 0 0; overflow: hidden;}
 .main_game .card_title_wrap{ padding: 0 15px;}
-.main_game .card_title_wrap .title_inner{padding-bottom:12px; display: flex; align-items: center; gap: 0 15px; width: 100%; border-bottom:1px solid #eeeeee; }
+.main_game .card_title_wrap .title_inner{padding-bottom:10px; display: flex; align-items: center; gap: 0 15px; width: 100%;}
 .main_game .game_list_wrap{margin-top:20px; padding-bottom:15px}
 .main_game .game_list_wrap .game_list{padding:0 20px; }
-.main_game .game_list_wrap li{padding:10px 0;}
-.main_game .game_list_wrap li:first-child{padding-top:0;}
+.main_game .game_list_wrap li{padding:15px 0; border-top:1px solid #eee;}
+.main_game .game_list_wrap li:first-child{padding-top:0; border-top:0;}
 .main_game .game_list_wrap .game_item{display: flex; align-items: center; gap:0 20px;}
 .main_game .game_list_wrap .game_item .game_img{flex-shrink: 0;}
 .main_game .game_list_wrap .game_item .game_img figure{width:60px; height:60px;}

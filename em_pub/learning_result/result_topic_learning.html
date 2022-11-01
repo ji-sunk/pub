@@ -157,20 +157,43 @@
                     </div>
                 </div>
             </article>
-            <article class="big_card card_ui">
-                <div class="card_ui_inner flex_basic">
-                    <h3>Check out the Daily Course<br/>
-                        for more information!</h3>
-                    <div class="card_btn_wrap">
-                        <a href="#" class="card_btn audio_btn" data-audio="hm_click">
-                            <span>Start</span>
-                            <i class="icon_16">
-                                <img src="../images/common/white_arrow_16.svg" aria-hidden="true" alt="화살표">
-                            </i>
-                        </a>
+            
+            <!-- 2022.10.28 수정
+             1. div.responsive_section 추가 
+             2.  Let’s review it! 영역 이동 -->
+            <div class="responsive_section comlum_respon">  
+                <article class="big_card card_ui">
+                    <div class="card_ui_inner flex_basic">
+                        <h3>Check out the Daily Course<br/>
+                            for more information!</h3>
+                        <div class="card_btn_wrap">
+                            <a href="#" class="card_btn audio_btn" data-audio="hm_click">
+                                <span>Start</span>
+                                <i class="icon_16">
+                                    <img src="../images/common/white_arrow_16.svg" aria-hidden="true" alt="화살표">
+                                </i>
+                            </a>
+                        </div>
                     </div>
-                </div>
-            </article>
+                </article>
+
+                <!-- 2022.10.28 위치 수정 -->
+                <article class="comlum_respon_inner_top big_card card_ui">
+                    <div class="card_ui_inner flex_basic">
+                        <h3>Let’s review it!</h3>
+                        <div class="card_btn_wrap">
+                            <a href="#" class="card_btn audio_btn" data-audio="hm_click">
+                                <span>Review</span>
+                                <i class="icon_16">
+                                    <img src="../images/common/white_arrow_16.svg" aria-hidden="true" alt="화살표">
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <!--// 2022.10.28 위치 수정 -->
+            </div>
+            <!--// 2022.10.28 수정 : div.responsive_section 추가 -->
 
             <article class="big_card card_ui change_learning">
                 <div class="card_ui_inner">
@@ -198,6 +221,7 @@
 
             <div class="responsive_section comlum_respon">      
                 <!-- 2022.08.24 add comlum_respon_inner_top -->
+                <!-- 2022.10.28 위치 변경
                 <article class="comlum_respon_inner_top big_card card_ui">
                     <div class="card_ui_inner flex_basic">
                         <h3>Let’s review it!</h3>
@@ -210,7 +234,7 @@
                             </a>
                         </div>
                     </div>
-                </article>
+                </article> -->
                 <!-- 2022.07.13 worksheet 추가-->
                 <!-- 2022.08.24 add worksheet_card -->
                 <article class="worksheet_card big_card card_ui">
@@ -227,7 +251,61 @@
                         </div>
                     </div>
                 </article>
+
+                 <!-- 2022.10.27 3088) 매쓰팜 배너 추가 / 2022.10.28 위치 이동 -->
+                <article class="main_game big_card card_ui">
+                    <div class="card_ui_inner">
+                    <div class="card_title_wrap">
+                        <div class="title_inner">
+                        <!-- 2022.10.28 삭제
+                        <div class="icon_wrap">
+                            <i class="card_icon">
+                                <object type="image/svg+xml" data="../images/svg/game_icon.svg" class="add_new_color"></object>  
+                            </i>
+                        </div>
+                        -->
+                        <div class="card_title">
+                            <h3>Play fun math games!</h3>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="game_list_wrap">
+                        <!--
+                            2022.10.28 수정 : swiper 기능 삭제
+                            1. div.swiper-wrapper 삭제
+                            2. .swiper-slide 클래스 삭제
+                        -->
+                        <div class="game_list_1 game_list">
+                            <ul>
+                            <li>
+                                <div class="game_item">
+                                <div class="game_img">
+                                    <figure><img src="../images/main/img_game_temp04.webp" alt=""></figure>
+                                </div>
+                                <div class="text_wrap">
+                                    <div class="text_inner">
+                                    <h4>Genie's Math Farm</h4>
+                                    <p>Age 7~10</p>
+                                    </div>
+                                    <div class="game_get">
+                                    <button>
+                                        <span>OPEN</span>
+                                    </button>
+                                    </div>
+                                </div>                        
+                                </div>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </article>
+                <!--// 2022.10.27 3088) 매쓰팜 배너 추가 -->
             </div>
+
+            <!-- 2022.10.28 수정 : .responsive_section 안쪽으로 매쓰팜 게임 배너 이동 -->
+           
         </div>
         <!--END :: result contents-->
     </section>

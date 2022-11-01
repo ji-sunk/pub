@@ -67,7 +67,7 @@ header.fixed_header + .container {margin-top: 109.8px;}
 
   /* 2022.08.08 노트패드 영역*/
 .notepad_area{position: absolute; top:0; left:0; z-index: 1; display: none; width:100%; height:100%;}
-.notepad_area .notepad_tip_line{position: absolute; top:0; left:0; right:0; bottom:0; z-index: 9; display: none; width:100%; /* height:100%; */ height:calc(100% + 25px); border:dashed 3px #ffbe30;} 
+.notepad_area .notepad_tip_line{position: absolute; top:0; left:0; right:0; bottom:0; z-index: 9; display: none; width:100%; /* height:100%; */ width:calc(100% + 20px); height:calc(100% + 25px); border:dashed 3px #ffbe30;} 
 .notepad_area .notepad_tip_desc{position:absolute; bottom:20px; left:50%; transform: translateX(-50%);  z-index: 9;  padding:10px 20px; display: none; width:calc(100% - 40px); max-width: 335px; border-radius: var(--borderRadius); background-color: #ffbe30;}
 .notepad_area .notepad_tip_desc p{font-weight:bold; line-height:1.43; text-align: center;}
 
@@ -135,19 +135,22 @@ header.fixed_header + .container {margin-top: 109.8px;}
 .qz .container.notepad_on{z-index: 3; overflow: visible; background-color: transparent; }
 .qz .container.notepad_on .main_contents{padding: 0 5px; height:100%; }
 .qz .container.notepad_on .main_contents .wrap{height:100%; overflow: inherit; background-color: #ffffff;}
+.qz .container:not(.notepad_on) .notepad_area{width:calc(100% - 10px); left:5px}
   /* 2022.08.31 */
 .qz .container.notepad_on .main_contents .quiz_desc{margin-top:9px; padding:0 15px;}
 .qz .container.notepad_on .main_contents .quiz_desc p{padding-top: 11px;}
-.qz .container.notepad_on .main_contents .exam_wrap {display: none;}
+.qz .container.notepad_on .main_contents .exam_wrap {/* display: none; */visibility: hidden;}
 .qz .container.notepad_on .main_contents .bubble_desc{top:inherit; bottom: calc(100% + 15px);}
 .qz .container.notepad_on .main_contents .bubble_desc::before{top:100%; transform: rotate(180deg);  }
 .qz .container.notepad_on .main_contents .quiz_content_inner{height:100%;}
 .qz .container.notepad_on .main_contents .quiz_area{position: relative; margin: 0 auto; padding-bottom:0; width:100%; height:100%; /* overflow: hidden; */}
-.qz .container.notepad_on .main_contents .quiz_area .problem { padding: 28px 10px 0;}
+.qz .container.notepad_on .main_contents .quiz_area .problem { /* padding: 28px 10px 0; */padding: 10px 15px 0;}
+/* .qz .container.notepad_on .main_contents .exam_wrap ~ .quiz_area{height:calc(100% - 10px)} */
+.qz .container.notepad_on .main_contents .exam_wrap ~ .quiz_area .problem{padding: 20px 15px 0;}
 .qz .container.notepad_on .quiz_content{height: calc(100% - 93px);}
 .qz .container.notepad_on .main_contents .quiz_area::-webkit-scrollbar {width: 5px; height: 5px;}
 /* 2022.08.08 */
-.qz .container.notepad_on .notepad_area{display: block; height:calc(100% - 25px)}
+.qz .container.notepad_on .notepad_area{display: block; height:calc(100% - 25px); width:calc(100% - 20px);}
 .qz .container.notepad_on .notepad_tip_line{display: block;} 
 .qz .container.notepad_on .notepad_tip_desc{ display: block;}
 .qz .container.notepad_on .main_contents .note_wrap {bottom: 0; z-index: 999;}
@@ -428,12 +431,16 @@ header.fixed_header + .container {margin-top: 109.8px;}
 
   /* 노트패드 on */
   .qz .container.notepad_on .main_contents {padding: 0 10px;}
-  .qz .container.notepad_on .quiz_area .problem {padding: 58px 20px 0;}  
+  /* .qz .container.notepad_on .quiz_area .problem {padding: 58px 20px 0;}   */
+  .qz .container.notepad_on .main_contents .quiz_area .problem {padding: 29px 20px 0;}
+  /* .qz .container.notepad_on .main_contents .exam_wrap ~ .quiz_area{height:calc(100% - 30px)} */
+  .qz .container.notepad_on .main_contents .exam_wrap ~ .quiz_area .problem{padding: 39px 20px 0;}
   .qz .container.notepad_on .input_tool { bottom: 60px;} 
     /* 2022.08.31 */
   .qz .container.notepad_on .main_contents .quiz_desc{margin-top:20px; padding:0 20px;}
-  .qz .container.notepad_on .main_contents .quiz_desc p{padding-top: 21px;}
- 
+  .qz .container.notepad_on .main_contents .quiz_desc p{padding-top:20px;}
+  .qz .container:not(.notepad_on) .notepad_area{width:calc(100% - 20px); left:10px}
+
   .input_tool .tool_wrap{height:500px;}
     /*2022.09.20 그리기 툴 -> common */
   .input_tool .tools_controll {bottom: 0px;}
@@ -644,6 +651,7 @@ header.fixed_header + .container {margin-top: 109.8px;}
   /* 2022.09.22 */
   .qz .main_contents {width:54%; height:calc(100vh - 89px); /* 89 헤더 높이*/}
   .qz .main_contents .wrap {padding: 0;  height:100%;} 
+  .qz .quiz_content .quiz_area .problem{margin:0;}
   
   /* 노트패드 on */
   .qz .container.notepad_on .quiz_desc{ margin: 30px auto 0;}
@@ -652,7 +660,10 @@ header.fixed_header + .container {margin-top: 109.8px;}
   .qz .container.notepad_on .input_tool {width: 0; height: 0;}
   .qz .container.notepad_on .quiz_content {height: calc(100% - 74px);}
   .qz .container.notepad_on .note_wrap {width: 100%;}
-  
+  .qz .container.notepad_on .quiz_content .quiz_area .problem{margin:0;}
+  .qz .container.notepad_on .main_contents .quiz_area .problem {padding: 30px 40px 0;}
+  .qz .container.notepad_on .main_contents .exam_wrap ~ .quiz_area .problem{padding:40px 40px 0;}
+
     /*2022.09.20 그리기 툴 -> common */
   .input_tool{ position: relative; width:46%; height: calc(100vh - 89px);}
   .input_tool .tool_wrap {margin-top: 0; height: 100%;}  
@@ -725,9 +736,9 @@ header.fixed_header + .container {margin-top: 109.8px;}
   .qz .container.notepad_on .main_contents {margin-bottom:0px; padding-bottom: 0px;  width:100%;}
   .qz .container.notepad_on .main_contents .wrap {max-width: inherit;}  
   /* 2022.08.31 */
-  .qz .container.notepad_on .main_contents .quiz_desc { margin:0; padding:0 20px; width: 100%; max-width: 65%;}
+  .qz .container.notepad_on .main_contents .quiz_desc { margin:0; padding:0 20px; width: 100%; max-width: 54%; /*  max-width: 65%; */}
   .qz .container.notepad_on .main_contents .quiz_desc p{padding-top: 8px;}
-  .qz .container.notepad_on .main_contents .quiz_area .problem {padding: 58px; margin: 0;}
+  /* .qz .container.notepad_on .main_contents .quiz_area .problem {padding: 58px; margin: 0;} */
   .qz .container.notepad_on .input_tool {width: 0; height: 0;}
   .qz .container.notepad_on .input_tool .note_wrap {width: 100%;}
     

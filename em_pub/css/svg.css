@@ -136,6 +136,11 @@
 .arithmetic_icon .st0{fill:var(--bulletColor);}
 .arithmetic_icon .st0.opacity_50{opacity:.5;}
 
+.arithmetic_icon.cal_icon .st0{fill:var(--bulletColor); }
+.arithmetic_icon.cal_icon .st1{stroke:var(--bulletColor);}
+.arithmetic_icon.cal_icon .st2{fill:var(--bulletColor); stroke:var(--bulletColor);}
+.arithmetic_icon.cal_icon .opacity_50{opacity:.5;}
+
 /*체크 아이콘*/
 .check_icon .st0{stroke: var(--checkColor);}
 .check_icon.ative .st0{stroke: var(--checkColor);}
@@ -279,6 +284,9 @@
 .dt_level_04 .st0{fill:#12BCFB;}
 .dt_level_04 .st1{opacity:0.5;fill:#00BCFE;}
 .dt_level_04 .st2{fill:#00BCFE;}
+
+.dt_level_05 .st0{fill:#00bcfe;}
+.dt_level_05 .st1{opacity:0.5;fill:#00bcfe;}
 
 .dt_level.active .st0{fill:#ffffff;}
 .dt_level.active .st1{fill:#ffffff;}
