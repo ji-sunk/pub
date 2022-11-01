@@ -1,0 +1,36 @@
+<?xml-stylesheet type="text/css" href="../../css/svg.css"?>
+<svg class="dt_level" xmlns="http://www.w3.org/2000/svg" width="38" height="33" viewBox="0 0 38 33">
+    <defs>
+        <clipPath id="qvn20gx6qa">
+            <path data-name="패스 191" d="M43-25a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2z" style="clip-rule:evenodd;fill:#fff"/>
+        </clipPath>
+        <clipPath id="czj3ikztwb">
+            <path data-name="패스 190" d="M0 0h64v-64H0z" style="fill:#fff"/>
+        </clipPath>
+        <clipPath id="tcujnyzp7c">
+            <path data-name="패스 194" d="M43-13a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2z" style="clip-rule:evenodd;fill:#fff"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 33649" transform="translate(-65.061 -437.561)">
+        <g data-name="그룹 448" transform="translate(-1.939 -2)">
+            <g data-name="그룹 144" transform="translate(51 485.561)" style="clip-path:url(#qvn20gx6qa);">
+                <g data-name="그룹 143" style="clip-path:url(#czj3ikztwb)">
+                    <path data-name="패스 189" d="M40-30h6v6h-6z" class="st1" />
+                </g>
+            </g>
+            <g data-name="그룹 146" transform="translate(51 483.561)" style="clip-path:url(#tcujnyzp7c);">
+                <g data-name="그룹 145" style="clip-path:url(#czj3ikztwb)">
+                    <path data-name="패스 192" d="M40-18h6v6h-6z" class="st1" />
+                </g>
+            </g>
+            <rect data-name="사각형 847" width="12" height="4" rx="2" transform="translate(88 461.561)" class="st0" />
+        </g>
+        <rect data-name="사각형 842" width="12" height="4" rx="2" transform="translate(86.061 444.561)" class="st0" />
+        <rect data-name="사각형 843" width="12" height="4" rx="2" transform="translate(70.061 444.561)" class="st1"/>
+        <rect data-name="사각형 844" width="12" height="4" rx="2" transform="rotate(90 -181.25 259.311)" class="st0" />
+        <g data-name="그룹 7382" transform="translate(-.343 -1.707)">
+            <rect data-name="사각형 846" width="14" height="4" rx="2" transform="rotate(45 -514.916 316.85)" class="st1" />
+            <rect data-name="사각형 845" width="14" height="4" rx="2" transform="rotate(135 -53.648 247.083)" class="st0" />
+        </g>
+    </g>
+</svg>

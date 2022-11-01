@@ -1,0 +1,8 @@
+<?xml-stylesheet type="text/css" href="../../css/svg.css"?>
+<svg class="arithmetic_icon" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <g transform="translate(-5 -182)">
+        <rect width="28.452" height="8.129" rx="4.065" transform="translate(19 199.161)" class="st0 opacity_50" />
+        <rect data-name="shape" width="28.452" height="8.129" rx="4.065" transform="translate(19 222.871)"  class="st0" />
+        <rect data-name="shape" width="28.452" height="8.129" rx="4.065" transform="rotate(90 -75.855 113.145)"  class="st0" />
+    </g>
+</svg>

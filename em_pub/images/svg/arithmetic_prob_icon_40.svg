@@ -1,0 +1,12 @@
+<?xml-stylesheet type="text/css" href="../../css/svg.css"?>
+<svg class="arithmetic_icon cal_icon" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <g transform="translate(-1557 -763)">
+        <path transform="translate(1568 784)" class="st1 opacity_50" style="fill:none;stroke-width:4px;" d="m0 0 12 14"/>
+        <path data-name="line" transform="translate(1580 787)" class="st1 opacity_50" style="fill:none;stroke-width:4px;" d="M11 0 0 11"/>
+        <path data-name="line" transform="translate(1591 787)" class="st1 opacity_50" style="fill:none;stroke-width:4px;" d="M12 12 0 0"/>
+        <circle cx="5" cy="5" r="5" transform="translate(1574 792)" class="st0" />
+        <circle data-name="dot" cx="5" cy="5" r="5" transform="translate(1586 782)" class="st0" />
+        <circle data-name="dot" cx="5" cy="5" r="5" transform="translate(1563 779)" class="st0" />
+        <circle data-name="dot" cx="5" cy="5" r="5" transform="translate(1597 794)" class="st0" />
+    </g>
+</svg>
