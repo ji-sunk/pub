@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+    <defs>
+        <clipPath id="ypr90nrrua">
+            <path data-name="패스 230" d="M19-27a6 6 0 0 0 6-6 6 6 0 0 0-6-6 6 6 0 0 0-6 6 6 6 0 0 0 6 6z" style="clip-rule:evenodd;fill:#1b98f0"/>
+        </clipPath>
+        <clipPath id="chj2rnigmb">
+            <path data-name="패스 229" d="M0-9.143h54.857V-64H0z" transform="translate(0 64)" style="fill:#1b98f0"/>
+        </clipPath>
+        <clipPath id="latpqh0h4c">
+            <path data-name="패스 233" d="M32-27a1.5 1.5 0 0 0 1.5-1.5A1.5 1.5 0 0 0 32-30a1.5 1.5 0 0 0-1.5 1.5A1.5 1.5 0 0 0 32-27z" style="clip-rule:evenodd;fill:#1b98f0"/>
+        </clipPath>
+        <clipPath id="clt428qzdd">
+            <path data-name="패스 232" d="M0 0h64v-64H0z" transform="translate(0 64)" style="fill:#1b98f0"/>
+        </clipPath>
+        <clipPath id="iboycoa4je">
+            <path data-name="패스 236" d="M32-34a1.5 1.5 0 0 0 1.5-1.5A1.5 1.5 0 0 0 32-37a1.5 1.5 0 0 0-1.5 1.5A1.5 1.5 0 0 0 32-34z" style="clip-rule:evenodd;fill:#1b98f0"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 178" transform="translate(-15 49)">
+        <g data-name="그룹 173" transform="translate(4 1)" style="opacity:.5;clip-path:url(#ypr90nrrua)">
+            <g data-name="그룹 172" transform="translate(1.857 -60.429)" style="clip-path:url(#chj2rnigmb)">
+                <path data-name="패스 228" d="M12-40h13.714v13.714H12z" transform="translate(-1.714 60.571)" style="fill:#1b98f0"/>
+            </g>
+        </g>
+        <g data-name="그룹 175" transform="translate(0 -.5)" style="clip-path:url(#latpqh0h4c)">
+            <g data-name="그룹 174" transform="translate(0 -64)" style="clip-path:url(#clt428qzdd)">
+                <path data-name="패스 231" d="M29.5-31h5v5h-5z" transform="translate(0 64)" style="fill:#1b98f0"/>
+            </g>
+        </g>
+        <g data-name="그룹 177" transform="translate(0 .5)" style="clip-path:url(#iboycoa4je)">
+            <g data-name="그룹 176" transform="translate(0 -64)" style="clip-path:url(#clt428qzdd)">
+                <path data-name="패스 234" d="M29.5-38h5v5h-5z" transform="translate(0 64)" style="fill:#1b98f0"/>
+            </g>
+        </g>
+        <rect data-name="사각형 850" width="12" height="12" rx="2" transform="translate(36 -38)" style="fill:#1b98f0"/>
+    </g>
+</svg>
