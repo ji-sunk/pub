@@ -423,25 +423,25 @@
               <!-- 답이 한줄일때 -->
               <ul class="multi_answer_list newscroll_bar active" >
                 <li>
-                  <input type="radio" name="multi_answer" id="answer1" value="">
+                  <input type="checkbox" name="multi_answer" id="answer1" value="">
                   <label for="answer1">
                     <span>27</span>
                   </label>
                 </li>
                 <li>
-                  <input type="radio" name="multi_answer" id="answer2" value="">
+                  <input type="checkbox" name="multi_answer" id="answer2" value="">
                   <label for="answer2">
                     <span>28</span>
                   </label>
                 </li>
                 <li>
-                  <input type="radio" name="multi_answer" id="answer3" value="">
+                  <input type="checkbox" name="multi_answer" id="answer3" value="">
                   <label for="answer3">
                     <span>29</span>
                   </label>
                 </li>
                 <li>
-                  <input type="radio" name="multi_answer" id="answer4" value="">
+                  <input type="checkbox" name="multi_answer" id="answer4" value="">
                   <label for="answer4">
                     <span>30</span>
                   </label>
@@ -450,25 +450,25 @@
               <!-- 답이 한줄이상일때 이미지 -->
               <ul class="multi_answer_list newscroll_bar answer_mline">
                 <li>
-                  <input type="radio" name="multi_answer" id="answer5" value="">
+                  <input type="checkbox" name="multi_answer" id="answer5" value="">
                   <label for="answer5">
                     <span><figure><img src="https://dummyimage.com/100x36/dbdbdb/333333" alt=""></figure></span>
                   </label>
                 </li>
                 <li>
-                  <input type="radio" name="multi_answer" id="answer6" value="">
+                  <input type="checkbox" name="multi_answer" id="answer6" value="">
                   <label for="answer6">
                     <span><figure><img src="https://dummyimage.com/100x36/dbdbdb/333333" alt=""></figure></span>
                   </label>
                 </li>
                 <li>
-                  <input type="radio" name="multi_answer" id="answer7" value="">
+                  <input type="checkbox" name="multi_answer" id="answer7" value="">
                   <label for="answer7">
                     <span><figure><img src="https://dummyimage.com/100x36/dbdbdb/333333" alt=""></figure></span>
                   </label>
                 </li>
                 <li>
-                  <input type="radio" name="multi_answer" id="answer8" value="">
+                  <input type="checkbox" name="multi_answer" id="answer8" value="">
                   <label for="answer8">
                     <span><figure><img src="https://dummyimage.com/100x36/dbdbdb/333333" alt=""></figure></span>
                   </label>
@@ -518,100 +518,146 @@
 <!-- 2022.07.18 message popup 이미지 -> 영상 준비중 -->
 <!-- 2022.07.29 basic nomal_desc, bold_desc 클래스 추가-->
   <div class="message_popup active">
-    <div class="message_content">
+     <!-- 
+      s: 2022.09.29 수정 
+      1. message_content에 addClass .message_case
+      2. .message_item 아래에 자식요소들 감싸는 div.item_wrap 추가
+      3. .img_wrap를 감싸는 div.img_bg 추가
+    -->
+    <div class="message_content message_case"><!-- 2022.09.29 addClass .message_case -->
       <!-- basic good popup 정답-->
       <article class="message_item basic nomal_desc correct active">
-        <p class="message_title">Good!</p>
-        <div class="img_wrap">
-          <figure>
-            <img src="../images/interaction/peter_qz_correct.webp" srcset="" alt="팝업 캐릭터1"></figure>         
+        <div class="item_wrap">
+          <p class="message_title">Good!</p>
+          <div class="img_bg">
+            <div class="img_wrap">
+              <figure>
+                <img src="../images/interaction/peter_qz_correct.webp" srcset="" alt="팝업 캐릭터1"></figure>         
+            </div>
+          </div>
+          <p class="message_desc">Waiting for the next problem...</p>
         </div>
-        <p class="message_desc">Waiting for the next problem...</p>
       </article>
       <!-- basic good popup 오답 -->
       <article class="message_item basic nomal_desc wrong ">
-        <p class="message_title green">Cheer Up!</p>
-        <div class="img_wrap">
-          <figure>
-            <img src="../images/interaction/peter_qz_wrong.webp" srcset="" alt="팝업 캐릭터1"></figure>         
-          </figure>         
+        <div class="item_wrap">
+          <p class="message_title green">Cheer Up!</p>
+          <div class="img_bg">
+            <div class="img_wrap">
+              <figure>
+                <img src="../images/interaction/peter_qz_wrong.webp" srcset="" alt="팝업 캐릭터1"></figure>         
+              </figure>         
+            </div>
+          </div>
+          <p class="message_desc">Waiting for the next problem...</p>
         </div>
-        <p class="message_desc">Waiting for the next problem...</p>
       </article>
       <!-- message desc emphasis 학습 시작시 최초 및 이전결과 노력-->
       <article class="message_item basic bold_desc result">
-        <div class="img_wrap">
-          <figure>
-            <img src="../images/interaction/peter_qz_result.webp" srcset="" alt="팝업 캐릭터2"></figure>         
-          </figure>         
+        <div class="item_wrap">
+          <div class="img_bg">
+            <div class="img_wrap">
+              <figure>
+                <img src="../images/interaction/peter_qz_result.webp" srcset="" alt="팝업 캐릭터2"></figure>         
+              </figure>         
+            </div>
+          </div>
+          <p class="message_desc message_desc_em">Uh, are you kidding me? <br>Let’s stop here and check the results.</p>
         </div>
-        <p class="message_desc message_desc_em">Uh, are you kidding me? <br>Let’s stop here and check the results.</p>
       </article>
 
       <!-- message desc emphasis 학습시작시 이전결과 기본이상-->
       <article class="message_item basic bold_desc better">
-        <div class="img_wrap">
-          <figure>
-            <img src="../images/interaction/peter_qz_better.webp" srcset="" alt="팝업 캐릭터2"></figure>         
-          </figure>         
+        <div class="item_wrap">
+          <div class="img_bg">
+            <div class="img_wrap">
+              <figure>
+                <img src="../images/interaction/peter_qz_better.webp" srcset="" alt="팝업 캐릭터2"></figure>         
+              </figure>         
+            </div>
+          </div>
+          <p class="message_desc message_desc_em">Let’s solve 10 problems first</p>
         </div>
-        <p class="message_desc message_desc_em">Let’s solve 10 problems first</p>
       </article>
       <!-- message desc emphasis 학습시작시 연속 오답-->
       <article class="message_item basic bold_desc con_wrong">
-        <div class="img_wrap">
-          <figure>
-            <img src="../images/interaction/peter_qz_con_wrong.webp" srcset="" alt="팝업 캐릭터2"></figure>         
-          </figure>
+        <div class="item_wrap">
+          <div class="img_bg">
+            <div class="img_wrap">
+              <figure>
+                <img src="../images/interaction/peter_qz_con_wrong.webp" srcset="" alt="팝업 캐릭터2"></figure>         
+              </figure>
+            </div>
+          </div>
+          <p class="message_desc message_desc_em">You typed the wrong answers <br>in a row. Check the concept</p>
         </div>
-        <p class="message_desc message_desc_em">You typed the wrong answers <br>in a row. Check the concept</p>
       </article>
       <!-- message desc emphasis 학습시작시 빠른 연속 오답-->
       <article class="message_item basic bold_desc con_wrong_fast">
-        <div class="img_wrap">
-          <figure>
-            <img src="../images/interaction/peter_qz_con_wrong_fast.webp" srcset="" alt="팝업 캐릭터3"></figure>         
-          </figure>
+        <div class="item_wrap">
+          <div class="img_bg">
+            <div class="img_wrap">
+              <figure>
+                <img src="../images/interaction/peter_qz_con_wrong_fast.webp" srcset="" alt="팝업 캐릭터3"></figure>         
+              </figure>
+            </div>
+          </div>
+          <p class="message_desc message_desc_em">The goal is Basic. <br>Let’s solve 10 problems first</p>
         </div>
-        <p class="message_desc message_desc_em">The goal is Basic. <br>Let’s solve 10 problems first</p>
       </article>   
       <!-- message desc emphasis 학습시작시 문제추가 안내-->
       <article class="message_item basic bold_desc more_quest">
-        <div class="img_wrap">
-          <figure>
-            <img src="../images/interaction/peter_qz_more_quest01.webp" srcset="" alt="팝업 캐릭터3"></figure>         
-          </figure>
+        <div class="item_wrap">
+          <div class="img_bg">
+            <div class="img_wrap">
+              <figure>
+                <img src="../images/interaction/peter_qz_more_quest01.webp" srcset="" alt="팝업 캐릭터3"></figure>         
+              </figure>
+            </div>
+          </div>
+          <p class="message_desc message_desc_em">Let’s solve 10 more questions.</p>
         </div>
-        <p class="message_desc message_desc_em">Let’s solve 10 more questions.</p>
       </article>
        <!-- message desc emphasis 학습시작시 문제추가 안내-->
       <article class="message_item basic bold_desc more_quest_2">
-        <div class="img_wrap">
-          <figure>
-            <img src="../images/interaction/peter_qz_more_quest02.webp" srcset="" alt="팝업 캐릭터3"></figure>        
-          </figure>
+        <div class="item_wrap">
+          <div class="img_bg">
+            <div class="img_wrap">
+              <figure>
+                <img src="../images/interaction/peter_qz_more_quest02.webp" srcset="" alt="팝업 캐릭터3"></figure>        
+              </figure>
+            </div>
+          </div>
+          <p class="message_desc message_desc_em">Try to solve it correctly. <br>Let’s solve 10 more questions..</p>
         </div>
-        <p class="message_desc message_desc_em">Try to solve it correctly. <br>Let’s solve 10 more questions..</p>
       </article>  
       <!-- 학습종료 및 결과 로딩-->
       <article class="message_item learn_end_popup learn_end_basic">
-        <div class="img_wrap">
-          <figure>
-            <img src="../images/interaction/peter_qz_learn_end_basic.webp" srcset="" alt="팝업 캐릭터3"></figure>         
-          </figure>
+        <div class="item_wrap">
+          <div class="img_bg">
+            <div class="img_wrap">
+              <figure>
+                <img src="../images/interaction/peter_qz_learn_end_basic.webp" srcset="" alt="팝업 캐릭터3"></figure>         
+              </figure>
+            </div>
+          </div>
+          <p class="message_desc message_desc_em">Good Job! <br>Check the results.</p>
+          <p class="message_desc">Waiting for the result...</p>
         </div>
-        <p class="message_desc message_desc_em">Good Job! <br>Check the results.</p>
-        <p class="message_desc">Waiting for the result...</p>
       </article> 
       <!-- 학습종료 빠른 연속 오답 -->
       <article class="message_item learn_end_popup learn_end_wrong_fast ">
-        <div class="img_wrap">
-          <figure>
-            <img src="../images/interaction/peter_qz_learn_end_basic.webp" srcset="" alt="팝업 캐릭터3"></figure>         
-          </figure>
+        <div class="item_wrap">
+          <div class="img_bg">
+            <div class="img_wrap">
+              <figure>
+                <img src="../images/interaction/peter_qz_learn_end_basic.webp" srcset="" alt="팝업 캐릭터3"></figure>         
+              </figure>
+            </div>
+          </div>
+          <p class="message_desc message_desc_em">Are you in there? <br>You’d better try again.</p>
+          <p class="message_desc">Waiting for the result...</p>
         </div>
-        <p class="message_desc message_desc_em">Are you in there? <br>You’d better try again.</p>
-        <p class="message_desc">Waiting for the result...</p>
       </article> 
     </div>
   </div>

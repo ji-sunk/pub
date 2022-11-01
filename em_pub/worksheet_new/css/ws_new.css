@@ -73,15 +73,17 @@ a{color:#303030;}
 .worksheet_new .container .main_content .problem_list ul li {margin-bottom:20px;}
 .worksheet_new .container .main_content .problem_list ul li:last-child {margin-bottom:0;}
 .worksheet_new .container .main_content .problem_list ul li .problem_list_item{display: flex; gap: 0 10px;}
-.worksheet_new .container .main_content .problem_list ul li .problem_list_item .problem_list_item_num {flex-shrink: 0; display: flex; justify-content: center; align-items: center; width:30px; height:30px; border-radius: 50px; background-color:#97caff; font-size: 16px; font-weight: bold; line-height: 1.5; color: #fff; } 
+/* 2022.10.21 : 넘버 사이즈 80% 정도로 작게 */
+.worksheet_new .container .main_content .problem_list ul li .problem_list_item .problem_list_item_num {flex-shrink: 0; display: flex; justify-content: center; align-items: center; width:24px; height:24px; border-radius: 50px; background-color:#97caff; font-size: 13px; font-weight: bold; line-height: 1.4; color: #fff; } 
+/* .worksheet_new .container .main_content .problem_list ul li .problem_list_item .problem_list_item_num {flex-shrink: 0; display: flex; justify-content: center; align-items: center; width:30px; height:30px; border-radius: 50px; background-color:#97caff; font-size: 16px; font-weight: bold; line-height: 1.5; color: #fff; }  */
 .worksheet_new .container .main_content .problem_list.one ul {width:100%;}
 .worksheet_new .container .main_content .problem_list.two ul {width:calc(50% - 10px);}
 .worksheet_new .container .main_content .problem_list.three ul {width:calc(33.333% - 10px);}
 .worksheet_new .container .main_content .problem_list.four ul {width:calc(25% - 10px);}
 .worksheet_new .container .main_content .problem_day {width:100%; display: flex; justify-content:flex-start; align-items: center; font-family: 'baloobhaina'; }
 .worksheet_new .container .main_content .problem_day div {font-weight: bold;}
-.worksheet_new .container .main_content .problem_day .day {padding-left:12px; width:82px; height:38px; line-height:42px; font-size:18px; color:#fff; background-color: #0e306a; border-top-right-radius:50px; border-bottom-right-radius:50px;}
-.worksheet_new .container .main_content .problem_day .examples {z-index: -1; margin-left:-14px; padding-left:20px; width:150px; height:38px; line-height:42px; font-size:22px; color:#2e91f6; background-color: #eaeff4; border-top-right-radius:50px; border-bottom-right-radius:50px;}
+.worksheet_new .container .main_content .problem_day .day {z-index:3; padding-left:12px; width:82px; height:38px; line-height:42px; font-size:18px; color:#fff; background-color: #0e306a; border-top-right-radius:50px; border-bottom-right-radius:50px;}
+.worksheet_new .container .main_content .problem_day .examples {z-index:1; margin-left:-14px; padding-left:20px; width:150px; height:38px; line-height:42px; font-size:22px; color:#2e91f6; background-color: #eaeff4; border-top-right-radius:50px; border-bottom-right-radius:50px;}
 
 /* 지문 1줄 (상단 설명 있을 때) 기본 */
 /* .worksheet_new .container .main_content .problem_list.hgt_s {min-height: 549px;} */
@@ -97,7 +99,9 @@ a{color:#303030;}
 /* .worksheet_new .container .main_content .problem_list.hgt_l2 {min-height: 947px;} */
 
 /* Mathjax3.0 기존 스타일 추가 */
-.worksheet_new .pv-ib {margin: 1em 0px;}
+/* 2022.10.21 : 넘버와 수평간격 맞춤. */
+.worksheet_new .pv-ib {margin: 0 0px 1em;} 
+/* .worksheet_new .pv-ib {margin: 1em 0px;} */
 .worksheet_new mjx-utext {font-style:normal !important;}
 .worksheet_new .tbl-htreeM .divisorBox {display: block}
 .worksheet_new .tbl-htreeM .divisorBox::after {position: absolute; top: 0; right: 0; font-size: 20px; content: '\21D2'; line-height:1;}

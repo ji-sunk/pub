@@ -99,7 +99,9 @@
   const tool_wrap = document.querySelector(".input_tool .tool_wrap");//하단 입력 박스(키패드, 그리기패드)   
   const notepad_overlay = document.querySelector(".notepad_overlay"); // 딤 배경
   const quiz_content  = document.querySelector(".quiz_content"); // 퀴즈 영역
-
+  const header_h = document.querySelector('.con_scroll').getBoundingClientRect().height; // 2022.10.20
+  let notePadTop; // 2022.10.20
+  let notePadPos; // 2022.10.20
 /**
  *@param {btn_margin} 노프패드 영역, 하단 버튼 사이간격
  */
@@ -109,7 +111,15 @@
     const win_h = window.innerHeight; 
     const tool_h = win_h - (tool.getBoundingClientRect().top - tool_btn.offsetHeight - btn_margin);
     const container_t = container.getBoundingClientRect().top; //패드 top
-    const container_height = win_h - (container_t + tool_h); // 디바이스 높이 - (패드 top값 + 하단 버튼 영역)  
+    const container_height = win_h - (container_t + tool_h); // 디바이스 높이 - (패드 top값 + 하단 버튼 영역) 
+
+    // s: 2022.10.20
+    const exBtn = document.querySelector('.exam_wrap'); 
+    let exBtn_h;
+    if( exBtn ) {
+      exBtn_h = exBtn.getBoundingClientRect().height; 
+    }
+    // e: 2022.10.20
 
     if(container.classList.contains("under_notepad")){
       container.style.height = ""; 
@@ -118,7 +128,17 @@
     }else if(container.classList.contains("notepad_on")){
       //노트패드 클릭 후 상태
       container.style.height = `${container_height}px`; 
-      quiz_content.style.height = `${container_height - quiz_content.offsetTop}px`;
+
+      // s: 2022.10.20
+      if( exBtn ) {
+        quiz_content.style.height = `${container_height - quiz_content.offsetTop - exBtn_h}px`; 
+      } else {
+        quiz_content.style.height = `${container_height - quiz_content.offsetTop}px`; 
+      }
+      // e: 2022.10.20
+
+      notepad.style.top = '';  // 2022.10.20
+      notePadTop = notepad.getBoundingClientRect().top; // 2022.10.20
     }     
   } 
 
@@ -145,13 +165,15 @@
         tip_desc.style.display = "none";  
         btn_flag = true;
       }, 2000);
-       
     }else{
+      notePadPos = notePadTop - header_h; // 2022.10.20
+      
       btn_text.innerText = "Notepad on";
       tip_line.style.display = "";
       tip_desc.style.display = ""; 
       container.style.height = ""; 
       quiz_content.style.height = "";
+      notepad.style.top = `${notePadPos}px`; // 2022.10.20
       notepad_tool.classList.remove("active");
 
       if(notepad.classList.contains("active")){

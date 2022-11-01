@@ -265,17 +265,36 @@ js로 접근 가능 object 내부 svg 테마별 클래스 추가 */
 
 /*게임 슬라이더 */
 (function(){
-  const swiper = new Swiper('.game_list_wrap', {
-    effect: 'slider',  
-    speed: 600,  
-    slidesPerView: 'auto',
-    pagination:{
-       el: ".game_dots", 
-       clickable: true, 
-       type: 'bullets',
-    },
-    watchOverflow : true
+  // 2022.11.01 게임배너 2개 타입으로 보여질 때
+  const game_slider = document.querySelectorAll(".game_list_wrap");
+
+  game_slider.forEach((item, index) =>{  
+    item.classList.add('slider_' + index);
+    const swiper = new Swiper('.slider_' + index, {
+      effect: 'slider',  
+      speed: 600,  
+      slidesPerView: 'auto',
+      pagination:{
+        el: item.nextElementSibling.nextElementSibling,
+        clickable: true, 
+        type: 'bullets',
+      },
+      watchOverflow : true
+    });
   });
+
+  // 2022.11.01  실제 개발 적용시 넣어야 함
+  // const swiper = new Swiper('.game_list_wrap', {
+  //   effect: 'slider',  
+  //   speed: 600,  
+  //   slidesPerView: 'auto',
+  //   pagination:{
+  //      el: ".game_dots", 
+  //      clickable: true, 
+  //      type: 'bullets',
+  //   },
+  //   watchOverflow : true
+  // });
 })();
 
 
