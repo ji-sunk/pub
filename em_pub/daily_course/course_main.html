@@ -46,6 +46,38 @@
           </div>
         </div>
       </div>
+
+      <!-- 2022.11.04 3110) 진단다시하기 버튼 추가  -->
+      <div class="right_inner">
+        <button type="button" class="btn_retry">
+          <span>Test Again</span>
+          <!-- 
+            영문 : <span>Test Again</span>
+            국문 : <span>테스트 다시하기</span>
+          -->
+          <i class="icon_16"><object type="image/svg+xml" data="../images/svg/icon_all_s_retry.svg" class="add_new_color"></object></i>
+        </button>
+        <!-- 툴팁 -->
+        <div class="bubble_desc">
+          <p>If it's too easy<br>take the test again.</p>
+          <!--
+            영문 :
+            case01 :  <p>If it's not the learning you want, take the AI diagnostic test again.</p>
+            case02 :  <p>If it's too difficult<br>take the test again.</p>
+            case03 :  <p>If it's too easy<br>take the test again.</p>
+
+            국문 :
+            case01 :  <p>원하는 학습이 아니라면,<br>AI진단 테스트를 다시 받아봐.</p>
+            case02 :  <p>문제가 너무 어렵다면<br>AI진단 테스트를 다시 받아봐.</p>
+            case03 :  <p>문제가 너무 쉽다면<br>AI진단 테스트를 다시 받아봐.</p>
+          -->
+          <button type="button" class="btn_bubble_close">
+            <i class="icon_24"><img src="../images/common/close_icon_24.svg" aria-hidden="true" alt="닫기"></i>
+          </button>
+        </div>
+        <!--// 툴팁 -->
+      </div>
+      <!-- 2022.11.04 3110) 진단다시하기 버튼 추가  -->
     </div>
   </header>
 <!-- header -->
@@ -998,6 +1030,17 @@
       index === 0 ? item.classList.add("first_item") : "";		
       index+1 ===  list_wrap.length ? item.classList.add("last_item") : "";		
     });
+
+    // 2022.11.04 툴팁
+    const tooltip = document.querySelector(".bubble_desc");  
+    setTimeout(function() {
+      tooltip.classList.add("hidden");
+    }, 3000);   
+
+    const closeBtn = document.querySelector(".btn_bubble_close");  
+    closeBtn.addEventListener('click', function () {
+      tooltip.classList.add("hidden");
+    })
   </script>
 
 
