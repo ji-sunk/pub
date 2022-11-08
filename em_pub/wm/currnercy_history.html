@@ -92,6 +92,32 @@
         <li><button><span>Earn</span></button></li>
         <li><button><span>Used</span></button></li>
       </ul>
+
+      <!-- 221108 도움말 +_툴팁 추가 업무번호 3148 -->
+      <div class="right_inner">
+        <button type="button" class="btn_help" onclick="showHide()" >
+          <i class="icon_24"><object type="image/svg+xml" data="../images/common/help_filming.svg" ></object></i>
+        </button>
+        <div class="bubble_desc" id="bub_tgl">
+          <!-- 국문 -->
+          <!-- <p>
+            날개로 구입할 수 있는<br>
+            캐릭터와 아이템이 곧 추가될<br>
+            예정입니다.
+          </p> -->
+          <!-- 영문 -->
+          <p>
+            Characters and items<br> 
+            that can be purchased with<br> 
+            Wings will be added.
+          </p>
+          <button type="button" class="btn_bubble_close">
+            <i class="icon_24"><img src="../images/common/close_icon_24.svg" aria-hidden="true" alt="닫기"></i>
+          </button>
+        </div>
+      </div>
+      <!-- //221108 도움말 +_툴팁 추가 업무번호 3148 -->
+
     </div>
     <!--START :: contents-->
     <!-- currency history list -->
@@ -242,7 +268,18 @@
 <script type="text/javascript" src="../js/vendor/swiper.min.js"></script>
 <script type="text/javascript" src="../js/main.js"></script>
 <script type="text/javascript" src="../js/wm.js"></script>
+<script>
+  // 221108 기존 사용하던 툴팁 그대로 적용
+ const tooltip = document.querySelector(".bubble_desc");  
+ setTimeout(function() {
+   tooltip.classList.add("hidden");
+ }, 3000);   
 
+ const closeBtn = document.querySelector(".btn_bubble_close");  
+ closeBtn.addEventListener('click', function () {
+   tooltip.classList.add("hidden");
+ })
+</script>
 
 </body>
 </html>
