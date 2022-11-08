@@ -146,19 +146,19 @@
 .date_select .date_select_btn{position:relative; padding:14px 20px 14px 73px; display: flex; justify-content: space-between; align-items: center; border-radius: 15px; background-color:transparent; border:1px solid #ffffff;}
 .date_select .date_select_btn:before{content: 'Date';position: absolute;left: 18px;top: 17px;margin-right: 10px;padding-right: 10px;border-right: 1px solid #bfcfe7;line-height: 15px;color: #fff;}
 .date_select .date_select_btn.on:before{color: #303030; border-color: #303030;}
-.date_select .date_select_btn .date_select_text{height:22px; font-size:16px; line-height: 1.5; font-weight: bold; color: #ffffff;}
+.date_select .date_select_btn .date_select_text{height:22px; font-size:16px; line-height: 1.5; font-weight: bold; color: #ffffff; overflow:hidden; text-overflow: ellipsis; white-space:nowrap;}
 .date_select .date_select_inner.on_wrap .date_select_text{color: #303030;}
-.date_select .date_select_inner .date_select_btn i{background: url("../images/result/icon-all-s-16-arrow-down-regular-gray.svg"); transition: transform .3s;}
+.date_select .date_select_inner .date_select_btn i{background: url("../images/result/icon-all-s-16-arrow-down-regular-gray.svg"); transition: transform .3s; flex-shrink: 0;}
 .date_select .date_select_inner.on_wrap .date_select_btn i{background: url("../images/common/select_down_arrow.svg"); transform: rotate(180deg);}
 .date_select .date_select_list{height: 0; overflow: hidden; }
 .date_select .date_select_list li:nth-child(n+2){margin-top:5px; }
 .date_select .date_select_list li:last-child{padding-bottom:20px;}
 .date_select .date_select_list li a{padding:10px 18px; display: flex; justify-content: space-between; align-items: center;}
-.date_select .date_select_list li a span{font-size:16px; line-height: 1.5; font-weight: 500;}
+.date_select .date_select_list li a span{font-size:16px; line-height: 1.5; font-weight: 500; overflow:hidden; text-overflow: ellipsis; white-space:nowrap;}
 .date_select .date_select_list li a i{display: none;}
 .date_select .date_select_list li a.active{background: var(--countrySelectBg);}
 .date_select .date_select_list li a.active span{color:var(--subText); font-weight: bold;}
-.date_select .date_select_list li a.active i{display: block;}
+.date_select .date_select_list li a.active i{display: block; flex-shrink: 0;}
 
 /* progress_report */
  /* progress report 상단 스코어 */
@@ -232,18 +232,18 @@
 .cate_select .cate_select_inner::before{content: ""; position: absolute; top: 0; left:0; right:0; bottom:0; display: block; width:100%; height:100%; border:1px solid #999999; border-radius: var(--borderRadius); pointer-events: none; box-sizing: border-box;  transition: border-color .3s;}
 .cate_select .cate_select_inner.on_wrap::before{border-width: 2px; border-color: var(--subText); }
 .cate_select [class*=select_btn]{padding:14px 20px; display: flex; justify-content: space-between; align-items: center; height:100%}
-.cate_select [class*=select_btn] .cate_select_text{height:22px; font-size:16px; line-height: 1.5; font-weight: bold;}
-.cate_select .cate_select_inner [class*=select_btn] i{transition: transform .3s;}
+.cate_select [class*=select_btn] .cate_select_text{height:22px; font-size:16px; line-height: 1.5; font-weight: bold; overflow:hidden; text-overflow: ellipsis; white-space:nowrap;}
+.cate_select .cate_select_inner [class*=select_btn] i{transition: transform .3s; flex-shrink: 0;}
 .cate_select .cate_select_inner.on_wrap [class*=select_btn] i{transform: rotate(180deg);}
 .cate_select .cate_select_list{height: 0; overflow: hidden; }
 .cate_select .cate_select_list li:nth-child(n+2){margin-top:5px; }
 .cate_select .cate_select_list li:last-child{padding-bottom:20px;}
 .cate_select .cate_select_list li a{padding:10px 18px; display: flex; justify-content: space-between; align-items: center;}
-.cate_select .cate_select_list li a span{font-size:16px; line-height: 1.5; font-weight: 500;}
-.cate_select .cate_select_list li a i{display: none;}
+.cate_select .cate_select_list li a span{font-size:16px; line-height: 1.5; font-weight: 500; overflow:hidden; text-overflow: ellipsis; white-space:nowrap;}
+.cate_select .cate_select_list li a i{display: none;};
 .cate_select .cate_select_list li a.active{background: var(--countrySelectBg);}
 .cate_select .cate_select_list li a.active span{color:var(--subText); font-weight: bold;}
-.cate_select .cate_select_list li a.active i{display: block;}
+.cate_select .cate_select_list li a.active i{display: block; flex-shrink: 0;}
 .top_sort{display: flex; justify-content: space-between; align-items: center; margin-top: 10px;}
 .top_sort .cate_select{flex: 1 1 auto;}
 .top_sort .calendar{position:relative; flex: 0 0 50px; margin-left: 15px; padding-left: 15px;}
@@ -377,6 +377,11 @@
 .ko .card_item .btn_wrap .chk_btn{padding:6px 18px;}
 .ko .card_item .btn_wrap .chk_btn.arrow span {line-height: 1.24;}
 .ko .result_view .result_contents{min-height: calc(100% - 420px);}
+
+@media (max-width:370px){
+    .card_item .score{font-size: 18px; white-space: nowrap;}
+    [class^=result] .card_ui .card_ui_inner,.sub_page.nt .card_ui .card_ui_inner{padding:30px 15px 30px;}
+}
 
 @media (min-width:280px) and (max-width:320px){
     .card_ui .card_chart .chart_wrap .chart{width: 100%;}

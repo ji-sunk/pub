@@ -55,7 +55,7 @@
 .wm .wm_contents .newscroll_bar::-webkit-scrollbar-thumb {background: var(--subText); border-radius: 2px;}
 
 /* currency history */
-.currency_history .currency_cat_btn{padding:30px 20px 0;}
+.currency_history .currency_cat_btn{padding:30px 20px 0; max-width:590px; margin:0 auto;}
 .currency_history .currency_cat_btn ul{display: flex; align-items: center; gap:0 20px;}
 .currency_history .currency_cat_btn ul li button{position: relative;}
 .currency_history .currency_cat_btn ul li button::before{content:""; position: absolute; top:calc(100% + 5px); left:50%; transform: translateX(-50%); display: none; width:7px; height:7px; border-radius: 50%; background-image: linear-gradient(to right, var(--gradationStart), var(--gradationEnd)); }
@@ -161,10 +161,11 @@
   .wm .wm_top .wing_info .wing_score_wrap .wing_score_title h3{font-size: 48px; line-height: 1.17;}
   .wm .wm_top .wing_info .wing_score_wrap .wing_score span{ height:53px;  font-size: 64px; line-height: 1.13;  letter-spacing: -0.06px; }  
   .wm .wm_top .wing_info .wm_margkt_link {margin-top: 25px;}
-
   .wm .wm_contents {margin-top: 40px; min-height: calc(100% - 188px);}
 
-  .currency_history .currency_cat_btn ul {justify-content: center;}
+/* 221108 툴팁 추가되면서 위치 변경 수정 */
+  .currency_history .currency_cat_btn ul {justify-content: flex-start;}
+  
   .currency_history .wrap.currency_history_list{padding-top: 40px;}
   .currency_history .currency_history_list .card_ui .card_ui_inner {padding: 23px 25px 30px;}
   .currency_history .currency_history_list .card_ui .curren_text {margin-top: 4px;}
@@ -216,7 +217,7 @@
   .wm .wm_contents .card_ui.target_list_wrap .mission_icon_out .mission_icon_wrap:last-child {padding-bottom: 60px;}
   .wm .wm_contents .card_ui .mission_icon_out .mission_icon_wrap .weekly_icons_inner {margin-top: 11px;}
 
-  /*currency history  */
+  /* currency history */
   .currency_history .wm_contents {height: calc(100% - 192px);}
   .currency_history .currency_cat_btn {padding: 50px 60px 0;}
   .currency_history .currency_cat_btn ul {justify-content: flex-start; height:24px;}

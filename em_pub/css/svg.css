@@ -155,9 +155,7 @@
 .gray_arrow .arrow_line{stroke:#999999!important;}
 .active.arithmetic_icon .st0 {fill: #ffffff!important;}
 .active.gray_arrow .arrow_line{stroke:#ffffff!important;}
-
 .active.arrow_12 .arrow_line{stroke:#303030!important;}
-
 .course_start_icon .st1{fill:var(--icon_yellow);}
 
 /*cl course_line*/
@@ -178,6 +176,8 @@
 .b_arrow_16.proficient_arrow .st0{stroke: #9974fd!important; }
 .b_arrow_16.advanced_arrow .st0{stroke: #00b48a!important; }
 
+/*체크 아이콘*/
+.retry_icon .st0{stroke: var(--subText);}
 
 /* qz */
 /* 좌우 반전 아이콘 */
@@ -300,3 +300,6 @@
 /* 프로필 edit */
 .edit_pen_24 .st0{fill:var(--subText);}
 .edit_pen_24 .st1{fill:var(--subText);}
+
+/* 도움말 아이콘 */
+.help_icon .st0{stroke: var(--subText);}

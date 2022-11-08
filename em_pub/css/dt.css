@@ -19,8 +19,8 @@
 .incorrect_select_date .select_date_btn{padding:14px 20px; display: flex; align-items: center; gap:21px; width:100%; border-radius: 15px; box-shadow:0 0 0 1px#ffffff inset; color:#ffffff;}
 .incorrect_select_date .select_date_btn span{position: relative; height:19px; font-weight: 500;}
 .incorrect_select_date .select_date_btn span::before{content: ""; position: absolute; top:50%; right:-10px; transform: translateY(-50%); display: block; width:1px; height: 14px; background-color:var(--incorrect_list_text); }
-.incorrect_select_date .select_date_btn time{ height:22px; font-size:16px; font-weight:bold; line-height:1.5;}
-.incorrect_select_date .select_date_btn i{margin-left:auto;}
+.incorrect_select_date .select_date_btn time{ height:22px; font-size:16px; font-weight:bold; line-height:1.5; overflow:hidden; text-overflow: ellipsis; white-space:nowrap;}
+.incorrect_select_date .select_date_btn i{margin-left:auto; flex-shrink: 0;}
 
 /*dt incorrect_list  */
 .dt.incorrect .incorrect_list {margin-top: 20px; }

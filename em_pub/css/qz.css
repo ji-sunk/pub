@@ -310,7 +310,7 @@ header.fixed_header + .container {margin-top: 109.8px;}
 .incorrect_check .check_inner li:last-child{margin-left:auto;}
 .incorrect_check .check_inner li button{padding:5px 10px; display: flex; align-items:center; border-radius: var(--borderRadius); background-color: #f5f5f5; }
 .incorrect_check .check_inner li button.retray{color:#ffffff; background-color: var(--subText);}
-.incorrect_check .check_inner li button span{margin-right:5px; font-size: 12px; font-weight: 500; line-height: 1.33;}
+.incorrect_check .check_inner li button span{margin-right:5px; font-size: 12px; font-weight: 500; line-height: 1.33; white-space: nowrap;}
 .incorrect_check .check_inner li button:not(.retray).inc_check_on{color:#ffffff; background-color: #666666;}
 .incorrect_check .check_inner li button.steps i{transition:transform .3s;}
 .incorrect_check .check_inner li button.steps.active i{transform: rotate(180deg);}

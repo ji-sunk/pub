@@ -305,7 +305,7 @@ color: #fff;}
 .newscroll_bar::-webkit-scrollbar-track {display: none;}
 
 /*2022.09.19 bubble tool tip 말풍선*/
-.bubble_desc{position:absolute; top:calc(100% + 15px); right:0; z-index: 99; padding:10px 20px; width:calc(100vw - 40px); max-width: 335px; border-radius: var(--borderRadius); background-color: var(--point_yellow); transform: translateY(0); opacity: 1; visibility: visible; transition: transform, opacity, visibility, 0.5s; }
+.bubble_desc{position:absolute; top:calc(100% + 15px); right:0; z-index: 99; padding:10px 20px; width:calc(100vw - 40px); max-width: 335px;	border-radius: var(--borderRadius); background-color: var(--point_yellow); transform: translateY(0); opacity: 1; visibility: visible; transition: transform, opacity, visibility, 0.5s; }
 .bubble_desc::before{content:""; position:absolute; bottom:100%; right:30px; display:block; width:0px; height:0px; border-left:6px solid transparent; border-right:6px solid transparent; border-bottom:10px solid var(--point_yellow); }
 .bubble_desc p{font-weight:bold; line-height:1.43; text-align: center;}
 .bubble_desc.hidden{transform: translateY(10px); opacity: 0; visibility: hidden; }
@@ -384,8 +384,25 @@ color: #fff;}
 .scroll_popup .scroll_popup_close{position: absolute; top:25px; right:25px; display: none;}
 .scroll_popup .scroll_popup_close i{display: block; width:32px; height:32px;}
 
+/* 2022.11.04 진단 다시 하기 버튼, 툴팁 추가 */
+.sub_page .right_inner{margin:-6px 0;}
+.right_inner{position: relative;}
+.right_inner .btn_retry{display: flex; align-items: center; gap:0 5px; padding:8px 15px 8px 20px; border-radius: var(--borderRadius); background-color: #fff; border-radius: var(--borderRadius);}
+.right_inner .btn_retry span{color: var(--subText); font-weight:700; font-size:16px}
+.right_inner .bubble_desc{top: calc(100% + 20px); bottom:auto; width:250px; max-width:278px; padding: 15px 20px;}
+.right_inner .bubble_desc::before{top: -10px; right: 56px; border:0; width:12px; height: 10px; background-image: url('../images/common/img-textbox-tale-left.svg'); transform: rotate(180deg) scaleX(-1);}
+.right_inner .bubble_desc p{font-size:16px; line-height: 24px; padding:0 10px 0 0; text-align:center;}
+.right_inner .bubble_desc .btn_bubble_close{position: absolute; top:13px; right:15px;}
 
- @media (max-width:319px){    
+/* 221107 커런시 히스토리 도움말 +_툴팁 추가 */
+.wm .currency_cat_btn {position:relative;}
+.wm .right_inner {position:absolute; top:32px; right:20px;}
+.wm .right_inner .bubble_desc{top:calc(100% - 140px); max-width:288px; width:288px;}
+.wm .right_inner .bubble_desc::before{display:none;}
+.wm .right_inner .bubble_desc::after{content: ''; display:block; position:absolute; bottom:-8px; right:32px; border:0; width:12px; height: 10px; background-image: url('../images/common/img-textbox-tale-left.svg'); transform: rotate(0deg) scaleX(-1);}
+.wm .right_inner .btn_help {padding:10px}
+
+@media (max-width:319px){    
 	/* 말풍선 */
 	.bubble_desc {max-width: 240px;}
   /* 그리기 툴 */
@@ -410,7 +427,24 @@ color: #fff;}
   	.facilitatorWrap .facilitator.facilitatorType01 a {padding: 17px 16px 17px 64px;}
 	.facilitatorWrap .facilitator.facilitatorType01 .img_wrap figure{width:80px;}
 	.facilitatorWrap .facilitator.facilitatorType02 .text_wrap p {font-size: inherit;}
+
+	/* 2022.11.04 진단 다시 하기 툴팁 */
+	.right_inner .btn_retry{padding:8px 10px;}
+	.right_inner .btn_retry span{font-size:14px; white-space: nowrap;}
 }
+
+@media (max-width:375px) {
+	/* 2022.11.04 진단 다시 하기 툴팁 */
+	.right_inner .bubble_desc::before{right: 46px;}
+}
+
+@media (min-width: 280px) and (max-width: 319px) {
+	/* 2022.11.04 진단 다시 하기 툴팁 */
+	.right_inner .bubble_desc{width:220px}
+	.right_inner .btn_retry{padding:5px; gap:0 3px}
+	.right_inner .btn_retry span{font-size:12px; white-space: nowrap;}
+}
+
 
 @media (min-width:600px){
 	/* 헤더 */
