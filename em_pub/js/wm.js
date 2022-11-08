@@ -8,3 +8,10 @@
     wm_contents.classList.toggle("qz_active");
   });
 })()
+
+// 커런시 히스토리 도움말 툴팁 토글 활성화
+function showHide() {
+  var element = document.getElementById("bub_tgl");
+  element.classList.toggle("hidden");
+}
+
