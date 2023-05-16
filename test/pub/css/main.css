@@ -1,0 +1,61 @@
+
+@charset "utf-8";
+
+.cont_wrap {width:100%; margin:0 auto; background-color:#fff;}
+.cont_topArea {position:relative; margin:0 auto; width:1200px; height:276px; display: flex; flex-direction: column; justify-items: center;}
+.cont_topArea .cont_topTxt {display: block; position:absolute; top:50%; left:0%; transform: translate(0%, -50%);}
+.cont_topArea .cont_topTxt strong {font-family: 'KBFG Display'; font-style: normal; font-size:36px; line-height:44px; text-align:center;}
+.cont_topArea .cont_topTxt p {margin-top:15px; font-family: 'KBFG Text'; font-style: normal; font-weight: 300; font-size: 22px; line-height: 28px; color:#444;}
+.cont_topArea .cont_img {position:absolute; right:50px; bottom:-30px;}
+
+.cont_wrap .cont_mdlArea {width:100%; padding-bottom:50px; background-color: var(--mainBg);}
+.cont_wrap .cont_mdlArea .cont_mdlInner {padding:40px 0; margin:0 auto; width:1200px; display:flex; flex-wrap:nowrap; flex-direction:row;}
+.cont_wrap .cont_mdlArea .cont_box {width:400px; padding:24px 30px; border-radius:var(--borderRadius); background-color: #fff; -webkit-border-radius:var(--borderRadius); -moz-border-radius:var(--borderRadius); -ms-border-radius:var(--borderRadius); -o-border-radius:var(--borderRadius); }
+.cont_box {position:relative; margin-right:19px; text-align:left; height:217px;}
+.cont_box:last-child {margin-right:0px;}
+.cont_box h2 {font-family:'KBFG Display'; font-size: 20px; font-weight: 500; line-height: 25px; letter-spacing: 0em; text-align: left;}
+.cont_box .con1 a {position:absolute; right:30px; top:25px; font-family: 'KBFG Text'; font-style: normal; font-weight: 300; font-size: 12px; line-height: 15px; color:#888;}
+.cont_box:first-child {background-color: #8D744A !important;}
+.cont_box:first-child *, .cont_box:first-child a {color:#fff;}
+.cont_box .ic_arrow {padding:4px 13px;}
+.cont_box .ic_arrow::after {content: ">"; position: absolute; right: 0px;}
+.campaign_area .num_box {display:block; padding-left:10px; height: 41px;}
+
+/* MY활동 */
+.cont_box .con2 {display:inline-block; width:100%; display:flex; justify-content:space-between; align-items:center;}
+.cont_box .con2 .cam_txt {margin:10px 0; font-family: 'KBFG Text Medium'; font-style: normal; font-weight: 500; font-size: 16px; line-height: 22px;}
+.cont_box .con2 .cam_txt .name {font-size:16px;}
+.cont_box .con2 .cam_txt .level1 {padding:3px 10px; border-radius:50px; background-color: var(--mainYellow);}
+.cont_box .con2 .cam_menu {width:238px; height:102px; display:inline-flex; border-radius:var(--borderRadius); background-color: rgba(255, 255, 255, 0.5); color:#000;}
+.cont_box .con2 .cam_menu li {position:relative; float:left; display:flow-root; padding:17px; width:50%; text-align: center; color:#000}
+.cont_box .con2 .cam_menu li * {color:#000}
+.cont_box .con2 .cam_menu li:first-child::after {display: block; content: ""; position:absolute; top:17px; right:0px; height:65px; width:1px; background-color: rgba(255, 255, 255, 0.7);}
+.cont_box .con2 .cam_menu .txt {white-space:nowrap; margin-bottom:10px;}
+.cont_box .con2 .cam_menu .num {white-space:nowrap; font-family: 'KBFG Text Medium'; font-style: normal; font-weight: 500; font-size: 30px; line-height: 41px; text-align: center;}
+.cont_box .con2 .cam_menu .ic_arrow_gr {padding: 10px; background: url(../images/ic_arrow.svg) top 8px center no-repeat;}
+
+/* 캠페인 */
+.cont_box .cam_lst {margin-top:24px;}
+.cont_box .cam_lst li {padding:10px 0; border-bottom: 1px solid var(--mainLine);}
+.cont_box .cam_lst li:first-child {padding-top:0px;}
+.cont_box .cam_lst li:last-child {border:none;}
+.cont_box .cam_lst .date {margin-top:5px; font-family: 'KBFG Text Light';font-style: normal; font-weight: 300;font-size: 13px; line-height: 18px; color:#888}
+.cont_box .cam_lst .badge_area .badge {margin-right:3px}
+
+/* 공지사항 */
+.cont_box .notice {margin-top:24px; width:320px; display: inline-block;}
+.cont_box .notice .text_line_ellipsis {width:235px}
+.cont_box .notice .noti_lst {box-sizing:border-box; margin:0;}
+.cont_box .notice .noti_lst li {box-sizing: border-box; display:flex; justify-content: space-between;}
+.cont_box .notice .noti_lst li a {float: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.cont_box .notice .noti_lst li span a {width: fit-content;}
+.cont_box .notice .noti_lst .date {font-family: 'KBFG Text Light'; font-style: normal; font-weight: 300; font-size: 13px; line-height: 18px; text-align: right; color: #888888;}
+
+/* 국민카드 일하는 방식 */
+.cont_btmInner {padding:20px 40px 30px 40px; width:1200px; margin:0 auto; text-align: center; border-radius:var(--borderRadius); background-color: #fff;}
+.cont_btmInner .tit {font-family: 'KBFG Display'; font-style: normal; font-weight: 500; font-size: 20px; line-height: 25px; color: #555555;}
+.cont_btmInner .subtit {margin-bottom:2px; font-family: 'KBFG Text'; font-style: normal; font-weight: 500; font-size: 20px; line-height: 26px; color: #60584C;}
+.cont_btmInner .kbcard_wrst {margin-top:22.5px; display:flex; flex-wrap:nowrap; flex-direction:row;}
+.cont_btmInner .kbcard_wrst li {margin-right:19px; padding:15px 28.5px; width:208px; border-radius:var(--borderRadius); background-color: var(--subColorBg);}
+.cont_btmInner .kbcard_wrst li:last-child {margin-right:0;}
+.cont_btmInner .kbcard_wrst li span {font-family: 'KBFG Text'; font-style: normal; font-weight: 300; font-size: 14px; line-height:19px; color: #555;}
