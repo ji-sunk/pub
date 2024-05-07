@@ -7,12 +7,9 @@
 */
 
 * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif;} 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
-
 ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
@@ -49,11 +46,9 @@ html, body {
 }
 body {
      width: 100%;
-     /* height: 100vh; background: var(--bg-ctn); display: flex; justify-content: center; align-items: center;  */
-}
- body {
      background: #e6e6e6;
      font-family: 'Source Sans Pro', sans-serif;
+     /* height: 100vh; background: var(--bg-ctn); display: flex; justify-content: center; align-items: center;  */
 }
 
 h1,h2,h3,h4,h5,h6{font-weight: bold;}
@@ -76,8 +71,10 @@ ol[role='list'] {
 html {font-size: 10px;} 
 p {font-size: 1.6rem; line-height: 1.5;}  
 img {width: 100%;}
-a {color: #fff; text-decoration: none; outline: none} a:hover, a:active {text-decoration: none; color:#000000; background-color:none;}
-a, button {cursor: pointer;}
+a {color: #fff; text-decoration: none; outline: none} 
+a:hover, a:active {text-decoration: none; color:none; background-color:none;}
+-webkit-tap-highlight-color: transparent; /* for removing the highlight */
+a, button {cursor:pointer;}
 
 .btn-type1 {
      margin-top:5px;
@@ -90,6 +87,7 @@ a, button {cursor: pointer;}
      border:1px solid #ced1ea;
      background-color: #f0f2ff;
      border-radius: 10px;
+     cursor:pointer;
 }
 
 .btn-type2 {
@@ -101,10 +99,11 @@ a, button {cursor: pointer;}
      color:#373e97;
      border:none;
      background-color: #ffffff;
+     cursor:pointer;
 }
-.btn-type2 button {
+/* .btn-type2 button {
      width:33.333px;
-}
+} */
 
  /* .container {
      width: 100%;
@@ -114,11 +113,10 @@ a, button {cursor: pointer;}
      justify-content: center;
      align-items: center;
 } */
- h1 {
-     font-family: 'Alegreya Sans', sans-serif;
-     font-weight: 300;
-     margin-top: 0;
-}
+
+
+
+/* checkbox / radioBTN / Switch */
  .control-group {
      display: inline-block;
      vertical-align: top;
