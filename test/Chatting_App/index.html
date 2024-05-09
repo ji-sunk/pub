@@ -6,8 +6,8 @@
     <!-- 뷰포트 정의 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>chtatbot</title>
-    <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -26,7 +26,10 @@
             </div> -->
             <header class="header">
                 <!-- <span class="material-symbols-outlined"> menu </span> -->
-                <h1>SGI서울보증</h1>
+                <h1 class="">SGI서울보증</h1>
+                <button type="button" class="btn-type3">
+                    <span>채팅상담 > </span>
+                </button>
                 <!-- <span class="material-symbols-outlined"> filter_alt </span> -->
             </header>
 
@@ -35,7 +38,12 @@
                     <!-- AI 챗봇 진행 시 최초 상단 노출 (기본형) -->
                     <div class="def-msg">
                         <div class="chat-bubble">
-                            <img src="./img/dummy.jpg" class="chat-bubble-img" alt="" />
+                            <img src="./img/dummy01.png" class="chat-bubble-img" alt="" style="margin-bottom:15px" />
+                            <ul class="chat-btn-box set3">
+                                <li><a href="#none">보험금청구</a></li>
+                                <li><a href="#none">보험증권</a></li>
+                                <li><a href="#none">지점안내</a></li>
+                            </ul>
                             <ul class="chat-btn-box">
                                 <li><a href="#none">개인정보수정</a></li>
                                 <li><a href="#none">보험증권</a></li>
@@ -49,91 +57,98 @@
                     <!-- //AI 챗봇 진행 시 최초 상단 노출 (기본형) -->
 
                     <div class="chat-user user1">
-                        <div class="mngr-profile">
-                            <img src="./img/user1.jpg" alt="">
-                            <span class="mngr-name">HelpDesk</span>
-                        </div>
-                        <div class="user-msg">
-                            <div class="chat-bubble">
-                                상담원 연결 안내 드립니다.<br>
-                                원하시는 서비스를 선택해 주세요.
-                                <a href="#none" class="btn-type1">
-                                    <input id="r1" type="radio" name="radio" value="1" checked>
-                                    <label for="r1">채팅상담원연결</label>
-                                </a>
-                                <a href="#none" class="btn-type1">
-                                    <input id="r2" type="radio" name="radio" value="2" checked>
-                                    <label for="r2">전화상담원연결</label>
-                                </a>
+                        <div id="chat-type-case01" style="display:none">
+                            <div class="mngr-profile">
+                                <img src="./img/user1.jpg" alt="">
+                                <span class="mngr-name">HelpDesk</span>
                             </div>
-                            <a href="#none" class="btn-type1">
-                                <input id="c1" type="checkbox" checked>
-                                <label for="c1">채팅상담원연결</label>
-                            </a>
-                            <a href="#none" class="btn-type1">
-                                <input id="c2" type="checkbox" />
-                                <label for="c2">전화상담원연결</label>
-                            </a>
-                            <p class="time">오전 12:10</p>
-                        </div>
-                        <div class="mngr-profile">
-                            <img src="./img/user1.jpg " alt="profile">
-                            <span class="mngr-name">HelpDesk</span>
+                            <div class="user-msg">
+                                <div class="chat-bubble">
+                                    상담원 연결 안내 드립니다.<br>
+                                    원하시는 서비스를 선택해 주세요.
+                                    <div href="#none" class="btn-type1"><input id="r1" type="radio" name="radio" value="1" checked><label for="r1">채팅상담원연결</label>
+                                    </div>
+                                    <div href="#none" class="btn-type1">
+                                        <input id="r2" type="radio" name="radio" value="2" disabled>
+                                        <label for="r2">전화상담원연결</label>
+                                    </div>
+                                </div>
+                                <a href="#none" class="btn-type1">
+                                    <input id="c1" type="checkbox" checked>
+                                    <label for="c1">채팅상담원연결</label>
+                                </a>
+                                <a href="#none" class="btn-type1">
+                                    <input id="c2" type="checkbox" />
+                                    <label for="c2">전화상담원연결</label>
+                                </a>
+                                <p class="time">오전 12:10</p>
+                            </div>
                         </div>
 
-                        <div class="user-msg slide-type">
-                            <div class="scroll_x">
-                                <div class="chat-bubble">
-                                    상담원 연결 안내 드립니다.<br>
-                                    원하시는 서비스를 선택해 주세요.
-                                    <a href="#none" class="btn-type1">채팅상담원연결</a>
-                                    <a href="#none" class="btn-type1">전화상담원연결</a>
+                        <div id="chat-type-case02" style="display:none">
+                            <div class="mngr-profile">
+                                <img src="./img/user1.jpg " alt="profile">
+                                <span class="mngr-name">HelpDesk</span>
+                            </div>
+                            <div class="user-msg slide-type">
+                                <div class="scroll_x">
+                                    <div class="chat-bubble">
+                                        상담원 연결 안내 드립니다.<br>
+                                        원하시는 서비스를 선택해 주세요.
+                                        <a href="#none" class="btn-type1">채팅상담원연결</a>
+                                        <a href="#none" class="btn-type1">전화상담원연결</a>
+                                    </div>
+                                    <div class="chat-bubble">
+                                        상담원 연결 안내 드립니다.<br>
+                                        원하시는 서비스를 선택해 주세요.
+                                        <button class="btn-type1" type="button">채팅상담원연결</button>
+                                        <button class="btn-type1" type="button">전화상담원연결</button>
+                                    </div>
+                                    <div class="chat-bubble">
+                                        상담원 연결 안내 드립니다.<br>
+                                        원하시는 서비스를 선택해 주세요.
+                                        <button class="btn-type1" type="button">채팅상담원연결</button>
+                                        <button class="btn-type1" type="button">전화상담원연결</button>
+                                    </div>
                                 </div>
-                                <div class="chat-bubble">
-                                    상담원 연결 안내 드립니다.<br>
-                                    원하시는 서비스를 선택해 주세요.
-                                    <button class="btn-type1" type="button">채팅상담원연결</button>
-                                    <button class="btn-type1" type="button">전화상담원연결</button>
-                                </div>
-                                <div class="chat-bubble">
-                                    상담원 연결 안내 드립니다.<br>
-                                    원하시는 서비스를 선택해 주세요.
-                                    <button class="btn-type1" type="button">채팅상담원연결</button>
-                                    <button class="btn-type1" type="button">전화상담원연결</button>
-                                </div>
+                            </div>
+                            <p class="time">오전 12:10</p>
+                        </div>
+                    </div>
+                
+                    <!-- user1 message 입력중 -->
+                    <!-- <div class="user1">
+                        <div class="chat-bubble message--typing">
+                            <div class="message">
+                                <p class="message__item">
+                                    <span class="message__dot"></span>
+                                    <span class="message__dot"></span>
+                                    <span class="message__dot"></span>
+                                </p>
                             </div>
                         </div>
                         <p class="time">오전 12:10</p>
-                    </div>
-                
-                <!-- user1 message 입력중 -->
-                <div class="user1">
-                    <div class="chat-bubble message--typing">
-                        <div class="message">
-                            <p class="message__item">
-                                <span class="message__dot"></span>
-                                <span class="message__dot"></span>
-                                <span class="message__dot"></span>
-                            </p>
+                    </div> -->
+                    <!-- //user1 message 입력중 -->
+                    <!-- user2 message 입력중 -->
+                    <!-- <div class="user2">
+                        <div class="chat-bubble message--typing">
+                            <div class="message">
+                                <p class="message__item">
+                                    <span class="message__dot"></span>
+                                    <span class="message__dot"></span>
+                                    <span class="message__dot"></span>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <p class="time">오전 12:10</p>
+                        <p class="time">오전 12:10</p>
+                    </div> -->
+                    <!-- //user2 message 입력중 -->
+                    <!-- 스크롤 Top 버튼 -->
+                    <button class="scroll-btn scroll-top-btn" onclick="scrollTopFunction()">↑</button>
+                    <!-- 스크롤 Bottom 버튼 -->
+                    <!-- <button class="scroll-btn scroll-bottom-btn" onclick="scrollBottomFunction()">↓</button> -->
                 </div>
-                <!-- //user1 message 입력중 -->
-                <!-- user2 message 입력중 -->
-                <div class="user2">
-                    <div class="chat-bubble message--typing">
-                        <div class="message">
-                            <p class="message__item">
-                                <span class="message__dot"></span>
-                                <span class="message__dot"></span>
-                                <span class="message__dot"></span>
-                            </p>
-                        </div>
-                    </div>
-                    <p class="time">오전 12:10</p>
-                </div>
-                <!-- //user2 message 입력중 -->
             </div>
         </div>
 
@@ -145,7 +160,6 @@
                     <span class="blind">Send</span>
                     <svg class="svg_send" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M98-141v-684l806 342L98-141Zm90-137 484-206-484-206v142l254 64-254 64v142Zm0 0v-412 412Z"/></svg>
                 </button>
-                <!-- <label for="msg_txt" id="btn_send">Send</label> -->
             </div>
             <!-- <div class="chat-input">      
                 <form>
@@ -153,10 +167,9 @@
                 <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
                 </form>      
             </div> -->
+            
         </div>
-
     </div>
-
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
