@@ -15,7 +15,23 @@
 </head>
 <body>
     <div class="wrapper">
+        
         <div class="container">
+
+            <!-- Layer Popup -->
+            <div class="layer-popup">
+                <div class="dim_bg">
+                    <div class="dim_msg">
+                        <p>상담을 종료 하시겠습니까?</p>
+                        <div class="btn-wrap">
+                            <button class="btn-type-cancel" type="button">취소</button>
+                            <button class="btn-type-close" type="button">상담종료</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //Layer Popup -->
+
             <!-- <div class="topbar">
                 <div class="topbar-left"></div>
                 <div class="topbar-right">
@@ -27,9 +43,7 @@
             <header class="header">
                 <!-- <span class="material-symbols-outlined"> menu </span> -->
                 <h1 class="">SGI서울보증</h1>
-                <button type="button" class="btn-type3">
-                    <span>채팅상담 > </span>
-                </button>
+                <button type="button" class="btn-type3"><span>상담종료하기</span></button>
                 <!-- <span class="material-symbols-outlined"> filter_alt </span> -->
             </header>
 
@@ -38,16 +52,16 @@
                     <!-- AI 챗봇 진행 시 최초 상단 노출 (기본형) -->
                     <div class="def-msg">
                         <div class="chat-bubble">
-                            <img src="./img/dummy01.png" class="chat-bubble-img" alt="" style="margin-bottom:15px" />
-                            <ul class="chat-btn-box set3">
+                            <img src="./img/dummy01.png" class="chat-bubble-deimg" alt=""  />
+                            <!-- <ul class="chat-btn-box set3">
                                 <li><a href="#none">보험금청구</a></li>
                                 <li><a href="#none">보험증권</a></li>
                                 <li><a href="#none">지점안내</a></li>
-                            </ul>
-                            <ul class="chat-btn-box">
-                                <li><a href="#none">개인정보수정</a></li>
-                                <li><a href="#none">보험증권</a></li>
-                                <li><a href="#none">장애접수</a></li>
+                            </ul> -->
+                            <ul class="chat-btn-box set6">
+                                <li><a href="#none">보험금청구</a></li>
+                                <li><a href="#none">보증보험</a></li>
+                                <li><a href="#none">개통회선</a></li>
                                 <li><a href="#none">지점안내</a></li>
                                 <li><a href="#none">통신회선</a></li>
                                 <li><a href="#none">상담원연결</a></li>
@@ -58,29 +72,58 @@
 
                     <div class="chat-user user1">
                         <div id="chat-type-case01" style="display:none">
+                            <div class="chat-user user2">
+                                <div class="user-msg">
+                                    <div class="chat-bubble">
+                                        보험금 청구 제출 서류 알려줘
+                                    </div>
+                                    <p class="time">오전 12:10</p>
+                                </div>
+                            </div>
+                            
                             <div class="mngr-profile">
                                 <img src="./img/user1.jpg" alt="">
                                 <span class="mngr-name">HelpDesk</span>
                             </div>
                             <div class="user-msg">
                                 <div class="chat-bubble">
-                                    상담원 연결 안내 드립니다.<br>
-                                    원하시는 서비스를 선택해 주세요.
-                                    <div href="#none" class="btn-type1"><input id="r1" type="radio" name="radio" value="1" checked><label for="r1">채팅상담원연결</label>
-                                    </div>
-                                    <div href="#none" class="btn-type1">
-                                        <input id="r2" type="radio" name="radio" value="2" disabled>
-                                        <label for="r2">전화상담원연결</label>
-                                    </div>
+                                    <p>보험금 청구</p>
+                                    <ul class="">
+                                        <li>
+                                            <p>공통 필요서류</p>
+                                            <span>
+                                                보험금 청구서, 보험계약자의 채무불이행 사실 증빙 서류,
+                                                손해발생액 증빙서류
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <p>기타 필요서류</p>
+                                            <span>
+                                                각 보험상품별로 보상 심사에 필요한 기타 자료를 제출
+                                            </span>
+                                        </li>
+                                    </ul>
+                                    <button class="btn-type1" type="button">상품별 제출서류 보러가기</button>
+                                    <button class="btn-type1 ico-link" type="button">보험금 청구 유의사항</button>
                                 </div>
-                                <a href="#none" class="btn-type1">
+                                <div class="scroll-x-item">
+                                    <a class="btn-type1" type="button">보험금 청구 취소</a>
+                                    <button class="btn-type1" type="button">보험금 청구 절차</button>
+                                    <button class="btn-type1" type="button">보험금 청구 절차</button>
+                                    <button class="btn-type1" type="button">보험금 청구 절차</button>
+                                    <button class="btn-type1" type="button">보험금 청구 절차</button>
+                                    <button class="btn-type1" type="button">보험금 청구 절차</button>
+                                    <button class="btn-type1" type="button">보험금 청구 절차</button>
+                                </div>
+                                
+                                <!-- <a href="#none" class="btn-type1">
                                     <input id="c1" type="checkbox" checked>
                                     <label for="c1">채팅상담원연결</label>
                                 </a>
                                 <a href="#none" class="btn-type1">
                                     <input id="c2" type="checkbox" />
                                     <label for="c2">전화상담원연결</label>
-                                </a>
+                                </a> -->
                                 <p class="time">오전 12:10</p>
                             </div>
                         </div>
@@ -92,23 +135,22 @@
                             </div>
                             <div class="user-msg slide-type">
                                 <div class="scroll_x">
-                                    <div class="chat-bubble">
-                                        상담원 연결 안내 드립니다.<br>
-                                        원하시는 서비스를 선택해 주세요.
-                                        <a href="#none" class="btn-type1">채팅상담원연결</a>
-                                        <a href="#none" class="btn-type1">전화상담원연결</a>
+                                    <div class="chat-bubble card-bdr-type">
+                                        <strong>하자보증보험</strong>
+                                        <span>
+                                            하자보수 의무 이행을 보증하기위한 하자 보증을 대신하는 상품입니다.
+                                        </span>
+                                        <a href="#none" class="btn-type1">상품보러가기</a>
                                     </div>
                                     <div class="chat-bubble">
                                         상담원 연결 안내 드립니다.<br>
                                         원하시는 서비스를 선택해 주세요.
                                         <button class="btn-type1" type="button">채팅상담원연결</button>
-                                        <button class="btn-type1" type="button">전화상담원연결</button>
                                     </div>
                                     <div class="chat-bubble">
                                         상담원 연결 안내 드립니다.<br>
                                         원하시는 서비스를 선택해 주세요.
                                         <button class="btn-type1" type="button">채팅상담원연결</button>
-                                        <button class="btn-type1" type="button">전화상담원연결</button>
                                     </div>
                                 </div>
                             </div>
@@ -150,25 +192,28 @@
                     <!-- <button class="scroll-btn scroll-bottom-btn" onclick="scrollBottomFunction()">↓</button> -->
                 </div>
             </div>
-        </div>
 
-        <div class="chat-input-wrap">
-            <div class="chat-input">
-                <img src="img/user1.jpg">
-                <input type="text" placeholder="메세지를 입력하세요" id="msg_txt">
-                <button for="msg_txt" type="submit" id="btn_send">
-                    <span class="blind">Send</span>
-                    <svg class="svg_send" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M98-141v-684l806 342L98-141Zm90-137 484-206-484-206v142l254 64-254 64v142Zm0 0v-412 412Z"/></svg>
-                </button>
+            <div class="chat-input-wrap">
+                <div class="chat-input">
+                    <img src="img/user1.jpg">
+                    <input type="text" placeholder="메세지를 입력하세요" id="msg_txt">
+                    <button for="msg_txt" type="submit" id="btn_send">
+                        <span class="blind">Send</span>
+                        <svg class="svg_send" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M98-141v-684l806 342L98-141Zm90-137 484-206-484-206v142l254 64-254 64v142Zm0 0v-412 412Z"/></svg>
+                    </button>
+                </div>
+                <!-- <div class="chat-input">      
+                    <form>
+                        <input type="text" id="chat-input" placeholder="Send a message..."/>
+                    <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
+                    </form>      
+                </div> -->
+                
             </div>
-            <!-- <div class="chat-input">      
-                <form>
-                    <input type="text" id="chat-input" placeholder="Send a message..."/>
-                <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
-                </form>      
-            </div> -->
-            
         </div>
+        
+
+        
     </div>
     <script src="./js/script.js"></script>
 </body>

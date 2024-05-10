@@ -99,6 +99,40 @@ function scrollTopFunction() {
 // }
 
 
+
+
+
+//*******************layer popup*****************************
+
+// 상담 종료하기 버튼 클릭 시 layer popup 띄우기
+document.querySelector('.btn-type3').addEventListener('click', function() {
+    // layer popup 보이게 설정
+    document.querySelector(".layer-popup").style.display = "block";
+});
+
+// 상담종료 버튼 클릭 시 layer popup 닫기
+document.querySelector('.btn-type-close').addEventListener('click', function() {
+    // layer popup 감추기 설정
+    document.querySelector(".layer-popup").style.display = "none";
+});
+
+// 취소 버튼 클릭 시 layer popup 닫기
+document.querySelector('.btn-type-cancel').addEventListener('click', function() {
+    // layer popup 감추기 설정
+    document.querySelector(".layer-popup").style.display = "none";
+});
+
+
+
+
+
+
+
+
+
+
+//*******************test case*****************************
+
 // 보험금 청구 버튼을 클릭했을 때 이벤트를 처리하는 함수
 function showChatTypeCase01() {
     // chat-type-case01 요소를 가져옵니다.
@@ -108,7 +142,7 @@ function showChatTypeCase01() {
 }
 
 // 보험금 청구 버튼을 가져와서 클릭 이벤트를 추가합니다.
-const insuranceClaimButton = document.querySelector('.chat-btn-box.set3 li:nth-child(1) a');
+const insuranceClaimButton = document.querySelector('.chat-btn-box.set6 li:nth-child(1) a');
 insuranceClaimButton.addEventListener('click', showChatTypeCase01);
 
 
@@ -121,7 +155,7 @@ function showChatTypeCase02() {
 }
 
 // 보험증권 버튼을 가져와서 클릭 이벤트를 추가합니다.
-const insuranceCertificateButton = document.querySelector('.chat-btn-box.set3 li:nth-child(2) a');
+const insuranceCertificateButton = document.querySelector('.chat-btn-box.set6 li:nth-child(2) a');
 insuranceCertificateButton.addEventListener('click', showChatTypeCase02);
 
 
