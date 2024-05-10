@@ -25,6 +25,7 @@ a {color: #fff; text-decoration: none; outline: none} 
 a:hover, a:active {text-decoration: none; color:none; background-color:none;}
 div {-webkit-tap-highlight-color: transparent;}
 a, button, img {cursor:pointer; -webkit-tap-highlight-color: transparent; /* for removing the highlight */}
+button {display:flex; justify-content: center; align-items: center;}
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,time,figure,article,nav,header,footer,hgroup,
 video,audio,aside,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,
@@ -68,14 +69,14 @@ address{ font-style: unset;}
     display: none;
 }
 ::-webkit-scrollbar-track:hover {
-    background-color: rgba(236, 236, 236, 1);
+    background-color: rgb(175, 72, 72);
 }
 ::-webkit-scrollbar-thumb {
-     rgba(236, 236, 236, 0.5);
+     background-color: rgba (236, 236, 236, 0.5);
      border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {    
-    background-color: rgba(236, 236, 236, 1);
+    background-color: rgb(96, 36, 165);
 }
 
 .blind {
@@ -104,13 +105,12 @@ address{ font-style: unset;}
 }
 .btn-type1:hover {
   border:1px solid #ced1ea;
-  background-color: #4a60ee;
-  color:#000;
+  background-color: var(--purple);
+  color:#fff;
 }
 .btn-type1:focus {
-  border:1px solid #ced1ea;
-  background-color: #eb4ec9;
-  color:#000;
+  background-color: #003476;
+  color:#fff;
 }
 
 /* 버튼 아이콘 있는 라운드 기본형 */
@@ -191,6 +191,10 @@ address{ font-style: unset;}
      align-items: center;
 } */
 
+.layer-popup {
+  display:none;
+}
+
 .dim_bg {
   z-index: 50;
   position: fixed;
@@ -205,6 +209,7 @@ address{ font-style: unset;}
 .dim_msg {
   z-index: 51;
   position: absolute;
+  padding:1rem;
   min-width: 200px;
   width:fit-content;
   min-height: 100px;
@@ -216,8 +221,6 @@ address{ font-style: unset;}
   border-radius: 1rem;
   background-color: #fff;
 }
-
-
 
 /* checkbox / radioBTN / Switch */
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {

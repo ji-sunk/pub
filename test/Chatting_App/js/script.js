@@ -124,14 +124,7 @@ document.querySelector('.btn-type-cancel').addEventListener('click', function() 
 
 
 
-
-
-
-
-
-
-
-//*******************test case*****************************
+//*******************test case (click evt)*****************************
 
 // 보험금 청구 버튼을 클릭했을 때 이벤트를 처리하는 함수
 function showChatTypeCase01() {

@@ -288,14 +288,13 @@
 }
 
 .scroll_x {
+	position:relative;
 	padding:0 2px;
 	padding-bottom:5px;
 	overflow-y: auto;
-	position:relative;
     display: inline-flex;
-    min-width: 200%;
-    max-width: fit-content;
-	width:200%;
+	min-width: 250%;
+    max-width: 800%;
     gap: 10px;
 }
 .scroll_x .chat-bubble {
@@ -421,7 +420,7 @@
 	border-radius:1.4rem 1.4rem 0 1.4rem;
 	background-color: #979899;
 	color:var(--white);
-	background:var(--purple);
+	background-color: #2099c0;
 }
 
 .message::after {
