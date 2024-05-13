@@ -95,7 +95,7 @@ address{ font-style: unset;}
 /* 버튼 아이콘 있는 라운드 기본형 */
 .btn-type1.ico-link {
   padding-right: 30px;
-  background: url(../img/ico_arrow_sideup.svg) right 56px center/ 1rem no-repeat;
+  /* background: url(../img/ico_arrow_sideup.svg) right 2.7rem center/ 1rem no-repeat; */
 }
 
 /* 버튼 아이콘 없는 라운드 기본형 */

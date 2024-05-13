@@ -14,7 +14,7 @@
 	position:relative;
 	height: max-content;
 	min-width:250px;
-	max-width:750px;
+	/* max-width:750px; */
 	/* height:65rem; */
 	box-shadow:0 0 8rem 0 rgba(0,0,0,0.05);
 	/* background-image:linear-gradient(180deg,#3942af 40%,#803873 100%); */
@@ -281,6 +281,7 @@
 
 
 .scroll-x-item {
+	max-width: 85%;
     display: inline-flex;
     white-space: nowrap;
     overflow-y: scroll;
@@ -396,6 +397,20 @@
     opacity: 1;
 }
 
+.chat-bubble .txt_area p strong {
+	/* width:50%; */
+	font-weight: 700;
+	color:#000;
+}
+.chat-bubble .txt_area strong span {
+	font-size: 1.2rem;
+	font-weight: 700;
+	color:#003476;
+}
+.chat-bubble .txt_area .txt_tit .name {
+	display:flex;
+	align-items: center;
+}
 .chat-bubble .txt_area .txt_tit {
 	display:flex;
 	align-items: center;
@@ -404,25 +419,13 @@
 	font-weight: 700;
 	color:#000;
 }
-.chat-bubble .txt_area .txt_tit .name {
-	display:flex;
-	align-items: center;
-	padding: 8px 0;
-	font-size: 1.2rem;
-	font-weight: 700;
-	color:#003476;
-}
 .chat-bubble .txt_area p {
 	display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.chat-bubble .txt_area p strong {
-	/* width:50%; */
-	font-weight: 700;
-	color:#000;
-}
+
 
 
 /* 메시지 타이핑중... */

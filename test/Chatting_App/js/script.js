@@ -152,3 +152,12 @@ const insuranceCertificateButton = document.querySelector('.chat-btn-box.set6 li
 insuranceCertificateButton.addEventListener('click', showChatTypeCase02);
 
 
+function showChatTypeCase03() {
+    const chatTypeCase03 = document.getElementById("chat-type-case03");
+    chatTypeCase03.style.display = "block";
+}
+const 
+openingLineButton = document.querySelector('.chat-btn-box.set6 li:nth-child(3) a');
+openingLineButton.addEventListener("click", showChatTypeCase03);
+
+
