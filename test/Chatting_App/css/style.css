@@ -285,6 +285,7 @@
     white-space: nowrap;
     overflow-y: scroll;
     gap: 5px;
+	background: none;
 }
 
 .scroll_x {
