@@ -82,6 +82,15 @@ address{ font-style: unset;}
     background: none;
 }
 
+/* 스크롤바 숨기기 */
+::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리 등 웹킷 기반 브라우저 */
+}
+
+.hide {
+  display:none !important; 
+}
+
 .blind {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -97,6 +106,11 @@ address{ font-style: unset;}
   padding-right: 30px;
   /* background: url(../img/ico_arrow_sideup.svg) right 2.7rem center/ 1rem no-repeat; */
 }
+
+/* .btn-type1.fixed {
+  position:absolute;
+  bottom: 1rem;;
+} */
 
 /* 버튼 아이콘 없는 라운드 기본형 */
 .btn-type1 {
@@ -171,7 +185,10 @@ address{ font-style: unset;}
   font-weight: 600;
   text-align: center;
   color:#373e97;
-  
+  white-space: nowrap;
+  border-radius: .5rem;
+  border:1px solid #6a5bc2;
+  background-color: #f1f2fd;
 }
 
 .btn-type-close {
@@ -181,6 +198,11 @@ address{ font-style: unset;}
   font-weight: 600;
   text-align: center;
   color:#373e97;
+  white-space: nowrap;
+  border-radius: .5rem;
+  border:1px solid #6a5bc2;
+  background-color: #f1f2fd;
+
 }
 /* .btn-type2 button {
      width:33.333px;
@@ -225,6 +247,12 @@ address{ font-style: unset;}
   text-align:center;
   border-radius: 1rem;
   background-color: #fff;
+}
+
+.dim_msg p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color:#000;
 }
 
 /* checkbox / radioBTN / Switch */

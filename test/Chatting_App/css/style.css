@@ -14,7 +14,7 @@
 	position:relative;
 	height: max-content;
 	min-width:250px;
-	/* max-width:750px; */
+	max-width:750px;
 	/* height:65rem; */
 	box-shadow:0 0 8rem 0 rgba(0,0,0,0.05);
 	/* background-image:linear-gradient(180deg,#3942af 40%,#803873 100%); */
@@ -281,7 +281,6 @@
 
 
 .scroll-x-item {
-	max-width: 85%;
     display: inline-flex;
     white-space: nowrap;
     overflow-y: scroll;
