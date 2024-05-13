@@ -15,7 +15,6 @@
 </head>
 <body>
     <div class="wrapper">
-        
         <div class="container">
             <!-- Layer Popup -->
             <div class="layer-popup">
@@ -42,7 +41,7 @@
             <header class="header">
                 <!-- <span class="material-symbols-outlined"> menu </span> -->
                 <h1 class="">SGI서울보증</h1>
-                <button type="button" class="btn-type3"><span>상담종료하기</span></button>
+                <button type="button" class="btn-type3"><span>상담종료</span></button>
                 <!-- <span class="material-symbols-outlined"> filter_alt </span> -->
             </header>
 
@@ -70,6 +69,7 @@
                     <!-- //AI 챗봇 진행 시 최초 상단 노출 (기본형) -->
 
                     <div class="chat-user user1">
+                        <!-- 보험금 청구 제출 서류 케이스 -->
                         <div id="chat-type-case01" style="display:none">
                             <div class="chat-user user2">
                                 <div class="user-msg">
@@ -79,7 +79,6 @@
                                     <p class="time">오전 12:10</p>
                                 </div>
                             </div>
-                            
                             <div class="mngr-profile">
                                 <img src="./img/user1.jpg" alt="">
                                 <span class="mngr-name">HelpDesk</span>
@@ -102,8 +101,8 @@
                                             </span>
                                         </li>
                                     </ul>
-                                    <button class="btn-type1" type="button">상품별 제출서류 보러가기</button>
-                                    <button class="btn-type1 ico-link" type="button">보험금 청구 유의사항</button>
+                                    <button class="btn-type1 ico-link" type="button">상품별 제출서류 보러가기</button>
+                                    <button class="btn-type1" type="button">보험금 청구 유의사항</button>
                                 </div>
                                 <div class="scroll-x-item">
                                     <a class="btn-type1" type="button">보험금 청구 취소</a>
@@ -126,7 +125,7 @@
                                 <p class="time">오전 12:10</p>
                             </div>
                         </div>
-
+                        <!-- 보험 케이스 -->
                         <div id="chat-type-case02" style="display:none">
                             <div class="mngr-profile">
                                 <img src="./img/user1.jpg " alt="profile">
@@ -166,10 +165,39 @@
                             </div>
                             <p class="time">오전 12:10</p>
                         </div>
+                         <!-- 개통 회선 케이스 -->
+                        <div id="chat-type-case03" style="display:none;">
+                            <div class="chat-user user2">
+                                <div class="user-msg">
+                                    <div class="chat-bubble">
+                                        내 개통 회선 알려줘
+                                    </div>
+                                    <p class="time">오전 12:10</p>
+                                </div>
+                            </div>
+                            <div class="mngr-profile">
+                                <img src="./img/user1.jpg" alt="">
+                                <span class="mngr-name">HelpDesk</span>
+                            </div>
+                            <div class="user-msg">
+                                <div class="chat-bubble">
+                                    <div class="txt_area">
+                                        <strong class="txt_tit"><span class="name">이서울</span>님 개통 회선 및 사용가능금액</strong>
+                                        <p>
+                                            <strong>개통 가능 회선 수</strong> <span>1</span><span>회선</span>
+                                        </p>
+                                        <p>
+                                            <strong>사용 가능 금액</strong> <span>600,000</span><span>원</span>
+                                        </p>
+                                    </div>                         
+                                </div>
+                                <p class="time">오전 12:10</p>
+                            </div>
+                        </div>
                     </div>
                 
                     <!-- user1 message 입력중 -->
-                    <div class="user1">
+                    <!-- <div class="user1">
                         <div class="chat-bubble message--typing">
                             <div class="message">
                                 <p class="message__item">
@@ -180,10 +208,10 @@
                             </div>
                         </div>
                         <p class="time">오전 12:10</p>
-                    </div>
+                    </div> -->
                     <!-- //user1 message 입력중 -->
                     <!-- user2 message 입력중 -->
-                    <div class="user2">
+                    <!-- <div class="user2">
                         <div class="chat-bubble message--typing">
                             <div class="message">
                                 <p class="message__item">
@@ -194,7 +222,7 @@
                             </div>
                         </div>
                         <p class="time">오전 12:10</p>
-                    </div>
+                    </div> -->
                     <!-- //user2 message 입력중 -->
                     <!-- 스크롤 Top 버튼 -->
                     <button class="scroll-btn scroll-top-btn" onclick="scrollTopFunction()">↑</button>

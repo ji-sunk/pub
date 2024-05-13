@@ -134,7 +134,7 @@ function showChatTypeCase01() {
     chatTypeCase01.style.display = "block";
 }
 
-// 보험금 청구 버튼을 가져와서 클릭 이벤트를 추가합니다.
+// 보험금 청구 버튼을 가져와서 클릭 이벤트를 추가
 const insuranceClaimButton = document.querySelector('.chat-btn-box.set6 li:nth-child(1) a');
 insuranceClaimButton.addEventListener('click', showChatTypeCase01);
 
@@ -147,9 +147,8 @@ function showChatTypeCase02() {
     chatTypeCase02.style.display = "block";
 }
 
-// 보험증권 버튼을 가져와서 클릭 이벤트를 추가합니다.
+// 보험증권 버튼을 가져와서 클릭 이벤트 추가
 const insuranceCertificateButton = document.querySelector('.chat-btn-box.set6 li:nth-child(2) a');
 insuranceCertificateButton.addEventListener('click', showChatTypeCase02);
-
 
 

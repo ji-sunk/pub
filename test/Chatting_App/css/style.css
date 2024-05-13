@@ -396,6 +396,33 @@
     opacity: 1;
 }
 
+.chat-bubble .txt_area .txt_tit {
+	display:flex;
+	align-items: center;
+	/* padding: 8px 0; */
+	font-size: 1.2rem;
+	font-weight: 700;
+	color:#000;
+}
+.chat-bubble .txt_area .txt_tit .name {
+	display:flex;
+	align-items: center;
+	padding: 8px 0;
+	font-size: 1.2rem;
+	font-weight: 700;
+	color:#003476;
+}
+.chat-bubble .txt_area p {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-bubble .txt_area p strong {
+	/* width:50%; */
+	font-weight: 700;
+	color:#000;
+}
 
 
 /* 메시지 타이핑중... */

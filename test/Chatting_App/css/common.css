@@ -91,6 +91,13 @@ address{ font-style: unset;}
     overflow: hidden;
 }
 
+
+/* 버튼 아이콘 있는 라운드 기본형 */
+.btn-type1.ico-link {
+  padding-right: 30px;
+  background: url(../img/ico_arrow_sideup.svg) right 56px center/ 1rem no-repeat;
+}
+
 /* 버튼 아이콘 없는 라운드 기본형 */
 .btn-type1 {
   margin-top:5px;
@@ -114,12 +121,6 @@ address{ font-style: unset;}
 .btn-type1:focus {
   background-color: #003476;
   color:#fff;
-}
-
-/* 버튼 아이콘 있는 라운드 기본형 */
-.btn-type1.ico-link {
-  padding-right: 30px;
-  background: url(../img/ico_arrow_sideup.svg) right 10px center/ 1rem no-repeat;
 }
 .chat-bubble .btn-type1 {
   max-width:100%;
@@ -217,6 +218,7 @@ address{ font-style: unset;}
   width:fit-content;
   min-height: 100px;
   height:fit-content;
+  height:auto;
   display:grid;
   justify-content: center;
   align-items: center;
