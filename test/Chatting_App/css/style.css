@@ -454,6 +454,7 @@
 }
 
 .pos_fixed {
+	width:100%;
 	position:fixed;
 	bottom:0;
 }
