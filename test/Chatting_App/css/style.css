@@ -396,6 +396,31 @@
     opacity: 1;
 }
 
+/* 채팅 버블 더보기 버튼 타입 */
+.chat-bubble .btn_more {
+
+}
+
+.txt_more_type.txt_area {
+	height:150px;
+	overflow: hidden;
+}
+
+.chat-bubble .txt_more_type * {
+	color:#000;
+}
+.txt_more_type {
+	text-align: center;
+}
+
+.txt_area .txt_blk {
+	display:block;
+}
+.txt_more_type.expanded {
+	height:fit-content;
+	max-height:100vh;
+}
+
 .chat-bubble .txt_area p strong {
 	/* width:50%; */
 	font-weight: 700;

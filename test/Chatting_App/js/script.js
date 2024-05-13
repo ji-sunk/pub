@@ -69,13 +69,13 @@ txt.addEventListener("keydown", (e) => {
 });
 
 
-// 버튼 요소들을 가져옵니다.
+// 버튼 요소
 const scrollTopButton = document.querySelector(".scroll-top-btn");
 const scrollBottomButton = document.querySelector(".scroll-bottom-btn");
 
-// 페이지가 스크롤될 때 버튼 show / hide를 처리하는 함수입니다.
+// 페이지가 스크롤될 때 버튼 show / hide를 처리하는 함수
 function handleScroll() {
-    // 현재 스크롤 위치가 20px보다 큰 경우에만 Top 버튼을 표시합니다.
+    // 현재 스크롤 위치가 20px보다 큰 경우에만 Top 버튼
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         scrollTopButton.classList.add("show");
     } else {
@@ -84,16 +84,16 @@ function handleScroll() {
 }
 
 
-// 페이지가 스크롤될 때 handleScroll 함수를 실행합니다.
+// 페이지가 스크롤될 때 handleScroll 함수
 window.addEventListener('scroll', handleScroll);
 
-// Top 버튼을 클릭하면 페이지를 상단으로 스크롤합니다.
+// Top 버튼을 클릭하면 페이지를 상단으로 스크롤
 function scrollTopFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-// Bottom 버튼을 클릭하면 페이지를 하단으로 스크롤합니다.
+// Bottom 버튼을 클릭하면 페이지를 하단으로 스크롤
 // function scrollBottomFunction() {
 //     window.scrollTo(0, document.body.scrollHeight);
 // }
@@ -124,6 +124,37 @@ document.querySelector('.btn-type-cancel').addEventListener('click', function() 
 
 
 
+
+//*******************펼쳐보기 /접기 버튼 *****************************
+    // 더보기 버튼을 클릭했을 때 이벤트 처리
+    document.addEventListener('DOMContentLoaded', function () {
+        // 펼쳐보기 버튼 요소 가져오기
+        const moreButton = document.querySelector('.btn_more');
+        // 더보기 텍스트 요소 가져오기
+        const moreText = document.querySelector('.txt_more_type');
+
+        // 더보기 버튼에 클릭 이벤트 리스너 추가
+        moreButton.addEventListener('click', function () {
+            // 만약 현재 텍스트가 펼쳐져 있는 상태라면
+            if (moreText.classList.contains('expanded')) {
+                // 텍스트를 다시 숨김
+                moreText.classList.remove('expanded');
+                // 버튼 텍스트 변경
+                moreButton.querySelector('span').textContent = '펼쳐보기';
+                // 화살표 아이콘을 아래로 변경
+                moreButton.querySelector('img').style.transform = 'rotate(0deg)';
+            } else {
+                // 현재 텍스트가 숨겨진 상태라면
+                // 텍스트를 펼침
+                moreText.classList.add('expanded');
+                // 버튼 텍스트 변경
+                moreButton.querySelector('span').textContent = '접기';
+                // 화살표 아이콘을 위로 변경
+                moreButton.querySelector('img').style.transform = 'rotate(180deg)';
+            }
+        });
+    })
+    
 //*******************test case (click evt)*****************************
 
 // 보험금 청구 버튼을 클릭했을 때 이벤트를 처리하는 함수
