@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 뷰포트 정의 -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.6, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>chtatbot</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <!-- Layer Popup -->
+            <div class="layer-popup">
+                <div class="dim_bg">
+                    <div class="dim_msg">
+                        <p>상담을 종료 하시겠습니까?</p>
+                        <div class="btn-wrap">
+                            <button class="btn-type-cancel" type="button">취소</button>
+                            <button class="btn-type-close" type="button">상담종료</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //Layer Popup -->
+            <header class="header">
+                <h1 class="">SGI서울보증</h1>
+                <button type="button" class="btn-type3"><span>상담종료</span></button>
+            </header>
+
+            <div class="chat-area">
+                <div class="chats">
+                    <!-- AI 챗봇 진행 시 최초 상단 노출 (기본형) -->
+                    <div class="def-msg">
+                        <div class="chat-bubble">
+                            <img src="./img/dummy01.png" class="chat-bubble-deimg" alt=""  />
+                            <!-- <ul class="chat-btn-box set3">
+                                <li><a href="#none">보험금청구</a></li>
+                                <li><a href="#none">보험증권</a></li>
+                                <li><a href="#none">지점안내</a></li>
+                            </ul> -->
+                            <ul class="chat-btn-box set6">
+                                <li><a href="#chat_move1">보험금청구</a></li>
+                                <li><a href="#chat_move2">보증보험</a></li>
+                                <li><a href="#chat_move3">개통회선</a></li>
+                                <li><a href="#chat_move4">지점안내</a></li>
+                                <li><a href="#chat_move5">통신회선</a></li>
+                                <li><a href="#chat_move6">상담원연결</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- //AI 챗봇 진행 시 최초 상단 노출 (기본형) -->
+
+                    <div class="chat-user user1">
+                        <!-- 보험금 청구 제출 서류 케이스 -->
+                        <div id="chat-type-case01">
+                            <div class="chat-user user2" id="#chat_move1">
+                                <div class="user-msg">
+                                    <div class="chat-bubble">
+                                        보험금 청구 제출 서류 알려줘
+                                    </div>
+                                    <p class="time">오전 12:10</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mngr-profile">
+                                <img src="./img/user1.jpg" alt="">
+                                <span class="mngr-name">HelpDesk</span>
+                            </div>
+                            <div class="user-msg">
+                                <div class="chat-bubble">
+                                    <p>보험금 청구</p>
+                                    <ul class="">
+                                        <li>
+                                            <p>공통 필요서류</p>
+                                            <span>
+                                                보험금 청구서, 보험계약자의 채무불이행 사실 증빙 서류,
+                                                손해발생액 증빙서류
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <p>기타 필요서류</p>
+                                            <span>
+                                                각 보험상품별로 보상 심사에 필요한 기타 자료를 제출
+                                            </span>
+                                        </li>
+                                    </ul>
+                                    <button class="btn-type1 ico-link" type="button">상품별 제출서류 보러가기</button>
+                                    <button class="btn-type1" type="button">보험금 청구 유의사항</button>
+                                </div>
+                                <div class="scroll-x-item">
+                                    <div class="btn-wrap btn-two">
+                                        <button class="btn-type1" type="button">보험금 청구 취소</button>
+                                        <button class="btn-type1" type="button">보험금 청구 절차</button>
+                                    </div>
+                                </div>
+                                <div class="scroll-x-item wd100">
+                                    <div class="btn-wrap">
+                                        <button class="btn-type1" type="button">보험금 청구 취소</button>
+                                        <button class="btn-type1" type="button">보험금 청구 절차</button>
+                                        <button class="btn-type1" type="button">보험금 청구 절차</button>
+                                        <button class="btn-type1" type="button">보험금 청구 절차</button>
+                                        <button class="btn-type1" type="button">보험금 청구 절차</button>
+                                        <button class="btn-type1" type="button">보험금 청구 절차</button>
+                                    </div>
+                                </div>
+                                <p class="time">오전 12:10</p>
+                            </div>
+                        </div>
+                        <!-- 보험 케이스 -->
+                        <div id="chat-type-case02">
+                            <div class="mngr-profile" id="chat_move2">
+                                <img src="./img/user1.jpg " alt="profile">
+                                <span class="mngr-name">HelpDesk</span>
+                            </div>
+                            
+
+
+                            <div class="user-msg slide-type">
+                                <div class="scroll_x">
+                                    <ul class="slide-card">
+                                        <li class="chat-bubble card-bdr-type" id="product1">
+                                            <strong>하자보증보험</strong>
+                                            <span>하자보수 의무 이행을 보증하기위한 하자 보증을 대신하는 상품입니다.</span>
+                                            <a href="#none" class="btn-type1" onclick="toggleProduct('product1')">상품보러가기</a>
+                                        </li>
+                                        <li class="chat-bubble card-bdr-type" id="product2">
+                                            <strong>지급보증보험</strong>
+                                            <span>계약과 관련된 다양한 지급보증금을 대신하는 보증 상품입니다.</span>
+                                            <a href="#none" class="btn-type1" onclick="toggleProduct('product2')">상품보러가기</a>
+                                        </li>
+                                        <li class="chat-bubble card-bdr-type" id="product3">
+                                            <strong>지급보증보험</strong>
+                                            <span>계약과 관련된 다양한 지급보증금을 대신하는 보증 상품입니다.</span>
+                                            <a href="#none" class="btn-type1" onclick="toggleProduct('product3')">상품보러가기</a>
+                                        </li>
+                                    </ul>
+                                    <!-- Add more product cards here -->
+                                </div>
+                            </div>
+                            <p class="time">오전 12:10</p>
+
+                            <!-- Toggle buttons for each product -->
+                            <div class="toggle-buttons">
+                                <button class="toggle-button active" data-product="product1">하자보증보험</button>
+                                <button class="toggle-button" data-product="product2">지급보증보험</button>
+                                <!-- Add more buttons for other products here -->
+                            </div>
+
+
+
+
+                    
+                        <!-- 개통 회선 케이스 -->
+                        <div id="chat-type-case03">
+                            <div class="chat-user user2" id="chat_move3">
+                                <div class="user-msg">
+                                    <div class="chat-bubble">
+                                        내 개통 회선 알려줘
+                                    </div>
+                                    <p class="time">오전 12:10</p>
+                                </div>
+                            </div>
+                            <div class="mngr-profile">
+                                <img src="./img/user1.jpg" alt="">
+                                <span class="mngr-name">HelpDesk</span>
+                            </div>
+                            <div class="user-msg">
+                                <div class="chat-bubble">
+                                    <div class="txt_area">
+                                        <strong class="txt_tit"><span class="name">이서울</span>님 개통 회선 및 사용가능금액</strong>
+                                        <p>
+                                            <strong>개통 가능 회선 수</strong> <span><span>1</span>회선</span>
+                                        </p>
+                                        <p>
+                                            <strong>사용 가능 금액</strong> <span><span>600,000</span>원</span>
+                                        </p>
+                                    </div>                         
+                                </div>
+                                <p class="time">오전 12:10</p>
+                            </div>
+                        </div>
+
+                        <div id="chat-type-case04" style="display:block">
+                            <div class="chat-user user2">
+                                <div class="user-msg">
+                                    <div class="chat-bubble">
+                                        지점 위치 알려줘
+                                    </div>
+                                    <p class="time">오전 12:10</p>
+                                </div>
+                            </div>
+                            <div class="mngr-profile">
+                                <img src="./img/user1.jpg" alt="">
+                                <span class="mngr-name">HelpDesk</span>
+                            </div>
+                            <div class="user-msg">
+                                <div class="chat-bubble">
+                                    <div class="txt_more_type txt_area">
+                                        <strong class="txt_tit">업무별 담당부서를 선택해주세요.</strong>
+                                        <a href="#none" class="btn-type4">
+                                            <strong class="txt_blk">영업지점</strong>
+                                            <span class="txt_sub">보험가입, 변경, 해지, 보험금청구접수</span>
+                                        </a>
+                                        <a href="#none" class="btn-type4">
+                                            <strong class="txt_blk">영업지점</strong>
+                                            <span class="txt_sub">보험가입, 변경, 해지, 보험금청구접수</span>
+                                        </a>
+                                        <a href="#none" class="btn-type4">
+                                            <strong class="txt_blk">영업지점</strong>
+                                            <span class="txt_sub">보험가입, 변경, 해지, 보험금청구접수</span>
+                                        </a>
+                                        <a href="#none" class="btn-type4">
+                                            <strong class="txt_blk">영업지점</strong>
+                                            <span class="txt_sub">보험가입, 변경, 해지, 보험금청구접수</span>
+                                        </a>
+                                        <a href="#none" class="btn-type4">
+                                            <strong class="txt_blk">영업지점121212</strong>
+                                            <span class="txt_sub">보험가입, 변경, 해지, 보험금청구접수</span>
+                                        </a>
+                                    </div>  
+                                    <!-- 펼쳐보기/접기 버튼 -->
+                                    <a href="#none" class="btn_more">
+                                        <span class="blind">펼쳐보기</span>
+                                        <img src="./img/arrow_down.svg" width="20px" height="20px" alt="">
+                                    </a>
+                                    <!-- //펼쳐보기/접기 버튼 -->
+                                </div>
+                                <p class="time">오전 12:10</p>
+                            </div>
+
+                            <!-- 시/도 선택 -->
+                            <div class="mngr-profile">
+                                <img src="./img/user1.jpg" alt="">
+                                <span class="mngr-name">HelpDesk</span>
+                            </div>
+                            <div class="user-msg">
+                                <div class="chat-bubble">
+                                    <div class="txt_area">
+                                        <strong class="txt_tit">시/도를 선택해주세요.</strong>
+                                        <p>※ 지점 최대 17개</p>
+                                        <div class="select-wrap two">
+                                            <div class="select-box">
+                                            <select>
+                                                <option>select box</option>
+                                                <option>option 1</option>
+                                                <option>option 2</option>
+                                                <option>option 3</option>
+                                                <option>option 4</option>
+                                                <option>option 5</option>
+                                                <option>option 6</option>
+                                                <option>option 7</option>
+                                                <option>option 8</option>
+                                                <option>option 9</option>
+                                                <option>option 10</option>
+                                            </select>
+                                        </div>
+                                        <div class="select-box">
+                                            <select>
+                                                <option>select box</option>
+                                                <option>option 1</option>
+                                                <option>option 2</option>
+                                                <option>option 3</option>
+                                                <option>option 4</option>
+                                                <option>option 5</option>
+                                                <option>option 6</option>
+                                                <option>option 7</option>
+                                                <option>option 8</option>
+                                                <option>option 9</option>
+                                                <option>option 10</option>
+                                            </select>
+                                        </div>
+                                        </div>
+                                        <div class="select-wrap">
+                                            <div class="select-box">
+                                                <select>
+                                                    <option>select box</option>
+                                                    <option>option 1</option>
+                                                    <option>option 2</option>
+                                                    <option>option 3</option>
+                                                    <option>option 4</option>
+                                                    <option>option 5</option>
+                                                    <option>option 6</option>
+                                                    <option>option 7</option>
+                                                    <option>option 8</option>
+                                                    <option>option 9</option>
+                                                    <option>option 10</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <p class="time">오전 12:10</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- user1 message 입력중 -->
+                    <!-- <div class="user1">
+                        <div class="chat-bubble message--typing">
+                            <div class="message">
+                                <p class="message__item">
+                                    <span class="message__dot"></span>
+                                    <span class="message__dot"></span>
+                                    <span class="message__dot"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <p class="time">오전 12:10</p>
+                    </div> -->
+                    <!-- //user1 message 입력중 -->
+                    <!-- user2 message 입력중 -->
+                    <!-- <div class="user2">
+                        <div class="chat-bubble message--typing">
+                            <div class="message">
+                                <p class="message__item">
+                                    <span class="message__dot"></span>
+                                    <span class="message__dot"></span>
+                                    <span class="message__dot"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <p class="time">오전 12:10</p>
+                    </div> -->
+                    <!-- //user2 message 입력중 -->
+                    <!-- 스크롤 Top 버튼 -->
+                    <button class="scroll-btn scroll-top-btn" onclick="scrollTopFunction()">↑</button>
+                    <!-- 스크롤 Bottom 버튼 -->
+                    <!-- <button class="scroll-btn scroll-bottom-btn" onclick="scrollBottomFunction()">↓</button> -->
+                </div>
+            </div>
+
+            <div class="pos_fixed">
+                 <div class="chat-input-wrap">
+                    <div class="chat-input">
+                        <img src="img/user1.jpg">
+                        <input type="text" placeholder="메세지를 입력하세요" id="msg_txt">
+                        <button for="msg_txt" type="submit" id="btn_send">
+                            <span class="blind">Send</span>
+                            <svg class="svg_send" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M98-141v-684l806 342L98-141Zm90-137 484-206-484-206v142l254 64-254 64v142Zm0 0v-412 412Z"/></svg>
+                        </button>
+                    </div>
+                    <!-- <div class="chat-input">      
+                        <form>
+                            <input type="text" id="chat-input" placeholder="Send a message..."/>
+                        <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
+                        </form>      
+                    </div> -->
+                    
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
