@@ -1,0 +1,551 @@
+
+@charset "utf-8";
+
+/* ===============================
+ * reset_css 
+ * =============================== 
+*/
+
+* {margin: 0; padding: 0; box-sizing: border-box;} 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+:root {
+  --bg-ctn: rgb(0, 0, 0); 
+  --bg-wrap: #f0eff6; 
+  --bg-input: #e8e8e8; 
+  --white: #fff; 
+  --black: #565367; 
+  --grey: #9b99a6;
+  --dark-grey: #222831; 
+  --purple: #6a5bc2;
+} 
+img {width: 100%;}
+a {color: #fff; text-decoration: none; outline: none} 
+a:hover, a:active {text-decoration: none; color:none; background-color:none;}
+div {-webkit-tap-highlight-color: transparent;}
+a, button, img {cursor:pointer; -webkit-tap-highlight-color: transparent; /* for removing the highlight */}
+button {display:flex; justify-content: center; align-items: center;}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,time,figure,article,nav,header,footer,hgroup,
+video,audio,aside,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { margin:0; padding: 0; border: 0; outline: 0; vertical-align: baseline; -moz-box-sizing: border-box; box-sizing: border-box; font-size:14px; font-weight: 400; line-height: 1.43;}
+html, body {
+  height: 100%;
+  font-family: 'Noto Sans', 'Roboto', sans-serif;
+}
+body {
+     width: 100%;
+     background: #e6e6e6;
+}
+h1,h2,h3,h4,h5,h6{font-weight: bold;}
+ol,ul{list-style: none;}
+ul[role='list'],
+ol[role='list'] {list-style: none;}
+table{border-collapse: collapse; border-spacing: 0;}
+caption,th,td{font-weight: normal;}
+/* figure,article,header,footer,nav,hgroup,video,audio,aside,main {display: block;} */
+a{display:block; color:#000; text-decoration: none;}
+figure, img, i{font-size:0px; line-height: 1;}
+figure img{width:100%; display:block;}
+address{ font-style: unset;}
+
+/* 스크롤 */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+/* ::-webkit-scrollbar-track {
+    background-color: rgba(236, 236, 236, 0.2);
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb {
+     height:3px;
+     background-color: rgba(236, 236, 236, 1);
+     border-radius: 10px;
+} */
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+::-webkit-scrollbar-track:hover {
+    background-color: rgb(175, 72, 72);
+    background: none;
+}
+::-webkit-scrollbar-thumb {
+     background-color: rgba (236, 236, 236, 0.5);
+     border-radius: 10px;
+     background: none;
+}
+::-webkit-scrollbar-thumb:hover {    
+    background-color: rgb(96, 36, 165);
+    background: none;
+}
+
+/* 스크롤바 숨기기 */
+::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리 등 웹킷 기반 브라우저 */
+}
+
+.hide {
+  display:none !important; 
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+
+/* 버튼 아이콘 있는 라운드 기본형 */
+.btn-type1.ico-link {
+  padding-right: 30px;
+  /* background: url(../img/ico_arrow_sideup.svg) right 2.7rem center/ 1rem no-repeat; */
+}
+
+/* .btn-type1.fixed {
+  position:absolute;
+  bottom: 1rem;;
+} */
+
+
+.btn-wrap {
+  width:100%;
+  /* height: 50px; */
+  display:flex;
+  justify-content:space-around;
+  align-items: end;
+  text-align: center;
+  border:none;
+  gap: 5px;
+}
+/* 버튼 아이콘 없는 라운드 기본형 */
+.btn-type1 {
+  margin-top:5px;
+  padding:6px 10px;
+  display:block;
+  width:100%;
+  max-width: calc(100% - 1.2rem);
+  text-align: center;
+  font-size:1rem;
+  font-weight: 600;
+  border:1px solid #ced1ea;
+  background-color: #f0f2ff;
+  border-radius: 10px;
+  color:#373e97;
+}
+.btn-type1:hover {
+  border:1px solid #ced1ea;
+  background-color: var(--purple);
+  color:#fff;
+}
+.btn-type1:focus {
+  background-color: #003476;
+  color:#fff;
+}
+.chat-bubble .btn-type1 {
+  max-width:100%;
+}
+
+.btn-type2 {
+     padding:6px 10px;
+     display:block;
+     width:100%;
+     font-size:13px;
+     text-align: left;
+     color:#373e97;
+     border:none;
+     background-color: #fff;
+}
+/* 최상단 보더 라운드 버튼 */
+.btn-type3 {
+   z-index: 31;
+   padding:10px;
+   height: 40px;
+    display:block;
+    border-radius: 30px 30px;
+    color:#373e97;
+    font-size: .8rem;
+    font-weight: 600;
+    border:1px solid #77788a;
+    background-color: #fff;
+    cursor:pointer;
+    white-space: nowrap;
+     /* background: url(/img/chat_top_btn.png) no-repeat; */
+}
+
+.btn-type4 {
+  margin-top:5px;
+  padding:6px 10px;
+  display:block;
+  width:100%;
+  /* max-width: calc(100% - 1.2rem); */
+  text-align: center;
+  font-size:1rem;
+  font-weight: 600;
+  border:1px solid #ced1ea;
+  background-color: #f0f2ff;
+  border-radius: 10px;
+  color:#373e97;
+}
+
+.btn-type-cancel {
+  padding:6px;
+  width:50%;
+  font-size:13px;
+  font-weight: 600;
+  text-align: center;
+  color:#373e97;
+  white-space: nowrap;
+  border-radius: .5rem;
+  border:1px solid #6a5bc2;
+  background-color: #f1f2fd;
+}
+
+.btn-type-close {
+  padding:6px;
+  width:50%;
+  font-size:13px;
+  font-weight: 600;
+  text-align: center;
+  color:#373e97;
+  white-space: nowrap;
+  border-radius: .5rem;
+  border:1px solid #6a5bc2;
+  background-color: #f1f2fd;
+
+}
+/* .btn-type2 button {
+     width:33.333px;
+} */
+
+ /* .container {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+} */
+
+.layer-popup {
+  display:none;
+}
+
+.dim_bg {
+  z-index: 50;
+  position: fixed;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+.dim_msg {
+  z-index: 51;
+  position: absolute;
+  padding:1rem;
+  min-width: 200px;
+  width:fit-content;
+  min-height: 100px;
+  height:fit-content;
+  height:auto;
+  display:grid;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+
+.dim_msg p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color:#000;
+}
+
+.select-box {
+  height:200px;
+  overflow-y: auto;
+}
+
+/* checkbox / radioBTN / Switch */
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+input[type=checkbox],
+input[type=radio] {
+    --active: #275EFE;
+    --active-inner: #fff;
+    --focus: 2px rgba(39, 94, 254, .3);
+    --border: #BBC1E1;
+    --border-hover: #275EFE;
+    --background: #fff;
+    --disabled: #F6F8FF;
+    --disabled-inner: #E1E6F9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 21px;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid var(--bc, var(--border));
+    background: var(--b, var(--background));
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+  }
+  input[type=checkbox]:after,
+input[type=radio]:after {
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    position: absolute;
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+  }
+  input[type=checkbox]:checked,
+input[type=radio]:checked {
+    --b: var(--active);
+    --bc: var(--active);
+    --d-o: .3s;
+    --d-t: .6s;
+    --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+  }
+  input[type=checkbox]:disabled,
+input[type=radio]:disabled {
+    --b: var(--disabled);
+    cursor: not-allowed;
+    opacity: 0.9;
+  }
+  input[type=checkbox]:disabled:checked,
+input[type=radio]:disabled:checked {
+    --b: var(--disabled-inner);
+    --bc: var(--border);
+  }
+  input[type=checkbox]:disabled + label,
+input[type=radio]:disabled + label {
+    cursor: not-allowed;
+    color:#9b99a6;
+  }
+  input[type=checkbox]:hover:not(:checked):not(:disabled),
+input[type=radio]:hover:not(:checked):not(:disabled) {
+    --bc: var(--border-hover);
+  }
+  input[type=checkbox]:focus,
+input[type=radio]:focus {
+    box-shadow: 0 0 0 var(--focus);
+  }
+  input[type=checkbox]:not(.switch),
+input[type=radio]:not(.switch) {
+    width: 21px;
+  }
+  input[type=checkbox]:not(.switch):after,
+input[type=radio]:not(.switch):after {
+    opacity: var(--o, 0);
+  }
+  input[type=checkbox]:not(.switch):checked,
+input[type=radio]:not(.switch):checked {
+    --o: 1;
+  }
+  input[type=checkbox] + label,
+input[type=radio] + label {
+    font-size: 14px;
+    line-height: 21px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    margin-left: 4px;
+  }
+  /* input[type=checkbox] + label:disabled,
+input[type=radio] + label:disabled {
+    color:#9b99a6;
+  } */
+
+  input[type=checkbox]:not(.switch) {
+    border-radius: 7px;
+  }
+  input[type=checkbox]:not(.switch):after {
+    width: 5px;
+    height: 9px;
+    border: 2px solid var(--active-inner);
+    border-top: 0;
+    border-left: 0;
+    left: 7px;
+    top: 4px;
+    transform: rotate(var(--r, 20deg));
+  }
+  input[type=checkbox]:not(.switch):checked {
+    --r: 43deg;
+  }
+  input[type=checkbox].switch {
+    width: 38px;
+    border-radius: 11px;
+  }
+  input[type=checkbox].switch:after {
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: var(--ab, var(--border));
+    transform: translateX(var(--x, 0));
+  }
+  input[type=checkbox].switch:checked {
+    --ab: var(--active-inner);
+    --x: 17px;
+  }
+  input[type=checkbox].switch:disabled:not(:checked):after {
+    opacity: 0.6;
+  }
+
+  input[type=radio] {
+    border-radius: 50%;
+  }
+  input[type=radio]:after {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: var(--active-inner);
+    opacity: 0;
+    transform: scale(var(--s, 0.7));
+  }
+  input[type=radio]:checked {
+    --s: .5;
+  }
+}
+
+/* .control-group {
+     display: inline-block;
+     vertical-align: top;
+     background: #fff;
+     text-align: left;
+     box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+     padding: 30px;
+     width: 200px;
+     height: 210px;
+     margin: 10px;
+}
+ .control {
+     display: block;
+     position: relative;
+     padding-left: 30px;
+     margin-bottom: 15px;
+     cursor: pointer;
+     font-size: 18px;
+}
+ .control input {
+     position: absolute;
+     z-index: -1;
+     opacity: 0;
+}
+ .control__indicator {
+     position: absolute;
+     top: 2px;
+     left: 0;
+     height: 20px;
+     width: 20px;
+     background: #e6e6e6;
+}
+ .control--radio .control__indicator {
+     border-radius: 50%;
+}
+ .control:hover input ~ .control__indicator, .control input:focus ~ .control__indicator {
+     background: #ccc;
+}
+ .control input:checked ~ .control__indicator {
+     background: #2aa1c0;
+}
+ .control:hover input:not([disabled]):checked ~ .control__indicator, .control input:checked:focus ~ .control__indicator {
+     background: #0e647d;
+}
+ .control input:disabled ~ .control__indicator {
+     background: #e6e6e6;
+     opacity: 0.6;
+     pointer-events: none;
+}
+ .control__indicator:after {
+     content: '';
+     position: absolute;
+     display: none;
+}
+ .control input:checked ~ .control__indicator:after {
+     display: block;
+}
+ .control--checkbox .control__indicator:after {
+     left: 8px;
+     top: 4px;
+     width: 3px;
+     height: 8px;
+     border: solid #fff;
+     border-width: 0 2px 2px 0;
+     transform: rotate(45deg);
+}
+ .control--checkbox input:disabled ~ .control__indicator:after {
+     border-color: #7b7b7b;
+}
+ .control--radio .control__indicator:after {
+     left: 7px;
+     top: 7px;
+     height: 6px;
+     width: 6px;
+     border-radius: 50%;
+     background: #fff;
+}
+ .control--radio input:disabled ~ .control__indicator:after {
+     background: #7b7b7b;
+}
+ .select {
+     position: relative;
+     display: inline-block;
+     margin-bottom: 15px;
+     width: 100%;
+}
+ .select select {
+     display: inline-block;
+     width: 100%;
+     cursor: pointer;
+     padding: 10px 15px;
+     outline: 0;
+     border: 0;
+     border-radius: 0;
+     background: #e6e6e6;
+     color: #7b7b7b;
+     appearance: none;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+}
+ .select select::-ms-expand {
+     display: none;
+}
+ .select select:hover, .select select:focus {
+     color: #000;
+     background: #ccc;
+}
+ .select select:disabled {
+     opacity: 0.5;
+     pointer-events: none;
+}
+ .select__arrow {
+     position: absolute;
+     top: 16px;
+     right: 15px;
+     width: 0;
+     height: 0;
+     pointer-events: none;
+     border-style: solid;
+     border-width: 8px 5px 0 5px;
+     border-color: #7b7b7b transparent transparent transparent;
+}
+ .select select:hover ~ .select__arrow, .select select:focus ~ .select__arrow {
+     border-top-color: #000;
+}
+ .select select:disabled ~ .select__arrow {
+     border-top-color: #ccc;
+} */
+ 
