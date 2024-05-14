@@ -251,6 +251,7 @@ address{ font-style: unset;}
   z-index: 51;
   position: absolute;
   padding:1rem;
+  margin:0 1rem;
   min-width: 200px;
   width:fit-content;
   min-height: 100px;
@@ -270,10 +271,46 @@ address{ font-style: unset;}
   color:#000;
 }
 
-.select-box {
-  height:200px;
-  overflow-y: auto;
+/* 셀렉트 박스 */
+.chat-bubble .select-wrap select {
+    width: 100%;
+    padding: 12px 20px; /* 내부 여백 조정 */
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 20px; /* 살짝 라운드된 보더 반경 */
+    appearance: none;
+    background-color: #f7f7f7; /* 선택 상자 배경색 */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"><path fill="%23333" d="M1.4.8l5.3 5 5.3-5c.2-.2.5-.2.7 0s.2.5 0 .7l-6 5.7c-.2.2-.5.2-.7 0l-6-5.7c-.2-.2-.2-.5 0-.7s.5-.2.7 0z"/></svg>'); /* 화살표 아이콘 추가 */
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center; /* 화살표 위치 */
+    cursor: pointer;
+    outline: none;
 }
+
+.chat-bubble .select-wrap select:focus {
+    border-color: #6a5bc2; /* 포커스된 경우 보더 색상 변경 */
+}
+
+.chat-bubble .select-wrap select option {
+    padding: 10px 20px; /* 내부 여백 조정 */
+}
+
+.chat-bubble .select-wrap select option:first-child {
+    display: none; /* "select box" 디폴트 옵션 숨기기 */
+}
+
+.select-wrap.two {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-wrap.two .select-box {
+  width:50%;
+}
+
+
+
 
 /* checkbox / radioBTN / Switch */
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {

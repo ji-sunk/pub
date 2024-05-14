@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- 뷰포트 정의 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>chtatbot</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -122,7 +122,7 @@
 
                             <div class="user-msg slide-type">
                                 <div class="scroll_x">
-                                    <ul>
+                                    <ul class="slide-card">
                                         <li class="chat-bubble card-bdr-type" id="product1">
                                             <strong>하자보증보험</strong>
                                             <span>하자보수 의무 이행을 보증하기위한 하자 보증을 대신하는 상품입니다.</span>
@@ -132,6 +132,11 @@
                                             <strong>지급보증보험</strong>
                                             <span>계약과 관련된 다양한 지급보증금을 대신하는 보증 상품입니다.</span>
                                             <a href="#none" class="btn-type1" onclick="toggleProduct('product2')">상품보러가기</a>
+                                        </li>
+                                        <li class="chat-bubble card-bdr-type" id="product3">
+                                            <strong>지급보증보험</strong>
+                                            <span>계약과 관련된 다양한 지급보증금을 대신하는 보증 상품입니다.</span>
+                                            <a href="#none" class="btn-type1" onclick="toggleProduct('product3')">상품보러가기</a>
                                         </li>
                                     </ul>
                                     <!-- Add more product cards here -->
@@ -220,7 +225,7 @@
                                     </div>  
                                     <!-- 펼쳐보기/접기 버튼 -->
                                     <a href="#none" class="btn_more">
-                                        <span>펼쳐보기 더보기</span>
+                                        <span class="blind">펼쳐보기</span>
                                         <img src="./img/arrow_down.svg" width="20px" height="20px" alt="">
                                     </a>
                                     <!-- //펼쳐보기/접기 버튼 -->
@@ -235,9 +240,25 @@
                             </div>
                             <div class="user-msg">
                                 <div class="chat-bubble">
-                                    <div class="txt_more_type txt_area">
+                                    <div class="txt_area">
                                         <strong class="txt_tit">시/도를 선택해주세요.</strong>
                                         <p>※ 지점 최대 17개</p>
+                                        <div class="select-wrap two">
+                                            <div class="select-box">
+                                            <select>
+                                                <option>select box</option>
+                                                <option>option 1</option>
+                                                <option>option 2</option>
+                                                <option>option 3</option>
+                                                <option>option 4</option>
+                                                <option>option 5</option>
+                                                <option>option 6</option>
+                                                <option>option 7</option>
+                                                <option>option 8</option>
+                                                <option>option 9</option>
+                                                <option>option 10</option>
+                                            </select>
+                                        </div>
                                         <div class="select-box">
                                             <select>
                                                 <option>select box</option>
@@ -245,16 +266,28 @@
                                                 <option>option 2</option>
                                                 <option>option 3</option>
                                                 <option>option 4</option>
+                                                <option>option 5</option>
+                                                <option>option 6</option>
+                                                <option>option 7</option>
+                                                <option>option 8</option>
+                                                <option>option 9</option>
+                                                <option>option 10</option>
+                                            </select>
+                                        </div>
+                                        </div>
+                                        <div class="select-box">
+                                            <select>
+                                                <option>select box</option>
+                                                <option>option 1</option>
+                                                <option>option 2</option>
+                                                <option>option 3</option>
                                                 <option>option 4</option>
-                                                <option>option 4</option>
-                                                <option>option 4</option>
-                                                <option>option 4</option>
-                                                <option>option 4</option>
-                                                <option>option 4</option>
-                                                <option>option 4</option>
-                                                <option>option 4</option>
-                                                <option>option 4</option>
-                                                <option>option 4</option>
+                                                <option>option 5</option>
+                                                <option>option 6</option>
+                                                <option>option 7</option>
+                                                <option>option 8</option>
+                                                <option>option 9</option>
+                                                <option>option 10</option>
                                             </select>
                                         </div>
                                         <div class="select-box">
@@ -268,7 +301,6 @@
                                         </div>
                                     </div>    
                                 </div>
-                                
                                 <p class="time">오전 12:10</p>
                             </div>
                         </div>
