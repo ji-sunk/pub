@@ -72,7 +72,7 @@
 	color: #003476;
 }
 .header span {
-	font-size:1.1rem;
+	font-size: 0.8125em;
 }
 
 /* 채팅영역 시작 */
@@ -236,7 +236,6 @@
 	float:left;
 	margin-top:5px;
 	padding:1rem;
-	
 	max-width:100%;
 	height:auto;
 	background:var(--white);
@@ -274,6 +273,7 @@
 .user2 .user-msg .chat-bubble {
 	display: flex;
 	justify-content: center;
+	font-size: .9375rem;
 	color:var(--white);
 	background:var(--blueGreen);
 	/* background:var(--purple); */
@@ -292,7 +292,7 @@
 	border-top:1px solid #999;
 }
 .chat-input {
-	padding: 1rem;
+	padding: 1.1rem;
     background-color: var(--white);
 	/* position:fixed; */
 	bottom:0px;
@@ -602,9 +602,9 @@
 
 
 /*  */
-#chat-type-case01, #chat-type-case02, #chat-type-case03, #chat-type-case04 {	
+/* #chat-type-case01, #chat-type-case02, #chat-type-case03, #chat-type-case04 {	
 	display:none;
-}
+} */
 
 .pos_fixed {
 	width:100%;

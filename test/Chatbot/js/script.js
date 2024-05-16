@@ -98,10 +98,6 @@ function scrollTopFunction() {
 //     window.scrollTo(0, document.body.scrollHeight);
 // }
 
-
-
-
-
 //*******************layer popup*****************************
 
 // 상담 종료하기 버튼 클릭 시 layer popup 띄우기
@@ -126,44 +122,107 @@ document.querySelector('.btn-type-cancel').addEventListener('click', function() 
 
 
 //******************* 슬라이드 *****************************
-var toggleButtons = document.querySelectorAll(".toggle-button");
-toggleButtons.forEach(function (button) {
-  button.addEventListener("click", function () {
-    var productId = this.getAttribute("data-product");
-    toggleProduct(productId);
+
+document.addEventListener("DOMContentLoaded", function () {
+  // 초기 카드 활성화
+  document.querySelector(".slide-card li:first-child").classList.add("active");
+
+  // 동그란 버튼 생성 및 이벤트 처리
+  const cards = document.querySelectorAll(".slide-card li");
+  const dotsContainer = document.querySelector(".dot-container");
+
+  cards.forEach((card, index) => {
+    const dot = document.createElement("span");
+    dot.classList.add("dot");
+    dot.setAttribute("data-index", index); // 인덱스를 데이터 속성에 저장
+    dotsContainer.appendChild(dot);
+  });
+
+  // 동그란 버튼 클릭 시 카드 활성화
+  const dots = document.querySelectorAll(".dot");
+  dots.forEach((dot) => {
+    dot.addEventListener("click", function () {
+      // 클릭한 dot의 인덱스 가져오기
+      const index = parseInt(dot.getAttribute("data-index"));
+
+      // 모든 카드 및 동그라미 비활성화
+      cards.forEach((card) => card.classList.remove("active"));
+      dots.forEach((dot) => dot.classList.remove("active"));
+
+      // 클릭한 인덱스에 해당하는 카드와 동그라미 활성화
+      cards[index].classList.add("active");
+      dots[index].classList.add("active");
+    });
   });
 });
 
-function toggleProduct(productId) {
-  var product = document.getElementById(productId);
-  var isActive = product.classList.contains("active");
+document.addEventListener("DOMContentLoaded", function () {
+  // 초기 카드 활성화
+  const cards = document.querySelectorAll(".slide-card li");
+  const dots = document.querySelectorAll(".dot");
+  cards[0].classList.add("active");
+  dots[0].classList.add("active");
 
-  // Remove active class from all products
-  var allProducts = document.querySelectorAll(".card-bdr-type");
-  allProducts.forEach(function (prod) {
-    prod.classList.remove("active");
+  // 동그라미 버튼 클릭 시 카드 이동
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", function () {
+      // 모든 카드 및 동그라미 비활성화
+      cards.forEach((card) => card.classList.remove("active"));
+      dots.forEach((dot) => dot.classList.remove("active"));
+
+      // 클릭한 dot의 인덱스에 해당하는 카드와 dot 활성화
+      cards[index].classList.add("active");
+      dots[index].classList.add("active");
+    });
   });
+});
 
-  // Add active class to the selected product
-  if (!isActive) {
-    product.classList.add("active");
-  }
 
-  // Update scroll position
-  updateScroll();
-}
 
-function updateScroll() {
-  var scrollContainer = document.querySelector(".scroll_x");
-  var expandedProducts = document.querySelectorAll(".card-bdr-type.active");
-  var scrollWidth = 0;
 
-  expandedProducts.forEach(function (product) {
-    scrollWidth += product.offsetWidth;
-  });
 
-  scrollContainer.style.transform = "translateX(-" + scrollWidth + "px)";
-}
+
+
+
+
+// var toggleButtons = document.querySelectorAll(".toggle-button");
+// toggleButtons.forEach(function (button) {
+//   button.addEventListener("click", function () {
+//     var productId = this.getAttribute("data-product");
+//     toggleProduct(productId);
+//   });
+// });
+
+// function toggleProduct(productId) {
+//   var product = document.getElementById(productId);
+//   var isActive = product.classList.contains("active");
+
+//   // Remove active class from all products
+//   var allProducts = document.querySelectorAll(".card-bdr-type");
+//   allProducts.forEach(function (prod) {
+//     prod.classList.remove("active");
+//   });
+
+//   // Add active class to the selected product
+//   if (!isActive) {
+//     product.classList.add("active");
+//   }
+
+//   // Update scroll position
+//   updateScroll();
+// }
+
+// function updateScroll() {
+//   var scrollContainer = document.querySelector(".scroll_x");
+//   var expandedProducts = document.querySelectorAll(".card-bdr-type.active");
+//   var scrollWidth = 0;
+
+//   expandedProducts.forEach(function (product) {
+//     scrollWidth += product.offsetWidth;
+//   });
+
+//   scrollContainer.style.transform = "translateX(-" + scrollWidth + "px)";
+// }
 
 
 
@@ -206,9 +265,9 @@ function updateScroll() {
 
 // 보험금 청구 버튼을 클릭했을 때 이벤트를 처리하는 함수
 function showChatTypeCase01() {
-    // chat-type-case01 요소를 가져옵니다.
+    // chat-type-case01 요소를 가져옴
     const chatTypeCase01 = document.getElementById("chat-type-case01");
-    // chat-type-case01 요소를 보여줍니다.
+    // chat-type-case01 요소 노출
     chatTypeCase01.style.display = "block";
 }
 
@@ -219,9 +278,9 @@ insuranceClaimButton.addEventListener('click', showChatTypeCase01);
 
 // 보험증권 버튼을 클릭했을 때 이벤트를 처리하는 함수
 function showChatTypeCase02() {
-    // chat-type-case02 요소를 가져옵니다.
+    // chat-type-case02 요소를 가져옴
     const chatTypeCase02 = document.getElementById("chat-type-case02");
-    // chat-type-case02 요소를 보여줍니다.
+    // chat-type-case02 요소를 노출
     chatTypeCase02.style.display = "block";
 }
 
