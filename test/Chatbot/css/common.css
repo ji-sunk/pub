@@ -207,11 +207,11 @@ address{ font-style: unset;}
   font-size:13px;
   font-weight: 600;
   text-align: center;
-  color:var(--purple-text);
+  color:var(--white);
   white-space: nowrap;
   border-radius: .5rem;
   border:1px solid #6a5bc2;
-  background-color: #f1f2fd;
+  background-color: var(--purple-text);
 }
 
 .btn-type-close {
@@ -227,8 +227,6 @@ address{ font-style: unset;}
   background-color: #f1f2fd;
 
 }
-
-
 .layer-popup {
   display:none;
 }

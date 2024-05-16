@@ -62,7 +62,7 @@
 
 .header h1 {
 	text-indent: -999%;
-	background: url(../img/logo_sgi.svg) left center / 100% no-repeat;
+	background: url(../img/logo_sgi.svg) left center / 100% 100% no-repeat;
 }
 
 .header h1, .header p {
