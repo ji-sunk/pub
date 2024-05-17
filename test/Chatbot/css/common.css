@@ -25,6 +25,7 @@
   --purple-text: #373e97;
 ;
 } 
+svg {width:100%; height:100%}
 img {width: 100%;}
 a {color: #fff; text-decoration: none; outline: none} 
 a:hover, a:active {text-decoration: none; color:none; background-color:none;}
@@ -108,8 +109,8 @@ address{ font-style: unset;}
 
 /* 버튼 아이콘 있는 라운드 기본형 */
 .btn-type1.ico-link {
-  padding-right: 30px;
-  /* background: url(../img/ico_arrow_sideup.svg) right 2.7rem center/ 1rem no-repeat; */
+  padding-right: 10px;
+  background: url(../img/ico_link.svg) right .7rem center/ 1rem no-repeat;
 }
 
 /* .btn-type1.fixed {
