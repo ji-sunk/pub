@@ -120,6 +120,59 @@
 }
 
 
+
+
+
+
+
+/* Ensure scroll_x has overflow properties */
+.scroll_x {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.slide-card {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.slide-card li {
+    min-width: 300px;
+    margin-right: 10px;
+}
+
+.dot-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+
+
+
+
+
+
+
+
+
+
 .SGI_txt_bg {
 	padding:0 1rem;
 	width: 100%;

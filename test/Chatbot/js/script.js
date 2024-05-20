@@ -123,108 +123,100 @@ document.querySelector('.btn-type-cancel').addEventListener('click', function() 
 
 //******************* 슬라이드 *****************************
 
-document.addEventListener("DOMContentLoaded", function () {
-  // 초기 카드 활성화
-  document.querySelector(".slide-card li:first-child").classList.add("active");
+// document.addEventListener("DOMContentLoaded", function () {
+//   // 초기 카드 활성화
+//   document.querySelector(".slide-card li:first-child").classList.add("active");
 
-  // 동그란 버튼 생성 및 이벤트 처리
-  const cards = document.querySelectorAll(".slide-card li");
-  const dotsContainer = document.querySelector(".dot-container");
+//   // 동그란 버튼 생성 및 이벤트 처리
+//   const cards = document.querySelectorAll(".slide-card li");
+//   const dotsContainer = document.querySelector(".dot-container");
 
-  cards.forEach((card, index) => {
-    const dot = document.createElement("span");
-    dot.classList.add("dot");
-    dot.setAttribute("data-index", index); // 인덱스를 데이터 속성에 저장
-    dotsContainer.appendChild(dot);
-  });
+//   cards.forEach((card, index) => {
+//     const dot = document.createElement("span");
+//     dot.classList.add("dot");
+//     dot.setAttribute("data-index", index); // 인덱스를 데이터 속성에 저장
+//     dotsContainer.appendChild(dot);
+//   });
 
-  // 동그란 버튼 클릭 시 카드 활성화
-  const dots = document.querySelectorAll(".dot");
-  dots.forEach((dot) => {
-    dot.addEventListener("click", function () {
-      // 클릭한 dot의 인덱스 가져오기
-      const index = parseInt(dot.getAttribute("data-index"));
+//   // 동그란 버튼 클릭 시 카드 활성화
+//   const dots = document.querySelectorAll(".dot");
+//   dots.forEach((dot) => {
+//     dot.addEventListener("click", function () {
+//       // 클릭한 dot의 인덱스 가져오기
+//       const index = parseInt(dot.getAttribute("data-index"));
 
-      // 모든 카드 및 동그라미 비활성화
-      cards.forEach((card) => card.classList.remove("active"));
-      dots.forEach((dot) => dot.classList.remove("active"));
+//       // 모든 카드 및 동그라미 비활성화
+//       cards.forEach((card) => card.classList.remove("active"));
+//       dots.forEach((dot) => dot.classList.remove("active"));
 
-      // 클릭한 인덱스에 해당하는 카드와 동그라미 활성화
-      cards[index].classList.add("active");
-      dots[index].classList.add("active");
-    });
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  // 초기 카드 활성화
-  const cards = document.querySelectorAll(".slide-card li");
-  const dots = document.querySelectorAll(".dot");
-  cards[0].classList.add("active");
-  dots[0].classList.add("active");
-
-  // 동그라미 버튼 클릭 시 카드 이동
-  dots.forEach((dot, index) => {
-    dot.addEventListener("click", function () {
-      // 모든 카드 및 동그라미 비활성화
-      cards.forEach((card) => card.classList.remove("active"));
-      dots.forEach((dot) => dot.classList.remove("active"));
-
-      // 클릭한 dot의 인덱스에 해당하는 카드와 dot 활성화
-      cards[index].classList.add("active");
-      dots[index].classList.add("active");
-    });
-  });
-});
-
-
-
-
-
-
-
-
-
-// var toggleButtons = document.querySelectorAll(".toggle-button");
-// toggleButtons.forEach(function (button) {
-//   button.addEventListener("click", function () {
-//     var productId = this.getAttribute("data-product");
-//     toggleProduct(productId);
+//       // 클릭한 인덱스에 해당하는 카드와 동그라미 활성화
+//       cards[index].classList.add("active");
+//       dots[index].classList.add("active");
+//     });
 //   });
 // });
 
-// function toggleProduct(productId) {
-//   var product = document.getElementById(productId);
-//   var isActive = product.classList.contains("active");
+// document.addEventListener("DOMContentLoaded", function () {
+//   // 초기 카드 활성화
+//   const cards = document.querySelectorAll(".slide-card li");
+//   const dots = document.querySelectorAll(".dot");
+//   cards[0].classList.add("active");
+//   dots[0].classList.add("active");
 
-//   // Remove active class from all products
-//   var allProducts = document.querySelectorAll(".card-bdr-type");
-//   allProducts.forEach(function (prod) {
-//     prod.classList.remove("active");
+//   // 동그라미 버튼 클릭 시 카드 이동
+//   dots.forEach((dot, index) => {
+//     dot.addEventListener("click", function () {
+//       // 모든 카드 및 동그라미 비활성화
+//       cards.forEach((card) => card.classList.remove("active"));
+//       dots.forEach((dot) => dot.classList.remove("active"));
+
+//       // 클릭한 dot의 인덱스에 해당하는 카드와 dot 활성화
+//       cards[index].classList.add("active");
+//       dots[index].classList.add("active");
+//     });
 //   });
-
-//   // Add active class to the selected product
-//   if (!isActive) {
-//     product.classList.add("active");
-//   }
-
-//   // Update scroll position
-//   updateScroll();
-// }
-
-// function updateScroll() {
-//   var scrollContainer = document.querySelector(".scroll_x");
-//   var expandedProducts = document.querySelectorAll(".card-bdr-type.active");
-//   var scrollWidth = 0;
-
-//   expandedProducts.forEach(function (product) {
-//     scrollWidth += product.offsetWidth;
-//   });
-
-//   scrollContainer.style.transform = "translateX(-" + scrollWidth + "px)";
-// }
+// });
 
 
+
+
+
+
+$(document).ready(function () {
+  // 초기 카드 활성화
+  $(".slide-card li:first-child").addClass("active");
+
+  // 동그란 버튼 생성 및 이벤트 처리
+  const cards = $(".slide-card li");
+  const dotsContainer = $(".dot-container");
+
+  cards.each(function (index) {
+    const dot = $("<span>").addClass("dot").attr("data-index", index);
+    if (index === 0) dot.addClass("active");
+    dotsContainer.append(dot);
+  });
+
+  // 동그란 버튼 클릭 시 카드 활성화
+  $(".dot").on("click", function () {
+    const index = $(this).data("index");
+
+    // 모든 카드 및 동그라미 비활성화
+    cards.removeClass("active");
+    $(".dot").removeClass("active");
+
+    // 클릭한 인덱스에 해당하는 카드와 동그라미 활성화
+    $(cards[index]).addClass("active");
+    $(this).addClass("active");
+
+    // 카드로 슬라이드 이동
+    $(".scroll_x").animate(
+      {
+        scrollLeft: $(cards[index]).position().left,
+      },
+      100
+    );
+  });
+});
 
 
 

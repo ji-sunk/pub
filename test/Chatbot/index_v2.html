@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- 뷰포트 정의 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-    <title>chtatbot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=2, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>ChtatBot</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -118,6 +118,8 @@
                                 <p class="time">오전 12:10</p>
                             </div>
                         </div>
+
+
                         <!-- 보험 케이스 -->
                         <div id="chat-type-case02">
                             <div class="mngr-profile" id="chat_move2">
@@ -138,6 +140,11 @@
                                             <a href="#none" class="btn-type1">상품보러가기</a>
                                         </li>
                                         <li class="chat-bubble card-bdr-type" id="product3">
+                                            <strong>지급보증보험</strong>
+                                            <span>계약과 관련된 다양한 지급보증금을 대신하는 보증 상품입니다.</span>
+                                            <a href="#none" class="btn-type1">상품보러가기</a>
+                                        </li>
+                                        <li class="chat-bubble card-bdr-type" id="product4">
                                             <strong>지급보증보험</strong>
                                             <span>계약과 관련된 다양한 지급보증금을 대신하는 보증 상품입니다.</span>
                                             <a href="#none" class="btn-type1">상품보러가기</a>
@@ -185,7 +192,8 @@
                             </div>
                         </div>
 
-                        <div id="chat-type-case04" style="display:block">
+                        <!-- 지점 위치 안내 -->
+                        <div id="chat-type-case04">
                             <div class="chat-user user2">
                                 <div class="user-msg">
                                     <div class="chat-bubble">
@@ -297,6 +305,95 @@
                                 <p class="time">오전 12:10</p>
                             </div>
                         </div>
+
+                        <!-- 서식출력 발급 문의 -->
+                        <div id="chat-type-case05">
+                            <div class="chat-user user2" id="#chat_move5">
+                                <div class="user-msg">
+                                    <div class="chat-bubble">
+                                        증명서 서식출력 및 발급문의
+                                    </div>
+                                    <p class="time">오전 12:10</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mngr-profile">
+                                <img src="./img/user1.jpg" alt="">
+                                <span class="mngr-name">HelpDesk</span>
+                            </div>
+                            <div class="user-msg">
+                                <div class="chat-bubble">
+                                    <p>고객님, 자세한 안내를 위해<br>
+                                        선택해주세요.
+                                    </p>
+                                    <button class="btn-type1 ico-link" type="button">서식 출력</button>
+                                    <button class="btn-type1" type="button">발급 및 이력 문의</button>
+                                </div>
+                                <p class="time">오전 12:10</p>
+                            </div>
+
+
+                            <div class="chat-user user2" id="#chat_move1">
+                                <div class="user-msg">
+                                    <div class="chat-bubble">
+                                        서식출력
+                                    </div>
+                                    <p class="time">오전 12:10</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mngr-profile">
+                                <img src="./img/user1.jpg" alt="">
+                                <span class="mngr-name">HelpDesk</span>
+                            </div>
+                            <div class="user-msg">
+                                <div class="chat-bubble">
+                                    <p>아래의 버튼에서 바로 서식을 확인 할 수 있습니다.
+                                    </p>
+                                    <button class="btn-type1 ico-link" type="button">
+                                        금융거래 상황확인원 서식
+                                        <p>바로가기</p>
+                                    </button>
+                                    <button class="btn-type1 ico-link" type="button">
+                                        금융거래조회서 서식
+                                        <p>바로가기</p>
+                                    </button>
+                                    <button class="btn-type1 ico-link" type="button">
+                                        보험료 납입증명서 서식
+                                        <p>바로가기</p>
+                                    </button>
+                                </div>
+                                <p class="time">오전 12:10</p>
+                            </div>
+                        </div>
+                        
+                        <!-- 상담원 연결 -->
+                        <div id="chat-type-case06">
+                            <div class="chat-user user2" id="#chat_move6">
+                                <div class="user-msg">
+                                    <div class="chat-bubble">
+                                        채팅 상담원 연결해줘
+                                    </div>
+                                    <p class="time">오전 12:10</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mngr-profile">
+                                <img src="./img/user1.jpg" alt="">
+                                <span class="mngr-name">HelpDesk</span>
+                            </div>
+                            <div class="user-msg">
+                                <div class="chat-bubble">
+                                    <p>상담원 연결 안내드립니다.<br>
+                                        원하시는 서비르를 선택해주세요.
+                                    </p>
+                                    <button class="btn-type1 ico-link" type="button">채팅상담원연결</button>
+                                    <button class="btn-type1" type="button">전화상담원연결</button>
+                                </div>
+                                <p class="time">오전 12:10</p>
+                            </div>
+                        </div>
+
                     </div>
                 
                     <!-- user1 message 입력중 -->
@@ -353,12 +450,14 @@
                         <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
                         </form>      
                     </div> -->
+
+                    
                     
                 </div>
             </div>
-           
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
