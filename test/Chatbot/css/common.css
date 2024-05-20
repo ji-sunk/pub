@@ -297,7 +297,7 @@ select option:checked {
     width: 100%;
     padding: 6px 20px; /* 내부 여백 조정 */
     font-size: 16px;
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
     border-radius: 20px; /* 살짝 라운드된 보더 반경 */
     appearance: none;
     background-color: #fff;

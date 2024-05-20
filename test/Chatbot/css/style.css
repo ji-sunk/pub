@@ -173,6 +173,17 @@
 
 
 
+
+/*  */
+
+
+
+
+
+
+
+
+
 .SGI_txt_bg {
 	padding:0 1rem;
 	width: 100%;
@@ -502,22 +513,22 @@
     color:var(--purple);
 }
 .chat-btn-box.set6 li:nth-child(1) a {
-	background: url(../img/btn_chat_ico01.svg) center top 18px / 50% 50% no-repeat;
+	background: url(../img/btn_chat_ico01.svg) center top 18px / 100% 50% no-repeat;
 }
 .chat-btn-box.set6 li:nth-child(2) a {
-	background: url(../img/btn_chat_ico02.svg) center top 18px / 50% 50% no-repeat;
+	background: url(../img/btn_chat_ico02.svg) center top 18px / 100% 50% no-repeat;
 }
 .chat-btn-box.set6 li:nth-child(3) a {
-	background: url(../img/btn_chat_ico03.svg) center top 18px / 50% 50% no-repeat;
+	background: url(../img/btn_chat_ico03.svg) center top 18px / 100% 50% no-repeat;
 }
 .chat-btn-box.set6 li:nth-child(4) a {
-	background: url(../img/btn_chat_ico04.svg) center top 18px / 50% 50% no-repeat;
+	background: url(../img/btn_chat_ico04.svg) center top 18px / 100% 50% no-repeat;
 }
 .chat-btn-box.set6 li:nth-child(5) a {
-	background: url(../img/btn_chat_ico05.svg) center top 18px / 50% 50% no-repeat;
+	background: url(../img/btn_chat_ico05.svg) center top 18px / 100% 50% no-repeat;
 }
 .chat-btn-box.set6 li:nth-child(6) a {
-	background: url(../img/btn_chat_ico06.svg) center top 10px / 50% 50% no-repeat;
+	background: url(../img/btn_chat_ico06.svg) center top 10px / 100% 50% no-repeat;
 }
 
 /* scroll BTN */
