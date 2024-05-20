@@ -214,12 +214,36 @@ $(document).ready(function () {
     // 카드로 슬라이드 이동
     $(".scroll_x").animate(
       {
-        scrollLeft: $(cards[index]).position().left,
+        scrollLeft:
+          $(cards[index]).position().left + $(".scroll_x").scrollLeft(),
       },
-      100
+      300
     );
   });
+
+  // 카드 위치에 따라 동그라미 버튼 활성화
+  $(".scroll_x").on("scroll", function () {
+    let scrollLeft = $(this).scrollLeft();
+    let containerWidth = $(this).width();
+
+    cards.each(function (index) {
+      let cardLeft = $(this).position().left + scrollLeft;
+      if (
+        cardLeft <= scrollLeft + containerWidth / 2 &&
+        cardLeft + $(this).width() > scrollLeft + containerWidth / 2
+      ) {
+        // 모든 카드 및 동그라미 비활성화
+        cards.removeClass("active");
+        $(".dot").removeClass("active");
+
+        // 현재 보이는 카드와 동그라미 활성화
+        $(this).addClass("active");
+        $(`.dot[data-index=${index}]`).addClass("active");
+      }
+    });
+  });
 });
+
 
 
 
