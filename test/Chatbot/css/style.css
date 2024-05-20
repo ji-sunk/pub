@@ -62,7 +62,7 @@
 
 .header h1 {
 	text-indent: -999%;
-	background: url(../img/logo_sgi.svg) left center / 100% 100% no-repeat;
+	background: url(../img/logo_sgi.svg) left center / 100% 80% no-repeat;
 }
 
 .header h1, .header p {
@@ -120,11 +120,6 @@
 }
 
 
-
-
-
-
-
 /* Ensure scroll_x has overflow properties */
 .scroll_x {
     display: flex;
@@ -144,11 +139,6 @@
     margin-right: 10px;
 }
 
-.dot-container {
-    text-align: center;
-    margin-top: 10px;
-}
-
 .dot {
     display: inline-block;
     width: 10px;
@@ -164,26 +154,7 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /*  */
-
-
-
-
-
-
-
-
-
 .SGI_txt_bg {
 	padding:0 1rem;
 	width: 100%;
@@ -546,17 +517,19 @@
 }
 
 .scroll-top-btn {
-	/* display:none; */
+	display:none;
 	z-index: 20;
     bottom: 100px;
     right: 1rem;
     background-color: rgba(128, 128, 128, 0.4);
     color: var(--black); 
 }
-
+.scroll-top-btn.show {
+	display:block;
+}
 .scroll-bottom-btn {
-	z-index: 20;
-    bottom: 20px;
+	z-index: 50;
+    bottom: 100px;
     right: 1rem;
     background-color: rgba(128, 128, 128, 0.4); 
     color: var(--white); 
@@ -582,22 +555,6 @@
 .active {
   background-color: #717171;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -766,3 +723,55 @@
 		/* transform:scale(0.9); */
 	}
 }
+
+
+
+  /* Custom styles for the slider */
+
+/* .slick-dotted.slick-slider {
+	margin:0 0 20px 10px;
+}
+
+.slick-dotted.slick-slider .chat-bubble.card-bdr-type {
+	width: 10% !important;
+	display: list-item;
+    margin-right: 10px;
+}
+
+    .slide-card {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+
+    .chat-bubble {
+      background: #f1f1f1;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .slick-dots {
+      display: flex !important;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .slick-dots li {
+      margin: 0 5px;
+    }
+
+    .slick-dots li button {
+      font-size: 0;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #ccc;
+    }
+
+    .slick-dots li.slick-active button {
+      background: #000;
+    }
+ */
+
+

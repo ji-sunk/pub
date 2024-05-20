@@ -69,34 +69,41 @@ txt.addEventListener("keydown", (e) => {
 });
 
 
-// 버튼 요소
-const scrollTopButton = document.querySelector(".scroll-top-btn");
-const scrollBottomButton = document.querySelector(".scroll-bottom-btn");
+// 사이드 스크롤 탑/바텀 버튼 요소
+  const scrollTopButton = document.querySelector(".scroll-top-btn");
+  const scrollBottomButton = document.querySelector(".scroll-bottom-btn");
 
-// 페이지가 스크롤될 때 버튼 show / hide를 처리하는 함수
-function handleScroll() {
-    // 현재 스크롤 위치가 20px보다 큰 경우에만 Top 버튼
+  // 스크롤 Top 버튼을 클릭했을 때의 함수
+  function scrollTopFunction() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  // 스크롤 Bottom 버튼을 클릭했을 때의 함수
+  function scrollBottomFunction() {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth'
+    });
+  }
+
+  // 페이지가 스크롤될 때 버튼 show / hide를 처리하는 함수
+  function handleScroll() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollTopButton.classList.add("show");
+      scrollTopButton.classList.add("show");
+      scrollBottomButton.style.display = 'none';
     } else {
-        scrollTopButton.classList.remove("show");
+      scrollTopButton.classList.remove("show");
+      scrollBottomButton.style.display = 'inline-block';
     }
-}
+  }
+
+  // 스크롤 이벤트 리스너 추가
+  window.addEventListener("scroll", handleScroll);
 
 
-// 페이지가 스크롤될 때 handleScroll 함수
-window.addEventListener('scroll', handleScroll);
-
-// Top 버튼을 클릭하면 페이지를 상단으로 스크롤
-function scrollTopFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-// Bottom 버튼을 클릭하면 페이지를 하단으로 스크롤
-// function scrollBottomFunction() {
-//     window.scrollTo(0, document.body.scrollHeight);
-// }
 
 //*******************layer popup*****************************
 
@@ -176,10 +183,6 @@ document.querySelector('.btn-type-cancel').addEventListener('click', function() 
 //     });
 //   });
 // });
-
-
-
-
 
 
 $(document).ready(function () {

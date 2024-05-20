@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- 뷰포트 정의 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=2, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>ChtatBot</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -105,6 +105,14 @@
                                         <button class="btn-type1" type="button">보험금 청구 절차</button>
                                     </div>
                                 </div>
+                                <div class="scroll-x-item">
+                                    <div class="btn-wrap">
+                                        <button class="btn-type1" type="button">보험금 청구 취소</button>
+                                        <button class="btn-type1" type="button">보험금 청구 절차1</button>
+                                        <button class="btn-type1" type="button">보험금 청구 절차2</button>
+                                        <button class="btn-type1" type="button">보험금 청구 절차3</button>
+                                    </div>
+                                </div>
                                 <div class="scroll-x-item wd100">
                                     <div class="btn-wrap">
                                         <button class="btn-type1" type="button">보험금 청구 취소</button>
@@ -118,7 +126,8 @@
                                 <p class="time">오전 12:10</p>
                             </div>
                         </div>
-                       
+
+
                         <!-- 보험 케이스 -->
                         <div id="chat-type-case02">
                             <div class="mngr-profile" id="chat_move2">
@@ -128,27 +137,27 @@
                             <div class="user-msg slide-type">
                                 <div class="scroll_x">
                                     <ul class="slide-card">
-                                        <li class="chat-bubble card-bdr-type" id="product1">
+                                        <li class="chat-bubble card-bdr-type" id="product0" data-value="0">
                                             <strong>하자보증보험</strong>
                                             <span>하자보수 의무 이행을 보증하기위한 하자 보증을 대신하는 상품입니다.</span>
                                             <a href="#none" class="btn-type1">상품보러가기</a>
                                         </li>
-                                        <li class="chat-bubble card-bdr-type" id="product2">
+                                        <li class="chat-bubble card-bdr-type" id="product1" data-value="1">
                                             <strong>지급보증보험</strong>
                                             <span>계약과 관련된 다양한 지급보증금을 대신하는 보증 상품입니다.</span>
                                             <a href="#none" class="btn-type1">상품보러가기</a>
                                         </li>
-                                        <li class="chat-bubble card-bdr-type" id="product3">
+                                        <li class="chat-bubble card-bdr-type" id="product2" data-value="2">
                                             <strong>지급보증보험</strong>
                                             <span>계약과 관련된 다양한 지급보증금을 대신하는 보증 상품입니다.</span>
                                             <a href="#none" class="btn-type1">상품보러가기</a>
                                         </li>
-                                        <li class="chat-bubble card-bdr-type" id="product4">
+                                        <li class="chat-bubble card-bdr-type" id="product3" data-value="3">
                                             <strong>지급보증보험</strong>
                                             <span>계약과 관련된 다양한 지급보증금을 대신하는 보증 상품입니다.</span>
                                             <a href="#none" class="btn-type1">상품보러가기</a>
                                         </li>
-                                        <li class="chat-bubble card-bdr-type" id="product4">
+                                        <li class="chat-bubble card-bdr-type" id="product4" data-value="4">
                                             <strong>지급보증보험</strong>
                                             <span>계약과 관련된 다양한 지급보증금을 대신하는 보증 상품입니다.</span>
                                             <a href="#none" class="btn-type1">상품보러가기</a>
@@ -426,7 +435,7 @@
                     <!-- 스크롤 Top 버튼 -->
                     <button class="scroll-btn scroll-top-btn" onclick="scrollTopFunction()">↑</button>
                     <!-- 스크롤 Bottom 버튼 -->
-                    <!-- <button class="scroll-btn scroll-bottom-btn" onclick="scrollBottomFunction()">↓</button> -->
+                    <button class="scroll-btn scroll-bottom-btn" onclick="scrollBottomFunction()">↓</button>
                 </div>
             </div>
 
@@ -449,11 +458,12 @@
                         <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
                         </form>      
                     </div> -->
-                    
+
                 </div>
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
