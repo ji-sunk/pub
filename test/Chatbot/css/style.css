@@ -62,7 +62,7 @@
 
 .header h1 {
 	text-indent: -999%;
-	background: url(../img/logo_sgi.svg) left center / 100% 80% no-repeat;
+	background: url(../img/logo_sgi.svg) left center / 138px 25px no-repeat;
 }
 
 .header h1, .header p {
@@ -93,7 +93,7 @@
 }
 .chat-user {
 	position: relative;
-	display:grid;
+	/* display:grid; */
 }
 .user-msg.slide-type {
     max-width: 100%;
@@ -127,7 +127,7 @@
     scroll-behavior: smooth;
 }
 
-.slide-card {
+/* .slide-card {
     display: flex;
     list-style: none;
     padding: 0;
@@ -137,7 +137,7 @@
 .slide-card li {
     min-width: 300px;
     margin-right: 10px;
-}
+} */
 
 .dot {
     display: inline-block;
@@ -171,16 +171,24 @@
 .SGI_txt_bg .bg_img {
 	display: inline-flex;
     width: fit-content;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .SGI_txt_bg .txt_box {
 	padding-top:2.2rem;
 	font-family: Noto Sans KR;
-	font-size: .95rem;
+	/* font-size: .95rem; */
+	font-size: 1.2rem;
 	font-weight: 500;
 	line-height: 22px;
 	white-space: nowrap;
+}
+
+.cst-end-area {
+	text-align: center;
+	width:100%;
+	padding:10px 20px;
+	background-color:#fff;
 }
 
 
@@ -260,6 +268,7 @@
 .user-msg {
 	max-width:90%;
 	display:grid;
+	/* display:grid; */
 }
 .user-msg .chat-bubble {
 	float:left;
@@ -415,10 +424,15 @@
 }
 
 .scroll-x-item.wd100 {
-    width:250%;
+    display: inherit;
+	width:200%;
 }
+
+.scroll-x-item.wd100 button {
+    width:fit-content;
+}
+
 .scroll-x-item.wd100 .btn-wrap {
-    width:250%;
 	overflow: auto;
 }
 
@@ -558,12 +572,6 @@
 
 
 
-
-/* 채팅 버블 더보기 버튼 타입 */
-.chat-bubble .btn_more {
-
-}
-
 .txt_more_type.txt_area {
 	height:150px;
 	overflow: hidden;
@@ -622,6 +630,7 @@
 } */
 
 .pos_fixed {
+	z-index: 60;
 	width:100%;
 	position:fixed;
 	bottom:0;
@@ -773,5 +782,56 @@
       background: #000;
     }
  */
+ .chatinput.quickMenu_on {
+    position: fixed;
+    padding: 7px 0px 10px;
+    border-top: 5px solid transparent;
+    width: 100%;
+    top: 100%;
+    margin-top: -300px;
+    left: 0;
+    z-index: 1002;
+    display: block;
+    -webkit-animation: slide-in-fwd-up-show-chatinput 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-fwd-up-show-chatinput 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    transition: all .3s;
+}
+
+
+.quickMenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+	background-color:#fff;
+}
+
+.quickMenu.show {
+    max-height: 500px;
+}
+
+.quickMenu {
+    display: none;
+}
+
+.quickMenu.show {
+    display: block;
+}
+
+
+/* 채팅 버블 더보기 버튼 타입 */
+.chat-bubble .btn_more {
+	/* display: none; */
+}
+
+/* 추가 스타일 */
+.txt_more_type.txt_area {
+    max-height: 200px; /* 처음에 보여질 높이 */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.txt_more_type.txt_area.expanded {
+    max-height: 700px; /* 확장될 최대 높이 */
+}
 
 

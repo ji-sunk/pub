@@ -1,5 +1,5 @@
 // 이미지 요소와 시스템 시간 요소
-const img = document.querySelector(".chat-input img");
+const img = document.querySelector(".chat-input .profile");
 // const sysTime = document.querySelector(".topbar-left");
 
 // 현재 시간 값 받기
@@ -291,5 +291,36 @@ function showChatTypeCase03() {
 const 
 openingLineButton = document.querySelector('.chat-btn-box.set6 li:nth-child(3) a');
 openingLineButton.addEventListener("click", showChatTypeCase03);
+
+
+//*******************퀵메뉴버튼 눌렀을 때 액션*****************************
+document.addEventListener("DOMContentLoaded", function () {
+  const quickMenuButton = document.querySelector(".quickMenu_btn");
+  const quickMenu = document.querySelector(".quickMenu");
+  const chatInputWrap = document.querySelector(".chat-input-wrap");
+
+  quickMenuButton.addEventListener("click", function (event) {
+    event.stopPropagation(); // 클릭 이벤트가 부모 요소로 전파되지 않도록 함
+    quickMenu.classList.toggle("show");
+  });
+
+  chatInputWrap.addEventListener("click", function () {
+    quickMenu.classList.remove("show");
+  });
+
+  // quickMenu 안쪽 클릭 시 이벤트 전파 방지
+  quickMenu.addEventListener("click", function (event) {
+    event.stopPropagation();
+  });
+});
+
+
+
+
+
+
+
+
+
 
 

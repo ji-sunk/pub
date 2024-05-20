@@ -104,6 +104,12 @@
                                         <button class="btn-type1" type="button">보험금 청구 취소</button>
                                         <button class="btn-type1" type="button">보험금 청구 절차</button>
                                     </div>
+                                    <!-- <div class="btn-wrap">
+                                        <button class="btn-type1" type="button">보험금 청구 취소</button>
+                                        <button class="btn-type1" type="button">보험금 청구 절차</button>
+                                        <button class="btn-type1" type="button">보험금 청구 절차</button>
+                                        <button class="btn-type1" type="button">보험금 청구 절차</button>
+                                    </div> -->
                                 </div>
                                 <div class="scroll-x-item">
                                     <div class="btn-wrap">
@@ -158,6 +164,31 @@
                                             <a href="#none" class="btn-type1">상품보러가기</a>
                                         </li>
                                         <li class="chat-bubble card-bdr-type" id="product4" data-value="4">
+                                            <strong>지급보증보험</strong>
+                                            <span>계약과 관련된 다양한 지급보증금을 대신하는 보증 상품입니다.</span>
+                                            <a href="#none" class="btn-type1">상품보러가기</a>
+                                        </li>
+                                        <li class="chat-bubble card-bdr-type" id="product5" data-value="5">
+                                            <strong>지급보증보험</strong>
+                                            <span>계약과 관련된 다양한 지급보증금을 대신하는 보증 상품입니다.</span>
+                                            <a href="#none" class="btn-type1">상품보러가기</a>
+                                        </li>
+                                        <li class="chat-bubble card-bdr-type" id="product6" data-value="6">
+                                            <strong>지급보증보험</strong>
+                                            <span>계약과 관련된 다양한 지급보증금을 대신하는 보증 상품입니다.</span>
+                                            <a href="#none" class="btn-type1">상품보러가기</a>
+                                        </li>
+                                        <li class="chat-bubble card-bdr-type" id="product7" data-value="7">
+                                            <strong>지급보증보험</strong>
+                                            <span>계약과 관련된 다양한 지급보증금을 대신하는 보증 상품입니다.</span>
+                                            <a href="#none" class="btn-type1">상품보러가기</a>
+                                        </li>
+                                        <li class="chat-bubble card-bdr-type" id="product8" data-value="8">
+                                            <strong>지급보증보험</strong>
+                                            <span>계약과 관련된 다양한 지급보증금을 대신하는 보증 상품입니다.</span>
+                                            <a href="#none" class="btn-type1">상품보러가기</a>
+                                        </li>
+                                        <li class="chat-bubble card-bdr-type" id="product9" data-value="9">
                                             <strong>지급보증보험</strong>
                                             <span>계약과 관련된 다양한 지급보증금을 대신하는 보증 상품입니다.</span>
                                             <a href="#none" class="btn-type1">상품보러가기</a>
@@ -238,6 +269,10 @@
                                             <strong class="txt_blk">영업지점121212</strong>
                                             <span class="txt_sub">보험가입, 변경, 해지, 보험금청구접수</span>
                                         </a>
+                                        <a href="#none" class="btn-type4">
+                                            <strong class="txt_blk">영업지점121212</strong>
+                                            <span class="txt_sub">보험가입, 변경, 해지, 보험금청구접수</span>
+                                        </a>
                                     </div>  
                                     <!-- 펼쳐보기/접기 버튼 -->
                                     <a href="#none" class="btn_more">
@@ -248,6 +283,7 @@
                                 </div>
                                 <p class="time">오전 12:10</p>
                             </div>
+
 
                             <!-- 시/도 선택 -->
                             <div class="mngr-profile">
@@ -437,20 +473,37 @@
                     <!-- 스크롤 Bottom 버튼 -->
                     <button class="scroll-btn scroll-bottom-btn" onclick="scrollBottomFunction()">↓</button>
                 </div>
+                <!-- 상담 종료 시 뜨는 문구 -->
+                <div class="cst-end-area">
+                    상담이 종료되었습니다. 감사합니다.
+                </div>
+                <!-- //상담 종료 시 뜨는 문구 -->
             </div>
-
+            
             <div class="pos_fixed">
-                 <div class="chat-input-wrap">
+                <div class="chat-input-wrap">
                     <div class="chat-input">
-                        <img src="img/user1.jpg">
+                        <img src="img/user1.jpg" class="profile" alt="profile">
+                        <button type="button" class="quickMenu_btn"><img src="img/btn_add.svg" alt="quickMenu Button"></button>
                         <input type="text" placeholder="메세지를 입력하세요" id="msg_txt">
                         <button for="msg_txt" type="submit" id="btn_send">
                             <span class="blind">Send</span>
-                           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.772 28.4399C17.9466 28.7964 18.3156 29.0159 18.7123 28.9991C19.1089 28.9823 19.4581 28.7325 19.602 28.3625L21.7565 22.8225L21.7566 22.8224L28.9321 4.3623C29.0722 4.00182 28.9919 3.59286 28.7258 3.31214C28.4598 3.03142 28.0558 2.92927 27.6883 3.04983L3.68828 10.9233C3.31657 11.0453 3.0501 11.3728 3.00629 11.7615C2.96248 12.1503 3.14938 12.5289 3.48462 12.7305L12.8299 18.3507L17.772 28.4399Z" fill="#3942AF" stroke="#3942AF" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
                             <path d="M12 18.5L21.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
                             </svg>
                         </button>
+                    </div>
+
+                    <div class="quickMenu">
+                        <ul class="chat-btn-box set6">
+                            <li><a href="#chat_move1" title="보험금청구 바로가기">보험금청구</a></li>
+                            <li><a href="#chat_move2" title="보증보험 바로가기">보증보험</a></li>
+                            <li><a href="#chat_move3" title="개통회선 바로가기">개통회선</a></li>
+                            <li><a href="#chat_move4" title="지점안내 바로가기">지점안내</a></li>
+                            <li><a href="#chat_move5" title="통신회선 바로가기">통신회선</a></li>
+                            <li><a href="#chat_move6" title="상담원연결 바로가기">상담원연결</a></li>
+                        </ul>
                     </div>
                     <!-- <div class="chat-input">      
                         <form>
@@ -463,7 +516,9 @@
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <!-- <script src="./js/jquery-3.7.1.min.js"></script> -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
