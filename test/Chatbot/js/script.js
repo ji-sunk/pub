@@ -244,41 +244,77 @@ $(document).ready(function () {
   });
 });
 
-
-
-
-
-
-
 //*******************펼쳐보기 /접기 버튼 *****************************
-    // 더보기 버튼을 클릭했을 때 이벤트 처리
-    document.addEventListener('DOMContentLoaded', function () {
-        // 펼쳐보기 버튼 요소 가져오기
-        const moreButton = document.querySelector('.btn_more');
-        // 더보기 텍스트 요소 가져오기
-        const moreText = document.querySelector('.txt_more_type');
 
-        // 더보기 버튼에 클릭 이벤트 리스너 추가
-        moreButton.addEventListener('click', function () {
-            // 만약 현재 텍스트가 펼쳐져 있는 상태라면
-            if (moreText.classList.contains('expanded')) {
-                // 텍스트를 다시 숨김
-                moreText.classList.remove('expanded');
-                // 버튼 텍스트 변경
-                moreButton.querySelector('span').textContent = '펼쳐보기';
-                // 화살표 아이콘을 아래로 변경
-                moreButton.querySelector('img').style.transform = 'rotate(0deg)';
-            } else {
-                // 현재 텍스트가 숨겨진 상태라면
-                // 텍스트를 펼침
-                moreText.classList.add('expanded');
-                // 버튼 텍스트 변경
-                moreButton.querySelector('span').textContent = '접기';
-                // 화살표 아이콘을 위로 변경
-                moreButton.querySelector('img').style.transform = 'rotate(180deg)';
-            }
-        });
-    })
+  document.addEventListener("DOMContentLoaded", function () {
+    // 펼쳐보기 버튼 요소 가져오기
+    const moreButton = document.querySelector(".btn_more");
+    // 더보기 텍스트 요소 가져오기
+    const moreText = document.querySelector(".more_type_area");
+    // more_box 요소 가져오기
+    const moreBox = document.querySelector(".more_box");
+    // li 요소 목록 가져오기
+    const listItems = moreBox.querySelectorAll("li");
+
+    // li가 6개 이상일 때만 펼쳐보기 버튼 표시
+    if (listItems.length >= 6) {
+      moreButton.classList.remove("hide");
+    }
+
+    // 더보기 버튼에 클릭 이벤트 리스너 추가
+    moreButton.addEventListener("click", function () {
+      // 만약 현재 텍스트가 펼쳐져 있는 상태라면
+      if (moreText.classList.contains("expanded")) {
+        // 텍스트를 다시 숨김
+        moreText.classList.remove("expanded");
+        // 버튼 텍스트 변경
+        moreButton.querySelector("span").textContent = "펼쳐보기";
+        // 화살표 아이콘을 아래로 변경
+        moreButton.querySelector("img").style.transform = "rotate(0deg)";
+      } else {
+        // 현재 텍스트가 숨겨진 상태라면
+        // 텍스트를 펼침
+        moreText.classList.add("expanded");
+        // 버튼 텍스트 변경
+        moreButton.querySelector("span").textContent = "접기";
+        // 화살표 아이콘을 위로 변경
+        moreButton.querySelector("img").style.transform = "rotate(180deg)";
+      }
+    });
+  });
+
+
+    // 더보기 버튼을 클릭했을 때 이벤트 처리
+    // document.addEventListener('DOMContentLoaded', function () {
+    //     // 펼쳐보기 버튼 요소 가져오기
+    //     const moreButton = document.querySelector('.btn_more');
+    //     // 더보기 텍스트 요소 가져오기
+    //     const moreText = document.querySelector('.more_type_area');
+
+    //     // 더보기 버튼에 클릭 이벤트 리스너 추가
+    //     moreButton.addEventListener('click', function () {
+    //         // 만약 현재 텍스트가 펼쳐져 있는 상태라면
+    //         if (moreText.classList.contains('expanded')) {
+    //             // 텍스트를 다시 숨김
+    //             moreText.classList.remove('expanded');
+    //             // 버튼 텍스트 변경
+    //             moreButton.querySelector('span').textContent = '펼쳐보기';
+    //             // 화살표 아이콘을 아래로 변경
+    //             moreButton.querySelector('img').style.transform = 'rotate(0deg)';
+    //         } else {
+    //             // 현재 텍스트가 숨겨진 상태라면
+    //             // 텍스트를 펼침
+    //             moreText.classList.add('expanded');
+    //             // 버튼 텍스트 변경
+    //             moreButton.querySelector('span').textContent = '접기';
+    //             // 화살표 아이콘을 위로 변경
+    //             moreButton.querySelector('img').style.transform = 'rotate(180deg)';
+    //         }
+    //     });
+    // })
+
+
+    
     
 //*******************test case (click evt)*****************************
 

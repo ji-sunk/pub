@@ -109,7 +109,8 @@
 }
 
 .slide-card  {
-	display:flex;
+	padding-right:10px;
+	display:inline-flex;
 	justify-content: center;
 	align-items: baseline;
 	gap:10px;
@@ -501,13 +502,13 @@
     color:var(--purple);
 }
 .chat-btn-box.set6 li:nth-child(1) a {
-	background: url(../img/btn_chat_ico01.svg) center top 18px / 90% 50% no-repeat;
+	background: url(../img/btn_chat_ico01.svg) center top 18px / 100% 50% no-repeat;
 }
 .chat-btn-box.set6 li:nth-child(2) a {
-	background: url(../img/btn_chat_ico02.svg) center top 18px / 90% 50% no-repeat;
+	background: url(../img/btn_chat_ico02.svg) center top 18px / 100% 50% no-repeat;
 }
 .chat-btn-box.set6 li:nth-child(3) a {
-	background: url(../img/btn_chat_ico03.svg) center top 18px / 90% 50% no-repeat;
+	background: url(../img/btn_chat_ico03.svg) center top 18px / 100% 50% no-repeat;
 }
 .chat-btn-box.set6 li:nth-child(4) a {
 	background: url(../img/btn_chat_ico04.png) center top 18px / 45% 50% no-repeat;
@@ -573,19 +574,18 @@
   background-color: #717171;
 }
 
-
-
-.txt_more_type.txt_area {
-	height:150px;
-	overflow: hidden;
-}
-
-.chat-bubble .txt_more_type * {
+.chat-bubble .more_type_area * {
 	color:var(--black);
 }
-.txt_more_type {
-	text-align: center;
+
+/* 추가 스타일 */
+.more_type_area.txt_area {
+	max-height:360px;
+	height:fit-content;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
 }
+
 .txt_area {
 	text-align: center;
 }
@@ -593,7 +593,7 @@
 .txt_area .txt_blk {
 	display:block;
 }
-.txt_more_type.expanded {
+.more_type_area.expanded {
 	/* display:grid;
 	justify-content: center;
 	align-items: center;
@@ -625,10 +625,7 @@
 	font-weight: 700;
 	color:var(--black);
 }
-
-
-/*  */
-/* #chat-type-case01, #chat-type-case02, #chat-type-case03, #chat-type-case04 {	
+/* #chat-type-case01, #chat-type-case02, #chat-type-case03, #chat-type-case04, #chat-type-case05, #chat-type-case06 {	
 	display:none;
 } */
 
@@ -822,24 +819,7 @@
 
 
 /* 채팅 버블 더보기 버튼 타입 */
-.chat-bubble .btn_more {
-	/* display: none; */
-}
-
-/* 추가 스타일 */
-.txt_more_type.txt_area {
-    max-height: 200px; /* 처음에 보여질 높이 */
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-}
-
-.txt_more_type.txt_area.expanded {
-    max-height: 700px; /* 확장될 최대 높이 */
-}
-
-
-
-
-
-/*  */
+/* .chat-bubble .btn_more {
+	display: none;
+} */
 

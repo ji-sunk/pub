@@ -139,7 +139,7 @@ address{ font-style: unset;}
 }
 
 .btn-type1.disabled:hover {
-  border:1px solid #ced1ea;
+  border:1px solid #929292;;
   background-color: #929292;
   color:#000;
 }
