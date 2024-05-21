@@ -130,6 +130,24 @@ address{ font-style: unset;}
   gap: 5px;
 }
 /* 버튼 아이콘 없는 라운드 기본형 */
+
+.btn-type1.disabled {
+  opacity: 0.65; 
+  cursor: not-allowed;
+  background-color: #929292;
+  color:#000;
+}
+
+.btn-type1.disabled:hover {
+  border:1px solid #ced1ea;
+  background-color: #929292;
+  color:#000;
+}
+.btn-type1.disabled:focus {
+  background-color: #929292;
+  color:#000;
+}
+
 .btn-type1 {
   margin-top:5px;
   padding:6px 10px;

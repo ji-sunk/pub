@@ -413,8 +413,6 @@
 	font-weight: 400;
 	color:#949494;
 }
-
-
 .scroll-x-item {
     display: inline-flex;
     white-space: nowrap;
@@ -424,8 +422,10 @@
 }
 
 .scroll-x-item.wd100 {
-    display: inherit;
-	width:200%;
+    display: inline-flex;
+    position: relative;
+    width: calc(200% - 20px);
+    height: 40px;
 }
 
 .scroll-x-item.wd100 button {
@@ -433,7 +433,10 @@
 }
 
 .scroll-x-item.wd100 .btn-wrap {
-	overflow: auto;
+	position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: flex-start;
 }
 
 .scroll_x {
@@ -507,13 +510,13 @@
 	background: url(../img/btn_chat_ico03.svg) center top 18px / 90% 50% no-repeat;
 }
 .chat-btn-box.set6 li:nth-child(4) a {
-	background: url(../img/btn_chat_ico04.svg) center top 18px / 90% 50% no-repeat;
+	background: url(../img/btn_chat_ico04.png) center top 18px / 45% 50% no-repeat;
 }
 .chat-btn-box.set6 li:nth-child(5) a {
-	background: url(../img/btn_chat_ico05.svg) center top 18px / 90% 50% no-repeat;
+	background: url(../img/btn_chat_ico05.png) center top 18px / 45% 50% no-repeat;
 }
 .chat-btn-box.set6 li:nth-child(6) a {
-	background: url(../img/btn_chat_ico06.svg) center top 10px / 90% 50% no-repeat;
+	background: url(../img/btn_chat_ico06.png) center top 10px / 45% 50% no-repeat;
 }
 
 /* scroll BTN */
