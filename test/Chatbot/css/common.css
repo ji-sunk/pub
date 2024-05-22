@@ -251,7 +251,7 @@ address{ font-style: unset;}
 }
 
 .dim_bg {
-  z-index: 50;
+  z-index: 90;
   position: fixed;
   width:100%;
   height:100%;
@@ -533,13 +533,6 @@ select::-webkit-scrollbar-thumb:hover {
 }
 
 
-
-
-
-
-
-
-
 /* .control-group {
      display: inline-block;
      vertical-align: top;
@@ -669,3 +662,32 @@ select::-webkit-scrollbar-thumb:hover {
      border-top-color: #ccc;
 } */
  
+/* 스와이퍼 */
+ .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+
+.swiper-horizontal {
+  position: relative;
+}
+.swiper-container {
+  width:90%;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom:10px !important;
+  position: inherit !important;
+}

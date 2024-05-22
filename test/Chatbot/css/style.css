@@ -182,7 +182,7 @@
 	font-size: 1.2rem;
 	font-weight: 500;
 	line-height: 22px;
-	white-space: nowrap;
+	/* white-space: nowrap; */
 }
 
 .cst-end-area {
@@ -511,13 +511,13 @@
 	background: url(../img/btn_chat_ico03.svg) center top 18px / 100% 50% no-repeat;
 }
 .chat-btn-box.set6 li:nth-child(4) a {
-	background: url(../img/btn_chat_ico04.png) center top 18px / 45% 50% no-repeat;
+	background: url(../img/btn_chat_ico04.svg) center top 18px / 100% 50% no-repeat;
 }
 .chat-btn-box.set6 li:nth-child(5) a {
-	background: url(../img/btn_chat_ico05.png) center top 18px / 45% 50% no-repeat;
+	background: url(../img/btn_chat_ico05.svg) center top 18px / 100% 50% no-repeat;
 }
 .chat-btn-box.set6 li:nth-child(6) a {
-	background: url(../img/btn_chat_ico06.png) center top 10px / 45% 50% no-repeat;
+	background: url(../img/btn_chat_ico06.svg) center top 10px / 100% 50% no-repeat;
 }
 
 /* scroll BTN */
@@ -552,32 +552,6 @@
     background-color: rgba(128, 128, 128, 0.4); 
     color: var(--white); 
 }
-
-/* 페이지 스크롤 시 버튼이 나타남 */
-
-.dot-container {
-  text-align: left;
-  margin-top: 10px;
-}
-
-.dot {
-  height: 10px;
-  width: 10px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.active {
-  background-color: #717171;
-}
-
-.chat-bubble .more_type_area * {
-	color:var(--black);
-}
-
 /* 추가 스타일 */
 .more_type_area.txt_area {
 	max-height:360px;
@@ -732,56 +706,6 @@
 		/* transform:scale(0.9); */
 	}
 }
-
-
-
-  /* Custom styles for the slider */
-
-/* .slick-dotted.slick-slider {
-	margin:0 0 20px 10px;
-}
-
-.slick-dotted.slick-slider .chat-bubble.card-bdr-type {
-	width: 10% !important;
-	display: list-item;
-    margin-right: 10px;
-}
-
-    .slide-card {
-      width: 80%;
-      margin: 0 auto;
-    }
-
-
-    .chat-bubble {
-      background: #f1f1f1;
-      border-radius: 10px;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .slick-dots {
-      display: flex !important;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .slick-dots li {
-      margin: 0 5px;
-    }
-
-    .slick-dots li button {
-      font-size: 0;
-      width: 15px;
-      height: 15px;
-      border-radius: 50%;
-      background: #ccc;
-    }
-
-    .slick-dots li.slick-active button {
-      background: #000;
-    }
- */
  .chatinput.quickMenu_on {
     position: fixed;
     padding: 7px 0px 10px;
@@ -823,3 +747,63 @@
 	display: none;
 } */
 
+
+/* Custom styles for the slider */
+
+/* .slick-slider-container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.slick-slider-container .slider {
+    margin: 20px 0;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.card-header span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-body p {
+    font-size: 14px;
+    color: #666;
+}
+
+.card-footer {
+    margin-top: 20px;
+} */
+
+
+/* 페이지 스크롤 시 버튼이 나타남 */
+
+.dot-container {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.chat-bubble .more_type_area * {
+	color:var(--black);
+}
