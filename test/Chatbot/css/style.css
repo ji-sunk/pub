@@ -736,6 +736,8 @@
 }
 
 .quickMenu.show {
+	z-index: 52;
+	position:relative;
     max-height: 500px;
 }
 
