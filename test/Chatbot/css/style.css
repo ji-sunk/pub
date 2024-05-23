@@ -62,7 +62,7 @@
 
 .header h1 {
 	text-indent: -999%;
-	background: url(../img/logo_sgi.svg) left center / 138px 25px no-repeat;
+	background: url(../img/logo_sgi.svg) left center / 50% no-repeat;
 }
 
 .header h1, .header p {
@@ -179,7 +179,7 @@
 	padding-top:2.2rem;
 	font-family: Noto Sans KR;
 	/* font-size: .95rem; */
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-weight: 500;
 	line-height: 22px;
 	/* white-space: nowrap; */
@@ -455,7 +455,8 @@
 }
 
 .chat-btn-box {
-	margin-bottom:1rem;
+	z-index: 52;
+	padding-bottom:1rem;
     display: flex;
 	flex-wrap: wrap;
     align-items:center;
@@ -703,7 +704,12 @@
 }
 @media all (max-width:900px) {
 	.wrapper {
-		transform:scale(1);
+		/* transform:scale(1); */
+		width:900px;
+		display: flex;
+		flex-wrap: wrap;
+    	justify-content: center;
+		align-items:center;
 	}
 }
  .chatinput.quickMenu_on {
