@@ -805,11 +805,11 @@
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
 	text-align: left;
 }
-
+/* 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 	img, svg {
 		width:calc(100% / 2);
 	}
 }
 
-
+ */
