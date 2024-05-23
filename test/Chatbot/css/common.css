@@ -6,7 +6,7 @@
  * =============================== 
 */
 
-* {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Noto Sans KR','Noto Sans', 'Roboto', sans-serif;} 
+* {margin: 0; padding: 0; font-family: 'Noto Sans KR','Noto Sans', 'Roboto', sans-serif;} 
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -30,7 +30,7 @@ img {width: 100%;}
 a {color: #fff; text-decoration: none; outline: none} 
 a:hover, a:active {text-decoration: none;}
 div {-webkit-tap-highlight-color: transparent;}
-a, button, img {cursor:pointer; -webkit-tap-highlight-color: transparent; /* for removing the highlight */}
+a, button, img {cursor:pointer; -webkit-tap-highlight-color: transparent;}
 button {border:none; background:none; display:flex; justify-content: center; align-items: center;}
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,time,figure,article,nav,header,footer,hgroup,
@@ -506,9 +506,6 @@ input[type=radio] + label:disabled {
 }
 
 
-
-
-
 select {
     overflow-y: auto; /* 옵션 내용이 넘칠 경우 수직 스크롤 표시 */
     max-height: 200px; /* 최대 높이 설정 */
@@ -661,33 +658,3 @@ select::-webkit-scrollbar-thumb:hover {
  .select select:disabled ~ .select__arrow {
      border-top-color: #ccc;
 } */
- 
-/* 스와이퍼 */
- .swiper-container {
-            width: 100%;
-            height: 100%;
-        }
-
-        .swiper-slide {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-
-.swiper-horizontal {
-  position: relative;
-}
-.swiper-container {
-  width:90%;
-}
-
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-  bottom:10px !important;
-  position: inherit !important;
-}

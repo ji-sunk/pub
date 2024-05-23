@@ -502,7 +502,7 @@
     color:var(--purple);
 }
 .chat-btn-box.set6 li:nth-child(1) a {
-	background: url(../img/btn_chat_ico01.svg) center top 18px / 100% 50% no-repeat;
+	background: url(../img/btn_chat_ico01.svg) center top 18px / 50% 50% no-repeat;
 }
 .chat-btn-box.set6 li:nth-child(2) a {
 	background: url(../img/btn_chat_ico02.svg) center top 18px / 100% 50% no-repeat;
@@ -701,9 +701,9 @@
 		opacity: 1;
 	}
 }
-@media (max-width:420px) {
+@media all (max-width:900px) {
 	.wrapper {
-		/* transform:scale(0.9); */
+		transform:scale(1);
 	}
 }
  .chatinput.quickMenu_on {
@@ -748,43 +748,7 @@
 } */
 
 
-/* Custom styles for the slider */
-
-/* .slick-slider-container {
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-}
-
-.slick-slider-container .slider {
-    margin: 20px 0;
-}
-
-.card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-}
-
-.card-header span {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.card-body p {
-    font-size: 14px;
-    color: #666;
-}
-
-.card-footer {
-    margin-top: 20px;
-} */
-
-
 /* 페이지 스크롤 시 버튼이 나타남 */
-
 .dot-container {
   text-align: left;
   margin-top: 10px;
@@ -807,3 +771,45 @@
 .chat-bubble .more_type_area * {
 	color:var(--black);
 }
+
+/* 스와이퍼-슬라이드 */
+ .swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.swiper-horizontal {
+  position: relative;
+}
+.swiper-container {
+  width:90%;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom:10px !important;
+  position: inherit !important;
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+	text-align: left;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	img, svg {
+		width:calc(100% / 2);
+	}
+}
+
+
