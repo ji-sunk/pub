@@ -185,64 +185,181 @@ document.querySelector('.btn-type-cancel').addEventListener('click', function() 
 // });
 
 
-$(document).ready(function () {
-  // 초기 카드 활성화
-  $(".slide-card li:first-child").addClass("active");
 
-  // 동그란 버튼 생성 및 이벤트 처리
-  const cards = $(".slide-card li");
-  const dotsContainer = $(".dot-container");
 
-  cards.each(function (index) {
-    const dot = $("<span>").addClass("dot").attr("data-index", index);
-    if (index === 0) dot.addClass("active");
-    dotsContainer.append(dot);
-  });
+// $(document).ready(function () {
+//   // 초기 카드 활성화
+//   $(".slide-card li:first-child").addClass("active");
 
-  // 동그란 버튼 클릭 시 카드 활성화
-  $(".dot").on("click", function () {
-    const index = $(this).data("index");
+//   // 동그란 버튼 생성 및 이벤트 처리
+//   const cards = $(".slide-card li");
+//   const dotsContainer = $(".dot-container");
 
-    // 모든 카드 및 동그라미 비활성화
-    cards.removeClass("active");
-    $(".dot").removeClass("active");
+//   cards.each(function (index) {
+//     const dot = $("<span>").addClass("dot").attr("data-index", index);
+//     if (index === 0) dot.addClass("active");
+//     dotsContainer.append(dot);
+//   });
 
-    // 클릭한 인덱스에 해당하는 카드와 동그라미 활성화
-    $(cards[index]).addClass("active");
-    $(this).addClass("active");
+//   // 동그란 버튼 클릭 시 카드 활성화
+//   $(".dot").on("click", function () {
+//     const index = $(this).data("index");
 
-    // 카드로 슬라이드 이동
-    $(".scroll_x").animate(
-      {
-        scrollLeft:
-          $(cards[index]).position().left + $(".scroll_x").scrollLeft(),
-      },
-      300
-    );
-  });
+//     // 모든 카드 및 동그라미 비활성화
+//     cards.removeClass("active");
+//     $(".dot").removeClass("active");
 
-  // 카드 위치에 따라 동그라미 버튼 활성화
-  $(".scroll_x").on("scroll", function () {
-    let scrollLeft = $(this).scrollLeft();
-    let containerWidth = $(this).width();
+//     // 클릭한 인덱스에 해당하는 카드와 동그라미 활성화
+//     $(cards[index]).addClass("active");
+//     $(this).addClass("active");
 
-    cards.each(function (index) {
-      let cardLeft = $(this).position().left + scrollLeft;
-      if (
-        cardLeft <= scrollLeft + containerWidth / 2 &&
-        cardLeft + $(this).width() > scrollLeft + containerWidth / 2
-      ) {
-        // 모든 카드 및 동그라미 비활성화
-        cards.removeClass("active");
-        $(".dot").removeClass("active");
+//     // 카드로 슬라이드 이동
+//     $(".scroll_x").animate(
+//       {
+//         scrollLeft:
+//           $(cards[index]).position().left + $(".scroll_x").scrollLeft(),
+//       },
+//       300
+//     );
+//   });
 
-        // 현재 보이는 카드와 동그라미 활성화
-        $(this).addClass("active");
-        $(`.dot[data-index=${index}]`).addClass("active");
-      }
-    });
+//   // 카드 위치에 따라 동그라미 버튼 활성화
+//   $(".scroll_x").on("scroll", function () {
+//     let scrollLeft = $(this).scrollLeft();
+//     let containerWidth = $(this).width();
+
+//     cards.each(function (index) {
+//       let cardLeft = $(this).position().left + scrollLeft;
+//       if (
+//         cardLeft <= scrollLeft + containerWidth / 2 &&
+//         cardLeft + $(this).width() > scrollLeft + containerWidth / 2
+//       ) {
+//         // 모든 카드 및 동그라미 비활성화
+//         cards.removeClass("active");
+//         $(".dot").removeClass("active");
+
+//         // 현재 보이는 카드와 동그라미 활성화
+//         $(this).addClass("active");
+//         $(`.dot[data-index=${index}]`).addClass("active");
+//       }
+//     });
+//   });
+// });
+
+//2번째
+
+// $(document).ready(function () {
+//   const scrollContainer = $(".scroll_x");
+//   const cards = $(".slide-card li");
+//   const dotsContainer = $(".dot-container");
+
+//   // 초기 카드 활성화 및 dot 버튼 생성
+//   cards.each(function (index) {
+//     const dot = $("<span>").addClass("dot").attr("data-index", index);
+//     if (index === 0) dot.addClass("active");
+//     dotsContainer.append(dot);
+//   });
+
+//   // 동그란 버튼 클릭 시 카드 활성화
+//   $(".dot").on("click", function () {
+//     const index = $(this).data("index");
+
+//     // 모든 카드 및 동그라미 비활성화
+//     cards.removeClass("active");
+//     $(".dot").removeClass("active");
+
+//     // 클릭한 인덱스에 해당하는 카드와 동그라미 활성화
+//     $(cards[index]).addClass("active");
+//     $(this).addClass("active");
+
+//     // 카드로 슬라이드 이동
+//     const cardWidth = cards.first().outerWidth(true);
+//     const scrollLeftPos = index * cardWidth;
+//     scrollContainer.animate({ scrollLeft: scrollLeftPos }, 300);
+
+//     // 버튼 상태 업데이트
+//     updateButtonState(index);
+//   });
+
+//   // 카드 위치에 따라 동그라미 버튼 활성화
+//   scrollContainer.on("scroll", function () {
+//     let scrollLeft = scrollContainer.scrollLeft();
+//     const cardWidth = cards.first().outerWidth(true);
+
+//     let index = Math.round(scrollLeft / cardWidth);
+//     if (index >= cards.length) index = cards.length - 1;
+
+//     // 모든 카드 및 동그라미 비활성화
+//     cards.removeClass("active");
+//     $(".dot").removeClass("active");
+
+//     // 현재 보이는 카드와 동그라미 활성화
+//     $(cards[index]).addClass("active");
+//     $(`.dot[data-index=${index}]`).addClass("active");
+
+//     // 버튼 상태 업데이트
+//     updateButtonState(index);
+//   });
+
+//   // 버튼 상태 업데이트 함수
+//   function updateButtonState(index) {
+//     const totalSlides = cards.length;
+//     const prevButton = $(".prev-btn");
+//     const nextButton = $(".next-btn");
+
+//     if (index === 0) {
+//       prevButton.attr("disabled", true);
+//     } else {
+//       prevButton.attr("disabled", false);
+//     }
+
+//     if (index === totalSlides - 1) {
+//       nextButton.attr("disabled", true);
+//     } else {
+//       nextButton.attr("disabled", false);
+//     }
+//   }
+
+//   // 초기 버튼 상태 설정
+//   updateButtonState(0);
+//
+//   // 슬라이더 버튼 클릭 이벤트 추가
+//   $(".prev-btn").on("click", function () {
+//     const activeIndex = $(".dot.active").data("index");
+//     if (activeIndex > 0) {
+//       $(".dot")
+//         .eq(activeIndex - 1)
+//         .click();
+//     }
+//   });
+
+//   $(".next-btn").on("click", function () {
+//     const activeIndex = $(".dot.active").data("index");
+//     if (activeIndex < cards.length - 1) {
+//       $(".dot")
+//         .eq(activeIndex + 1)
+//         .click();
+//     }
+//   });
+// });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  var swiper = new Swiper(".swiper-container", {
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
   });
 });
+
 
 //*******************펼쳐보기 /접기 버튼 *****************************
 
@@ -374,6 +491,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+// 아이콘 최적화
+document.addEventListener("DOMContentLoaded", function () {
+  var icons = document.querySelectorAll(".icon");
+  icons.forEach(function (icon) {
+    var scaleFactor = window.devicePixelRatio || 1;
+    icon.style.width = 64 * scaleFactor + "px";
+    icon.style.height = 64 * scaleFactor + "px";
+  });
+});
 
 
 
