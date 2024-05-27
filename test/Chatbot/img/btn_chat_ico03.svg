@@ -1,46 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="52px" height="54px" viewBox="0 0 52 54" enable-background="new 0 0 52 54" xml:space="preserve">  <image id="image0" width="52" height="54" x="0" y="0"
-    href="data:image/png;base64,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" />
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="30" height="30" fill="white"/>
+<path d="M7 8.99902L18 8.99902" stroke="#154292" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M7 13.999L15 13.999" stroke="#154292" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M7 18.999L12 18.999" stroke="#154292" stroke-width="1.5" stroke-linecap="round"/>
+<rect x="2.75" y="2.74902" width="19.5" height="23.5" rx="3.25" stroke="#154292" stroke-width="1.5"/>
+<circle cx="21.5" cy="22.499" r="5.75" fill="#FFC7B8" stroke="#154292" stroke-width="1.5"/>
+<path d="M21 23.999L24 20.999" stroke="#154292" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M21 23.999L19 21.999" stroke="#154292" stroke-width="1.5" stroke-linecap="round"/>
 </svg>
