@@ -6,11 +6,15 @@
  * =============================== 
 */
 
-* {margin: 0; padding: 0; box-sizing: border-box;} 
+* {margin: 0; padding: 0; font-family: 'Noto Sans KR','Noto Sans', 'Roboto', sans-serif; font-weight: 300;} 
 *, *::before, *::after {
   box-sizing: border-box;
 }
 :root {
+  --title:#050f26;
+  --contents:#3d414a;
+  --explain:#666;
+  --disable:#8a8a8a;
   --white: #fff; 
   --black: #000;
   --black50: rgba(0,0,0,0.5);
@@ -20,21 +24,25 @@
   --bg-input: #e8e8e8; 
   --gray: #767676;
   --dark-gray: #222831; 
-  --purple: #3942af;
-  --blueGreen: #2099C0;
-  --purple-text: #373e97;
+  --purple: #7056f5;
+  --darkPurple: #4a42b9;
+  --blue: #1e5bc5;
+  --red: #ff3700;
+  --darkBlue: #154292;
+  /* --purple: #373e97; */
 ;
 } 
+svg {width:100%; height:100%}
 img {width: 100%;}
 a {color: #fff; text-decoration: none; outline: none} 
-a:hover, a:active {text-decoration: none; color:none; background-color:none;}
+a:hover, a:active {text-decoration: none;}
 div {-webkit-tap-highlight-color: transparent;}
-a, button, img {cursor:pointer; -webkit-tap-highlight-color: transparent; /* for removing the highlight */}
-button {display:flex; justify-content: center; align-items: center;}
+a, button, img {cursor:pointer; -webkit-tap-highlight-color: transparent;}
+button {border:none; background:none; display:flex; justify-content: center; align-items: center;}
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,time,figure,article,nav,header,footer,hgroup,
 video,audio,aside,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,
-small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { margin:0; padding: 0; border: 0; outline: 0; vertical-align: baseline; -moz-box-sizing: border-box; box-sizing: border-box; font-size:14px; font-weight: 400; line-height: 1.43;}
+small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { margin:0; padding: 0; border: 0; outline: 0; vertical-align: baseline; -moz-box-sizing: border-box; box-sizing: border-box; font-size:14px; line-height: 1.43;}
 html, body {
   height: 100%;
   font-family: 'Noto Sans KR','Noto Sans', 'Roboto', sans-serif;
@@ -108,10 +116,16 @@ address{ font-style: unset;}
 
 /* 버튼 아이콘 있는 라운드 기본형 */
 .btn-type1.ico-link {
-  padding-right: 30px;
-  /* background: url(../img/ico_arrow_sideup.svg) right 2.7rem center/ 1rem no-repeat; */
+  color: var(--darkBlue);
+  padding-right: 10px;
+  background: #F5F7FC url(../img/ico_link.svg) right .7rem center/ 1rem no-repeat;
 }
 
+.btn-type1.ico-call {
+  color: var(--darkBlue);
+  padding-right: 10px;
+  background: #F5F7FC url(../img/ico_tel.svg) right .7rem center/ 1rem no-repeat;
+}
 /* .btn-type1.fixed {
   position:absolute;
   bottom: 1rem;;
@@ -119,41 +133,64 @@ address{ font-style: unset;}
 
 
 .btn-wrap {
-  width:100%;
-  /* height: 50px; */
+  /* width:100%; */
   display:flex;
   justify-content:space-around;
   align-items: end;
   text-align: center;
   border:none;
-  gap: 5px;
+  gap: 8px;
 }
 /* 버튼 아이콘 없는 라운드 기본형 */
+
+.btn-type1.disabled {
+  opacity: 0.65; 
+  cursor: not-allowed;
+  background-color: #929292;
+  color:#000;
+}
+
+.btn-type1.disabled:hover {
+  border:1px solid #929292;;
+  background-color: #929292;
+  color:#000;
+}
+.btn-type1.disabled:focus {
+  background-color: #929292;
+  color:#000;
+}
+
 .btn-type1 {
-  margin-top:5px;
+  margin-top:8px;
   padding:6px 10px;
   display:block;
   width:100%;
   max-width: calc(100% - 1.2rem);
-  text-align: center;
+  text-align: left;
   font-size:1rem;
-  font-weight: 600;
-  border:1px solid #ced1ea;
-  background-color: #f0f2ff;
-  border-radius: 10px;
-  color:var(--purple-text);
-}
-.btn-type1:hover {
-  border:1px solid #ced1ea;
-  background-color: var(--purple);
-  color:#fff;
-}
-.btn-type1:focus {
-  background-color: #003476;
-  color:#fff;
+  line-height: inherit;
+  border:1px solid #CCDBFF;
+  background-color: #F5F7FC;
+  border-radius: 5px;
+  color:var(--darkBlue);
 }
 .chat-bubble .btn-type1 {
   max-width:100%;
+}
+
+.btn-btm-type {
+  margin-top: 8px;
+  padding:0px 12px;
+  display:inline-flex;
+  width:100%;
+  height:32px;
+  text-align: center;
+  font-size 0.815rem;
+  border:none;
+  font-size: .75rem;
+  background-color: var(--white);
+  border-radius: 30px 30px;
+  color:var(--purple);
 }
 
 .btn-type2 {
@@ -162,28 +199,28 @@ address{ font-style: unset;}
      width:100%;
      font-size:13px;
      text-align: left;
-     color:var(--purple-text);
+     color:var(--purple);
      border:none;
      background-color: #fff;
 }
 /* 최상단 보더 라운드 버튼 */
 .btn-type3 {
    z-index: 31;
-   padding:10px;
-   height: 40px;
+   padding:0 1.25rem 0 .8rem;
+   height: 31px;
     display:block;
-    border-radius: 30px 30px;
-    font-weight: 600;
+    border-radius: 20px 20px;
+    font-weight: 500;
     font-family: Noto Sans KR;
     font-size: 13px;
-    line-height: 22px;
+    line-height: 0px;
     border:1px solid #DBDDF2;
     background-color: #fff;
-    box-shadow: #3942AF1A;
-    color:var(--purple-text);
+    /* box-shadow: #3942AF1A; */
+    color: var(--darkBlue);
     cursor:pointer;
     white-space: nowrap;
-     /* background: url(/img/chat_top_btn.png) no-repeat; */
+     background: url(../img/ico_arrow_red.svg) center right 10px no-repeat;
 }
 
 .btn-type4 {
@@ -198,8 +235,34 @@ address{ font-style: unset;}
   border:1px solid #ced1ea;
   background-color: #f0f2ff;
   border-radius: 10px;
-  color:var(--purple-text);
+  color:var(--purple);
 }
+
+.btn-type5 {
+  margin-top:8px;
+  padding:6px 10px;
+  display:block;
+  width:100%;
+  max-width: calc(100% - 1.2rem);
+  text-align: center;
+  font-size:1rem;
+  line-height: inherit;
+  border:1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  color:var(--contents);
+}
+
+.btn-type5:hover, .btn-type5:focus {
+  border:1px solid var(--darkBlue);
+  background-color: var(--darkBlue);
+}
+
+.btn-type5:hover span, .btn-type5:focus span {
+  font-weight: 500;
+  color:#fff;
+}
+
 
 .btn-type-cancel {
   padding:6px;
@@ -211,7 +274,7 @@ address{ font-style: unset;}
   white-space: nowrap;
   border-radius: .5rem;
   border:1px solid #6a5bc2;
-  background-color: var(--purple-text);
+  background-color: var(--purple);
 }
 
 .btn-type-close {
@@ -220,7 +283,7 @@ address{ font-style: unset;}
   font-size:13px;
   font-weight: 600;
   text-align: center;
-  color:var(--purple-text);
+  color:var(--purple);
   white-space: nowrap;
   border-radius: .5rem;
   border:1px solid #6a5bc2;
@@ -232,7 +295,7 @@ address{ font-style: unset;}
 }
 
 .dim_bg {
-  z-index: 50;
+  z-index: 90;
   position: fixed;
   width:100%;
   height:100%;
@@ -281,6 +344,7 @@ select {
     width: 100%; /* 가로 너비 100% 설정 */
     box-sizing: border-box; /* 박스 모델 설정 */
     outline: none; /* 포커스시 아웃라인 제거 */
+    color:var(--black);
 }
 
 /* 선택된 옵션 스타일 */
@@ -295,7 +359,7 @@ select option:checked {
     width: 100%;
     padding: 6px 20px; /* 내부 여백 조정 */
     font-size: 16px;
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
     border-radius: 20px; /* 살짝 라운드된 보더 반경 */
     appearance: none;
     background-color: #fff;
@@ -306,8 +370,12 @@ select option:checked {
     outline: none;
 }
 
+.chat-bubble * {
+  font-size: 0.875rem;
+}
+
 .chat-bubble .select-wrap option {
-  color:var(--purple-text);
+  color:var(--purple);
 }
 
 .chat-bubble .select-wrap select:focus {
@@ -482,9 +550,6 @@ input[type=radio] + label:disabled {
 }
 
 
-
-
-
 select {
     overflow-y: auto; /* 옵션 내용이 넘칠 경우 수직 스크롤 표시 */
     max-height: 200px; /* 최대 높이 설정 */
@@ -507,13 +572,6 @@ select::-webkit-scrollbar-thumb {
 select::-webkit-scrollbar-thumb:hover {
     background-color: #555; /* 스크롤바 호버 시 색상 변경 */
 }
-
-
-
-
-
-
-
 
 
 /* .control-group {
@@ -644,4 +702,3 @@ select::-webkit-scrollbar-thumb:hover {
  .select select:disabled ~ .select__arrow {
      border-top-color: #ccc;
 } */
- 
