@@ -5,7 +5,6 @@
  * reset_css 
  * =============================== 
 */
-
 * {margin: 0; padding: 0; font-family: 'Noto Sans KR','Noto Sans', 'Roboto', sans-serif; font-weight: 300;} 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -63,6 +62,31 @@ figure, img, i{font-size:0px; line-height: 1;}
 figure img{width:100%; display:block;}
 address{ font-style: unset;}
 
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('fonts/NotoSansKR-Regular.woff2') format('woff2'),
+         url('fonts/NotoSansKR-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('fonts/NotoSansKR-Medium.woff2') format('woff2'),
+         url('fonts/NotoSansKR-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('fonts/NotoSansKR-Bold.woff2') format('woff2'),
+         url('fonts/NotoSansKR-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
 /* 스크롤 */
 ::-webkit-scrollbar {
     width: 6px;
@@ -81,7 +105,7 @@ address{ font-style: unset;}
 ::-webkit-scrollbar-track {
     display: none;
 }
-::-webkit-scrollbar-track:hover {
+/* ::-webkit-scrollbar-track:hover {
     background-color: rgb(175, 72, 72);
     background: none;
 }
@@ -93,7 +117,7 @@ address{ font-style: unset;}
 ::-webkit-scrollbar-thumb:hover {    
     background-color: rgb(96, 36, 165);
     background: none;
-}
+} */
 
 /* 스크롤바 숨기기 */
 ::-webkit-scrollbar {
@@ -302,7 +326,6 @@ select::-webkit-scrollbar-thumb:hover {
   position:absolute;
   bottom: 1rem;;
 } */
-
 
 .btn-wrap {
   /* width:100%; */

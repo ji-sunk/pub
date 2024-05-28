@@ -56,13 +56,13 @@
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
-	border-bottom:3px solid var(--darkBlue);
+	border-bottom:2px solid var(--darkBlue);
 	background-color: #fff;
 }
 
 .header h1 {
 	text-indent: -999%;
-	background: url(../img/logo_sgi.svg) left center / 50% no-repeat;
+	background: url(../img/logo_sgi.svg) left center / 80% no-repeat;
 }
 
 .header h1, .header p {
@@ -155,7 +155,7 @@
     background-color: #717171;
 }
 .SGI_txt_bg {
-	padding:0 1rem;
+	/* padding:0 1rem; */
 	width: 100%;
     height: 130px;
 	display: flex;
@@ -183,6 +183,7 @@
 
 .SGI_txt_bg .txt_box strong {
 	font-weight: 500;
+	font-size: 1rem;
 }
 
 .cst-end-area {
@@ -274,7 +275,7 @@
 }
 .user-msg .chat-bubble {
 	float:left;
-	margin-top:5px;
+	margin:8px 0;
 	padding:1rem;
 	max-width:100%;
 	height:auto;
@@ -525,10 +526,10 @@
 	background: url(../img/btn_chat_ico04.svg) center top 18px / 100% 50% no-repeat;
 }
 .chat-btn-box.set6 li:nth-child(5) a {
-	background: url(../img/btn_chat_ico05.svg) center top 18px / 100% 50% no-repeat;
+	background: url(../img/btn_chat_ico05.svg) center top 20px / 100% 50% no-repeat;
 }
 .chat-btn-box.set6 li:nth-child(6) a {
-	background: url(../img/btn_chat_ico06.svg) center top 10px / 100% 50% no-repeat;
+	background: url(../img/btn_chat_ico06.svg) center top 20px / 100% 50% no-repeat;
 }
 
 /* scroll BTN */
