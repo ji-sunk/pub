@@ -1,5 +1,28 @@
-
 @charset "utf-8";
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('fonts/NotoSansKR-Regular.woff2') format('woff2'),
+         url('fonts/NotoSansKR-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('fonts/NotoSansKR-Medium.woff2') format('woff2'),
+         url('fonts/NotoSansKR-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('fonts/NotoSansKR-Bold.woff2') format('woff2'),
+         url('fonts/NotoSansKR-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
 
 /* ===============================
  * reset_css 
@@ -46,10 +69,7 @@ html, body {
   height: 100%;
   font-family: 'Noto Sans KR','Noto Sans', 'Roboto', sans-serif;
 }
-body {
-     width: 100%;
-     background: #e6e6e6;
-}
+body {width: 100%;}
 h1,h2,h3,h4,h5,h6{font-weight: bold;}
 ol,ul{list-style: none;}
 ul[role='list'],
@@ -61,31 +81,6 @@ a{display:block; color:#000; text-decoration: none;}
 figure, img, i{font-size:0px; line-height: 1;}
 figure img{width:100%; display:block;}
 address{ font-style: unset;}
-
-
-@font-face {
-    font-family: 'Noto Sans KR';
-    src: url('fonts/NotoSansKR-Regular.woff2') format('woff2'),
-         url('fonts/NotoSansKR-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Noto Sans KR';
-    src: url('fonts/NotoSansKR-Medium.woff2') format('woff2'),
-         url('fonts/NotoSansKR-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Noto Sans KR';
-    src: url('fonts/NotoSansKR-Bold.woff2') format('woff2'),
-         url('fonts/NotoSansKR-Bold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-}
 
 /* 스크롤 */
 ::-webkit-scrollbar {
@@ -356,7 +351,6 @@ select::-webkit-scrollbar-thumb:hover {
 }
 
 .btn-btm-type {
-  margin-top: 8px;
   padding:0px 12px;
   display:inline-flex;
   width:100%;
@@ -415,16 +409,29 @@ select::-webkit-scrollbar-thumb:hover {
   color:var(--purple);
 }
 
-.btn-type5 {
+.btn-type5{
   margin-top:8px;
   padding:6px 10px;
   display:block;
   width:100%;
   text-align: center;
-  font-size:1rem;
+  font-size:.815rem;
   line-height: inherit;
   border:1px solid #ccc;
   background-color: var(--white);
+  border-radius: 5px;
+  color:var(--contents);
+}
+
+.btn-type6 {
+  margin-top:8px;
+  padding:6px 10px;
+  display:block;
+  width:100%;
+  text-align: left;
+  font-size:.815rem;
+  line-height: inherit;
+  border:1px solid #ccc;
   border-radius: 5px;
   color:var(--contents);
 }
@@ -435,10 +442,14 @@ select::-webkit-scrollbar-thumb:hover {
   background-color: var(--disable);
   color:var(--contents);
 }
-
 .btn-type5:hover, .btn-type5:focus {
   border:1px solid var(--darkBlue);
   background-color: var(--darkBlue);
+}
+
+.btn-type6:hover, .btn-type6:focus {
+  border:1px solid var(--darkBlue);
+  background-color: #F5F7FC;
 }
 
 .btn-type5.disabled:hover, .btn-type5.disabled:focus {
@@ -558,22 +569,14 @@ select option:checked {
   margin-top:10px;
 }
 .chat-bubble .select-wrap select {
-    width: 100%;
-    padding: 6px 20px; /* 내부 여백 조정 */
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 20px; /* 살짝 라운드된 보더 반경 */
-    appearance: none;
-    background-color: #fff;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"><path fill="%23333" d="M1.4.8l5.3 5 5.3-5c.2-.2.5-.2.7 0s.2.5 0 .7l-6 5.7c-.2.2-.5.2-.7 0l-6-5.7c-.2-.2-.2-.5 0-.7s.5-.2.7 0z"/></svg>'); /* 화살표 아이콘 추가 */
-    background-repeat: no-repeat;
-    background-position: calc(100% - 10px) center; /* 화살표 위치 */
-    cursor: pointer;
-    outline: none;
-}
-
-.chat-bubble * {
-  font-size: 0.875rem;
+  width: 100%;
+  padding: 6px 20px; /* 내부 여백 조정 */
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  appearance: none;
+  background: #fff url(../img/ico_select_arrow_gy.svg) no-repeat;
+  /* background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"><path fill="%23333" d="M1.4.8l5.3 5 5.3-5c.2-.2.5-.2.7 0s.2.5 0 .7l-6 5.7c-.2.2-.5.2-.7 0l-6-5.7c-.2-.2-.2-.5 0-.7s.5-.2.7 0z"/></svg>'); */
+  background-position: calc(100% - 10px) center; /* 화살표 위치 */
 }
 
 .chat-bubble .select-wrap option {
@@ -582,7 +585,8 @@ select option:checked {
 
 .chat-bubble .select-wrap select:focus {
     border-color: var(--purple); /* 포커스된 경우 보더 색상 변경 */
-    background-color: #dbddec; /* 선택 상자 배경색 */
+    background: #fff url(../img/ico_select_arrow_ny.svg) no-repeat;
+    background-position: calc(100% - 10px) center; /* 화살표 위치 */
 }
 
 .chat-bubble .select-wrap select option {

@@ -2,11 +2,6 @@
 @charset "utf-8";
 
 .wrapper {
-	/* height: max-content;
-	position:relative;
-	display: flex;
-    flex-wrap: wrap; */
-    /* justify-content: center; */
     align-items: center;
 	/*transform:scale(1.2);*/ transition:0.5s;
 }
@@ -32,7 +27,7 @@
 	font-size:1.4rem;
 	font-weight:600;
 }
-.topbar-left,.topbar-right {
+.topbar-left, .topbar-right {
 	display:flex;
 	justify-content:center;
 	align-items:center;
@@ -121,6 +116,11 @@
 	float:left;
 }
 
+.chat-bubble * {
+	color:var(--contents);
+	font-size: 0.875rem;
+}
+
 
 /* Ensure scroll_x has overflow properties */
 .scroll_x {
@@ -141,7 +141,7 @@
     margin-right: 10px;
 } */
 
-.dot {
+.swiper-container .dot {
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -151,7 +151,7 @@
     cursor: pointer;
 }
 
-.dot.active {
+.swiper-container .dot.active {
     background-color: #717171;
 }
 .SGI_txt_bg {
@@ -192,8 +192,6 @@
 	padding:10px 20px;
 	background-color:#fff;
 }
-
-
 /* 
 .user-msg.slide-type {
     overflow-x: hidden;
@@ -314,6 +312,7 @@
 	padding:8px 16px;
 	display: flex;
 	justify-content: center;
+	text-align: right;
 	font-size: .9375rem;
 	color:var(--white);
 	background:var(--darkPurple);
@@ -567,10 +566,14 @@
 }
 /* 추가 스타일 */
 .more_type_area.txt_area {
-	max-height:215px;
+	max-height:216px;
 	height:fit-content;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
+}
+
+.more_type_area.mht2.txt_area {
+	max-height:316px;
 }
 .btn_more {
 	padding:5px 0;
@@ -591,12 +594,8 @@
 	display:block;
 }
 .more_type_area.expanded {
-	/* display:grid;
-	justify-content: center;
-	align-items: center;
-	text-align: center; */
 	height:fit-content;
-	max-height:100vh;
+	max-height:fit-content !important;
 }
 
 .chat-bubble.master1_txt {
@@ -618,11 +617,40 @@
 	font-weight: 700;
 	color:#003476;
 }
-.chat-bubble .txt_area .txt_tit {
-	/* padding: 8px 0; */
-	font-size: 1.2rem;
-	font-weight: 700;
-	color:var(--black);
+.txt_area .btn-type6 .txt_tit {
+	font-size: .813rem;
+	font-weight: 500;
+	color:var(--contents);
+}
+
+.txt_area .btn-type6 .txt_sub {
+	font-size: .813rem;
+	font-weight: 300;
+	color:var(--contents);
+}
+
+.flx_ard {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flx_ard .txt_tit {
+	font-family: Noto Sans KR;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	text-align: left;
+}
+
+.flx_ard .txt_num {
+	font-family: Noto Sans KR;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 22px;
+	text-align: right;
+	color: var(--blue);
+
 }
 /* #chat-type-case01, #chat-type-case02, #chat-type-case03, #chat-type-case04, #chat-type-case05, #chat-type-case06 {	
 	display:none;
@@ -800,16 +828,54 @@
   background-color: #717171;
 }
 
-.chat-bubble .more_type_area * {
-	color:var(--black);
-}
-
-.swiper-tit {
+.swiper-tit, .card-tit {
 font-size: 14px;
 font-weight: 500;
 line-height: 20.27px;
 text-align: left;
-color:var(--black);
+color: var(--contents);
+}
+.swiper-subtit {
+	padding:0;
+	font-family: Noto Sans KR;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20.27px;
+	text-align: left;
+	color: var(--contents);
+}
+
+.swiper-txt {
+	padding:0;
+	font-family: Noto Sans KR;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 20.27px;
+	text-align: left;
+	color: var(--contents);
+}
+
+
+.circleBullet {
+	padding: 0;
+	margin-bottom:8px;
+  	list-style-type: none;
+}
+
+.circleBullet li {
+  position: relative;
+  padding-left: 8px;
+}
+
+.circleBullet li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 4px;
+  height: 4px;
+  background-color: var(--darkBlue);
+  border-radius: 50% 50%;
 }
 
 /* 스와이퍼-슬라이드 커스텀 */
@@ -870,47 +936,4 @@ color:var(--black);
 	img, svg {
 		/* width:calc(100% / 2); */
 	}
-}
-
-
-.circleBullet {
-  list-style-type: none;
-  padding: 0;
-}
-
-.circleBullet li {
-  position: relative;
-  margin-top:10px;
-  padding-left: 8px;
-}
-
-.circleBullet li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 8px;
-  width: 4px;
-  height: 4px;
-  background-color: var(--darkBlue);
-  border-radius: 50% 50%;
-}
-
-.swiper-subtit {
-	padding:0;
-	font-family: Noto Sans KR;
-	font-size: 14px;
-	font-weight: 500;
-	line-height: 20.27px;
-	text-align: left;
-	color: var(--contents);
-}
-
-.swiper-txt {
-	padding:0;
-	font-family: Noto Sans KR;
-	font-size: 14px;
-	font-weight: 300;
-	line-height: 20.27px;
-	text-align: left;
-	color: var(--contents);
 }
