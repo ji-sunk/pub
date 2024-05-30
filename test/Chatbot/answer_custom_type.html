@@ -72,7 +72,7 @@
                         </div>
                         <div class="user-msg">
                             <div class="chat-bubble">
-                                <div class="more_type_area mht2 txt_area">
+                                <div class="more_type_area mht2 txt_area" id="more_txt1">
                                     <p>업무별 담당부서를 선택해주세요.</p>
                                     <ul class="more_box">
                                         <li>
@@ -114,7 +114,7 @@
                                     </ul>
                                 </div>  
                                 <!-- 펼쳐보기/접기 버튼 -->
-                                <div class="btn_more hide">
+                                <div class="btn_more hide" id="more_btn2">
                                     <span class="blind">펼쳐보기</span>
                                     <img src="./img/ico_arrow_more.svg" class="ico_arrow_more" alt="">
                                 </div>
@@ -159,7 +159,7 @@
                         </div>
                     </div>
                     <!-- //지점 확인 -->
-                    <!-- user지역 확인 -->
+                    <!-- 사용자 지역 확인 -->
                     <div id="">
                         <div class="chat-user user2">
                             <div class="user-msg">
@@ -171,29 +171,22 @@
                         </div>
                         <div class="user-msg">
                             <div class="chat-bubble card-bdr-type">
-                                <p class="card-tit">시/도를 선택해주세요.</p>
+                                <p class="card-tit"><label for="sel_box">시/도를 선택해주세요.</label></p>
                                 <div class="select-wrap">
                                     <div class="select-box">
-                                        <select size="auto">
-                                            <option>select box</option>
-                                            <option>option 1</option>
-                                            <option>option 2</option>
-                                            <option>option 3</option>
-                                            <option>option 4</option>
-                                            <option>option 5</option>
-                                            <option>option 6</option>
-                                            <option>option 7</option>
-                                            <option>option 8</option>
-                                            <option>option 9</option>
-                                            <option>option 10</option>
+                                        <select name="sel_box" id="sel_box" size="auto">
+                                            <option>서울특별시</option>
+                                            <option>경기도</option>
+                                            <option>인청광역시</option>
+                                            <option>충청북도</option>
+                                            <option>충청남도</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>    
                         </div>        
                     </div>
-                    <!-- //user지역 확인 -->
-
+                    <!-- //사용자 지역 확인 -->
                     <!---------------------------------------답변 유형 기타 --------------------------------------->
                     <!-- 보상 담당자 및 진행사항 -->
                     <div id="">
@@ -210,67 +203,320 @@
                         </div>
                         <div class="user-msg">
                             <div class="chat-bubble">
-                                <div class="more_type_area mht2 txt_area">
+                                <div class="more_type_area txt_area mht3" id="more_txt2">
                                     <p>고객님, 자세한 진행사항 안내를 위한 채권을 선택해주세요.</p>
                                     <ul class="more_box">
                                         <li>
                                             <a href="#none" class="btn-type6">
-                                                <div class="flx_ard">
-                                                    <p class="txt_tit">채권번호</p>
-                                                    <span class="txt_num">110-222-3334</span>
+                                                <div class="flx-ard">
+                                                    <p class="txt_cts">채권번호</p>
+                                                    <span class="txt_blu">110-222-3334</span>
                                                 </div>
-                                                <div class="flx_ard">
-                                                    <p class="txt_tit">증권번호</p>
-                                                    <span class="txt_num">001444-225555</span>
+                                                <div class="flx-ard">
+                                                    <p class="txt_txt">증권번호</p>
+                                                    <span class="txt_blu">001444-225555</span>
                                                 </div>
-                                                <div class="flx_ard">
-                                                    <p class="txt_tit">상품명</p>
-                                                    <span class="txt_num">하자보증보험</span>
+                                                <div class="flx-ard">
+                                                    <p class="txt_txt">상품명</p>
+                                                    <span class="txt_blu">하자보증보험</span>
                                                 </div>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#none" class="btn-type6">
-                                                <p class="txt_tit">대리점</p>
-                                                <span class="txt_sub">보험가입,변경,해지</span>
+                                                <div class="flx-ard">
+                                                    <p class="txt_cts">채권번호</p>
+                                                    <span class="txt_blu">110-222-3334</span>
+                                                </div>
+                                                <div class="flx-ard">
+                                                    <p class="txt_txt">증권번호</p>
+                                                    <span class="txt_blu">001444-225555</span>
+                                                </div>
+                                                <div class="flx-ard">
+                                                    <p class="txt_txt">상품명</p>
+                                                    <span class="txt_blu">하자보증보험</span>
+                                                </div>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#none" class="btn-type6">
-                                                <p class="txt_tit">보상지원단(보상센터)</p>
-                                                <span class="txt_sub">보상심사, 보험금 지급</span>
+                                                <div class="flx-ard">
+                                                    <p class="txt_cts">채권번호</p>
+                                                    <span class="txt_blu">110-222-3334</span>
+                                                </div>
+                                                <div class="flx-ard">
+                                                    <p class="txt_txt">증권번호</p>
+                                                    <span class="txt_blu">001444-225555</span>
+                                                </div>
+                                                <div class="flx-ard">
+                                                    <p class="txt_txt">상품명</p>
+                                                    <span class="txt_blu">하자보증보험</span>
+                                                </div>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#none" class="btn-type6">
-                                                <p class="txt_tit">신용지원단</p>
-                                                <span class="txt_sub">채무상담, 추심업무</span>
+                                                <div class="flx-ard">
+                                                    <p class="txt_cts">채권번호</p>
+                                                    <span class="txt_blu">110-222-3334</span>
+                                                </div>
+                                                <div class="flx-ard">
+                                                    <p class="txt_txt">증권번호</p>
+                                                    <span class="txt_blu">001444-225555</span>
+                                                </div>
+                                                <div class="flx-ard">
+                                                    <p class="txt_txt">상품명</p>
+                                                    <span class="txt_blu">하자보증보험</span>
+                                                </div>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#none" class="btn-type6">
-                                                <p class="txt_tit">신용지원단</p>
-                                                <span class="txt_sub">채무상담, 추심업무</span>
+                                                <div class="flx-ard">
+                                                    <p class="txt_cts">채권번호</p>
+                                                    <span class="txt_blu">110-222-3334</span>
+                                                </div>
+                                                <div class="flx-ard">
+                                                    <p class="txt_txt">증권번호</p>
+                                                    <span class="txt_blu">001444-225555</span>
+                                                </div>
+                                                <div class="flx-ard">
+                                                    <p class="txt_txt">상품명</p>
+                                                    <span class="txt_blu">하자보증보험</span>
+                                                </div>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#none" class="btn-type6">
-                                                <p class="txt_tit">신용지원단</p>
-                                                <span class="txt_sub">채무상담, 추심업무</span>
+                                                <div class="flx-ard">
+                                                    <p class="txt_cts">채권번호</p>
+                                                    <span class="txt_blu">110-222-3334</span>
+                                                </div>
+                                                <div class="flx-ard">
+                                                    <p class="txt_txt">증권번호</p>
+                                                    <span class="txt_blu">001444-225555</span>
+                                                </div>
+                                                <div class="flx-ard">
+                                                    <p class="txt_txt">상품명</p>
+                                                    <span class="txt_blu">하자보증보험</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#none" class="btn-type6">
+                                                <div class="flx-ard">
+                                                    <p class="txt_cts">채권번호</p>
+                                                    <span class="txt_blu">110-222-3334</span>
+                                                </div>
+                                                <div class="flx-ard">
+                                                    <p class="txt_txt">증권번호</p>
+                                                    <span class="txt_blu">001444-225555</span>
+                                                </div>
+                                                <div class="flx-ard">
+                                                    <p class="txt_txt">상품명</p>
+                                                    <span class="txt_blu">하자보증보험</span>
+                                                </div>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>  
                                 <!-- 펼쳐보기/접기 버튼 -->
-                                <div class="btn_more hide">
+                                <div class="btn_more hide" id="more_btn1">
                                     <span class="blind">펼쳐보기</span>
                                     <img src="./img/ico_arrow_more.svg" class="ico_arrow_more" alt="">
                                 </div>
                                 <!-- //펼쳐보기/접기 버튼 -->
                             </div>
                         </div>
+                        <!-- user 보상 진행사항 -->
+                        <div class="mngr-profile">
+                            <img src="./img/master1.jpg" alt="">
+                            <span class="mngr-name">HelpDesk</span>
+                        </div>
+                        <div class="user-msg">
+                            <div class="chat-bubble">
+                                <div class="txt_area">
+                                    <p class="bub-subtit"><span class="name">이서울</span>님 보상 진행사항</p>
+                                    <ul class="more_box">
+                                        <li>
+                                            <div href="#none" class="btn-type6">
+                                                <div class="flx-ard">
+                                                    <p class="txt_cts">증권번호</p>
+                                                    <span class="txt_blu">110-222-3334</span>
+                                                </div>
+                                                <div class="flx-ard">
+                                                    <p class="txt_txt">진행상황</p>
+                                                    <span class="txt_blu">심사진행 중</span></span>
+                                                </div>
+                                                <div class="flx-ard">
+                                                    <p class="txt_txt">담당자</p>
+                                                    <span class="txt_blu">김보증</span>
+                                                </div>
+                                                <div class="flx-ard">
+                                                    <p class="txt_txt">담당부서</p>
+                                                    <span class="txt_blu">보상지원1센터</span>
+                                                </div>
+                                                <div class="flx-ard">
+                                                    <p class="txt_txt">연락처</p>
+                                                    <span class="txt_blu">02-4444-1234</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>  
+                            </div>
+                        </div>
+                        <!-- //user 보상 진행사항 -->
                     </div>
                     <!-- //보상 담당자 및 진행사항 -->
+                    <!-- 홈페이지 상품 안내 -->
+                    <div id="">
+                        <div class="chat-user user2">
+                            <div class="user-msg">
+                                <div class="chat-bubble">
+                                    홈페이지 상품 안내
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mngr-profile" id="chat_move2">
+                            <img src="./img/master1.jpg " alt="profile">
+                            <span class="mngr-name">HelpDesk</span>
+                        </div>
+                        <!-- 슬라이드 타입 -->
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide chat-bubble card-bdr-type">
+                                    <p class="swiper-tit">하자보증보험</p>
+                                    <span class="swiper-txt">
+                                        하자보수 의무 이행을 보증하기위한 하자보증금을 대신하는 상품입니다.
+                                    </span>
+                                    <a class="btn-type1 ico-link" href="#none">상품보러가기</a>
+                                </div>
+                                <div class="swiper-slide chat-bubble card-bdr-type">
+                                    <p class="swiper-tit">하자보증보험</p>
+                                    <span class="swiper-txt">
+                                        하자보수 의무 이행을 보증하기위한 하자보증금을 대신하는 상품입니다.
+                                    </span>
+                                    <a class="btn-type1 ico-link" href="#none">상품보러가기</a>
+                                </div>
+                                <div class="swiper-slide chat-bubble card-bdr-type">
+                                    <p class="swiper-tit">하자보증보험</p>
+                                    <span class="swiper-txt">
+                                        하자보수 의무 이행을 보증하기위한 하자보증금을 대신하는 상품입니다.
+                                    </span>
+                                    <a class="btn-type1 ico-link" href="#none">상품보러가기</a>
+                                </div>
+                                <div class="swiper-slide chat-bubble card-bdr-type">
+                                    <p class="swiper-tit">하자보증보험</p>
+                                    <span class="swiper-txt">
+                                        하자보수 의무 이행을 보증하기위한 하자보증금을 대신하는 상품입니다.
+                                    </span>
+                                    <a class="btn-type1 ico-link" href="#none">상품보러가기</a>
+                                </div>
+                            </div>
+                            <!-- 슬라이드: 네비게이션 버튼 -->
+                            <div class="swiper-button-next" aria-hidden="true" tabindex="0" role="button" aria-label="이전"></div>
+                            <div class="swiper-button-prev" aria-hidden="true" tabindex="0" role="button" aria-label="다음"></div>
+                            <!-- 슬라이드: 페이지네이션 -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <!-- //홈페이지 상품 안내 -->
+                    <!-- 발급 지점 안내 -->
+                    <div id="">
+                        <div class="chat-user user2">
+                            <div class="user-msg">
+                                <div class="chat-bubble">
+                                    강남지점
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mngr-profile" id="chat_move2">
+                            <img src="./img/master1.jpg " alt="profile">
+                            <span class="mngr-name">HelpDesk</span>
+                        </div>
+                        <!-- 슬라이드 타입 -->
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide chat-bubble card-bdr-type">
+                                    <div class="txt_area">
+                                        <p class="bub-subtit"><span class="name">이서울</span>님 증권 발급 지점</p>
+                                        <ul class="more_box">
+                                            <li>
+                                                <div class="btn-type6">
+                                                    <div class="flx-ard">
+                                                        <p class="txt_cts">증권번호</p>
+                                                        <span class="txt_blu">110-12345-6787977271</span>
+                                                    </div>
+                                                    <div class="flx-ard">
+                                                        <p class="txt_txt">발급지점</p>
+                                                        <span class="txt_blu">강남지점</span></span>
+                                                    </div>
+                                                    <div class="flx-ard">
+                                                        <p class="txt_txt">상품명</p>
+                                                        <span class="txt_blu">하자보증보험</span>
+                                                    </div>
+                                                    <div class="flx-ard">
+                                                        <p class="txt_txt">상품보증기호</p>
+                                                        <span class="txt_blu">지급보증</span>
+                                                    </div>
+                                                    <div class="flx-ard">
+                                                        <p class="txt_txt">계약자</p>
+                                                        <span class="txt_blu">이서울</span>
+                                                    </div>
+                                                    <div class="flx-ard">
+                                                        <p class="txt_txt">피보험자</p>
+                                                        <span class="txt_blu">김보증</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide chat-bubble card-bdr-type">
+                                    <div class="txt_area">
+                                        <p class="bub-subtit"><span class="name">이서울</span>님 증권 발급 지점</p>
+                                        <ul class="more_box">
+                                            <li>
+                                                <div class="btn-type6">
+                                                    <div class="flx-ard">
+                                                        <p class="txt_cts">증권번호</p>
+                                                        <span class="txt_blu">110-12345-6787977271</span>
+                                                    </div>
+                                                    <div class="flx-ard">
+                                                        <p class="txt_txt">발급지점</p>
+                                                        <span class="txt_blu">강남지점</span></span>
+                                                    </div>
+                                                    <div class="flx-ard">
+                                                        <p class="txt_txt">상품명</p>
+                                                        <span class="txt_blu">하자보증보험</span>
+                                                    </div>
+                                                    <div class="flx-ard">
+                                                        <p class="txt_txt">상품보증기호</p>
+                                                        <span class="txt_blu">지급보증</span>
+                                                    </div>
+                                                    <div class="flx-ard">
+                                                        <p class="txt_txt">계약자</p>
+                                                        <span class="txt_blu">이서울</span>
+                                                    </div>
+                                                    <div class="flx-ard">
+                                                        <p class="txt_txt">피보험자</p>
+                                                        <span class="txt_blu">김보증</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 슬라이드: 네비게이션 버튼 -->
+                            <div class="swiper-button-next" aria-hidden="true" tabindex="0" role="button" aria-label="이전"></div>
+                            <div class="swiper-button-prev" aria-hidden="true" tabindex="0" role="button" aria-label="다음"></div>
+                            <!-- 슬라이드: 페이지네이션 -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <!-- //발급 지점 안내 -->
                 </div>
             </div>
 
@@ -291,12 +537,12 @@
                     <!-- 확인되지 않은 스펙 -->
                     <div class="quickMenu">
                         <ul class="chat-btn-box set6">
-                            <li><a href="#chat_move1" title="보험금청구 바로가기">보험금청구</a></li>
-                            <li><a href="#chat_move2" title="보증보험 바로가기">보증보험</a></li>
-                            <li><a href="#chat_move3" title="개통회선 바로가기">개통회선</a></li>
-                            <li><a href="#chat_move4" title="지점안내 바로가기">지점안내</a></li>
-                            <li><a href="#chat_move5" title="통신회선 바로가기">통신회선</a></li>
-                            <li><a href="#chat_move6" title="상담원연결 바로가기">상담원연결</a></li>
+                            <li><a href="#chat_move7" title="보험금청구 바로가기">보험금청구</a></li>
+                            <li><a href="#chat_move8" title="보증보험 바로가기">보증보험</a></li>
+                            <li><a href="#chat_move9" title="개통회선 바로가기">개통회선</a></li>
+                            <li><a href="#chat_move10" title="지점안내 바로가기">지점안내</a></li>
+                            <li><a href="#chat_move11" title="통신회선 바로가기">통신회선</a></li>
+                            <li><a href="#chat_move12" title="상담원연결 바로가기">상담원연결</a></li>
                         </ul>
                     </div>
                     <!-- //확인되지 않은 스펙 -->
