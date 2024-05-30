@@ -2,24 +2,24 @@
 
 @font-face {
     font-family: 'Noto Sans KR';
-    src: url('fonts/NotoSansKR-Regular.woff2') format('woff2'),
-         url('fonts/NotoSansKR-Regular.woff') format('woff');
+    src: url('../fonts/NotoSansKR-Regular.woff2') format('woff2'),
+         url('../fonts/NotoSansKR-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Noto Sans KR';
-    src: url('fonts/NotoSansKR-Medium.woff2') format('woff2'),
-         url('fonts/NotoSansKR-Medium.woff') format('woff');
+    src: url('../fonts/NotoSansKR-Medium.woff2') format('woff2'),
+         url('../fonts/NotoSansKR-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Noto Sans KR';
-    src: url('fonts/NotoSansKR-Bold.woff2') format('woff2'),
-         url('fonts/NotoSansKR-Bold.woff') format('woff');
+    src: url('../fonts/NotoSansKR-Bold.woff2') format('woff2'),
+         url('../fonts/NotoSansKR-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
@@ -119,9 +119,9 @@ address{ font-style: unset;}
     display: none; /* 크롬, 사파리 등 웹킷 기반 브라우저 */
 }
 
-.hide {
+/* .hide {
   display:none !important; 
-}
+} */
 
 .blind {
     position: absolute;
@@ -447,7 +447,7 @@ select::-webkit-scrollbar-thumb:hover {
   background-color: var(--darkBlue);
 }
 
-.btn-type6:hover, .btn-type6:focus {
+a.btn-type6:hover, a.btn-type6:focus {
   border:1px solid var(--darkBlue);
   background-color: #F5F7FC;
 }
@@ -542,27 +542,28 @@ select::-webkit-scrollbar-thumb:hover {
   color:#000;
 } */
 
-/* 셀렉트 박스 */
-
-/* 기본 스타일 리셋 */
+/* 셀렉트 박스 *//* 기본 스타일 리셋 */
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     background-color: transparent;
     border: 1px solid #ccc;
-    border-radius: 5px; /* 보더를 라운드 처리 */
-    padding: 8px 12px; /* 내부 여백 설정 */
-    font-size: 16px; /* 폰트 사이즈 설정 */
-    width: 100%; /* 가로 너비 100% 설정 */
-    box-sizing: border-box; /* 박스 모델 설정 */
-    outline: none; /* 포커스시 아웃라인 제거 */
+    border-radius: 5px; 
+    padding: 8px 12px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
     color:var(--black);
+    /* max-height: 100px; */
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 /* 선택된 옵션 스타일 */
 select option:checked {
-    background-color: #f0f0f0; /* 선택된 옵션의 배경색 */
+    background-color: #fff;
 }
 
 .select-wrap .select-box {
@@ -590,8 +591,8 @@ select option:checked {
 }
 
 .chat-bubble .select-wrap select option {
-    padding: 10px 20px; /* 내부 여백 조정 */
-}
+    padding: 10px 20px;
+    width: calc(100% - 2rem);
 
 .chat-bubble .select-wrap select option:first-child {
     display: none; /* "select box" 디폴트 옵션 숨기기 */
