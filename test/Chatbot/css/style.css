@@ -117,7 +117,7 @@
 }
 
 .chat-bubble * {
-	color:var(--contents);
+	/* color:var(--contents); */
 	font-size: 0.875rem;
 }
 
@@ -274,7 +274,8 @@
 .user-msg .chat-bubble {
 	float:left;
 	margin:8px 0;
-	padding:1rem;
+	padding:8px 16px;
+	padding: 1rem;
 	max-width:100%;
 	height:auto;
 	background:var(--white);
@@ -488,8 +489,8 @@
 
 .chat-bubble.master1_txt {
 	width:fit-content;
+	padding:8px 16px;
 }
-
 .chat-bubble .txt_area p {
 	white-space: nowrap;
 	text-align: left;
