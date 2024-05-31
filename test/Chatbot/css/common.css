@@ -2,24 +2,21 @@
 
 @font-face {
     font-family: 'Noto Sans KR';
-    src: url('../fonts/NotoSansKR-Regular.woff2') format('woff2'),
-         url('../fonts/NotoSansKR-Regular.woff') format('woff');
+    src: url('../fonts/NotoSansKR-Regular.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Noto Sans KR';
-    src: url('../fonts/NotoSansKR-Medium.woff2') format('woff2'),
-         url('../fonts/NotoSansKR-Medium.woff') format('woff');
+    src: url('../fonts/NotoSansKR-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Noto Sans KR';
-    src: url('../fonts/NotoSansKR-Bold.woff2') format('woff2'),
-         url('../fonts/NotoSansKR-Bold.woff') format('woff');
+    src: url('../fonts/NotoSansKR-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
@@ -577,17 +574,20 @@ select option:checked {
   appearance: none;
   background: #fff url(../img/ico_select_arrow_gy.svg) no-repeat;
   /* background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"><path fill="%23333" d="M1.4.8l5.3 5 5.3-5c.2-.2.5-.2.7 0s.2.5 0 .7l-6 5.7c-.2.2-.5.2-.7 0l-6-5.7c-.2-.2-.2-.5 0-.7s.5-.2.7 0z"/></svg>'); */
-  background-position: calc(100% - 10px) center; /* 화살표 위치 */
+  background-position: calc(100% - 10px) center;
 }
 
-.chat-bubble .select-wrap option {
-  color:var(--purple);
+.chat-bubble .select-wrap option, .chat-bubble .select-wrap option::selection {
+  color:var(--darkBlue);
+}
+.chat-bubble .select-wrap option::selection {
+  background-color: var(--darkBlue);
 }
 
 .chat-bubble .select-wrap select:focus {
-    border-color: var(--purple); /* 포커스된 경우 보더 색상 변경 */
+    border-color: var(--darkBlue);
     background: #fff url(../img/ico_select_arrow_ny.svg) no-repeat;
-    background-position: calc(100% - 10px) center; /* 화살표 위치 */
+    background-position: calc(100% - 10px) center;
 }
 
 .chat-bubble .select-wrap select option {
@@ -603,141 +603,7 @@ select option:checked {
   align-items: center;
   gap:10px;
 }
-
 .select-wrap.two .select-box {
   width:50%;
 }
 
-
-
-
-
-
-/* .control-group {
-     display: inline-block;
-     vertical-align: top;
-     background: #fff;
-     text-align: left;
-     box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-     padding: 30px;
-     width: 200px;
-     height: 210px;
-     margin: 10px;
-}
- .control {
-     display: block;
-     position: relative;
-     padding-left: 30px;
-     margin-bottom: 15px;
-     cursor: pointer;
-     font-size: 18px;
-}
- .control input {
-     position: absolute;
-     z-index: -1;
-     opacity: 0;
-}
- .control__indicator {
-     position: absolute;
-     top: 2px;
-     left: 0;
-     height: 20px;
-     width: 20px;
-     background: #e6e6e6;
-}
- .control--radio .control__indicator {
-     border-radius: 50%;
-}
- .control:hover input ~ .control__indicator, .control input:focus ~ .control__indicator {
-     background: #ccc;
-}
- .control input:checked ~ .control__indicator {
-     background: #2aa1c0;
-}
- .control:hover input:not([disabled]):checked ~ .control__indicator, .control input:checked:focus ~ .control__indicator {
-     background: #0e647d;
-}
- .control input:disabled ~ .control__indicator {
-     background: #e6e6e6;
-     opacity: 0.6;
-     pointer-events: none;
-}
- .control__indicator:after {
-     content: '';
-     position: absolute;
-     display: none;
-}
- .control input:checked ~ .control__indicator:after {
-     display: block;
-}
- .control--checkbox .control__indicator:after {
-     left: 8px;
-     top: 4px;
-     width: 3px;
-     height: 8px;
-     border: solid #fff;
-     border-width: 0 2px 2px 0;
-     transform: rotate(45deg);
-}
- .control--checkbox input:disabled ~ .control__indicator:after {
-     border-color: #7b7b7b;
-}
- .control--radio .control__indicator:after {
-     left: 7px;
-     top: 7px;
-     height: 6px;
-     width: 6px;
-     border-radius: 50%;
-     background: #fff;
-}
- .control--radio input:disabled ~ .control__indicator:after {
-     background: #7b7b7b;
-}
- .select {
-     position: relative;
-     display: inline-block;
-     margin-bottom: 15px;
-     width: 100%;
-}
- .select select {
-     display: inline-block;
-     width: 100%;
-     cursor: pointer;
-     padding: 10px 15px;
-     outline: 0;
-     border: 0;
-     border-radius: 0;
-     background: #e6e6e6;
-     color: #7b7b7b;
-     appearance: none;
-     -webkit-appearance: none;
-     -moz-appearance: none;
-}
- .select select::-ms-expand {
-     display: none;
-}
- .select select:hover, .select select:focus {
-     color: #000;
-     background: #ccc;
-}
- .select select:disabled {
-     opacity: 0.5;
-     pointer-events: none;
-}
- .select__arrow {
-     position: absolute;
-     top: 16px;
-     right: 15px;
-     width: 0;
-     height: 0;
-     pointer-events: none;
-     border-style: solid;
-     border-width: 8px 5px 0 5px;
-     border-color: #7b7b7b transparent transparent transparent;
-}
- .select select:hover ~ .select__arrow, .select select:focus ~ .select__arrow {
-     border-top-color: #000;
-}
- .select select:disabled ~ .select__arrow {
-     border-top-color: #ccc;
-} */

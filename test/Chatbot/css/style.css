@@ -847,11 +847,14 @@
 }
 
 .swiper-tit, .card-tit {
-font-size: 14px;
-font-weight: 500;
-line-height: 20.27px;
-text-align: left;
-color: var(--contents);
+	padding-bottom:8px;
+	margin-bottom:8px;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20.27px;
+	text-align: left;
+	color: var(--contents);
+	border-bottom: 1px solid #ccc;
 }
 .swiper-subtit {
 	padding:0;
