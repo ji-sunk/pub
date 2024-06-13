@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./js/swiper/swiper-bundle.css">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
 </head>
 <body>
     <div class="wrapper">
@@ -64,7 +63,7 @@
                             </div>
                             <div class="scroll-x-item"><!-- 하단 버튼 여러 개 일 때 -->
                                 <div class="btn-wrap">
-                                    <button class="btn-btm-type" type="button">연관질문</button>
+                                    <button class="btn-btm-type" type="button" disabled="disabled">연관질문</button>
                                     <button class="btn-btm-type" type="button">연관질문</button>
                                     <button class="btn-btm-type" type="button">연관질문</button>
                                     <button class="btn-btm-type" type="button">연관질문</button>
@@ -81,6 +80,7 @@
                         <div id="">
                             <div class="chat-user user2" id="#chat_move1">
                                 <div class="user-msg">
+                                    <span class="time">오전 10:10</span>
                                     <div class="chat-bubble">
                                         보험금 청구 제출 서류 알려줘
                                     </div>
@@ -89,6 +89,7 @@
                             <div class="mngr-profile">
                                 <img src="./img/master1.jpg" alt="">
                                 <span class="mngr-name">HelpDesk</span>
+                                <span class="time">오전 10:10</span>
                             </div>
                             <div class="user-msg">
                                 <div class="chat-bubble">
@@ -109,6 +110,7 @@
                         <div id="">
                             <div class="chat-user user2">
                                 <div class="user-msg">
+                                    <span class="time">오전 10:10</span>
                                     <div class="chat-bubble">
                                         성명 오류가 나는 것 같아요
                                     </div>
@@ -117,6 +119,7 @@
                             <div class="mngr-profile">
                                 <img src="./img/master1.jpg" alt="">
                                 <span class="mngr-name">HelpDesk</span>
+                                <span class="time">오전 10:10</span>
                             </div>
                             <div class="user-msg">
                                 <div class="chat-bubble">
@@ -153,6 +156,7 @@
                         <div id="">
                             <div class="chat-user user2">
                                 <div class="user-msg">
+                                    <span class="time">오전 10:10</span>
                                     <div class="chat-bubble">
                                         소상공인 관련 보험 상품 무엇이 있나요?
                                     </div>
@@ -161,6 +165,7 @@
                             <div class="mngr-profile" id="chat_move2">
                                 <img src="./img/master1.jpg " alt="profile">
                                 <span class="mngr-name">HelpDesk</span>
+                                <span class="time">오전 10:10</span>
                             </div>
                             <div class="chat-user master1">
                                 <div class="user-msg">
@@ -170,7 +175,7 @@
                                 </div>
                             </div>
                             <!-- 슬라이드 타입 -->
-                            <div class="swiper-container">
+                            <div class="swiper-container basic">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide chat-bubble card-bdr-type">
                                         <p class="swiper-tit">상가보증금보장신용보험</p>
@@ -284,7 +289,7 @@
                         <button for="msg_txt" type="submit" id="btn_send">
                             <span class="blind">Send</span>
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.772 28.4399C17.9466 28.7964 18.3156 29.0159 18.7123 28.9991C19.1089 28.9823 19.4581 28.7325 19.602 28.3625L21.7565 22.8225L21.7566 22.8224L28.9321 4.3623C29.0722 4.00182 28.9919 3.59286 28.7258 3.31214C28.4598 3.03142 28.0558 2.92927 27.6883 3.04983L3.68828 10.9233C3.31657 11.0453 3.0501 11.3728 3.00629 11.7615C2.96248 12.1503 3.14938 12.5289 3.48462 12.7305L12.8299 18.3507L17.772 28.4399Z" fill="#3942AF" stroke="#3942AF" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+                            <path d="M17.772 28.4399C17.9466 28.7964 18.3156 29.0159 18.7123 28.9991C19.1089 28.9823 19.4581 28.7325 19.602 28.3625L21.7565 22.8225L21.7566 22.8224L28.9321 4.3623C29.0722 4.00182 28.9919 3.59286 28.7258 3.31214C28.4598 3.03142 28.0558 2.92927 27.6883 3.04983L3.68828 10.9233C3.31657 11.0453 3.0501 11.3728 3.00629 11.7615C2.96248 12.1503 3.14938 12.5289 3.48462 12.7305L12.829`9 18.3507L17.772 28.4399Z" fill="#3942AF" stroke="#3942AF" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
                             <path d="M12 18.5L21.5 10" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
                             </svg>
                         </button>
@@ -294,12 +299,13 @@
                         <ul class="chat-btn-box set6">
                             <li><a href="#chat_move7" title="보험금청구 바로가기">보험금청구</a></li>
                             <li><a href="#chat_move8" title="보증보험 바로가기">보증보험</a></li>
-                            <li><a href="#chat_move9" title="개통회선 바로가기">개통회선</a></li>
+                            <li><a href="#none" title="글자확대" class="text-size">글자확대</a></li>
                             <li><a href="#chat_move10" title="지점안내 바로가기">지점안내</a></li>
                             <li><a href="#chat_move11" title="통신회선 바로가기">통신회선</a></li>
                             <li><a href="#chat_move12" title="상담원연결 바로가기">상담원연결</a></li>
                         </ul>
                     </div>
+
                     <!-- //확인되지 않은 스펙 ...진행중 -->
                     <!-- <div class="chat-input">      
                         <form>
@@ -315,7 +321,6 @@
             </div>
         </div>
     </div>
-    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
     <!-- <script src="./js/jquery-3.6.0.min.js"></script> -->
     <script src="./js/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
