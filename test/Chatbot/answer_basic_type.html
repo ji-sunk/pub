@@ -23,7 +23,56 @@
                 </div>
             </div>
         </div>
+
+        <div class="layer-guide">
+            <div class="guide_bg">
+                <button class="btn-guide-close" type="button">닫기</button>
+                <!-- 슬라이드 타입 -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="guide_msg">
+                                <p class="guide-tit">더 편리해진 AI 챗봇</p>
+                                <p class="guide-sub">
+                                    무엇이든 물어 볼 수 있는<br>
+                                    챗봇 사용법을 알려 드릴게요
+                                </p>
+                                <img src="./img/dummy01.png" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="guide_msg">
+                                <p class="guide-tit">개인정보는 신중하게</p>
+                                <p class="guide-sub">
+                                    주민등록번호, 전화번호 등 <br>
+                                    개인정보는 입력하지 마세요
+                                </p>
+                                <img src="./img/dummy02.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="guide_msg">
+                                <p class="guide-tit">지난 상담도 차곡차곡</p>
+                                <p class="guide-sub">
+                                    이전에 챗봇과 상담했던 <br>
+                                    내용도 다시 볼 수 있어요
+                                </p>
+                                <img src="./img/dummy03.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 슬라이드: 네비게이션 버튼 -->
+                    <div class="swiper-button-next" aria-hidden="true" tabindex="0" role="button" aria-label="이전"></div>
+                    <div class="swiper-button-prev" aria-hidden="true" tabindex="0" role="button" aria-label="다음"></div>
+                    <!-- 슬라이드: 페이지네이션 -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
         <!-- //Layer Popup ==설계서나 디자인 아직 없음/ 임시 만든 상태 -->
+
         <header class="header">
             <a href="#" title="SGI서울보증 바로가기"><h1>SGI서울보증</h1></a>
             <button type="button" class="btn-type3"><span>상담종료</span></button>
@@ -283,7 +332,6 @@
             <div class="pos_fixed">
                 <div class="chat-input-wrap">
                     <div class="chat-input">
-                        <!-- <img src="img/master1.jpg" class="profile" alt="profile"> -->
                         <button type="button" class="quickMenu_btn"><img src="img/btn_add_gy.svg" alt="quickMenu Button"></button>
                         <input type="text" placeholder="메세지를 입력하세요" id="msg_txt">
                         <button for="msg_txt" type="submit" id="btn_send">
@@ -294,25 +342,17 @@
                             </svg>
                         </button>
                     </div>
-                    <!-- 확인되지 않은 스펙 ...진행중 -->
+
                     <div class="quickMenu">
                         <ul class="chat-btn-box set6">
-                            <li><a href="#chat_move7" title="보험금청구 바로가기">보험금청구</a></li>
-                            <li><a href="#chat_move8" title="보증보험 바로가기">보증보험</a></li>
-                            <li><a href="#none" title="글자확대" class="text-size">글자확대</a></li>
-                            <li><a href="#chat_move10" title="지점안내 바로가기">지점안내</a></li>
-                            <li><a href="#chat_move11" title="통신회선 바로가기">통신회선</a></li>
-                            <li><a href="#chat_move12" title="상담원연결 바로가기">상담원연결</a></li>
+                            <li><a href="#" title="처음으로가기">처음으로</a></li>
+                            <li><a href="#" title="챗봇사용법 바로가기" class="chatbot-guide">챗봇사용법</a></li>
+                            <li><a href="#chat_move10" title="계약조회 바로가기">계약조회</a></li>
+                            <li><a href="#chat_move11" title="확인서발급 바로가기">확인서발급</a></li>
+                            <li><a href="#chat_move12" title="인기검색어 바로가기">인기검색어</a></li>
+                            <li><a href="#none" title="글자크게작게" class="text-size">글자크게</a></li>
                         </ul>
                     </div>
-
-                    <!-- //확인되지 않은 스펙 ...진행중 -->
-                    <!-- <div class="chat-input">      
-                        <form>
-                            <input type="text" id="chat-input" placeholder="Send a message..."/>
-                        <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
-                        </form>      
-                    </div> -->
                     <!-- 스크롤 Top 버튼 -->
                     <button class="scroll-btn scroll-top-btn" onclick="scrollTopFunction()">↑</button>
                     <!-- 스크롤 Bottom 버튼 -->

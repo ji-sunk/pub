@@ -52,7 +52,7 @@
 	justify-content:space-between;
 	align-items:center;
 	border-bottom:2px solid var(--darkBlue);
-	background-color: #fff;
+	background-color: var(--white);
 }
 
 .header h1 {
@@ -117,12 +117,9 @@
 }
 
 .chat-bubble * {
-	/* color:var(--contents); */
 	font-size: 0.875rem;
 }
 
-
-/* Ensure scroll_x has overflow properties */
 .scroll_x {
     display: flex;
     overflow-x: auto;
@@ -150,7 +147,7 @@
     justify-content: space-around;
     align-items: center;
 	text-align: left;
-	color:#222;
+	color:var(--contents);
 }
 
 .SGI_txt_bg .bg_img {
@@ -175,7 +172,7 @@
 	text-align: center;
 	width:100%;
 	padding:10px 20px;
-	background-color:#fff;
+	background-color:var(--white);
 }
 /* 
 .user-msg.slide-type {
@@ -327,6 +324,9 @@
 	height:56px;
 	background-color: #E5E5E5;
 }
+.chat-input-wrap .quickMenu_btn.rotated::after {
+	height:62px;
+}
 .quickMenu_btn img {
   transition: transform 0.3s ease;
 }
@@ -378,17 +378,17 @@
 #msg_txt {
 	position:relative;
 }
-#msg_txt::before {
+/* #msg_txt::before {
 	content: '';
 	position:absolute;
 	top:0;
 	width:1px;
 	height:30px;
 	background-color:#000;
-}
+} */
 .svg_send {
 	fill: #000;
-	background-color: #fff;
+	background-color: var(--white);
 }
 .card-bdr-type {
     padding: 1rem;
@@ -496,7 +496,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: baseline;
-	aspect-ratio: 5 / 2;
+	/* aspect-ratio: 5 / 2; */
 }
 .chat-btn-box li a {
     padding:0 .5rem;
@@ -694,7 +694,7 @@
 	border-width:4px 0 4px 8px;
 	border-style:solid;
 	border-bottom-right-radius:8px;
-	border-color:#fff;
+	border-color:var(--white);
 	z-index:20;
 }
 .message__item {
@@ -728,7 +728,7 @@
 	height:14px;
 	width:14px;
 	margin:0 1px;
-	background-color:#fff;
+	background-color:var(--white);
 	border-radius:50%;
 	opacity:0.4;
 }
@@ -747,51 +747,22 @@
 		opacity: 1;
 	}
 }
-@media all (max-width:900px) {
-	.wrapper {
-		/* transform:scale(1); */
-		width:900px;
-		display: flex;
-		flex-wrap: wrap;
-    	justify-content: center;
-		align-items:center;
-	}
-}
- .chatinput.quickMenu_on {
-    position: fixed;
-    padding: 7px 0px 10px;
-    border-top: 5px solid transparent;
-    width: 100%;
-    top: 100%;
-    margin-top: -300px;
-    left: 0;
-    z-index: 1002;
-    display: block;
-    -webkit-animation: slide-in-fwd-up-show-chatinput 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-in-fwd-up-show-chatinput 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    transition: all .3s;
-}
+
 
 
 .quickMenu {
+	display: none;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
-	background-color:#fff;
+	background-color:var(--white);
 }
 
 .quickMenu.show {
+	display: block;
 	z-index: 52;
 	position:relative;
     max-height: 300px;
-}
-
-.quickMenu {
-    display: none;
-}
-
-.quickMenu.show {
-    display: block;
 }
 
 
@@ -814,16 +785,13 @@
   margin: 0 5px;
   cursor: pointer;
 }
-
 .active {
   background-color: #717171;
 }
-
 .basic .swiper-tit, .basic .card-tit {
 	border: none;
 	margin-bottom:0;
 }
-
 .swiper-tit, .card-tit {
 	padding-bottom:8px;
 	margin-bottom:8px;
@@ -883,14 +851,40 @@
 	height: 100%;
 }
 
+.layer-guide {display:none;}
+
 .swiper-slide {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background: #fff;
+	background: var(--white);
 	border-radius: 10px;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.layer-guide .swiper-slide {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: none;
+	border-radius: 0px;
+	box-shadow: none;
+}
+
+.swiper-horizontal {
+  position: relative;
+}
+.swiper-container {
+  width:90%;
+}
+
+.layer-guide .swiper-container {
+  width:100%;
+}
+.swiper-horizontal {
+	margin-top:10px;
 }
 
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after,
@@ -898,15 +892,13 @@
 {
 	display:none;
 }
-.swiper-horizontal {
-  position: relative;
-}
-.swiper-container {
-  width:90%;
-}
-.swiper-horizontal {
-	margin-top:10px;
-}
+
+.layer-guide .swiper-button-prev:after, .layer-guide .swiper-rtl .swiper-button-next:after,
+.layer-guide .swiper-button-next:after, .layer-guide .swiper-rtl .swiper-button-prev:after
+{
+	display:block;
+	color: var(--darkBlue);
+} 
 
 .swiper-backface-hidden .swiper-slide:hover {
 	border: 1px solid var(--darkBlue);
@@ -916,7 +908,17 @@
 	border: 1px solid var(--darkBlue);
 }
 
+.layer-guide .swiper-backface-hidden .swiper-slide:hover, .layer-guide .swiper-backface-hidden .swiper-slide:focus {
+	border: none;
+}
+
 .swiper-pagination-clickable .swiper-pagination-bullet {
+	background-color: var(--darkBlue);
+	width:8px;
+	height:8px;
+}
+
+.layer-guide .swiper-pagination-clickable .swiper-pagination-bullet {
 	background-color: var(--darkBlue);
 	width:8px;
 	height:8px;
@@ -925,6 +927,12 @@
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
   bottom:0px !important;
   position: inherit !important;
+}
+
+.layer-guide .swiper-horizontal>.swiper-pagination-bullets, .layer-guide .swiper-pagination-bullets.swiper-pagination-horizontal, .layer-guide .swiper-pagination-custom, .layer-guide .swiper-pagination-fraction {
+  bottom:420px !important;
+  position: inherit !important;
+  margin-top:0;
 }
 
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -936,6 +944,22 @@
 }
 .swiper-backface-hidden .swiper-slide {
 	min-height: 120px;
+}
+.chat-bubble .select-wrap option,.chat-bubble .select-wrap option::selection {
+	color:var(--darkBlue);
+}
+.chat-bubble .select-wrap option::selection {
+	background-color:var(--darkBlue);
+}
+.chat-bubble .select-wrap select:focus {
+	border-color:var(--darkBlue);
+	background:#fff url(../img/ico_select_arrow_ny.svg) no-repeat;
+	background-position:calc(100% - 10px) center;
+}
+
+/* 레이어 팝업 가이드 슬라이드 커스텀 */
+.layer-guide .swiper-horizontal {
+	height:300px;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
