@@ -44,22 +44,36 @@ window.addEventListener("scroll", handleScroll);
 
 document.addEventListener("DOMContentLoaded", function () {
   // 상담 종료하기 버튼 클릭 시 layer popup 띄우기
-  document.querySelector(".btn-type3").addEventListener("click", function () {
-    document.querySelector(".layer-popup").style.display = "block";
+  document.querySelector("#endCst").addEventListener("click", function () {
+    document.querySelector(".layer-popup1").style.display =
+      "block";
+  });
+  
+  document.querySelector("#lyrPop").addEventListener("click", function () {
+    document.querySelector(".layer-popup2").style.display =
+      "block";
   });
 
   // 상담종료 버튼 클릭 시 layer popup 닫기
   document
     .querySelector(".btn-type-close")
     .addEventListener("click", function () {
-      document.querySelector(".layer-popup").style.display = "none";
+      document.querySelector(".layer-popup1").style.display =
+        "none";
     });
+  
+    document
+      .querySelector(".btn-type-close2")
+      .addEventListener("click", function () {
+        document.querySelector(".layer-popup2").style.display = "none";
+      });
 
   // 취소 버튼 클릭 시 layer popup 닫기
   document
     .querySelector(".btn-type-cancel")
     .addEventListener("click", function () {
-      document.querySelector(".layer-popup").style.display = "none";
+      document.querySelector(".layer-popup1").style.display =
+        "none";
     });
 
   // 챗봇 사용법 버튼 클릭 시 layer popup 띄우기
@@ -76,8 +90,6 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector(".layer-guide").style.display = "none";
     });
 });
-
-
 
 //******************* 슬라이드 *****************************
 
@@ -96,8 +108,6 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
-
-
 
 //******************* 펼쳐보기 /접기 버튼 *********************
 document.addEventListener("DOMContentLoaded", function () {
@@ -178,7 +188,6 @@ const openingLineButton = document.querySelector(
   ".chat-btn-box.set6 li:nth-child(3) a"
 );
 openingLineButton.addEventListener("click", showChatTypeCase03);
-
 
 //*******************퀵메뉴버튼 눌렀을 때 액션**********************
 document.addEventListener("DOMContentLoaded", function () {
