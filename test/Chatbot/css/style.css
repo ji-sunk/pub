@@ -42,7 +42,7 @@
 
 
 .header {
-	z-index:30;
+	z-index:65;
 	position: sticky;
     top: 0;
 	padding:.5rem 1.0rem;
@@ -202,8 +202,6 @@
 .toggle-button.active {
     background-color: #ccc;
 }
-
-
 .mngr-profile, .user-img {
 	display:block;
 	width:2rem;
@@ -321,7 +319,7 @@
 	top:0;
 	left:3.8rem;
 	width:1px;
-	height:56px;
+	height:62px;
 	background-color: #E5E5E5;
 }
 .chat-input-wrap .quickMenu_btn.rotated::after {
@@ -499,15 +497,20 @@
 	/* aspect-ratio: 5 / 2; */
 }
 .chat-btn-box li a {
-    padding:0 .5rem;
+	/* padding:0 .5rem; */
     padding-top:5rem;
     font-family: Noto Sans KR;
 	font-size: 0.875rem;
 	font-weight: 300;
 	line-height: 22px;
 	text-align: center;
+	white-space: nowrap;
     color:var(--contents);
 }
+.enlarged-text .chat-btn-box li a {
+	letter-spacing: -1px;
+}
+
 .chat-btn-box.set6 li:nth-child(1) a {
 	background: url(../img/btn_chat_ico01.svg) center top 18px / 50% 50% no-repeat;
 }
@@ -562,7 +565,7 @@
 }
 /* 추가 스타일 */
 .more_type_area.txt_area {
-	max-height:216px;
+	max-height:220px;
 	height:fit-content;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
@@ -577,7 +580,7 @@
 	max-height:23rem;
 }
 .more_type_area.mht3.txt_area {
-	max-height:33rem;
+	max-height:33.8rem;
 }
 .ico_arrow_more {
 	width:13px;
@@ -845,6 +848,10 @@
   border-radius: 50% 50%;
 }
 
+.enlarged-text .SGI_txt_bg .bg_img {
+	width:30%;
+}
+
 /* 스와이퍼-슬라이드 커스텀 */
  .swiper-container {
 	width: 100%;
@@ -937,11 +944,9 @@
 
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
 	text-align: center;
+	margin:15px 0;
 }
 
-.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
-	margin-top:15px;
-}
 .swiper-backface-hidden .swiper-slide {
 	min-height: 120px;
 }
