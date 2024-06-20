@@ -150,45 +150,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//*******************test case (click evt)************************
-
-// 보험금 청구 버튼을 클릭했을 때 이벤트를 처리하는 함수
-function showChatTypeCase01() {
-  // chat-type-case01 요소를 가져옴
-  const chatTypeCase01 = document.getElementById("chat-type-case01");
-  // chat-type-case01 요소 노출
-  chatTypeCase01.style.display = "block";
-}
-
-// 보험금 청구 버튼을 가져와서 클릭 이벤트를 추가
-const insuranceClaimButton = document.querySelector(
-  ".chat-btn-box.set6 li:nth-child(1) a"
-);
-insuranceClaimButton.addEventListener("click", showChatTypeCase01);
-
-// 보험증권 버튼을 클릭했을 때 이벤트를 처리하는 함수
-function showChatTypeCase02() {
-  // chat-type-case02 요소를 가져옴
-  const chatTypeCase02 = document.getElementById("chat-type-case02");
-  // chat-type-case02 요소를 노출
-  chatTypeCase02.style.display = "block";
-}
-
-// 보험증권 버튼을 가져와서 클릭 이벤트 추가
-const insuranceCertificateButton = document.querySelector(
-  ".chat-btn-box.set6 li:nth-child(2) a"
-);
-insuranceCertificateButton.addEventListener("click", showChatTypeCase02);
-
-function showChatTypeCase03() {
-  const chatTypeCase03 = document.getElementById("chat-type-case03");
-  chatTypeCase03.style.display = "block";
-}
-const openingLineButton = document.querySelector(
-  ".chat-btn-box.set6 li:nth-child(3) a"
-);
-openingLineButton.addEventListener("click", showChatTypeCase03);
-
 //*******************퀵메뉴버튼 눌렀을 때 액션**********************
 document.addEventListener("DOMContentLoaded", function () {
   const quickMenuButton = document.querySelector(".quickMenu_btn");
