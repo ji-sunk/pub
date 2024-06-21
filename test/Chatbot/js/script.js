@@ -43,53 +43,62 @@ window.addEventListener("scroll", handleScroll);
 //*******************layer popup*****************************
 
 document.addEventListener("DOMContentLoaded", function () {
-  // 상담 종료하기 버튼 클릭 시 layer popup 띄우기
-  document.querySelector("#endCst").addEventListener("click", function () {
-    document.querySelector(".layer-popup1").style.display =
-      "block";
-  });
-  
-  document.querySelector("#lyrPop").addEventListener("click", function () {
-    document.querySelector(".layer-popup2").style.display =
-      "block";
-  });
+  // 팝업 토글 함수
+  function togglePopup(selector) {
+    const element = document.querySelector(selector);
+    if (element) {
+      element.style.display =
+        element.style.display === "block" ? "none" : "block";
+    }
+  }
 
-  // 상담종료 버튼 클릭 시 layer popup 닫기
-  document
-    .querySelector(".btn-type-close")
-    .addEventListener("click", function () {
-      document.querySelector(".layer-popup1").style.display =
-        "none";
-    });
-  
-    document
-      .querySelector(".btn-type-close2")
-      .addEventListener("click", function () {
-        document.querySelector(".layer-popup2").style.display = "none";
-      });
-
-  // 취소 버튼 클릭 시 layer popup 닫기
-  document
-    .querySelector(".btn-type-cancel")
-    .addEventListener("click", function () {
-      document.querySelector(".layer-popup1").style.display =
-        "none";
-    });
-
-  // 챗봇 사용법 버튼 클릭 시 layer popup 띄우기
+  // .chatbot-guide 버튼 클릭 시 layer-guide 보이기
   document
     .querySelector(".chatbot-guide")
     .addEventListener("click", function () {
       document.querySelector(".layer-guide").style.display = "block";
     });
 
-  // 챗봇 사용법 팝업 취소 버튼 클릭 시 layer popup 닫기
+  // .btn-guide-close 버튼 클릭 시 layer-guide 닫기
   document
     .querySelector(".btn-guide-close")
     .addEventListener("click", function () {
       document.querySelector(".layer-guide").style.display = "none";
     });
+
+  // #endCst 클릭 시 layer-popup1 보이기
+  document.querySelector("#endCst").addEventListener("click", function () {
+    document.querySelector(".layer-popup1").style.display = "block";
+  });
+
+  // #lyrPop 클릭 시 layer-popup2 토글
+  document.querySelector("#lyrPop").addEventListener("click", function () {
+    togglePopup(".layer-popup2");
+  });
+
+  // .btn-type-close, .btn-type-cancel 버튼 클릭 시 layer-popup1 닫기
+  document
+    .querySelectorAll(".btn-type-close, .btn-type-cancel")
+    .forEach(function (button) {
+      button.addEventListener("click", function () {
+        document.querySelector(".layer-popup1").style.display = "none";
+      });
+    });
+
+  // // .btn-type-close2 버튼 클릭 시 layer-popup2 닫기
+  // document
+  //   .querySelector(".btn-type-close2")
+  //   .addEventListener("click", function () {
+  //     document.querySelector(".layer-popup2").style.display = "none";
+  //   });
+
+  // #lyrPopOpc 버튼 클릭 시 채팅 인풋 숨기기 및 layer-popup3 보이기
+  document.querySelector("#lyrPopOpc").addEventListener("click", function () {
+    document.querySelector(".chat-input-wrap").style.display = "none";
+    document.querySelector(".layer-popup3").style.display = "block";
+  });
 });
+
 
 //******************* 슬라이드 *****************************
 
@@ -108,6 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
+
 
 //******************* 펼쳐보기 /접기 버튼 *********************
 document.addEventListener("DOMContentLoaded", function () {
