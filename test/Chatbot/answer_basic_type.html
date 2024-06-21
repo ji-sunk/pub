@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <!-- Layer Popup ==설계서나 디자인 아직 없음/ 임시 만든 상태 -->
+
         <div class="layer-popup1">
             <div class="dim_bg">
                 <div class="dim_msg">
@@ -23,14 +23,19 @@
                 </div>
             </div>
         </div>
-
+        <!--  iframe 영역  -->
         <div class="layer-popup2">
-            <div class="dim_bg_wht">
-                <div class="btn-wrap">
-                    <button class="btn-type-close2" type="button">닫기</button>
-                </div>
+            <div class="bg_wht">
+                Iframe
             </div>
         </div>
+        <!--  //iframe 영역  -->
+        <!-- 투명 배경 팝업 -->
+        <div class="layer-popup3">
+            <div class="bg_tpt">
+            </div>
+        </div>
+        <!-- //투명 배경 팝업 -->
 
         <div class="layer-guide">
             <div class="guide_bg">
@@ -79,12 +84,13 @@
                 </div>
             </div>
         </div>
-        <!-- //Layer Popup ==설계서나 디자인 아직 없음/ 임시 만든 상태 -->
+
 
         <header class="header">
             <a href="#" title="SGI서울보증 바로가기"><h1>SGI서울보증</h1></a>
             <button type="button" class="btn-type3" id="endCst"><span>상담종료</span></button>
             <button type="button" class="btn-type3" id="lyrPop"><span>헤더제외팝업</span></button>
+            <button type="button" class="btn-type3" id="lyrPopOpc"><span>투명팝업</span></button>
         </header>
         <div class="container">
             <div class="chat-area">
@@ -351,7 +357,7 @@
                     <div class="quickMenu">
                         <ul class="chat-btn-box set6">
                             <li><a href="#" title="처음으로가기">처음으로</a></li>
-                            <li><a href="#" title="챗봇사용법 바로가기" class="chatbot-guide">챗봇사용법</a></li>
+                            <li><a href="#" title="챗봇사용법 바로가기" id="" class="chatbot-guide">챗봇사용법</a></li>
                             <li><a href="#chat_move10" title="계약조회 바로가기">계약조회</a></li>
                             <li><a href="#chat_move11" title="확인서발급 바로가기">확인서발급</a></li>
                             <li><a href="#chat_move12" title="인기검색어 바로가기">인기검색어</a></li>

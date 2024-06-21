@@ -3,7 +3,7 @@
 
 .wrapper {
     align-items: center;
-	/*transform:scale(1.2);*/ transition:0.5s;
+	transition:0.5s;
 }
 .container {
 	position:relative;
@@ -328,7 +328,6 @@
 .quickMenu_btn img {
   transition: transform 0.3s ease;
 }
-
 .quickMenu_btn.rotated img {
   transform: rotate(45deg);
 }
@@ -339,8 +338,6 @@
     background-color: var(--white);
 	/* position:fixed; */
 	bottom:0px;
-	/* width:100%; */
-	/* height:4rem; */
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
@@ -497,7 +494,6 @@
 	/* aspect-ratio: 5 / 2; */
 }
 .chat-btn-box li a {
-	/* padding:0 .5rem; */
     padding-top:5rem;
     font-family: Noto Sans KR;
 	font-size: 0.875rem;
@@ -563,7 +559,7 @@
     background-color: rgba(128, 128, 128, 0.4); 
     color: var(--white); 
 }
-/* 추가 스타일 */
+
 .more_type_area.txt_area {
 	max-height:220px;
 	height:fit-content;
