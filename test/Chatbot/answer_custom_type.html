@@ -11,11 +11,13 @@
 </head>
 <body>
     <div class="wrapper">
-
         <div class="layer-popup1">
             <div class="dim_bg">
                 <div class="dim_msg">
-                    <p>상담을 종료 하시겠습니까?</p>
+                    <div class="txt_box">
+                        <p class="tit">상담종료</p>
+                        <p class="sub">상담을 종료 하시겠습니까? 상담을 종료 하시겠습니까?상담을 종료 하시겠습니까?상담을 종료 하시겠습니까?</p>
+                    </div>
                     <div class="btn-wrap">
                         <button class="btn-type-cancel" type="button">취소</button>
                         <button class="btn-type-close" type="button">상담종료</button>
@@ -116,7 +118,7 @@
                                 <p>업무별 담당부서를 선택해주세요.</p>
                                 <ul class="more_box">
                                     <li>
-                                        <a href="#none" class="btn-type6">
+                                        <a href="#none" class="btn-type6 disabled">
                                             <p class="txt_tit">영업지점</p>
                                             <span class="txt_sub">보험가입,변경,해지,보험금 청구 접수,증명서 발급,담보 변환</span>
                                         </a>
@@ -215,17 +217,20 @@
                             <span class="time">오전 10:10</span>
                         </div>
                         <div class="chat-bubble card-bdr-type">
-                            <p><label for="sel_box">시/도를 선택해주세요.</label></p>
+                            <div>
+                                <label for="sel_box">시/도를 선택해주세요.</label>
+                            </div>
                             <div class="select-wrap">
                                 <div class="select-box">
                                     <select name="sel_box" id="sel_box" size="auto">
                                         <option>서울특별시</option>
                                         <option>경기도</option>
-                                        <option>인청광역시</option>
+                                        <option>인천광역시</option>
                                         <option>충청북도</option>
                                         <option>충청남도</option>
                                     </select>
                                 </div>
+                                <button type="button" class="btn-type-choice">선택</button>
                             </div>
                         </div>    
                     </div>        
@@ -268,7 +273,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#none" class="btn-type6">
+                                        <a href="#none" class="btn-type6 disabled">
                                             <div class="flx-ard">
                                                 <p class="txt_sts">채권번호</p>
                                                 <span class="txt_blu">110-222-3334</span>
@@ -383,7 +388,7 @@
                         <div class="chat-bubble">
                             <div class="txt_area">
                                 <p class="bub-subtit"><span class="name">이서울</span>님 보상 진행사항</p>
-                                <ul class="more_box">
+                                <ul>
                                     <li>
                                         <div href="#none" class="btn-type6">
                                             <div class="flx-ard">
@@ -487,7 +492,7 @@
                             <div class="swiper-slide chat-bubble card-bdr-type">
                                 <div class="txt_area">
                                     <p class="bub-subtit"><span class="name">이서울</span>님 증권 발급 지점</p>
-                                    <ul class="more_box">
+                                    <ul>
                                         <li>
                                             <div class="btn-type6">
                                                 <div class="flx-ard">

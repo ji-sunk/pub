@@ -2,7 +2,7 @@
 @charset "utf-8";
 
 .wrapper {
-    align-items: center;
+	box-sizing: border-box;
 	transition:0.5s;
 }
 .container {
@@ -43,7 +43,7 @@
 
 .header {
 	z-index:65;
-	position: sticky;
+	position: fixed;
     top: 0;
 	padding:.5rem 1.0rem;
 	width:100%;
@@ -75,14 +75,13 @@
 .chat-area {
 	position:relative;
 	padding: 1rem 1rem 7rem 1rem;
-	/* height:47rem; */
 	height:100%;
 	min-height:90dvh;
 	overflow-x: hidden;
 	overflow-y:auto;
 }
 .chats {
-	/* position:relative; */
+	padding-top: 3.5rem;
 }
 .chat-area::-webkit-scrollbar {
 	display:none;
@@ -116,9 +115,9 @@
 	float:left;
 }
 
-.chat-bubble * {
-	font-size: 0.875rem;
-}
+/* .chat-bubble * {
+	font-size: 0.815rem;
+} */
 
 .scroll_x {
     display: flex;
@@ -140,11 +139,11 @@
     background-color: #717171;
 }
 .SGI_txt_bg {
-	/* padding:0 1rem; */
+	padding:0 1.5rem;
 	width: 100%;
     height: 130px;
 	display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 	text-align: left;
 	color:var(--contents);
@@ -161,6 +160,7 @@
 	font-size: 1rem;
 	font-weight: 300;
 	line-height: 22px;
+	white-space: nowrap;
 }
 
 .SGI_txt_bg .txt_box strong {
@@ -236,7 +236,7 @@
 }
 
 .def-msg .chat-bubble {
-	padding:1.2rem 1.2rem 0rem 1.2rem;
+	padding:0rem 1.2rem;
 	margin-bottom:10px;
 	width:100%;
 	background:var(--white);
@@ -475,8 +475,11 @@
 	width:fit-content;
 	padding:8px 16px;
 }
-.chat-bubble .txt_area p {
-	white-space: nowrap;
+.chat-bubble .flx-ard {
+	white-space:nowrap;
+}
+.chat-bubble .txt_area.more_type_area p {
+	white-space: normal;
 	text-align: left;
 }
 .chat-bubble .txt_area p strong {
@@ -504,7 +507,7 @@
     color:var(--contents);
 }
 .enlarged-text .chat-btn-box li a {
-	letter-spacing: -1px;
+	letter-spacing: -2px;
 }
 
 .chat-btn-box.set6 li:nth-child(1) a {
@@ -561,7 +564,7 @@
 }
 
 .more_type_area.txt_area {
-	max-height:220px;
+	max-height:228px;
 	height:fit-content;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
@@ -576,7 +579,7 @@
 	max-height:23rem;
 }
 .more_type_area.mht3.txt_area {
-	max-height:33.8rem;
+	max-height:34.3rem;
 }
 .ico_arrow_more {
 	width:13px;
@@ -961,6 +964,9 @@
 /* 레이어 팝업 가이드 슬라이드 커스텀 */
 .layer-guide .swiper-horizontal {
 	height:300px;
+}
+@media (max-width: 369px) {
+	.SGI_txt_bg .txt_box {white-space: normal;}
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
