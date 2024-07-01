@@ -976,15 +976,16 @@
 }
 
 .square_item a, .square_item a:visited {
-	color:var(--contents);
+	text-decoration: none;
+	color:var(--contents) !important;
 }
 .square_item a:hover {
 	text-decoration: underline;
 	color: var(--blue);
 }
 .square_item a:focus {
-	color: var(--disable);
 	text-decoration: none;
+	color: var(--disable);
 }
 .square_item::before {
   position: absolute;
@@ -1124,7 +1125,7 @@ background: linear-gradient(120deg, rgba(112,86,245,1) 14%, rgba(30,91,197,1) 80
 }
 
 .layer-guide .swiper-horizontal>.swiper-pagination-bullets, .layer-guide .swiper-pagination-bullets.swiper-pagination-horizontal, .layer-guide .swiper-pagination-custom, .layer-guide .swiper-pagination-fraction {
-  bottom:388px !important;
+  bottom:122% !important;
   position: inherit !important;
   margin-top:0;
 }

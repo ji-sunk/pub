@@ -764,6 +764,12 @@ a.btn-type6.disabled *, a.btn-type6:disabled *,
 	align-items:center;
 	text-align:center;
 }
+.guide_msg img {
+	padding:1rem;
+	/* width: calc(100% / 2); */
+	max-height:435px;
+    margin: 0 auto;
+}
 
 .guide-tit {
 	font-size: 18px;
@@ -773,7 +779,7 @@ a.btn-type6.disabled *, a.btn-type6:disabled *,
 }
 
 .guide-sub {
-	margin-bottom:113px;
+	margin-bottom:55px;
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 20px;
