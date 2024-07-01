@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>ChtatBot</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -11,6 +11,8 @@
 </head>
 <body>
     <div class="wrapper">
+        <div class="layer-dim hide">
+        </div>
         <div class="layer-popup1">
             <div class="dim_bg">
                 <div class="dim_msg">
@@ -41,40 +43,46 @@
 
         <div class="layer-guide">
             <div class="guide_bg">
-                <button class="btn-guide-close" type="button">닫기</button>
+                <button class="btn-guide-close" type="button">
+                    <span class="blind">팝업닫기</span>
+                </button>
                 <!-- 슬라이드 타입 -->
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="guide_msg">
-                                <p class="guide-tit">더 편리해진 AI 챗봇</p>
+                                <p class="guide-tit">챗봇 사용법</p>
                                 <p class="guide-sub">
-                                    무엇이든 물어 볼 수 있는<br>
-                                    챗봇 사용법을 알려 드릴게요
+                                    챗봇 간단하게 사용할 수 있어요!
                                 </p>
-                                <img src="./img/dummy01.png" alt="">
+                                <img src="./img/chatbot_guide01.png" width="282" height="435" alt="">
                             </div>
                         </div>
-                        
                         <div class="swiper-slide">
                             <div class="guide_msg">
-                                <p class="guide-tit">개인정보는 신중하게</p>
+                                <p class="guide-tit">더보기 기능</p>
                                 <p class="guide-sub">
-                                    주민등록번호, 전화번호 등 <br>
-                                    개인정보는 입력하지 마세요
+                                    더 많은 챗봇의 기능을 활용해보세요.
                                 </p>
-                                <img src="./img/dummy02.png" alt="">
+                                <img src="./img/chatbot_guide02.png" width="246" height="435" alt="" >
                             </div>
                         </div>
-
                         <div class="swiper-slide">
                             <div class="guide_msg">
-                                <p class="guide-tit">지난 상담도 차곡차곡</p>
+                                <p class="guide-tit">처음으로 돌아가기</p>
                                 <p class="guide-sub">
-                                    이전에 챗봇과 상담했던 <br>
-                                    내용도 다시 볼 수 있어요
+                                    대화를 처음부터 다시 시작하고 싶다면?
                                 </p>
-                                <img src="./img/dummy03.png" alt="">
+                                <img src="./img/chatbot_guide03.png" width="211" height="435" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="guide_msg">
+                                <p class="guide-tit">글자 크게 보기</p>
+                                <p class="guide-sub">
+                                    안보이는 작은 글씨도 이제는 크게 보세요!
+                                </p>
+                                <img src="./img/chatbot_guide04.png" width="222" height="435" alt="">
                             </div>
                         </div>
                     </div>
@@ -86,13 +94,11 @@
                 </div>
             </div>
         </div>
-
-
         <header class="header">
             <a href="#" title="SGI서울보증 바로가기"><h1>SGI서울보증</h1></a>
             <button type="button" class="btn-type3" id="endCst"><span>상담종료</span></button>
             <button type="button" class="btn-type3" id="lyrPop"><span>헤더제외팝업</span></button>
-            <button type="button" class="btn-type3" id="lyrPopOpc"><span>투명팝업</span></button>
+            <!-- <button type="button" class="btn-type3" id="lyrPopOpc"><span>투명팝업</span></button> -->
         </header>
 
         <div class="container">
@@ -117,6 +123,45 @@
                             <div class="more_type_area mht2 txt_area" id="more_txt1">
                                 <p>업무별 담당부서를 선택해주세요.</p>
                                 <ul class="more_box">
+                                    <li>
+                                        <a href="#none" class="btn-type6 disabled">
+                                            <p class="txt_tit">영업지점</p>
+                                            <span class="txt_sub">보험가입,변경,해지,보험금 청구 접수,증명서 발급,담보 변환</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none" class="btn-type6">
+                                            <p class="txt_tit">대리점</p>
+                                            <span class="txt_sub">보험가입,변경,해지</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none" class="btn-type6">
+                                            <p class="txt_tit">보상지원단(보상센터)</p>
+                                            <span class="txt_sub">보상심사, 보험금 지급</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none" class="btn-type6">
+                                            <p class="txt_tit">신용지원단</p>
+                                            <span class="txt_sub">채무상담, 추심업무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none" class="btn-type6">
+                                            <p class="txt_tit">신용지원단</p>
+                                            <span class="txt_sub">채무상담, 추심업무</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none" class="btn-type6">
+                                            <p class="txt_tit">신용지원단</p>
+                                            <span class="txt_sub">채무상담, 추심업무</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <ul>
                                     <li>
                                         <a href="#none" class="btn-type6 disabled">
                                             <p class="txt_tit">영업지점</p>
@@ -567,10 +612,48 @@
                         <div class="swiper-pagination"></div>
                     </div>
                     <!-- //발급 지점 안내 -->
+
+
+                    <!-- 인기검색어 : 추가 -->
+                    <div class="psw5" id="psw5">
+                        <div class="mngr-profile">
+                            <img src="./img/master1.jpg" alt="">
+                            <span class="mngr-name">HelpDesk</span>
+                            <span class="time">오전 10:10</span>
+                        </div>
+                        <div class="user-msg">
+                            <div class="chat-bubble">
+                                <div class="more_type_area txt_area">
+                                    <p class="tit">인기검색어 TOP5</p>
+                                    <ul class="square_list">
+                                        <li class="square_item">
+                                            <a href="#none">지점/대리점 및 부서 안내</a>
+                                        </li>
+                                        <li class="square_item">
+                                            <a href="#none">비상금대출 부결 사유 비상금대출 부결 사유비상금대출 부결 사유</a>
+                                        </li>
+                                        <li class="square_item">
+                                            <a href="#none">신용카드 신용보험 정의</a>
+                                        </li>
+                                        <li class="square_item">
+                                            <a href="#none">전세임대주택신용보험 개인정보 문자</a>
+                                        </li>
+                                        <li class="square_item">
+                                            <a href="#none">보험금 청구 방법</a>
+                                        </li>
+                                    </ul>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //인기검색어 : 추가 -->
                 </div>
             </div>
 
             <div class="pos_fixed">
+                <div class="EndCST hide">
+                    상담이 종료되었습니다. 감사합니다.
+                </div>
                 <div class="chat-input-wrap">
                     <div class="chat-input">
                         <button type="button" class="quickMenu_btn"><img src="img/btn_add_gy.svg" alt="quickMenu Button"></button>
@@ -585,13 +668,37 @@
                     </div>
 
                     <div class="quickMenu">
-                        <ul class="chat-btn-box set6">
-                            <li><a href="#" title="처음으로가기">처음으로</a></li>
-                            <li><a href="#" title="챗봇사용법 바로가기" class="chatbot-guide">챗봇사용법</a></li>
-                            <li><a href="#chat_move10" title="계약조회 바로가기">계약조회</a></li>
-                            <li><a href="#chat_move11" title="확인서발급 바로가기">확인서발급</a></li>
-                            <li><a href="#chat_move12" title="인기검색어 바로가기">인기검색어</a></li>
-                            <li><a href="#none" title="글자크게작게" class="text-size">글자크게</a></li>
+                        <ul class="menu-list quick-btn-box">
+                            <li>
+                                <a href="#" title="처음으로가기">
+                                    <p class="txt">처음으로</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="chatbot-guide" title="챗봇사용법 바로가기">
+                                    <p class="txt">챗봇사용법</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="계약조회 바로가기">
+                                    <p class="txt">계약조회</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="확인서발급 바로가기">
+                                    <p class="txt">확인서발급</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#psw5" title="인기검색어 바로가기" class="top5">
+                                    <p class="txt">인기검색어</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none" class="text-size" title="글자크게작게">
+                                    <p class="txt">글자크게</p>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <!-- 스크롤 Top 버튼 -->
