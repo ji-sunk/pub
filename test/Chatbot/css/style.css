@@ -1159,7 +1159,7 @@ background: linear-gradient(120deg, rgba(112,86,245,1) 14%, rgba(30,91,197,1) 80
 		max-width:calc(100% /2);
 	}
 	.layer-guide .swiper-horizontal>.swiper-pagination-bullets, .layer-guide .swiper-pagination-bullets.swiper-pagination-horizontal, .layer-guide .swiper-pagination-custom, .layer-guide .swiper-pagination-fraction {
-	bottom:80% !important;
+	bottom:90% !important;
 	}
 }
 
