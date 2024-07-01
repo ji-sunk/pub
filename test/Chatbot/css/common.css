@@ -766,8 +766,8 @@ a.btn-type6.disabled *, a.btn-type6:disabled *,
 }
 .guide_msg img {
 	padding:1rem;
-	/* width: calc(100% / 2); */
 	max-height:435px;
+	max-width:fit-content;
     margin: 0 auto;
 }
 

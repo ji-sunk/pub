@@ -1125,7 +1125,7 @@ background: linear-gradient(120deg, rgba(112,86,245,1) 14%, rgba(30,91,197,1) 80
 }
 
 .layer-guide .swiper-horizontal>.swiper-pagination-bullets, .layer-guide .swiper-pagination-bullets.swiper-pagination-horizontal, .layer-guide .swiper-pagination-custom, .layer-guide .swiper-pagination-fraction {
-  bottom:122% !important;
+  bottom: 120% !important;
   position: inherit !important;
   margin-top:0;
 }
@@ -1152,6 +1152,15 @@ background: linear-gradient(120deg, rgba(112,86,245,1) 14%, rgba(30,91,197,1) 80
 
 @media (max-width: 369px) {
 	.SGI_txt_bg .txt_box {white-space: normal;}
+}
+
+@media (max-width: 800px) {
+	.guide_msg img {
+		max-width:calc(100% /2);
+	}
+	.layer-guide .swiper-horizontal>.swiper-pagination-bullets, .layer-guide .swiper-pagination-bullets.swiper-pagination-horizontal, .layer-guide .swiper-pagination-custom, .layer-guide .swiper-pagination-fraction {
+	bottom:80% !important;
+	}
 }
 
 /* @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
