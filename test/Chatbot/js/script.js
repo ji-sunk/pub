@@ -40,8 +40,11 @@ function handleScroll() {
 // 스크롤 이벤트 리스너 추가
 window.addEventListener("scroll", handleScroll);
 
-//*******************layer popup*****************************
 
+
+
+
+//*******************layer popup*****************************
 document.addEventListener("DOMContentLoaded", function () {
   // 팝업 토글 함수
   function togglePopup(selector) {
@@ -52,14 +55,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // .chatbot-guide 버튼 클릭 시 layer-guide 보이기
+  // .chatbot-guide 클릭 시 챗봇가이드 노출
   document
     .querySelector(".chatbot-guide")
     .addEventListener("click", function () {
       document.querySelector(".layer-guide").style.display = "block";
     });
 
-  // .btn-guide-close 버튼 클릭 시 layer-guide 닫기
+  // .top5 클릭 시 인기 검색어 보이기
+  document
+    .querySelector(".top5")
+    .addEventListener("click", function () {
+    document.querySelector(".psw5").style.display = "block";
+  });
+
+  // .btn-guide-close 버튼 클릭 시 챗봇가이드 닫기
   document
     .querySelector(".btn-guide-close")
     .addEventListener("click", function () {
@@ -85,6 +95,17 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
 
+  document.querySelectorAll(".btn-type-close").forEach(function (button) {
+    button.addEventListener("click", function () {
+      document.querySelector(".EndCST.hide").classList.remove("hide");
+    });
+  });
+
+  document.querySelectorAll(".btn-type-close").forEach(function (button) {
+    button.addEventListener("click", function () {
+      document.querySelector(".wrapper").classList.add("touchNone");
+    });
+  });
   // // .btn-type-close2 버튼 클릭 시 layer-popup2 닫기
   // document
   //   .querySelector(".btn-type-close2")
@@ -93,14 +114,14 @@ document.addEventListener("DOMContentLoaded", function () {
   //   });
 
   // #lyrPopOpc 버튼 클릭 시 채팅 인풋 숨기기 및 layer-popup3 보이기
-  document.querySelector("#lyrPopOpc").addEventListener("click", function () {
-    document.querySelector(".chat-input-wrap").style.display = "none";
-    document.querySelector(".layer-popup3").style.display = "block";
-  });
+  // document.querySelector("#lyrPopOpc").addEventListener("click", function () {
+  //   document.querySelector(".chat-input-wrap").style.display = "none";
+  //   document.querySelector(".layer-popup3").style.display = "block";
+  // });
 });
 
 
-//******************* 슬라이드 *****************************
+//********************* 슬라이드 *****************************
 
 document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper(".swiper-container", {
@@ -148,8 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // 화살표 아이콘을 아래로 변경
         moreButton.querySelector("img").style.transform = "rotate(0deg)";
       } else {
-        // 현재 텍스트가 숨겨진 상태라면
-        // 텍스트를 펼침
+        // 현재 텍스트가 숨겨진 상태라면 텍스트를 펼침
         moreText.classList.add("expanded");
         // 버튼 텍스트 변경
         moreButton.querySelector("span").textContent = "접기";
@@ -165,37 +185,107 @@ document.addEventListener("DOMContentLoaded", function () {
   const quickMenuButton = document.querySelector(".quickMenu_btn");
   const quickMenu = document.querySelector(".quickMenu");
   const chatInputWrap = document.querySelector(".chat-input-wrap");
+  const layerDim = document.querySelector(".layer-dim");
 
   quickMenuButton.addEventListener("click", function (event) {
     event.stopPropagation();
     quickMenu.classList.toggle("show");
     quickMenuButton.classList.toggle("rotated");
+
+    // .layer-dim.hide 요소에서 hide 클래스 제거
+    if (layerDim) {
+      layerDim.classList.remove("hide");
+    }
   });
 
   chatInputWrap.addEventListener("click", function () {
     quickMenu.classList.remove("show");
     quickMenuButton.classList.remove("rotated");
+
+    // .layer-dim에 hide 클래스 추가
+    if (layerDim) {
+      layerDim.classList.add("hide");
+    }
   });
+
   quickMenu.addEventListener("click", function (event) {
     event.stopPropagation();
   });
-});
 
-//글자 확대/축소
-document.addEventListener("DOMContentLoaded", function () {
-  const textSizeButton = document.querySelector(".text-size");
-  let isTextEnlarged = false;
+  quickMenuButton.addEventListener("click", function (event) {
+    event.stopPropagation();
+    quickMenuButton.classList.toggle("rotated");
+  });
 
-  textSizeButton.addEventListener("click", function (event) {
-    event.preventDefault();
-    isTextEnlarged = !isTextEnlarged;
+  // .layer-dim 클릭 시 quickMenu show 클래스 제거 및 hide 클래스 추가
+  if (layerDim) {
+    layerDim.addEventListener("click", function () {
+      quickMenu.classList.remove("show");
+      quickMenuButton.classList.remove("rotated");
+      layerDim.classList.add("hide");
+    });
+  }
 
-    if (isTextEnlarged) {
-      document.body.classList.add("enlarged-text");
-      textSizeButton.textContent = "글자작게";
-    } else {
-      document.body.classList.remove("enlarged-text");
-      textSizeButton.textContent = "글자크게";
-    }
+  // quick-btn-box의 li 안의 a 요소 클릭 시 quickMenu show 클래스 제거 및 hide 클래스 추가
+  const quickBtnBoxLinks = document.querySelectorAll(".quick-btn-box li a");
+  quickBtnBoxLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+      quickMenu.classList.remove("show");
+      if (layerDim) {
+        layerDim.classList.add("hide");
+      }
+    });
   });
 });
+
+
+
+//웹폰트 최적화 CDN(Content Delivery Network) / 서비스워커
+self.addEventListener("install", function (event) {
+  event.waitUntil(
+    caches.open("font-cache").then(function (cache) {
+      return cache.addAll([
+        "/fonts/NotoSansKR-Medium.woff2",
+        "/fonts/NotoSansKR-Medium.woff",
+      ]);
+    })
+  );
+});
+
+self.addEventListener("fetch", function (event) {
+  if (event.request.url.includes("fonts/NotoSansKR-Medium")) {
+    event.respondWith(
+      caches.match(event.request).then(function (response) {
+        return response || fetch(event.request);
+      })
+    );
+  }
+});
+
+
+//더보기 메뉴에서 글자 확대/축소
+document.addEventListener("DOMContentLoaded", function () {
+  // 텍스트 크기 버튼을 선택
+  const textSizeButton = document.querySelector(".text-size");
+
+  // 텍스트 크기 버튼 내부의 텍스트 요소선택
+  const textSizeTxt = textSizeButton ? textSizeButton.querySelector("p") : null;
+  let isTextEnlarged = false;
+
+  // 버튼이 존재할 경우에만 이벤트 리스너를 추가
+  if (textSizeButton && textSizeTxt) {
+    textSizeButton.addEventListener("click", function (event) {
+      event.preventDefault();
+      isTextEnlarged = !isTextEnlarged;
+
+      if (isTextEnlarged) {
+        document.body.classList.add("enlarged-text");
+        textSizeTxt.textContent = "글자작게";
+      } else {
+        document.body.classList.remove("enlarged-text");
+        textSizeTxt.textContent = "글자크게";
+      }
+    });
+  }
+});
+
