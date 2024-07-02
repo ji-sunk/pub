@@ -755,7 +755,7 @@ a.btn-type6.disabled *, a.btn-type6:disabled *,
 }
 .guide_msg .guide_img1 {}
 .guide_msg .guide_img2 {padding-left:40px;}
-.guide_msg .guide_img3 {}
+.guide_msg .guide_img3 {max-width: 211px;}
 .guide_msg .guide_img4 {padding-left:40px;}
 
 .guide_msg .tit {
@@ -777,7 +777,7 @@ a.btn-type6.disabled *, a.btn-type6:disabled *,
 .guide_txt {
 	z-index:51;
 	position:absolute;
-	top:14%;
+	top:13%;
 	left:0px;
 	width:100%;
 	height:auto;
