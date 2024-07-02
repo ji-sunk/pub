@@ -41,9 +41,6 @@ function handleScroll() {
 window.addEventListener("scroll", handleScroll);
 
 
-
-
-
 //*******************layer popup*****************************
 document.addEventListener("DOMContentLoaded", function () {
   // 팝업 토글 함수
@@ -101,11 +98,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  document.querySelectorAll(".btn-type-close").forEach(function (button) {
-    button.addEventListener("click", function () {
-      document.querySelector(".wrapper").classList.add("touchNone");
-    });
-  });
+  // document.querySelectorAll(".btn-type-close").forEach(function (button) {
+  //   button.addEventListener("click", function () {
+  //     document.querySelector(".wrapper").classList.add("touchNone");
+  //   });
+  // });
   // // .btn-type-close2 버튼 클릭 시 layer-popup2 닫기
   // document
   //   .querySelector(".btn-type-close2")
@@ -191,30 +188,10 @@ document.addEventListener("DOMContentLoaded", function () {
     event.stopPropagation();
     quickMenu.classList.toggle("show");
     quickMenuButton.classList.toggle("rotated");
-
     // .layer-dim.hide 요소에서 hide 클래스 제거
     if (layerDim) {
-      layerDim.classList.remove("hide");
+      layerDim.classList.toggle("hide");
     }
-  });
-
-  chatInputWrap.addEventListener("click", function () {
-    quickMenu.classList.remove("show");
-    quickMenuButton.classList.remove("rotated");
-
-    // .layer-dim에 hide 클래스 추가
-    if (layerDim) {
-      layerDim.classList.add("hide");
-    }
-  });
-
-  quickMenu.addEventListener("click", function (event) {
-    event.stopPropagation();
-  });
-
-  quickMenuButton.addEventListener("click", function (event) {
-    event.stopPropagation();
-    quickMenuButton.classList.toggle("rotated");
   });
 
   // .layer-dim 클릭 시 quickMenu show 클래스 제거 및 hide 클래스 추가
@@ -237,8 +214,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-
 
 //웹폰트 최적화 CDN(Content Delivery Network) / 서비스워커
 self.addEventListener("install", function (event) {
