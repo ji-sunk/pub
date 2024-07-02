@@ -514,22 +514,22 @@
 }
 
 .chat-btn-box.set6 li:nth-child(1) a {
-	background: url(../img/ico_menu01.svg) left 62% top 18px / 60% 60% no-repeat;
+	background: url(../img/ico_menu01.svg) left 52% top 18px / 60% 60% no-repeat;
 }
 .chat-btn-box.set6 li:nth-child(2) a {
-	background: url(../img/ico_menu02.svg) center top 18px / 100% 50% no-repeat;
+	background: url(../img/ico_menu02.svg) center top 15px / 100% 50% no-repeat;
 }
 .chat-btn-box.set6 li:nth-child(3) a {
-	background: url(../img/ico_menu03.svg) center top 18px / 100% 50% no-repeat;
+	background: url(../img/ico_menu03.svg) center top 15px / 100% 50% no-repeat;
 }
 .chat-btn-box.set6 li:nth-child(4) a {
-	background: url(../img/ico_menu04.svg) center top 18px / 100% 50% no-repeat;
+	background: url(../img/ico_menu04.svg) center top 15px / 100% 58% no-repeat;
 }
 .chat-btn-box.set6 li:nth-child(5) a {
-	background: url(../img/ico_menu05.svg) center top 20px / 100% 50% no-repeat;
+	background: url(../img/ico_menu05.svg) center top 18px / 100% 50% no-repeat;
 }
 .chat-btn-box.set6 li:nth-child(6) a {
-	background: url(../img/ico_menu06.svg) center top 20px / 100% 50% no-repeat;
+	background: url(../img/ico_menu06.svg) center top 18px / 100% 50% no-repeat;
 }
 
 
@@ -1147,6 +1147,9 @@ background: linear-gradient(120deg, rgba(112,86,245,1) 14%, rgba(30,91,197,1) 80
 }
 @media (max-height: 667px) {
 	.guide_txt {top:10%}
+	.chat-btn-box.set6 li:nth-child(1) a {
+		background: url(../img/ico_menu01.svg) left 61% top 18px / 60% 60% no-repeat;
+	}
 }
 
 /* @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
