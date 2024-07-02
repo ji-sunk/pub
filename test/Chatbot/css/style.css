@@ -500,7 +500,7 @@
 	/* aspect-ratio: 5 / 2; */
 }
 .chat-btn-box li a {
-    padding-top:5rem;
+    padding-top:4.5rem;
     font-family: Noto Sans KR;
 	font-size: 0.875rem;
 	font-weight: 300;
@@ -631,10 +631,11 @@
 	border-radius: 50% 50%;
 	background-color: #7056F5;
 }
+/* 
 .menu-list li a:hover svg {
 	fill: var(--darkPurple);
 	background-color: var(--darkPurple);
-}
+} */
 
 .quick-btn-box .txt {
 	z-index: 62;
@@ -1034,12 +1035,6 @@ background: linear-gradient(120deg, rgba(112,86,245,1) 14%, rgba(30,91,197,1) 80
 }
 /*********** 팝업 *************/
 .layer-guide {display:none;}
-.guide_img1 {}
-.guide_img2 {}
-.guide_img3 {}
-.guide_img4 {}
-
-
 /*********** 스와이퍼-슬라이드 커스텀 *************/
  .swiper-container {
 	width: 100%;
@@ -1149,6 +1144,9 @@ background: linear-gradient(120deg, rgba(112,86,245,1) 14%, rgba(30,91,197,1) 80
 
 @media (max-width: 369px) {
 	.SGI_txt_bg .txt_box {white-space: normal;}
+}
+@media (max-height: 667px) {
+	.guide_txt {top:10%}
 }
 
 /* @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

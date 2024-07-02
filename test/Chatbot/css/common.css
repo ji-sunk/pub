@@ -753,17 +753,10 @@ a.btn-type6.disabled *, a.btn-type6:disabled *,
 	margin:0 auto;
 	text-align: center;
 }
-/* .swiper-wrapper:nth-child(1) .guide_msg img {
-	width:310px;
-} */
-
-.swiper-wrapper:nth-child(2) .guide_msg img {
-	width:100%;
-}
-
-.guide_msg:nth-child(2) img {
-	
-}
+.guide_msg .guide_img1 {}
+.guide_msg .guide_img2 {padding-left:40px;}
+.guide_msg .guide_img3 {}
+.guide_msg .guide_img4 {padding-left:40px;}
 
 .guide_msg .tit {
 	margin-bottom:0;
@@ -794,7 +787,7 @@ a.btn-type6.disabled *, a.btn-type6:disabled *,
 	text-align:center; */
 }
 .guide_msg img {
-	padding:1rem;
+	/* padding:1rem; */
 	max-height:435px;
 	/* width:calc(100% /2); */
 	/* max-width:270px; */
