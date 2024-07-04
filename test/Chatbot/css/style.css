@@ -1081,11 +1081,12 @@
 
 .swiper-backface-hidden .swiper-slide:focus {
 	/* border: 1px solid var(--darkBlue); */
-	box-shadow: 0 0 0 1px var(--darkBlue) inset; 
+	box-shadow: 0 0 0 1px var(--darkBlue) inset;
 }
 
 .layer-guide .swiper-backface-hidden .swiper-slide:hover, .layer-guide .swiper-backface-hidden .swiper-slide:focus {
 	border: none;
+	box-shadow:none;
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
