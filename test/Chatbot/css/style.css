@@ -489,9 +489,10 @@
 	white-space: nowrap;
     color:var(--contents);
 }
+/* 
 .enlarged-text .chat-btn-box li a {
 	letter-spacing: -1px;
-}
+} */
 
 .chat-btn-box.set6 li:nth-child(1) a {
 	background: url(../img/ico_menu01.svg) left 52% top 18px / 60% 60% no-repeat;
@@ -654,9 +655,11 @@
 	text-align: center;
 	background-color:var(--white);
 }
+
 .btn_more.hide {
 	display:none;
 }
+
 .more_type_area.mht2.txt_area {
 	max-height:25rem;
 }
@@ -1009,9 +1012,9 @@
 	
 } */
 .swiper-slide .pos_btn {
-	position:absolute;
+	/* position:absolute; */
 	bottom:1rem;
-	width:calc(100% - 2rem);
+	/* width:calc(100% - 2rem); */
 	max-width:100%;
 }
 
@@ -1066,13 +1069,13 @@
 	color: var(--darkBlue);
 }
 .mgbt40 {
-	margin-bottom:40px;
+	min-height:85px;
+	height: fit-content;
 }
-.swiper-backface-hidden .swiper-slide {
+.swiper-slide {
 	position:relative;
-	/* min-height: 187px; */
 	height: auto;
-	/* max-height: 300px; */
+	cursor: pointer;
 }
 .swiper-backface-hidden .swiper-slide:hover {
 	/* border: 1px solid var(--darkBlue); */

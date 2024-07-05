@@ -199,6 +199,8 @@ caption,th,td {
 	margin:-1px;
 	overflow: hidden;
 }
+.scrollLock { overflow: hidden; }
+
 /* checkbox / radioBTN / Switch */
 @supports (-webkit-appearance:none) or (-moz-appearance:none) {
 	input[type=checkbox],input[type=radio] {
@@ -407,9 +409,6 @@ select option:checked {
 	font-weight: 500;
 	text-align: left;
 	color:var(--contents);
-}
-.top5 {
-	width:fit-content;
 }
 
 /* 버튼 아이콘 있는 라운드 기본형 */
