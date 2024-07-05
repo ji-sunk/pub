@@ -2,6 +2,12 @@
 const scrollTopButton = document.querySelector(".scroll-top-btn");
 const scrollBottomButton = document.querySelector(".scroll-bottom-btn");
 
+const body = document.getElementsByTagName('body')[0];
+body.classList.add('scrollLock');
+// const body = document.querySelector("body");
+// body.style.overflow = "hidden";
+
+
 // 페이지가 스크롤될 때 버튼 show / hide를 처리하는 함수
 function handleScroll() {
   // 현재 스크롤 위치가 30px보다 큰 경우에만 Top 버튼
@@ -146,42 +152,50 @@ document.addEventListener("DOMContentLoaded", function () {
   // more_box 요소 목록 가져오기
   const moreBoxes = document.querySelectorAll(".more_box");
 
-  moreButtons.forEach((moreButton, index) => {
-    const moreText = moreTexts[index];
-    const listItems = moreBoxes[index].querySelectorAll("li");
+  if (moreButtons.length && moreTexts.length && moreBoxes.length) {
+    moreButtons.forEach((moreButton, index) => {
+      const moreText = moreTexts[index];
+      const moreBox = moreBoxes[index];
 
-    // li가 6개 이상일 때만 펼쳐보기 버튼 표시
-    if (listItems.length >= 6) {
-      moreButton.classList.remove("hide");
-    }
+      if (moreBox) {
+        const listItems = moreBox.querySelectorAll("li");
 
-    // 더보기 버튼에 클릭 이벤트 리스너 추가
-    moreButton.addEventListener("click", function () {
-      // 만약 현재 텍스트가 펼쳐져 있는 상태라면
-      if (moreText.classList.contains("expanded")) {
-        // 텍스트를 다시 숨김
-        moreText.classList.remove("expanded");
-        // 버튼 텍스트 변경
-        moreButton.querySelector("span").textContent = "펼쳐보기";
-        // 화살표 아이콘을 아래로 변경
-        moreButton.querySelector("img").style.transform = "rotate(0deg)";
-      } else {
-        // 현재 텍스트가 숨겨진 상태라면 텍스트를 펼침
-        moreText.classList.add("expanded");
-        // 버튼 텍스트 변경
-        moreButton.querySelector("span").textContent = "접기";
-        // 화살표 아이콘을 위로 변경
-        moreButton.querySelector("img").style.transform = "rotate(180deg)";
+        // li가 6개 이상일 때만 펼쳐보기 버튼 표시
+        if (listItems.length >= 6) {
+          moreButton.classList.remove("hide");
+        }
+
+        // 더보기 버튼에 클릭 이벤트 리스너 추가
+        moreButton.addEventListener("click", function () {
+          // 만약 현재 텍스트가 펼쳐져 있는 상태라면
+          if (moreText.classList.contains("expanded")) {
+            // 텍스트를 다시 숨김
+            moreText.classList.remove("expanded");
+            // 버튼 텍스트 변경
+            moreButton.querySelector("span").textContent = "펼쳐보기";
+            // 화살표 아이콘을 아래로 변경
+            moreButton.querySelector("img").style.transform = "rotate(0deg)";
+          } else {
+            // 현재 텍스트가 숨겨진 상태라면
+            // 텍스트를 펼침
+            moreText.classList.add("expanded");
+            // 버튼 텍스트 변경
+            moreButton.querySelector("span").textContent = "접기";
+            // 화살표 아이콘을 위로 변경
+            moreButton.querySelector("img").style.transform = "rotate(180deg)";
+          }
+        });
       }
     });
-  });
+  }
 });
+
 
 //*******************퀵메뉴버튼 눌렀을 때 액션**********************
 document.addEventListener("DOMContentLoaded", function () {
   const quickMenuButton = document.querySelector(".quickMenu_btn");
   const quickMenu = document.querySelector(".quickMenu");
-  const chatInputWrap = document.querySelector(".chat-input-wrap");
+  //const chatInputWrap = document.querySelector(".chat-input-wrap");
   const layerDim = document.querySelector(".layer-dim");
 
   quickMenuButton.addEventListener("click", function (event) {
@@ -236,7 +250,6 @@ self.addEventListener("fetch", function (event) {
     );
   }
 });
-
 
 //더보기 메뉴에서 글자 확대/축소
 document.addEventListener("DOMContentLoaded", function () {
