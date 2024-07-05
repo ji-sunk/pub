@@ -2,11 +2,6 @@
 const scrollTopButton = document.querySelector(".scroll-top-btn");
 const scrollBottomButton = document.querySelector(".scroll-bottom-btn");
 
-const body = document.getElementsByTagName('body')[0];
-body.classList.add('scrollLock');
-// const body = document.querySelector("body");
-// body.style.overflow = "hidden";
-
 
 // 페이지가 스크롤될 때 버튼 show / hide를 처리하는 함수
 function handleScroll() {
