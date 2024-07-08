@@ -43,6 +43,7 @@
 }
 html,body {
 	height:100%;
+	overscroll-behavior: contain;
 	font-family:'Noto Sans KR','Noto Sans','Roboto',sans-serif;
 }
 body {
@@ -199,7 +200,6 @@ caption,th,td {
 	margin:-1px;
 	overflow: hidden;
 }
-.scrollLock { overflow: hidden; }
 
 /* checkbox / radioBTN / Switch */
 @supports (-webkit-appearance:none) or (-moz-appearance:none) {
@@ -671,6 +671,8 @@ a.btn-type6.disabled *, a.btn-type6:disabled *,
 	display:none;
 }
 .dim_bg {
+	overflow: hidden;
+	
 	z-index:90;
 	position:fixed;
 	width:100%;

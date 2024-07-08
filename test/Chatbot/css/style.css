@@ -62,7 +62,7 @@
 .header h1 {
 	cursor: pointer;
 	text-indent: -999%;
-	background: url(../img/logo_sgi.svg) left center / 80% no-repeat;
+	background: url(../img/SGI_CI.svg) left center / 80% no-repeat;
 }
 
 .header h1, .header p {
@@ -153,7 +153,8 @@
     align-items: center;
 	text-align: left;
 	color:var(--contents);
-	background: url("../img/bg_circle.png") left 24px top 40px / 8px no-repeat, url("../img/bg_SGI.svg") right .5rem top 100% no-repeat;
+	/* background: url("../img/bg_circle.png") left 24px top 40px / 8px no-repeat, url("../img/img_chatbot_main.svg") right .5rem top 100% no-repeat; */
+	background: url("../img/img_chatbot_main.svg") right .5rem top 100% no-repeat;
 }
 
 .SGI_txt_bg .bg_img {
@@ -222,7 +223,7 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	gap: 10px;
+	gap: 5px;
 }
 .mngr-name {
 	font-weight: 500;
@@ -991,7 +992,7 @@
     bottom: -5px;
     left: 0;
 	width:100%;
-	height:60px;
+	height:64px;
 	display:flex;
 	align-items: center;
 	justify-content: center;
