@@ -342,6 +342,7 @@
 .quickMenu_btn.rotated img {
   transform: rotate(45deg);
 }
+
 .chat-input {
 	padding: 0rem 1rem;
     background-color: var(--white);
@@ -496,7 +497,7 @@
 } */
 
 .chat-btn-box.set6 li:nth-child(1) a {
-	background: url(../img/ico_menu01.svg) left 52% top 18px / 60% 60% no-repeat;
+	background: url(../img/ico_menu01.svg) left 58% top 18px / 60% 60% no-repeat;
 }
 .chat-btn-box.set6 li:nth-child(2) a {
 	background: url(../img/ico_menu02.svg) center top 15px / 50% 50% no-repeat;
