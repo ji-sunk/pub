@@ -2,7 +2,6 @@
 const scrollTopButton = document.querySelector(".scroll-top-btn");
 const scrollBottomButton = document.querySelector(".scroll-bottom-btn");
 
-
 // 페이지가 스크롤될 때 버튼 show / hide를 처리하는 함수
 function handleScroll() {
   // 현재 스크롤 위치가 30px보다 큰 경우에만 Top 버튼
@@ -26,6 +25,9 @@ function scrollBottomFunction() {
     behavior: "smooth",
   });
 }
+
+  
+  
 
 // 페이지가 스크롤될 때 버튼 show / hide를 처리하는 함수
 function handleScroll() {
@@ -58,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .querySelector(".chatbot-guide")
     .addEventListener("click", function () {
       document.querySelector(".layer-guide").style.display = "block";
+      //document.body.style.overflow = "hidden";
     });
 
   // .top5 클릭 시 인기 검색어 보이기
@@ -207,7 +210,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (layerDim) {
     layerDim.addEventListener("click", function () {
       quickMenu.classList.remove("show");
-      quickMenuButton.classList.remove("rotated");
+      quickMenuButton.classList.toggle("rotated");
       layerDim.classList.add("hide");
     });
   }
@@ -219,6 +222,7 @@ document.addEventListener("DOMContentLoaded", function () {
       quickMenu.classList.remove("show");
       if (layerDim) {
         layerDim.classList.add("hide");
+        quickMenuButton.classList.toggle("rotated");
       }
     });
   });
@@ -271,4 +275,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+
+
 
